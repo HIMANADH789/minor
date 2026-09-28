@@ -1,0 +1,28 @@
+comparison,seed,observed_delta,ci_low,ci_high,bootstrap_P_positive,perm_p,holm_p,interpretation
+R5_5050-MiniROCKET,42,0.0526,0.0125,0.0931,0.9953,0.01165,0.01165,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-MiniROCKET,43,0.0239,-0.0162,0.0635,0.8779,0.25314,,weak evidence
+R5_5050-MiniROCKET,44,0.0413,0.0003,0.0821,0.976,0.04895,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-InceptionTime,42,0.4865,0.4283,0.5414,1.0,5e-05,0.00045,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-FCN,42,0.4866,0.4284,0.5414,1.0,5e-05,0.00045,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-ResNet1D,42,0.3988,0.3395,0.4555,1.0,5e-05,0.00045,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-PatchTST,42,0.3808,0.3214,0.4384,1.0,5e-05,0.00045,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-InceptionTime,43,0.2739,0.207,0.3384,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-FCN,43,0.3911,0.3301,0.4501,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-ResNet1D,43,0.4499,0.3916,0.505,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-PatchTST,43,0.3874,0.3276,0.4458,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-InceptionTime,44,0.4442,0.384,0.503,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-FCN,44,0.475,0.4162,0.5311,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-ResNet1D,44,0.4694,0.4102,0.5263,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+R5_5050-PatchTST,44,0.4632,0.4052,0.5201,1.0,,,"strong evidence (CI excludes 0, bootstrap P>=.95)"
+InceptionTime-MiniROCKET,42,-0.4339,-0.4873,-0.3777,0.0,5e-05,0.00045,strong evidence of negative difference
+FCN-MiniROCKET,42,-0.434,-0.4874,-0.3778,0.0,5e-05,0.00045,strong evidence of negative difference
+ResNet1D-MiniROCKET,42,-0.3462,-0.401,-0.2882,0.0,5e-05,0.00045,strong evidence of negative difference
+PatchTST-MiniROCKET,42,-0.3282,-0.3816,-0.2718,0.0,5e-05,0.00045,strong evidence of negative difference
+InceptionTime-MiniROCKET,43,-0.2499,-0.3131,-0.1856,0.0,,,strong evidence of negative difference
+FCN-MiniROCKET,43,-0.3672,-0.4253,-0.3059,0.0,,,strong evidence of negative difference
+ResNet1D-MiniROCKET,43,-0.426,-0.4807,-0.3687,0.0,,,strong evidence of negative difference
+PatchTST-MiniROCKET,43,-0.3635,-0.4186,-0.3063,0.0,,,strong evidence of negative difference
+InceptionTime-MiniROCKET,44,-0.4029,-0.4605,-0.3423,0.0,,,strong evidence of negative difference
+FCN-MiniROCKET,44,-0.4337,-0.4883,-0.3757,0.0,,,strong evidence of negative difference
+ResNet1D-MiniROCKET,44,-0.4281,-0.4841,-0.3709,0.0,,,strong evidence of negative difference
+PatchTST-MiniROCKET,44,-0.4219,-0.4767,-0.3652,0.0,,,strong evidence of negative difference

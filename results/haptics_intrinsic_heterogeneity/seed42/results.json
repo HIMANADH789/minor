@@ -1,0 +1,33 @@
+{
+ "seed": 42,
+ "dataset": "Haptics",
+ "HI_dataset": 0.05769635185101932,
+ "B_H": 0.08323824069285034,
+ "band": "low",
+ "gates": {
+  "A_minirocket": 0.5037,
+  "B_raw_gh": 0.55
+ },
+ "intrinsic_budget_demos": {
+  "quantile": {
+   "n_H_features": 417,
+   "macro_f1": 0.5155,
+   "accuracy": 0.5292,
+   "selected_alpha": 4.281332398719396
+  },
+  "hierarchy": {
+   "n_H_features": 8,
+   "macro_f1": 0.5037,
+   "accuracy": 0.5162,
+   "selected_alpha": 4.281332398719396
+  },
+  "block": {
+   "n_H_features": 384,
+   "macro_f1": 0.5149,
+   "accuracy": 0.5292,
+   "selected_alpha": 4.281332398719396
+  }
+ },
+ "delta_H_known_pp": 4.63,
+ "runtime_s": 6.5
+}

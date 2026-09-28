@@ -1,0 +1,4 @@
+seed,source,active_codes,occupancy,entropy_nats,normalized_entropy,perplexity,min_occupancy,max_occupancy
+42,stored_vq_diagnostics,8,"[0.2326, 0.0091, 0.1396, 0.1136, 0.1399, 0.1271, 0.1047, 0.1334]",1.9464,0.936,7.0036,0.0091,0.2326
+43,stored_vq_diagnostics,8,"[0.2044, 0.1647, 0.2899, 0.0045, 0.1248, 0.0055, 0.0966, 0.1096]",1.7611,0.8469,5.8187,0.0045,0.2899
+44,stored_vq_diagnostics,6,"[0.0, 0.209, 0.2449, 0.0993, 0.0836, 0.2155, 0.1476, 0.0]",1.7217,0.828,5.5942,0.0,0.2449

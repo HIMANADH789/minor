@@ -1,0 +1,131 @@
+{
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "n_train": 761,
+ "n_val": 135,
+ "n_test": 3582,
+ "T": 315,
+ "n_classes": 8,
+ "n_features_G": 4998,
+ "tree_meta": {
+  "n_latents": 239715,
+  "latent_dim": 32,
+  "max_depth": 4,
+  "splitter": "sklearn KMeans(n_clusters=2, n_init=10, random_state=42) per node",
+  "child_rule": "children of level-d id p are 2p (bit 0), 2p+1 (bit 1); bit-0 child has smaller first centroid coordinate",
+  "level_ids": "binary path ids; ancestor of b at level l is b >> (l_fine - l)",
+  "singleton_fallbacks": 0,
+  "input": "pooled TRAIN SSLTemporalEncoder latents (R^32)"
+ },
+ "identity_max_abs": 1.3877787807814457e-16,
+ "identity_max_rel": 5.796751106952876e-16,
+ "zero_sum_max": 2.2898349882893854e-16,
+ "cross_ip_max": 1.870933963310506e-13,
+ "level_energies": {
+  "K": [
+   2,
+   4,
+   8,
+   16
+  ],
+  "real": [
+   75148.85199251365,
+   62702.49286017398,
+   50224.79872767671,
+   56167.279958537445
+  ]
+ },
+ "stopping": {
+  "L_star": 16,
+  "rows": [
+   {
+    "K": 2,
+    "real_energy": 75148.85199251365,
+    "null_mean": 2479.474803235628,
+    "null_std": 38.988368758674994,
+    "null_p95": 2545.6870296034353,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 4,
+    "real_energy": 62702.49286017398,
+    "null_mean": 4362.706813771277,
+    "null_std": 52.74901181926109,
+    "null_p95": 4453.527116111607,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 8,
+    "real_energy": 50224.79872767671,
+    "null_mean": 5442.395161682419,
+    "null_std": 61.103891155943536,
+    "null_p95": 5541.917222898166,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 16,
+    "real_energy": 56167.279958537445,
+    "null_mean": 7191.978750458408,
+    "null_std": 66.92004338762642,
+    "null_p95": 7292.65723358577,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   }
+  ],
+  "S": 500,
+  "null_seed": 52042
+ },
+ "budget": {
+  "B_H": 4998,
+  "allocation": {
+   "2": 1538,
+   "4": 1283,
+   "8": 1028,
+   "16": 1149
+  }
+ },
+ "selected_counts": {
+  "2": 1538,
+  "4": 1283,
+  "8": 1028,
+  "16": 1149
+ },
+ "gates": {
+  "minirocket": 0.7543,
+  "minirocket_ref": 0.7539,
+  "minirocket_diff": 0.00039999999999995595,
+  "flat_gh": 0.7568,
+  "flat_gh_ref": 0.7551,
+  "flat_gh_diff": 0.0017000000000000348
+ },
+ "results": {
+  "minirocket": {
+   "macro_f1": 0.7543,
+   "accuracy": 0.7577,
+   "selected_alpha": 29.763514416313132
+  },
+  "flat_gh": {
+   "macro_f1": 0.7568,
+   "accuracy": 0.7599,
+   "selected_alpha": 4.281332398719396
+  },
+  "hierarchical_budget": {
+   "macro_f1": 0.7299,
+   "accuracy": 0.7356,
+   "selected_alpha": 78.47599703514607
+  },
+  "hierarchical_full": {
+   "macro_f1": 0.7201,
+   "accuracy": 0.7261,
+   "selected_alpha": 545.5594781168514
+  }
+ },
+ "runtime_s": 3053.4036145210266
+}

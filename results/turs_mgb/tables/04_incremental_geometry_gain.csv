@@ -1,0 +1,17 @@
+dataset,delta_j,geometry,mf1_without
+ECG5000_UNBAL,0.0659,minus_G1_standard,0.4713
+ECG5000_UNBAL,0.0225,minus_G2_tail,0.5147
+ECG5000_UNBAL,0.0367,minus_G3_fine,0.5005
+ECG5000_UNBAL,0.1659,minus_G4_multilag,0.3712
+ECG5000_BAL,0.0032,minus_G1_standard,0.531
+ECG5000_BAL,0.0554,minus_G2_tail,0.4788
+ECG5000_BAL,-0.0007,minus_G3_fine,0.5349
+ECG5000_BAL,0.0525,minus_G4_multilag,0.4817
+CWRU_UNBAL,0.0111,minus_G1_standard,0.7122
+CWRU_UNBAL,0.0123,minus_G2_tail,0.711
+CWRU_UNBAL,-0.0036,minus_G3_fine,0.7269
+CWRU_UNBAL,-0.0123,minus_G4_multilag,0.7357
+CWRU_BAL,0.0131,minus_G1_standard,0.756
+CWRU_BAL,0.0043,minus_G2_tail,0.7648
+CWRU_BAL,0.0157,minus_G3_fine,0.7535
+CWRU_BAL,0.0445,minus_G4_multilag,0.7247

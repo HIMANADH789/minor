@@ -1,0 +1,28 @@
+{
+  "n_seeds": 3,
+  "val_macro_f1": [
+    0.9014,
+    0.9014,
+    0.8618
+  ],
+  "test_macro_f1": [
+    0.547,
+    0.5213,
+    0.5387
+  ],
+  "test_mean": 0.5357,
+  "test_std": 0.0107,
+  "test_min": 0.5213,
+  "test_max": 0.547,
+  "delta_vs_M0": [
+    0.0496,
+    0.0239,
+    0.0413
+  ],
+  "delta_mean": 0.0383,
+  "delta_std": 0.0107,
+  "n_improve_over_M0": 3,
+  "M0_reference": 0.4974,
+  "statistical_note": "n=3 seeds: descriptive mean +/- std only; no population-level significance claims",
+  "verdict": "ROBUST ACROSS TESTED SEEDS"
+}

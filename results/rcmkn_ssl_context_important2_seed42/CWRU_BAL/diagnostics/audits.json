@@ -1,0 +1,110 @@
+{
+  "audit1_config": {
+    "expected": {
+      "T": 1024,
+      "n_classes": 4,
+      "train": 2727,
+      "val": 482,
+      "test": 567
+    },
+    "actual": {
+      "T": 1024,
+      "n_classes": 4,
+      "train": 2727,
+      "val": 482,
+      "test": 567
+    },
+    "pass": true
+  },
+  "audit2_extractor_identity": {
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0
+  },
+  "r0_reference": {
+    "test_macro_f1": 0.993,
+    "drtn_ckpt": {
+      "best_val_mf1": 0.8718667090519381,
+      "epoch": 17,
+      "source": "checkpoint"
+    }
+  },
+  "audit8_causality_maxdiff": 0.0,
+  "regime_diagnostics": {
+    "train": {
+      "active_codes": 8,
+      "normalized_entropy": 0.9767931501378726,
+      "perplexity": 7.623108712521978,
+      "dominant_fraction": 0.1842976418861016,
+      "usage": [
+        0.07589098774929885,
+        0.1648363854588657,
+        0.09027923175054534,
+        0.16463249113820505,
+        0.1842976418861016,
+        0.08738788855562481,
+        0.10553357013477718,
+        0.12714180332658148
+      ],
+      "counts": [
+        249379.0,
+        541655.0,
+        296659.0,
+        540985.0,
+        605605.0,
+        287158.0,
+        346785.0,
+        417790.0
+      ]
+    },
+    "test": {
+      "active_codes": 8,
+      "normalized_entropy": 0.9773540016716831,
+      "perplexity": 7.632004410206935,
+      "dominant_fraction": 0.18296337632275134,
+      "usage": [
+        0.07526076113315697,
+        0.16421062059082892,
+        0.08967668375220458,
+        0.16418650793650794,
+        0.18296337632275134,
+        0.08875006889329806,
+        0.10803158068783068,
+        0.12692040068342153
+      ],
+      "counts": [
+        43697.0,
+        95342.0,
+        52067.0,
+        95328.0,
+        106230.0,
+        51529.0,
+        62724.0,
+        73691.0
+      ]
+    }
+  },
+  "audit13_14_occupancy_failures": 0,
+  "audit15_16_regime_arrays": {
+    "C1": {
+      "hash_trainva": "174c4ccc83d29073",
+      "hash_test": "ffdad469e3779c21",
+      "shares_memory_with_r2": false
+    },
+    "C2": {
+      "hash_trainva": "7bf50ecb2c4875d2",
+      "hash_test": "fc03da4e6b9a31b0",
+      "shares_memory_with_r2": false
+    },
+    "C1_vs_C2": {
+      "differing_positions": 2258830,
+      "fraction": 0.6874068781162356,
+      "identical": false
+    }
+  },
+  "audit6_independent_h_recompute_maxdiff": 3.950063387492264e-09,
+  "audit7_valid_region": {
+    "flipped_out_of_mask": 879392,
+    "h_changed": false,
+    "pass": true
+  }
+}

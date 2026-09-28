@@ -1,0 +1,314 @@
+{
+  "experiment": "Cell-C low-margin concentration diagnostic (Haptics, seed 42)",
+  "diagnostic_only": true,
+  "integrity": {
+    "expected": {
+      "n_test": 308,
+      "n_cell_c": 19,
+      "mr_test_mf1": 0.4974,
+      "drtn_test_mf1": 0.3467,
+      "matrix": {
+        "A": 99,
+        "B": 61,
+        "C": 19,
+        "D": 129
+      }
+    },
+    "checks": {
+      "n_test_ok": true,
+      "pred_identity_308": true,
+      "mr_mf1_ok": true,
+      "drtn_mf1_ok": true,
+      "matrix_ok": true,
+      "cell_c_from_csv_ok": true
+    },
+    "all_pass": true,
+    "mr_test_macro_f1": 0.4974200390566129,
+    "drtn_test_macro_f1": 0.34670671751158344,
+    "matrix": {
+      "A": 99,
+      "B": 61,
+      "C": 19,
+      "D": 129
+    },
+    "provenance": "MiniRocket(random_state=42) + RidgeClassifierCV(train+val refit) accepted as the frozen canonical system via 308/308 prediction identity with results/haptics_ensemble_seed42/predictions/test_per_sample.csv; margins = decision_function top1-top2",
+    "note_scaled_scores": "the ensemble CSV 'mr_scores' column held stacker-scaled scores (argmax mismatch 25/308) and was NOT used for margins"
+  },
+  "margin_definition": "top1 - top2 of canonical Ridge decision_function on test",
+  "margin_range": [
+    0.00020366907119750977,
+    1.824379563331604
+  ],
+  "quartile_analysis": {
+    "quantile_bounds": [
+      0.19843396544456482,
+      0.38603729009628296,
+      0.7082468867301941
+    ],
+    "tie_handling": "equal margins spanning a cut -> LOWER bucket (earlier buckets keep nominal size); ranks via searchsorted on unique margins; label-blind (verified: 0 tied margins)",
+    "rows": [
+      {
+        "bucket": "Q1 (0-25%)",
+        "margin_upper_bound": 0.198434,
+        "n": 77,
+        "fraction_of_test": 0.25,
+        "mr_accuracy": 0.3896,
+        "drtn_accuracy": 0.2727,
+        "cell_c_count": 10,
+        "cell_b_count": 19,
+        "cell_c_fraction_of_19": 0.5263,
+        "cell_c_rate_in_bucket": 0.1299,
+        "uniform_expected_cell_c": 4.75
+      },
+      {
+        "bucket": "Q2 (25-50%)",
+        "margin_upper_bound": 0.386037,
+        "n": 77,
+        "fraction_of_test": 0.25,
+        "mr_accuracy": 0.3247,
+        "drtn_accuracy": 0.2338,
+        "cell_c_count": 5,
+        "cell_b_count": 12,
+        "cell_c_fraction_of_19": 0.2632,
+        "cell_c_rate_in_bucket": 0.0649,
+        "uniform_expected_cell_c": 4.75
+      },
+      {
+        "bucket": "Q3 (50-75%)",
+        "margin_upper_bound": 0.708247,
+        "n": 77,
+        "fraction_of_test": 0.25,
+        "mr_accuracy": 0.5844,
+        "drtn_accuracy": 0.3766,
+        "cell_c_count": 4,
+        "cell_b_count": 20,
+        "cell_c_fraction_of_19": 0.2105,
+        "cell_c_rate_in_bucket": 0.0519,
+        "uniform_expected_cell_c": 4.75
+      },
+      {
+        "bucket": "Q4 (75-100%)",
+        "margin_upper_bound": null,
+        "n": 77,
+        "fraction_of_test": 0.25,
+        "mr_accuracy": 0.7792,
+        "drtn_accuracy": 0.6494,
+        "cell_c_count": 0,
+        "cell_b_count": 10,
+        "cell_c_fraction_of_19": 0.0,
+        "cell_c_rate_in_bucket": 0.0,
+        "uniform_expected_cell_c": 4.75
+      }
+    ],
+    "enrichment_Q1": 2.1052,
+    "enrichment_definition": "(fraction of the 19 Cell-C samples in Q1)/0.25; identically = Q1 Cell-C rate / overall Cell-C rate",
+    "overall_cell_c_rate": 0.0617,
+    "tests": {
+      "counts_by_quartile": [
+        10,
+        5,
+        4,
+        0
+      ],
+      "chi2_uniform": {
+        "stat": 10.684,
+        "df": 3,
+        "p": 0.013561971171149198,
+        "note": "exploratory: Cell-C vs uniform across quartiles"
+      },
+      "binomial_Q1_enrichment": {
+        "observed_in_Q1": 10,
+        "n": 19,
+        "p_uniform": 0.25,
+        "p_one_sided": 0.008903279303922318,
+        "note": "P(X >= observed) under Binomial(n=19, p=0.25)"
+      },
+      "binomial_Q4_absence": {
+        "observed_in_Q4": 0,
+        "n": 19,
+        "p_uniform": 0.25,
+        "p_one_sided": 0.004228282585245328,
+        "note": "P(X <= observed) under Binomial(n=19, p=0.25)"
+      },
+      "caveat": "post-hoc descriptive tests on the frozen result; n=19; no multiplicity control; not confirmatory"
+    }
+  },
+  "decile_analysis": {
+    "rows": [
+      {
+        "bucket": "D1",
+        "n": 31,
+        "mr_accuracy": 0.2581,
+        "drtn_accuracy": 0.1935,
+        "cell_c_count": 4,
+        "cell_b_count": 6,
+        "cell_c_rate_in_bucket": 0.129,
+        "cell_c_fraction_of_19": 0.2105
+      },
+      {
+        "bucket": "D2",
+        "n": 31,
+        "mr_accuracy": 0.4839,
+        "drtn_accuracy": 0.1935,
+        "cell_c_count": 2,
+        "cell_b_count": 11,
+        "cell_c_rate_in_bucket": 0.0645,
+        "cell_c_fraction_of_19": 0.1053
+      },
+      {
+        "bucket": "D3",
+        "n": 31,
+        "mr_accuracy": 0.5161,
+        "drtn_accuracy": 0.4516,
+        "cell_c_count": 4,
+        "cell_b_count": 6,
+        "cell_c_rate_in_bucket": 0.129,
+        "cell_c_fraction_of_19": 0.2105
+      },
+      {
+        "bucket": "D4",
+        "n": 31,
+        "mr_accuracy": 0.2581,
+        "drtn_accuracy": 0.1613,
+        "cell_c_count": 2,
+        "cell_b_count": 5,
+        "cell_c_rate_in_bucket": 0.0645,
+        "cell_c_fraction_of_19": 0.1053
+      },
+      {
+        "bucket": "D5",
+        "n": 30,
+        "mr_accuracy": 0.2667,
+        "drtn_accuracy": 0.2667,
+        "cell_c_count": 3,
+        "cell_b_count": 3,
+        "cell_c_rate_in_bucket": 0.1,
+        "cell_c_fraction_of_19": 0.1579
+      },
+      {
+        "bucket": "D6",
+        "n": 31,
+        "mr_accuracy": 0.5484,
+        "drtn_accuracy": 0.4194,
+        "cell_c_count": 2,
+        "cell_b_count": 6,
+        "cell_c_rate_in_bucket": 0.0645,
+        "cell_c_fraction_of_19": 0.1053
+      },
+      {
+        "bucket": "D7",
+        "n": 31,
+        "mr_accuracy": 0.5161,
+        "drtn_accuracy": 0.3871,
+        "cell_c_count": 2,
+        "cell_b_count": 6,
+        "cell_c_rate_in_bucket": 0.0645,
+        "cell_c_fraction_of_19": 0.1053
+      },
+      {
+        "bucket": "D8",
+        "n": 31,
+        "mr_accuracy": 0.7742,
+        "drtn_accuracy": 0.4839,
+        "cell_c_count": 0,
+        "cell_b_count": 9,
+        "cell_c_rate_in_bucket": 0.0,
+        "cell_c_fraction_of_19": 0.0
+      },
+      {
+        "bucket": "D9",
+        "n": 31,
+        "mr_accuracy": 0.7419,
+        "drtn_accuracy": 0.5806,
+        "cell_c_count": 0,
+        "cell_b_count": 5,
+        "cell_c_rate_in_bucket": 0.0,
+        "cell_c_fraction_of_19": 0.0
+      },
+      {
+        "bucket": "D10",
+        "n": 30,
+        "mr_accuracy": 0.8333,
+        "drtn_accuracy": 0.7,
+        "cell_c_count": 0,
+        "cell_b_count": 4,
+        "cell_c_rate_in_bucket": 0.0,
+        "cell_c_fraction_of_19": 0.0
+      }
+    ],
+    "enrichment_D1": 2.105,
+    "enrichment_definition": "(fraction of the 19 Cell-C samples in D1)/0.10"
+  },
+  "group_margin_statistics": {
+    "groups": {
+      "cell_C (MR wrong, DRTN correct)": {
+        "n": 19,
+        "median_margin": 0.190301,
+        "mean_margin": 0.23809,
+        "q25": 0.107046,
+        "q75": 0.355108
+      },
+      "MR correct": {
+        "n": 160,
+        "median_margin": 0.53916,
+        "mean_margin": 0.605283,
+        "q25": 0.255311,
+        "q75": 0.891864
+      },
+      "MR wrong & DRTN wrong (D)": {
+        "n": 129,
+        "median_margin": 0.311622,
+        "mean_margin": 0.377336,
+        "q25": 0.138567,
+        "q75": 0.489146
+      },
+      "all MR errors (C+D)": {
+        "n": 148,
+        "median_margin": 0.297649,
+        "mean_margin": 0.35946,
+        "q25": 0.132279,
+        "q75": 0.473265
+      }
+    },
+    "exploratory_tests": {
+      "cellC_vs_MRcorrect_mannwhitney": {
+        "statistic": 656.0,
+        "p_less": 2.6306079612854143e-05,
+        "note": "H1: Cell-C margins stochastically lower than MR-correct; exploratory"
+      },
+      "cellC_vs_bothwrong_mannwhitney": {
+        "statistic": 924.0,
+        "p_two_sided": 0.08445359753152928,
+        "note": "Cell-C vs other-MR-errors; exploratory"
+      },
+      "cellC_vs_allMRerrors_mannwhitney": {
+        "statistic": 1104.5,
+        "p_less": 0.06462692446199575,
+        "note": "H1: Cell-C margins lower than the average MR error; exploratory"
+      },
+      "caveat": "n_CellC=19; all tests are exploratory/underpowered; no significance claims are made"
+    }
+  },
+  "cell_c_sample_indices": [
+    32,
+    39,
+    63,
+    89,
+    101,
+    103,
+    154,
+    156,
+    160,
+    165,
+    182,
+    209,
+    235,
+    236,
+    268,
+    269,
+    288,
+    297,
+    302
+  ],
+  "decision_rule": "see report.md CASE 1/2/3 evaluation"
+}

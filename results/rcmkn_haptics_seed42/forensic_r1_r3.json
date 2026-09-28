@@ -1,0 +1,17 @@
+{
+  "regime_positions_differ_trainva": 142815,
+  "het_block_max_abs_diff": 0.25,
+  "alphas": {
+    "R1": 1438.44988828766,
+    "R3": 1438.44988828766,
+    "global_hydra_only": 1438.44988828766
+  },
+  "r1_equals_r3_predictions": true,
+  "r1_equals_global_hydra_only": true,
+  "r3_equals_global_hydra_only": true,
+  "test_macro_f1": {
+    "R1": 0.5123355359045721,
+    "R3": 0.5123355359045721,
+    "global_hydra_only": 0.5123355359045721
+  }
+}

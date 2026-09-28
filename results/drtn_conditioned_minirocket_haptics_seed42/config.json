@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "dataset": "Haptics",
+  "split": {
+    "train": 132,
+    "val": 23,
+    "test": 308
+  },
+  "T": 1092,
+  "n_classes": 5,
+  "n_features_total": 9996,
+  "n_global_features": 4998,
+  "n_heterogeneity_features": 4998,
+  "minirocket": "aeon MiniRocket(random_state=42)",
+  "ridge": "RidgeClassifierCV(alphas=np.logspace(-4,4,20))",
+  "drtn": "official seed-42 R5 checkpoint (frozen)",
+  "K_regimes": 8,
+  "min_regime_occupancy": 0.01
+}

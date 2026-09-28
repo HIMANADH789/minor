@@ -1,0 +1,18 @@
+{
+  "source_file": "experiments/fair_turs.py",
+  "function": "train_and_evaluate",
+  "protocol": {
+    "seed": 42,
+    "max_epochs": 30,
+    "patience": 8,
+    "lr": 0.0003,
+    "wd": 0.01,
+    "batch": 64,
+    "optimizer": "AdamW",
+    "scheduler": "OneCycleLR",
+    "grad_clip": 1.0,
+    "loss": "TURSLoss CE + aux",
+    "monitor": "val macro-F1"
+  },
+  "sha256_fair_turs": "4d9aad212cf4d0ff850808d3981d7235048e8a0a391b69977ce813476b0d1eb2"
+}

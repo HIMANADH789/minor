@@ -1,0 +1,11 @@
+{
+  "tag": "ECG5000_BAL",
+  "variant": "A0",
+  "best_val_mf1": 0.664765,
+  "test_macro_f1": 0.49622,
+  "elapsed_s": 1.9,
+  "seed": 42,
+  "params_trainable": 3845,
+  "params_fixed": 0,
+  "note": "Ridge on fixed-bank global PPV/strength features"
+}

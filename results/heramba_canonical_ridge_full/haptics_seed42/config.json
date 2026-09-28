@@ -1,0 +1,25 @@
+{
+ "seed": 42,
+ "gamma": 1.0,
+ "var_threshold": 0.95,
+ "alpha_grid": "logspace(-4,4,81) train-only GCV",
+ "gcv_rule": "n*RSS/(n-df)^2, exact df, train rows only",
+ "classifier": "one-hot generalized ridge, dual n-space solver",
+ "lam0_uniform": "ones(9996)",
+ "lam0_adaptive": "[1_G(4998), 1+gamma*rho_k^2 (K=29), 1_perp(4969)]",
+ "permutation_null": {
+  "S": 500,
+  "seed": 52042,
+  "role": "diagnostic only"
+ },
+ "fit_sets": {
+  "gates_ABC": "train+val (canonical convention)",
+  "dual_models": "train only (GCV)"
+ },
+ "paths": {
+  "G_trva": "C:/temp/results\\haptics_inference_banks_G_trva.npy",
+  "H_trva": "C:/temp/results\\haptics_inference_banks_H_trva.npy",
+  "G_te": "C:/temp/results\\haptics_inference_banks_G_te.npy",
+  "H_te": "C:/temp/results\\haptics_inference_banks_H_te.npy"
+ }
+}

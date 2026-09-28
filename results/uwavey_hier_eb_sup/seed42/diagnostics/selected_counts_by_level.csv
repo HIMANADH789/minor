@@ -1,0 +1,6 @@
+level,source_type,pool_columns,selected,share_of_final,share_of_pool
+0,root,19992,19294,0.965086,0.965086
+2,delta,29988,698,0.034914,0.023276
+4,delta,59976,0,0.000000,0.000000
+8,delta,119952,0,0.000000,0.000000
+16,delta,239904,0,0.000000,0.000000

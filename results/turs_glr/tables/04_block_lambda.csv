@@ -1,0 +1,5 @@
+coef_norm_global,coef_norm_local,d_global,d_local,dataset,lam_g,lam_l,local_share_median
+0.3655,6.5634,6144,839,ECG5000_UNBAL,1.0,0.1,0.529
+0.2594,8.5119,6144,839,ECG5000_BAL,100.0,0.01,0.5558
+0.071,73.3031,6144,839,CWRU_UNBAL,10.0,0.0001,0.7459
+4.1995,76.0633,6144,839,CWRU_BAL,0.0001,0.0001,0.7745

@@ -1,0 +1,19 @@
+{
+  "val_macro_f1": 0.9834,
+  "test_macro_f1": 0.9965,
+  "selected_alpha": 0.08858667904100823,
+  "seed": 42,
+  "runtime_s": 834.7,
+  "regimes_deterministic": false,
+  "regime_hash_te": "e5b0b53cdac5523d",
+  "context_train": {
+    "ssl_best_val": 0.261106,
+    "joint_best_val_mf1": 0.9875,
+    "avg_joint_losses": {
+      "commit": 28.39164,
+      "div": 114.94798,
+      "aux": 7.48729,
+      "ssl": 16.20294
+    }
+  }
+}

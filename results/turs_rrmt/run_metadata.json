@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-12 00:30:29",
+  "elapsed_s": 229.5,
+  "python": "3.11.9",
+  "torch": "2.5.1+cu121",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "seeds": {
+    "model": 42,
+    "bootstrap": 7200,
+    "permutation": 7300,
+    "interventions": 42
+  },
+  "checkpoints": {
+    "CWRU_BAL_A1": "3599cc8998e965c91d46045db8a3e25756714610b93c79f87f7f230171b64e1f",
+    "CWRU_BAL_A2": "ee16e665948a6207ac8f113f2f3e466d9e9774f7747416f3100dd9e1a24bed63",
+    "CWRU_BAL_A3": "a814844f944626da4ff38cd4d6b97e492cf344091d6dc4045ad33c4dee193da5",
+    "CWRU_BAL_A4": "d8a27f7abc3fde7fbb450dae5889adf91e12ba9f62f284c94a59b56be8e2f9d5",
+    "CWRU_BAL_A5": "2d35822e39c833ed6c1d14ea924b37dcf67ccb335d34e61557dc1fe707f3e032"
+  }
+}

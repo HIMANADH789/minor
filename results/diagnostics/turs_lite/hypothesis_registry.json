@@ -1,0 +1,2502 @@
+{
+  "ECG5000_UNBAL": [
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_first_diff",
+      "estimate": -0.02222222222222222,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.044444444444444446,
+        "baseline_hit": 0.06666666666666667,
+        "diff_ci": [
+          -0.08888888888888889,
+          0.044444444444444446
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_local_energy",
+      "estimate": 0.022222222222222223,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.044444444444444446,
+        "baseline_hit": 0.022222222222222223,
+        "diff_ci": [
+          0.0,
+          0.06666666666666667
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs random",
+      "estimate": 0.044444444444444446,
+      "p_value": 0.47950012218695337,
+      "extra": {
+        "turs_hit": 0.044444444444444446,
+        "baseline_hit": 0.0,
+        "diff_ci": [
+          0.0,
+          0.1111111111111111
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "val: u for incorrect > correct",
+      "estimate": 0.36417752995252806,
+      "p_value": 0.0015210274433346848,
+      "extra": {
+        "cliffs": 0.36417752995252806,
+        "n_inc": 23
+      },
+      "q_value": 0.0030026745935425253,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "test: u for incorrect > correct",
+      "estimate": 0.2421175101803374,
+      "p_value": 0.0030026745935425253,
+      "extra": {
+        "cliffs": 0.2421175101803374,
+        "n_inc": 45
+      },
+      "q_value": 0.0030026745935425253,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs 1_minus_maxsoftmax",
+      "estimate": -0.2786503781268179,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.6210587550901687,
+        "auroc_baseline": 0.8997091332169866
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs predictive_entropy",
+      "estimate": -0.2791390343222804,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.6210587550901687,
+        "auroc_baseline": 0.9001977894124491
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs top1_top2_margin",
+      "estimate": -0.27890634089586963,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.6210587550901687,
+        "auroc_baseline": 0.8999650959860384
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL gaussian_noise: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL gaussian_noise: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL amplitude_scale: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL amplitude_scale: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL baseline_shift: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL baseline_shift: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL temporal_jitter: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL temporal_jitter: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL localized_mask: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL localized_mask: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_UNBAL pooled degradations: u -> error",
+      "estimate": -0.09006197905695291,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "auroc": 0.4273285755996722,
+        "ci": [
+          0.4130212839317847,
+          0.4412646425085931
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs amplitude_std",
+      "estimate": -0.01654686698841024,
+      "p_value": 0.5962018990504747,
+      "extra": {
+        "ci": [
+          -0.08553088025283329,
+          0.050836249174842627
+        ]
+      },
+      "q_value": 0.5962018990504747,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs local_variance_mean",
+      "estimate": -0.5647976167976169,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.6116171303407273,
+          -0.5145163585412366
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs ks_stat_uniform",
+      "estimate": 0.4513458913458913,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.3947039321616866,
+          0.5065127471556582
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs hist_entropy",
+      "estimate": -0.33183957183957186,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.3958678851166974,
+          -0.2657532802535735
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs lag_disagreement",
+      "estimate": -0.8385110745110746,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.860939551471959,
+          -0.8149960795225034
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "ECG5000_UNBAL u_t: targeted>random p-drop (frac=0.1)",
+      "estimate": -0.002265346814529039,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.004132001173192596,
+          -0.0005175532518818122
+        ],
+        "cohens_d": -0.2406609479807264
+      },
+      "q_value": 0.0009995002498750624,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "ECG5000_UNBAL s_t: targeted>random p-drop (frac=0.1)",
+      "estimate": 0.0034581602886707215,
+      "p_value": 0.5537231384307846,
+      "extra": {
+        "ci": [
+          -0.00021002755963612043,
+          0.007293667050582975
+        ],
+        "cohens_d": 0.039633165851566614
+      },
+      "q_value": 0.5537231384307846,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_UNBAL amp_scale_0.95: prediction agreement",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0005354858585633337
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_UNBAL amp_scale_1.05: prediction agreement",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0004257424152456224
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_UNBAL baseline_0.1sd: prediction agreement",
+      "estimate": 0.9966666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0024594224523752928
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_UNBAL noise_0.02: prediction agreement",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 6.276324711507186e-05
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_UNBAL jitter_2: prediction agreement",
+      "estimate": 0.9866666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.04442641884088516
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "paired permutation",
+      "comparison": "ECG5000_UNBAL: high-s_t edit > random edit (prob drop, frac=0.1)",
+      "estimate": 0.02274397055424439,
+      "p_value": 0.11144427786106946,
+      "extra": {
+        "ci": [
+          -0.005812350916423982,
+          0.05127827989516659
+        ],
+        "cohens_d": 0.09054528467374531
+      },
+      "q_value": 0.11144427786106946,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "McNemar",
+      "comparison": "ECG5000_UNBAL: flip rate high-s_t vs random edit",
+      "estimate": 0.05666666666666667,
+      "p_value": 0.005348770520482035,
+      "extra": {
+        "flip_target": 0.12666666666666668,
+        "flip_random": 0.07
+      },
+      "q_value": 0.01069754104096407,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_UNBAL: turs_u_mean vs turs_u_max",
+      "estimate": -0.0543705612138678,
+      "p_value": 0.002997002997002997,
+      "extra": {
+        "ci": [
+          -0.09048331630942213,
+          -0.019266611659811497
+        ]
+      },
+      "q_value": 0.002997002997002997,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_UNBAL: turs_u_mean vs 1_minus_max_softmax",
+      "estimate": -0.2789231023335251,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.3864854601193774,
+          -0.17608931867708116
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_UNBAL: turs_u_mean vs predictive_entropy",
+      "estimate": -0.27938193970123054,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.38716198341225344,
+          -0.17674052645976912
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_UNBAL: turs_u_mean vs top1_top2_margin_neg",
+      "estimate": -0.27922273593295016,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.38488175894465076,
+          -0.17610732032020918
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_UNBAL: turs_u_max vs 1_minus_max_softmax",
+      "estimate": -0.22455254111965722,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.3145939499709132,
+          -0.13514794315876907
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_UNBAL: turs_u_max vs predictive_entropy",
+      "estimate": -0.22501137848736272,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.3162443280977311,
+          -0.1332790509699505
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_UNBAL: turs_u_max vs top1_top2_margin_neg",
+      "estimate": -0.2248521747190824,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.31448545424199875,
+          -0.13695977016096358
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    }
+  ],
+  "ECG5000_BAL": [
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_first_diff",
+      "estimate": -0.04444444444444444,
+      "p_value": 0.6170750774519739,
+      "extra": {
+        "turs_hit": 0.022222222222222223,
+        "baseline_hit": 0.06666666666666667,
+        "diff_ci": [
+          -0.13333333333333333,
+          0.04444444444444444
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_local_energy",
+      "estimate": 0.0,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.022222222222222223,
+        "baseline_hit": 0.022222222222222223,
+        "diff_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs random",
+      "estimate": 0.022222222222222223,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.022222222222222223,
+        "baseline_hit": 0.0,
+        "diff_ci": [
+          0.0,
+          0.06666666666666667
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "val: u for incorrect > correct",
+      "estimate": 0.04775129213916532,
+      "p_value": 0.3307836034366786,
+      "extra": {
+        "cliffs": 0.04775129213916532,
+        "n_inc": 29
+      },
+      "q_value": 0.35283272050548464,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "test: u for incorrect > correct",
+      "estimate": 0.034817772578142885,
+      "p_value": 0.35283272050548464,
+      "extra": {
+        "cliffs": 0.034817772578142885,
+        "n_inc": 41
+      },
+      "q_value": 0.35283272050548464,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs 1_minus_maxsoftmax",
+      "estimate": -0.3819527454920014,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.5174088862890714,
+        "auroc_baseline": 0.8993616317810729
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs predictive_entropy",
+      "estimate": -0.38126605457921103,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.5174088862890714,
+        "auroc_baseline": 0.8986749408682825
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs top1_top2_margin",
+      "estimate": -0.3816984155243013,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.5174088862890714,
+        "auroc_baseline": 0.8991073018133727
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL gaussian_noise: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL gaussian_noise: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL amplitude_scale: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL amplitude_scale: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL baseline_shift: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL baseline_shift: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL temporal_jitter: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL temporal_jitter: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL localized_mask: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL localized_mask: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "ECG5000_BAL pooled degradations: u -> error",
+      "estimate": 0.007458062809903088,
+      "p_value": 0.46276861569215394,
+      "extra": {
+        "auroc": 0.5053427369691595,
+        "ci": [
+          0.49163304574342304,
+          0.5188193171741058
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs amplitude_std",
+      "estimate": 0.006095138348358104,
+      "p_value": 0.8380809595202399,
+      "extra": {
+        "ci": [
+          -0.05898077199623283,
+          0.07311713960000792
+        ]
+      },
+      "q_value": 0.8380809595202399,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs local_variance_mean",
+      "estimate": 0.2463772983772984,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.18853980688580615,
+          0.30390605476813204
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs ks_stat_uniform",
+      "estimate": -0.5219940419940421,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.564992617766885,
+          -0.4736617604206464
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs hist_entropy",
+      "estimate": 0.2752522072522073,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.2112790399653205,
+          0.33414761282781186
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs lag_disagreement",
+      "estimate": 0.23572573972573976,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.1709402198594048,
+          0.29840096015649814
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "ECG5000_BAL u_t: targeted>random p-drop (frac=0.1)",
+      "estimate": -0.018216158011809966,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.03570805493766481,
+          -0.0021420288689501083
+        ],
+        "cohens_d": -0.18196893051223254
+      },
+      "q_value": 0.0009995002498750624,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "ECG5000_BAL s_t: targeted>random p-drop (frac=0.1)",
+      "estimate": 0.007201532173297286,
+      "p_value": 0.6081959020489756,
+      "extra": {
+        "ci": [
+          -0.011396266023208453,
+          0.026875379398743078
+        ],
+        "cohens_d": 0.02896984223085267
+      },
+      "q_value": 0.6081959020489756,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_BAL amp_scale_0.95: prediction agreement",
+      "estimate": 0.9866666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.007564587518572807
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_BAL amp_scale_1.05: prediction agreement",
+      "estimate": 0.9966666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0058544292114675045
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_BAL baseline_0.1sd: prediction agreement",
+      "estimate": 0.9733333333333334,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.030495617538690567
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_BAL noise_0.02: prediction agreement",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.001877250848338008
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "ECG5000_BAL jitter_2: prediction agreement",
+      "estimate": 0.95,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.21474802494049072
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "paired permutation",
+      "comparison": "ECG5000_BAL: high-s_t edit > random edit (prob drop, frac=0.1)",
+      "estimate": 0.08765927579817497,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.051048866168502474,
+          0.12660567536623019
+        ],
+        "cohens_d": 0.2610411244161732
+      },
+      "q_value": 0.0004997501249375312,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "counterfactual",
+      "test": "McNemar",
+      "comparison": "ECG5000_BAL: flip rate high-s_t vs random edit",
+      "estimate": 0.09333333333333334,
+      "p_value": 1.9628540586952144e-05,
+      "extra": {
+        "flip_target": 0.15666666666666668,
+        "flip_random": 0.06333333333333334
+      },
+      "q_value": 3.925708117390429e-05,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_BAL: turs_u_mean vs turs_u_max",
+      "estimate": -0.17514403969362602,
+      "p_value": 0.011988011988011988,
+      "extra": {
+        "ci": [
+          -0.30308830727176805,
+          -0.052468493892918855
+        ]
+      },
+      "q_value": 0.011988011988011988,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_BAL: turs_u_mean vs 1_minus_max_softmax",
+      "estimate": -0.3817347266580572,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.48942254296764987,
+          -0.2830337308012584
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_BAL: turs_u_mean vs predictive_entropy",
+      "estimate": -0.38103256104693217,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.48956991740541383,
+          -0.2821313555668062
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_BAL: turs_u_mean vs top1_top2_margin_neg",
+      "estimate": -0.38148870377424293,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.4892560339386616,
+          -0.2826700346386936
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_BAL: turs_u_max vs 1_minus_max_softmax",
+      "estimate": -0.20659068696443114,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.28920424114534843,
+          -0.12642339544513456
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_BAL: turs_u_max vs predictive_entropy",
+      "estimate": -0.20588852135330615,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.2888094672702965,
+          -0.12486146632566066
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "ECG5000_BAL: turs_u_max vs top1_top2_margin_neg",
+      "estimate": -0.2063446640806169,
+      "p_value": 0.000999000999000999,
+      "extra": {
+        "ci": [
+          -0.2894581050156299,
+          -0.12644927536231887
+        ]
+      },
+      "q_value": 0.0011655011655011655,
+      "alpha": 0.05,
+      "significant": true
+    }
+  ],
+  "CWRU_UNBAL": [
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_first_diff",
+      "estimate": -0.075,
+      "p_value": 0.24821307898992026,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.075,
+        "diff_ci": [
+          -0.175,
+          0.0
+        ]
+      },
+      "q_value": 0.7446392369697608,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_local_energy",
+      "estimate": 0.0,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.0,
+        "diff_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs random",
+      "estimate": -0.025,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.025,
+        "diff_ci": [
+          -0.075,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "val: u for incorrect > correct",
+      "estimate": 0.6144329896907217,
+      "p_value": 0.0005356390881545923,
+      "extra": {
+        "cliffs": 0.6144329896907217,
+        "n_inc": 10
+      },
+      "q_value": 0.0009840451296452227,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "test: u for incorrect > correct",
+      "estimate": 0.5307017543859649,
+      "p_value": 0.0009840451296452227,
+      "extra": {
+        "cliffs": 0.5307017543859649,
+        "n_inc": 12
+      },
+      "q_value": 0.0009840451296452227,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs 1_minus_maxsoftmax",
+      "estimate": -0.13486842105263153,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7653508771929824,
+        "auroc_baseline": 0.900219298245614
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs predictive_entropy",
+      "estimate": -0.13486842105263164,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7653508771929824,
+        "auroc_baseline": 0.9002192982456141
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs top1_top2_margin",
+      "estimate": -0.13377192982456132,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7653508771929824,
+        "auroc_baseline": 0.8991228070175438
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL gaussian_noise: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL gaussian_noise: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL amplitude_scale: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL amplitude_scale: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL baseline_shift: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL baseline_shift: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL temporal_jitter: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL temporal_jitter: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL localized_mask: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL localized_mask: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_UNBAL pooled degradations: u -> error",
+      "estimate": 0.25002942919447685,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "auroc": 0.7083233540000986,
+        "ci": [
+          0.687189116290414,
+          0.7286093715253118
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs amplitude_std",
+      "estimate": 0.00019932042740077803,
+      "p_value": 0.999000499750125,
+      "extra": {
+        "ci": [
+          -0.12491070098831443,
+          0.12146485705661467
+        ]
+      },
+      "q_value": 0.9990004997501248,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs local_variance_mean",
+      "estimate": -0.5537778433653361,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.644814589037089,
+          -0.4343076429894484
+        ]
+      },
+      "q_value": 0.001249375312343828,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs ks_stat_uniform",
+      "estimate": -0.0015590548447021646,
+      "p_value": 0.9770114942528736,
+      "extra": {
+        "ci": [
+          -0.13719957830171417,
+          0.13697126889358088
+        ]
+      },
+      "q_value": 0.9990004997501248,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs hist_entropy",
+      "estimate": -0.03322193093630097,
+      "p_value": 0.6036981509245377,
+      "extra": {
+        "ci": [
+          -0.16337728516143943,
+          0.09969011868181996
+        ]
+      },
+      "q_value": 0.9990004997501248,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs lag_disagreement",
+      "estimate": 0.7327106373374537,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.6759553139463961,
+          0.782099225091029
+        ]
+      },
+      "q_value": 0.001249375312343828,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "CWRU_UNBAL u_t: targeted>random p-drop (frac=0.1)",
+      "estimate": 0.00025510782919203195,
+      "p_value": 0.1664167916041979,
+      "extra": {
+        "ci": [
+          -0.013834513260129216,
+          0.014535955761481692
+        ],
+        "cohens_d": 0.0892776196165054
+      },
+      "q_value": 0.3328335832083958,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "CWRU_UNBAL s_t: targeted>random p-drop (frac=0.1)",
+      "estimate": 0.0028732238220982257,
+      "p_value": 0.5342328835582209,
+      "extra": {
+        "ci": [
+          -0.018422342997898033,
+          0.024165820366858194
+        ],
+        "cohens_d": 0.04230729344593159
+      },
+      "q_value": 0.5342328835582209,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_UNBAL amp_scale_0.95: prediction agreement",
+      "estimate": 0.9958333333333333,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0019255048828199506
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_UNBAL amp_scale_1.05: prediction agreement",
+      "estimate": 0.9916666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.002011698205024004
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_UNBAL baseline_0.1sd: prediction agreement",
+      "estimate": 0.9583333333333334,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.022105883806943893
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_UNBAL noise_0.02: prediction agreement",
+      "estimate": 0.9958333333333333,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.000179666283656843
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_UNBAL jitter_2: prediction agreement",
+      "estimate": 0.9875,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.008970988914370537
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "paired permutation",
+      "comparison": "CWRU_UNBAL: high-s_t edit > random edit (prob drop, frac=0.1)",
+      "estimate": -0.03254440662761529,
+      "p_value": 0.12193903048475763,
+      "extra": {
+        "ci": [
+          -0.07170927599576923,
+          0.008794571615289825
+        ],
+        "cohens_d": -0.09829744343572897
+      },
+      "q_value": 0.24387806096951525,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "McNemar",
+      "comparison": "CWRU_UNBAL: flip rate high-s_t vs random edit",
+      "estimate": -0.024999999999999994,
+      "p_value": 0.41730416562740436,
+      "extra": {
+        "flip_target": 0.15416666666666667,
+        "flip_random": 0.17916666666666667
+      },
+      "q_value": 0.41730416562740436,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_UNBAL: turs_u_mean vs turs_u_max",
+      "estimate": 0.2275265038497292,
+      "p_value": 0.055944055944055944,
+      "extra": {
+        "ci": [
+          0.12999653246363782,
+          0.3187205387205386
+        ]
+      },
+      "q_value": 0.055944055944055944,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_UNBAL: turs_u_mean vs 1_minus_max_softmax",
+      "estimate": -0.13368464320693899,
+      "p_value": 0.04395604395604396,
+      "extra": {
+        "ci": [
+          -0.23395843753697546,
+          -0.041027784490049575
+        ]
+      },
+      "q_value": 0.05128205128205129,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_UNBAL: turs_u_mean vs predictive_entropy",
+      "estimate": -0.1337595536103882,
+      "p_value": 0.04295704295704296,
+      "extra": {
+        "ci": [
+          -0.23716462846964845,
+          -0.038298928146089754
+        ]
+      },
+      "q_value": 0.05128205128205129,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_UNBAL: turs_u_mean vs top1_top2_margin_neg",
+      "estimate": -0.13263600013458057,
+      "p_value": 0.04295704295704296,
+      "extra": {
+        "ci": [
+          -0.22968793528830017,
+          -0.04280112173125279
+        ]
+      },
+      "q_value": 0.05128205128205129,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_UNBAL: turs_u_max vs 1_minus_max_softmax",
+      "estimate": -0.36121114705666824,
+      "p_value": 0.003996003996003996,
+      "extra": {
+        "ci": [
+          -0.5018858351601226,
+          -0.22791948051948063
+        ]
+      },
+      "q_value": 0.009324009324009324,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_UNBAL: turs_u_max vs predictive_entropy",
+      "estimate": -0.3612860574601174,
+      "p_value": 0.002997002997002997,
+      "extra": {
+        "ci": [
+          -0.5056636793506691,
+          -0.2241414473684212
+        ]
+      },
+      "q_value": 0.009324009324009324,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_UNBAL: turs_u_max vs top1_top2_margin_neg",
+      "estimate": -0.36016250398430977,
+      "p_value": 0.003996003996003996,
+      "extra": {
+        "ci": [
+          -0.49606698527765336,
+          -0.2291833333333334
+        ]
+      },
+      "q_value": 0.009324009324009324,
+      "alpha": 0.05,
+      "significant": true
+    }
+  ],
+  "CWRU_BAL": [
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_first_diff",
+      "estimate": 0.0,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.0,
+        "diff_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_local_energy",
+      "estimate": -0.025,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.025,
+        "diff_ci": [
+          -0.075,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs random",
+      "estimate": -0.025,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.025,
+        "diff_ci": [
+          -0.075,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "val: u for incorrect > correct",
+      "estimate": 0.44505494505494503,
+      "p_value": 0.0022686378774260095,
+      "extra": {
+        "cliffs": 0.44505494505494503,
+        "n_inc": 14
+      },
+      "q_value": 0.0022686378774260095,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "test: u for incorrect > correct",
+      "estimate": 0.4942414332432817,
+      "p_value": 1.0248812050659643e-05,
+      "extra": {
+        "cliffs": 0.4942414332432817,
+        "n_inc": 26
+      },
+      "q_value": 2.0497624101319287e-05,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs 1_minus_maxsoftmax",
+      "estimate": -0.17972415754301152,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7471207166216408,
+        "auroc_baseline": 0.9268448741646523
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs predictive_entropy",
+      "estimate": -0.17951087729276272,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7471207166216408,
+        "auroc_baseline": 0.9266315939144035
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs top1_top2_margin",
+      "estimate": -0.1790487700838903,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7471207166216408,
+        "auroc_baseline": 0.9261694867055311
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL gaussian_noise: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL gaussian_noise: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL amplitude_scale: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL amplitude_scale: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL baseline_shift: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL baseline_shift: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL temporal_jitter: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL temporal_jitter: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL localized_mask: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL localized_mask: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL pooled degradations: u -> error",
+      "estimate": -0.2568532453426572,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "auroc": 0.29925815980239096,
+        "ci": [
+          0.28263152619272747,
+          0.31603682997266014
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs amplitude_std",
+      "estimate": -0.05609175661381111,
+      "p_value": 0.16691654172913542,
+      "extra": {
+        "ci": [
+          -0.14176212471772212,
+          0.024765543480051673
+        ]
+      },
+      "q_value": 0.16691654172913542,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs local_variance_mean",
+      "estimate": -0.3655646086965452,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.4384270316702989,
+          -0.2855804814820034
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs ks_stat_uniform",
+      "estimate": 0.311547929113748,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.22364114235988825,
+          0.3953535068660834
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs hist_entropy",
+      "estimate": -0.2774611285037802,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.3600109958308757,
+          -0.19487980306723743
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs lag_disagreement",
+      "estimate": 0.3306181810138412,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.25182707592736775,
+          0.39844990102821043
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "CWRU_BAL u_t: targeted>random p-drop (frac=0.1)",
+      "estimate": -0.0037013285735156384,
+      "p_value": 0.16841579210394803,
+      "extra": {
+        "ci": [
+          -0.012674898904030365,
+          0.0046055636440966415
+        ],
+        "cohens_d": -0.08204462720222284
+      },
+      "q_value": 0.16841579210394803,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "CWRU_BAL s_t: targeted>random p-drop (frac=0.1)",
+      "estimate": 0.014348745329771189,
+      "p_value": 0.00849575212393803,
+      "extra": {
+        "ci": [
+          -0.0030213086232639954,
+          0.032314913646162784
+        ],
+        "cohens_d": 0.14768199776061777
+      },
+      "q_value": 0.01699150424787606,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL amp_scale_0.95: prediction agreement",
+      "estimate": 0.9966666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0016012110281735659
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL amp_scale_1.05: prediction agreement",
+      "estimate": 0.9933333333333333,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.002076361095532775
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL baseline_0.1sd: prediction agreement",
+      "estimate": 0.99,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.010552971623837948
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL noise_0.02: prediction agreement",
+      "estimate": 0.9966666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0002056221419479698
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL jitter_2: prediction agreement",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.00035926041891798377
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "paired permutation",
+      "comparison": "CWRU_BAL: high-s_t edit > random edit (prob drop, frac=0.1)",
+      "estimate": 0.02923810450593009,
+      "p_value": 0.10994502748625687,
+      "extra": {
+        "ci": [
+          -0.005546145881875399,
+          0.06449306914206436
+        ],
+        "cohens_d": 0.09413813774742805
+      },
+      "q_value": 0.15472892348537437,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "McNemar",
+      "comparison": "CWRU_BAL: flip rate high-s_t vs random edit",
+      "estimate": 0.03333333333333334,
+      "p_value": 0.15472892348537437,
+      "extra": {
+        "flip_target": 0.14333333333333334,
+        "flip_random": 0.11
+      },
+      "q_value": 0.15472892348537437,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs turs_u_max",
+      "estimate": -0.019954397066626044,
+      "p_value": 0.7672327672327672,
+      "extra": {
+        "ci": [
+          -0.08243269862866227,
+          0.04542601150427588
+        ]
+      },
+      "q_value": 0.7672327672327672,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs 1_minus_max_softmax",
+      "estimate": -0.178600857665796,
+      "p_value": 0.015984015984015984,
+      "extra": {
+        "ci": [
+          -0.24826323801042907,
+          -0.1074856297005394
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs predictive_entropy",
+      "estimate": -0.17843357331301116,
+      "p_value": 0.015984015984015984,
+      "extra": {
+        "ci": [
+          -0.24810750030475381,
+          -0.10840593030690546
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs top1_top2_margin_neg",
+      "estimate": -0.17788606011603025,
+      "p_value": 0.014985014985014986,
+      "extra": {
+        "ci": [
+          -0.24830325374940607,
+          -0.10586815414383466
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_max vs 1_minus_max_softmax",
+      "estimate": -0.15864646059916998,
+      "p_value": 0.007992007992007992,
+      "extra": {
+        "ci": [
+          -0.20794544192731343,
+          -0.10968108046759727
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_max vs predictive_entropy",
+      "estimate": -0.1584791762463851,
+      "p_value": 0.007992007992007992,
+      "extra": {
+        "ci": [
+          -0.20770903797444987,
+          -0.11009959141981607
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_max vs top1_top2_margin_neg",
+      "estimate": -0.15793166304940423,
+      "p_value": 0.007992007992007992,
+      "extra": {
+        "ci": [
+          -0.20790408366135382,
+          -0.1077871410736579
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "objective": "Explain M2 == M3 in the Haptics 3-seed conditioned MiniROCKET run",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "finding": {
+    "m2_current_vs_m3_identical": {
+      "42": false,
+      "43": false,
+      "44": false
+    },
+    "m2_spec_vs_m3_identical": {
+      "42": false,
+      "43": false,
+      "44": false
+    }
+  },
+  "occupancy_checks": {
+    "42": {
+      "m2spec_per_sample_occupancy_preserved_trva": true,
+      "m2spec_per_sample_occupancy_preserved_test": true,
+      "m3_per_sample_occupancy_preserved_trva": true,
+      "m3_per_sample_occupancy_preserved_test": true,
+      "m2current_per_sample_occupancy_preserved_trva": false,
+      "m2current_per_sample_occupancy_preserved_test": false
+    },
+    "43": {
+      "m2spec_per_sample_occupancy_preserved_trva": true,
+      "m2spec_per_sample_occupancy_preserved_test": true,
+      "m3_per_sample_occupancy_preserved_trva": true,
+      "m3_per_sample_occupancy_preserved_test": true,
+      "m2current_per_sample_occupancy_preserved_trva": false,
+      "m2current_per_sample_occupancy_preserved_test": false
+    },
+    "44": {
+      "m2spec_per_sample_occupancy_preserved_trva": true,
+      "m2spec_per_sample_occupancy_preserved_test": true,
+      "m3_per_sample_occupancy_preserved_trva": true,
+      "m3_per_sample_occupancy_preserved_test": true,
+      "m2current_per_sample_occupancy_preserved_trva": false,
+      "m2current_per_sample_occupancy_preserved_test": false
+    }
+  }
+}

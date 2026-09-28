@@ -1,0 +1,20 @@
+{
+ "tree_meta": {
+  "n_latents": 239715,
+  "latent_dim": 32,
+  "max_depth": 4,
+  "splitter": "sklearn KMeans(n_clusters=2, n_init=10, random_state=42) per node",
+  "child_rule": "children of level-d id p are 2p (bit 0), 2p+1 (bit 1); bit-0 child has smaller first centroid coordinate",
+  "level_ids": "binary path ids; ancestor of b at level l is b >> (l_fine - l)",
+  "singleton_fallbacks": 0,
+  "input": "pooled TRAIN SSLTemporalEncoder latents (R^32)"
+ },
+ "level_sizes": [
+  1,
+  2,
+  4,
+  8,
+  16
+ ],
+ "occupied_regimes_level16_train": 16
+}

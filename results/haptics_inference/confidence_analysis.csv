@@ -1,0 +1,7 @@
+model,brier,ece_10bin,mean_conf_correct,mean_conf_incorrect,mean_margin,mean_entropy,n
+MiniROCKET,0.651,0.2106,0.3278,0.3101,0.0927,1.5351,
+R5_5050,0.5563,0.222,0.3589,0.3221,0.1188,1.5143,
+group:both_correct,,,0.3716,0.3303,,,149
+group:R5_only_correct,,,0.2834,0.3065,,,25
+group:M0_only_correct,,,0.2792,0.2936,,,11
+group:both_wrong,,,0.326,0.3108,,,123

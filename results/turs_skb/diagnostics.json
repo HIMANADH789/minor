@@ -1,0 +1,438 @@
+{
+  "ECG5000_UNBAL": {
+    "sanity_blocks": [
+      {
+        "block": "MiniROCKET",
+        "n_features": 9996,
+        "mean": 0.498293,
+        "std": 0.313813,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "morphological",
+        "n_features": 675,
+        "mean": 0.465386,
+        "std": 0.351737,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "derivative",
+        "n_features": 126,
+        "mean": 0.465385,
+        "std": 0.291732,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "wavelet",
+        "n_features": 342,
+        "mean": 0.465385,
+        "std": 0.301722,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "gabor",
+        "n_features": 540,
+        "mean": 0.465387,
+        "std": 0.317883,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "energy",
+        "n_features": 108,
+        "mean": 0.465387,
+        "std": 0.299879,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      }
+    ],
+    "diagnostics": {
+      "cka_vs_mr": {
+        "morphological": 0.704097,
+        "derivative": 0.930218,
+        "wavelet": 0.648083,
+        "gabor": 0.502312,
+        "energy": 0.27576
+      },
+      "mean_abs_corr_vs_mr": {
+        "morphological": 0.30082,
+        "derivative": 0.360618,
+        "wavelet": 0.323252,
+        "gabor": 0.222289,
+        "energy": 0.228577
+      },
+      "family_self_cka": {
+        "morphological|derivative": 0.696946,
+        "morphological|wavelet": 0.724989,
+        "morphological|gabor": 0.693077,
+        "morphological|energy": 0.308357,
+        "derivative|wavelet": 0.56654,
+        "derivative|gabor": 0.446136,
+        "derivative|energy": 0.248456,
+        "wavelet|gabor": 0.740983,
+        "wavelet|energy": 0.223984,
+        "gabor|energy": 0.21875
+      },
+      "duplicates_collapsed": {
+        "morphological": 65,
+        "derivative": 18,
+        "wavelet": 154,
+        "gabor": 132,
+        "energy": 0
+      }
+    },
+    "val_screening": {
+      "M0": 0.6405,
+      "morphological": 0.6105,
+      "derivative": 0.6333,
+      "wavelet": 0.6306,
+      "gabor": 0.6029,
+      "energy": 0.619
+    },
+    "promising": []
+  },
+  "ECG5000_BAL": {
+    "sanity_blocks": [
+      {
+        "block": "MiniROCKET",
+        "n_features": 9996,
+        "mean": 0.499305,
+        "std": 0.31219,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "morphological",
+        "n_features": 675,
+        "mean": 0.465385,
+        "std": 0.355915,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "derivative",
+        "n_features": 126,
+        "mean": 0.465385,
+        "std": 0.294221,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "wavelet",
+        "n_features": 342,
+        "mean": 0.465385,
+        "std": 0.305087,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "gabor",
+        "n_features": 540,
+        "mean": 0.465385,
+        "std": 0.324993,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "energy",
+        "n_features": 108,
+        "mean": 0.465386,
+        "std": 0.308267,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      }
+    ],
+    "diagnostics": {
+      "cka_vs_mr": {
+        "morphological": 0.596245,
+        "derivative": 0.882648,
+        "wavelet": 0.565142,
+        "gabor": 0.483054,
+        "energy": 0.268816
+      },
+      "mean_abs_corr_vs_mr": {
+        "morphological": 0.271788,
+        "derivative": 0.34035,
+        "wavelet": 0.304116,
+        "gabor": 0.229824,
+        "energy": 0.235341
+      },
+      "family_self_cka": {
+        "morphological|derivative": 0.593146,
+        "morphological|wavelet": 0.594446,
+        "morphological|gabor": 0.718788,
+        "morphological|energy": 0.237533,
+        "derivative|wavelet": 0.473617,
+        "derivative|gabor": 0.433894,
+        "derivative|energy": 0.23183,
+        "wavelet|gabor": 0.68237,
+        "wavelet|energy": 0.212187,
+        "gabor|energy": 0.227654
+      },
+      "duplicates_collapsed": {
+        "morphological": 65,
+        "derivative": 18,
+        "wavelet": 154,
+        "gabor": 132,
+        "energy": 0
+      }
+    },
+    "val_screening": {
+      "M0": 0.9546,
+      "morphological": 0.9514,
+      "derivative": 0.9542,
+      "wavelet": 0.9557,
+      "gabor": 0.9506,
+      "energy": 0.9501
+    },
+    "promising": [
+      "wavelet"
+    ]
+  },
+  "CWRU_UNBAL": {
+    "sanity_blocks": [
+      {
+        "block": "MiniROCKET",
+        "n_features": 9996,
+        "mean": 0.500127,
+        "std": 0.29029,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "morphological",
+        "n_features": 1080,
+        "mean": 0.465388,
+        "std": 0.294759,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "derivative",
+        "n_features": 144,
+        "mean": 0.465386,
+        "std": 0.272053,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "wavelet",
+        "n_features": 576,
+        "mean": 0.465387,
+        "std": 0.28654,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "gabor",
+        "n_features": 1728,
+        "mean": 0.46539,
+        "std": 0.307891,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "energy",
+        "n_features": 108,
+        "mean": 0.465386,
+        "std": 0.28092,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      }
+    ],
+    "diagnostics": {
+      "cka_vs_mr": {
+        "morphological": 0.562727,
+        "derivative": 0.901805,
+        "wavelet": 0.575023,
+        "gabor": 0.48295,
+        "energy": 0.817123
+      },
+      "mean_abs_corr_vs_mr": {
+        "morphological": 0.333545,
+        "derivative": 0.426595,
+        "wavelet": 0.382566,
+        "gabor": 0.326495,
+        "energy": 0.428305
+      },
+      "family_self_cka": {
+        "morphological|derivative": 0.594185,
+        "morphological|wavelet": 0.664725,
+        "morphological|gabor": 0.735182,
+        "morphological|energy": 0.532712,
+        "derivative|wavelet": 0.613123,
+        "derivative|gabor": 0.511061,
+        "derivative|energy": 0.754292,
+        "wavelet|gabor": 0.738442,
+        "wavelet|energy": 0.464303,
+        "gabor|energy": 0.400846
+      },
+      "duplicates_collapsed": {
+        "morphological": 20,
+        "derivative": 16,
+        "wavelet": 128,
+        "gabor": 0,
+        "energy": 0
+      }
+    },
+    "val_screening": {
+      "M0": 0.9804,
+      "morphological": 0.9608,
+      "derivative": 0.9804,
+      "wavelet": 0.9755,
+      "gabor": 0.9657,
+      "energy": 0.9902
+    },
+    "promising": [
+      "energy"
+    ]
+  },
+  "CWRU_BAL": {
+    "sanity_blocks": [
+      {
+        "block": "MiniROCKET",
+        "n_features": 9996,
+        "mean": 0.499532,
+        "std": 0.28992,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "morphological",
+        "n_features": 1080,
+        "mean": 0.465386,
+        "std": 0.294928,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "derivative",
+        "n_features": 144,
+        "mean": 0.465386,
+        "std": 0.27205,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "wavelet",
+        "n_features": 576,
+        "mean": 0.465386,
+        "std": 0.286479,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "gabor",
+        "n_features": 1728,
+        "mean": 0.465386,
+        "std": 0.307796,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      },
+      {
+        "block": "energy",
+        "n_features": 108,
+        "mean": 0.465386,
+        "std": 0.281056,
+        "min": 0.0,
+        "max": 1.0,
+        "finite": true,
+        "status": "OK"
+      }
+    ],
+    "diagnostics": {
+      "cka_vs_mr": {
+        "morphological": 0.542255,
+        "derivative": 0.897328,
+        "wavelet": 0.565392,
+        "gabor": 0.4676,
+        "energy": 0.824758
+      },
+      "mean_abs_corr_vs_mr": {
+        "morphological": 0.332392,
+        "derivative": 0.434589,
+        "wavelet": 0.389064,
+        "gabor": 0.328479,
+        "energy": 0.436999
+      },
+      "family_self_cka": {
+        "morphological|derivative": 0.587766,
+        "morphological|wavelet": 0.661062,
+        "morphological|gabor": 0.72185,
+        "morphological|energy": 0.515547,
+        "derivative|wavelet": 0.611784,
+        "derivative|gabor": 0.508522,
+        "derivative|energy": 0.759392,
+        "wavelet|gabor": 0.729957,
+        "wavelet|energy": 0.46261,
+        "gabor|energy": 0.389106
+      },
+      "duplicates_collapsed": {
+        "morphological": 20,
+        "derivative": 16,
+        "wavelet": 128,
+        "gabor": 0,
+        "energy": 0
+      }
+    },
+    "val_screening": {
+      "M0": 0.9896,
+      "morphological": 0.9834,
+      "derivative": 0.9876,
+      "wavelet": 0.9896,
+      "gabor": 0.9772,
+      "energy": 0.9876
+    },
+    "promising": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "search": [
+    {
+      "C": 0.01,
+      "val_macro_f1": 0.5219
+    },
+    {
+      "C": 0.1,
+      "val_macro_f1": 0.4879
+    },
+    {
+      "C": 1.0,
+      "val_macro_f1": 0.5267
+    },
+    {
+      "C": 10.0,
+      "val_macro_f1": 0.5485
+    }
+  ],
+  "selected_C": 10.0,
+  "oof": "5-fold stratified, extractor+ridge per fold; DRTN logits from frozen checkpoint"
+}

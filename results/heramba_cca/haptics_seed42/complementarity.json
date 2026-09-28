@@ -1,0 +1,43 @@
+{
+ "cv_increment": {
+  "cv_base_mean": 0.457462,
+  "cv_base_std": 0.093113,
+  "cv_aug_mean": 0.457462,
+  "cv_aug_std": 0.093113,
+  "observed_increment": 0.0,
+  "fold_deltas": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "cohens_d": 0.0,
+  "splitter": "StratifiedKFold(5, shuffle, seed=42)"
+ },
+ "permutation": {
+  "base": {
+   "cv_base_mean": 0.457462,
+   "cv_base_std": 0.093113,
+   "cv_aug_mean": 0.457462,
+   "cv_aug_std": 0.093113,
+   "observed_increment": 0.0,
+   "fold_deltas": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "cohens_d": 0.0,
+   "splitter": "StratifiedKFold(5, shuffle, seed=42)"
+  },
+  "observed_increment": 0.0,
+  "null_mean": 0.0,
+  "null_std": 0.0,
+  "null_p95": 0.0,
+  "empirical_p_one_sided": 1.0,
+  "n_permutations": 2000,
+  "permutation_seed": 42042
+ }
+}

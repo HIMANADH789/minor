@@ -1,0 +1,31 @@
+{
+  "experiment": "TURS-FINAL",
+  "seed": 42,
+  "S": 200,
+  "alpha": 0.05,
+  "decision_rule": "KEEP_KTM_W iff p < 0.05 AND Delta_real > 0",
+  "p_value_formula": "(1 + count(Delta_null >= Delta_real)) / (S + 1)",
+  "n_kernels": 10000,
+  "n_kernel_groups": 84,
+  "ktm_w_formula": "W_m = mean_i |x_(i) - i/(k+1)|, x_i = tau_i / T_e (window-relative, per validated ktm.py); group feature = mean of W over the kernel group's features",
+  "classifier": "RidgeClassifierCV(alphas=np.logspace(-4, 4, 20))",
+  "null_method": "circular shift per validation sample, x_shift[t] = x[(t - s) mod T]",
+  "aeon_version": "1.2.0",
+  "sklearn_version": "1.6.1",
+  "numba_version": "0.61.2",
+  "numpy_version": "2.2.6",
+  "datasets": [
+    "ECG5000_UNBAL",
+    "ECG5000_BAL",
+    "CWRU_UNBAL",
+    "CWRU_BAL"
+  ],
+  "ref_values": {
+    "ECG5000_UNBAL": 0.5938,
+    "ECG5000_BAL": 0.6553,
+    "CWRU_UNBAL": 0.9917,
+    "CWRU_BAL": 0.9947
+  },
+  "split_protocol": "canonical benchmark split (benchmark_baselines.py)",
+  "gate_scope": "TRAIN + VALIDATION only"
+}

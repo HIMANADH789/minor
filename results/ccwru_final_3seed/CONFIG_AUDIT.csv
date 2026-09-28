@@ -1,0 +1,10 @@
+component,configuration,provenance
+MR extractor,"aeon MiniRocket random_state=42, fit on TRAIN only, 9996 features",repo canonical (transfer/important2/3seed lines)
+MR classifier,"RidgeClassifierCV alphas=logspace(-4,4,20); train-only fit -> val diagnostic; train+val refit -> ONE test eval",canonical MR protocol
+HERAMBA R5 context,"RCMKNContextModel (SSL+VQ K=8+joint), config ENCODER/VQ/JOINT byte-identical across CWRU seed-42 producers and the audited 3-seed core; trained PER OUTER SEED",rcmkn_r2_haptics_3seed core machinery
+HERAMBA R5 features,"X_R2 = [G(4998) || H(4998)]; H = occupancy-weighted regime heterogeneity, min_occupancy 0.01",audited R2 composition
+HERAMBA R5 classifier,RidgeClassifierCV same alpha grid; train-only -> val; train+val refit -> ONE test eval,frozen R2 protocol
+split,"CWRU_UNBAL 1156/204/240; CWRU_BAL 2727/482/567; canonical NPZ, stratified, seed-42 split convention; identical for all seeds",dataset manifests
+preprocessing,per-sample z-norm (mean/std+1e-8) before all branches,canonical
+gates,"MR seed42 vs M0_REF {'CWRU_UNBAL': 0.9917, 'CWRU_BAL': 0.9947}; R5 seed42 vs canonical R2 {'CWRU_UNBAL': 0.9917, 'CWRU_BAL': 0.9982} (tol 0.0011 / 0.011)",all 4 gates PASS
+test policy,"one test evaluation per (model, seed); no test-driven tuning",verified

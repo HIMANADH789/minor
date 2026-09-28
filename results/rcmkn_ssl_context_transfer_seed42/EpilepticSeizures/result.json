@@ -1,0 +1,393 @@
+{
+  "dataset": "EpilepticSeizures",
+  "seed": 42,
+  "T": 178,
+  "split": {
+    "train": 80,
+    "val": 20,
+    "test": 11420
+  },
+  "n_classes": 2,
+  "n_features": 9996,
+  "K_regimes": 8,
+  "config": {
+    "encoder": {
+      "channels": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "kernel_sizes": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "dilations": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "d_model": 32,
+      "mask_ratio": 0.1,
+      "span_len": 16,
+      "batch_size": 8,
+      "ssl_epochs": 120,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "patience": 20
+    },
+    "vq": {
+      "K": 8,
+      "beta_vq": 0.25,
+      "lam_div": 0.01,
+      "ema_decay": 0.99,
+      "dead_threshold": 0.001,
+      "revival_patience": 100
+    },
+    "joint": {
+      "epochs": 60,
+      "lr": 0.0005,
+      "lambda_cls": 0.1,
+      "patience": 10,
+      "batch_size": 8
+    }
+  },
+  "drtn_checkpoint": {
+    "best_val_mf1": 0.3333333333333333,
+    "epoch": 1,
+    "source": "checkpoint"
+  },
+  "results": {
+    "R0": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 0.9399,
+      "accuracy": 0.9607,
+      "selected_alpha": 0.615848211066026,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.56,
+      "class_f1s": [
+        0.9046,
+        0.9752
+      ],
+      "mechanistic_h": {
+        "mean_H": 0.015086232315550455,
+        "median_H": 0.007870051078498363,
+        "max_H": 0.25,
+        "fraction_nonzero": 0.9487394957983193
+      },
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 3,
+          "normalized_entropy": 0.46730110726610513,
+          "perplexity": 2.6424997256024665,
+          "dominant_fraction": 0.5091573033707865,
+          "usage": [
+            0.0,
+            0.1252247191011236,
+            0.0,
+            0.0,
+            0.0,
+            0.5091573033707865,
+            0.3656179775280899,
+            0.0
+          ],
+          "counts": [
+            0.0,
+            2229.0,
+            0.0,
+            0.0,
+            0.0,
+            9063.0,
+            6508.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "R2": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 0.9457,
+      "accuracy": 0.965,
+      "selected_alpha": 1.623776739188721,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.67,
+      "class_f1s": [
+        0.9133,
+        0.9781
+      ],
+      "mechanistic_h": {
+        "mean_H": 0.02730856612722539,
+        "median_H": 0.01961142849177122,
+        "max_H": 0.2567901313304901,
+        "fraction_nonzero": 0.9500460184073629
+      },
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9685161800122255,
+          "perplexity": 7.493026428789093,
+          "dominant_fraction": 0.1853370786516854,
+          "usage": [
+            0.14702247191011236,
+            0.15814606741573034,
+            0.1853370786516854,
+            0.090561797752809,
+            0.09382022471910112,
+            0.04955056179775281,
+            0.16769662921348313,
+            0.10786516853932585
+          ],
+          "counts": [
+            2617.0,
+            2815.0,
+            3299.0,
+            1612.0,
+            1670.0,
+            882.0,
+            2985.0,
+            1920.0
+          ]
+        },
+        "test": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9634835750127968,
+          "perplexity": 7.4150207250868,
+          "dominant_fraction": 0.187595682717094,
+          "usage": [
+            0.15353903067750252,
+            0.1559918534406423,
+            0.187595682717094,
+            0.09490249709754225,
+            0.07134733072276117,
+            0.05197219543871387,
+            0.17685757295499716,
+            0.10779383695074676
+          ],
+          "counts": [
+            312108.0,
+            317094.0,
+            381337.0,
+            192914.0,
+            145032.0,
+            105647.0,
+            359509.0,
+            219119.0
+          ]
+        }
+      },
+      "context_train": {
+        "ssl_best_val": 0.12992,
+        "joint_best_val_mf1": 0.8465,
+        "avg_joint_losses": {
+          "commit": 3.15404,
+          "div": 61.78471,
+          "aux": 21.07629,
+          "ssl": 7.20988
+        }
+      },
+      "params": {
+        "encoder": 59072,
+        "decoder": 2177,
+        "aux_head": 66,
+        "vq_trainable": 0,
+        "total_trainable": 61315
+      }
+    },
+    "C1": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 0.9414,
+      "accuracy": 0.9623,
+      "selected_alpha": 0.615848211066026,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.59,
+      "class_f1s": [
+        0.9064,
+        0.9764
+      ],
+      "mechanistic_h": {
+        "mean_H": 0.010827127758413099,
+        "median_H": 0.007219391874969006,
+        "max_H": 0.25,
+        "fraction_nonzero": 0.9502681072428971
+      }
+    },
+    "C2": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 0.9409,
+      "accuracy": 0.9621,
+      "selected_alpha": 0.23357214690901212,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.26,
+      "class_f1s": [
+        0.9056,
+        0.9763
+      ],
+      "mechanistic_h": {
+        "mean_H": 0.010620912282536999,
+        "median_H": 0.007142136571928859,
+        "max_H": 0.25,
+        "fraction_nonzero": 0.9500960384153662
+      }
+    }
+  },
+  "deltas": {
+    "R2-R0": 0.0058,
+    "R2-C1": 0.0043,
+    "R2-C2": 0.0048,
+    "C1-C2": 0.0005
+  },
+  "mechanistic_h": {
+    "R0": {
+      "mean_H": 0.015086232315550455,
+      "median_H": 0.007870051078498363,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.9487394957983193
+    },
+    "R2": {
+      "mean_H": 0.02730856612722539,
+      "median_H": 0.01961142849177122,
+      "max_H": 0.2567901313304901,
+      "fraction_nonzero": 0.9500460184073629
+    },
+    "C1": {
+      "mean_H": 0.010827127758413099,
+      "median_H": 0.007219391874969006,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.9502681072428971
+    },
+    "C2": {
+      "mean_H": 0.010620912282536999,
+      "median_H": 0.007142136571928859,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.9500960384153662
+    }
+  },
+  "regime_array_audit": {
+    "C1": {
+      "hash_trainva": "7258d63d7fa5a50c",
+      "hash_test": "c7616021d2636b5f",
+      "shares_memory_with_r2": false
+    },
+    "C2": {
+      "hash_trainva": "a24ecec5dcd3ba80",
+      "hash_test": "3f8831163c26141a",
+      "shares_memory_with_r2": false
+    },
+    "C1_vs_C2": {
+      "differing_positions": 15106,
+      "fraction": 0.8486516853932584,
+      "identical": false
+    }
+  },
+  "audits": {
+    "audit1_config": {
+      "expected": {
+        "T": 178,
+        "n_classes": 2,
+        "train": 80,
+        "val": 20,
+        "test": 11420
+      },
+      "actual": {
+        "T": 178,
+        "n_classes": 2,
+        "train": 80,
+        "val": 20,
+        "test": 11420
+      },
+      "pass": true
+    },
+    "audit2_extractor_identity_maxdiff": 0.0,
+    "r0_reference": {
+      "test_macro_f1": 0.9399,
+      "drtn_ckpt": {
+        "best_val_mf1": 0.3333333333333333,
+        "epoch": 1,
+        "source": "checkpoint"
+      }
+    },
+    "audit12_causality_maxdiff": 0.0,
+    "audit8_vq_diagnostics": {
+      "train": {
+        "active_codes": 8,
+        "normalized_entropy": 0.9685161800122255,
+        "perplexity": 7.493026428789093,
+        "dominant_fraction": 0.1853370786516854,
+        "usage": [
+          0.14702247191011236,
+          0.15814606741573034,
+          0.1853370786516854,
+          0.090561797752809,
+          0.09382022471910112,
+          0.04955056179775281,
+          0.16769662921348313,
+          0.10786516853932585
+        ],
+        "counts": [
+          2617.0,
+          2815.0,
+          3299.0,
+          1612.0,
+          1670.0,
+          882.0,
+          2985.0,
+          1920.0
+        ]
+      },
+      "test": {
+        "active_codes": 8,
+        "normalized_entropy": 0.9634835750127968,
+        "perplexity": 7.4150207250868,
+        "dominant_fraction": 0.187595682717094,
+        "usage": [
+          0.15353903067750252,
+          0.1559918534406423,
+          0.187595682717094,
+          0.09490249709754225,
+          0.07134733072276117,
+          0.05197219543871387,
+          0.17685757295499716,
+          0.10779383695074676
+        ],
+        "counts": [
+          312108.0,
+          317094.0,
+          381337.0,
+          192914.0,
+          145032.0,
+          105647.0,
+          359509.0,
+          219119.0
+        ]
+      }
+    },
+    "audit9_10_control_occupancy_failures": 0,
+    "audit11_regime_arrays": {
+      "C1": {
+        "hash_trainva": "7258d63d7fa5a50c",
+        "hash_test": "c7616021d2636b5f",
+        "shares_memory_with_r2": false
+      },
+      "C2": {
+        "hash_trainva": "a24ecec5dcd3ba80",
+        "hash_test": "3f8831163c26141a",
+        "shares_memory_with_r2": false
+      },
+      "C1_vs_C2": {
+        "differing_positions": 15106,
+        "fraction": 0.8486516853932584,
+        "identical": false
+      }
+    },
+    "audit6_independent_h_recompute_maxdiff": 8.362207828960244e-09,
+    "audit7_valid_region": {
+      "flipped_out_of_mask_activations": 205200,
+      "h_changed": false,
+      "pass": true
+    }
+  },
+  "runtime_s": 556.1
+}

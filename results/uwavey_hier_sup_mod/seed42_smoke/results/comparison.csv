@@ -1,0 +1,9 @@
+method,label,final_features,d1_selected,k2_selected,k4_selected,k8_selected,k16_selected,candidate_pool,kernel_capacity,macro_f1,accuracy,alpha,runtime_s,peak_mem_mb
+canonical_mr,Canonical MR,9996,NA,NA,NA,NA,NA,NA,84x119,0.7543,NA,NA,NA,NA
+mr_high,MR-HIGH,19992,NA,NA,NA,NA,NA,NA,84x238,0.7477,NA,NA,NA,NA
+r5_high,R5-HIGH,19992,NA,NA,NA,NA,NA,14994,84x238,0.7772,NA,NA,NA,NA
+hier_high,HIER-HIGH,19992,NA,NA,NA,NA,NA,449820,84x238,0.723,NA,NA,NA,NA
+hier_high_sup,HIER-HIGH-SUP,19992,NA,NA,NA,NA,NA,449820,84x238,0.7823,NA,NA,NA,NA
+hier_continuous_sup,HIER-CONTINUOUS-SUP,19992,NA,NA,NA,NA,NA,469812,84x238,0.7599,NA,NA,NA,NA
+hier_sup_clean,HIER-SUP-CLEAN,19992,NA,NA,NA,NA,NA,469812,84x238,0.7599,NA,NA,NA,NA
+hier_sup_mod,HIER-SUP-MOD,19992,14865,3655,1290,160,22,469812,84x238,0.7383,0.745,78.47599703514607,39.6,0.0

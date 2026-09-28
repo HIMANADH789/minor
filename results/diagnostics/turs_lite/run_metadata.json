@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-11 20:11:51",
+  "elapsed_s": 12.2,
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "seed_model": 42,
+  "seed_bootstrap": 4200,
+  "seed_permutation": 4300,
+  "seed_synthetic": 4400,
+  "datasets": {
+    "ECG5000_UNBAL": "data/ecg5000_resplit.npz",
+    "ECG5000_BAL": "data/ecg5000_fair_balanced.npz",
+    "CWRU_UNBAL": "data/cwru_unbalanced.npz",
+    "CWRU_BAL": "data/cwru_balanced.npz"
+  },
+  "checkpoint_dir": "C:\\temp\\ECG_Benchmark\\checkpoints\\turs_lite",
+  "checkpoint_sha256": {
+    "ECG5000_UNBAL": "e026d4536e3d2db9b015ec0a9b5e9d98d3ca5ce9f1cb8a60b66b58d75e20440d",
+    "ECG5000_BAL": "8ee09b8e07609279c85444ed378ef286ddfdde61ad22a9fb78f20ae2705ba92e",
+    "CWRU_UNBAL": "58b204d0e5a4ec939c86f8a661954f4ceece2e1a412dc6fb2b47e6e4e3d0e8db",
+    "CWRU_BAL": "6e2fa5045ec27b14e46fe65011cd4f239028e2c4a158fb82672d02fca03eeb22"
+  },
+  "config": {
+    "protocol": {
+      "lr": 0.0003,
+      "wd": 0.01,
+      "batch": 64,
+      "max_epochs": 30,
+      "patience": 8
+    },
+    "pre_registered": {
+      "uncertainty_agg": "mean",
+      "velocity_agg": "max",
+      "z_pooled": "mean"
+    },
+    "faith": 0.1
+  },
+  "torch": "2.5.1+cu121",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU"
+}

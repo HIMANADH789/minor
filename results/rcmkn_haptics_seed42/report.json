@@ -1,0 +1,535 @@
+{
+  "title": "RCMKN Haptics seed-42 ablation study",
+  "seed": 42,
+  "dataset": "Haptics",
+  "T": 1092,
+  "protocol": {
+    "train": 132,
+    "val": 23,
+    "test": 308,
+    "val_source": "per_class_stratified_15pct_of_train_seed42_singletons_kept_in_train",
+    "znorm": "per-sample, before all branches"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "aeon": "1.5.0",
+    "torch": "2.5.1+cu121",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  },
+  "config": {
+    "encoder": {
+      "channels": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "kernel_sizes": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "dilations": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "d_model": 32,
+      "mask_ratio": 0.1,
+      "span_len": 16,
+      "batch_size": 8,
+      "ssl_epochs": 120,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "patience": 20
+    },
+    "vq": {
+      "K": 8,
+      "beta_vq": 0.25,
+      "lam_div": 0.01,
+      "ema_decay": 0.99,
+      "dead_threshold": 0.001,
+      "revival_patience": 100
+    },
+    "joint": {
+      "epochs": 60,
+      "lr": 0.0005,
+      "lambda_cls": 0.1,
+      "patience": 10,
+      "batch_size": 8
+    },
+    "hydra": {
+      "k": 8,
+      "g": 16,
+      "note": "uses aeon 1.5.0 _HydraInternal directly (the HydraTransformer core); count_max + count_min per (dilation, diff, group, kernel)",
+      "num_dilations": 8,
+      "divisor": 2,
+      "h_groups": 8,
+      "k_kernels_per_group": 8,
+      "kernels_total": 1024,
+      "stats_per_kernel": 2,
+      "feature_dim": 2048
+    },
+    "alphas": "logspace(-4,4,20)"
+  },
+  "results": {
+    "R0": {
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.5366,
+      "accuracy": 0.5487,
+      "selected_alpha": 1.623776739188721,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.381,
+        0.5667,
+        0.6061,
+        0.5106,
+        0.6187
+      ],
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 7,
+          "normalized_entropy": 0.5725591513921917,
+          "perplexity": 3.2890648507303615,
+          "dominant_fraction": 0.48072787427626135,
+          "usage": [
+            0.11388987356729292,
+            0.0,
+            0.06165071487652133,
+            0.48072787427626135,
+            0.008094056481153255,
+            0.0004194730001181614,
+            0.001695616211745244,
+            0.3335223915869077
+          ],
+          "counts": [
+            19277.0,
+            0.0,
+            10435.0,
+            81368.0,
+            1370.0,
+            71.0,
+            287.0,
+            56452.0
+          ]
+        },
+        "test": {
+          "active_codes": 7,
+          "normalized_entropy": 0.5727062549824521,
+          "perplexity": 3.290071107581569,
+          "dominant_fraction": 0.4808970791113648,
+          "usage": [
+            0.11518540982826697,
+            0.0,
+            0.06097473954616812,
+            0.4808970791113648,
+            0.008042552685409828,
+            0.00040733076447362163,
+            0.0017720374863232006,
+            0.33272085057799344
+          ],
+          "counts": [
+            38741.0,
+            0.0,
+            20508.0,
+            161743.0,
+            2705.0,
+            137.0,
+            596.0,
+            111906.0
+          ]
+        }
+      },
+      "mechanistic_h": {
+        "mean_H": 0.01777313650064769,
+        "median_H": 0.010764412116259336,
+        "max_H": 0.25,
+        "fraction_nonzero": 0.9442951374098026
+      }
+    },
+    "R1": {
+      "val_macro_f1": 0.9418,
+      "test_macro_f1": 0.5123,
+      "accuracy": 0.5227,
+      "selected_alpha": 1438.44988828766,
+      "feature_dim": 12044,
+      "class_f1s": [
+        0.3678,
+        0.5641,
+        0.5846,
+        0.4961,
+        0.549
+      ],
+      "hydra_structure": {
+        "num_dilations": 8,
+        "divisor": 2,
+        "h_groups": 8,
+        "k_kernels_per_group": 8,
+        "kernels_total": 1024,
+        "stats_per_kernel": 2
+      },
+      "mechanistic_h": {
+        "mean_H": 0.01777313650064769,
+        "median_H": 0.010764412116259336,
+        "max_H": 0.25,
+        "fraction_nonzero": 0.9442951374098026
+      }
+    },
+    "R2": {
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.55,
+      "accuracy": 0.5649,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.3704,
+        0.6142,
+        0.6202,
+        0.5564,
+        0.589
+      ],
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9349701302482213,
+          "perplexity": 6.988149103122168,
+          "dominant_fraction": 0.23615739099610067,
+          "usage": [
+            0.23615739099610067,
+            0.009246130213872149,
+            0.14298712040647524,
+            0.11297412265154201,
+            0.13724447595415337,
+            0.12369136240103983,
+            0.10449604159281578,
+            0.13320335578400094
+          ],
+          "counts": [
+            39972.0,
+            1565.0,
+            24202.0,
+            19122.0,
+            23230.0,
+            20936.0,
+            17687.0,
+            22546.0
+          ]
+        },
+        "test": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9364440704488284,
+          "perplexity": 7.009600444924249,
+          "dominant_fraction": 0.23140847247990104,
+          "usage": [
+            0.23140847247990104,
+            0.009246705675277104,
+            0.13966985395556825,
+            0.11261357689929119,
+            0.14018124732410447,
+            0.12819323533609248,
+            0.1050080871509443,
+            0.13367882117882118
+          ],
+          "counts": [
+            77831.0,
+            3110.0,
+            46976.0,
+            37876.0,
+            47148.0,
+            43116.0,
+            35318.0,
+            44961.0
+          ]
+        }
+      },
+      "context_train": {
+        "ssl_best_val": 0.022464,
+        "joint_best_val_mf1": 0.1985,
+        "avg_joint_losses": {
+          "commit": 1.27093,
+          "div": 67.72738,
+          "aux": 59.65821,
+          "ssl": 1.8414
+        }
+      },
+      "params": {
+        "encoder": 59072,
+        "decoder": 2177,
+        "aux_head": 165,
+        "vq_trainable": 0,
+        "total_trainable": 61414
+      },
+      "mechanistic_h": {
+        "mean_H": 0.039705680873726557,
+        "median_H": 0.033823560923337936,
+        "max_H": 0.25,
+        "fraction_nonzero": 0.9485135989879823
+      }
+    },
+    "R3": {
+      "val_macro_f1": 0.9418,
+      "test_macro_f1": 0.5123,
+      "accuracy": 0.5227,
+      "selected_alpha": 1438.44988828766,
+      "feature_dim": 12044,
+      "class_f1s": [
+        0.3678,
+        0.5641,
+        0.5846,
+        0.4961,
+        0.549
+      ],
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9349701302482213,
+          "perplexity": 6.988149103122168,
+          "dominant_fraction": 0.23615739099610067,
+          "usage": [
+            0.23615739099610067,
+            0.009246130213872149,
+            0.14298712040647524,
+            0.11297412265154201,
+            0.13724447595415337,
+            0.12369136240103983,
+            0.10449604159281578,
+            0.13320335578400094
+          ],
+          "counts": [
+            39972.0,
+            1565.0,
+            24202.0,
+            19122.0,
+            23230.0,
+            20936.0,
+            17687.0,
+            22546.0
+          ]
+        },
+        "test": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9364440704488284,
+          "perplexity": 7.009600444924249,
+          "dominant_fraction": 0.23140847247990104,
+          "usage": [
+            0.23140847247990104,
+            0.009246705675277104,
+            0.13966985395556825,
+            0.11261357689929119,
+            0.14018124732410447,
+            0.12819323533609248,
+            0.1050080871509443,
+            0.13367882117882118
+          ],
+          "counts": [
+            77831.0,
+            3110.0,
+            46976.0,
+            37876.0,
+            47148.0,
+            43116.0,
+            35318.0,
+            44961.0
+          ]
+        }
+      },
+      "context_train": {
+        "ssl_best_val": 0.022464,
+        "joint_best_val_mf1": 0.1985,
+        "avg_joint_losses": {
+          "commit": 1.27093,
+          "div": 67.72738,
+          "aux": 59.65821,
+          "ssl": 1.8414
+        }
+      },
+      "params": {
+        "encoder": 59072,
+        "decoder": 2177,
+        "aux_head": 165,
+        "vq_trainable": 0,
+        "total_trainable": 61414
+      },
+      "hydra_structure": {
+        "num_dilations": 8,
+        "divisor": 2,
+        "h_groups": 8,
+        "k_kernels_per_group": 8,
+        "kernels_total": 1024,
+        "stats_per_kernel": 2
+      },
+      "mechanistic_h": {
+        "mean_H": 0.039705680873726557,
+        "median_H": 0.033823560923337936,
+        "max_H": 0.25,
+        "fraction_nonzero": 0.9485135989879823
+      }
+    },
+    "C1": {
+      "val_macro_f1": 0.8251,
+      "test_macro_f1": 0.4927,
+      "accuracy": 0.5032,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.3636,
+        0.4717,
+        0.528,
+        0.5031,
+        0.597
+      ],
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9349701302482213,
+          "perplexity": 6.988149103122168,
+          "dominant_fraction": 0.23615739099610067,
+          "usage": [
+            0.23615739099610067,
+            0.009246130213872149,
+            0.14298712040647524,
+            0.11297412265154201,
+            0.13724447595415337,
+            0.12369136240103983,
+            0.10449604159281578,
+            0.13320335578400094
+          ],
+          "counts": [
+            39972.0,
+            1565.0,
+            24202.0,
+            19122.0,
+            23230.0,
+            20936.0,
+            17687.0,
+            22546.0
+          ]
+        },
+        "test": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9364440704488284,
+          "perplexity": 7.009600444924249,
+          "dominant_fraction": 0.23140847247990104,
+          "usage": [
+            0.23140847247990104,
+            0.009246705675277104,
+            0.13966985395556825,
+            0.11261357689929119,
+            0.14018124732410447,
+            0.12819323533609248,
+            0.1050080871509443,
+            0.13367882117882118
+          ],
+          "counts": [
+            77831.0,
+            3110.0,
+            46976.0,
+            37876.0,
+            47148.0,
+            43116.0,
+            35318.0,
+            44961.0
+          ]
+        }
+      },
+      "mechanistic_h": {
+        "mean_H": 0.002612194347132986,
+        "median_H": 0.000883322732988745,
+        "max_H": 0.5625,
+        "fraction_nonzero": 0.9589513224644697
+      }
+    },
+    "C2": {
+      "val_macro_f1": 0.8618,
+      "test_macro_f1": 0.5011,
+      "accuracy": 0.5097,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.3908,
+        0.4957,
+        0.5246,
+        0.5,
+        0.5942
+      ],
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9349701302482213,
+          "perplexity": 6.988149103122168,
+          "dominant_fraction": 0.23615739099610067,
+          "usage": [
+            0.23615739099610067,
+            0.009246130213872149,
+            0.14298712040647524,
+            0.11297412265154201,
+            0.13724447595415337,
+            0.12369136240103983,
+            0.10449604159281578,
+            0.13320335578400094
+          ],
+          "counts": [
+            39972.0,
+            1565.0,
+            24202.0,
+            19122.0,
+            23230.0,
+            20936.0,
+            17687.0,
+            22546.0
+          ]
+        },
+        "test": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9364440704488284,
+          "perplexity": 7.009600444924249,
+          "dominant_fraction": 0.23140847247990104,
+          "usage": [
+            0.23140847247990104,
+            0.009246705675277104,
+            0.13966985395556825,
+            0.11261357689929119,
+            0.14018124732410447,
+            0.12819323533609248,
+            0.1050080871509443,
+            0.13367882117882118
+          ],
+          "counts": [
+            77831.0,
+            3110.0,
+            46976.0,
+            37876.0,
+            47148.0,
+            43116.0,
+            35318.0,
+            44961.0
+          ]
+        }
+      },
+      "mechanistic_h": {
+        "mean_H": 0.0024370937795121735,
+        "median_H": 0.0009004864550661296,
+        "max_H": 0.5625,
+        "fraction_nonzero": 0.9588209477339322
+      }
+    }
+  },
+  "audits": {
+    "control_occupancy_failures": 0,
+    "hydra_determinism_same_batch": true,
+    "audit1_extractor_identity_maxdiff": 0.0,
+    "r0_gate": {
+      "test_macro_f1": 0.5366,
+      "reference": 0.5366,
+      "pass": true
+    },
+    "hydra_cross_batch_maxdiff": 3.814697265625e-06
+  },
+  "forensics": {
+    "r1_r3_identity": "explained: het blocks differ (max|d|=0.25) but alpha=1438.45 (near grid max, 155 samples / 12044 features) makes the het block decision-irrelevant; a [global|Hydra]-only Ridge reproduces R1/R3 predictions exactly (0/308 differ). See forensic_r1_r3.json."
+  }
+}

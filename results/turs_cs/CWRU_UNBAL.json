@@ -1,0 +1,61 @@
+{
+  "CWRU_UNBAL": {
+    "accuracy": 0.9708,
+    "macro_f1": 0.9707,
+    "weighted_f1": 0.9707,
+    "class_f1s": [
+      1.0,
+      1.0,
+      0.9449,
+      0.9381
+    ],
+    "class_recalls": [
+      1.0,
+      1.0,
+      1.0,
+      0.8833
+    ],
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        60,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        60,
+        0
+      ],
+      [
+        0,
+        0,
+        7,
+        53
+      ]
+    ],
+    "support": {
+      "0": 60,
+      "1": 60,
+      "2": 60,
+      "3": 60
+    },
+    "params": 96173,
+    "best_epoch": 29,
+    "total_epochs": 30,
+    "time_s": 3470.3,
+    "gate_stats": {
+      "alpha_mean": 0.0117,
+      "alpha_std": 0.0068
+    },
+    "uncertainty_mean": 0.583,
+    "beta_mean": 0.3333
+  }
+}

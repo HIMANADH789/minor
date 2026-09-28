@@ -1,0 +1,131 @@
+{
+  "dataset": "CWRU_UNBAL",
+  "mr_10k": {
+    "dataset": "CWRU_UNBAL",
+    "model": "MR_10K",
+    "use_local": false,
+    "n_kernels": 10000,
+    "mr_feature_dim": 9996,
+    "local_feature_dim": 0,
+    "total_feature_dim": 9996,
+    "selected_alpha": 206.913808111479,
+    "cv_score": -0.061491975765123524,
+    "test_mf1": 0.975,
+    "test_acc": 0.975,
+    "test_wf1": 0.975,
+    "test_bal_acc": 0.975,
+    "per_class_f1": [
+      1.0,
+      1.0,
+      0.95,
+      0.95
+    ],
+    "per_class_prec": [
+      1.0,
+      1.0,
+      0.95,
+      0.95
+    ],
+    "per_class_rec": [
+      1.0,
+      1.0,
+      0.95,
+      0.95
+    ],
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        60,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        57,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        57
+      ]
+    ],
+    "time_total": 1.15,
+    "time_minrocket": 0.42,
+    "time_local": 0,
+    "time_ridge": 0.63
+  },
+  "mr_10k_local": {
+    "dataset": "CWRU_UNBAL",
+    "model": "MR_10K_Local",
+    "use_local": true,
+    "n_kernels": 10000,
+    "mr_feature_dim": 9996,
+    "local_feature_dim": 1024,
+    "total_feature_dim": 11020,
+    "selected_alpha": 206.913808111479,
+    "cv_score": -0.06280682688300947,
+    "test_mf1": 0.975,
+    "test_acc": 0.975,
+    "test_wf1": 0.975,
+    "test_bal_acc": 0.975,
+    "per_class_f1": [
+      1.0,
+      1.0,
+      0.95,
+      0.95
+    ],
+    "per_class_prec": [
+      1.0,
+      1.0,
+      0.95,
+      0.95
+    ],
+    "per_class_rec": [
+      1.0,
+      1.0,
+      0.95,
+      0.95
+    ],
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        60,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        57,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        57
+      ]
+    ],
+    "time_total": 5.37,
+    "time_minrocket": 0.43,
+    "time_local": 4.21,
+    "time_ridge": 0.63
+  },
+  "delta_mf1": 0.0,
+  "delta_pct": 0.0
+}

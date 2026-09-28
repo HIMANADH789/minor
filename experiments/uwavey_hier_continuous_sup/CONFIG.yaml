@@ -1,0 +1,69 @@
+# HIER-CONTINUOUS-SUP — predeclared configuration (locked before any run)
+# Every value reused from the HIER-HIGH-SUP / capacity-scaled experiments.
+# The ONLY change vs HIER-HIGH-SUP: unified pool + ONE supervised selection.
+
+dataset: UWaveGestureLibraryY
+seed: 42
+
+split:            # canonical official UCR split — asserted, never regenerated
+  train: 761
+  validation: 135
+  test: 3582
+  T: 315
+  n_classes: 8
+
+normalization: per_sample_z_norm
+
+minirocket:       # identical to HIER-HIGH-SUP / capacity-scaled
+  n_kernels: 19992
+  random_state: 42
+  physical_kernels: 84
+  quantiles_per_kernel: 238
+  root_candidates: 19992     # full expanded matrix, NO 17,993 preselection
+
+hierarchy:        # identical to HIER-HIGH-SUP (locked)
+  depth: 1->2->4->8->16
+  kept_levels: [2, 4, 8, 16]
+  encoder: SSLTemporalEncoder(seed42, d=32, frozen)
+  kmeans: {n_clusters: 2, n_init: 10, random_state: 42}
+  fit: train-only (239,715 latents = 761 x 315); val/test transform-only
+
+delta_pool:
+  base_kernels_H: 14994      # = 19992 - 4998 (H partition of the expanded bank)
+  edges: 30                  # 1 + 2 + 4 + 8 + 15 = 30 (K=2..16)
+  candidates: 449820         # = 30 * 14994, asserted
+
+unified_pool:
+  root_candidates: 19992
+  delta_candidates: 449820
+  total_candidates: 469812   # asserted C_dev.shape == (896, 469812)
+
+selection:        # THE ONLY SUBSTANTIVE CHANGE
+  selector: top_f_select          # same object as R5-HIGH / HIER-HIGH-SUP
+  input: unified_pool             # OLD: H pool only (449,820)
+  selected: 19992                 # B — total, no composition forced
+  protocol: train+val labels, final stage (canonical R5 protocol)
+  cv_diagnostic: 5-fold StratifiedKFold(shuffle=True, random_state=42),
+    fold-internal selection on fold-train labels only
+  forbidden: [rho, N_G, N_H, per-level quota, energy allocation,
+              moderated-F, level-standardization]
+
+classifier:       # identical to HIER-HIGH-SUP / R5-HIGH
+  estimator: RidgeClassifierCV
+  alphas: logspace(-4, 4, 20)
+  fit: train+val
+  test_eval: single official evaluation
+
+budget:
+  B_base: 9996
+  B_high: 19992
+
+outputs:
+  results_dir: results/uwavey_hier_continuous_sup/seed42
+
+references:       # SAVED values, not rerun
+  canonical_mr: 0.7543
+  mr_high: 0.7477
+  r5_high: 0.7772
+  hier_high: 0.7230
+  hier_high_sup: 0.7823

@@ -1,0 +1,7 @@
+Method,G dims retained,H dims retained,Total dims,Ridge type,alpha_base,Test Macro-F1,Validation Macro-F1,Notes
+MiniROCKET,4998,0,4998,scalar RidgeClassifierCV,4.281332398719396,0.5037,,identity gate A
+Raw full G+H,4998,4998,9996,scalar RidgeClassifierCV,4.281332398719396,0.55,,identity gate B
+Hard CCA unique,4998,88,5086,scalar RidgeClassifierCV,1.623776739188721,0.5138,,"previous ranked-CCA pipeline, reference row"
+Uniform rotated full Ridge,4998,4998,9996,"generalized ridge lam0=1 (dual, GCV)",0.0001,0.5234,0.6277,basis-invariance twin of B; train-only fit
+Proposed full Canonical Ridge,4998,4998,9996,"CCA-adaptive lam0 (dual, GCV)",0.0001,0.5319,0.6733,gamma=1.0 fixed; alpha_k=alpha*(1+rho^2)
+Proposed full Canonical Ridge (train+val final fit),4998,4998,9996,"CCA-adaptive lam0 (dual, alpha frozen)",0.0001,0.478,,"alpha from train-only GCV, frozen; val rows only add rows"

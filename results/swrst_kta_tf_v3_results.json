@@ -1,0 +1,64 @@
+{
+    "Test_Accuracy": 0.947,
+    "Test_Macro_F1": 0.6607555969353722,
+    "Per_Class_Recall": [
+        0.9931623931623932,
+        0.9438202247191011,
+        0.5945945945945946,
+        0.4864864864864865,
+        0.2857142857142857
+    ],
+    "Confusion_Matrix": [
+        [
+            581,
+            0,
+            1,
+            1,
+            1
+        ],
+        [
+            1,
+            336,
+            5,
+            11,
+            0
+        ],
+        [
+            2,
+            3,
+            11,
+            3,
+            0
+        ],
+        [
+            2,
+            19,
+            0,
+            18,
+            0
+        ],
+        [
+            0,
+            1,
+            1,
+            2,
+            1
+        ]
+    ],
+    "Training_Time_Seconds": 13.454489469528198,
+    "Upgrades_Applied": [
+        "class_balanced_kta_projection",
+        "morphological_features",
+        "learned_fusion_weights",
+        "cv_selected_lambda"
+    ],
+    "Validation_Checks": {
+        "kernel_psd": true,
+        "kernel_symmetric": true,
+        "diagonal_near_1": true,
+        "wstar_orthonormal": true,
+        "all_classes_nonzero_recall": true,
+        "balanced_kernel_rank_ok": true,
+        "cv_macro_f1": 0.6000466105981854
+    }
+}

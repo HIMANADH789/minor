@@ -1,0 +1,169 @@
+{
+  "dataset": "CWRU_UNBAL",
+  "seed": 42,
+  "T": 1024,
+  "n_classes": 4,
+  "split": {
+    "train": 1156,
+    "val": 204,
+    "test": 240
+  },
+  "val_source": "stratified_85_15_then_15pct_seed42",
+  "provenance": "data/cwru_unbalanced.npz",
+  "n_features": 9996,
+  "K_regimes": 8,
+  "min_occupancy": 0.01,
+  "results": {
+    "M0": {
+      "test_macro_f1": 0.9917,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.9917,
+      "selected_alpha": 0.23357214690901212,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9836,
+        0.9831
+      ],
+      "ridge_fit_s": 2.79
+    },
+    "M1": {
+      "test_macro_f1": 0.9792,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.9792,
+      "selected_alpha": 0.23357214690901212,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9587,
+        0.958
+      ],
+      "ridge_fit_s": 2.23
+    },
+    "M2": {
+      "test_macro_f1": 0.9625,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.9625,
+      "selected_alpha": 0.08858667904100823,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9268,
+        0.9231
+      ],
+      "ridge_fit_s": 2.17
+    },
+    "M3": {
+      "test_macro_f1": 0.9583,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.9583,
+      "selected_alpha": 0.23357214690901212,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9194,
+        0.9138
+      ],
+      "ridge_fit_s": 2.34
+    }
+  },
+  "deltas": {
+    "M1_M0": -0.0125,
+    "M1_M2": 0.0167,
+    "M1_M3": 0.0209
+  },
+  "category": "NEGATIVE",
+  "canonical_reproduction": {
+    "reference_mf1": 0.9917,
+    "reproduction_delta": 0.0,
+    "passed": true
+  },
+  "complementarity": {
+    "both_correct": 234,
+    "M0_only_correct": 4,
+    "M1_only_correct": 1,
+    "both_wrong": 1,
+    "n_samples": 240
+  },
+  "regime_diagnostics": {
+    "test": {
+      "usage": [
+        0.2048583984375,
+        0.09855143229166667,
+        0.17992757161458334,
+        0.11848958333333333,
+        0.07701009114583333,
+        0.14785970052083333,
+        0.06703694661458333,
+        0.10626627604166666
+      ],
+      "counts": [
+        50346.0,
+        24220.0,
+        44219.0,
+        29120.0,
+        18926.0,
+        36338.0,
+        16475.0,
+        26116.0
+      ],
+      "entropy": 2.013962058496558,
+      "normalized_entropy": 0.968511024777171,
+      "perplexity": 7.492946103901917,
+      "active_codes": 8,
+      "dominant_fraction": 0.2048583984375
+    },
+    "drtn": {
+      "best_val_mf1": 0.8838,
+      "epoch": 13,
+      "source": "trained"
+    },
+    "drtn_frozen_verified": true
+  },
+  "heterogeneity_diagnostics": {
+    "M1_train": {
+      "mean": 0.016860533100544146,
+      "std": 0.022578219020300744,
+      "nonzero_fraction": 0.9776462488109431,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.02235375118905694
+    },
+    "M1_test": {
+      "mean": 0.01684033763002836,
+      "std": 0.022944207339390725,
+      "nonzero_fraction": 0.9779461784713885,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.022053821528611444
+    },
+    "M2_test": {
+      "mean": 0.002438334119347061,
+      "std": 0.012199448147680812,
+      "nonzero_fraction": 0.9780012004801921,
+      "max": 0.765625,
+      "exactly_zero_fraction": 0.021998799519807922
+    },
+    "M3_test": {
+      "mean": 0.0021404133269328942,
+      "std": 0.010678279896096763,
+      "nonzero_fraction": 0.9781737695078031,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.02182623049219688
+    }
+  },
+  "feature_statistics": {
+    "ppv_global_mean": 0.5001843571662903,
+    "ppv_global_std": 0.2901191711425781,
+    "ppv_global_nonzero": 0.9911806389222355,
+    "raw_vs_aeon_max_diff": 0.0
+  },
+  "audits": {
+    "heterogeneity_nonzero_fraction_M1": 0.9779461784713885,
+    "independent_recompute_max_abs_err": 1.721825994283055e-09,
+    "m2_global_occupancy_max_abs_diff": 0.0005769828611591754,
+    "m3_per_sample_hist_max_abs_diff": 0.0,
+    "m3_alignment_changed_fraction": 1.0,
+    "drtn_frozen_verified": true,
+    "m2_deterministic": true,
+    "m3_deterministic": true
+  }
+}

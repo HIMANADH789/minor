@@ -1,0 +1,15 @@
+alpha,category,confidence,dataset,predicted_label,random_prob_drop,sample_id,targeted_prob_drop,true_label,u_mean,v_max
+0.0005,correct_low_u,1.0,CWRU_BAL,0,-0.0,195,0.0001,0,0.3237,9.4018
+0.0005,correct_low_u,0.9998,CWRU_BAL,0,0.0,354,0.0,0,0.3236,9.8358
+0.0009,correct_high_u,0.9555,CWRU_BAL,3,-0.0411,89,-0.0291,3,0.3825,6.749
+0.001,correct_high_u,1.0,CWRU_BAL,3,0.0,240,0.0,3,0.3825,14.7758
+0.0009,incorrect_high_u,0.9248,CWRU_BAL,3,0.0369,507,-0.3395,2,0.3816,8.5014
+0.0009,incorrect_high_u,0.5506,CWRU_BAL,3,-0.1325,539,0.3966,2,0.3828,7.1757
+0.0003,strong_velocity,1.0,CWRU_BAL,1,-0.0,542,0.0,1,0.3283,12.2337
+0.0002,strong_velocity,1.0,CWRU_BAL,1,-0.0,185,-0.0,1,0.3335,12.1975
+0.0009,weak_velocity,0.9983,CWRU_BAL,2,-0.0014,76,0.0213,2,0.3842,8.7891
+0.0022,weak_velocity,1.0,CWRU_BAL,3,0.0,129,0.0001,3,0.4116,8.7394
+0.0009,strong_alpha_transport,0.9918,CWRU_BAL,2,-0.0038,427,0.9765,2,0.3842,8.263
+0.0009,strong_alpha_transport,0.5506,CWRU_BAL,3,-0.3023,539,0.2209,2,0.3828,7.1757
+0.0004,weak_alpha_regime,1.0,CWRU_BAL,1,-0.0,7,-0.0,1,0.3486,16.3882
+0.0004,weak_alpha_regime,1.0,CWRU_BAL,0,0.0,71,-0.0,0,0.3155,9.3814

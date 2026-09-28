@@ -1,0 +1,12 @@
+level,regime,pool_candidates,fallback_fraction,samples_with_fallback,n_affected_candidates
+2,ALL,29988,0.000000,0,29988
+4,ALL,59976,0.000000,0,59976
+8,ALL,119952,0.000000,0,119952
+16,ALL,239904,0.000000,0,239904
+ALL,ALL,469812,NA,NA,469812
+deg_s2_le_1e-12,ALL,NA,NA,NA,21426
+near0_s2_1e-12_to_1e-8,ALL,NA,NA,NA,28
+median_F_raw_degenerate,ALL,NA,NA,NA,0.948252
+median_F_moderated_degenerate,ALL,NA,NA,NA,0
+selected_moderated_degenerate,ALL,NA,NA,NA,0
+selected_raw_degenerate,ALL,NA,NA,NA,0

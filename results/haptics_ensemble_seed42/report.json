@@ -1,0 +1,524 @@
+{
+  "config": {
+    "seed": 42,
+    "dataset": "Haptics (canonical UCR/aeon, frozen loader)",
+    "split": {
+      "train": 132,
+      "val": 23,
+      "test": 308
+    },
+    "T": 1092,
+    "n_classes": 5,
+    "preprocessing": "per-sample z-norm (canonical)",
+    "minirocket": "aeon MiniRocket(random_state=42), ~9996 features, RidgeClassifierCV(logspace(-4,4,20))",
+    "drtn": "official seed-42 R5 checkpoint (val-selected, frozen)",
+    "hydra": "aeon 1.5.0 HydraClassifier(random_state=42) canonical",
+    "multirocket_hydra": "aeon 1.5.0 MultiRocketHydraClassifier(random_state=42) canonical",
+    "protocol": "stage A selection (train-only bases, val-only search) -> freeze -> stage B refit(train+val) -> ONE test eval per system",
+    "alpha_grid": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "environment": {
+      "python": "3.11.9",
+      "torch": "2.5.1+cu121",
+      "aeon": "1.5.0",
+      "numpy": "2.3.5",
+      "cuda": "12.1",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+    }
+  },
+  "drtn_selection": {
+    "rule": "official results/drtn_haptics_seed42 best-val rung (documented validation-selection rule, NOT test)",
+    "chosen": "R5 K=8 (official probe), val 0.4891",
+    "official_val": 0.4891,
+    "official_test": 0.3467,
+    "reproduction_check": "checkpoint val MF1 reproduces exactly"
+  },
+  "minirocket": {
+    "stageA_val_macro_f1": 0.5879,
+    "final_refit_val_macro_f1": 0.9014,
+    "n_features": 9996,
+    "extractor_fit": "TRAIN only",
+    "final_ridge": "TRAIN+VAL (canonical)",
+    "extractor_fit_time_s": 0.2
+  },
+  "drtn": {
+    "val_macro_f1": 0.4891,
+    "trainable_params": 599413,
+    "checkpoint": "results/drtn_haptics_seed42/R5 (frozen)"
+  },
+  "hydra_multirocket": {
+    "Hydra": {
+      "val_macro_f1": 0.4905,
+      "fit_time_s": 0.8,
+      "stage": "A (train-only fit)",
+      "final_refit_time_s": 2.4
+    },
+    "MultiRocketHydra": {
+      "val_macro_f1": 0.4924,
+      "fit_time_s": 1.5,
+      "stage": "A (train-only fit)",
+      "final_refit_time_s": 3.8
+    }
+  },
+  "validation_stage": {
+    "fusion": {
+      "selected_alpha": 0.95,
+      "val_macro_f1": 0.6321
+    },
+    "stacking": {
+      "selected_C": 10.0,
+      "val_macro_f1": 0.5485
+    },
+    "complementarity_val": {
+      "A_mr_and_drtn_correct": 10,
+      "B_mr_only_correct": 4,
+      "C_drtn_only_correct": 3,
+      "D_both_wrong": 6,
+      "n": 23,
+      "percentages": {
+        "A": 43.48,
+        "B": 17.39,
+        "C": 13.04,
+        "D": 26.09
+      }
+    },
+    "error_correlation_val": {
+      "binary_error_correlation": 0.375,
+      "cohens_kappa_correctness": 0.3735,
+      "prediction_agreement_rate": 0.6087,
+      "error_overlap": 0.4615,
+      "both_wrong": 6,
+      "union_wrong": 13,
+      "per_class": {
+        "0": {
+          "n": 3,
+          "both_wrong": 2,
+          "mr_only_wrong": 0,
+          "drtn_only_wrong": 1
+        },
+        "1": {
+          "n": 5,
+          "both_wrong": 0,
+          "mr_only_wrong": 1,
+          "drtn_only_wrong": 2
+        },
+        "2": {
+          "n": 5,
+          "both_wrong": 1,
+          "mr_only_wrong": 1,
+          "drtn_only_wrong": 1
+        },
+        "3": {
+          "n": 5,
+          "both_wrong": 2,
+          "mr_only_wrong": 1,
+          "drtn_only_wrong": 0
+        },
+        "4": {
+          "n": 5,
+          "both_wrong": 1,
+          "mr_only_wrong": 0,
+          "drtn_only_wrong": 0
+        }
+      }
+    }
+  },
+  "final_test": {
+    "MiniROCKET (train+val refit)": {
+      "test_macro_f1": 0.4974,
+      "accuracy": 0.5195,
+      "class_f1s": [
+        0.2597,
+        0.5625,
+        0.5672,
+        0.518,
+        0.5797
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          5,
+          20,
+          9,
+          16
+        ],
+        [
+          0,
+          36,
+          3,
+          17,
+          2
+        ],
+        [
+          3,
+          9,
+          38,
+          5,
+          4
+        ],
+        [
+          1,
+          12,
+          6,
+          36,
+          9
+        ],
+        [
+          3,
+          8,
+          8,
+          8,
+          40
+        ]
+      ]
+    },
+    "DRTN R5 (frozen checkpoint)": {
+      "test_macro_f1": 0.3467,
+      "accuracy": 0.3831,
+      "class_f1s": [
+        0.0625,
+        0.4132,
+        0.4037,
+        0.411,
+        0.4432
+      ],
+      "confusion_matrix": [
+        [
+          2,
+          5,
+          12,
+          14,
+          27
+        ],
+        [
+          0,
+          25,
+          8,
+          16,
+          9
+        ],
+        [
+          2,
+          13,
+          22,
+          7,
+          15
+        ],
+        [
+          0,
+          10,
+          5,
+          30,
+          19
+        ],
+        [
+          0,
+          10,
+          3,
+          15,
+          39
+        ]
+      ]
+    },
+    "Fusion alpha=0.95": {
+      "test_macro_f1": 0.4649,
+      "accuracy": 0.4903,
+      "class_f1s": [
+        0.2162,
+        0.5203,
+        0.5417,
+        0.4853,
+        0.5612
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          5,
+          21,
+          9,
+          17
+        ],
+        [
+          1,
+          32,
+          6,
+          17,
+          2
+        ],
+        [
+          2,
+          9,
+          39,
+          5,
+          4
+        ],
+        [
+          1,
+          11,
+          9,
+          33,
+          10
+        ],
+        [
+          2,
+          8,
+          10,
+          8,
+          39
+        ]
+      ]
+    },
+    "Stacked MR+DRTN": {
+      "test_macro_f1": 0.4347,
+      "accuracy": 0.4545,
+      "class_f1s": [
+        0.2222,
+        0.4427,
+        0.464,
+        0.5077,
+        0.5369
+      ],
+      "confusion_matrix": [
+        [
+          9,
+          5,
+          17,
+          6,
+          23
+        ],
+        [
+          1,
+          29,
+          6,
+          18,
+          4
+        ],
+        [
+          6,
+          15,
+          29,
+          1,
+          8
+        ],
+        [
+          4,
+          14,
+          6,
+          33,
+          7
+        ],
+        [
+          1,
+          10,
+          8,
+          8,
+          40
+        ]
+      ]
+    },
+    "Hydra (train+val refit)": {
+      "test_macro_f1": 0.5048,
+      "accuracy": 0.5162,
+      "class_f1s": [
+        0.3556,
+        0.5333,
+        0.5496,
+        0.4923,
+        0.5931
+      ],
+      "confusion_matrix": [
+        [
+          16,
+          4,
+          14,
+          8,
+          18
+        ],
+        [
+          1,
+          32,
+          7,
+          14,
+          4
+        ],
+        [
+          7,
+          5,
+          36,
+          7,
+          4
+        ],
+        [
+          2,
+          10,
+          11,
+          32,
+          9
+        ],
+        [
+          4,
+          11,
+          4,
+          5,
+          43
+        ]
+      ]
+    },
+    "MultiRocketHydra (train+val refit)": {
+      "test_macro_f1": 0.5111,
+      "accuracy": 0.5195,
+      "class_f1s": [
+        0.3505,
+        0.5736,
+        0.5854,
+        0.4806,
+        0.5652
+      ],
+      "confusion_matrix": [
+        [
+          17,
+          3,
+          13,
+          11,
+          16
+        ],
+        [
+          2,
+          37,
+          2,
+          14,
+          3
+        ],
+        [
+          8,
+          9,
+          36,
+          2,
+          4
+        ],
+        [
+          3,
+          13,
+          8,
+          31,
+          9
+        ],
+        [
+          7,
+          9,
+          5,
+          7,
+          39
+        ]
+      ]
+    }
+  },
+  "deltas_vs_minirocket_test": {
+    "DRTN R5 (frozen checkpoint)": -0.1507,
+    "Fusion alpha=0.95": -0.0325,
+    "Stacked MR+DRTN": -0.0627,
+    "Hydra (train+val refit)": 0.0074,
+    "MultiRocketHydra (train+val refit)": 0.0137
+  },
+  "complementarity_test": {
+    "A_mr_and_drtn_correct": 99,
+    "B_mr_only_correct": 61,
+    "C_drtn_only_correct": 19,
+    "D_both_wrong": 129,
+    "n": 308,
+    "percentages": {
+      "A": 32.14,
+      "B": 19.81,
+      "C": 6.17,
+      "D": 41.88
+    }
+  },
+  "error_correlation_test": {
+    "binary_error_correlation": 0.504,
+    "cohens_kappa_correctness": 0.4852,
+    "prediction_agreement_rate": 0.5844,
+    "error_overlap": 0.6172,
+    "both_wrong": 129,
+    "union_wrong": 209,
+    "per_class": {
+      "0": {
+        "n": 60,
+        "both_wrong": 49,
+        "mr_only_wrong": 1,
+        "drtn_only_wrong": 9
+      },
+      "1": {
+        "n": 58,
+        "both_wrong": 20,
+        "mr_only_wrong": 2,
+        "drtn_only_wrong": 13
+      },
+      "2": {
+        "n": 59,
+        "both_wrong": 19,
+        "mr_only_wrong": 2,
+        "drtn_only_wrong": 18
+      },
+      "3": {
+        "n": 64,
+        "both_wrong": 20,
+        "mr_only_wrong": 8,
+        "drtn_only_wrong": 14
+      },
+      "4": {
+        "n": 67,
+        "both_wrong": 21,
+        "mr_only_wrong": 6,
+        "drtn_only_wrong": 7
+      }
+    }
+  },
+  "score_scale": {
+    "mr_scores_train_range": [
+      -1.3913800716400146,
+      0.9826938509941101
+    ],
+    "mr_scores_val_range": [
+      -1.3861249685287476,
+      0.5784183740615845
+    ],
+    "drtn_logits_train_range": [
+      -2.8817241191864014,
+      4.159808158874512
+    ],
+    "drtn_logits_val_range": [
+      -2.2345998287200928,
+      2.828111171722412
+    ],
+    "transformations": "fusion: softmax(S/T), softmax(L/T) with T=1 (no fitting needed, documented); stacking: StandardScaler fitted on TRAIN meta-rows only"
+  },
+  "test_evaluations_total": 6,
+  "test_evaluated_once_per_system": true
+}

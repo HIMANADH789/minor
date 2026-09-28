@@ -1,0 +1,59 @@
+{
+    "model": "eTAI-Transport-Augmented-InceptionTime",
+    "accuracy": 0.954,
+    "macro_f1": 0.5986475135171381,
+    "class_recalls": [
+        1.0,
+        0.9745042492917847,
+        0.5789473684210527,
+        0.38461538461538464,
+        0.0
+    ],
+    "confusion_matrix": [
+        [
+            584,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            344,
+            7,
+            2,
+            0
+        ],
+        [
+            2,
+            3,
+            11,
+            3,
+            0
+        ],
+        [
+            2,
+            21,
+            1,
+            15,
+            0
+        ],
+        [
+            0,
+            2,
+            3,
+            0,
+            0
+        ]
+    ],
+    "n_params": 474053,
+    "training_time_sec": 62.39798188209534,
+    "changes_from_TAI": [
+        "batch_size=32, grad_accum=2 (was 64, no accum)",
+        "mixed precision (was none)",
+        "no augmentation (was geodesic aug)",
+        "no class weights (was weighted CE)",
+        "6 Inception blocks (was 3)",
+        "workers=4, prefetch=4 (was 0)"
+    ]
+}

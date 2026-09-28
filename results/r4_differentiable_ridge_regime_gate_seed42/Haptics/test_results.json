@@ -1,0 +1,11 @@
+{
+ "G": {
+  "test_macro_f1": 0.5037
+ },
+ "GH": {
+  "test_macro_f1": 0.55
+ },
+ "R4": {
+  "test_macro_f1": 0.5324
+ }
+}

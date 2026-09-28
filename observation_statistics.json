@@ -1,0 +1,13 @@
+{
+    "average_locality_depth": 40.0,
+    "average_novelty": 0.6346974897795994,
+    "average_confidence": 0.7581053822566366,
+    "histograms": {
+        "localities": [
+            40,
+            40,
+            40,
+            40
+        ]
+    }
+}

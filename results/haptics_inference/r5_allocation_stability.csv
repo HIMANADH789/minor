@@ -1,0 +1,4 @@
+seed,retained_config,rho_star,N_G,N_H,R5_5050_test,R5_adaptive_CV_selected_test,difference_5050_minus_adaptive
+42,50/50,0.5,4998,4998,0.55,0.5429,0.0071
+43,0.4,0.4,5998,3998,0.5213,0.5264,-0.0051
+44,50/50,0.5,4998,4998,0.5387,0.5342,0.0045

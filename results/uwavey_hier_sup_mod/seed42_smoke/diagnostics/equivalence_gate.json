@@ -1,0 +1,4 @@
+{
+ "verdict": "SKIPPED_SMOKE",
+ "reason": "smoke subset differs from the stored full run"
+}

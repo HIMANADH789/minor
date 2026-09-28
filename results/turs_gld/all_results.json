@@ -1,0 +1,2394 @@
+{
+  "ECG5000_UNBAL": {
+    "dataset": "ECG5000_UNBAL",
+    "M_global": 2048,
+    "M_local": 128,
+    "seq_len": 140,
+    "n_cls": 5,
+    "variants": {
+      "A0": {
+        "variant": "A0",
+        "blocks": [
+          "global"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.6692,
+        "val_nll": 1.193,
+        "feature_dim": 2016,
+        "block_dims": {
+          "global": 2016
+        },
+        "test": {
+          "macro_f1": 0.6943730846653527,
+          "accuracy": 0.96,
+          "weighted_f1": 0.9574626802063072,
+          "balanced_accuracy": 0.6677758025484282,
+          "mcc": 0.9245243372756026,
+          "kappa": 0.9242921791928411,
+          "confusion_matrix": [
+            [
+              584,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              342,
+              5,
+              5,
+              1
+            ],
+            [
+              1,
+              3,
+              12,
+              3,
+              0
+            ],
+            [
+              0,
+              18,
+              0,
+              21,
+              0
+            ],
+            [
+              0,
+              1,
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.203,
+        "test_ece": 0.6534,
+        "elapsed_s": 2.0
+      },
+      "A1": {
+        "variant": "A1",
+        "blocks": [
+          "local"
+        ],
+        "lam": 1.0,
+        "val_mf1": 0.5374,
+        "val_nll": 1.2494,
+        "feature_dim": 1024,
+        "block_dims": {
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.5100727636347827,
+          "accuracy": 0.916,
+          "weighted_f1": 0.9128810581358124,
+          "balanced_accuracy": 0.5060815325971235,
+          "mcc": 0.8427282404752233,
+          "kappa": 0.8422215209845377,
+          "confusion_matrix": [
+            [
+              561,
+              7,
+              3,
+              12,
+              1
+            ],
+            [
+              2,
+              335,
+              3,
+              13,
+              0
+            ],
+            [
+              5,
+              9,
+              4,
+              1,
+              0
+            ],
+            [
+              4,
+              19,
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              3,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        "test_nll": 1.2598,
+        "test_ece": 0.6232,
+        "elapsed_s": 0.3
+      },
+      "A2": {
+        "variant": "A2",
+        "blocks": [
+          "local_g4"
+        ],
+        "lam": 0.1,
+        "val_mf1": 0.3968,
+        "val_nll": 1.3523,
+        "feature_dim": 12,
+        "block_dims": {
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.3895696283956382,
+          "accuracy": 0.82,
+          "weighted_f1": 0.8165133137912212,
+          "balanced_accuracy": 0.3909261180081791,
+          "mcc": 0.6665532209758359,
+          "kappa": 0.6645370984695437,
+          "confusion_matrix": [
+            [
+              499,
+              53,
+              7,
+              24,
+              1
+            ],
+            [
+              25,
+              315,
+              3,
+              10,
+              0
+            ],
+            [
+              7,
+              10,
+              2,
+              0,
+              0
+            ],
+            [
+              17,
+              18,
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              2,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        "test_nll": 1.3612,
+        "test_ece": 0.549,
+        "elapsed_s": 0.2
+      },
+      "A3": {
+        "variant": "A3",
+        "blocks": [
+          "global",
+          "local"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.6709,
+        "val_nll": 1.1884,
+        "feature_dim": 3040,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.6599030652616952,
+          "accuracy": 0.954,
+          "weighted_f1": 0.9524900816584078,
+          "balanced_accuracy": 0.6503032056479794,
+          "mcc": 0.9133873060413482,
+          "kappa": 0.9132806859120703,
+          "confusion_matrix": [
+            [
+              582,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              340,
+              6,
+              7,
+              0
+            ],
+            [
+              1,
+              2,
+              11,
+              3,
+              2
+            ],
+            [
+              0,
+              18,
+              0,
+              20,
+              1
+            ],
+            [
+              0,
+              1,
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.2001,
+        "test_ece": 0.645,
+        "elapsed_s": 0.4
+      },
+      "A4": {
+        "variant": "A4",
+        "blocks": [
+          "global",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.6736,
+        "val_nll": 1.1885,
+        "feature_dim": 2028,
+        "block_dims": {
+          "global": 2016,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.6599030652616952,
+          "accuracy": 0.954,
+          "weighted_f1": 0.9524900816584078,
+          "balanced_accuracy": 0.6503032056479794,
+          "mcc": 0.9133873060413482,
+          "kappa": 0.9132806859120703,
+          "confusion_matrix": [
+            [
+              582,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              340,
+              6,
+              7,
+              0
+            ],
+            [
+              1,
+              2,
+              11,
+              3,
+              2
+            ],
+            [
+              0,
+              18,
+              0,
+              20,
+              1
+            ],
+            [
+              0,
+              1,
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.1994,
+        "test_ece": 0.6448,
+        "elapsed_s": 0.3
+      },
+      "A5": {
+        "variant": "A5",
+        "blocks": [
+          "local",
+          "local_g4"
+        ],
+        "lam": 1.0,
+        "val_mf1": 0.5334,
+        "val_nll": 1.2441,
+        "feature_dim": 1036,
+        "block_dims": {
+          "local": 1024,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.5243866749286472,
+          "accuracy": 0.928,
+          "weighted_f1": 0.924047830632388,
+          "balanced_accuracy": 0.5195384939032447,
+          "mcc": 0.8643790637225689,
+          "kappa": 0.8641368443895121,
+          "confusion_matrix": [
+            [
+              572,
+              2,
+              1,
+              9,
+              0
+            ],
+            [
+              3,
+              334,
+              4,
+              12,
+              0
+            ],
+            [
+              4,
+              8,
+              4,
+              3,
+              0
+            ],
+            [
+              2,
+              19,
+              0,
+              18,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              2,
+              0
+            ]
+          ]
+        },
+        "test_nll": 1.252,
+        "test_ece": 0.6337,
+        "elapsed_s": 0.2
+      },
+      "A6": {
+        "variant": "A6",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.6648,
+        "val_nll": 1.1885,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.672638107996738,
+          "accuracy": 0.955,
+          "weighted_f1": 0.953311021829348,
+          "balanced_accuracy": 0.6608295214374531,
+          "mcc": 0.9152757827507836,
+          "kappa": 0.9151636493204608,
+          "confusion_matrix": [
+            [
+              582,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              340,
+              6,
+              7,
+              0
+            ],
+            [
+              1,
+              2,
+              12,
+              3,
+              1
+            ],
+            [
+              0,
+              18,
+              0,
+              20,
+              1
+            ],
+            [
+              0,
+              1,
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.1999,
+        "test_ece": 0.6459,
+        "elapsed_s": 0.5
+      },
+      "A7": {
+        "variant": "A7",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.6676,
+        "val_nll": 1.1883,
+        "feature_dim": 3052,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.672638107996738,
+          "accuracy": 0.955,
+          "weighted_f1": 0.953311021829348,
+          "balanced_accuracy": 0.6608295214374531,
+          "mcc": 0.9152757827507836,
+          "kappa": 0.9151636493204608,
+          "confusion_matrix": [
+            [
+              582,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              340,
+              6,
+              7,
+              0
+            ],
+            [
+              1,
+              2,
+              12,
+              3,
+              1
+            ],
+            [
+              0,
+              18,
+              0,
+              20,
+              1
+            ],
+            [
+              0,
+              1,
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.2,
+        "test_ece": 0.6459,
+        "elapsed_s": 0.5
+      },
+      "B1": {
+        "variant": "B1",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.6648,
+        "val_nll": 1.1885,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.672638107996738,
+          "accuracy": 0.955,
+          "weighted_f1": 0.953311021829348,
+          "balanced_accuracy": 0.6608295214374531,
+          "mcc": 0.9152757827507836,
+          "kappa": 0.9151636493204608,
+          "confusion_matrix": [
+            [
+              582,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              340,
+              6,
+              7,
+              0
+            ],
+            [
+              1,
+              2,
+              12,
+              3,
+              1
+            ],
+            [
+              0,
+              18,
+              0,
+              20,
+              1
+            ],
+            [
+              0,
+              1,
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.1999,
+        "test_ece": 0.6459,
+        "elapsed_s": 0.4
+      },
+      "B2": {
+        "variant": "B2",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.6676,
+        "val_nll": 1.1883,
+        "feature_dim": 3052,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.672638107996738,
+          "accuracy": 0.955,
+          "weighted_f1": 0.953311021829348,
+          "balanced_accuracy": 0.6608295214374531,
+          "mcc": 0.9152757827507836,
+          "kappa": 0.9151636493204608,
+          "confusion_matrix": [
+            [
+              582,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              340,
+              6,
+              7,
+              0
+            ],
+            [
+              1,
+              2,
+              12,
+              3,
+              1
+            ],
+            [
+              0,
+              18,
+              0,
+              20,
+              1
+            ],
+            [
+              0,
+              1,
+              3,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.2,
+        "test_ece": 0.6459,
+        "elapsed_s": 0.5
+      }
+    },
+    "timing": {
+      "A0": 2.0,
+      "A1": 0.3,
+      "A2": 0.2,
+      "A3": 0.4,
+      "A4": 0.3,
+      "A5": 0.2,
+      "A6": 0.5,
+      "A7": 0.5,
+      "B1": 0.4,
+      "B2": 0.5
+    }
+  },
+  "ECG5000_BAL": {
+    "dataset": "ECG5000_BAL",
+    "M_global": 2048,
+    "M_local": 128,
+    "seq_len": 140,
+    "n_cls": 5,
+    "variants": {
+      "A0": {
+        "variant": "A0",
+        "blocks": [
+          "global"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9411,
+        "val_nll": 1.0397,
+        "feature_dim": 2016,
+        "block_dims": {
+          "global": 2016
+        },
+        "test": {
+          "macro_f1": 0.6501700826191547,
+          "accuracy": 0.945,
+          "weighted_f1": 0.9466445018618941,
+          "balanced_accuracy": 0.6714780273758932,
+          "mcc": 0.8976839855562622,
+          "kappa": 0.8975522436989973,
+          "confusion_matrix": [
+            [
+              574,
+              1,
+              3,
+              2,
+              4
+            ],
+            [
+              0,
+              336,
+              5,
+              12,
+              0
+            ],
+            [
+              1,
+              2,
+              13,
+              2,
+              1
+            ],
+            [
+              0,
+              16,
+              2,
+              21,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              2,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.0869,
+        "test_ece": 0.5981,
+        "elapsed_s": 1.0
+      },
+      "A1": {
+        "variant": "A1",
+        "blocks": [
+          "local"
+        ],
+        "lam": 0.1,
+        "val_mf1": 0.7222,
+        "val_nll": 1.266,
+        "feature_dim": 1024,
+        "block_dims": {
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.4747163652286992,
+          "accuracy": 0.835,
+          "weighted_f1": 0.8718484804253306,
+          "balanced_accuracy": 0.5330080402919555,
+          "mcc": 0.7207573119581476,
+          "kappa": 0.71383875767866,
+          "confusion_matrix": [
+            [
+              525,
+              3,
+              6,
+              8,
+              42
+            ],
+            [
+              2,
+              287,
+              29,
+              28,
+              7
+            ],
+            [
+              1,
+              3,
+              7,
+              3,
+              5
+            ],
+            [
+              4,
+              15,
+              3,
+              15,
+              2
+            ],
+            [
+              0,
+              2,
+              2,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.2288,
+        "test_ece": 0.5263,
+        "elapsed_s": 0.6
+      },
+      "A2": {
+        "variant": "A2",
+        "blocks": [
+          "local_g4"
+        ],
+        "lam": 0.01,
+        "val_mf1": 0.4451,
+        "val_nll": 1.4392,
+        "feature_dim": 12,
+        "block_dims": {
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.4043190881235949,
+          "accuracy": 0.779,
+          "weighted_f1": 0.8098395740666569,
+          "balanced_accuracy": 0.49774953496572294,
+          "mcc": 0.6170871199251697,
+          "kappa": 0.6123521105761219,
+          "confusion_matrix": [
+            [
+              491,
+              17,
+              12,
+              30,
+              34
+            ],
+            [
+              25,
+              278,
+              8,
+              27,
+              15
+            ],
+            [
+              7,
+              6,
+              3,
+              3,
+              0
+            ],
+            [
+              15,
+              15,
+              0,
+              4,
+              5
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              3
+            ]
+          ]
+        },
+        "test_nll": 1.3726,
+        "test_ece": 0.5117,
+        "elapsed_s": 0.4
+      },
+      "A3": {
+        "variant": "A3",
+        "blocks": [
+          "global",
+          "local"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9457,
+        "val_nll": 1.0379,
+        "feature_dim": 3040,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.6551113537986745,
+          "accuracy": 0.946,
+          "weighted_f1": 0.9470437965079519,
+          "balanced_accuracy": 0.6718204931293179,
+          "mcc": 0.899358623708817,
+          "kappa": 0.8992473403163633,
+          "confusion_matrix": [
+            [
+              575,
+              1,
+              3,
+              2,
+              3
+            ],
+            [
+              0,
+              336,
+              5,
+              12,
+              0
+            ],
+            [
+              1,
+              2,
+              13,
+              2,
+              1
+            ],
+            [
+              0,
+              16,
+              2,
+              21,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              1,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.0864,
+        "test_ece": 0.599,
+        "elapsed_s": 0.9
+      },
+      "A4": {
+        "variant": "A4",
+        "blocks": [
+          "global",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9419,
+        "val_nll": 1.0396,
+        "feature_dim": 2028,
+        "block_dims": {
+          "global": 2016,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.65197071528067,
+          "accuracy": 0.945,
+          "weighted_f1": 0.947044063730914,
+          "balanced_accuracy": 0.676039660266138,
+          "mcc": 0.8977551764473065,
+          "kappa": 0.8976186088416569,
+          "confusion_matrix": [
+            [
+              574,
+              1,
+              3,
+              2,
+              4
+            ],
+            [
+              0,
+              335,
+              5,
+              12,
+              1
+            ],
+            [
+              1,
+              2,
+              13,
+              2,
+              1
+            ],
+            [
+              0,
+              15,
+              2,
+              22,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              1,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.0866,
+        "test_ece": 0.598,
+        "elapsed_s": 0.8
+      },
+      "A5": {
+        "variant": "A5",
+        "blocks": [
+          "local",
+          "local_g4"
+        ],
+        "lam": 0.1,
+        "val_mf1": 0.7376,
+        "val_nll": 1.2514,
+        "feature_dim": 1036,
+        "block_dims": {
+          "local": 1024,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.49277185509080335,
+          "accuracy": 0.858,
+          "weighted_f1": 0.8851219109533442,
+          "balanced_accuracy": 0.5518008702774976,
+          "mcc": 0.7530902748602558,
+          "kappa": 0.7489032198741333,
+          "confusion_matrix": [
+            [
+              540,
+              2,
+              7,
+              10,
+              25
+            ],
+            [
+              3,
+              293,
+              26,
+              25,
+              6
+            ],
+            [
+              2,
+              3,
+              7,
+              2,
+              5
+            ],
+            [
+              2,
+              17,
+              2,
+              17,
+              1
+            ],
+            [
+              0,
+              2,
+              2,
+              0,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.2109,
+        "test_ece": 0.5451,
+        "elapsed_s": 0.6
+      },
+      "A6": {
+        "variant": "A6",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9445,
+        "val_nll": 1.0379,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.6551113537986745,
+          "accuracy": 0.946,
+          "weighted_f1": 0.9470437965079519,
+          "balanced_accuracy": 0.6718204931293179,
+          "mcc": 0.899358623708817,
+          "kappa": 0.8992473403163633,
+          "confusion_matrix": [
+            [
+              575,
+              1,
+              3,
+              2,
+              3
+            ],
+            [
+              0,
+              336,
+              5,
+              12,
+              0
+            ],
+            [
+              1,
+              2,
+              13,
+              2,
+              1
+            ],
+            [
+              0,
+              16,
+              2,
+              21,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              1,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.0861,
+        "test_ece": 0.5989,
+        "elapsed_s": 1.0
+      },
+      "A7": {
+        "variant": "A7",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9445,
+        "val_nll": 1.0379,
+        "feature_dim": 3052,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.6572846857255915,
+          "accuracy": 0.948,
+          "weighted_f1": 0.9488268204781404,
+          "balanced_accuracy": 0.6727295311207029,
+          "mcc": 0.9029764522557127,
+          "kappa": 0.9028801634601556,
+          "confusion_matrix": [
+            [
+              576,
+              0,
+              3,
+              2,
+              3
+            ],
+            [
+              0,
+              337,
+              5,
+              11,
+              0
+            ],
+            [
+              1,
+              2,
+              13,
+              2,
+              1
+            ],
+            [
+              0,
+              16,
+              2,
+              21,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              1,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.0861,
+        "test_ece": 0.6009,
+        "elapsed_s": 1.0
+      },
+      "B1": {
+        "variant": "B1",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9445,
+        "val_nll": 1.0379,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.6551113537986745,
+          "accuracy": 0.946,
+          "weighted_f1": 0.9470437965079519,
+          "balanced_accuracy": 0.6718204931293179,
+          "mcc": 0.899358623708817,
+          "kappa": 0.8992473403163633,
+          "confusion_matrix": [
+            [
+              575,
+              1,
+              3,
+              2,
+              3
+            ],
+            [
+              0,
+              336,
+              5,
+              12,
+              0
+            ],
+            [
+              1,
+              2,
+              13,
+              2,
+              1
+            ],
+            [
+              0,
+              16,
+              2,
+              21,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              1,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.0861,
+        "test_ece": 0.5989,
+        "elapsed_s": 1.0
+      },
+      "B2": {
+        "variant": "B2",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9445,
+        "val_nll": 1.0379,
+        "feature_dim": 3052,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 12
+        },
+        "test": {
+          "macro_f1": 0.6572846857255915,
+          "accuracy": 0.948,
+          "weighted_f1": 0.9488268204781404,
+          "balanced_accuracy": 0.6727295311207029,
+          "mcc": 0.9029764522557127,
+          "kappa": 0.9028801634601556,
+          "confusion_matrix": [
+            [
+              576,
+              0,
+              3,
+              2,
+              3
+            ],
+            [
+              0,
+              337,
+              5,
+              11,
+              0
+            ],
+            [
+              1,
+              2,
+              13,
+              2,
+              1
+            ],
+            [
+              0,
+              16,
+              2,
+              21,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              1,
+              1
+            ]
+          ]
+        },
+        "test_nll": 1.0861,
+        "test_ece": 0.6009,
+        "elapsed_s": 1.0
+      }
+    },
+    "timing": {
+      "A0": 1.0,
+      "A1": 0.6,
+      "A2": 0.4,
+      "A3": 0.9,
+      "A4": 0.8,
+      "A5": 0.6,
+      "A6": 1.0,
+      "A7": 1.0,
+      "B1": 1.0,
+      "B2": 1.0
+    }
+  },
+  "CWRU_UNBAL": {
+    "dataset": "CWRU_UNBAL",
+    "M_global": 2048,
+    "M_local": 128,
+    "seq_len": 1024,
+    "n_cls": 4,
+    "variants": {
+      "A0": {
+        "variant": "A0",
+        "blocks": [
+          "global"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.9711,
+        "val_nll": 0.8425,
+        "feature_dim": 2016,
+        "block_dims": {
+          "global": 2016
+        },
+        "test": {
+          "macro_f1": 0.94579945799458,
+          "accuracy": 0.9458333333333333,
+          "weighted_f1": 0.94579945799458,
+          "balanced_accuracy": 0.9458333333333333,
+          "mcc": 0.9279711252379944,
+          "kappa": 0.9277777777777778,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              55,
+              5
+            ],
+            [
+              0,
+              0,
+              8,
+              52
+            ]
+          ]
+        },
+        "test_nll": 0.8432,
+        "test_ece": 0.5074,
+        "elapsed_s": 0.3
+      },
+      "A1": {
+        "variant": "A1",
+        "blocks": [
+          "local"
+        ],
+        "lam": 0.1,
+        "val_mf1": 0.8992,
+        "val_nll": 0.9068,
+        "feature_dim": 1024,
+        "block_dims": {
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.9029430890125223,
+          "accuracy": 0.9041666666666667,
+          "weighted_f1": 0.9029430890125223,
+          "balanced_accuracy": 0.9041666666666667,
+          "mcc": 0.8752054361032267,
+          "kappa": 0.8722222222222222,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              54,
+              4
+            ],
+            [
+              0,
+              0,
+              17,
+              43
+            ]
+          ]
+        },
+        "test_nll": 0.9069,
+        "test_ece": 0.4855,
+        "elapsed_s": 0.1
+      },
+      "A2": {
+        "variant": "A2",
+        "blocks": [
+          "local_g4"
+        ],
+        "lam": 0.001,
+        "val_mf1": 0.6356,
+        "val_nll": 1.2038,
+        "feature_dim": 16,
+        "block_dims": {
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.5767365753119429,
+          "accuracy": 0.5916666666666667,
+          "weighted_f1": 0.5767365753119429,
+          "balanced_accuracy": 0.5916666666666667,
+          "mcc": 0.46031109579235724,
+          "kappa": 0.4555555555555556,
+          "confusion_matrix": [
+            [
+              56,
+              0,
+              3,
+              1
+            ],
+            [
+              5,
+              23,
+              14,
+              18
+            ],
+            [
+              9,
+              13,
+              35,
+              3
+            ],
+            [
+              10,
+              6,
+              16,
+              28
+            ]
+          ]
+        },
+        "test_nll": 1.2055,
+        "test_ece": 0.2674,
+        "elapsed_s": 0.0
+      },
+      "A3": {
+        "variant": "A3",
+        "blocks": [
+          "global",
+          "local"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.9711,
+        "val_nll": 0.8411,
+        "feature_dim": 3040,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.94579945799458,
+          "accuracy": 0.9458333333333333,
+          "weighted_f1": 0.94579945799458,
+          "balanced_accuracy": 0.9458333333333333,
+          "mcc": 0.9279711252379944,
+          "kappa": 0.9277777777777778,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              55,
+              5
+            ],
+            [
+              0,
+              0,
+              8,
+              52
+            ]
+          ]
+        },
+        "test_nll": 0.8371,
+        "test_ece": 0.5049,
+        "elapsed_s": 0.1
+      },
+      "A4": {
+        "variant": "A4",
+        "blocks": [
+          "global",
+          "local_g4"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.9711,
+        "val_nll": 0.842,
+        "feature_dim": 2032,
+        "block_dims": {
+          "global": 2016,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.94579945799458,
+          "accuracy": 0.9458333333333333,
+          "weighted_f1": 0.94579945799458,
+          "balanced_accuracy": 0.9458333333333333,
+          "mcc": 0.9279711252379944,
+          "kappa": 0.9277777777777778,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              55,
+              5
+            ],
+            [
+              0,
+              0,
+              8,
+              52
+            ]
+          ]
+        },
+        "test_nll": 0.843,
+        "test_ece": 0.5074,
+        "elapsed_s": 0.1
+      },
+      "A5": {
+        "variant": "A5",
+        "blocks": [
+          "local",
+          "local_g4"
+        ],
+        "lam": 0.1,
+        "val_mf1": 0.9038,
+        "val_nll": 0.8997,
+        "feature_dim": 1040,
+        "block_dims": {
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.8985603014368866,
+          "accuracy": 0.9,
+          "weighted_f1": 0.8985603014368867,
+          "balanced_accuracy": 0.8999999999999999,
+          "mcc": 0.8701380295131786,
+          "kappa": 0.8666666666666667,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              54,
+              4
+            ],
+            [
+              0,
+              0,
+              18,
+              42
+            ]
+          ]
+        },
+        "test_nll": 0.9029,
+        "test_ece": 0.4784,
+        "elapsed_s": 0.1
+      },
+      "A6": {
+        "variant": "A6",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.9711,
+        "val_nll": 0.8409,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.94579945799458,
+          "accuracy": 0.9458333333333333,
+          "weighted_f1": 0.94579945799458,
+          "balanced_accuracy": 0.9458333333333333,
+          "mcc": 0.9279711252379944,
+          "kappa": 0.9277777777777778,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              55,
+              5
+            ],
+            [
+              0,
+              0,
+              8,
+              52
+            ]
+          ]
+        },
+        "test_nll": 0.8372,
+        "test_ece": 0.5049,
+        "elapsed_s": 0.1
+      },
+      "A7": {
+        "variant": "A7",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.9711,
+        "val_nll": 0.8406,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.94579945799458,
+          "accuracy": 0.9458333333333333,
+          "weighted_f1": 0.94579945799458,
+          "balanced_accuracy": 0.9458333333333333,
+          "mcc": 0.9279711252379944,
+          "kappa": 0.9277777777777778,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              55,
+              5
+            ],
+            [
+              0,
+              0,
+              8,
+              52
+            ]
+          ]
+        },
+        "test_nll": 0.8371,
+        "test_ece": 0.5049,
+        "elapsed_s": 0.1
+      },
+      "B1": {
+        "variant": "B1",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.9711,
+        "val_nll": 0.8409,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.94579945799458,
+          "accuracy": 0.9458333333333333,
+          "weighted_f1": 0.94579945799458,
+          "balanced_accuracy": 0.9458333333333333,
+          "mcc": 0.9279711252379944,
+          "kappa": 0.9277777777777778,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              55,
+              5
+            ],
+            [
+              0,
+              0,
+              8,
+              52
+            ]
+          ]
+        },
+        "test_nll": 0.8372,
+        "test_ece": 0.5049,
+        "elapsed_s": 0.1
+      },
+      "B2": {
+        "variant": "B2",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 1000.0,
+        "val_mf1": 0.9711,
+        "val_nll": 0.8406,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.94579945799458,
+          "accuracy": 0.9458333333333333,
+          "weighted_f1": 0.94579945799458,
+          "balanced_accuracy": 0.9458333333333333,
+          "mcc": 0.9279711252379944,
+          "kappa": 0.9277777777777778,
+          "confusion_matrix": [
+            [
+              60,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              60,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              55,
+              5
+            ],
+            [
+              0,
+              0,
+              8,
+              52
+            ]
+          ]
+        },
+        "test_nll": 0.8371,
+        "test_ece": 0.5049,
+        "elapsed_s": 0.1
+      }
+    },
+    "timing": {
+      "A0": 0.3,
+      "A1": 0.1,
+      "A2": 0.0,
+      "A3": 0.1,
+      "A4": 0.1,
+      "A5": 0.1,
+      "A6": 0.1,
+      "A7": 0.1,
+      "B1": 0.1,
+      "B2": 0.1
+    }
+  },
+  "CWRU_BAL": {
+    "dataset": "CWRU_BAL",
+    "M_global": 2048,
+    "M_local": 128,
+    "seq_len": 1024,
+    "n_cls": 4,
+    "variants": {
+      "A0": {
+        "variant": "A0",
+        "blocks": [
+          "global"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9736,
+        "val_nll": 0.8068,
+        "feature_dim": 2016,
+        "block_dims": {
+          "global": 2016
+        },
+        "test": {
+          "macro_f1": 0.982394366197183,
+          "accuracy": 0.982363315696649,
+          "weighted_f1": 0.982363315696649,
+          "balanced_accuracy": 0.982394366197183,
+          "mcc": 0.9764843477828099,
+          "kappa": 0.9764843477828099,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              141,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              137,
+              5
+            ],
+            [
+              0,
+              0,
+              5,
+              137
+            ]
+          ]
+        },
+        "test_nll": 0.7912,
+        "test_ece": 0.5259,
+        "elapsed_s": 0.5
+      },
+      "A1": {
+        "variant": "A1",
+        "blocks": [
+          "local"
+        ],
+        "lam": 1.0,
+        "val_mf1": 0.891,
+        "val_nll": 0.9187,
+        "feature_dim": 1024,
+        "block_dims": {
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.9022816236656106,
+          "accuracy": 0.9029982363315696,
+          "weighted_f1": 0.9021525990221791,
+          "balanced_accuracy": 0.9031440415542903,
+          "mcc": 0.8735759864199877,
+          "kappa": 0.8706655220036579,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              139,
+              2,
+              0
+            ],
+            [
+              3,
+              5,
+              127,
+              7
+            ],
+            [
+              0,
+              0,
+              38,
+              104
+            ]
+          ]
+        },
+        "test_nll": 0.9043,
+        "test_ece": 0.4861,
+        "elapsed_s": 0.2
+      },
+      "A2": {
+        "variant": "A2",
+        "blocks": [
+          "local_g4"
+        ],
+        "lam": 0.1,
+        "val_mf1": 0.6008,
+        "val_nll": 1.1992,
+        "feature_dim": 16,
+        "block_dims": {
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.6581702649424708,
+          "accuracy": 0.6666666666666666,
+          "weighted_f1": 0.6582333401204925,
+          "balanced_accuracy": 0.6664294276296074,
+          "mcc": 0.5602451746712385,
+          "kappa": 0.555478585502437,
+          "confusion_matrix": [
+            [
+              138,
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              75,
+              31,
+              35
+            ],
+            [
+              30,
+              11,
+              89,
+              12
+            ],
+            [
+              15,
+              13,
+              38,
+              76
+            ]
+          ]
+        },
+        "test_nll": 1.1883,
+        "test_ece": 0.3367,
+        "elapsed_s": 0.1
+      },
+      "A3": {
+        "variant": "A3",
+        "blocks": [
+          "global",
+          "local"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9718,
+        "val_nll": 0.8077,
+        "feature_dim": 3040,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024
+        },
+        "test": {
+          "macro_f1": 0.982394366197183,
+          "accuracy": 0.982363315696649,
+          "weighted_f1": 0.982363315696649,
+          "balanced_accuracy": 0.982394366197183,
+          "mcc": 0.9764843477828099,
+          "kappa": 0.9764843477828099,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              141,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              137,
+              5
+            ],
+            [
+              0,
+              0,
+              5,
+              137
+            ]
+          ]
+        },
+        "test_nll": 0.7914,
+        "test_ece": 0.5272,
+        "elapsed_s": 0.3
+      },
+      "A4": {
+        "variant": "A4",
+        "blocks": [
+          "global",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9718,
+        "val_nll": 0.806,
+        "feature_dim": 2032,
+        "block_dims": {
+          "global": 2016,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.982394366197183,
+          "accuracy": 0.982363315696649,
+          "weighted_f1": 0.982363315696649,
+          "balanced_accuracy": 0.982394366197183,
+          "mcc": 0.9764843477828099,
+          "kappa": 0.9764843477828099,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              141,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              137,
+              5
+            ],
+            [
+              0,
+              0,
+              5,
+              137
+            ]
+          ]
+        },
+        "test_nll": 0.7909,
+        "test_ece": 0.5249,
+        "elapsed_s": 0.2
+      },
+      "A5": {
+        "variant": "A5",
+        "blocks": [
+          "local",
+          "local_g4"
+        ],
+        "lam": 10.0,
+        "val_mf1": 0.896,
+        "val_nll": 0.9135,
+        "feature_dim": 1040,
+        "block_dims": {
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.9077080470479768,
+          "accuracy": 0.908289241622575,
+          "weighted_f1": 0.9075825352448225,
+          "balanced_accuracy": 0.9084257316951353,
+          "mcc": 0.8809222216282484,
+          "kappa": 0.8777196227573222,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              139,
+              2,
+              0
+            ],
+            [
+              1,
+              4,
+              130,
+              7
+            ],
+            [
+              0,
+              0,
+              38,
+              104
+            ]
+          ]
+        },
+        "test_nll": 0.8998,
+        "test_ece": 0.4899,
+        "elapsed_s": 0.2
+      },
+      "A6": {
+        "variant": "A6",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9718,
+        "val_nll": 0.8077,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.982394366197183,
+          "accuracy": 0.982363315696649,
+          "weighted_f1": 0.982363315696649,
+          "balanced_accuracy": 0.982394366197183,
+          "mcc": 0.9764843477828099,
+          "kappa": 0.9764843477828099,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              141,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              137,
+              5
+            ],
+            [
+              0,
+              0,
+              5,
+              137
+            ]
+          ]
+        },
+        "test_nll": 0.7917,
+        "test_ece": 0.5272,
+        "elapsed_s": 0.3
+      },
+      "A7": {
+        "variant": "A7",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9718,
+        "val_nll": 0.807,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.982394366197183,
+          "accuracy": 0.982363315696649,
+          "weighted_f1": 0.982363315696649,
+          "balanced_accuracy": 0.982394366197183,
+          "mcc": 0.9764843477828099,
+          "kappa": 0.9764843477828099,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              141,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              137,
+              5
+            ],
+            [
+              0,
+              0,
+              5,
+              137
+            ]
+          ]
+        },
+        "test_nll": 0.7913,
+        "test_ece": 0.525,
+        "elapsed_s": 0.3
+      },
+      "B1": {
+        "variant": "B1",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9718,
+        "val_nll": 0.8077,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.982394366197183,
+          "accuracy": 0.982363315696649,
+          "weighted_f1": 0.982363315696649,
+          "balanced_accuracy": 0.982394366197183,
+          "mcc": 0.9764843477828099,
+          "kappa": 0.9764843477828099,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              141,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              137,
+              5
+            ],
+            [
+              0,
+              0,
+              5,
+              137
+            ]
+          ]
+        },
+        "test_nll": 0.7917,
+        "test_ece": 0.5272,
+        "elapsed_s": 0.3
+      },
+      "B2": {
+        "variant": "B2",
+        "blocks": [
+          "global",
+          "local",
+          "local_g4"
+        ],
+        "lam": 100.0,
+        "val_mf1": 0.9718,
+        "val_nll": 0.807,
+        "feature_dim": 3056,
+        "block_dims": {
+          "global": 2016,
+          "local": 1024,
+          "local_g4": 16
+        },
+        "test": {
+          "macro_f1": 0.982394366197183,
+          "accuracy": 0.982363315696649,
+          "weighted_f1": 0.982363315696649,
+          "balanced_accuracy": 0.982394366197183,
+          "mcc": 0.9764843477828099,
+          "kappa": 0.9764843477828099,
+          "confusion_matrix": [
+            [
+              142,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              141,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              137,
+              5
+            ],
+            [
+              0,
+              0,
+              5,
+              137
+            ]
+          ]
+        },
+        "test_nll": 0.7913,
+        "test_ece": 0.525,
+        "elapsed_s": 0.3
+      }
+    },
+    "timing": {
+      "A0": 0.5,
+      "A1": 0.2,
+      "A2": 0.1,
+      "A3": 0.3,
+      "A4": 0.2,
+      "A5": 0.2,
+      "A6": 0.3,
+      "A7": 0.3,
+      "B1": 0.3,
+      "B2": 0.3
+    }
+  }
+}

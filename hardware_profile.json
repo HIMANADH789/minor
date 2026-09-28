@@ -1,0 +1,18 @@
+{
+    "timers_seconds": {
+        "representation_and_transport_train": 22.448553323745728,
+        "kernel_train": 0.5318760871887207,
+        "classifier_fit": 0.05700111389160156,
+        "representation_and_transport_test": 14.63431429862976,
+        "kernel_test": 0.2772367000579834,
+        "classifier_predict": 0.05182933807373047
+    },
+    "vram_peak_mb": {
+        "representation_and_transport_train": 23.87451171875,
+        "kernel_train": 1316.75537109375,
+        "classifier_fit": 8.13134765625,
+        "representation_and_transport_test": 23.87548828125,
+        "kernel_test": 1316.75634765625,
+        "classifier_predict": 8.130859375
+    }
+}

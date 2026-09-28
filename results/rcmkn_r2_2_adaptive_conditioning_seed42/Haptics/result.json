@@ -1,0 +1,287 @@
+{
+  "dataset": "Haptics",
+  "split": {
+    "train": 132,
+    "val": 23,
+    "test": 308
+  },
+  "results": {
+    "B0": {
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.55,
+      "accuracy": 0.5649,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.05,
+      "class_f1s": [
+        0.3704,
+        0.6142,
+        0.6202,
+        0.5564,
+        0.589
+      ]
+    },
+    "B1": {
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.55,
+      "accuracy": 0.5649,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.04,
+      "class_f1s": [
+        0.3704,
+        0.6142,
+        0.6202,
+        0.5564,
+        0.589
+      ]
+    },
+    "B2": {
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.55,
+      "accuracy": 0.5649,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.04,
+      "class_f1s": [
+        0.3704,
+        0.6142,
+        0.6202,
+        0.5564,
+        0.589
+      ]
+    },
+    "B3A": {
+      "val_macro_f1": 0.8251,
+      "test_macro_f1": 0.5008,
+      "accuracy": 0.5097,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.06,
+      "class_f1s": [
+        0.382,
+        0.4906,
+        0.5238,
+        0.5062,
+        0.6015
+      ]
+    },
+    "B3B": {
+      "val_macro_f1": 0.8618,
+      "test_macro_f1": 0.5011,
+      "accuracy": 0.5097,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.05,
+      "class_f1s": [
+        0.3953,
+        0.4915,
+        0.5246,
+        0.5,
+        0.5942
+      ]
+    }
+  },
+  "deltas": {
+    "B2-B0": 0.0,
+    "B2-B1": 0.0,
+    "B2-B3A": 0.0492,
+    "B2-B3B": 0.0489,
+    "B3A-B3B": -0.0003,
+    "B2-M0_ref": 0.0526
+  },
+  "mechanistic_h": {
+    "B0": {
+      "mean_H": 0.039705680873726557,
+      "median_H": 0.033823560923337936,
+      "max_H": 0.25,
+      "frac_nonzero": 0.9485135989879823
+    },
+    "B1": {
+      "mean_H": 0.039705680873726557,
+      "median_H": 0.033823560923337936,
+      "max_H": 0.25,
+      "frac_nonzero": 0.9485135989879823
+    },
+    "B2": {
+      "mean_H": 0.0396764226359202,
+      "median_H": 0.03377479687333107,
+      "max_H": 0.25,
+      "frac_nonzero": 0.9485884676451226
+    },
+    "B3A": {
+      "mean_H": 0.0026153079548625435,
+      "median_H": 0.0008841195376589894,
+      "max_H": 0.5625,
+      "frac_nonzero": 0.9590700796447611
+    },
+    "B3B": {
+      "mean_H": 0.002439297268536884,
+      "median_H": 0.0009014034003484994,
+      "max_H": 0.5625,
+      "frac_nonzero": 0.9589551949812183
+    }
+  },
+  "vq_diagnostics": {
+    "codes_trva": {
+      "active_codes": 8,
+      "normalized_entropy": 0.9349701302482213,
+      "perplexity": 6.988149103122168,
+      "dominant_fraction": 0.23615739099610067,
+      "usage": [
+        0.23615739099610067,
+        0.009246130213872149,
+        0.14298712040647524,
+        0.11297412265154201,
+        0.13724447595415337,
+        0.12369136240103983,
+        0.10449604159281578,
+        0.13320335578400094
+      ],
+      "counts": [
+        39972.0,
+        1565.0,
+        24202.0,
+        19122.0,
+        23230.0,
+        20936.0,
+        17687.0,
+        22546.0
+      ]
+    },
+    "codes_te": {
+      "active_codes": 8,
+      "normalized_entropy": 0.9364440704488284,
+      "perplexity": 7.009600444924249,
+      "dominant_fraction": 0.23140847247990104,
+      "usage": [
+        0.23140847247990104,
+        0.009246705675277104,
+        0.13966985395556825,
+        0.11261357689929119,
+        0.14018124732410447,
+        0.12819323533609248,
+        0.1050080871509443,
+        0.13367882117882118
+      ],
+      "counts": [
+        77831.0,
+        3110.0,
+        46976.0,
+        37876.0,
+        47148.0,
+        43116.0,
+        35318.0,
+        44961.0
+      ]
+    }
+  },
+  "modulation_diagnostics": {
+    "beta": 0.25876,
+    "mean_abs_s": 0.011169831425270227,
+    "median_abs_s": 0.008930431280745445,
+    "max_abs_s": 0.05620269745663066,
+    "s_norms_L2": [
+      1.087904,
+      0.449156,
+      1.08536,
+      1.156606,
+      1.179538,
+      1.218808,
+      0.995609,
+      1.136369
+    ],
+    "mean_abs_delta": 0.0028903056466005952,
+    "max_abs_delta": 0.014543010853230953,
+    "pairwise_cos_mean": -0.0275184657341617,
+    "pairwise_cos_max": 0.025975405178434243,
+    "fraction_near_zero_code_vec": 0.0,
+    "fraction_near_identical_code_vec": 0.0,
+    "scale_factor_min": 0.985456989146769,
+    "scale_factor_max": 1.014224687591195
+  },
+  "modulation_training": {
+    "best_val_mf1": 0.6688,
+    "epochs_run": 47
+  },
+  "r2_reference": 0.55,
+  "r0_reference": 0.5366,
+  "m0_reference": 0.4974,
+  "audits": {
+    "audit1_config": {
+      "expected": {
+        "train": 132,
+        "val": 23,
+        "test": 308,
+        "T": 1092,
+        "n_classes": 5
+      },
+      "actual": {
+        "train": 132,
+        "val": 23,
+        "test": 308,
+        "T": 1092,
+        "n_classes": 5
+      },
+      "pass": true
+    },
+    "audit2_margin_kernel_identity": {
+      "trainva": {
+        "split": "trainva",
+        "n_rows": 155,
+        "identity_n_diff": 0,
+        "u_finite": true,
+        "u_abs1_frac": 0.00012733751829104327
+      },
+      "test": {
+        "split": "test",
+        "n_rows": 308,
+        "identity_n_diff": 0,
+        "u_finite": true,
+        "u_abs1_frac": 0.00012714878369399056
+      },
+      "note": "chunk-0 exact bool equality vs audited extractor"
+    },
+    "modulation_training": {
+      "best_val_mf1": 0.6688,
+      "epochs_run": 47
+    },
+    "audit10_bounds": {
+      "delta_abs_max": 0.014543010853230953,
+      "scale_min": 0.9854570031166077,
+      "scale_max": 1.014224648475647,
+      "pass": true
+    },
+    "audit13_14_occupancy": {
+      "failures": 0,
+      "pass": true
+    },
+    "audit15_distinction": {
+      "hash_c1_trva": "ea7a8d996a717e33",
+      "hash_c2_trva": "bceb58b214df3ab0",
+      "hash_b2_trva": "52942179ef8c6426",
+      "c1_vs_c2_diff_frac_trva": 0.838567883729174,
+      "c1_vs_c2_diff_frac_te": 0.8372996051567481,
+      "b2_vs_c1_diff_frac_trva": 0.8400744416873449,
+      "shares_memory_c1_c2": false,
+      "pass": true
+    },
+    "audit12_b1_equals_b0": {
+      "trainva_max_abs_diff": 0.0,
+      "test_max_abs_diff": 0.0,
+      "pass": true
+    },
+    "audit16_conditioning_active": {
+      "fraction_H_entries_changed_vs_B0": 0.356617,
+      "pass": true
+    },
+    "audit6_H_formula": {
+      "max_diff": 6.0521941833147075e-09,
+      "pass": true
+    },
+    "audit7_valid_region": {
+      "pass": true
+    }
+  },
+  "runtime_s": 241.2
+}

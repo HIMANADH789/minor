@@ -1,0 +1,7 @@
+dataset,variant,n_features
+EpilepticSeizures,M0,9996
+EpilepticSeizures,M3,69972
+Haptics,M0,9996
+Haptics,M3,69972
+Phoneme,M0,9996
+Phoneme,M3,69972

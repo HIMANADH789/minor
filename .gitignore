@@ -1,0 +1,72 @@
+# ============================================================
+# ECG_Benchmark — .gitignore
+# Keeps: source (experiments/, loaders/, src/), small audited
+#        artifacts (results/**: *.json, *.csv, *.md, figures
+#        *.png/*.pdf), configs.
+# Excludes: heavy datasets, model/binary artifacts, caches,
+#        virtualenvs, logs, OS junk.
+# ============================================================
+
+# --- Data (heavy, re-obtainable) ---
+data/
+*.mat
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.arrow
+*.arrow
+*.zarr
+
+# --- Model checkpoints / trained weights ---
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.joblib
+*.sav
+
+# --- Python runtime caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments / heavy packages ---
+venv/
+.venv/
+env/
+.virtualenv/
+site-packages/
+
+# --- Tooling caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# --- Logs and temp run output ---
+*.log
+logs/
+*.out
+*.tmp
+*.swp
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.idea/
+.vscode/
+
+# === NOTE: figures (results/**/*.png, *.pdf) and all small
+# === audited artifacts (json/csv/md) stay TRACKED on purpose.

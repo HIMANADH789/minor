@@ -1,0 +1,122 @@
+{
+  "method": "Dem\u0161ar (2006) CD diagram; each dataset = one block ranked by mean test Macro-F1 over 3 seeds",
+  "models": [
+    "HERAMBA R5",
+    "MiniRocket"
+  ],
+  "datasets": [
+    "EpilepticSeizures",
+    "Phoneme",
+    "ECG5000_UNBAL",
+    "ItalyPowerDemand"
+  ],
+  "dataset_mean_scores": {
+    "EpilepticSeizures": {
+      "MR": 0.9194,
+      "HERAMBA_R5": 0.9436
+    },
+    "Phoneme": {
+      "MR": 0.0808,
+      "HERAMBA_R5": 0.1179
+    },
+    "ECG5000_UNBAL": {
+      "MR": 0.5938,
+      "HERAMBA_R5": 0.5871
+    },
+    "ItalyPowerDemand": {
+      "MR": 0.965,
+      "HERAMBA_R5": 0.9592
+    }
+  },
+  "per_seed": {
+    "EpilepticSeizures": {
+      "mr": [
+        0.9194,
+        0.9194,
+        0.9194
+      ],
+      "her": [
+        0.9461,
+        0.9404,
+        0.9444
+      ]
+    },
+    "Phoneme": {
+      "mr": [
+        0.0808,
+        0.0808,
+        0.0808
+      ],
+      "her": [
+        0.1238,
+        0.1128,
+        0.1171
+      ]
+    },
+    "ECG5000_UNBAL": {
+      "mr": [
+        0.5938,
+        0.5938,
+        0.5938
+      ],
+      "her": [
+        0.5846,
+        0.5828,
+        0.5938
+      ]
+    },
+    "ItalyPowerDemand": {
+      "mr": [
+        0.965,
+        0.965,
+        0.965
+      ],
+      "her": [
+        0.9592,
+        0.9572,
+        0.9611
+      ]
+    }
+  },
+  "ranks_per_dataset": {
+    "EpilepticSeizures": {
+      "HERAMBA R5": 1.0,
+      "MiniRocket": 2.0
+    },
+    "Phoneme": {
+      "HERAMBA R5": 1.0,
+      "MiniRocket": 2.0
+    },
+    "ECG5000_UNBAL": {
+      "HERAMBA R5": 2.0,
+      "MiniRocket": 1.0
+    },
+    "ItalyPowerDemand": {
+      "HERAMBA R5": 2.0,
+      "MiniRocket": 1.0
+    }
+  },
+  "mean_ranks": {
+    "HERAMBA R5": 1.5,
+    "MiniRocket": 1.5
+  },
+  "per_dataset_delta": {
+    "EpilepticSeizures": 0.0242,
+    "Phoneme": 0.0371,
+    "ECG5000_UNBAL": -0.0067,
+    "ItalyPowerDemand": -0.0058
+  },
+  "cd_nemenyi": 0.98,
+  "note": "k=2: CD (0.99) always exceeds the maximum possible rank gap (1.0), so no pair can be statistically separated \u2014 the diagram is descriptive ordering only",
+  "selection_note": "ECG5000_UNBAL HERAMBA = final benchmark values (includes one validation-fallback cell at seed 44); all other cells are raw HERAMBA = final (no fallback fired)",
+  "haptics_diagram": {
+    "png": "results/haptics_final_5seed/CRITICAL_DIFFERENCE_HAPTICS.png",
+    "pdf": "results/haptics_final_5seed/CRITICAL_DIFFERENCE_HAPTICS.pdf",
+    "viewer": "results/haptics_final_5seed/CRITICAL_DIFFERENCE_VIEWER.html",
+    "stats": "results/haptics_final_5seed/CRITICAL_DIFFERENCE_STATS.json"
+  },
+  "files": {
+    "png": "results\\cd_diagrams\\CRITICAL_DIFFERENCE_4DATASETS.png",
+    "pdf": "results\\cd_diagrams\\CRITICAL_DIFFERENCE_4DATASETS.pdf"
+  }
+}

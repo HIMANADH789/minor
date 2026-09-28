@@ -1,0 +1,308 @@
+{
+ "seed": 42,
+ "dataset": "Haptics",
+ "model_status": "PROPOSED experimental CCA-adaptive generalized ridge; not a literature-established Canonical Ridge formula",
+ "shrinkage_rule": "alpha_k = alpha_base * (1 + 1.0 * rho_k^2), gamma fixed, not tuned",
+ "alpha_selection": "TRAIN-ONLY GCV on dev fit (logspace(-4,4,81))",
+ "ranks": {
+  "g_rank": 29,
+  "h_rank": 88
+ },
+ "K_canonical": 29,
+ "minirocket": {
+  "macro_f1": 0.5037,
+  "accuracy": 0.5162,
+  "selected_alpha": 4.281332398719396,
+  "per_class_f1": [
+   0.381,
+   0.4602,
+   0.5512,
+   0.5067,
+   0.6197
+  ],
+  "confusion_matrix": [
+   [
+    16,
+    4,
+    16,
+    11,
+    13
+   ],
+   [
+    1,
+    26,
+    2,
+    24,
+    5
+   ],
+   [
+    5,
+    7,
+    35,
+    6,
+    6
+   ],
+   [
+    2,
+    10,
+    7,
+    38,
+    7
+   ],
+   [
+    0,
+    8,
+    8,
+    7,
+    44
+   ]
+  ],
+  "n_features": 4998
+ },
+ "raw_gh": {
+  "macro_f1": 0.55,
+  "accuracy": 0.5649,
+  "selected_alpha": 4.281332398719396,
+  "per_class_f1": [
+   0.3704,
+   0.6142,
+   0.6202,
+   0.5564,
+   0.589
+  ],
+  "confusion_matrix": [
+   [
+    15,
+    1,
+    19,
+    9,
+    16
+   ],
+   [
+    1,
+    39,
+    1,
+    13,
+    4
+   ],
+   [
+    3,
+    8,
+    40,
+    3,
+    5
+   ],
+   [
+    1,
+    11,
+    4,
+    37,
+    11
+   ],
+   [
+    1,
+    10,
+    6,
+    7,
+    43
+   ]
+  ],
+  "n_features": 9996
+ },
+ "hard_cca": {
+  "macro_f1": 0.5138,
+  "accuracy": 0.5195,
+  "selected_alpha": 1.623776739188721,
+  "per_class_f1": [
+   0.413,
+   0.4567,
+   0.5806,
+   0.4823,
+   0.6364
+  ],
+  "confusion_matrix": [
+   [
+    19,
+    5,
+    14,
+    12,
+    10
+   ],
+   [
+    1,
+    29,
+    3,
+    23,
+    2
+   ],
+   [
+    5,
+    9,
+    36,
+    4,
+    5
+   ],
+   [
+    2,
+    16,
+    6,
+    34,
+    6
+   ],
+   [
+    5,
+    10,
+    6,
+    4,
+    42
+   ]
+  ],
+  "n_features": 5086
+ },
+ "uniform_genridge": {
+  "macro_f1": 0.468,
+  "accuracy": 0.4805,
+  "per_class_f1": [
+   0.2581,
+   0.5082,
+   0.5625,
+   0.4818,
+   0.5294
+  ],
+  "confusion_matrix": [
+   [
+    12,
+    2,
+    23,
+    8,
+    15
+   ],
+   [
+    1,
+    31,
+    3,
+    19,
+    4
+   ],
+   [
+    6,
+    11,
+    36,
+    1,
+    5
+   ],
+   [
+    7,
+    12,
+    3,
+    33,
+    9
+   ],
+   [
+    7,
+    8,
+    4,
+    12,
+    36
+   ]
+  ],
+  "n_features": 117,
+  "alpha_base": 630.9573444801943,
+  "df_final": 16.317,
+  "gcv": 0.94523,
+  "diagnostics": {
+   "n": 155,
+   "d": 117,
+   "rank_Z": 117,
+   "cond_Z": 110.4039,
+   "cond_A": 2.0999,
+   "min_eig_regularized": 631.0143,
+   "max_eig_regularized": 1325.0903,
+   "cholesky_ok": true,
+   "fallback_solver_used": false,
+   "df_final": 16.3171,
+   "gcv_alpha_base": 630.9573,
+   "gcv_min": 0.9452
+  },
+  "val_macro_f1": 0.7433
+ },
+ "adaptive_canonical_ridge": {
+  "macro_f1": 0.4825,
+  "accuracy": 0.4935,
+  "per_class_f1": [
+   0.3043,
+   0.5426,
+   0.544,
+   0.4776,
+   0.5441
+  ],
+  "confusion_matrix": [
+   [
+    14,
+    2,
+    22,
+    8,
+    14
+   ],
+   [
+    1,
+    35,
+    2,
+    17,
+    3
+   ],
+   [
+    6,
+    12,
+    34,
+    2,
+    5
+   ],
+   [
+    5,
+    12,
+    5,
+    32,
+    10
+   ],
+   [
+    6,
+    10,
+    3,
+    11,
+    37
+   ]
+  ],
+  "n_features": 117,
+  "alpha_base": 501.18723362727246,
+  "df_final": 17.504,
+  "gcv": 0.95657,
+  "diagnostics": {
+   "n": 155,
+   "d": 117,
+   "rank_Z": 117,
+   "cond_Z": 110.4039,
+   "cond_A": 2.8621,
+   "min_eig_regularized": 501.2429,
+   "max_eig_regularized": 1024.138,
+   "cholesky_ok": true,
+   "fallback_solver_used": false,
+   "df_final": 17.504,
+   "gcv_alpha_base": 501.1872,
+   "gcv_min": 0.9566
+  },
+  "val_macro_f1": 0.7433
+ },
+ "deltas_pp": {
+  "vs_minirocket_pp": -2.12,
+  "vs_raw_gh_pp": -6.75,
+  "vs_hard_cca_pp": -3.13,
+  "vs_uniform_pp": 1.45
+ },
+ "permutation_null_cca": {
+  "S": 500,
+  "seed": 52042,
+  "n_dirs_p_le_0.05": 28
+ },
+ "runtime_s": 0.8
+}

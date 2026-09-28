@@ -1,0 +1,61 @@
+# Capacity-scaled UWaveY experiment configuration (all values PREDECLARED)
+dataset: UWaveGestureLibraryY
+seed: 42
+split:
+  source: experiments/rcmkn_r2_uwave_seed42/data.load_and_split   # official UCR split
+  train: 761
+  validation: 135
+  test: 3582
+  T: 315
+  n_classes: 8
+normalization: per_sample_z_norm
+
+budgets:
+  B_base: 9996            # current canonical total budget (84 kernels x 119 quantiles)
+  B_high: 19992           # 2 x B_base  =  84 kernels x 238 quantiles/kernel
+  G_part_high: 4998       # canonical G-bank convention kept for ALL methods
+
+minirocket_expansion:
+  base_n_kernels_arg: 10000     # aeon default -> width 9996 at T=315
+  high_n_kernels_arg: 19992     # aeon 'n_kernels' == TOTAL FEATURE COUNT target
+  physical_kernels: 84          # unchanged by the expansion
+  quantiles_per_kernel: {base: 119, high: 238}
+  expansion_factor: 2.0
+  random_state: 42
+  fit_on: train_znormed_only
+
+hierarchy:
+  latent_source: frozen SSLTemporalEncoder (d=32), r2_uwave_seed42 checkpoint
+  pooled_train_latents: 239715      # 761 x 315
+  splitter: KMeans(n_clusters=2, n_init=10, random_state=42) per node
+  child_rule: binary path ids 2p/2p+1, bit-0 = lower first-centroid coordinate
+  levels: [1, 2, 4, 8, 16]
+  min_occupancy: 0.01
+  frozen_transform_for_val_test: true
+
+null_stopping:
+  S: 500
+  seed: 52042
+  rule: keep level iff real E_l > null p95 AND BH q < 0.05, coarse->fine
+  purpose: intrinsic diagnostics only (L* NOT used to change budgets)
+
+r5_high:
+  rho_rule: reused stored UWaveY validation-selected rho = 0.1 (H-fraction)
+  source: C:/temp/results/r5_uwave_hbudget_seed42/UWaveGestureLibraryY/result.json
+  N_G: 17993               # FIRST-ordered expanded MiniRocket features
+  N_H: 1999                # top-f_classif H features, fold-internal
+  cv_for_rho: none         # NO new rho search (rule reused, per task)
+
+hier_high:
+  budget_rule: label-free, predeclared, train-only
+  G_part: 4998             # first-N expanded features (canonical convention)
+  H_part: 14994            # energy-allocated hierarchical details from H-side kernels [4998:19992]
+  level_allocation: largest-remainder on level energy fractions (models/hierarchical_budget.level_budgets scaled to 14994)
+  within_level: top e_{m,c,l} = mean_i pi_c Delta^2 (edge energies from the exact chain)
+  tie_break: (kernel, child id) ascending
+
+classifier:
+  kind: RidgeClassifierCV
+  alphas: logspace(-4, 4, 20)     # canonical grid, unchanged
+  fit_on: train+validation
+  evaluation: official test, exactly once per method

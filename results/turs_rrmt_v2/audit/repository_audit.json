@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-12 16:21:15",
+  "torch_version": "2.5.1+cu121",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "available_solvers": [
+    "torch.linalg.solve (differentiable)",
+    "torch.linalg.cholesky (differentiable)",
+    "sklearn.linear_model.RidgeClassifier",
+    "sklearn.kernel_ridge.KernelRidge"
+  ],
+  "available_kernels": [
+    "sklearn.metrics.pairwise.linear_kernel",
+    "sklearn.metrics.pairwise.rbf_kernel",
+    "src.kernels.product_kernel.ProductKernel"
+  ],
+  "project_modules": {
+    "statistics": "src.diagnostics.statistics",
+    "perturb": "src.diagnostics.perturb",
+    "safe_eigh": "src.utils.safe_eigh",
+    "geodesic": "src.classifiers.geodesic_prototype_classifier",
+    "swrst_kernel": "swrst.kernel.builder"
+  },
+  "v1_source": "models/turs_rrmt/model.py",
+  "v1_readout_source": "experiments/turs_rrmt/train_eval.py"
+}

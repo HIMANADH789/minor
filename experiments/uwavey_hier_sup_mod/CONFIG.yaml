@@ -1,0 +1,68 @@
+# HIER-SUP-MOD configuration - ALL VALUES PREDECLARED / LOCKED
+experiment: hier_sup_mod
+label: HIER-SUP-MOD
+dataset: UWaveGestureLibraryY
+seed: 42
+
+split:
+  train: 761
+  validation: 135
+  test: 3582
+  T: 315
+  n_classes: 8
+  source: canonical UWaveY loader (asserted vs stored
+          results/uwavey_nested_hierarchical/seed42 indices)
+normalization: per_sample_z_norm
+
+representation:
+  telescoping: true
+  ppv_level_0: 0
+  levels: [1, 2, 4, 8, 16]
+  minirocket: {implementation: aeon MiniRocket, n_kernels: 19992,
+               random_state: 42, physical_kernels: 84, quantiles: 238}
+  hierarchy: frozen seed-42 SSLTemporalEncoder, recursive 2-means
+             (n_clusters=2, n_init=10, random_state=42), TRAIN latents
+             only; val/test transform-only
+  pool: {root_D1: 19992, delta: 449820, edges: 30, unified: 469812,
+         column_order: [D1, D2, D4, D8, D16]}
+
+anova_design:
+  d_between: 7            # C - 1 = 8 - 1 (same for every candidate)
+  d_error: N - 8          # candidate-specific residual df is NEVER used
+  occupancy_as_df: false  # occupancy is NOT df, NOT a weight, NOT a quota
+  fallback_hard_filter: false
+
+eb_moderation:            # THE ONE CHANGE (Smyth/limma scaled-F prior)
+  prior: "s_j^2 ~ s0^2 * F(d_e, d0)"
+  pooling: single prior across the FULL unified pool (all levels)
+  d0_method: log-moment matching, trigamma solve (bracketed Brent)
+  s0sq_method: log-moment identity with digamma
+  posterior: "s_t^2 = (d0*s0^2 + d_e*s^2) / (d0 + d_e)"
+  moderated_statistic: "F_t = MS_between / s_t^2"
+  moderated_df: d_e + d0  # diagnostic p on F(7, d_e + d0)
+  ranking: F_tilde descending, ties by candidate_index ascending
+  no_lfdr: true
+  no_two_groups: true
+  no_pi0: true
+  no_posterior_weighting: true
+  no_feature_shrinkage: true
+
+selection:
+  budget: 19992
+  stages: ONE global ranking over the unified pool
+  labels: train+validation (canonical R5 final-stage protocol)
+  no_rho: true
+  no_GH_split: true
+  no_per_level_quota: true
+  no_energy_allocation: true
+
+classifier:
+  model: RidgeClassifierCV
+  alphas: logspace(-4, 4, 20)
+  protocol: identical to HIER-SUP-CLEAN / HIER-CONTINUOUS-SUP / R5-HIGH
+
+equivalence_gate:
+  reference: results/uwavey_hier_sup_clean/seed42  (raw-F ranking)
+  expected: PASS (raw ranking reproduces 0.7599)
+
+outputs: results/uwavey_hier_sup_mod/seed42

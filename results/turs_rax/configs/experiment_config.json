@@ -1,0 +1,21 @@
+{
+  "experiment": "TURS-RAX",
+  "version": "1.0",
+  "seed": 42,
+  "S_NULL": 20,
+  "ALPHA": 0.05,
+  "VAL_FRAC": 0.15,
+  "datasets": [
+    "ECG5000_UNBAL",
+    "ECG5000_BAL",
+    "CWRU_UNBAL",
+    "CWRU_BAL"
+  ],
+  "ref_values": {
+    "ECG5000_UNBAL": 0.5938,
+    "ECG5000_BAL": 0.6553,
+    "CWRU_UNBAL": 0.9917,
+    "CWRU_BAL": 0.9947
+  },
+  "design_principle": "One statistical dataset-level regime decision, never per-example"
+}

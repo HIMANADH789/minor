@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "dataset": "CWRU_BAL",
+      "seed": 42,
+      "m0_mf1": 0.9947,
+      "m6_mf1": 0.9842,
+      "delta": -0.0105
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "seed": 43,
+      "m0_mf1": 0.9947,
+      "m6_mf1": 0.9842,
+      "delta": -0.0105
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "seed": 44,
+      "m0_mf1": 0.9965,
+      "m6_mf1": 0.9859,
+      "delta": -0.0106
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "seed": 45,
+      "m0_mf1": 0.9965,
+      "m6_mf1": 0.9859,
+      "delta": -0.0106
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "seed": 46,
+      "m0_mf1": 0.9947,
+      "m6_mf1": 0.9842,
+      "delta": -0.0105
+    }
+  ],
+  "mean_delta": -0.01054,
+  "std_delta": 5e-05,
+  "median_delta": -0.0105,
+  "min_delta": -0.0106,
+  "max_delta": -0.0105,
+  "n_positive": 0,
+  "n_negative": 5,
+  "paired_permutation_p": 0.064968,
+  "effect_size_d": -192.4332
+}

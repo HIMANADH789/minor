@@ -1,0 +1,218 @@
+{
+  "run": "continuous_control",
+  "spec": {
+    "model_cls": "ctc",
+    "K": 8,
+    "vq": false,
+    "diversity": false,
+    "loss": "CE"
+  },
+  "config": {
+    "seed": 42,
+    "dataset": "Haptics",
+    "split": "external_stack_generalization canonical: train 132 / val 23 / test 308",
+    "normalization": "per-sample z-norm (canonical)",
+    "D": 64,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "K": 8,
+    "transformer_layers": 2,
+    "transformer_heads": 4,
+    "ff_dim": 128,
+    "dropout": 0.1,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "OneCycleLR(max_lr=1e-3)",
+    "batch_size": 16,
+    "max_epochs": 60,
+    "patience": 10,
+    "beta": 0.25,
+    "lambda_div": 0.01,
+    "ema_decay": 0.99,
+    "dead_threshold": 0.001,
+    "revival_patience": 100,
+    "selection": "best validation Macro-F1 checkpoint; test evaluated once"
+  },
+  "param_audit": {
+    "encoder": 3632,
+    "vq": 0,
+    "codebook_buffers": 0,
+    "trajectory": 591232,
+    "pool": 4224,
+    "classifier": 325,
+    "other": 0,
+    "trainable": 599413,
+    "non_trainable": 0,
+    "total": 599413
+  },
+  "best_epoch": 3,
+  "best_val_mf1": 0.18,
+  "epochs_run": 13,
+  "test": {
+    "macro_f1": 0.1486,
+    "accuracy": 0.2597,
+    "weighted_f1": 0.1511,
+    "class_f1s": [
+      0.0,
+      0.3615,
+      0.0,
+      0.0,
+      0.3815
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        35,
+        0,
+        0,
+        25
+      ],
+      [
+        0,
+        47,
+        0,
+        0,
+        11
+      ],
+      [
+        0,
+        37,
+        0,
+        0,
+        22
+      ],
+      [
+        0,
+        49,
+        0,
+        0,
+        15
+      ],
+      [
+        0,
+        34,
+        0,
+        0,
+        33
+      ]
+    ]
+  },
+  "train_time_s": 7.8,
+  "inference_time_s": 1.282,
+  "peak_mem_mb": 1312.6,
+  "history": [
+    {
+      "epoch": 1,
+      "val_mf1": 0.0714,
+      "ce": 1.6142,
+      "total": 1.6142,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 2,
+      "val_mf1": 0.0714,
+      "ce": 1.5943,
+      "total": 1.5943,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 3,
+      "val_mf1": 0.18,
+      "ce": 1.5944,
+      "total": 1.5944,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 4,
+      "val_mf1": 0.0714,
+      "ce": 1.6154,
+      "total": 1.6154,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 5,
+      "val_mf1": 0.0714,
+      "ce": 1.5959,
+      "total": 1.5959,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 6,
+      "val_mf1": 0.0714,
+      "ce": 1.5725,
+      "total": 1.5725,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 7,
+      "val_mf1": 0.1341,
+      "ce": 1.6114,
+      "total": 1.6114,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 8,
+      "val_mf1": 0.1273,
+      "ce": 1.5956,
+      "total": 1.5956,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 9,
+      "val_mf1": 0.0714,
+      "ce": 1.5836,
+      "total": 1.5836,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 10,
+      "val_mf1": 0.0593,
+      "ce": 1.5778,
+      "total": 1.5778,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 11,
+      "val_mf1": 0.0714,
+      "ce": 1.5784,
+      "total": 1.5784,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 12,
+      "val_mf1": 0.0714,
+      "ce": 1.5746,
+      "total": 1.5746,
+      "usage": null,
+      "revivals_so_far": 0
+    },
+    {
+      "epoch": 13,
+      "val_mf1": 0.08,
+      "ce": 1.6252,
+      "total": 1.6252,
+      "usage": null,
+      "revivals_so_far": 0
+    }
+  ],
+  "codebook_final_usage_val": null,
+  "final_diag_val": {},
+  "revival_log": [],
+  "total_revivals": 0
+}

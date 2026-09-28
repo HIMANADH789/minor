@@ -1,0 +1,151 @@
+{
+  "seed": 42,
+  "seeds_robust": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_kernels": 10000,
+  "baseline_tolerance": 0.02,
+  "alpha": 0.05,
+  "families": [
+    "morphological",
+    "derivative",
+    "wavelet",
+    "gabor",
+    "energy"
+  ],
+  "grids": {
+    "sigma": [
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "dilation": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "dog_alpha": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "deriv_orders": [
+      1,
+      2
+    ],
+    "wavelet_types": [
+      "haar",
+      "mexicanhat",
+      "morlet"
+    ],
+    "wavelet_scales": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "gabor_freq": [
+      0.125,
+      0.0625,
+      0.03125
+    ],
+    "gabor_sigma": [
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "gabor_phase": [
+      0.0,
+      1.5707963267948966,
+      3.141592653589793,
+      4.71238898038469
+    ],
+    "energy_w": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "energy_lambda": [
+      0.0,
+      0.5,
+      1.0
+    ]
+  },
+  "representative_kernels": {
+    "morphological": [
+      "dog",
+      {
+        "sigma": 4.0,
+        "alpha": 1.0,
+        "dilation": 1
+      }
+    ],
+    "derivative": [
+      "deriv",
+      {
+        "order": 1,
+        "dilation": 4
+      }
+    ],
+    "wavelet": [
+      "wavelet",
+      {
+        "type": "mexicanhat",
+        "scale": 4,
+        "dilation": 1
+      }
+    ],
+    "gabor": [
+      "gabor",
+      {
+        "freq": 0.0625,
+        "sigma": 8.0,
+        "phase": 0.0,
+        "dilation": 1
+      }
+    ],
+    "energy": [
+      "energy",
+      {
+        "w_short": 8,
+        "lambda": 1.0
+      }
+    ]
+  },
+  "mech_expectations": {
+    "morphological": [
+      "ECG5000_UNBAL",
+      "ECG5000_BAL"
+    ],
+    "derivative": [
+      "ECG5000_UNBAL",
+      "ECG5000_BAL",
+      "CWRU_UNBAL",
+      "CWRU_BAL"
+    ],
+    "wavelet": [
+      "ECG5000_UNBAL",
+      "ECG5000_BAL"
+    ],
+    "gabor": [
+      "CWRU_UNBAL",
+      "CWRU_BAL"
+    ],
+    "energy": [
+      "CWRU_UNBAL",
+      "CWRU_BAL"
+    ]
+  },
+  "ridge": "RidgeClassifierCV(alphas=logspace(-4,4,20)), fit on TRAIN+VAL (canonical)",
+  "thresholds": "aeon MiniROCKET 9 golden-quantile biases, TRAIN-fitted per kernel",
+  "protocol": "canonical benchmark split + znorm; MiniROCKET fit on TRAIN; MR block raw; family blocks train-standardized"
+}

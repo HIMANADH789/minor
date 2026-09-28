@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-12 20:00:21",
+  "python": "3.11.9",
+  "torch": "2.5.1+cu121",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "protocol": "experiments/turs_rrmt/data.py::load_split (seed 42, stratified, per-sample z-norm)",
+  "datasets": [
+    "ECG5000_UNBAL",
+    "ECG5000_BAL",
+    "CWRU_UNBAL",
+    "CWRU_BAL"
+  ],
+  "num_classes": {
+    "ECG5000_UNBAL": 5,
+    "ECG5000_BAL": 5,
+    "CWRU_UNBAL": 4,
+    "CWRU_BAL": 4
+  },
+  "architecture": {
+    "arch": {
+      "M_global": 2048,
+      "M_local": 128,
+      "J": 4,
+      "router_hidden": 32,
+      "lengths": [
+        7,
+        11,
+        15,
+        23,
+        31
+      ],
+      "seed": 42,
+      "tau": 1.0
+    },
+    "J_flavors": [
+      "standard W1 coarse",
+      "tail-weighted W1",
+      "fine-grid W1",
+      "multilag drift"
+    ],
+    "router": "Linear(2M_l->32)->ReLU->Linear(32->J)->softmax(tau), trained soft from scratch",
+    "readout": "block-regularized closed-form ridge, (lam_g, lam_l) validation-selected"
+  },
+  "reuse": {
+    "data": "experiments/turs_rrmt/data.py",
+    "banks": "models/turs_rrmt/model.py::build_pattern_bank/FixedPatternBank/LocalActivity",
+    "flavors": "models/turs_rrmt/model.py::TransportFlavors",
+    "views": "models/tursnet.py::TransportBuilder",
+    "stats": "src/diagnostics/statistics.py",
+    "calibration": "src/diagnostics/calibration.py",
+    "perturb": "src/diagnostics/perturb.py",
+    "desc_corr": "experiments/turs_rrmt/diagnostics.py::_local_descriptors/_rho",
+    "minirocket": "aeon MiniRocket (A8 only)"
+  },
+  "variant_definitions": {
+    "A0": "A0",
+    "A1": "A1",
+    "A2": "A2",
+    "A3": "PRIMARY: global+local block ridge",
+    "A4": "A4",
+    "A5": "A5",
+    "A6": "A6",
+    "A7": "A7",
+    "A8": "A8",
+    "A9": "A9"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git_commit": "839263d943163b75 (model-file hash; git metadata unavailable)"
+}

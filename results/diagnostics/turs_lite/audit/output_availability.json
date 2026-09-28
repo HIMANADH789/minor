@@ -1,0 +1,21 @@
+{
+  "return_aux_available": true,
+  "native_variables": [
+    "regime(z)",
+    "regime_velocity(v)",
+    "regime_speed(s)",
+    "uncertainty(u)",
+    "alpha",
+    "transport_gate(g_T)",
+    "regime_gate(g_R)"
+  ],
+  "temporal_reconstruction": {
+    "available": true,
+    "method": "frozen encoders per timestep of H4",
+    "alpha_temporal": false
+  },
+  "probability_outputs": [
+    "softmax(logits)"
+  ],
+  "extraction_caching": "results/diagnostics/turs_lite/extracted/<DS>/<split>.npz"
+}

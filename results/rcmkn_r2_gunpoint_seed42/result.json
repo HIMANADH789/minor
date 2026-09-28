@@ -1,0 +1,334 @@
+{
+  "dataset": "GunPoint",
+  "seed": 42,
+  "T": 150,
+  "split": {
+    "train": 42,
+    "val": 8,
+    "test": 150
+  },
+  "n_classes": 2,
+  "n_features": 9996,
+  "K_regimes": 8,
+  "config": {
+    "encoder": {
+      "channels": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "kernel_sizes": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "dilations": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "d_model": 32,
+      "mask_ratio": 0.1,
+      "span_len": 16,
+      "batch_size": 8,
+      "ssl_epochs": 120,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "patience": 20
+    },
+    "vq": {
+      "K": 8,
+      "beta_vq": 0.25,
+      "lam_div": 0.01,
+      "ema_decay": 0.99,
+      "dead_threshold": 0.001,
+      "revival_patience": 100
+    },
+    "joint": {
+      "epochs": 60,
+      "lr": 0.0005,
+      "lambda_cls": 0.1,
+      "patience": 10,
+      "batch_size": 8
+    },
+    "alphas": "logspace(-4,4,20)"
+  },
+  "provenance": {
+    "source_path": "data\\kaggle\\GunPoint",
+    "file_sha256": {
+      "GunPoint_TRAIN.tsv": "4d14e4f44a6230087cb4b4ed7844c8b0feb76f07a76108cc367d689e0de8f609",
+      "GunPoint_TEST.tsv": "5537eb2f3050e1514f3221b5f4c9799b350fb229ea15eed9e78bbae855505ccf"
+    },
+    "label_map": {
+      "1": 0,
+      "2": 1
+    },
+    "val_source": "stratified_15pct_of_train_seed42"
+  },
+  "m0_reference": {
+    "context3_canonical": 0.9933,
+    "tolerance": 0.0011
+  },
+  "r2_haptics_reference": 0.55,
+  "results": {
+    "M0": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 0.9933,
+      "accuracy": 0.9933,
+      "selected_alpha": 0.0001,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.01,
+      "class_f1s": [
+        0.9935,
+        0.9932
+      ]
+    },
+    "R2": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 1.0,
+      "accuracy": 1.0,
+      "selected_alpha": 0.0001,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.01,
+      "class_f1s": [
+        1.0,
+        1.0
+      ],
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 4,
+          "normalized_entropy": 0.5708677458036485,
+          "perplexity": 3.277516940698972,
+          "dominant_fraction": 0.42173333333333335,
+          "usage": [
+            0.382,
+            0.42173333333333335,
+            0.09306666666666667,
+            0.0,
+            0.1032,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "counts": [
+            2865.0,
+            3163.0,
+            698.0,
+            0.0,
+            774.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "test": {
+          "active_codes": 4,
+          "normalized_entropy": 0.5753283299032249,
+          "perplexity": 3.3080590554214755,
+          "dominant_fraction": 0.4371111111111111,
+          "usage": [
+            0.35786666666666667,
+            0.4371111111111111,
+            0.10595555555555555,
+            0.0,
+            0.09906666666666666,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "counts": [
+            8052.0,
+            9835.0,
+            2384.0,
+            0.0,
+            2229.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "context_train": {
+        "ssl_best_val": 0.02895,
+        "joint_best_val_mf1": 0.7333,
+        "avg_joint_losses": {
+          "commit": 0.6065,
+          "div": 13.06245,
+          "aux": 7.57644,
+          "ssl": 1.26031
+        }
+      },
+      "params": {
+        "encoder": 59072,
+        "decoder": 2177,
+        "aux_head": 66,
+        "vq_trainable": 0,
+        "total_trainable": 61315
+      }
+    },
+    "C1": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 1.0,
+      "accuracy": 1.0,
+      "selected_alpha": 0.0001,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.01,
+      "class_f1s": [
+        1.0,
+        1.0
+      ]
+    },
+    "C2": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 1.0,
+      "accuracy": 1.0,
+      "selected_alpha": 0.0001,
+      "feature_dim": 9996,
+      "ridge_fit_s": 0.01,
+      "class_f1s": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "deltas": {
+    "R2-M0": 0.0067,
+    "R2-C1": 0.0,
+    "R2-C2": 0.0,
+    "C1-C2": 0.0
+  },
+  "mechanistic_h": {
+    "R2": {
+      "mean_H": 0.035560274561474425,
+      "median_H": 0.023148417472839355,
+      "max_H": 0.2498222291469574,
+      "fraction_nonzero": 0.8136054421768707
+    },
+    "C1": {
+      "mean_H": 0.004264370481785304,
+      "median_H": 0.0025134579045698047,
+      "max_H": 0.2777777910232544,
+      "fraction_nonzero": 0.853313325330132
+    },
+    "C2": {
+      "mean_H": 0.004448060437730861,
+      "median_H": 0.002662193845026195,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.85343737494998
+    }
+  },
+  "audits": {
+    "audit1_config": {
+      "expected": {
+        "train": 42,
+        "val": 8,
+        "test": 150,
+        "T": 150,
+        "n_classes": 2
+      },
+      "actual": {
+        "train": 42,
+        "val": 8,
+        "test": 150,
+        "T": 150,
+        "n_classes": 2
+      },
+      "pass": true
+    },
+    "provenance": {
+      "source_path": "data\\kaggle\\GunPoint",
+      "file_sha256": {
+        "GunPoint_TRAIN.tsv": "4d14e4f44a6230087cb4b4ed7844c8b0feb76f07a76108cc367d689e0de8f609",
+        "GunPoint_TEST.tsv": "5537eb2f3050e1514f3221b5f4c9799b350fb229ea15eed9e78bbae855505ccf"
+      },
+      "label_map": {
+        "1": 0,
+        "2": 1
+      },
+      "val_source": "stratified_15pct_of_train_seed42"
+    },
+    "audit3_budget_9996": {
+      "pass": true
+    },
+    "audit2_extractor_identity_maxdiff": 0.0,
+    "m0_gate": {
+      "reference": 0.9933,
+      "observed": 0.9933,
+      "tolerance": 0.0011,
+      "pass": true
+    },
+    "audit4_causality_maxdiff": 0.0,
+    "audit5_regimes_deterministic": {
+      "pass": true
+    },
+    "audit6_vq_diagnostics": {
+      "train": {
+        "active_codes": 4,
+        "normalized_entropy": 0.5708677458036485,
+        "perplexity": 3.277516940698972,
+        "dominant_fraction": 0.42173333333333335,
+        "usage": [
+          0.382,
+          0.42173333333333335,
+          0.09306666666666667,
+          0.0,
+          0.1032,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "counts": [
+          2865.0,
+          3163.0,
+          698.0,
+          0.0,
+          774.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "test": {
+        "active_codes": 4,
+        "normalized_entropy": 0.5753283299032249,
+        "perplexity": 3.3080590554214755,
+        "dominant_fraction": 0.4371111111111111,
+        "usage": [
+          0.35786666666666667,
+          0.4371111111111111,
+          0.10595555555555555,
+          0.0,
+          0.09906666666666666,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "counts": [
+          8052.0,
+          9835.0,
+          2384.0,
+          0.0,
+          2229.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "audit7_control_occupancy_failures": 0,
+    "audit8_controls_distinct": {
+      "pass": true
+    },
+    "audit9_independent_h_recompute_maxdiff": 1.051749752567499e-08,
+    "audit10_valid_region": {
+      "flipped_out_of_mask_activations": 177312,
+      "h_changed": false,
+      "pass": true
+    }
+  },
+  "runtime_s": 10.0,
+  "verdict": "UNINFORMATIVE (ceiling-saturated): M0 and R2 both solve the task; no headroom to assess the heterogeneity effect"
+}

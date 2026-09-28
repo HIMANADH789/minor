@@ -1,0 +1,15 @@
+{
+  "beta_max": 0.5,
+  "hist_bins": 25,
+  "soft_w": 0.03,
+  "train": {
+    "hist_bins": 25,
+    "soft_w": 0.03,
+    "lambda_cls": 0.1,
+    "lr": 0.001,
+    "epochs": 150,
+    "patience": 25,
+    "batch_size": 64
+  },
+  "note": "no hyperparameter search; frozen R2 context"
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "correct_low_u",
+    "sample_id": 429,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9999998807907104,
+    "u_mean": 0.3495166301727295,
+    "v_max": 8.524358749389648,
+    "alpha": 7.606662393300212e-07,
+    "class_probs": [
+      0.9999998807907104,
+      6.96909907560439e-08,
+      1.287666306915014e-09,
+      3.418866578730473e-11,
+      1.7689362197259584e-09
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0,
+    "random_region": [
+      114,
+      128
+    ],
+    "random_prob_drop": 2.384185791015625e-07
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "correct_low_u",
+    "sample_id": 722,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 1.0,
+    "u_mean": 0.34960514307022095,
+    "v_max": 7.542194366455078,
+    "alpha": 7.038610760901065e-07,
+    "class_probs": [
+      1.0,
+      5.5321427994137196e-11,
+      1.364542034920646e-09,
+      2.5713558018947147e-11,
+      2.1135426742091568e-11
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0,
+    "random_region": [
+      117,
+      131
+    ],
+    "random_prob_drop": 0.0
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "correct_high_u",
+    "sample_id": 963,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9999995231628418,
+    "u_mean": 0.3588900566101074,
+    "v_max": 6.593884468078613,
+    "alpha": 3.708005920088908e-07,
+    "class_probs": [
+      1.8311284780136994e-11,
+      0.9999995231628418,
+      3.4222287226270964e-09,
+      5.022681079935865e-07,
+      1.3495162765053692e-09
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": 0.00333482027053833,
+    "random_region": [
+      118,
+      132
+    ],
+    "random_prob_drop": 7.462501525878906e-05
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "correct_high_u",
+    "sample_id": 864,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 1.0,
+    "u_mean": 0.3588949739933014,
+    "v_max": 6.127055644989014,
+    "alpha": 2.229906158390804e-06,
+    "class_probs": [
+      1.0,
+      5.1728173827703117e-11,
+      1.4456706942667097e-09,
+      9.563044800486864e-11,
+      1.1933183330370412e-09
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0,
+    "random_region": [
+      88,
+      102
+    ],
+    "random_prob_drop": 0.0
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "incorrect_low_u",
+    "sample_id": 387,
+    "true_label": 1,
+    "predicted_label": 0,
+    "confidence": 0.8887495994567871,
+    "u_mean": 0.35092461109161377,
+    "v_max": 6.558283805847168,
+    "alpha": 7.125044589884055e-07,
+    "class_probs": [
+      0.8889760375022888,
+      0.0009954506531357765,
+      0.0018560433527454734,
+      0.09879331290721893,
+      0.009379089809954166
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": -0.02674657478928566,
+    "random_region": [
+      112,
+      126
+    ],
+    "random_prob_drop": 0.0006191817810758948
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "incorrect_low_u",
+    "sample_id": 432,
+    "true_label": 3,
+    "predicted_label": 1,
+    "confidence": 0.970980703830719,
+    "u_mean": 0.3510485887527466,
+    "v_max": 7.030242919921875,
+    "alpha": 1.0770261127390768e-07,
+    "class_probs": [
+      2.4987052427150047e-08,
+      0.9711703062057495,
+      7.091717634466477e-06,
+      0.026860928162932396,
+      0.0019615846686065197
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": -0.8381465077400208,
+    "random_region": [
+      78,
+      92
+    ],
+    "random_prob_drop": 0.025801245123147964
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "incorrect_high_u",
+    "sample_id": 451,
+    "true_label": 4,
+    "predicted_label": 2,
+    "confidence": 0.9937266111373901,
+    "u_mean": 0.3594062924385071,
+    "v_max": 6.380883693695068,
+    "alpha": 1.213122686749557e-06,
+    "class_probs": [
+      0.006122826598584652,
+      5.773449629487004e-07,
+      0.9938376545906067,
+      1.3450969618133968e-06,
+      3.75622148567345e-05
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": 2.5971476134145632e-05,
+    "random_region": [
+      69,
+      83
+    ],
+    "random_prob_drop": 1.3577902791439556e-05
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "incorrect_high_u",
+    "sample_id": 754,
+    "true_label": 1,
+    "predicted_label": 3,
+    "confidence": 0.9206829071044922,
+    "u_mean": 0.3590407073497772,
+    "v_max": 7.188854217529297,
+    "alpha": 5.768094979430316e-07,
+    "class_probs": [
+      6.784505046653067e-08,
+      0.07939187437295914,
+      1.574956399963412e-06,
+      0.9206031560897827,
+      3.2651785204507178e-06
+    ],
+    "targeted_region": [
+      125,
+      139
+    ],
+    "targeted_prob_drop": 0.07915735244750977,
+    "random_region": [
+      23,
+      37
+    ],
+    "random_prob_drop": -0.8300120234489441
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "strong_velocity",
+    "sample_id": 555,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9998350143432617,
+    "u_mean": 0.355901837348938,
+    "v_max": 7.622616291046143,
+    "alpha": 3.7979521039233077e-07,
+    "class_probs": [
+      8.256505878989628e-08,
+      0.9998338222503662,
+      0.00016573548782616854,
+      1.9655848060295966e-09,
+      3.891279050094454e-07
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": -0.00015437602996826172,
+    "random_region": [
+      70,
+      84
+    ],
+    "random_prob_drop": 0.00015723705291748047
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "strong_velocity",
+    "sample_id": 905,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 1.0,
+    "u_mean": 0.34157291054725647,
+    "v_max": 7.6271748542785645,
+    "alpha": 8.096770898191608e-07,
+    "class_probs": [
+      1.0,
+      6.950030551067243e-10,
+      2.1711123565637536e-08,
+      3.8580624805995e-10,
+      6.458549250965007e-10
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0,
+    "random_region": [
+      13,
+      27
+    ],
+    "random_prob_drop": 0.0
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "weak_velocity",
+    "sample_id": 350,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9999998807907104,
+    "u_mean": 0.3552072048187256,
+    "v_max": 6.5262579917907715,
+    "alpha": 1.5571152971460833e-06,
+    "class_probs": [
+      0.9999998807907104,
+      1.4953680654850032e-11,
+      1.4156652239361023e-10,
+      1.0103683514839368e-11,
+      1.2037678231990867e-07
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0006532073020935059,
+    "random_region": [
+      107,
+      121
+    ],
+    "random_prob_drop": 3.5762786865234375e-07
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "weak_velocity",
+    "sample_id": 803,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 1.0,
+    "u_mean": 0.3672967553138733,
+    "v_max": 6.525110244750977,
+    "alpha": 1.9938186142098857e-06,
+    "class_probs": [
+      1.0,
+      5.416944670599833e-10,
+      2.5911292556024534e-10,
+      1.1842216096624725e-09,
+      4.1465678890517665e-08
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0,
+    "random_region": [
+      9,
+      23
+    ],
+    "random_prob_drop": 0.0
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "strong_alpha_transport",
+    "sample_id": 884,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 1.0,
+    "u_mean": 0.35518306493759155,
+    "v_max": 6.114485263824463,
+    "alpha": 1.250380933015549e-06,
+    "class_probs": [
+      1.0,
+      1.476780780995668e-10,
+      4.864515457114749e-10,
+      2.775764618156984e-10,
+      1.5273461384524012e-09
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0,
+    "random_region": [
+      83,
+      97
+    ],
+    "random_prob_drop": 0.0
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "strong_alpha_transport",
+    "sample_id": 313,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 1.0,
+    "u_mean": 0.35133272409439087,
+    "v_max": 5.1757354736328125,
+    "alpha": 1.247868567588739e-06,
+    "class_probs": [
+      1.0,
+      3.3273678257117467e-10,
+      1.4763816835738908e-09,
+      1.1297922597464094e-08,
+      3.458196218275589e-08
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 1.1920928955078125e-07,
+    "random_region": [
+      108,
+      122
+    ],
+    "random_prob_drop": 2.384185791015625e-07
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "weak_alpha_regime",
+    "sample_id": 580,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9999901056289673,
+    "u_mean": 0.36554932594299316,
+    "v_max": 6.44570779800415,
+    "alpha": 2.1185127252465463e-07,
+    "class_probs": [
+      9.135409095861746e-11,
+      0.9999901056289673,
+      6.362283784255851e-07,
+      9.309431334258988e-06,
+      1.6089956034193165e-08
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": -9.298324584960938e-06,
+    "random_region": [
+      110,
+      124
+    ],
+    "random_prob_drop": 6.794929504394531e-06
+  },
+  {
+    "dataset": "ECG5000_BAL",
+    "category": "weak_alpha_regime",
+    "sample_id": 665,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9999666213989258,
+    "u_mean": 0.35678064823150635,
+    "v_max": 6.574721336364746,
+    "alpha": 2.1206798805906146e-07,
+    "class_probs": [
+      1.1217846096478468e-10,
+      0.9999661445617676,
+      1.2491130974012776e-07,
+      3.37697310897056e-05,
+      3.6883696097333996e-10
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": 4.887580871582031e-05,
+    "random_region": [
+      104,
+      118
+    ],
+    "random_prob_drop": -3.337860107421875e-05
+  }
+]

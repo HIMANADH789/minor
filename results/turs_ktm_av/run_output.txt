@@ -1,0 +1,174 @@
+[17:29:39] TURS-KTM-AV: Alignment-Validated Kernel Timing Moments
+[17:29:39] Configuration: K_TOP=1024, N_NULL_SHIFTS=20, ALPHA=0.05, SEED=42
+[17:29:39] 
+======================================================================
+[17:29:39]   DATASET 1/4: ECG5000_UNBAL (5 classes)
+[17:29:39] ======================================================================
+[17:29:39]   Data loaded: train=3400, val=600, test=1000, T=140
+[17:29:42]   MiniROCKET fitted: 9996 features (0.4s)
+[17:29:49]   MR baseline (test): MF1=0.5938
+[17:29:49]   Baseline check PASS: 0.5938 vs ref 0.5938 (delta=0.0000)
+[17:29:54]   MR baseline (val):  MF1=0.6405
+[17:29:59]   Top-K selection: K=84, features=9996 (5.1s)
+[17:30:04]   KTM-W extracted: zero-act frac=0.038, mean count=59.6 (3.9s)
+[17:30:10]   MR+KTM-W real (val): MF1=0.6440, D_real=+0.0035
+[17:30:10]   Building null distribution (20 shifts per sample)...
+[17:30:17]     null[1/20]: MF1=0.2476, D=-0.3929
+[17:30:43]     null[5/20]: MF1=0.2458, D=-0.3947
+[17:31:15]     null[10/20]: MF1=0.2757, D=-0.3648
+[17:31:47]     null[15/20]: MF1=0.2655, D=-0.3750
+[17:32:19]     null[20/20]: MF1=0.2610, D=-0.3795
+[17:32:19]   Null distribution built (129.4s)
+[17:32:19] 
+  STATISTICAL TEST:
+[17:32:19]     D_real     = +0.0035
+[17:32:19]     null mean  = -0.3831
+[17:32:19]     null std   = 0.0205
+[17:32:19]     null median= -0.3831
+[17:32:19]     null 95th  = -0.3427
+[17:32:19]     p-value    = 0.0476
+[17:32:19] 
+  DECISION: KEEP_KTM_W (p=0.0476 < 0.05, D_real=+0.0035 > 0)
+[17:32:19] 
+  CASE A: KEEP KTM-W — refitting MR + KTM-W on train+val
+[17:32:28] 
+  FINAL TEST: MF1=0.6115 (D=+0.0177)
+[17:32:28] 
+  Dataset complete (169.4s)
+[17:32:30] 
+======================================================================
+[17:32:30]   DATASET 2/4: ECG5000_BAL (5 classes)
+[17:32:30] ======================================================================
+[17:32:30]   Data loaded: train=5226, val=923, test=1000, T=140
+[17:32:31]   MiniROCKET fitted: 9996 features (0.3s)
+[17:32:57]   MR baseline (test): MF1=0.6553
+[17:32:57]   Baseline check PASS: 0.6553 vs ref 0.6553 (delta=0.0000)
+[17:33:14]   MR baseline (val):  MF1=0.9546
+[17:33:31]   Top-K selection: K=84, features=9996 (17.3s)
+[17:33:37]   KTM-W extracted: zero-act frac=0.038, mean count=59.7 (5.1s)
+[17:33:57]   MR+KTM-W real (val): MF1=0.9524, D_real=-0.0022
+[17:33:57]   Building null distribution (20 shifts per sample)...
+[17:34:16]     null[1/20]: MF1=0.2791, D=-0.6755
+[17:35:31]     null[5/20]: MF1=0.3042, D=-0.6504
+[17:37:07]     null[10/20]: MF1=0.3069, D=-0.6477
+[17:38:44]     null[15/20]: MF1=0.2850, D=-0.6696
+[17:40:21]     null[20/20]: MF1=0.2630, D=-0.6916
+[17:40:21]   Null distribution built (384.5s)
+[17:40:21] 
+  STATISTICAL TEST:
+[17:40:21]     D_real     = -0.0022
+[17:40:21]     null mean  = -0.6713
+[17:40:21]     null std   = 0.0145
+[17:40:21]     null median= -0.6759
+[17:40:21]     null 95th  = -0.6503
+[17:40:21]     p-value    = 0.0476
+[17:40:21] 
+  DECISION: DROP_KTM_W (p=0.0476 < 0.05, D_real=-0.0022 <= 0)
+[17:40:21] 
+  CASE B: DROP KTM-W — using canonical MiniROCKET only
+[17:40:48] 
+  FINAL TEST: MF1=0.6553 (D=+0.0000)
+[17:40:48] 
+  Dataset complete (497.5s)
+[17:40:51] 
+======================================================================
+[17:40:51]   DATASET 3/4: CWRU_UNBAL (4 classes)
+[17:40:51] ======================================================================
+[17:40:51]   Data loaded: train=1156, val=204, test=240, T=1024
+[17:40:52]   MiniROCKET fitted: 9996 features (0.4s)
+[17:40:52]   MR baseline (test): MF1=0.9917
+[17:40:52]   Baseline check PASS: 0.9917 vs ref 0.9917 (delta=0.0000)
+[17:40:53]   MR baseline (val):  MF1=0.9804
+[17:40:54]   Top-K selection: K=84, features=9996 (0.6s)
+[17:40:58]   KTM-W extracted: zero-act frac=0.009, mean count=464.6 (4.6s)
+[17:40:59]   MR+KTM-W real (val): MF1=0.9608, D_real=-0.0196
+[17:40:59]   Building null distribution (20 shifts per sample)...
+[17:41:01]     null[1/20]: MF1=0.9313, D=-0.0491
+[17:41:07]     null[5/20]: MF1=0.9558, D=-0.0246
+[17:41:14]     null[10/20]: MF1=0.9360, D=-0.0444
+[17:41:21]     null[15/20]: MF1=0.9706, D=-0.0098
+[17:41:28]     null[20/20]: MF1=0.9410, D=-0.0394
+[17:41:28]   Null distribution built (28.4s)
+[17:41:28] 
+  STATISTICAL TEST:
+[17:41:28]     D_real     = -0.0196
+[17:41:28]     null mean  = -0.0303
+[17:41:28]     null std   = 0.0135
+[17:41:28]     null median= -0.0296
+[17:41:28]     null 95th  = -0.0098
+[17:41:28]     p-value    = 0.3333
+[17:41:28] 
+  DECISION: DROP_KTM_W (p=0.3333 >= 0.05, D_real=-0.0196 <= 0)
+[17:41:28] 
+  CASE B: DROP KTM-W — using canonical MiniROCKET only
+[17:41:29] 
+  FINAL TEST: MF1=0.9917 (D=+0.0000)
+[17:41:29] 
+  Dataset complete (37.9s)
+[17:41:29] 
+======================================================================
+[17:41:29]   DATASET 4/4: CWRU_BAL (4 classes)
+[17:41:29] ======================================================================
+[17:41:29]   Data loaded: train=2727, val=482, test=567, T=1024
+[17:41:31]   MiniROCKET fitted: 9996 features (0.9s)
+[17:41:36]   MR baseline (test): MF1=0.9947
+[17:41:36]   Baseline check PASS: 0.9947 vs ref 0.9947 (delta=0.0000)
+[17:41:39]   MR baseline (val):  MF1=0.9896
+[17:41:42]   Top-K selection: K=84, features=9996 (3.1s)
+[17:41:52]   KTM-W extracted: zero-act frac=0.009, mean count=464.0 (10.0s)
+[17:41:56]   MR+KTM-W real (val): MF1=0.9626, D_real=-0.0270
+[17:41:56]   Building null distribution (20 shifts per sample)...
+[17:42:01]     null[1/20]: MF1=0.9543, D=-0.0353
+[17:42:21]     null[5/20]: MF1=0.9668, D=-0.0228
+[17:42:51]     null[10/20]: MF1=0.9522, D=-0.0374
+[17:43:28]     null[15/20]: MF1=0.9523, D=-0.0373
+[17:44:04]     null[20/20]: MF1=0.9479, D=-0.0417
+[17:44:04]   Null distribution built (127.8s)
+[17:44:04] 
+  STATISTICAL TEST:
+[17:44:04]     D_real     = -0.0270
+[17:44:04]     null mean  = -0.0366
+[17:44:04]     null std   = 0.0049
+[17:44:04]     null median= -0.0373
+[17:44:04]     null 95th  = -0.0308
+[17:44:04]     p-value    = 0.0952
+[17:44:04] 
+  DECISION: DROP_KTM_W (p=0.0952 >= 0.05, D_real=-0.0270 <= 0)
+[17:44:04] 
+  CASE B: DROP KTM-W — using canonical MiniROCKET only
+[17:44:10] 
+  FINAL TEST: MF1=0.9947 (D=+0.0000)
+[17:44:10] 
+  Dataset complete (160.8s)
+[17:44:12] 
+======================================================================
+[17:44:12]   SAVING RESULTS
+[17:44:12] ======================================================================
+[17:44:12] 
+======================================================================
+[17:44:12]   GENERATING FIGURES
+[17:44:12] ======================================================================
+[17:44:16]   Figures saved to figures/
+[17:44:16] 
+======================================================================
+[17:44:16]   DECISION TABLE (Central Result)
+[17:44:16] ======================================================================
+[17:44:16]   Dataset              D_real  Null mean   Null 95%        p Decision      
+[17:44:16]   -------------------------------------------------------------------------
+[17:44:16]   ECG5000_UNBAL       +0.0035    -0.3831    -0.3427   0.0476 KEEP_KTM_W    
+[17:44:16]   ECG5000_BAL         -0.0022    -0.6713    -0.6503   0.0476 DROP_KTM_W    
+[17:44:16]   CWRU_UNBAL          -0.0196    -0.0303    -0.0098   0.3333 DROP_KTM_W    
+[17:44:16]   CWRU_BAL            -0.0270    -0.0366    -0.0308   0.0952 DROP_KTM_W    
+[17:44:16] 
+======================================================================
+[17:44:16]   FINAL TEST RESULTS
+[17:44:16] ======================================================================
+[17:44:16]   Dataset             MR baseline Decision       Final model     Final MF1        D
+[17:44:16]   ---------------------------------------------------------------------------------
+[17:44:16]   ECG5000_UNBAL            0.5938 MR + KTM-W     MR + KTM-W         0.6115  +0.0177
+[17:44:16]   ECG5000_BAL              0.6553 MR             MR                 0.6553  +0.0000
+[17:44:16]   CWRU_UNBAL               0.9917 MR             MR                 0.9917  +0.0000
+[17:44:16]   CWRU_BAL                 0.9947 MR             MR                 0.9947  +0.0000
+[17:44:16] 
+  Total runtime: 14.6 minutes
+[17:44:16]   Results saved to C:\temp\ECG_Benchmark\results\turs_ktm_av/

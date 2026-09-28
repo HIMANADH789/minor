@@ -1,0 +1,23 @@
+Next Page Token = CfDJ8OasvsPNS7VMiSwiBm2YVpMZrV4wFIw4u0e_rJXlQpA4J71Kd4t_c4w2iUh8m875Hh9abMXUCFPaKUp6c3lwwvLY8x8juHQGPZpWeHtVW9yZygzwIhIGRm7LbD-HlOjgkGPTBxRmjhnuRJ7csRoOskHTKFFEG72fMfug87w7Yg
+name                                        size  creationDate                
+---------------------------------------  -------  --------------------------  
+data/UCR/ACSF1/X.npy                     2336128  2021-05-21 08:46:28.509000  
+data/UCR/ACSF1/X_train.npy               1168128  2021-05-21 08:46:28.610000  
+data/UCR/ACSF1/X_valid.npy               1168128  2021-05-21 08:46:28.530000  
+data/UCR/ACSF1/y.npy                         928  2021-05-21 08:46:28.503000  
+data/UCR/ACSF1/y_train.npy                   528  2021-05-21 08:46:28.464000  
+data/UCR/ACSF1/y_valid.npy                   528  2021-05-21 08:46:28.523000  
+data/UCR/Adiac/X.npy                     1099776  2021-05-21 08:46:28.532000  
+data/UCR/Adiac/X_train.npy                549248  2021-05-21 08:46:28.510000  
+data/UCR/Adiac/X_valid.npy                550656  2021-05-21 08:46:28.472000  
+data/UCR/Adiac/y.npy                        6376  2021-05-21 08:46:28.454000  
+data/UCR/Adiac/y_train.npy                  3248  2021-05-21 08:46:28.425000  
+data/UCR/Adiac/y_valid.npy                  3256  2021-05-21 08:46:28.465000  
+data/UCR/AllGestureWiimoteX/X.npy        3080128  2021-05-21 08:46:28.467000  
+data/UCR/AllGestureWiimoteX/X_train.npy   924128  2021-05-21 08:46:28.459000  
+data/UCR/AllGestureWiimoteX/X_valid.npy  2156128  2021-05-21 08:46:40.905000  
+data/UCR/AllGestureWiimoteX/y.npy           8128  2021-05-21 08:46:40.919000  
+data/UCR/AllGestureWiimoteX/y_train.npy     2528  2021-05-21 08:46:40.876000  
+data/UCR/AllGestureWiimoteX/y_valid.npy     5728  2021-05-21 08:46:40.983000  
+data/UCR/AllGestureWiimoteY/X.npy        3080128  2021-05-21 08:46:40.919000  
+data/UCR/AllGestureWiimoteY/X_train.npy   924128  2021-05-21 08:46:40.954000  

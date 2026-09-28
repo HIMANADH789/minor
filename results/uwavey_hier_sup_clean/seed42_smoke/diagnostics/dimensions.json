@@ -1,0 +1,54 @@
+{
+ "split": {
+  "train": 200,
+  "validation": 60,
+  "test": 200,
+  "T": 315,
+  "n_classes": 8
+ },
+ "extractors": {
+  "expanded": {
+   "physical_kernels": 84,
+   "quantiles_per_kernel": 238,
+   "n_unique_dilations": 21,
+   "total_features": 19992,
+   "n_biases": 19992
+  }
+ },
+ "pools": {
+  "root_increments_D1": 19992,
+  "delta_candidates": 449820,
+  "edges": 30,
+  "kernels_per_edge": 14994,
+  "unified_candidates": 469812,
+  "column_order": [
+   "D1",
+   "D2",
+   "D4",
+   "D8",
+   "D16"
+  ]
+ },
+ "chain_identity": {
+  "zero_sum_max": 1.9081958235744878e-16,
+  "identity_max_rel": 4.722702616148053e-16
+ },
+ "final": {
+  "selected": 19992,
+  "Z_dev": [
+   260,
+   19992
+  ],
+  "Z_test": [
+   200,
+   19992
+  ],
+  "composition": {
+   "1": 14884,
+   "2": 3658,
+   "4": 1256,
+   "8": 164,
+   "16": 30
+  }
+ }
+}

@@ -1,0 +1,129 @@
+[22:07:37] TURS-RAX: Regime-Adaptive Experts
+[22:07:37] Configuration: S=20, ALPHA=0.05, SEED=42
+[22:07:40] Device: cuda
+[22:07:40]   RESUMING from saved regime decisions
+[22:07:40]   Phase 1 already completed (resumed)
+[22:07:40] 
+======================================================================
+[22:07:40]   FROZEN REGIME DECISIONS:
+[22:07:40]     ECG5000_UNBAL: ALIGNED (p=0.0476, D=+0.0035)
+[22:07:40]     ECG5000_BAL: UNALIGNED (p=0.0476, D=-0.0022)
+[22:07:40]     CWRU_UNBAL: UNALIGNED (p=0.1429, D=-0.0196)
+[22:07:40]     CWRU_BAL: UNALIGNED (p=0.0952, D=-0.0270)
+[22:07:40] ======================================================================
+[22:07:40] 
+======================================================================
+[22:07:40]   PHASE 2: EXPERT EVALUATION
+[22:07:40] ======================================================================
+[22:07:40] 
+--- Dataset: ECG5000_UNBAL ---
+[22:07:40]   Regime: ALIGNED
+[22:07:40]   MR features: 9996
+[22:07:47]   Expert A (MR): MF1=0.5990
+[22:07:47]   Baseline PASS: 0.5990 vs 0.5938
+[22:07:48]   Expert B (Stack): MF1=0.5883 (combiner=stacking)
+[22:07:51]   Expert B (Stack+KTM): MF1=0.5764
+[22:07:51]   RAX: Stack, MF1=0.5883
+[22:07:51]   Oracle: MR, MF1=0.5990
+[22:07:51] 
+--- Dataset: ECG5000_BAL ---
+[22:07:51]   Regime: UNALIGNED
+[22:07:52]   MR features: 9996
+[22:08:10]   Expert A (MR): MF1=0.6654
+[22:08:10]   Baseline PASS: 0.6654 vs 0.6553
+[22:08:11]   Expert B (Stack): MF1=0.6725 (combiner=diagnostic_stacking)
+[22:08:16]   Expert B (Stack+KTM): MF1=0.6522
+[22:08:16]   RAX: MR, MF1=0.6654
+[22:08:16]   Oracle: Stack, MF1=0.6725
+[22:08:16] 
+--- Dataset: CWRU_UNBAL ---
+[22:08:16]   Regime: UNALIGNED
+[22:08:17]   MR features: 9996
+[22:08:17]   Expert A (MR): MF1=0.9875
+[22:08:17]   Baseline PASS: 0.9875 vs 0.9917
+[22:08:18]   Expert B (Stack): MF1=0.9539 (combiner=soft_vote)
+[22:08:22]   Expert B (Stack+KTM): MF1=0.9072
+[22:08:22]   RAX: MR, MF1=0.9875
+[22:08:22]   Oracle: MR, MF1=0.9875
+[22:08:22] 
+--- Dataset: CWRU_BAL ---
+[22:08:22]   Regime: UNALIGNED
+[22:08:24]   MR features: 9996
+[22:08:28]   Expert A (MR): MF1=0.9965
+[22:08:28]   Baseline PASS: 0.9965 vs 0.9947
+[22:08:29]   Expert B (Stack): MF1=0.9859 (combiner=static_weights)
+[22:08:38]   Expert B (Stack+KTM): MF1=0.9683
+[22:08:38]   RAX: MR, MF1=0.9965
+[22:08:38]   Oracle: MR, MF1=0.9965
+[22:08:38] 
+======================================================================
+[22:08:38]   SAVING RESULTS
+[22:08:38] ======================================================================
+[22:08:38] 
+======================================================================
+[22:08:38]   GENERATING FIGURES
+[22:08:38] ======================================================================
+[22:08:39]   Figures saved
+[22:08:39] 
+  Total runtime: 1.0 min
+[22:08:39] 
+======================================================================
+[22:08:39]   TABLE 1: Regime Detector
+[22:08:39]   Dataset              D_real  Null mean   Null 95%        p Decision    
+[22:08:39]   ----------------------------------------------------------------------
+[22:08:39]   ECG5000_UNBAL       +0.0035    -0.3746    -0.3390   0.0476 ALIGNED     
+[22:08:39]   ECG5000_BAL         -0.0022    -0.6667    -0.6476   0.0476 UNALIGNED   
+[22:08:39]   CWRU_UNBAL          -0.0196    -0.0350    -0.0194   0.1429 UNALIGNED   
+[22:08:39]   CWRU_BAL            -0.0270    -0.0369    -0.0285   0.0952 UNALIGNED   
+[22:08:39] 
+======================================================================
+[22:08:39]   TABLE 2: Expert Performance
+[22:08:39]   Dataset            MiniROCKET      Stack  Stack+KTM
+[22:08:39]   -------------------------------------------------------
+[22:08:39]   ECG5000_UNBAL          0.5990     0.5883     0.5764
+[22:08:39]   ECG5000_BAL            0.6654     0.6725     0.6522
+[22:08:39]   CWRU_UNBAL             0.9875     0.9539     0.9072
+[22:08:39]   CWRU_BAL               0.9965     0.9859     0.9683
+[22:08:39] 
+======================================================================
+[22:08:39]   TABLE 3: RAX Result
+[22:08:39]   Dataset            Regime       Expert              MF1
+[22:08:39]   ------------------------------------------------------------
+[22:08:39]   ECG5000_UNBAL      ALIGNED      Stack            0.5883
+[22:08:39]   ECG5000_BAL        UNALIGNED    MR               0.6654
+[22:08:39]   CWRU_UNBAL         UNALIGNED    MR               0.9875
+[22:08:39]   CWRU_BAL           UNALIGNED    MR               0.9965
+[22:08:39] 
+======================================================================
+[22:08:39]   TABLE 4: Full Comparison
+[22:08:39]   Dataset                  MR    Stack      StK      RAX   Oracle
+[22:08:39]   ------------------------------------------------------------
+[22:08:39]   ECG5000_UNBAL        0.5990   0.5883   0.5764   0.5883   0.5990
+[22:08:39]   ECG5000_BAL          0.6654   0.6725   0.6522   0.6654   0.6725
+[22:08:39]   CWRU_UNBAL           0.9875   0.9539   0.9072   0.9875   0.9875
+[22:08:39]   CWRU_BAL             0.9965   0.9859   0.9683   0.9965   0.9965
+[22:08:39] 
+======================================================================
+[22:08:39]   TABLE 5: RAX Gain
+[22:08:39]   Dataset              RAX-MR  RAX-Stack  RAX-StK  Oracle-RAX
+[22:08:39]   -----------------------------------------------------------------
+[22:08:39]   ECG5000_UNBAL       -0.0107    +0.0000  +0.0119     +0.0107
+[22:08:39]   ECG5000_BAL         +0.0000    -0.0071  +0.0132     +0.0071
+[22:08:39]   CWRU_UNBAL          +0.0000    +0.0336  +0.0803     +0.0000
+[22:08:39]   CWRU_BAL            +0.0000    +0.0106  +0.0282     +0.0000
+[22:08:39] 
+======================================================================
+[22:08:39]   SCIENTIFIC VERDICT
+[22:08:39]   Regime detector: STRONG (1/4 ALIGNED)
+[22:08:39]   RAX vs MR: mean 0.8094 vs 0.8121 (NO GAIN)
+[22:08:39]   RAX vs Oracle: gap = 0.0044 (CLOSE)
+[22:08:39] 
+Done. Results in C:\temp\ECG_Benchmark\results\turs_rax
+Traceback (most recent call last):
+  File "C:\temp\ECG_Benchmark\experiments\run_turs_rax.py", line 969, in <module>
+    main()
+  File "C:\temp\ECG_Benchmark\experiments\run_turs_rax.py", line 965, in main
+    log(f"\nDone. Results in {OUT_DIR}")
+  File "C:\temp\ECG_Benchmark\experiments\run_turs_rax.py", line 381, in log
+    log_fh.write(line + "\n")
+ValueError: I/O operation on closed file.

@@ -1,0 +1,58 @@
+{
+  "dataset": "ItalyPowerDemand",
+  "seed": 42,
+  "T": 24,
+  "split": {
+    "train": 56,
+    "val": 11,
+    "test": 1029
+  },
+  "n_classes": 2,
+  "n_features": 9996,
+  "K_regimes": 8,
+  "results": {
+    "M0": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 0.965,
+      "accuracy": 0.965,
+      "selected_alpha": 11.288378916846883,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.965,
+        0.965
+      ]
+    },
+    "R2": {
+      "val_macro_f1": 1.0,
+      "test_macro_f1": 0.9592,
+      "accuracy": 0.9592,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.9592,
+        0.9591
+      ],
+      "context_train": {
+        "ssl_best_val": 0.102239,
+        "joint_best_val_mf1": 0.5417,
+        "avg_joint_losses": {
+          "commit": 1.10875,
+          "div": 8.07101,
+          "aux": 8.33024,
+          "ssl": 1.90449
+        }
+      },
+      "params": {
+        "encoder": 59072,
+        "decoder": 2177,
+        "aux_head": 66,
+        "vq_trainable": 0,
+        "total_trainable": 61315
+      }
+    }
+  },
+  "deltas": {
+    "R2-M0": -0.0058
+  },
+  "runtime_s": 9.2
+}

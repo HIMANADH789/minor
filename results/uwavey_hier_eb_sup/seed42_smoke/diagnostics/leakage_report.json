@@ -1,0 +1,10 @@
+{
+ "minirocket_fit": "train signals only (seed 42)",
+ "hierarchy": "TRAIN latents only (frozen seed-42 SSL encoder, recursive 2-means); val/test transform-only; reg16_tr byte-identical to the stored uwavey_nested artifact",
+ "delta_pool_and_root_matrix": "frozen transform, label-free",
+ "eb_fit_final_selection": "train+val statistics only (canonical R5 final-stage protocol - identical to HIER-HIGH-SUP / HIER-CONTINUOUS-SUP)",
+ "eb_fit_cv_diagnostic": "5-fold StratifiedKFold(shuffle=True, random_state=42); per-fold ANOVA-F/p, z, EB fits and selection use fold-train rows and labels ONLY",
+ "eb_hyperparameters": "PREDECLARED (init pi0=0.90, tail 10%, tol 1e-8, 200 iters, clamps per spec); no validation tuning",
+ "test_labels": "touched only inside ridge_eval for scoring",
+ "no_quota": "composition emerged from the global q ranking; reported as diagnostics only"
+}

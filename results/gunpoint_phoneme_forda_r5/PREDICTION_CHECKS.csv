@@ -1,0 +1,10 @@
+dataset,seed,selected,fallback_used,n_pred,pred_count_ok,preds_finite,mr_test,her_test,final_test,delta_vs_mr
+GunPoint,42,HERAMBA,False,150,True,True,0.9933,1.0,1.0,0.0067
+GunPoint,43,HERAMBA,False,150,True,True,0.9933,1.0,1.0,0.0067
+GunPoint,44,HERAMBA,False,150,True,True,0.9933,1.0,1.0,0.0067
+Phoneme,42,HERAMBA,False,1896,True,True,0.0808,0.1238,0.1238,0.043
+Phoneme,43,HERAMBA,False,1896,True,True,0.0808,0.1128,0.1128,0.032
+Phoneme,44,HERAMBA,False,1896,True,True,0.0808,0.117,0.117,0.0362
+FordA,42,HERAMBA,False,1320,True,True,0.9499,0.9553,0.9553,0.0054
+FordA,43,HERAMBA,False,1320,True,True,0.9499,0.9492,0.9492,-0.0007
+FordA,44,HERAMBA,False,1320,True,True,0.9499,0.953,0.953,0.0031

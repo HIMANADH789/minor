@@ -1,0 +1,14 @@
+{
+ "R3-G": {
+  "test_macro_f1": 0.3492,
+  "test_accuracy": 0.3799
+ },
+ "R3-GH": {
+  "test_macro_f1": 0.4788,
+  "test_accuracy": 0.5
+ },
+ "R3": {
+  "test_macro_f1": 0.3301,
+  "test_accuracy": 0.3571
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "method": "hier_sup_clean",
+ "label": "HIER-SUP-CLEAN",
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "base_budget": 9996,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_pool": {
+  "root_increment_D1": 19992,
+  "delta_D2_D4_D8_D16": 449820,
+  "unified": 469812
+ },
+ "formulation": {
+  "ppv_level_0": 0.0,
+  "root_increment": "Delta^(1)_m = PPV_m^(1) - PPV_m^(0) = PPV_m^(1)",
+  "deeper": "Delta_{m,c}^(K) = PPV_{m,c}^(K) - PPV_{m,parent(c)}^(K/2), K in {2,4,8,16}",
+  "parent_rule": "occupancy-weighted child mean; sum_c (n_c/n_p) Delta_{m,c} = 0"
+ },
+ "selection": "ONE supervised ANOVA-F ranking over the unified 469,812-candidate telescoping pool (train+val labels, canonical R5 final-stage protocol); no rho, no G/H split, no per-level quota",
+ "selected_composition": {
+  "1": 14453,
+  "2": 4012,
+  "4": 1436,
+  "8": 65,
+  "16": 26
+ },
+ "cv_unified_fold_internal": {
+  "mean": 0.762407993055084,
+  "std": 0.026997493793461214,
+  "kfold": 5
+ },
+ "equivalence": {
+  "expected": "IDENTICAL",
+  "verdict": "IDENTICAL",
+  "reference": "results\\uwavey_hier_continuous_sup\\seed42",
+  "components": {
+   "selected_index_set": true,
+   "selected_index_sequence": true,
+   "per_candidate_f_stats": true,
+   "semantic_metadata": true,
+   "emerged_composition": true,
+   "test_predictions": true,
+   "alpha": true,
+   "macro_f1": true
+  },
+  "n_selected_compared": 19992,
+  "macro_f1_delta_vs_reference": 0.0,
+  "chain_zero_sum_max": 1.8214596497756474e-16,
+  "chain_identity_max_rel": 5.625157194676737e-16,
+  "root_increment_bit_equal": true
+ },
+ "macro_f1": 0.7599,
+ "accuracy": 0.7635,
+ "alpha": 78.47599703514607,
+ "deltas_vs": {
+  "canonical_mr": 0.0056,
+  "mr_high": 0.0122,
+  "r5_high": -0.0173,
+  "hier_high": 0.0369,
+  "hier_high_sup": -0.0224,
+  "hier_continuous_sup": 0.0
+ },
+ "gate_mr_high": {
+  "ref": 0.7477,
+  "reproduced": 0.7477,
+  "diff": 0.0,
+  "tol": 0.002
+ },
+ "runtime_s": 327.1,
+ "peak_mem_mb": 0.0,
+ "smoke": false
+}

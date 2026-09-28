@@ -1,0 +1,28 @@
+{
+  "validation": {
+    "A_mr_and_drtn_correct": 10,
+    "B_mr_only_correct": 4,
+    "C_drtn_only_correct": 3,
+    "D_both_wrong": 6,
+    "n": 23,
+    "percentages": {
+      "A": 43.48,
+      "B": 17.39,
+      "C": 13.04,
+      "D": 26.09
+    }
+  },
+  "test": {
+    "A_mr_and_drtn_correct": 99,
+    "B_mr_only_correct": 61,
+    "C_drtn_only_correct": 19,
+    "D_both_wrong": 129,
+    "n": 308,
+    "percentages": {
+      "A": 32.14,
+      "B": 19.81,
+      "C": 6.17,
+      "D": 41.88
+    }
+  }
+}

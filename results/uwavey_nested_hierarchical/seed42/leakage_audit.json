@@ -1,0 +1,7 @@
+{
+ "poison_checks": "see tests/test_uwavey_nested_hierarchical.py",
+ "labels_used_in_intrinsic_stage": false,
+ "validation_used_in_intrinsic_stage": false,
+ "test_used_in_intrinsic_stage": false,
+ "L_star_frozen_before_classifier": true
+}

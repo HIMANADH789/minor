@@ -1,0 +1,355 @@
+{
+  "dataset": "EpilepticSeizures",
+  "stage": "complete",
+  "seed": 42,
+  "F": 9996,
+  "T": 178,
+  "n_train": 80,
+  "n_val": 20,
+  "n_test": 11420,
+  "n_classes": 2,
+  "plan": {
+    "M0": {
+      "n_global": 9996,
+      "n_medium": 0,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M1": {
+      "n_global": 4998,
+      "n_medium": 2499,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M2": {
+      "n_global": 4996,
+      "n_medium": 0,
+      "n_local": 1250,
+      "total": 9996
+    },
+    "M3": {
+      "n_global": 3332,
+      "n_medium": 1666,
+      "n_local": 833,
+      "total": 9996
+    },
+    "M4": {
+      "n_global": 0,
+      "n_medium": 2498,
+      "n_local": 1250,
+      "total": 9996
+    }
+  },
+  "dims": {
+    "M0": 9996,
+    "M1": 9996,
+    "M2": 9996,
+    "M3": 9996,
+    "M4": 9996
+  },
+  "val_macro_f1": {
+    "M0": 0.9499,
+    "M1": 0.9499,
+    "M2": 0.9499,
+    "M3": 0.9499,
+    "M4": 1.0
+  },
+  "val_alpha": {
+    "M0": 29.763514416313132,
+    "M1": 29.763514416313132,
+    "M2": 29.763514416313132,
+    "M3": 29.763514416313132,
+    "M4": 11.288378916846883
+  },
+  "selected": "M0",
+  "decision": {
+    "stat_rows": [
+      {
+        "comparison": "M0 vs M1 (validation)",
+        "delta_val_mf1": 0.0,
+        "chi2": 0.0,
+        "p_raw": 1.0,
+        "q_fdr": 1.0
+      },
+      {
+        "comparison": "M0 vs M2 (validation)",
+        "delta_val_mf1": 0.0,
+        "chi2": 0.0,
+        "p_raw": 1.0,
+        "q_fdr": 1.0
+      },
+      {
+        "comparison": "M0 vs M3 (validation)",
+        "delta_val_mf1": 0.0,
+        "chi2": 0.0,
+        "p_raw": 1.0,
+        "q_fdr": 1.0
+      },
+      {
+        "comparison": "M0 vs M4 (validation)",
+        "delta_val_mf1": 0.0501,
+        "chi2": 0.0,
+        "p_raw": 1.0,
+        "q_fdr": 1.0
+      }
+    ],
+    "eligible": [],
+    "selected": "M0",
+    "reason": "no MSW candidate beats M0 with val>M0 and BH q<0.05"
+  },
+  "equivalence_train_val": {
+    "train": 0.0,
+    "val": 0.0
+  },
+  "block_stats": {
+    "global": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.50087,
+      "std": 0.290517,
+      "near_zero_var_cols": 2,
+      "nan": 0,
+      "inf": 0
+    },
+    "medium": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.501107,
+      "std": 0.284196,
+      "near_zero_var_cols": 0,
+      "nan": 0,
+      "inf": 0
+    },
+    "local": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.499734,
+      "std": 0.290398,
+      "near_zero_var_cols": 2,
+      "nan": 0,
+      "inf": 0
+    }
+  },
+  "block_similarity": {
+    "global_medium": {
+      "linear_cka": 0.728102,
+      "mean_abs_corr": 0.270971
+    },
+    "global_local": {
+      "linear_cka": 0.722282,
+      "mean_abs_corr": 0.257628
+    },
+    "medium_local": {
+      "linear_cka": 0.93832,
+      "mean_abs_corr": 0.329292
+    }
+  },
+  "timing": {
+    "mr_fit_s": 0.04,
+    "mr_val_s": 0.0,
+    "regional_trainval_s": 0.02,
+    "assemble_s": 0.02,
+    "mr_test_s": 0.59,
+    "regional_test_s": 10.04
+  },
+  "test_macro_f1": {
+    "M0": 0.9194,
+    "M1": 0.9349,
+    "M2": 0.9348,
+    "M3": 0.9332,
+    "M4": 0.9393
+  },
+  "test_metrics": {
+    "M0": {
+      "accuracy": 0.949,
+      "macro_f1": 0.9194,
+      "weighted_f1": 0.9489,
+      "class_f1s": [
+        0.8706,
+        0.9683
+      ],
+      "class_precision": [
+        0.8749,
+        0.9671
+      ],
+      "class_recall": [
+        0.8664,
+        0.9694
+      ],
+      "confusion_matrix": [
+        [
+          1958,
+          302
+        ],
+        [
+          280,
+          8880
+        ]
+      ],
+      "variant": "M0",
+      "selected_alpha": 29.763514416313132,
+      "n_features": 9996
+    },
+    "M1": {
+      "accuracy": 0.9587,
+      "macro_f1": 0.9349,
+      "weighted_f1": 0.9587,
+      "class_f1s": [
+        0.8955,
+        0.9742
+      ],
+      "class_precision": [
+        0.8963,
+        0.974
+      ],
+      "class_recall": [
+        0.8947,
+        0.9745
+      ],
+      "confusion_matrix": [
+        [
+          2022,
+          238
+        ],
+        [
+          234,
+          8926
+        ]
+      ],
+      "variant": "M1",
+      "selected_alpha": 29.763514416313132,
+      "n_features": 9996
+    },
+    "M2": {
+      "accuracy": 0.9586,
+      "macro_f1": 0.9348,
+      "weighted_f1": 0.9586,
+      "class_f1s": [
+        0.8955,
+        0.9742
+      ],
+      "class_precision": [
+        0.8941,
+        0.9745
+      ],
+      "class_recall": [
+        0.8969,
+        0.9738
+      ],
+      "confusion_matrix": [
+        [
+          2027,
+          233
+        ],
+        [
+          240,
+          8920
+        ]
+      ],
+      "variant": "M2",
+      "selected_alpha": 29.763514416313132,
+      "n_features": 9996
+    },
+    "M3": {
+      "accuracy": 0.9574,
+      "macro_f1": 0.9332,
+      "weighted_f1": 0.9575,
+      "class_f1s": [
+        0.8929,
+        0.9734
+      ],
+      "class_precision": [
+        0.8873,
+        0.9749
+      ],
+      "class_recall": [
+        0.8987,
+        0.9718
+      ],
+      "confusion_matrix": [
+        [
+          2031,
+          229
+        ],
+        [
+          258,
+          8902
+        ]
+      ],
+      "variant": "M3",
+      "selected_alpha": 29.763514416313132,
+      "n_features": 9996
+    },
+    "M4": {
+      "accuracy": 0.961,
+      "macro_f1": 0.9393,
+      "weighted_f1": 0.9612,
+      "class_f1s": [
+        0.903,
+        0.9756
+      ],
+      "class_precision": [
+        0.89,
+        0.9792
+      ],
+      "class_recall": [
+        0.9164,
+        0.9721
+      ],
+      "confusion_matrix": [
+        [
+          2071,
+          189
+        ],
+        [
+          256,
+          8904
+        ]
+      ],
+      "variant": "M4",
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996
+    }
+  },
+  "test_stat_rows": [
+    {
+      "dataset": "EpilepticSeizures",
+      "comparison": "M0 vs M1 (test)",
+      "delta_test_mf1": 0.0155,
+      "chi2": 47.1468,
+      "p_raw": 0.0,
+      "effect_size_d": 0.065,
+      "q_fdr": 0.0
+    },
+    {
+      "dataset": "EpilepticSeizures",
+      "comparison": "M0 vs M2 (test)",
+      "delta_test_mf1": 0.0154,
+      "chi2": 44.0151,
+      "p_raw": 0.0,
+      "effect_size_d": 0.0628,
+      "q_fdr": 0.0
+    },
+    {
+      "dataset": "EpilepticSeizures",
+      "comparison": "M0 vs M3 (test)",
+      "delta_test_mf1": 0.0138,
+      "chi2": 38.9251,
+      "p_raw": 0.0,
+      "effect_size_d": 0.0591,
+      "q_fdr": 0.0
+    },
+    {
+      "dataset": "EpilepticSeizures",
+      "comparison": "M0 vs M4 (test)",
+      "delta_test_mf1": 0.0199,
+      "chi2": 42.7159,
+      "p_raw": 0.0,
+      "effect_size_d": 0.0617,
+      "q_fdr": 0.0
+    }
+  ],
+  "selected_test": 0.9194,
+  "delta_vs_m0": 0.0,
+  "equivalence_test": 0.0
+}

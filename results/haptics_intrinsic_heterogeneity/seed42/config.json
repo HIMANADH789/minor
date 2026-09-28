@@ -1,0 +1,54 @@
+{
+ "seed": 42,
+ "W_primary": 8,
+ "spectral_preprocessing": {
+  "detrend": "per-window linear (endpoint)",
+  "window_fn": "hann",
+  "n_fft": "next pow2 of window length",
+  "normalization": "per-window power sum to 1 (eps 1e-12)",
+  "js": "scipy jensenshannon base=e, squared",
+  "aggregation": "mean over window pairs, then channels"
+ },
+ "dataset_index_rule": "median over train samples",
+ "budget_rule": "B_H = clip(HI_dataset / log 2, 0, 1)",
+ "bands": [
+  {
+   "low_high": [
+    0.0,
+    0.2
+   ],
+   "label": "low"
+  },
+  {
+   "low_high": [
+    0.2,
+    0.5
+   ],
+   "label": "moderate"
+  },
+  {
+   "low_high": [
+    0.5,
+    0.75
+   ],
+   "label": "high"
+  },
+  {
+   "low_high": [
+    0.75,
+    1.0
+   ],
+   "label": "very high"
+  }
+ ],
+ "group_selection": {
+  "ranking": "train-median normalized heterogeneity (label-free)",
+  "tie_break": "ascending feature index",
+  "variants": [
+   "quantile",
+   "hierarchy(8-slice)",
+   "block(64-kernel)"
+  ]
+ },
+ "frozen_before": "any classifier fitting; labels only post-hoc"
+}

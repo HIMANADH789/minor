@@ -1,0 +1,60 @@
+{
+  "planned_confirmatory_family": [
+    {
+      "comparison": "R5_5050-MiniROCKET",
+      "test": "paired bootstrap delta (10k) + randomization (20k swaps) + McNemar",
+      "reason": "primary scientific question: is R5 above M0 beyond test-set noise",
+      "exploratory": false,
+      "correction": "Holm across the 5 seed-42 planned pairs + R5-M0 across seeds"
+    },
+    {
+      "comparison": "R5_5050-InceptionTime",
+      "test": "paired bootstrap + randomization",
+      "reason": "R5 vs conventional baselines",
+      "exploratory": false,
+      "correction": "Holm (same family)"
+    },
+    {
+      "comparison": "R5_5050-FCN",
+      "test": "paired bootstrap + randomization",
+      "reason": "R5 vs conventional baselines",
+      "exploratory": false,
+      "correction": "Holm (same family)"
+    },
+    {
+      "comparison": "R5_5050-ResNet1D",
+      "test": "paired bootstrap + randomization",
+      "reason": "R5 vs conventional baselines",
+      "exploratory": false,
+      "correction": "Holm (same family)"
+    },
+    {
+      "comparison": "R5_5050-PatchTST",
+      "test": "paired bootstrap + randomization",
+      "reason": "R5 vs conventional baselines",
+      "exploratory": false,
+      "correction": "Holm (same family)"
+    }
+  ],
+  "exploratory_family": [
+    {
+      "comparison": "MiniROCKET-MiniROCKET",
+      "test": "paired bootstrap",
+      "reason": "baseline characterization",
+      "exploratory": true,
+      "correction": "none (descriptive)"
+    },
+    {
+      "analysis": "mechanism/association sections 11-18",
+      "test": "effect sizes (Cohen d, Cliff delta), Spearman, binned rates",
+      "reason": "observational association, not causal",
+      "exploratory": true,
+      "correction": "none"
+    }
+  ],
+  "seed_level": {
+    "n_seeds": 3,
+    "rule": "descriptive only; no significance claims"
+  },
+  "test_set_use": "post-hoc inference only; no tuning"
+}

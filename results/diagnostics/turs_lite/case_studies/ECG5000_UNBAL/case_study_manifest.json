@@ -1,0 +1,450 @@
+[
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "correct_low_u",
+    "sample_id": 868,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9996010661125183,
+    "u_mean": 0.15890032052993774,
+    "v_max": 8.463512420654297,
+    "alpha": 0.0019923001527786255,
+    "class_probs": [
+      0.9996005892753601,
+      1.0566698165348498e-06,
+      0.00014012947212904692,
+      3.861659479298396e-06,
+      0.00025435295538045466
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": -8.70823860168457e-05,
+    "random_region": [
+      114,
+      128
+    ],
+    "random_prob_drop": 0.00024080276489257812
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "correct_low_u",
+    "sample_id": 723,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9961020946502686,
+    "u_mean": 0.1587722897529602,
+    "v_max": 6.583586692810059,
+    "alpha": 0.0021515274420380592,
+    "class_probs": [
+      0.9960938096046448,
+      1.3091536857245956e-05,
+      0.0025067024398595095,
+      0.00020045836572535336,
+      0.0011860200902447104
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": -0.002312779426574707,
+    "random_region": [
+      117,
+      131
+    ],
+    "random_prob_drop": 0.003751516342163086
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "correct_high_u",
+    "sample_id": 698,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.7300857901573181,
+    "u_mean": 0.18664933741092682,
+    "v_max": 7.566320419311523,
+    "alpha": 0.003123529953882098,
+    "class_probs": [
+      0.00010470650158822536,
+      0.7300176620483398,
+      0.0446874275803566,
+      0.2192663550376892,
+      0.00592386070638895
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": 0.032175660133361816,
+    "random_region": [
+      118,
+      132
+    ],
+    "random_prob_drop": 0.00815969705581665
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "correct_high_u",
+    "sample_id": 826,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9656156301498413,
+    "u_mean": 0.18676483631134033,
+    "v_max": 6.952839374542236,
+    "alpha": 0.003044517245143652,
+    "class_probs": [
+      2.74370472652663e-06,
+      0.9655838012695312,
+      0.0012339490931481123,
+      0.032815150916576385,
+      0.00036436435766518116
+    ],
+    "targeted_region": [
+      123,
+      137
+    ],
+    "targeted_prob_drop": 0.013751208782196045,
+    "random_region": [
+      88,
+      102
+    ],
+    "random_prob_drop": -0.0020444393157958984
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "incorrect_low_u",
+    "sample_id": 85,
+    "true_label": 4,
+    "predicted_label": 1,
+    "confidence": 0.9270070195198059,
+    "u_mean": 0.1464453935623169,
+    "v_max": 6.493317127227783,
+    "alpha": 0.0016174768097698689,
+    "class_probs": [
+      7.216205995064229e-05,
+      0.9267560243606567,
+      0.015012099407613277,
+      0.04809911549091339,
+      0.0100606270134449
+    ],
+    "targeted_region": [
+      33,
+      47
+    ],
+    "targeted_prob_drop": 0.001146332360804081,
+    "random_region": [
+      112,
+      126
+    ],
+    "random_prob_drop": 0.0019050436094403267
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "incorrect_low_u",
+    "sample_id": 7,
+    "true_label": 2,
+    "predicted_label": 1,
+    "confidence": 0.8075268864631653,
+    "u_mean": 0.15092742443084717,
+    "v_max": 7.381468296051025,
+    "alpha": 0.0004658045945689082,
+    "class_probs": [
+      0.013760610483586788,
+      0.8074724674224854,
+      0.0645066350698471,
+      0.0895867869257927,
+      0.024673499166965485
+    ],
+    "targeted_region": [
+      79,
+      93
+    ],
+    "targeted_prob_drop": -0.003837771713733673,
+    "random_region": [
+      78,
+      92
+    ],
+    "random_prob_drop": -0.0024090036749839783
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "incorrect_high_u",
+    "sample_id": 185,
+    "true_label": 3,
+    "predicted_label": 1,
+    "confidence": 0.739425003528595,
+    "u_mean": 0.19377067685127258,
+    "v_max": 5.328794002532959,
+    "alpha": 0.002507401630282402,
+    "class_probs": [
+      0.02192475087940693,
+      0.7393566370010376,
+      0.04238365590572357,
+      0.15954478085041046,
+      0.03679024800658226
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": -0.002334907650947571,
+    "random_region": [
+      69,
+      83
+    ],
+    "random_prob_drop": 0.013697311282157898
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "incorrect_high_u",
+    "sample_id": 427,
+    "true_label": 2,
+    "predicted_label": 0,
+    "confidence": 0.9867774844169617,
+    "u_mean": 0.19400009512901306,
+    "v_max": 8.439291954040527,
+    "alpha": 0.0030955076217651367,
+    "class_probs": [
+      0.9867697954177856,
+      0.002155022695660591,
+      0.004418230149894953,
+      0.00043298283708281815,
+      0.006223864853382111
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": -0.0060621690936386585,
+    "random_region": [
+      23,
+      37
+    ],
+    "random_prob_drop": 0.00019824597984552383
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "strong_velocity",
+    "sample_id": 410,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9994373917579651,
+    "u_mean": 0.1491028368473053,
+    "v_max": 8.524396896362305,
+    "alpha": 0.0016829289961606264,
+    "class_probs": [
+      0.9994367957115173,
+      7.43824671189941e-07,
+      0.0001918383059091866,
+      4.350485596660292e-06,
+      0.00036621259641833603
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 9.47713851928711e-05,
+    "random_region": [
+      70,
+      84
+    ],
+    "random_prob_drop": 8.511543273925781e-05
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "strong_velocity",
+    "sample_id": 855,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9997028708457947,
+    "u_mean": 0.1540619432926178,
+    "v_max": 8.524538040161133,
+    "alpha": 0.001713334582746029,
+    "class_probs": [
+      0.9997027516365051,
+      1.5893235740804812e-06,
+      0.00013159855734556913,
+      2.97917745228915e-06,
+      0.0001610805484233424
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": -7.2479248046875e-05,
+    "random_region": [
+      13,
+      27
+    ],
+    "random_prob_drop": -0.0001100301742553711
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "weak_velocity",
+    "sample_id": 313,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9946088790893555,
+    "u_mean": 0.1822262406349182,
+    "v_max": 7.026279926300049,
+    "alpha": 0.0030003765132278204,
+    "class_probs": [
+      0.9946222305297852,
+      0.00011540414561750367,
+      0.002534112660214305,
+      0.000506329583004117,
+      0.0022218157537281513
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.015329599380493164,
+    "random_region": [
+      107,
+      121
+    ],
+    "random_prob_drop": -0.00020301342010498047
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "weak_velocity",
+    "sample_id": 14,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9962294697761536,
+    "u_mean": 0.15376237034797668,
+    "v_max": 7.027935028076172,
+    "alpha": 0.002021028660237789,
+    "class_probs": [
+      0.9962319731712341,
+      6.9106504270166624e-06,
+      0.002782924100756645,
+      9.374364162795246e-05,
+      0.0008843954419717193
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": -0.0015408992767333984,
+    "random_region": [
+      9,
+      23
+    ],
+    "random_prob_drop": -0.0028643012046813965
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "strong_alpha_transport",
+    "sample_id": 353,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9936496615409851,
+    "u_mean": 0.18939906358718872,
+    "v_max": 8.108855247497559,
+    "alpha": 0.002979304175823927,
+    "class_probs": [
+      0.9936472773551941,
+      6.706511339871213e-05,
+      0.002808290533721447,
+      0.0003640156937763095,
+      0.003113336395472288
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.0009728670120239258,
+    "random_region": [
+      83,
+      97
+    ],
+    "random_prob_drop": -0.0004298090934753418
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "strong_alpha_transport",
+    "sample_id": 919,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9887815117835999,
+    "u_mean": 0.1837693750858307,
+    "v_max": 7.186086177825928,
+    "alpha": 0.002982789184898138,
+    "class_probs": [
+      1.0840559525604476e-06,
+      0.9887712597846985,
+      0.0005588052445091307,
+      0.010576443746685982,
+      9.240439248969778e-05
+    ],
+    "targeted_region": [
+      3,
+      17
+    ],
+    "targeted_prob_drop": 0.006872892379760742,
+    "random_region": [
+      108,
+      122
+    ],
+    "random_prob_drop": 0.004119813442230225
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "weak_alpha_regime",
+    "sample_id": 201,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9532666206359863,
+    "u_mean": 0.16949562728405,
+    "v_max": 6.609227657318115,
+    "alpha": 0.0019171981839463115,
+    "class_probs": [
+      4.271167199476622e-06,
+      0.9532781839370728,
+      0.0013912972062826157,
+      0.04473463073372841,
+      0.0005916738300584257
+    ],
+    "targeted_region": [
+      0,
+      14
+    ],
+    "targeted_prob_drop": 0.003062009811401367,
+    "random_region": [
+      110,
+      124
+    ],
+    "random_prob_drop": 0.007819056510925293
+  },
+  {
+    "dataset": "ECG5000_UNBAL",
+    "category": "weak_alpha_regime",
+    "sample_id": 825,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9967674016952515,
+    "u_mean": 0.16496112942695618,
+    "v_max": 9.265291213989258,
+    "alpha": 0.0019187662983313203,
+    "class_probs": [
+      1.3974788544146577e-06,
+      0.9967645406723022,
+      0.0006456056144088507,
+      0.0025518189650028944,
+      3.653403837233782e-05
+    ],
+    "targeted_region": [
+      126,
+      140
+    ],
+    "targeted_prob_drop": 0.003910839557647705,
+    "random_region": [
+      104,
+      118
+    ],
+    "random_prob_drop": -0.00021952390670776367
+  }
+]

@@ -1,0 +1,14 @@
+model,dataset,global_impl,kernels,ridge,mf1,source
+MiniROCKET_historical,ECG5000_UNBAL,aeon default,10000,RidgeClassifierCV,0.5938,VERIFIED
+MiniROCKET_historical,ECG5000_BAL,aeon default,10000,RidgeClassifierCV,0.6553,VERIFIED
+MiniROCKET_historical,CWRU_UNBAL,aeon default,10000,RidgeClassifierCV,0.9917,VERIFIED
+MiniROCKET_historical,CWRU_BAL,aeon default,10000,RidgeClassifierCV,0.9947,VERIFIED
+GLR_A0_GlobalPatternBank,ECG5000_UNBAL,GlobalPatternBank,2048,DualRidge,0.4769,HISTORICAL
+GLR_A0_GlobalPatternBank,ECG5000_BAL,GlobalPatternBank,2048,DualRidge,0.4933,HISTORICAL
+GLR_A0_GlobalPatternBank,CWRU_UNBAL,GlobalPatternBank,2048,DualRidge,0.7035,HISTORICAL
+GLR_A0_GlobalPatternBank,CWRU_BAL,GlobalPatternBank,2048,DualRidge,0.7276,HISTORICAL
+GLD_corrected_aeon,ECG5000_UNBAL,aeon MiniRocket,2016,DualRidge,0.6944,REPRODUCED
+GLD_corrected_aeon,ECG5000_BAL,aeon MiniRocket,2016,DualRidge,0.6502,REPRODUCED
+GLD_corrected_aeon,CWRU_UNBAL,aeon MiniRocket,2016,DualRidge,0.9458,REPRODUCED
+GLD_corrected_aeon,CWRU_BAL,aeon MiniRocket,2016,DualRidge,0.9824,REPRODUCED
+GLR_A8_global_only,CWRU_UNBAL,aeon MiniRocket,2016,DualRidge,0.9458,REPRODUCED (same as GLD_corrected)

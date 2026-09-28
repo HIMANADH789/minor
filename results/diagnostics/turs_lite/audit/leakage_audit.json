@@ -1,0 +1,13 @@
+{
+  "verdict": "PASS",
+  "evidence": {
+    "probes_trained_on_train_only": true,
+    "thresholds_selected_on_val_only": true,
+    "primary_aggregations_pre_registered": true,
+    "perturbation_sizes_pre_registered": true,
+    "no_test_labels_used_for_selection": true,
+    "split_manifests": "audit/dataset_manifest_<DS>.json",
+    "fdr_within_family": true
+  },
+  "strict_rule": "Any FAIL above invalidates test-set analysis."
+}

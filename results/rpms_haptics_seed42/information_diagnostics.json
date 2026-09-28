@@ -1,0 +1,240 @@
+{
+  "track1_branch_stats": {
+    "G": {
+      "name": "G",
+      "dim": 3332,
+      "mean": 0.5008719875102045,
+      "std": 0.2930696128396738,
+      "median": 0.5009157657623291,
+      "min": 0.0,
+      "max": 1.0,
+      "fraction_near_zero": 0.0016535646516671184,
+      "effective_rank": 69
+    },
+    "H": {
+      "name": "H",
+      "dim": 3332,
+      "mean": 0.03847050274539127,
+      "std": 0.028626538320974084,
+      "median": 0.034609606489539146,
+      "min": 0.0,
+      "max": 0.20028957724571228,
+      "fraction_near_zero": 0.014872400573132478,
+      "effective_rank": 136
+    },
+    "HydraH": {
+      "name": "HydraH",
+      "dim": 3332,
+      "mean": 0.009454899717469717,
+      "std": 0.02107812319775869,
+      "median": 0.0012859866299381884,
+      "min": 0.0,
+      "max": 0.5486968449931412,
+      "fraction_near_zero": 0.23914727181195058,
+      "effective_rank": 137
+    }
+  },
+  "track2_redundancy": {
+    "G~H": {
+      "matrix_pearson": -0.2578582227595939,
+      "profile_pearson_mean": -0.2609092060917917,
+      "linear_cka": 0.34639741990316625
+    },
+    "G~HydraH": {
+      "matrix_pearson": -0.015200326009448152,
+      "profile_pearson_mean": -0.014463436208653514,
+      "linear_cka": 0.22523205253203732
+    },
+    "H~HydraH": {
+      "matrix_pearson": 0.006456163602454488,
+      "profile_pearson_mean": 0.006106657787762246,
+      "linear_cka": 0.3526180677691487
+    }
+  },
+  "track3_incremental": {
+    "G": {
+      "val_macro_f1": 0.4633,
+      "selected_alpha": 4.281332398719396,
+      "dim": 3332
+    },
+    "H": {
+      "val_macro_f1": 0.56,
+      "selected_alpha": 0.23357214690901212,
+      "dim": 3332
+    },
+    "HydraH": {
+      "val_macro_f1": 0.2587,
+      "selected_alpha": 1.623776739188721,
+      "dim": 3332
+    },
+    "G+H": {
+      "val_macro_f1": 0.6767,
+      "selected_alpha": 1.623776739188721,
+      "dim": 6664
+    },
+    "G+HydraH": {
+      "val_macro_f1": 0.566,
+      "selected_alpha": 4.281332398719396,
+      "dim": 6664
+    },
+    "H+HydraH": {
+      "val_macro_f1": 0.3756,
+      "selected_alpha": 0.615848211066026,
+      "dim": 6664
+    },
+    "G+H+HydraH": {
+      "val_macro_f1": 0.5444,
+      "selected_alpha": 1.623776739188721,
+      "dim": 9996
+    }
+  },
+  "track4_lobo": {
+    "full-minus-G": {
+      "val_macro_f1": 0.3756,
+      "selected_alpha": 0.615848211066026,
+      "dim": 6664
+    },
+    "full-minus-H": {
+      "val_macro_f1": 0.566,
+      "selected_alpha": 4.281332398719396,
+      "dim": 6664
+    },
+    "full-minus-HydraH": {
+      "val_macro_f1": 0.6767,
+      "selected_alpha": 1.623776739188721,
+      "dim": 6664
+    }
+  },
+  "track5_permutation_nulls": {
+    "G": {
+      "solo_val_macro_f1": 0.4633,
+      "permuted_nulls": [
+        0.0714,
+        0.0714,
+        0.1407,
+        0.2033,
+        0.2241
+      ],
+      "null_mean": 0.14218,
+      "signal_above_null": 0.32111999999999996
+    },
+    "H": {
+      "solo_val_macro_f1": 0.56,
+      "permuted_nulls": [
+        0.0714,
+        0.0714,
+        0.0767,
+        0.0667,
+        0.0714
+      ],
+      "null_mean": 0.07152,
+      "signal_above_null": 0.48848
+    },
+    "HydraH": {
+      "solo_val_macro_f1": 0.2587,
+      "permuted_nulls": [
+        0.0921,
+        0.1477,
+        0.1841,
+        0.0714,
+        0.3071
+      ],
+      "null_mean": 0.16048,
+      "signal_above_null": 0.09821999999999997
+    }
+  },
+  "track6_regime_contrib": {
+    "H": "regime_contributions (computed below)"
+  },
+  "track6_regime_contrib_H": {
+    "mean_contribution_per_regime": [
+      0.0046651885459211995,
+      0.000274629901592603,
+      0.0037877348041221513,
+      0.004792248218722606,
+      0.005653165466076691,
+      0.007074401934016479,
+      0.007759431186489008,
+      0.004463702688582955
+    ],
+    "dominant_regime": 6
+  },
+  "track6_regime_contrib_HydraH": {
+    "mean_contribution_per_regime": [
+      0.0023859178396562755,
+      5.679796738894625e-06,
+      0.0015322901891478165,
+      0.0005053974933442207,
+      0.0011609912223186692,
+      0.0010360426473857577,
+      0.001379123248499994,
+      0.0014494572803783968
+    ],
+    "dominant_regime": 0
+  },
+  "track7_vq_health": {
+    "codes_trva": {
+      "counts": [
+        39972,
+        1565,
+        24202,
+        19122,
+        23230,
+        20936,
+        17687,
+        22546
+      ],
+      "active_codes": 8,
+      "dead_codes": 0,
+      "normalized_entropy": 0.9349701302482213,
+      "perplexity": 6.988149103122168,
+      "dominant_code_fraction": 0.23615739099610067,
+      "revival_count": null
+    },
+    "codes_te": {
+      "counts": [
+        77831,
+        3110,
+        46976,
+        37876,
+        47148,
+        43116,
+        35318,
+        44961
+      ],
+      "active_codes": 8,
+      "dead_codes": 0,
+      "normalized_entropy": 0.9364440704488284,
+      "perplexity": 7.009600444924249,
+      "dominant_code_fraction": 0.23140847247990104,
+      "revival_count": null
+    }
+  },
+  "track8_alignment": {
+    "mean_corr": -0.006621997542155245,
+    "median_corr": -0.00572876686915273,
+    "fraction_strong_corr": 0.0012004801920768306,
+    "corr_hist": [
+      0,
+      0,
+      0,
+      0,
+      5,
+      5,
+      25,
+      154,
+      533,
+      990,
+      1053,
+      362,
+      138,
+      37,
+      10,
+      6,
+      10,
+      4,
+      0,
+      0
+    ]
+  }
+}

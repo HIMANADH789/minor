@@ -1,0 +1,31 @@
+{
+  "TransportFlavors": {
+    "status": "OK",
+    "output_shape": [
+      16,
+      4,
+      140
+    ],
+    "flavors": [
+      "standard",
+      "tail",
+      "fine",
+      "multilag"
+    ],
+    "ref_grid": 10,
+    "quant_grid_coarse": 10,
+    "quant_grid_fine": 25,
+    "tail_weights": [
+      1.538,
+      1.154,
+      0.769,
+      0.769,
+      0.769,
+      0.769,
+      0.769,
+      0.769,
+      1.154,
+      1.538
+    ]
+  }
+}

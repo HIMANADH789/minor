@@ -1,0 +1,16 @@
+level,n_candidates,statistic,spearman_rho,p_value
+K2,29988,log_s2,-0.0963969,7.74369e-63
+K2,29988,F_raw,nan,nan
+K2,29988,log_s2_tilde,-0.0963969,7.74369e-63
+K4,59976,log_s2,0.0626161,3.57396e-53
+K4,59976,F_raw,nan,nan
+K4,59976,log_s2_tilde,0.0626005,3.7913e-53
+K8,119952,log_s2,-0.085299,1.67306e-192
+K8,119952,F_raw,nan,nan
+K8,119952,log_s2_tilde,-0.0855082,1.92788e-193
+K16,239904,log_s2,-0.0420522,2.4161e-94
+K16,239904,F_raw,nan,nan
+K16,239904,log_s2_tilde,-0.0422316,3.9086e-95
+delta_pool,449820,log_s2,0.00461795,0.00195357
+delta_pool,449820,F_raw,nan,nan
+delta_pool,449820,log_s2_tilde,0.00450142,0.00253571

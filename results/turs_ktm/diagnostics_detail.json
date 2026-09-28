@@ -1,0 +1,162 @@
+{
+  "ECG5000_UNBAL": {
+    "mr_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4982902964122587,
+      "std": 0.06931292402061909,
+      "median": 0.49642856419086456,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.26052371789083567,
+      "feature_max_mean": 0.7345108689297558
+    },
+    "mu_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.9928571581840515,
+      "mean": 0.47855236789734423,
+      "std": 0.084070703099879,
+      "median": 0.49216462671756744,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.2264468190812261,
+      "feature_max_mean": 0.7479590602448675
+    },
+    "W_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.5,
+      "mean": 0.1027451975594308,
+      "std": 0.04889095105815356,
+      "median": 0.057991599664092064,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.008590422108255565,
+      "feature_max_mean": 0.28752874414094215
+    },
+    "counts": {
+      "zero_frac": 0.037500500200080035,
+      "mean_count": 59.5697516359485,
+      "max_count": 140
+    }
+  },
+  "ECG5000_BAL": {
+    "mr_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.49931387901001345,
+      "std": 0.07403488602958175,
+      "median": 0.5,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.2543626069169523,
+      "feature_max_mean": 0.7433132333269178
+    },
+    "mu_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.9928571581840515,
+      "mean": 0.478146833323977,
+      "std": 0.09140590127460259,
+      "median": 0.49264705181121826,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.21920012547473358,
+      "feature_max_mean": 0.7511290845622559
+    },
+    "W_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.5,
+      "mean": 0.10438385379034919,
+      "std": 0.05157604034944449,
+      "median": 0.060135193169116974,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.008254492065265786,
+      "feature_max_mean": 0.2945019515306626
+    },
+    "counts": {
+      "zero_frac": 0.037975944300414385,
+      "mean_count": 59.69185483225054,
+      "max_count": 140
+    }
+  },
+  "CWRU_UNBAL": {
+    "mr_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5001348293702756,
+      "std": 0.042791536469839034,
+      "median": 0.5,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.3781468193312864,
+      "feature_max_mean": 0.6228023186268634
+    },
+    "mu_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.9990234375,
+      "mean": 0.4938103167471275,
+      "std": 0.04633531147419538,
+      "median": 0.49941443651914597,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.32271481238636274,
+      "feature_max_mean": 0.690579784982631
+    },
+    "W_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.5,
+      "mean": 0.03890568051049924,
+      "std": 0.0294275278810955,
+      "median": 0.012407499132677913,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.005261551671496813,
+      "feature_max_mean": 0.1967519465663402
+    },
+    "counts": {
+      "zero_frac": 0.008733510705320191,
+      "mean_count": 464.6224044115916,
+      "max_count": 1024
+    }
+  },
+  "CWRU_BAL": {
+    "mr_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4995245422364248,
+      "std": 0.042487807222706064,
+      "median": 0.5,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.3719461229018273,
+      "feature_max_mean": 0.6278854197739684
+    },
+    "mu_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.9990234375,
+      "mean": 0.4943795987160418,
+      "std": 0.04609668924393647,
+      "median": 0.499455064535141,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.31567682200686537,
+      "feature_max_mean": 0.6996834923823675
+    },
+    "W_block": {
+      "n_features": 9996,
+      "min": 0.0,
+      "max": 0.5,
+      "mean": 0.03878248225455034,
+      "std": 0.029102266072264363,
+      "median": 0.012428933754563332,
+      "near_zero_variance_count": 0,
+      "feature_min_mean": 0.0047692874732466785,
+      "feature_max_mean": 0.20438171343767225
+    },
+    "counts": {
+      "zero_frac": 0.009330501544218715,
+      "mean_count": 464.01396055305145,
+      "max_count": 1024
+    }
+  }
+}

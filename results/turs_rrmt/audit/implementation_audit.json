@@ -1,0 +1,37 @@
+{
+  "model": "models/turs_rrmt/model.py::TURSRRMT",
+  "sha256": "ca7181ab0601aa8510981e3bcfaf418439fe1621af57e3d05d2b5fcb278079cc",
+  "pattern_bank": "fixed MiniROCKET-inspired, M=128, lengths {7,11,15,23,31}, seed 42, 0 trainable params",
+  "local_ppv": "avg_pool window round(0.05*T), min 3",
+  "router": "Linear(256->32)->ReLU->Linear(32->4)->softmax",
+  "flavors": [
+    "standard W1 coarse",
+    "tail-weighted W1",
+    "fine-grid W1",
+    "multilag drift"
+  ],
+  "reference": "TRAIN-only quantile/lag template (buffers, saved in ckpt)",
+  "ablations": {
+    "A0": "Ridge on fixed-bank global features",
+    "A1": "pattern only (transport zero-padded)",
+    "A2": "single transport flavor",
+    "A3": "uniform multi-transport (CONTROL)",
+    "A4": "routed multi-transport + top-2 (THE MODEL)",
+    "A5": "routed without top-K",
+    "A6": "shuffled routing on frozen A4",
+    "A7": "fixed one-hot routing on frozen A4"
+  },
+  "shared": "TransportBuilder views from models/tursnet.py (raw/sorted/drift)",
+  "protocol": {
+    "seed": 42,
+    "lr": 0.0003,
+    "wd": 0.01,
+    "batch": 64,
+    "max_epochs": 30,
+    "patience": 8,
+    "optimizer": "AdamW",
+    "scheduler": "OneCycleLR",
+    "monitor": "val macro-F1",
+    "normalization": "per-sample z-norm"
+  }
+}

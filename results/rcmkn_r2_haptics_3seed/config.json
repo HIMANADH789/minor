@@ -1,0 +1,67 @@
+{
+  "dataset": "Haptics",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "minirocket": {
+    "random_state": 42,
+    "n_features": 9996,
+    "fit_on": "z-normed TRAIN only"
+  },
+  "encoder": {
+    "channels": [
+      32,
+      32,
+      64,
+      64
+    ],
+    "kernel_sizes": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "d_model": 32,
+    "mask_ratio": 0.1,
+    "span_len": 16,
+    "batch_size": 8,
+    "ssl_epochs": 120,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 20
+  },
+  "vq": {
+    "K": 8,
+    "beta_vq": 0.25,
+    "lam_div": 0.01,
+    "ema_decay": 0.99,
+    "dead_threshold": 0.001,
+    "revival_patience": 100
+  },
+  "joint": {
+    "epochs": 60,
+    "lr": 0.0005,
+    "lambda_cls": 0.1,
+    "patience": 10,
+    "batch_size": 8
+  },
+  "min_occupancy": 0.01,
+  "alphas": "logspace(-4,4,20)",
+  "protocol": {
+    "znorm": "per-sample, before all branches",
+    "ridge_fit": "train+val",
+    "official_test_evals_per_seed": 1
+  },
+  "references": {
+    "R2_seed42": 0.55,
+    "M0": 0.4974
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "invalidated": "results/drtn_conditioned_minirocket_haptics_3seed (pre-audit run, 2026-09)",
+  "reason": "Stage A forensic audit found M2 was not per-sample occupancy-preserving (global iid resample) and the legacy heterogeneity averaged over padded positions. Controls were re-implemented and the full 3-seed experiment re-run. All previous M1/M2/M3 Haptics headline numbers are superseded.",
+  "old_headline": {
+    "M0": [
+      0.4974,
+      0.492,
+      0.495
+    ],
+    "M1": [
+      0.5178,
+      0.5308,
+      0.5316
+    ],
+    "M2": [
+      0.5037,
+      0.5005,
+      0.492
+    ],
+    "M3": [
+      0.5037,
+      0.5005,
+      0.492
+    ],
+    "M2==M3": "identical predictions 308/308 on every seed (anomaly)"
+  },
+  "new_headline": {
+    "M0": [
+      0.4974,
+      0.492,
+      0.495
+    ],
+    "M1": [
+      0.5366,
+      0.5285,
+      0.537
+    ],
+    "M2": [
+      0.483,
+      0.4666,
+      0.4925
+    ],
+    "M3": [
+      0.5132,
+      0.4827,
+      0.5038
+    ]
+  },
+  "m0_unchanged": "canonical aeon path untouched; reproduces 0.4974/0.4920/0.4950 exactly"
+}

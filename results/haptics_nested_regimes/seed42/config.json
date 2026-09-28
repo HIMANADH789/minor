@@ -1,0 +1,32 @@
+{
+ "experiment": "haptics_nested_regimes",
+ "dataset": "Haptics",
+ "seed": 42,
+ "tree": {
+  "levels": [
+   1,
+   2,
+   4,
+   8,
+   16
+  ],
+  "splitter": "sklearn KMeans(n_clusters=2, n_init=10, random_state=42) per node",
+  "child_rule": "children of level-d id p are 2p (bit 0), 2p+1 (bit 1); bit-0 child has smaller first centroid coordinate",
+  "input": "pooled TRAIN SSLTemporalEncoder latents (R^32)",
+  "singleton_fallbacks": 0
+ },
+ "min_occupancy": 0.01,
+ "null": {
+  "S": 500,
+  "seed": 52042
+ },
+ "stopping": {
+  "rule": "real E_l > null p95 AND q_bh < 0.05, coarse->fine, stop at first failure",
+  "alpha": 0.05
+ },
+ "gates": {
+  "A_expected": 0.5037,
+  "B_expected": 0.55
+ },
+ "label_free": "hierarchy, energies, null, stopping and depth are derived from train signals/latents only"
+}

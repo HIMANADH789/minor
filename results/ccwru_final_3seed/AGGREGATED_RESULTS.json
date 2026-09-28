@@ -1,0 +1,68 @@
+{
+  "CWRU_UNBAL|MiniRocket": {
+    "values": [
+      0.9917,
+      0.9917,
+      0.9917
+    ],
+    "mean": 0.9917,
+    "std": 0.0,
+    "median": 0.9917,
+    "min": 0.9917,
+    "max": 0.9917
+  },
+  "CWRU_UNBAL|HERAMBA R5": {
+    "values": [
+      0.9833,
+      0.9792,
+      0.975
+    ],
+    "mean": 0.9792,
+    "std": 0.0042,
+    "median": 0.9792,
+    "min": 0.975,
+    "max": 0.9833
+  },
+  "CWRU_BAL|MiniRocket": {
+    "values": [
+      0.9947,
+      0.9947,
+      0.9947
+    ],
+    "mean": 0.9947,
+    "std": 0.0,
+    "median": 0.9947,
+    "min": 0.9947,
+    "max": 0.9947
+  },
+  "CWRU_BAL|HERAMBA R5": {
+    "values": [
+      0.9965,
+      0.9912,
+      0.9947
+    ],
+    "mean": 0.9941,
+    "std": 0.0027,
+    "median": 0.9947,
+    "min": 0.9912,
+    "max": 0.9965
+  },
+  "CWRU_UNBAL|deltas": {
+    "per_seed": [
+      -0.0084,
+      -0.0125,
+      -0.0167
+    ],
+    "mean": -0.0125,
+    "heramaba_wins": 0
+  },
+  "CWRU_BAL|deltas": {
+    "per_seed": [
+      0.0018,
+      -0.0035,
+      0.0
+    ],
+    "mean": -0.0006,
+    "heramaba_wins": 1
+  }
+}

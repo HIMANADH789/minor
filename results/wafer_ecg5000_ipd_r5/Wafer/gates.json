@@ -1,0 +1,8 @@
+{
+  "mr_gate": {
+    "first_reference": 0.9962
+  },
+  "r2_gate": {
+    "first_reference": 0.9983
+  }
+}

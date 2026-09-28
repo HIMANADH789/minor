@@ -1,0 +1,76 @@
+{
+  "audit1_config": {
+    "expected": {
+      "train": 2727,
+      "val": 482,
+      "test": 567,
+      "T": 1024,
+      "n_classes": 4
+    },
+    "actual": {
+      "train": 2727,
+      "val": 482,
+      "test": 567,
+      "T": 1024,
+      "n_classes": 4
+    },
+    "pass": true
+  },
+  "audit2_margin_kernel_identity": {
+    "trainva": {
+      "split": "trainva",
+      "n_rows": 3209,
+      "identity_n_diff": 0,
+      "u_finite": true,
+      "u_abs1_frac": 0.0001317098939640203
+    },
+    "test": {
+      "split": "test",
+      "n_rows": 567,
+      "identity_n_diff": 0,
+      "u_finite": true,
+      "u_abs1_frac": 0.00013175382267786634
+    },
+    "note": "chunk-0 exact bool equality vs audited extractor"
+  },
+  "modulation_training": {
+    "best_val_mf1": 0.9876,
+    "epochs_run": 58
+  },
+  "audit10_bounds": {
+    "delta_abs_max": 0.2950725555419922,
+    "scale_min": 0.7049274444580078,
+    "scale_max": 1.282724142074585,
+    "pass": true
+  },
+  "audit13_14_occupancy": {
+    "failures": 0,
+    "pass": true
+  },
+  "audit15_distinction": {
+    "hash_c1_trva": "945ad015560c68ed",
+    "hash_c2_trva": "cb52119061c32ec3",
+    "hash_b2_trva": "9abd1a7d8fd1fd66",
+    "c1_vs_c2_diff_frac_trva": 0.6874068781162356,
+    "c1_vs_c2_diff_frac_te": 0.6871210868606702,
+    "b2_vs_c1_diff_frac_trva": 0.6870672571283889,
+    "shares_memory_c1_c2": false,
+    "pass": true
+  },
+  "audit12_b1_equals_b0": {
+    "trainva_max_abs_diff": 0.0,
+    "test_max_abs_diff": 0.0,
+    "pass": true
+  },
+  "audit16_conditioning_active": {
+    "fraction_H_entries_changed_vs_B0": 0.871629,
+    "pass": true
+  },
+  "audit6_H_formula": {
+    "max_diff": 0.006944441236555576,
+    "pass": true
+  },
+  "audit7_valid_region": {
+    "pass": true
+  }
+}

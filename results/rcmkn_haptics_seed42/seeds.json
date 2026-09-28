@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "derived": {
+    "m2_control_stream": "seed+900001 (audited)",
+    "m3_control_stream": "seed+900002 (audited)",
+    "ssl_mask_generator": "torch.Generator(seed=42)",
+    "minirocket": "random_state=42",
+    "hydra": "torch.manual_seed(42) re-applied per call"
+  },
+  "torch_version": "2.5.1+cu121",
+  "numpy_version": "2.3.5"
+}

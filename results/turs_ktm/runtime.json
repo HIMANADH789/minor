@@ -1,0 +1,58 @@
+{
+  "ECG5000_UNBAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.3,
+      "mr_transform_s": 0.1,
+      "ktm_extract_s": 0.9,
+      "total_s": 1.2
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.2,
+      "mr_transform_s": 0.3,
+      "ktm_extract_s": 3.7,
+      "total_s": 4.2
+    }
+  },
+  "ECG5000_BAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.1,
+      "mr_transform_s": 0.1,
+      "ktm_extract_s": 1.2,
+      "total_s": 1.4
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.3,
+      "mr_transform_s": 0.4,
+      "ktm_extract_s": 5.0,
+      "total_s": 5.7
+    }
+  },
+  "CWRU_UNBAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.2,
+      "mr_transform_s": 0.2,
+      "ktm_extract_s": 1.1,
+      "total_s": 1.5
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.5,
+      "mr_transform_s": 0.4,
+      "ktm_extract_s": 4.5,
+      "total_s": 5.5
+    }
+  },
+  "CWRU_BAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.3,
+      "mr_transform_s": 0.4,
+      "ktm_extract_s": 2.4,
+      "total_s": 3.0
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.8,
+      "mr_transform_s": 1.0,
+      "ktm_extract_s": 10.6,
+      "total_s": 12.4
+    }
+  }
+}

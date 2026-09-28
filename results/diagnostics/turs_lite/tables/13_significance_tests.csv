@@ -1,0 +1,161 @@
+comparison,dataset,estimate,family,p_value,q_value,significant,test
+hit@5 TURS s_t vs raw_first_diff,ECG5000_UNBAL,-0.02222222222222222,velocity_localization,1.0,1.0,False,McNemar paired
+hit@5 TURS s_t vs raw_local_energy,ECG5000_UNBAL,0.022222222222222223,velocity_localization,1.0,1.0,False,McNemar paired
+hit@5 TURS s_t vs random,ECG5000_UNBAL,0.044444444444444446,velocity_localization,0.47950012218695337,1.0,False,McNemar paired
+val: u for incorrect > correct,ECG5000_UNBAL,0.36417752995252806,uncertainty_validity,0.0015210274433346848,0.0030026745935425253,True,Mann-Whitney U (greater)
+test: u for incorrect > correct,ECG5000_UNBAL,0.2421175101803374,uncertainty_validity,0.0030026745935425253,0.0030026745935425253,True,Mann-Whitney U (greater)
+test AUROC turs_u_mean vs 1_minus_maxsoftmax,ECG5000_UNBAL,-0.2786503781268179,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs predictive_entropy,ECG5000_UNBAL,-0.2791390343222804,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs top1_top2_margin,ECG5000_UNBAL,-0.27890634089586963,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+ECG5000_UNBAL gaussian_noise: severity -> mean u,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL gaussian_noise: severity -> error rate,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL amplitude_scale: severity -> mean u,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL amplitude_scale: severity -> error rate,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL baseline_shift: severity -> mean u,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL baseline_shift: severity -> error rate,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL temporal_jitter: severity -> mean u,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL temporal_jitter: severity -> error rate,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL localized_mask: severity -> mean u,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL localized_mask: severity -> error rate,ECG5000_UNBAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_UNBAL pooled degradations: u -> error,ECG5000_UNBAL,-0.09006197905695291,degradation_response,0.0004997501249375312,,False,Spearman + permutation
+test: alpha vs amplitude_std,ECG5000_UNBAL,-0.01654686698841024,alpha_validity,0.5962018990504747,0.5962018990504747,False,Spearman + permutation
+test: alpha vs local_variance_mean,ECG5000_UNBAL,-0.5647976167976169,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs ks_stat_uniform,ECG5000_UNBAL,0.4513458913458913,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs hist_entropy,ECG5000_UNBAL,-0.33183957183957186,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs lag_disagreement,ECG5000_UNBAL,-0.8385110745110746,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+ECG5000_UNBAL u_t: targeted>random p-drop (frac=0.1),ECG5000_UNBAL,-0.002265346814529039,faithfulness,0.0004997501249375312,0.0009995002498750624,True,paired permutation
+ECG5000_UNBAL s_t: targeted>random p-drop (frac=0.1),ECG5000_UNBAL,0.0034581602886707215,faithfulness,0.5537231384307846,0.5537231384307846,False,paired permutation
+ECG5000_UNBAL amp_scale_0.95: prediction agreement,ECG5000_UNBAL,1.0,benign_stability,,1.0,False,descriptive + CI
+ECG5000_UNBAL amp_scale_1.05: prediction agreement,ECG5000_UNBAL,1.0,benign_stability,,1.0,False,descriptive + CI
+ECG5000_UNBAL baseline_0.1sd: prediction agreement,ECG5000_UNBAL,0.9966666666666667,benign_stability,,1.0,False,descriptive + CI
+ECG5000_UNBAL noise_0.02: prediction agreement,ECG5000_UNBAL,1.0,benign_stability,,1.0,False,descriptive + CI
+ECG5000_UNBAL jitter_2: prediction agreement,ECG5000_UNBAL,0.9866666666666667,benign_stability,,1.0,False,descriptive + CI
+"ECG5000_UNBAL: high-s_t edit > random edit (prob drop, frac=0.1)",ECG5000_UNBAL,0.02274397055424439,counterfactual,0.11144427786106946,0.11144427786106946,False,paired permutation
+ECG5000_UNBAL: flip rate high-s_t vs random edit,ECG5000_UNBAL,0.05666666666666667,counterfactual,0.005348770520482035,0.01069754104096407,True,McNemar
+ECG5000_UNBAL: turs_u_mean vs turs_u_max,ECG5000_UNBAL,-0.0543705612138678,baseline_uncertainty,0.002997002997002997,0.002997002997002997,True,bootstrap+permutation AUROC diff
+ECG5000_UNBAL: turs_u_mean vs 1_minus_max_softmax,ECG5000_UNBAL,-0.2789231023335251,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_UNBAL: turs_u_mean vs predictive_entropy,ECG5000_UNBAL,-0.27938193970123054,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_UNBAL: turs_u_mean vs top1_top2_margin_neg,ECG5000_UNBAL,-0.27922273593295016,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_UNBAL: turs_u_max vs 1_minus_max_softmax,ECG5000_UNBAL,-0.22455254111965722,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_UNBAL: turs_u_max vs predictive_entropy,ECG5000_UNBAL,-0.22501137848736272,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_UNBAL: turs_u_max vs top1_top2_margin_neg,ECG5000_UNBAL,-0.2248521747190824,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+hit@5 TURS s_t vs raw_first_diff,ECG5000_BAL,-0.04444444444444444,velocity_localization,0.6170750774519739,1.0,False,McNemar paired
+hit@5 TURS s_t vs raw_local_energy,ECG5000_BAL,0.0,velocity_localization,1.0,1.0,False,McNemar paired
+hit@5 TURS s_t vs random,ECG5000_BAL,0.022222222222222223,velocity_localization,1.0,1.0,False,McNemar paired
+val: u for incorrect > correct,ECG5000_BAL,0.04775129213916532,uncertainty_validity,0.3307836034366786,0.35283272050548464,False,Mann-Whitney U (greater)
+test: u for incorrect > correct,ECG5000_BAL,0.034817772578142885,uncertainty_validity,0.35283272050548464,0.35283272050548464,False,Mann-Whitney U (greater)
+test AUROC turs_u_mean vs 1_minus_maxsoftmax,ECG5000_BAL,-0.3819527454920014,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs predictive_entropy,ECG5000_BAL,-0.38126605457921103,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs top1_top2_margin,ECG5000_BAL,-0.3816984155243013,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+ECG5000_BAL gaussian_noise: severity -> mean u,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL gaussian_noise: severity -> error rate,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL amplitude_scale: severity -> mean u,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL amplitude_scale: severity -> error rate,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL baseline_shift: severity -> mean u,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL baseline_shift: severity -> error rate,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL temporal_jitter: severity -> mean u,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL temporal_jitter: severity -> error rate,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL localized_mask: severity -> mean u,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL localized_mask: severity -> error rate,ECG5000_BAL,,degradation_response,,,False,Spearman + permutation
+ECG5000_BAL pooled degradations: u -> error,ECG5000_BAL,0.007458062809903088,degradation_response,0.46276861569215394,,False,Spearman + permutation
+test: alpha vs amplitude_std,ECG5000_BAL,0.006095138348358104,alpha_validity,0.8380809595202399,0.8380809595202399,False,Spearman + permutation
+test: alpha vs local_variance_mean,ECG5000_BAL,0.2463772983772984,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs ks_stat_uniform,ECG5000_BAL,-0.5219940419940421,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs hist_entropy,ECG5000_BAL,0.2752522072522073,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs lag_disagreement,ECG5000_BAL,0.23572573972573976,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+ECG5000_BAL u_t: targeted>random p-drop (frac=0.1),ECG5000_BAL,-0.018216158011809966,faithfulness,0.0004997501249375312,0.0009995002498750624,True,paired permutation
+ECG5000_BAL s_t: targeted>random p-drop (frac=0.1),ECG5000_BAL,0.007201532173297286,faithfulness,0.6081959020489756,0.6081959020489756,False,paired permutation
+ECG5000_BAL amp_scale_0.95: prediction agreement,ECG5000_BAL,0.9866666666666667,benign_stability,,1.0,False,descriptive + CI
+ECG5000_BAL amp_scale_1.05: prediction agreement,ECG5000_BAL,0.9966666666666667,benign_stability,,1.0,False,descriptive + CI
+ECG5000_BAL baseline_0.1sd: prediction agreement,ECG5000_BAL,0.9733333333333334,benign_stability,,1.0,False,descriptive + CI
+ECG5000_BAL noise_0.02: prediction agreement,ECG5000_BAL,1.0,benign_stability,,1.0,False,descriptive + CI
+ECG5000_BAL jitter_2: prediction agreement,ECG5000_BAL,0.95,benign_stability,,1.0,False,descriptive + CI
+"ECG5000_BAL: high-s_t edit > random edit (prob drop, frac=0.1)",ECG5000_BAL,0.08765927579817497,counterfactual,0.0004997501249375312,0.0004997501249375312,True,paired permutation
+ECG5000_BAL: flip rate high-s_t vs random edit,ECG5000_BAL,0.09333333333333334,counterfactual,1.9628540586952144e-05,3.925708117390429e-05,True,McNemar
+ECG5000_BAL: turs_u_mean vs turs_u_max,ECG5000_BAL,-0.17514403969362602,baseline_uncertainty,0.011988011988011988,0.011988011988011988,True,bootstrap+permutation AUROC diff
+ECG5000_BAL: turs_u_mean vs 1_minus_max_softmax,ECG5000_BAL,-0.3817347266580572,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_BAL: turs_u_mean vs predictive_entropy,ECG5000_BAL,-0.38103256104693217,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_BAL: turs_u_mean vs top1_top2_margin_neg,ECG5000_BAL,-0.38148870377424293,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_BAL: turs_u_max vs 1_minus_max_softmax,ECG5000_BAL,-0.20659068696443114,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_BAL: turs_u_max vs predictive_entropy,ECG5000_BAL,-0.20588852135330615,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+ECG5000_BAL: turs_u_max vs top1_top2_margin_neg,ECG5000_BAL,-0.2063446640806169,baseline_uncertainty,0.000999000999000999,0.0011655011655011655,True,bootstrap+permutation AUROC diff
+hit@5 TURS s_t vs raw_first_diff,CWRU_UNBAL,-0.075,velocity_localization,0.24821307898992026,0.7446392369697608,False,McNemar paired
+hit@5 TURS s_t vs raw_local_energy,CWRU_UNBAL,0.0,velocity_localization,1.0,1.0,False,McNemar paired
+hit@5 TURS s_t vs random,CWRU_UNBAL,-0.025,velocity_localization,1.0,1.0,False,McNemar paired
+val: u for incorrect > correct,CWRU_UNBAL,0.6144329896907217,uncertainty_validity,0.0005356390881545923,0.0009840451296452227,True,Mann-Whitney U (greater)
+test: u for incorrect > correct,CWRU_UNBAL,0.5307017543859649,uncertainty_validity,0.0009840451296452227,0.0009840451296452227,True,Mann-Whitney U (greater)
+test AUROC turs_u_mean vs 1_minus_maxsoftmax,CWRU_UNBAL,-0.13486842105263153,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs predictive_entropy,CWRU_UNBAL,-0.13486842105263164,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs top1_top2_margin,CWRU_UNBAL,-0.13377192982456132,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+CWRU_UNBAL gaussian_noise: severity -> mean u,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL gaussian_noise: severity -> error rate,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL amplitude_scale: severity -> mean u,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL amplitude_scale: severity -> error rate,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL baseline_shift: severity -> mean u,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL baseline_shift: severity -> error rate,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL temporal_jitter: severity -> mean u,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL temporal_jitter: severity -> error rate,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL localized_mask: severity -> mean u,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL localized_mask: severity -> error rate,CWRU_UNBAL,,degradation_response,,,False,Spearman + permutation
+CWRU_UNBAL pooled degradations: u -> error,CWRU_UNBAL,0.25002942919447685,degradation_response,0.0004997501249375312,,False,Spearman + permutation
+test: alpha vs amplitude_std,CWRU_UNBAL,0.00019932042740077803,alpha_validity,0.999000499750125,0.9990004997501248,False,Spearman + permutation
+test: alpha vs local_variance_mean,CWRU_UNBAL,-0.5537778433653361,alpha_validity,0.0004997501249375312,0.001249375312343828,True,Spearman + permutation
+test: alpha vs ks_stat_uniform,CWRU_UNBAL,-0.0015590548447021646,alpha_validity,0.9770114942528736,0.9990004997501248,False,Spearman + permutation
+test: alpha vs hist_entropy,CWRU_UNBAL,-0.03322193093630097,alpha_validity,0.6036981509245377,0.9990004997501248,False,Spearman + permutation
+test: alpha vs lag_disagreement,CWRU_UNBAL,0.7327106373374537,alpha_validity,0.0004997501249375312,0.001249375312343828,True,Spearman + permutation
+CWRU_UNBAL u_t: targeted>random p-drop (frac=0.1),CWRU_UNBAL,0.00025510782919203195,faithfulness,0.1664167916041979,0.3328335832083958,False,paired permutation
+CWRU_UNBAL s_t: targeted>random p-drop (frac=0.1),CWRU_UNBAL,0.0028732238220982257,faithfulness,0.5342328835582209,0.5342328835582209,False,paired permutation
+CWRU_UNBAL amp_scale_0.95: prediction agreement,CWRU_UNBAL,0.9958333333333333,benign_stability,,1.0,False,descriptive + CI
+CWRU_UNBAL amp_scale_1.05: prediction agreement,CWRU_UNBAL,0.9916666666666667,benign_stability,,1.0,False,descriptive + CI
+CWRU_UNBAL baseline_0.1sd: prediction agreement,CWRU_UNBAL,0.9583333333333334,benign_stability,,1.0,False,descriptive + CI
+CWRU_UNBAL noise_0.02: prediction agreement,CWRU_UNBAL,0.9958333333333333,benign_stability,,1.0,False,descriptive + CI
+CWRU_UNBAL jitter_2: prediction agreement,CWRU_UNBAL,0.9875,benign_stability,,1.0,False,descriptive + CI
+"CWRU_UNBAL: high-s_t edit > random edit (prob drop, frac=0.1)",CWRU_UNBAL,-0.03254440662761529,counterfactual,0.12193903048475763,0.24387806096951525,False,paired permutation
+CWRU_UNBAL: flip rate high-s_t vs random edit,CWRU_UNBAL,-0.024999999999999994,counterfactual,0.41730416562740436,0.41730416562740436,False,McNemar
+CWRU_UNBAL: turs_u_mean vs turs_u_max,CWRU_UNBAL,0.2275265038497292,baseline_uncertainty,0.055944055944055944,0.055944055944055944,False,bootstrap+permutation AUROC diff
+CWRU_UNBAL: turs_u_mean vs 1_minus_max_softmax,CWRU_UNBAL,-0.13368464320693899,baseline_uncertainty,0.04395604395604396,0.05128205128205129,False,bootstrap+permutation AUROC diff
+CWRU_UNBAL: turs_u_mean vs predictive_entropy,CWRU_UNBAL,-0.1337595536103882,baseline_uncertainty,0.04295704295704296,0.05128205128205129,False,bootstrap+permutation AUROC diff
+CWRU_UNBAL: turs_u_mean vs top1_top2_margin_neg,CWRU_UNBAL,-0.13263600013458057,baseline_uncertainty,0.04295704295704296,0.05128205128205129,False,bootstrap+permutation AUROC diff
+CWRU_UNBAL: turs_u_max vs 1_minus_max_softmax,CWRU_UNBAL,-0.36121114705666824,baseline_uncertainty,0.003996003996003996,0.009324009324009324,True,bootstrap+permutation AUROC diff
+CWRU_UNBAL: turs_u_max vs predictive_entropy,CWRU_UNBAL,-0.3612860574601174,baseline_uncertainty,0.002997002997002997,0.009324009324009324,True,bootstrap+permutation AUROC diff
+CWRU_UNBAL: turs_u_max vs top1_top2_margin_neg,CWRU_UNBAL,-0.36016250398430977,baseline_uncertainty,0.003996003996003996,0.009324009324009324,True,bootstrap+permutation AUROC diff
+hit@5 TURS s_t vs raw_first_diff,CWRU_BAL,0.0,velocity_localization,1.0,1.0,False,McNemar paired
+hit@5 TURS s_t vs raw_local_energy,CWRU_BAL,-0.025,velocity_localization,1.0,1.0,False,McNemar paired
+hit@5 TURS s_t vs random,CWRU_BAL,-0.025,velocity_localization,1.0,1.0,False,McNemar paired
+val: u for incorrect > correct,CWRU_BAL,0.44505494505494503,uncertainty_validity,0.0022686378774260095,0.0022686378774260095,True,Mann-Whitney U (greater)
+test: u for incorrect > correct,CWRU_BAL,0.4942414332432817,uncertainty_validity,1.0248812050659643e-05,2.0497624101319287e-05,True,Mann-Whitney U (greater)
+test AUROC turs_u_mean vs 1_minus_maxsoftmax,CWRU_BAL,-0.17972415754301152,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs predictive_entropy,CWRU_BAL,-0.17951087729276272,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+test AUROC turs_u_mean vs top1_top2_margin,CWRU_BAL,-0.1790487700838903,uncertainty_vs_baselines,,1.0,False,bootstrap diff AUROC
+CWRU_BAL gaussian_noise: severity -> mean u,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL gaussian_noise: severity -> error rate,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL amplitude_scale: severity -> mean u,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL amplitude_scale: severity -> error rate,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL baseline_shift: severity -> mean u,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL baseline_shift: severity -> error rate,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL temporal_jitter: severity -> mean u,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL temporal_jitter: severity -> error rate,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL localized_mask: severity -> mean u,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL localized_mask: severity -> error rate,CWRU_BAL,,degradation_response,,,False,Spearman + permutation
+CWRU_BAL pooled degradations: u -> error,CWRU_BAL,-0.2568532453426572,degradation_response,0.0004997501249375312,,False,Spearman + permutation
+test: alpha vs amplitude_std,CWRU_BAL,-0.05609175661381111,alpha_validity,0.16691654172913542,0.16691654172913542,False,Spearman + permutation
+test: alpha vs local_variance_mean,CWRU_BAL,-0.3655646086965452,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs ks_stat_uniform,CWRU_BAL,0.311547929113748,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs hist_entropy,CWRU_BAL,-0.2774611285037802,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+test: alpha vs lag_disagreement,CWRU_BAL,0.3306181810138412,alpha_validity,0.0004997501249375312,0.000624687656171914,True,Spearman + permutation
+CWRU_BAL u_t: targeted>random p-drop (frac=0.1),CWRU_BAL,-0.0037013285735156384,faithfulness,0.16841579210394803,0.16841579210394803,False,paired permutation
+CWRU_BAL s_t: targeted>random p-drop (frac=0.1),CWRU_BAL,0.014348745329771189,faithfulness,0.00849575212393803,0.01699150424787606,True,paired permutation
+CWRU_BAL amp_scale_0.95: prediction agreement,CWRU_BAL,0.9966666666666667,benign_stability,,1.0,False,descriptive + CI
+CWRU_BAL amp_scale_1.05: prediction agreement,CWRU_BAL,0.9933333333333333,benign_stability,,1.0,False,descriptive + CI
+CWRU_BAL baseline_0.1sd: prediction agreement,CWRU_BAL,0.99,benign_stability,,1.0,False,descriptive + CI
+CWRU_BAL noise_0.02: prediction agreement,CWRU_BAL,0.9966666666666667,benign_stability,,1.0,False,descriptive + CI
+CWRU_BAL jitter_2: prediction agreement,CWRU_BAL,1.0,benign_stability,,1.0,False,descriptive + CI
+"CWRU_BAL: high-s_t edit > random edit (prob drop, frac=0.1)",CWRU_BAL,0.02923810450593009,counterfactual,0.10994502748625687,0.15472892348537437,False,paired permutation
+CWRU_BAL: flip rate high-s_t vs random edit,CWRU_BAL,0.03333333333333334,counterfactual,0.15472892348537437,0.15472892348537437,False,McNemar
+CWRU_BAL: turs_u_mean vs turs_u_max,CWRU_BAL,-0.019954397066626044,baseline_uncertainty,0.7672327672327672,0.7672327672327672,False,bootstrap+permutation AUROC diff
+CWRU_BAL: turs_u_mean vs 1_minus_max_softmax,CWRU_BAL,-0.178600857665796,baseline_uncertainty,0.015984015984015984,0.018648018648018648,True,bootstrap+permutation AUROC diff
+CWRU_BAL: turs_u_mean vs predictive_entropy,CWRU_BAL,-0.17843357331301116,baseline_uncertainty,0.015984015984015984,0.018648018648018648,True,bootstrap+permutation AUROC diff
+CWRU_BAL: turs_u_mean vs top1_top2_margin_neg,CWRU_BAL,-0.17788606011603025,baseline_uncertainty,0.014985014985014986,0.018648018648018648,True,bootstrap+permutation AUROC diff
+CWRU_BAL: turs_u_max vs 1_minus_max_softmax,CWRU_BAL,-0.15864646059916998,baseline_uncertainty,0.007992007992007992,0.018648018648018648,True,bootstrap+permutation AUROC diff
+CWRU_BAL: turs_u_max vs predictive_entropy,CWRU_BAL,-0.1584791762463851,baseline_uncertainty,0.007992007992007992,0.018648018648018648,True,bootstrap+permutation AUROC diff
+CWRU_BAL: turs_u_max vs top1_top2_margin_neg,CWRU_BAL,-0.15793166304940423,baseline_uncertainty,0.007992007992007992,0.018648018648018648,True,bootstrap+permutation AUROC diff

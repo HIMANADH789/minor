@@ -1,0 +1,109 @@
+{
+  "audit1_config": {
+    "expected": {
+      "train": 42,
+      "val": 8,
+      "test": 150,
+      "T": 150,
+      "n_classes": 2
+    },
+    "actual": {
+      "train": 42,
+      "val": 8,
+      "test": 150,
+      "T": 150,
+      "n_classes": 2
+    },
+    "pass": true
+  },
+  "provenance": {
+    "source_path": "data\\kaggle\\GunPoint",
+    "file_sha256": {
+      "GunPoint_TRAIN.tsv": "4d14e4f44a6230087cb4b4ed7844c8b0feb76f07a76108cc367d689e0de8f609",
+      "GunPoint_TEST.tsv": "5537eb2f3050e1514f3221b5f4c9799b350fb229ea15eed9e78bbae855505ccf"
+    },
+    "label_map": {
+      "1": 0,
+      "2": 1
+    },
+    "val_source": "stratified_15pct_of_train_seed42"
+  },
+  "audit3_budget_9996": {
+    "pass": true
+  },
+  "audit2_extractor_identity_maxdiff": 0.0,
+  "m0_gate": {
+    "reference": 0.9933,
+    "observed": 0.9933,
+    "tolerance": 0.0011,
+    "pass": true
+  },
+  "audit4_causality_maxdiff": 0.0,
+  "audit5_regimes_deterministic": {
+    "pass": true
+  },
+  "audit6_vq_diagnostics": {
+    "train": {
+      "active_codes": 4,
+      "normalized_entropy": 0.5708677458036485,
+      "perplexity": 3.277516940698972,
+      "dominant_fraction": 0.42173333333333335,
+      "usage": [
+        0.382,
+        0.42173333333333335,
+        0.09306666666666667,
+        0.0,
+        0.1032,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        2865.0,
+        3163.0,
+        698.0,
+        0.0,
+        774.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "test": {
+      "active_codes": 4,
+      "normalized_entropy": 0.5753283299032249,
+      "perplexity": 3.3080590554214755,
+      "dominant_fraction": 0.4371111111111111,
+      "usage": [
+        0.35786666666666667,
+        0.4371111111111111,
+        0.10595555555555555,
+        0.0,
+        0.09906666666666666,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        8052.0,
+        9835.0,
+        2384.0,
+        0.0,
+        2229.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "audit7_control_occupancy_failures": 0,
+  "audit8_controls_distinct": {
+    "pass": true
+  },
+  "audit9_independent_h_recompute_maxdiff": 1.051749752567499e-08,
+  "audit10_valid_region": {
+    "flipped_out_of_mask_activations": 177312,
+    "h_changed": false,
+    "pass": true
+  }
+}

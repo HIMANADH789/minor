@@ -1,0 +1,11 @@
+{
+  "dataset": "Haptics",
+  "source": "canonical UCR via project loader (experiments/external_stack_generalization.data.load_dataset)",
+  "train": 132,
+  "val": 23,
+  "test": 308,
+  "T": 1092,
+  "n_classes": 5,
+  "val_source": "per_class_stratified_15pct_of_train_seed42_singletons_kept_in_train",
+  "preprocessing": "per-sample z-normalization before all branches (MiniROCKET, DRTN, SSL encoder, Hydra)"
+}

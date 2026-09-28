@@ -1,0 +1,16 @@
+{
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "split_identity_vs_stored_indices": true,
+ "split_sizes": {
+  "train": 200,
+  "val": 60,
+  "test": 200
+ },
+ "minirocket_fit": "train-only, random_state=42, n_kernels=19992",
+ "hierarchy": "frozen tree rebuilt deterministically from TRAIN latents only; regression-equal to stored hierarchy_assignments.npy",
+ "val_test_regimes": "assign_levels transform-only (no refit)",
+ "final_selection_data": "train+val rows (y_dev) -- the canonical R5-HIGH protocol; CV diagnostic uses fold-train labels only",
+ "test_labels": "accessed only inside ridge_eval for scoring",
+ "poisoning_tests": "tests/test_uwavey_hier_high_sup.py (val/test signal and label poisoning)"
+}

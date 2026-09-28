@@ -1,0 +1,89 @@
+alpha,comparison,estimate,extra,family,p_value,q_value,significant,test
+0.05,ECG5000_UNBAL R0 minority-class MF1,0.0,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL R1 minority-class MF1,0.0476,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL R2 minority-class MF1,0.1892,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL R3 minority-class MF1,0.0913,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL R4 minority-class MF1,0.3968,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL R5 minority-class MF1,0.0645,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL R6 minority-class MF1,0.1852,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL R7 minority-class MF1,0.0476,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_UNBAL routing_entropy vs R0 errors,0.6582405411877394,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,ECG5000_UNBAL confidence_neg vs R0 errors,0.8448724856321839,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,ECG5000_UNBAL flavor 0 mass vs class,-0.48766560252005386,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_UNBAL flavor 1 mass vs class,0.4925464586028217,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_UNBAL flavor 2 mass vs class,-0.5612011313560407,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_UNBAL flavor 3 mass vs class,-0.44558670344259366,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_UNBAL R4 vs R2,0.975,{},D6_soft_vs_hard,0.013906296895346027,0.05562518758138411,False,McNemar
+0.05,ECG5000_BAL R0 minority-class MF1,0.3,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL R1 minority-class MF1,0.381,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL R2 minority-class MF1,0.3077,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL R3 minority-class MF1,0.2857,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL R4 minority-class MF1,0.5306,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL R5 minority-class MF1,0.2456,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL R6 minority-class MF1,0.4082,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL R7 minority-class MF1,0.3774,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,ECG5000_BAL routing_entropy vs R0 errors,0.6131111111111112,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,ECG5000_BAL confidence_neg vs R0 errors,0.8869555555555555,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,ECG5000_BAL flavor 0 mass vs class,-0.3942270789838511,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_BAL flavor 1 mass vs class,0.519261000954335,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_BAL flavor 2 mass vs class,0.20895767527742273,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_BAL flavor 3 mass vs class,-0.3689839903272766,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,ECG5000_BAL R4 vs R2,0.948,{},D6_soft_vs_hard,0.055270280676272425,0.11054056135254485,False,McNemar
+0.05,CWRU_UNBAL R0 minority-class MF1,0.5769,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL R1 minority-class MF1,0.832,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL R2 minority-class MF1,0.8504,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL R3 minority-class MF1,0.8504,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL R4 minority-class MF1,0.8615,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL R5 minority-class MF1,0.6519,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL R6 minority-class MF1,0.8594,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL R7 minority-class MF1,0.88,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_UNBAL routing_entropy vs R0 errors,0.3855421686746988,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,CWRU_UNBAL confidence_neg vs R0 errors,0.8209052425919896,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,CWRU_UNBAL flavor 0 mass vs class,0.7476453788943047,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_UNBAL flavor 1 mass vs class,-0.748756499650603,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_UNBAL flavor 2 mass vs class,-0.3873644736645394,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_UNBAL flavor 3 mass vs class,0.7482009392724539,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_UNBAL R4 vs R2,0.9625,{},D6_soft_vs_hard,1.0,1.0,False,McNemar
+0.05,CWRU_BAL R0 minority-class MF1,0.7421,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL R1 minority-class MF1,0.8811,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL R2 minority-class MF1,0.8775,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL R3 minority-class MF1,0.8775,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL R4 minority-class MF1,0.8617,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL R5 minority-class MF1,0.718,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL R6 minority-class MF1,0.9063,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL R7 minority-class MF1,0.8834,{},D2_error_analysis,,1.0,False,per-class F1 (descriptive)
+0.05,CWRU_BAL routing_entropy vs R0 errors,0.51598991507431,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,CWRU_BAL confidence_neg vs R0 errors,0.8035429936305731,{},D3_uncertainty,,1.0,False,AUROC + bootstrap CI (error detection)
+0.05,CWRU_BAL flavor 0 mass vs class,0.7125899650110245,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_BAL flavor 1 mass vs class,-0.7181110264088691,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_BAL flavor 2 mass vs class,-0.6857307473998875,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_BAL flavor 3 mass vs class,0.6005770797142089,{},D4_flavor_usage,0.004975124378109453,0.004975124378109453,True,Spearman + permutation
+0.05,CWRU_BAL R4 vs R2,0.9805996472663139,{},D6_soft_vs_hard,0.34278171114790873,0.457042281530545,False,McNemar
+0.05,ECG5000_UNBAL: R1 vs R0,0.07013898962689108,"{'dataset': 'ECG5000_UNBAL', 'variant': 'R1', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.07013898962689108}",V2_vs_R0,0.005577994003398252,0.008199938719397799,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_UNBAL: R2 vs R0,0.1298025690879286,"{'dataset': 'ECG5000_UNBAL', 'variant': 'R2', 'verdict': 'n.s. (improves)', 'mf1_delta': 0.1298025690879286}",V2_vs_R0,0.3020282281097738,0.32526116873360256,False,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_UNBAL: R3 vs R0,0.0187574577721909,"{'dataset': 'ECG5000_UNBAL', 'variant': 'R3', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.0187574577721909}",V2_vs_R0,2.7487203508635612e-36,7.696416982417972e-35,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_UNBAL: R4 vs R0,0.2300279840709017,"{'dataset': 'ECG5000_UNBAL', 'variant': 'R4', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.2300279840709017}",V2_vs_R0,0.007209570764742524,0.009612761019656699,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_UNBAL: R5 vs R0,0.057793832926572974,"{'dataset': 'ECG5000_UNBAL', 'variant': 'R5', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.057793832926572974}",V2_vs_R0,0.00088904903065855,0.0015558358036524625,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_UNBAL: R6 vs R0,0.12908836079846492,"{'dataset': 'ECG5000_UNBAL', 'variant': 'R6', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.12908836079846492}",V2_vs_R0,0.0029671058986476154,0.004886997950713719,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_UNBAL: R7 vs R0,0.061682131985459854,"{'dataset': 'ECG5000_UNBAL', 'variant': 'R7', 'verdict': 'n.s. (improves)', 'mf1_delta': 0.061682131985459854}",V2_vs_R0,0.04550026389635857,0.055391625612958253,False,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_BAL: R1 vs R0,0.03533064052876145,"{'dataset': 'ECG5000_BAL', 'variant': 'R1', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.03533064052876145}",V2_vs_R0,0.005088185461451067,0.007914955162257216,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_BAL: R2 vs R0,-0.007437924862967793,"{'dataset': 'ECG5000_BAL', 'variant': 'R2', 'verdict': 'n.s. (degrades)', 'mf1_delta': -0.007437924862967793}",V2_vs_R0,0.11979493042591895,0.13417032207702922,False,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_BAL: R3 vs R0,-0.03464089614487109,"{'dataset': 'ECG5000_BAL', 'variant': 'R3', 'verdict': 'SIGNIFICANT DEGRADATION', 'mf1_delta': -0.03464089614487109}",V2_vs_R0,1.9661604415428878e-10,5.00477203301826e-10,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_BAL: R4 vs R0,0.02736881497829069,"{'dataset': 'ECG5000_BAL', 'variant': 'R4', 'verdict': 'n.s. (improves)', 'mf1_delta': 0.02736881497829069}",V2_vs_R0,0.897278961260083,0.897278961260083,False,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_BAL: R5 vs R0,-0.057738858347803956,"{'dataset': 'ECG5000_BAL', 'variant': 'R5', 'verdict': 'SIGNIFICANT DEGRADATION', 'mf1_delta': -0.057738858347803956}",V2_vs_R0,7.76585360303334e-05,0.00014496260058995567,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_BAL: R6 vs R0,0.004069092133061836,"{'dataset': 'ECG5000_BAL', 'variant': 'R6', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.004069092133061836}",V2_vs_R0,0.019108863644740508,0.024320371911487917,True,"McNemar (paired, continuity-corrected)"
+0.05,ECG5000_BAL: R7 vs R0,-0.003246360476882537,"{'dataset': 'ECG5000_BAL', 'variant': 'R7', 'verdict': 'n.s. (degrades)', 'mf1_delta': -0.003246360476882537}",V2_vs_R0,0.4496917979688908,0.46634704974551644,False,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_UNBAL: R1 vs R0,0.2175633538991264,"{'dataset': 'CWRU_UNBAL', 'variant': 'R1', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.2175633538991264}",V2_vs_R0,1.1199327149542469e-10,3.402423427293563e-10,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_UNBAL: R2 vs R0,0.2257008949772371,"{'dataset': 'CWRU_UNBAL', 'variant': 'R2', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.2257008949772371}",V2_vs_R0,1.0220644786435981e-11,3.5772256752525934e-11,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_UNBAL: R3 vs R0,0.2257008949772371,"{'dataset': 'CWRU_UNBAL', 'variant': 'R3', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.2257008949772371}",V2_vs_R0,1.0220644786435981e-11,3.5772256752525934e-11,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_UNBAL: R4 vs R0,0.23034343107872512,"{'dataset': 'CWRU_UNBAL', 'variant': 'R4', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.23034343107872512}",V2_vs_R0,2.848418095541843e-12,1.99389266687929e-11,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_UNBAL: R5 vs R0,0.05947089889167678,"{'dataset': 'CWRU_UNBAL', 'variant': 'R5', 'verdict': 'n.s. (improves)', 'mf1_delta': 0.05947089889167678}",V2_vs_R0,0.08247788747320971,0.09622420205207799,False,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_UNBAL: R6 vs R0,0.2304519163434604,"{'dataset': 'CWRU_UNBAL', 'variant': 'R6', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.2304519163434604}",V2_vs_R0,6.198985903514419e-12,3.471432105968074e-11,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_UNBAL: R7 vs R0,0.23820491736071048,"{'dataset': 'CWRU_UNBAL', 'variant': 'R7', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.23820491736071048}",V2_vs_R0,2.2795921179116345e-12,1.99389266687929e-11,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_BAL: R1 vs R0,0.10284289193968932,"{'dataset': 'CWRU_BAL', 'variant': 'R1', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.10284289193968932}",V2_vs_R0,1.2151512240334154e-10,3.402423427293563e-10,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_BAL: R2 vs R0,0.10284289193968932,"{'dataset': 'CWRU_BAL', 'variant': 'R2', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.10284289193968932}",V2_vs_R0,3.1546132243997343e-10,6.794551560245582e-10,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_BAL: R3 vs R0,0.10284289193968932,"{'dataset': 'CWRU_BAL', 'variant': 'R3', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.10284289193968932}",V2_vs_R0,3.1546132243997343e-10,6.794551560245582e-10,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_BAL: R4 vs R0,0.09578061644078828,"{'dataset': 'CWRU_BAL', 'variant': 'R4', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.09578061644078828}",V2_vs_R0,4.709561410054412e-09,9.419122820108824e-09,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_BAL: R5 vs R0,-0.05096830607721259,"{'dataset': 'CWRU_BAL', 'variant': 'R5', 'verdict': 'SIGNIFICANT DEGRADATION', 'mf1_delta': -0.05096830607721259}",V2_vs_R0,0.005857099085284141,0.008199938719397799,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_BAL: R6 vs R0,0.11893345682382939,"{'dataset': 'CWRU_BAL', 'variant': 'R6', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.11893345682382939}",V2_vs_R0,1.3730454524896267e-13,1.9222636334854776e-12,True,"McNemar (paired, continuity-corrected)"
+0.05,CWRU_BAL: R7 vs R0,0.1083641786913484,"{'dataset': 'CWRU_BAL', 'variant': 'R7', 'verdict': 'SIGNIFICANT IMPROVEMENT', 'mf1_delta': 0.1083641786913484}",V2_vs_R0,9.103586465745697e-12,3.5772256752525934e-11,True,"McNemar (paired, continuity-corrected)"

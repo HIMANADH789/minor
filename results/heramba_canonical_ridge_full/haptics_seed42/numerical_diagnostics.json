@@ -1,0 +1,46 @@
+{
+ "uniform": {
+  "n": 132,
+  "p": 9996,
+  "uniform_lam0": true,
+  "rank_Z_train": 131,
+  "alpha_base": 0.0001,
+  "df": 130.98691609705472,
+  "rss": 8.004398891157702e-07,
+  "gcv_min": 0.00010294655658518038,
+  "eig_S_max": 332.51266876514046,
+  "eig_S_min_nonzero": 1.3219848296028876e-15,
+  "min_eig_regularized": 0.00010000000000132199,
+  "max_eig_regularized": 332.51276876514044,
+  "cond_regularized": 3325127.6876074467,
+  "rss_check": 8.004398891492883e-07,
+  "cholesky_ok": true,
+  "fallback_used": false,
+  "finite_coef": true
+ },
+ "adaptive": {
+  "n": 132,
+  "p": 9996,
+  "uniform_lam0": false,
+  "rank_Z_train": 131,
+  "alpha_base": 0.0001,
+  "df": 130.98655838043828,
+  "rss": 8.466436140018796e-07,
+  "gcv_min": 0.00010881207613175489,
+  "eig_S_max": 331.8567957792411,
+  "eig_S_min_nonzero": 0.3252405168754933,
+  "min_eig_regularized": 0.0001,
+  "max_eig_regularized": 331.8568957792411,
+  "cond_regularized": 1020.0294109271412,
+  "rss_check": 8.466436139983558e-07,
+  "cholesky_ok": true,
+  "fallback_used": false,
+  "finite_coef": true
+ },
+ "basis_reconstruction_rel_err": {
+  "train": 8.04707753098035e-16,
+  "val": 7.592315222465732e-16,
+  "test": 7.551661558724988e-16
+ },
+ "orthonormality_error": 1.887379141862766e-15
+}

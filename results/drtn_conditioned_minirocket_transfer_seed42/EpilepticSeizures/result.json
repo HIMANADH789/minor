@@ -1,0 +1,161 @@
+{
+  "dataset": "EpilepticSeizures",
+  "seed": 42,
+  "T": 178,
+  "n_classes": 2,
+  "split": {
+    "train": 80,
+    "val": 20,
+    "test": 11420
+  },
+  "val_source": "provided_canonical_val_ts",
+  "provenance": "{'test': 'C:\\\\temp\\\\ECG_Benchmark\\\\data\\\\external\\\\extracted\\\\EpilepticSeizures\\\\EpilepticSeizures\\\\EpilepticSeizures_TEST.ts', 'train': 'C:\\\\temp\\\\ECG_Benchmark\\\\data\\\\external\\\\extracted\\\\EpilepticSeizures\\\\EpilepticSeizures\\\\EpilepticSeizures_TRAIN.ts', 'val': 'C:\\\\temp\\\\ECG_Benchmark\\\\data\\\\external\\\\extracted\\\\EpilepticSeizures\\\\EpilepticSeizures\\\\val.ts'}",
+  "n_features": 9996,
+  "K_regimes": 8,
+  "min_occupancy": 0.01,
+  "results": {
+    "M0": {
+      "test_macro_f1": 0.9194,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.949,
+      "selected_alpha": 11.288378916846883,
+      "class_f1s": [
+        0.8706,
+        0.9683
+      ],
+      "ridge_fit_s": 0.16
+    },
+    "M1": {
+      "test_macro_f1": 0.9399,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.9607,
+      "selected_alpha": 0.615848211066026,
+      "class_f1s": [
+        0.9046,
+        0.9752
+      ],
+      "ridge_fit_s": 0.02
+    },
+    "M2": {
+      "test_macro_f1": 0.9397,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.9611,
+      "selected_alpha": 0.23357214690901212,
+      "class_f1s": [
+        0.9039,
+        0.9756
+      ],
+      "ridge_fit_s": 0.01
+    },
+    "M3": {
+      "test_macro_f1": 0.9394,
+      "val_macro_f1_diag": 1.0,
+      "accuracy": 0.961,
+      "selected_alpha": 0.23357214690901212,
+      "class_f1s": [
+        0.9031,
+        0.9756
+      ],
+      "ridge_fit_s": 0.01
+    }
+  },
+  "deltas": {
+    "M1_M0": 0.0205,
+    "M1_M2": 0.0002,
+    "M1_M3": 0.0005
+  },
+  "category": "NEUTRAL",
+  "canonical_reproduction": {
+    "reference_mf1": 0.9194,
+    "reproduction_delta": 0.0,
+    "passed": true
+  },
+  "complementarity": {
+    "both_correct": 10674,
+    "M0_only_correct": 164,
+    "M1_only_correct": 297,
+    "both_wrong": 285,
+    "n_samples": 11420
+  },
+  "regime_diagnostics": {
+    "test": {
+      "usage": [
+        0.0,
+        0.1442782227119778,
+        0.0,
+        0.0,
+        0.0,
+        0.5125051653908971,
+        0.3432166118971251,
+        0.0
+      ],
+      "counts": [
+        0.0,
+        293283.0,
+        0.0,
+        0.0,
+        0.0,
+        1041800.0,
+        697677.0,
+        0.0
+      ],
+      "entropy": 0.9889392038293465,
+      "normalized_entropy": 0.47557922836842603,
+      "perplexity": 2.688381134799006,
+      "active_codes": 3,
+      "dominant_fraction": 0.5125051653908971
+    },
+    "drtn": {
+      "best_val_mf1": 0.3333,
+      "epoch": 1,
+      "source": "trained"
+    },
+    "drtn_frozen_verified": true
+  },
+  "heterogeneity_diagnostics": {
+    "M1_train": {
+      "mean": 0.015094110586901023,
+      "std": 0.022397690184002225,
+      "nonzero_fraction": 0.9474414765906363,
+      "max": 0.25,
+      "exactly_zero_fraction": 0.05255852340936375
+    },
+    "M1_test": {
+      "mean": 0.014207195329884185,
+      "std": 0.02063216357276972,
+      "nonzero_fraction": 0.9539094797288442,
+      "max": 0.25,
+      "exactly_zero_fraction": 0.04609052027115575
+    },
+    "M2_test": {
+      "mean": 0.0035921349094670497,
+      "std": 0.012433789557108964,
+      "nonzero_fraction": 0.9550133538529247,
+      "max": 0.25,
+      "exactly_zero_fraction": 0.044986646147075295
+    },
+    "M3_test": {
+      "mean": 0.003587990196589443,
+      "std": 0.012437222430795779,
+      "nonzero_fraction": 0.9550063633159043,
+      "max": 0.25,
+      "exactly_zero_fraction": 0.04499363668409571
+    }
+  },
+  "feature_statistics": {
+    "ppv_global_mean": 0.5003752708435059,
+    "ppv_global_std": 0.2834135890007019,
+    "ppv_global_nonzero": 0.9849532720268492,
+    "raw_vs_aeon_max_diff": 0.0
+  },
+  "audits": {
+    "heterogeneity_nonzero_fraction_M1": 0.9539094797288442,
+    "independent_recompute_max_abs_err": 3.952121893635585e-09,
+    "m2_global_occupancy_max_abs_diff": 0.0077247191011236005,
+    "m3_per_sample_hist_max_abs_diff": 0.0,
+    "m3_alignment_changed_fraction": 1.0,
+    "drtn_frozen_verified": true,
+    "m2_deterministic": true,
+    "m3_deterministic": true
+  }
+}

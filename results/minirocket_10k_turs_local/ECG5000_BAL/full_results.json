@@ -1,0 +1,159 @@
+{
+  "dataset": "ECG5000_BAL",
+  "mr_10k": {
+    "dataset": "ECG5000_BAL",
+    "model": "MR_10K",
+    "use_local": false,
+    "n_kernels": 10000,
+    "mr_feature_dim": 9996,
+    "local_feature_dim": 0,
+    "total_feature_dim": 9996,
+    "selected_alpha": 545.5594781168514,
+    "cv_score": -0.07271014081970359,
+    "test_mf1": 0.6613,
+    "test_acc": 0.954,
+    "test_wf1": 0.9523,
+    "test_bal_acc": 0.6501,
+    "per_class_f1": [
+      0.9966,
+      0.9522,
+      0.5641,
+      0.5714,
+      0.2222
+    ],
+    "per_class_prec": [
+      0.9949,
+      0.9443,
+      0.55,
+      0.6452,
+      0.25
+    ],
+    "per_class_rec": [
+      0.9983,
+      0.9603,
+      0.5789,
+      0.5128,
+      0.2
+    ],
+    "confusion_matrix": [
+      [
+        583,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        339,
+        6,
+        8,
+        0
+      ],
+      [
+        1,
+        3,
+        11,
+        2,
+        2
+      ],
+      [
+        2,
+        16,
+        1,
+        20,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        1,
+        1
+      ]
+    ],
+    "time_total": 17.63,
+    "time_minrocket": 0.27,
+    "time_local": 0,
+    "time_ridge": 17.03
+  },
+  "mr_10k_local": {
+    "dataset": "ECG5000_BAL",
+    "model": "MR_10K_Local",
+    "use_local": true,
+    "n_kernels": 10000,
+    "mr_feature_dim": 9996,
+    "local_feature_dim": 1024,
+    "total_feature_dim": 11020,
+    "selected_alpha": 545.5594781168514,
+    "cv_score": -0.07270714277937611,
+    "test_mf1": 0.6653,
+    "test_acc": 0.956,
+    "test_wf1": 0.954,
+    "test_bal_acc": 0.6512,
+    "per_class_f1": [
+      0.9966,
+      0.9552,
+      0.5641,
+      0.5882,
+      0.2222
+    ],
+    "per_class_prec": [
+      0.9949,
+      0.9446,
+      0.55,
+      0.6897,
+      0.25
+    ],
+    "per_class_rec": [
+      0.9983,
+      0.966,
+      0.5789,
+      0.5128,
+      0.2
+    ],
+    "confusion_matrix": [
+      [
+        583,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        341,
+        6,
+        6,
+        0
+      ],
+      [
+        1,
+        3,
+        11,
+        2,
+        2
+      ],
+      [
+        2,
+        16,
+        1,
+        20,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        1,
+        1
+      ]
+    ],
+    "time_total": 19.52,
+    "time_minrocket": 0.28,
+    "time_local": 1.66,
+    "time_ridge": 17.19
+  },
+  "delta_mf1": 0.004,
+  "delta_pct": 0.6
+}

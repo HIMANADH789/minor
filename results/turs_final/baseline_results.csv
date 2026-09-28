@@ -1,0 +1,5 @@
+dataset,reference,reproduced_macro_f1,abs_diff,pass,accuracy,weighted_f1,balanced_accuracy,alpha,n_features
+ECG5000_UNBAL,0.5938,0.5938,0.0,True,0.954,0.9458,0.5577,11.288379,9996
+ECG5000_BAL,0.6553,0.6553,0.0,True,0.952,0.9498,0.6398,1.623777,9996
+CWRU_UNBAL,0.9917,0.9917,0.0,True,0.9917,0.9917,0.9917,0.233572,9996
+CWRU_BAL,0.9947,0.9947,0.0,True,0.9947,0.9947,0.9947,0.615848,9996

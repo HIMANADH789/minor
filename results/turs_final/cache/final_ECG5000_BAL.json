@@ -1,0 +1,82 @@
+{
+  "dataset": "ECG5000_BAL",
+  "gate_decision": "KEEP_KTM_W",
+  "final_model": "MiniROCKET + KTM-W",
+  "n_ktm_features": 84,
+  "final": {
+    "accuracy": 0.954,
+    "macro_f1": 0.6606,
+    "weighted_f1": 0.9505,
+    "balanced_accuracy": 0.6364,
+    "class_f1s": [
+      0.9966,
+      0.95,
+      0.6111,
+      0.5231,
+      0.2222
+    ],
+    "class_precision": [
+      0.9949,
+      0.9319,
+      0.6471,
+      0.6538,
+      0.25
+    ],
+    "class_recall": [
+      0.9983,
+      0.9688,
+      0.5789,
+      0.4359,
+      0.2
+    ],
+    "confusion_matrix": [
+      [
+        583,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        342,
+        3,
+        8,
+        0
+      ],
+      [
+        1,
+        4,
+        11,
+        1,
+        2
+      ],
+      [
+        2,
+        19,
+        1,
+        17,
+        0
+      ],
+      [
+        0,
+        2,
+        2,
+        0,
+        1
+      ]
+    ],
+    "alpha": 1.623777,
+    "n_features": 10080,
+    "ridge_fit_s": 21.54
+  },
+  "final_test_mf1": 0.6606,
+  "delta_test": 0.0053,
+  "counterfactual_model": "MiniROCKET (post-hoc reference)",
+  "counterfactual_test_mf1": 0.6553,
+  "counterfactual_status": "REFERENCE ONLY (existing frozen evaluation)",
+  "ktm_final_extract_s": 4.8,
+  "final_fit_s": 21.6,
+  "final_inference_s": 21.6,
+  "ktm_inference_s": 21.6
+}

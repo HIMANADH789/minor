@@ -1,0 +1,38 @@
+{
+  "dataset": "ECG5000_UNBAL",
+  "source": "data/ecg5000_resplit.npz",
+  "sha256": "dd4f36ec74717a6e43d98c2670fca2c64270000f3bafbbc9a6a4439b46d40582",
+  "signal_length": 140,
+  "num_classes": 5,
+  "split": {
+    "train": 3294,
+    "val": 706,
+    "test": 1000
+  },
+  "class_counts": {
+    "y_train": [
+      1923,
+      1164,
+      63,
+      128,
+      16
+    ],
+    "y_val": [
+      412,
+      250,
+      14,
+      27,
+      3
+    ],
+    "y_test": [
+      584,
+      353,
+      19,
+      39,
+      5
+    ]
+  },
+  "preprocessing": "per-sample z-norm (eps 1e-8)",
+  "seed": 42,
+  "deterministic": true
+}

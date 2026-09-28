@@ -1,0 +1,72 @@
+{
+  "UNBALANCED": {
+    "IT CE (1ch)": {
+      "accuracy": 0.8501,
+      "macro_f1": 0.8498,
+      "recalls": [
+        1.0,
+        0.8384,
+        0.6919,
+        0.8687
+      ],
+      "epochs": 20
+    },
+    "IT focal_g1 (1ch)": {
+      "accuracy": 0.8753,
+      "macro_f1": 0.8747,
+      "recalls": [
+        1.0,
+        0.8485,
+        0.7424,
+        0.9091
+      ],
+      "epochs": 20
+    },
+    "IT focal_g2 (1ch)": {
+      "accuracy": 0.8715,
+      "macro_f1": 0.8707,
+      "recalls": [
+        1.0,
+        0.8333,
+        0.7424,
+        0.9091
+      ],
+      "epochs": 20
+    }
+  },
+  "BALANCED": {
+    "IT CE (1ch)": {
+      "accuracy": 0.8552,
+      "macro_f1": 0.8549,
+      "recalls": [
+        1.0,
+        0.8535,
+        0.7525,
+        0.8131
+      ],
+      "epochs": 20
+    },
+    "IT focal_g1 (1ch)": {
+      "accuracy": 0.8866,
+      "macro_f1": 0.8865,
+      "recalls": [
+        1.0,
+        0.8687,
+        0.8131,
+        0.8636
+      ],
+      "epochs": 19
+    },
+    "IT focal_g2 (1ch)": {
+      "accuracy": 0.9043,
+      "macro_f1": 0.9041,
+      "recalls": [
+        1.0,
+        0.8737,
+        0.8485,
+        0.8939
+      ],
+      "epochs": 20
+    }
+  }
+}

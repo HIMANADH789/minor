@@ -1,0 +1,18 @@
+{
+ "method": "r5_high",
+ "label": "R5-HIGH",
+ "base_budget": 19992,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_features": 14994,
+ "macro_f1": 0.7772,
+ "accuracy": 0.7797,
+ "selected_alpha": 11.288378916846883,
+ "num_classes": 8,
+ "seed": 42,
+ "gates": {
+  "ref": null,
+  "abs_diff": null
+ }
+}

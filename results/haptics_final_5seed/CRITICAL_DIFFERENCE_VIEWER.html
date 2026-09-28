@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haptics — Critical-Difference Diagram (Demšar)</title>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; background: #fafafa;
+         margin: 0; padding: 24px; }
+  h1 { font-size: 18px; margin: 0 0 4px; }
+  p.meta { color: #555; font-size: 13px; margin: 0 0 16px; }
+  img { max-width: 100%; border: 1px solid #ddd; background: #fff; }
+  table { border-collapse: collapse; margin-top: 18px; font-size: 13px; }
+  td, th { border: 1px solid #ccc; padding: 4px 10px; text-align: right; }
+  th { background: #efefef; }
+  .note { font-size: 12px; color: #666; margin-top: 14px; max-width: 900px; }
+</style>
+</head>
+<body>
+<h1>Haptics — Critical-Difference Diagram (Demšar-style)</h1>
+<p class="meta">Test Macro-F1 · seeds {42,43,44,45,46} · 6 models ·
+Nemenyi CD<sub>0.05</sub> = 3.37 (k=6, n=5) · Friedman exact permutation
+p = 1.0 · seeds-as-repeats (descriptive)</p>
+<img src="CRITICAL_DIFFERENCE_HAPTICS.png" alt="Critical difference diagram">
+<table>
+<tr><th>Model</th><th>Mean rank</th><th>Mean test Macro-F1</th></tr>
+<tr><td>HERAMBA</td><td>1.00</td><td>0.5315</td></tr>
+<tr><td>MiniRocket</td><td>2.20</td><td>0.4974</td></tr>
+<tr><td>InceptionTime</td><td>3.20</td><td>0.4404</td></tr>
+<tr><td>ResNet1D</td><td>4.20</td><td>0.3986</td></tr>
+<tr><td>FCN</td><td>4.80</td><td>0.3888</td></tr>
+<tr><td>PatchTST</td><td>5.60</td><td>0.3331</td></tr>
+</table>
+<p class="note">Reading: rank 1 (best) is on the right. Models joined by
+a horizontal bar have mean-rank differences below the Nemenyi CD (3.37)
+and are not distinguishable at α = 0.05 under this adaptation. With
+k = 6 models and only n = 5 seeds the CD is large, so adjacent-model
+bars overlap heavily: {HERAMBA, MiniRocket, InceptionTime, ResNet1D},
+{MiniRocket, InceptionTime, ResNet1D, FCN}, {InceptionTime, ResNet1D,
+FCN, PatchTST}. HERAMBA is ranked 1st on all 5 seeds (rank vector
+[1,1,1,1,1]) and PatchTST last on 4 of 5 — the ordering is perfectly
+stable across seeds, which is what the Friedman exact p = 1.0 reflects
+under this small-n adaptation (the rank configuration is one of the most
+probable under H0 given so few blocks; the chi2 statistic 2622.1 is an
+artifact of zero within-seed dispersion, and the Iman–Davenport F
+correction is invalid here). Treat this diagram as a descriptive
+summary of seed-wise rank stability, not a benchmark-wide significance
+claim.</p>
+</body>
+</html>

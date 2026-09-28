@@ -1,0 +1,8 @@
+{
+ "sklearn_ridge_max_abs_decision_diff": 3.574918139293004e-14,
+ "sklearn_ridge_f1_raw": 0.550026,
+ "sklearn_ridge_f1_rotated": 0.550026,
+ "dual_uniform_max_abs_decision_diff": 7.405187574249794e-14,
+ "tolerance": 1e-08,
+ "passed": true
+}

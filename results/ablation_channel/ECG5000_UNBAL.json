@@ -1,0 +1,50 @@
+{
+  "1ch": {
+    "desc": "raw only",
+    "n_ch": 1,
+    "f1_mean": 0.5237,
+    "f1_std": 0.0104,
+    "acc_mean": 0.943,
+    "acc_std": 0.003,
+    "gammas": [
+      1.0,
+      1.0
+    ]
+  },
+  "2ch_q": {
+    "desc": "raw+quantile",
+    "n_ch": 2,
+    "f1_mean": 0.5729,
+    "f1_std": 0.0048,
+    "acc_mean": 0.947,
+    "acc_std": 0.0,
+    "gammas": [
+      1.0,
+      1.0
+    ]
+  },
+  "2ch_d": {
+    "desc": "raw+drift",
+    "n_ch": 2,
+    "f1_mean": 0.5881,
+    "f1_std": 0.0137,
+    "acc_mean": 0.947,
+    "acc_std": 0.002,
+    "gammas": [
+      1.0,
+      1.0
+    ]
+  },
+  "3ch": {
+    "desc": "raw+quantile+drift",
+    "n_ch": 3,
+    "f1_mean": 0.5716,
+    "f1_std": 0.0174,
+    "acc_mean": 0.947,
+    "acc_std": 0.001,
+    "gammas": [
+      1.0,
+      1.0
+    ]
+  }
+}

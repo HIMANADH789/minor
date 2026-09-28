@@ -1,0 +1,20 @@
+{
+ "expected": "IDENTICAL",
+ "verdict": "IDENTICAL",
+ "reference": "results\\uwavey_hier_continuous_sup\\seed42",
+ "components": {
+  "selected_index_set": true,
+  "selected_index_sequence": true,
+  "per_candidate_f_stats": true,
+  "semantic_metadata": true,
+  "emerged_composition": true,
+  "test_predictions": true,
+  "alpha": true,
+  "macro_f1": true
+ },
+ "n_selected_compared": 19992,
+ "macro_f1_delta_vs_reference": 0.0,
+ "chain_zero_sum_max": 1.8214596497756474e-16,
+ "chain_identity_max_rel": 5.625157194676737e-16,
+ "root_increment_bit_equal": true
+}

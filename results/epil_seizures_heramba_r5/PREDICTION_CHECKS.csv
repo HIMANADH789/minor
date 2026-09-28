@@ -1,0 +1,4 @@
+seed,test_macro_f1,val_macro_f1,n_pred,pred_count_ok,preds_finite,pred_classes,max_class_fraction,status
+42,0.9461,1.0,11420,True,True,2,0.7954,NEW_RUN_GATE_PASS
+43,0.9404,1.0,11420,True,True,2,0.7898,NEW_RUN
+44,0.9444,1.0,11420,True,True,2,0.7933,NEW_RUN

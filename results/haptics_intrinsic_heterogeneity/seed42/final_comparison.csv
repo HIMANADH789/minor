@@ -1,0 +1,6 @@
+Method,Total dims,Test Macro-F1,Note
+MiniROCKET,4998,0.5037,identity gate A
+Raw G+H,9996,0.55,identity gate B
+Intrinsic-budget demonstration (quantile),5415,0.5155,intrinsic-budget demonstration (NOT optimized)
+Intrinsic-budget demonstration (hierarchy),5006,0.5037,intrinsic-budget demonstration (NOT optimized)
+Intrinsic-budget demonstration (block),5382,0.5149,intrinsic-budget demonstration (NOT optimized)

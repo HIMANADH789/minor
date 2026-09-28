@@ -1,0 +1,48 @@
+{
+ "method": "hier_continuous_sup",
+ "label": "HIER-CONTINUOUS-SUP",
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "base_budget": 9996,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_pool": {
+  "root": 19992,
+  "delta": 449820,
+  "unified": 469812
+ },
+ "selection": "ONE supervised ANOVA-F ranking over the unified 469,812-candidate pool (train+val labels, canonical R5 final-stage protocol); no rho, no N_G/N_H, no per-level quota",
+ "changed_vs_hier_high_sup": "protected G/H boundary removed: G_full (19,992 level-0 roots) + delta pool (449,820) compete in one ranking",
+ "selected_composition": {
+  "0": 14453,
+  "2": 4012,
+  "4": 1436,
+  "8": 65,
+  "16": 26
+ },
+ "cv_unified_fold_internal": {
+  "mean": 0.762407993055084,
+  "std": 0.026997493793461214,
+  "kfold": 5
+ },
+ "macro_f1": 0.7599,
+ "accuracy": 0.7635,
+ "alpha": 78.47599703514607,
+ "deltas_vs": {
+  "canonical_mr": 0.0056,
+  "mr_high": 0.0122,
+  "r5_high": -0.0173,
+  "hier_high": 0.0369,
+  "hier_high_sup": -0.0224
+ },
+ "gate_mr_high": {
+  "ref": 0.7477,
+  "reproduced": 0.7477,
+  "diff": 0.0,
+  "tol": 0.002
+ },
+ "runtime_s": 361.5,
+ "peak_mem_mb": 0.0,
+ "smoke": false
+}

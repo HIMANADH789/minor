@@ -1,0 +1,282 @@
+{
+  "ECG5000_UNBAL": {
+    "seed": 42,
+    "protocol": {
+      "train": 3400,
+      "val": 600,
+      "test": 1000,
+      "T": 140,
+      "n_classes": 5,
+      "val_source": "stratified_15pct_of_train_seed42"
+    },
+    "results": {
+      "M0": {
+        "val_macro_f1": 0.8224,
+        "test_macro_f1": 0.5938,
+        "accuracy": 0.954,
+        "selected_alpha": 11.288378916846883,
+        "class_f1s": [
+          0.9949,
+          0.9494,
+          0.5161,
+          0.5085,
+          0.0
+        ]
+      },
+      "M1": {
+        "val_macro_f1": 0.7153,
+        "test_macro_f1": 0.5859,
+        "accuracy": 0.954,
+        "selected_alpha": 4.281332398719396,
+        "class_f1s": [
+          0.9932,
+          0.9495,
+          0.4444,
+          0.5424,
+          0.0
+        ]
+      },
+      "M2": {
+        "val_macro_f1": 0.6846,
+        "test_macro_f1": 0.5547,
+        "accuracy": 0.947,
+        "selected_alpha": 4.281332398719396,
+        "class_f1s": [
+          0.9915,
+          0.9413,
+          0.4,
+          0.4407,
+          0.0
+        ]
+      },
+      "M3": {
+        "val_macro_f1": 0.6846,
+        "test_macro_f1": 0.5799,
+        "accuracy": 0.951,
+        "selected_alpha": 4.281332398719396,
+        "class_f1s": [
+          0.9915,
+          0.9466,
+          0.4615,
+          0.5,
+          0.0
+        ]
+      }
+    },
+    "deltas": {
+      "M1_M0": -0.0079,
+      "M1_M2": 0.0312,
+      "M1_M3": 0.006,
+      "M2_M3": -0.0252
+    },
+    "canonical_M0_reproduced": true,
+    "old_preaudit_reference": {
+      "M0": 0.5938,
+      "M1": 0.5859,
+      "M2": 0.5716,
+      "M3": 0.5565
+    },
+    "old_vs_corrected_delta": {
+      "M0": 0.0,
+      "M1": 0.0,
+      "M2": -0.0169,
+      "M3": 0.0234
+    },
+    "regime_diag_summary": {
+      "train": {
+        "entropy": 1.839,
+        "normalized_entropy": 0.8844,
+        "perplexity": 6.2906,
+        "active_codes": 7,
+        "dominant_fraction": 0.2283
+      },
+      "val": {
+        "entropy": 1.8419,
+        "normalized_entropy": 0.8858,
+        "perplexity": 6.3083,
+        "active_codes": 7,
+        "dominant_fraction": 0.2272
+      },
+      "test": {
+        "entropy": 1.8424,
+        "normalized_entropy": 0.886,
+        "perplexity": 6.3119,
+        "active_codes": 7,
+        "dominant_fraction": 0.2268
+      }
+    },
+    "heterogeneity_stats": {
+      "M1": {
+        "mean": 0.03550061702828226,
+        "std": 0.03546505908246955,
+        "nonzero_fraction": 0.8698217286914766,
+        "max": 0.2541176378726959
+      },
+      "M2": {
+        "mean": 0.008880176331764486,
+        "std": 0.01664089814684926,
+        "nonzero_fraction": 0.8797308923569428,
+        "max": 0.5625
+      },
+      "M3": {
+        "mean": 0.008816982196028169,
+        "std": 0.016538677512733656,
+        "nonzero_fraction": 0.879687675070028,
+        "max": 0.5625
+      }
+    },
+    "m2_m3_arrays": {
+      "m2_hash": "d58c72ec6fb17898",
+      "m3_hash": "d73d103aa0436de4",
+      "n_positions": 140000,
+      "n_different_positions": 108748,
+      "fraction_different": 0.776771,
+      "shared_memory": false
+    },
+    "complementarity_M0_M1": {
+      "both_correct": 950,
+      "M0_only": 4,
+      "M1_only": 4,
+      "both_wrong": 42,
+      "n_test": 1000
+    }
+  },
+  "CWRU_UNBAL": {
+    "seed": 42,
+    "protocol": {
+      "train": 1156,
+      "val": 204,
+      "test": 240,
+      "T": 1024,
+      "n_classes": 4,
+      "val_source": "stratified_85_15_then_15pct_seed42"
+    },
+    "results": {
+      "M0": {
+        "val_macro_f1": 1.0,
+        "test_macro_f1": 0.9917,
+        "accuracy": 0.9917,
+        "selected_alpha": 0.23357214690901212,
+        "class_f1s": [
+          1.0,
+          1.0,
+          0.9836,
+          0.9831
+        ]
+      },
+      "M1": {
+        "val_macro_f1": 1.0,
+        "test_macro_f1": 0.9792,
+        "accuracy": 0.9792,
+        "selected_alpha": 0.23357214690901212,
+        "class_f1s": [
+          1.0,
+          1.0,
+          0.9587,
+          0.958
+        ]
+      },
+      "M2": {
+        "val_macro_f1": 1.0,
+        "test_macro_f1": 0.9624,
+        "accuracy": 0.9625,
+        "selected_alpha": 0.23357214690901212,
+        "class_f1s": [
+          1.0,
+          1.0,
+          0.9291,
+          0.9204
+        ]
+      },
+      "M3": {
+        "val_macro_f1": 1.0,
+        "test_macro_f1": 0.9708,
+        "accuracy": 0.9708,
+        "selected_alpha": 0.08858667904100823,
+        "class_f1s": [
+          1.0,
+          1.0,
+          0.9431,
+          0.9402
+        ]
+      }
+    },
+    "deltas": {
+      "M1_M0": -0.0125,
+      "M1_M2": 0.0168,
+      "M1_M3": 0.0084,
+      "M2_M3": -0.0084
+    },
+    "canonical_M0_reproduced": true,
+    "old_preaudit_reference": {
+      "M0": 0.9917,
+      "M1": 0.9792,
+      "M2": 0.9625,
+      "M3": 0.9583
+    },
+    "old_vs_corrected_delta": {
+      "M0": 0.0,
+      "M1": 0.0,
+      "M2": -0.0001,
+      "M3": 0.0125
+    },
+    "regime_diag_summary": {
+      "train": {
+        "entropy": 2.0142,
+        "normalized_entropy": 0.9686,
+        "perplexity": 7.4947,
+        "active_codes": 8,
+        "dominant_fraction": 0.2042
+      },
+      "val": {
+        "entropy": 2.0142,
+        "normalized_entropy": 0.9686,
+        "perplexity": 7.4949,
+        "active_codes": 8,
+        "dominant_fraction": 0.2023
+      },
+      "test": {
+        "entropy": 2.014,
+        "normalized_entropy": 0.9685,
+        "perplexity": 7.4929,
+        "active_codes": 8,
+        "dominant_fraction": 0.2049
+      }
+    },
+    "heterogeneity_stats": {
+      "M1": {
+        "mean": 0.01684033763002836,
+        "std": 0.022944207339390725,
+        "nonzero_fraction": 0.9779461784713885,
+        "max": 0.5625
+      },
+      "M2": {
+        "mean": 0.0022138195104500352,
+        "std": 0.011657157671871738,
+        "nonzero_fraction": 0.9779828598105909,
+        "max": 0.5625
+      },
+      "M3": {
+        "mean": 0.002083419965161752,
+        "std": 0.00996578784557638,
+        "nonzero_fraction": 0.9778469721221822,
+        "max": 0.5625
+      }
+    },
+    "m2_m3_arrays": {
+      "m2_hash": "781899f559aac2ce",
+      "m3_hash": "c7f1aa4f4e02e707",
+      "n_positions": 245760,
+      "n_different_positions": 200635,
+      "fraction_different": 0.816386,
+      "shared_memory": false
+    },
+    "complementarity_M0_M1": {
+      "both_correct": 234,
+      "M0_only": 4,
+      "M1_only": 1,
+      "both_wrong": 1,
+      "n_test": 240
+    }
+  }
+}

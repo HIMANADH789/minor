@@ -1,0 +1,22 @@
+[
+  {
+    "method": "HERAMBA",
+    "seed": 45,
+    "val_macro_f1": 0.9014,
+    "test_macro_f1": 0.5323,
+    "selected_alpha": 4.281332398719396,
+    "status": "NEW_RUN_AUDITED_PATH",
+    "runtime_s": 20.6,
+    "source": "experiments/rcmkn_r2_haptics_3seed.run_one_seed (frozen config)"
+  },
+  {
+    "method": "HERAMBA",
+    "seed": 46,
+    "val_macro_f1": 0.9014,
+    "test_macro_f1": 0.5182,
+    "selected_alpha": 4.281332398719396,
+    "status": "NEW_RUN_AUDITED_PATH",
+    "runtime_s": 22.0,
+    "source": "experiments/rcmkn_r2_haptics_3seed.run_one_seed (frozen config)"
+  }
+]

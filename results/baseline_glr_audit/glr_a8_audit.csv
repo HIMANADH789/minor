@@ -1,0 +1,8 @@
+component,value,status
+global_stream,aeon MiniRocket (n_kernels=2016),VERIFIED
+kernel_count,2016 (NOT 10000),VERIFIED
+feature_dim,2016 (PPV only),VERIFIED
+semi_learned,Yes (fits biases/dilations),VERIFIED
+local_stream,FixedPatternBank M=128 + LocalActivity,VERIFIED
+readout,"BlockRidge (lambda_g, lambda_l)",VERIFIED
+comparison_baseline,M=2016 aeon MiniRocket (0.954 on CWRU_UNBAL),CORRECT

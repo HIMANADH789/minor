@@ -1,0 +1,1468 @@
+{
+  "block_contributions": {
+    "n": 240,
+    "global_norm_mean": 0.3694387247418973,
+    "global_norm_std": 0.21324946985091434,
+    "local_norm_mean": 0.9912458774430963,
+    "local_norm_std": 0.25923150212953466,
+    "ratio_median": 2.935385182887844,
+    "local_share_median": 0.7458952537119761,
+    "correct_global": 0.3650558665024058,
+    "correct_local": 1.0032765669319235,
+    "incorrect_global": 0.41286886547867757,
+    "incorrect_local": 0.8720326815992633,
+    "by_class": {
+      "0": {
+        "global_norm": 0.3292681764764425,
+        "local_norm": 1.006486705387986,
+        "n": 60
+      },
+      "1": {
+        "global_norm": 0.40272970892105725,
+        "local_norm": 1.057581075095154,
+        "n": 60
+      },
+      "2": {
+        "global_norm": 0.36677945821561875,
+        "local_norm": 0.9350157834695223,
+        "n": 60
+      },
+      "3": {
+        "global_norm": 0.3789775553544709,
+        "local_norm": 0.9658999458197229,
+        "n": 60
+      }
+    }
+  },
+  "global_local_disagreement": 0.7666666666666667,
+  "lambda_adaptation": {
+    "lam_g": 10.0,
+    "lam_l": 0.0001,
+    "coef_norms": {
+      "global_norm": 0.07098743581294278,
+      "local_norm": 73.30311250762048
+    },
+    "d_global": 6144,
+    "d_local": 839,
+    "interpretation": "lam pair is validation-selected; block contribution is measured from the fitted solution, not from lambda values alone"
+  },
+  "routing_summary": {
+    "n": 240,
+    "J": 4,
+    "T": 994,
+    "mean_w": 0.25,
+    "std_w": 0.22023020684719086,
+    "routing_entropy_mean": 0.9712870121002197,
+    "routing_entropy_std": 0.012034039944410324,
+    "route_switch_rate": 0.0,
+    "flavor_freq": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "weight_margin_mean": 0.38477623462677
+  },
+  "routing_descriptors": {
+    "per_flavor": {
+      "standard": {
+        "local_variance": {
+          "rho": -0.09247137746761144,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.10638448844803575,
+          "ci_hi": -0.080094881905901,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": -0.09247137746761144,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.10627318311976248,
+          "ci_hi": -0.07928720005303411,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": -0.16090599332363614,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.17422160199950443,
+          "ci_hi": -0.14751041298702275,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": 0.10621018508851937,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.09197962651602762,
+          "ci_hi": 0.12070539473338339,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": -0.48652712280454297,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.4965948371313593,
+          "ci_hi": -0.4762156053408587,
+          "n": 20000
+        }
+      },
+      "tail": {
+        "local_variance": {
+          "rho": -0.0935214419479915,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.10794569402883059,
+          "ci_hi": -0.07929700690445164,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": -0.0935214419479915,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.10764802045334973,
+          "ci_hi": -0.07952712181297658,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": -0.142126863004336,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.15632808026148148,
+          "ci_hi": -0.12762781994673622,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": 0.08494866630876848,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.07077580719189178,
+          "ci_hi": 0.09884839729887504,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": -0.3687350845443146,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.38036003287294956,
+          "ci_hi": -0.35699110888923463,
+          "n": 20000
+        }
+      },
+      "fine": {
+        "local_variance": {
+          "rho": -0.024021530063814956,
+          "p_perm": 0.0014992503748125937,
+          "ci_lo": -0.03854703659074781,
+          "ci_hi": -0.008679529730675293,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": -0.024021530063814956,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.03889761372901636,
+          "ci_hi": -0.009431263532473184,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": -0.00026931394879633905,
+          "p_perm": 0.9725137431284357,
+          "ci_lo": -0.014915654957988841,
+          "ci_hi": 0.014077885164086128,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": -0.02298456949437502,
+          "p_perm": 0.0014992503748125937,
+          "ci_lo": -0.03619300702170232,
+          "ci_hi": -0.009579896233931719,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": 0.12632296054392894,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.11288075176940551,
+          "ci_hi": 0.1399288455412727,
+          "n": 20000
+        }
+      },
+      "multilag": {
+        "local_variance": {
+          "rho": 0.08673851490947561,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.07206078157773643,
+          "ci_hi": 0.10054854893666856,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": 0.08673851490947561,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.07188299692279196,
+          "ci_hi": 0.10092421850290587,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": 0.13492860516665883,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.12119220131093841,
+          "ci_hi": 0.149021275114482,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": -0.07747522951159523,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.09109194335271671,
+          "ci_hi": -0.06354863578051044,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": 0.34138580918188616,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.3288657518582303,
+          "ci_hi": 0.3535873121506404,
+          "n": 20000
+        }
+      }
+    }
+  },
+  "routing_intervention": {
+    "uniform": {
+      "macro_f1": 0.11645608493463191,
+      "accuracy": 0.2375,
+      "weighted_f1": 0.1164560849346319,
+      "balanced_accuracy": 0.2375,
+      "mcc": -0.027432459275444278,
+      "kappa": -0.016666666666666607,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          2,
+          58,
+          0
+        ],
+        [
+          0,
+          5,
+          55,
+          0
+        ],
+        [
+          11,
+          20,
+          29,
+          0
+        ]
+      ],
+      "nll": 21.06865692138672,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 0.7416666666666667
+    },
+    "shuffled": {
+      "macro_f1": 0.28154449919800795,
+      "accuracy": 0.2875,
+      "weighted_f1": 0.28154449919800795,
+      "balanced_accuracy": 0.28750000000000003,
+      "mcc": 0.05283934402827401,
+      "kappa": 0.050000000000000044,
+      "confusion_matrix": [
+        [
+          17,
+          7,
+          18,
+          18
+        ],
+        [
+          4,
+          7,
+          14,
+          35
+        ],
+        [
+          6,
+          4,
+          23,
+          27
+        ],
+        [
+          8,
+          2,
+          28,
+          22
+        ]
+      ],
+      "nll": 8.907170295715332,
+      "mean_conf": 0.9197281002998352,
+      "flip_rate_vs_actual": 0.7333333333333333
+    },
+    "fixed_0": {
+      "macro_f1": 0.1,
+      "accuracy": 0.25,
+      "weighted_f1": 0.1,
+      "balanced_accuracy": 0.25,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ]
+      ],
+      "nll": 20.7232666015625,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 0.7333333333333333
+    },
+    "fixed_1": {
+      "macro_f1": 0.21576168929110107,
+      "accuracy": 0.2916666666666667,
+      "weighted_f1": 0.21576168929110107,
+      "balanced_accuracy": 0.2916666666666667,
+      "mcc": 0.06314271432450787,
+      "kappa": 0.05555555555555558,
+      "confusion_matrix": [
+        [
+          35,
+          16,
+          9,
+          0
+        ],
+        [
+          31,
+          2,
+          27,
+          0
+        ],
+        [
+          20,
+          7,
+          33,
+          0
+        ],
+        [
+          36,
+          0,
+          24,
+          0
+        ]
+      ],
+      "nll": 19.57197380065918,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 0.6833333333333333
+    },
+    "fixed_2": {
+      "macro_f1": 0.1,
+      "accuracy": 0.25,
+      "weighted_f1": 0.1,
+      "balanced_accuracy": 0.25,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ]
+      ],
+      "nll": 20.7232666015625,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 0.7333333333333333
+    },
+    "fixed_3": {
+      "macro_f1": 0.1,
+      "accuracy": 0.25,
+      "weighted_f1": 0.1,
+      "balanced_accuracy": 0.25,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60,
+          0
+        ]
+      ],
+      "nll": 20.7232666015625,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 0.7333333333333333
+    }
+  },
+  "routing_faithfulness": {
+    "level": "router",
+    "frac": 0.1,
+    "width": 102,
+    "n": 200,
+    "target_drop": -0.04648283123970032,
+    "random_drop": -0.05442236736416817,
+    "diff": 0.007939539849758148,
+    "ci95": [
+      -0.007464815769344555,
+      0.023345836497843254
+    ],
+    "p_perm": 0.335832083958021,
+    "flip_rate": 0.62
+  },
+  "routing_stability": {
+    "specs": {
+      "amp_scale_0.95": {
+        "cosine_routing": 0.9999993443489075,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 0.00072643713792786
+      },
+      "amp_scale_1.05": {
+        "cosine_routing": 0.9999993443489075,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 9.526863098144531
+      },
+      "baseline_0.1sd": {
+        "cosine_routing": 0.9999482035636902,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 15.0645751953125
+      },
+      "noise_0.02": {
+        "cosine_routing": 0.9999999403953552,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 0.289568156003952
+      },
+      "jitter_2": {
+        "cosine_routing": 0.9999980330467224,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 0.029002336785197258
+      }
+    }
+  },
+  "counterfactual_routing": {
+    "level": "router",
+    "routing_weight_shift": 0.00028878316516056657,
+    "top1_route_change_rate": 0.0,
+    "pred_flip_rate": 0.255,
+    "mean_conf_change": 0.0015767073491588235,
+    "note": "counterfactual: noise replaced in top-routing region"
+  },
+  "uncertainty": {
+    "signals": {
+      "confidence_neg": {
+        "auroc": 0.9097164303586323,
+        "ci": [
+          0.8573603002502085,
+          0.9503909507923268
+        ],
+        "auprc": 0.4698067228175161
+      },
+      "predictive_entropy": {
+        "auroc": 0.878023352793995,
+        "ci": [
+          0.8152105921601335,
+          0.9341169724770642
+        ],
+        "auprc": 0.40545972762739557
+      },
+      "margin_neg": {
+        "auroc": 0.9207673060884071,
+        "ci": [
+          0.878419516263553,
+          0.9560050041701418
+        ],
+        "auprc": 0.47454934006875343
+      },
+      "routing_entropy": {
+        "auroc": 0.5827773144286905,
+        "ci": [
+          0.5016576313594662,
+          0.662890950792327
+        ],
+        "auprc": 0.11444765320414962
+      },
+      "block_disagreement": {
+        "auroc": 0.6284403669724771,
+        "ci": [
+          0.6009174311926606,
+          0.6559633027522935
+        ],
+        "auprc": 0.11956521739130435
+      },
+      "local_share": {
+        "auroc": 0.323185988323603,
+        "ci": [
+          0.2246820266889075,
+          0.42516680567139287
+        ],
+        "auprc": 0.06597385471793135
+      }
+    },
+    "risk_coverage": {
+      "confidence": {
+        "rows": [
+          {
+            "coverage": 1.0,
+            "risk": 0.09166666666666667
+          },
+          {
+            "coverage": 0.9,
+            "risk": 0.10185185185185186
+          },
+          {
+            "coverage": 0.8,
+            "risk": 0.11458333333333337
+          },
+          {
+            "coverage": 0.7,
+            "risk": 0.13095238095238093
+          },
+          {
+            "coverage": 0.6,
+            "risk": 0.1527777777777778
+          },
+          {
+            "coverage": 0.5,
+            "risk": 0.18333333333333335
+          }
+        ],
+        "aurc": 0.22930160865174104
+      },
+      "entropy": {
+        "rows": [
+          {
+            "coverage": 1.0,
+            "risk": 0.09166666666666667
+          },
+          {
+            "coverage": 0.9,
+            "risk": 0.10185185185185186
+          },
+          {
+            "coverage": 0.8,
+            "risk": 0.11458333333333337
+          },
+          {
+            "coverage": 0.7,
+            "risk": 0.13095238095238093
+          },
+          {
+            "coverage": 0.6,
+            "risk": 0.1527777777777778
+          },
+          {
+            "coverage": 0.5,
+            "risk": 0.17500000000000004
+          }
+        ],
+        "aurc": 0.21431571451594045
+      },
+      "routing_entropy": {
+        "rows": [
+          {
+            "coverage": 1.0,
+            "risk": 0.09166666666666667
+          },
+          {
+            "coverage": 0.9,
+            "risk": 0.10185185185185186
+          },
+          {
+            "coverage": 0.8,
+            "risk": 0.11458333333333337
+          },
+          {
+            "coverage": 0.7,
+            "risk": 0.125
+          },
+          {
+            "coverage": 0.6,
+            "risk": 0.14583333333333337
+          },
+          {
+            "coverage": 0.5,
+            "risk": 0.1166666666666667
+          }
+        ],
+        "aurc": 0.09330755931239598
+      }
+    }
+  },
+  "calibration": {
+    "ece": 0.47360457070171835,
+    "adaptive_ece": 0.47360456188519795,
+    "brier": 0.4468691647052765,
+    "nll": 0.8651270270347595,
+    "reliability_curve": [
+      {
+        "bin_center": 0.05,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.15000000000000002,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.25,
+        "acc": 0.3333333333333333,
+        "conf": 0.2934924364089966,
+        "n": 3
+      },
+      {
+        "bin_center": 0.35000000000000003,
+        "acc": 0.71875,
+        "conf": 0.35429614782333374,
+        "n": 64
+      },
+      {
+        "bin_center": 0.45,
+        "acc": 0.9857142857142858,
+        "conf": 0.4523526728153229,
+        "n": 140
+      },
+      {
+        "bin_center": 0.55,
+        "acc": 1.0,
+        "conf": 0.5287911891937256,
+        "n": 33
+      },
+      {
+        "bin_center": 0.6500000000000001,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.75,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.8500000000000001,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.95,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      }
+    ],
+    "mean_confidence": 0.4347287714481354
+  },
+  "robustness": {
+    "kinds": {
+      "gaussian_noise": [
+        {
+          "level": 0.05,
+          "error_rate": 0.7166666666666667,
+          "macro_f1": 0.2755985808192939,
+          "mean_conf": 0.928121030330658,
+          "routing_entropy": 0.9712638854980469,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.1,
+          "error_rate": 0.7166666666666667,
+          "macro_f1": 0.27856173257978933,
+          "mean_conf": 0.9233688116073608,
+          "routing_entropy": 0.9711199402809143,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.2,
+          "error_rate": 0.6958333333333333,
+          "macro_f1": 0.2888138138138138,
+          "mean_conf": 0.9274378418922424,
+          "routing_entropy": 0.9708312153816223,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.4,
+          "error_rate": 0.7291666666666666,
+          "macro_f1": 0.26822099465761684,
+          "mean_conf": 0.9127911925315857,
+          "routing_entropy": 0.9696657657623291,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.8,
+          "error_rate": 0.7041666666666667,
+          "macro_f1": 0.26975412912912916,
+          "mean_conf": 0.9306532740592957,
+          "routing_entropy": 0.9670610427856445,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": -0.19999999999999998,
+          "severity_vs_mean_conf_rho": 0.09999999999999999,
+          "severity_vs_routing_entropy_rho": -0.9999999999999999
+        }
+      ],
+      "amplitude_scale": [
+        {
+          "level": 0.6,
+          "error_rate": 0.725,
+          "macro_f1": 0.26559477095741735,
+          "mean_conf": 0.9185177087783813,
+          "routing_entropy": 0.9834149479866028,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.8,
+          "error_rate": 0.7166666666666667,
+          "macro_f1": 0.2760671510742163,
+          "mean_conf": 0.9195234775543213,
+          "routing_entropy": 0.9765847325325012,
+          "route_switch": 0.0
+        },
+        {
+          "level": 1.2,
+          "error_rate": 0.7125,
+          "macro_f1": 0.28083690503045344,
+          "mean_conf": 0.923507571220398,
+          "routing_entropy": 0.9669584631919861,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": -1.0,
+          "severity_vs_mean_conf_rho": 1.0,
+          "severity_vs_routing_entropy_rho": -1.0
+        }
+      ],
+      "baseline_shift": [
+        {
+          "level": 0.2,
+          "error_rate": 0.75,
+          "macro_f1": 0.1,
+          "mean_conf": 1.0,
+          "routing_entropy": 0.9686259031295776,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.4,
+          "error_rate": 0.75,
+          "macro_f1": 0.18255599609221795,
+          "mean_conf": 0.9674734473228455,
+          "routing_entropy": 0.9612317681312561,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.8,
+          "error_rate": 0.75,
+          "macro_f1": 0.1,
+          "mean_conf": 1.0,
+          "routing_entropy": 0.947210431098938,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": null,
+          "severity_vs_mean_conf_rho": 0.5,
+          "severity_vs_routing_entropy_rho": -1.0
+        }
+      ],
+      "temporal_jitter": [
+        {
+          "level": 2.0,
+          "error_rate": 0.725,
+          "macro_f1": 0.26709932015005233,
+          "mean_conf": 0.9188292622566223,
+          "routing_entropy": 0.9712909460067749,
+          "route_switch": 0.0
+        },
+        {
+          "level": 8.0,
+          "error_rate": 0.7333333333333333,
+          "macro_f1": 0.25763888159964266,
+          "mean_conf": 0.9142559766769409,
+          "routing_entropy": 0.9712873697280884,
+          "route_switch": 0.0
+        },
+        {
+          "level": 16.0,
+          "error_rate": 0.7416666666666667,
+          "macro_f1": 0.24326507758758598,
+          "mean_conf": 0.9226906299591064,
+          "routing_entropy": 0.9712879061698914,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": 1.0,
+          "severity_vs_mean_conf_rho": 0.5,
+          "severity_vs_routing_entropy_rho": -0.5
+        }
+      ],
+      "localized_mask": [
+        {
+          "level": 0.05,
+          "error_rate": 0.75,
+          "macro_f1": 0.1,
+          "mean_conf": 1.0,
+          "routing_entropy": 1.3703041076660156,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.15,
+          "error_rate": 0.75,
+          "macro_f1": 0.1,
+          "mean_conf": 1.0,
+          "routing_entropy": 1.3703041076660156,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.3,
+          "error_rate": 0.75,
+          "macro_f1": 0.1,
+          "mean_conf": 1.0,
+          "routing_entropy": 1.3703041076660156,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": null,
+          "severity_vs_mean_conf_rho": null,
+          "severity_vs_routing_entropy_rho": null
+        }
+      ]
+    }
+  },
+  "_hyp_rows": [
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs local_variance",
+      "estimate": -0.09247137746761144,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.10638448844803575,
+          -0.080094881905901
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs local_energy",
+      "estimate": -0.09247137746761144,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.10627318311976248,
+          -0.07928720005303411
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs first_diff",
+      "estimate": -0.16090599332363614,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.17422160199950443,
+          -0.14751041298702275
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs skewness",
+      "estimate": 0.10621018508851937,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.09197962651602762,
+          0.12070539473338339
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs kurtosis",
+      "estimate": -0.48652712280454297,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.4965948371313593,
+          -0.4762156053408587
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs local_variance",
+      "estimate": -0.0935214419479915,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.10794569402883059,
+          -0.07929700690445164
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs local_energy",
+      "estimate": -0.0935214419479915,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.10764802045334973,
+          -0.07952712181297658
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs first_diff",
+      "estimate": -0.142126863004336,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.15632808026148148,
+          -0.12762781994673622
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs skewness",
+      "estimate": 0.08494866630876848,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.07077580719189178,
+          0.09884839729887504
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs kurtosis",
+      "estimate": -0.3687350845443146,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.38036003287294956,
+          -0.35699110888923463
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs local_variance",
+      "estimate": -0.024021530063814956,
+      "p_value": 0.0014992503748125937,
+      "extra": {
+        "ci": [
+          -0.03854703659074781,
+          -0.008679529730675293
+        ]
+      },
+      "q_value": 0.0015781582892764143,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs local_energy",
+      "estimate": -0.024021530063814956,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.03889761372901636,
+          -0.009431263532473184
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs first_diff",
+      "estimate": -0.00026931394879633905,
+      "p_value": 0.9725137431284357,
+      "extra": {
+        "ci": [
+          -0.014915654957988841,
+          0.014077885164086128
+        ]
+      },
+      "q_value": 0.9725137431284357,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs skewness",
+      "estimate": -0.02298456949437502,
+      "p_value": 0.0014992503748125937,
+      "extra": {
+        "ci": [
+          -0.03619300702170232,
+          -0.009579896233931719
+        ]
+      },
+      "q_value": 0.0015781582892764143,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs kurtosis",
+      "estimate": 0.12632296054392894,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.11288075176940551,
+          0.1399288455412727
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs local_variance",
+      "estimate": 0.08673851490947561,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.07206078157773643,
+          0.10054854893666856
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs local_energy",
+      "estimate": 0.08673851490947561,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.07188299692279196,
+          0.10092421850290587
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs first_diff",
+      "estimate": 0.13492860516665883,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.12119220131093841,
+          0.149021275114482
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs skewness",
+      "estimate": -0.07747522951159523,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.09109194335271671,
+          -0.06354863578051044
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs kurtosis",
+      "estimate": 0.34138580918188616,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.3288657518582303,
+          0.3535873121506404
+        ]
+      },
+      "q_value": 0.000587941323455919,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D4_routing_intervention",
+      "test": "McNemar paired",
+      "comparison": "uniform vs actual routing accuracy",
+      "estimate": -0.6708333333333334,
+      "p_value": 1.1242946645839007e-33,
+      "extra": {},
+      "q_value": 2.2485893291678015e-33,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D4_routing_intervention",
+      "test": "McNemar paired",
+      "comparison": "shuffled vs actual routing accuracy",
+      "estimate": -0.6208333333333333,
+      "p_value": 2.2580544490252497e-29,
+      "extra": {},
+      "q_value": 2.2580544490252497e-29,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D6_routing_faithfulness",
+      "test": "paired permutation",
+      "comparison": "targeted vs random region confidence drop",
+      "estimate": 0.007939539849758148,
+      "p_value": 0.335832083958021,
+      "extra": {
+        "ci": [
+          -0.007464815769344555,
+          0.023345836497843254
+        ],
+        "target": -0.04648283123970032,
+        "random": -0.05442236736416817
+      },
+      "q_value": 0.335832083958021,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "amp_scale_0.95: routing cosine",
+      "estimate": 0.9999993443489075,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "amp_scale_1.05: routing cosine",
+      "estimate": 0.9999993443489075,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "baseline_0.1sd: routing cosine",
+      "estimate": 0.9999482035636902,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "noise_0.02: routing cosine",
+      "estimate": 0.9999999403953552,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "jitter_2: routing cosine",
+      "estimate": 0.9999980330467224,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "gaussian_noise: severity vs error_rate",
+      "estimate": -0.19999999999999998,
+      "p_value": null,
+      "extra": {
+        "n_levels": 5
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "gaussian_noise: severity vs mean_conf",
+      "estimate": 0.09999999999999999,
+      "p_value": null,
+      "extra": {
+        "n_levels": 5
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "gaussian_noise: severity vs routing_entropy",
+      "estimate": -0.9999999999999999,
+      "p_value": null,
+      "extra": {
+        "n_levels": 5
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "amplitude_scale: severity vs error_rate",
+      "estimate": -1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "amplitude_scale: severity vs mean_conf",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "amplitude_scale: severity vs routing_entropy",
+      "estimate": -1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "baseline_shift: severity vs mean_conf",
+      "estimate": 0.5,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "baseline_shift: severity vs routing_entropy",
+      "estimate": -1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "temporal_jitter: severity vs error_rate",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "temporal_jitter: severity vs mean_conf",
+      "estimate": 0.5,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "temporal_jitter: severity vs routing_entropy",
+      "estimate": -0.5,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    }
+  ]
+}

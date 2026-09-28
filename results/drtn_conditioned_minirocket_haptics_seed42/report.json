@@ -1,0 +1,268 @@
+{
+  "title": "DRTN-CONDITIONED MINIROCKET -- HAPTICS SEED 42",
+  "scientific_question": "Can a learned discrete temporal regime assignment from DRTN make MiniROCKET's fixed convolutional representation more informative by conditioning its temporal pooling on learned regimes, under an equal 9,996-feature budget?",
+  "config": {
+    "seed": 42,
+    "dataset": "Haptics",
+    "split": {
+      "train": 132,
+      "val": 23,
+      "test": 308
+    },
+    "T": 1092,
+    "n_classes": 5,
+    "n_features_total": 9996,
+    "n_global_features": 4998,
+    "n_heterogeneity_features": 4998,
+    "minirocket": "aeon MiniRocket(random_state=42)",
+    "ridge": "RidgeClassifierCV(alphas=np.logspace(-4,4,20))",
+    "drtn": "official seed-42 R5 checkpoint (frozen)",
+    "K_regimes": 8,
+    "min_regime_occupancy": 0.01
+  },
+  "results": {
+    "M0_canonical": {
+      "test_macro_f1": 0.4974,
+      "accuracy": 0.5195,
+      "class_f1s": [
+        0.2597,
+        0.5625,
+        0.5672,
+        0.518,
+        0.5797
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          5,
+          20,
+          9,
+          16
+        ],
+        [
+          0,
+          36,
+          3,
+          17,
+          2
+        ],
+        [
+          3,
+          9,
+          38,
+          5,
+          4
+        ],
+        [
+          1,
+          12,
+          6,
+          36,
+          9
+        ],
+        [
+          3,
+          8,
+          8,
+          8,
+          40
+        ]
+      ],
+      "fit_time_s": 0.2,
+      "selected_alpha": 11.288378916846883
+    },
+    "M1_drtn_conditioned": {
+      "test_macro_f1": 0.5178,
+      "accuracy": 0.5325,
+      "class_f1s": [
+        0.3544,
+        0.547,
+        0.5649,
+        0.4932,
+        0.6294
+      ],
+      "confusion_matrix": [
+        [
+          14,
+          3,
+          18,
+          12,
+          13
+        ],
+        [
+          1,
+          32,
+          3,
+          21,
+          1
+        ],
+        [
+          2,
+          7,
+          37,
+          6,
+          7
+        ],
+        [
+          1,
+          11,
+          6,
+          36,
+          10
+        ],
+        [
+          1,
+          6,
+          8,
+          7,
+          45
+        ]
+      ],
+      "fit_time_s": 0.0,
+      "selected_alpha": 4.281332398719396
+    },
+    "M2_random_regime": {
+      "test_macro_f1": 0.5037,
+      "accuracy": 0.5162,
+      "class_f1s": [
+        0.381,
+        0.4602,
+        0.5512,
+        0.5067,
+        0.6197
+      ],
+      "confusion_matrix": [
+        [
+          16,
+          4,
+          16,
+          11,
+          13
+        ],
+        [
+          1,
+          26,
+          2,
+          24,
+          5
+        ],
+        [
+          5,
+          7,
+          35,
+          6,
+          6
+        ],
+        [
+          2,
+          10,
+          7,
+          38,
+          7
+        ],
+        [
+          0,
+          8,
+          8,
+          7,
+          44
+        ]
+      ],
+      "fit_time_s": 0.0,
+      "selected_alpha": 4.281332398719396
+    },
+    "M3_shuffled_regime": {
+      "test_macro_f1": 0.5037,
+      "accuracy": 0.5162,
+      "class_f1s": [
+        0.381,
+        0.4602,
+        0.5512,
+        0.5067,
+        0.6197
+      ],
+      "confusion_matrix": [
+        [
+          16,
+          4,
+          16,
+          11,
+          13
+        ],
+        [
+          1,
+          26,
+          2,
+          24,
+          5
+        ],
+        [
+          5,
+          7,
+          35,
+          6,
+          6
+        ],
+        [
+          2,
+          10,
+          7,
+          38,
+          7
+        ],
+        [
+          0,
+          8,
+          8,
+          7,
+          44
+        ]
+      ],
+      "fit_time_s": 0.0,
+      "selected_alpha": 4.281332398719396
+    }
+  },
+  "deltas_vs_canonical": {
+    "M1_drtn_conditioned": 0.0204,
+    "M2_random_regime": 0.0063,
+    "M3_shuffled_regime": 0.0063
+  },
+  "complementarity": {
+    "M0_only_correct": 25,
+    "M1_only_correct": 29,
+    "both_correct": 135,
+    "both_wrong": 119,
+    "n_samples": 308
+  },
+  "regime_statistics": {
+    "test": {
+      "usage": [
+        0.11518540982826697,
+        0.0,
+        0.06097473954616812,
+        0.4808970791113648,
+        0.008042552685409828,
+        0.00040733076447362163,
+        0.0017720374863232006,
+        0.33272085057799344
+      ],
+      "counts": [
+        38741.0,
+        0.0,
+        20508.0,
+        161743.0,
+        2705.0,
+        137.0,
+        596.0,
+        111906.0
+      ],
+      "entropy": 1.1909091777903953,
+      "normalized_entropy": 0.5727062549824521,
+      "perplexity": 3.290071107581569,
+      "active_codes": 7,
+      "dominant_fraction": 0.4808970791113648
+    }
+  },
+  "conclusion": "CASE A: M1 > M0 and M1 > M3. Learned DRTN temporal regimes provide useful context for ROCKET activations.",
+  "verdict": "YES"
+}

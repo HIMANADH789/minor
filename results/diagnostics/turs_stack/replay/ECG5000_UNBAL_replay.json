@@ -1,0 +1,65 @@
+{
+  "dataset": "ECG5000_UNBAL",
+  "branch_test_mf1": {
+    "lite": 0.5705255140898705,
+    "rv": 0.5705255140898705,
+    "cs": 0.5744859101294745,
+    "cmr": 0.5577777777777777
+  },
+  "soft_vote_mf1": 0.5657142857142856,
+  "hard_vote_mf1": 0.5657142857142856,
+  "soft_vote_accuracy": 0.925,
+  "checks": [
+    {
+      "metric": "branch_test_mf1.lite",
+      "saved": 0.6116,
+      "replayed": 0.570526,
+      "difference": 0.04107449,
+      "tolerance": 0.0005,
+      "passed": false
+    },
+    {
+      "metric": "branch_test_mf1.rv",
+      "saved": 0.6077,
+      "replayed": 0.570526,
+      "difference": 0.03717449,
+      "tolerance": 0.0005,
+      "passed": false
+    },
+    {
+      "metric": "branch_test_mf1.cs",
+      "saved": 0.6174,
+      "replayed": 0.574486,
+      "difference": 0.04291409,
+      "tolerance": 0.0005,
+      "passed": false
+    },
+    {
+      "metric": "branch_test_mf1.cmr",
+      "saved": 0.6287,
+      "replayed": 0.557778,
+      "difference": 0.07092222,
+      "tolerance": 0.0005,
+      "passed": false
+    },
+    {
+      "metric": "combination_test_mf1.soft_vote",
+      "saved": 0.615,
+      "replayed": 0.565714,
+      "difference": 0.04928571,
+      "tolerance": 0.0005,
+      "passed": false
+    },
+    {
+      "metric": "combination_test_mf1.hard_vote",
+      "saved": 0.61,
+      "replayed": 0.565714,
+      "difference": 0.04428571,
+      "tolerance": 0.0005,
+      "passed": false
+    }
+  ],
+  "all_passed": false,
+  "saved_best_combiner": "stacking",
+  "test_softvote_accuracy_saved": 0.956
+}

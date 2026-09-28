@@ -1,0 +1,1553 @@
+{
+  "block_contributions": {
+    "n": 1000,
+    "global_norm_mean": 2.415774211164356,
+    "global_norm_std": 1.4625657588979337,
+    "local_norm_mean": 2.6637229208868893,
+    "local_norm_std": 1.3016517430961716,
+    "ratio_median": 1.123101264945789,
+    "local_share_median": 0.5289909001537341,
+    "correct_global": 2.372053056088702,
+    "correct_local": 2.630083022341495,
+    "incorrect_global": 3.166983148373329,
+    "incorrect_local": 3.2417175413486783,
+    "by_class": {
+      "0": {
+        "global_norm": 1.6464854069985402,
+        "local_norm": 2.1383871977517876,
+        "n": 584
+      },
+      "1": {
+        "global_norm": 3.474099669957926,
+        "local_norm": 3.347823841917856,
+        "n": 353
+      },
+      "2": {
+        "global_norm": 2.4414673475004607,
+        "local_norm": 2.6708805923614842,
+        "n": 19
+      },
+      "3": {
+        "global_norm": 4.485276248664504,
+        "local_norm": 4.505256207581479,
+        "n": 39
+      },
+      "4": {
+        "global_norm": 1.311179336327264,
+        "local_norm": 1.3342515704593114,
+        "n": 5
+      }
+    }
+  },
+  "global_local_disagreement": 0.986,
+  "lambda_adaptation": {
+    "lam_g": 1.0,
+    "lam_l": 0.1,
+    "coef_norms": {
+      "global_norm": 0.36554547667255,
+      "local_norm": 6.563383272010111
+    },
+    "d_global": 6144,
+    "d_local": 839,
+    "interpretation": "lam pair is validation-selected; block contribution is measured from the fitted solution, not from lambda values alone"
+  },
+  "routing_summary": {
+    "n": 1000,
+    "J": 4,
+    "T": 110,
+    "mean_w": 0.25,
+    "std_w": 0.22328609228134155,
+    "routing_entropy_mean": 0.9616444110870361,
+    "routing_entropy_std": 0.007166153285652399,
+    "route_switch_rate": 0.0,
+    "flavor_freq": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "weight_margin_mean": 0.386819452047348
+  },
+  "routing_descriptors": {
+    "per_flavor": {
+      "standard": {
+        "local_variance": {
+          "rho": 0.12453845392900663,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.11114969274594351,
+          "ci_hi": 0.13764801797622944,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": 0.12453845392900663,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.11189845472178699,
+          "ci_hi": 0.13773751351750674,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": 0.09680032781936959,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.08371119596138188,
+          "ci_hi": 0.11028859512931749,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": 0.020085499172209424,
+          "p_perm": 0.006496751624187906,
+          "ci_lo": 0.005926551163200158,
+          "ci_hi": 0.03415838720541814,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": -0.11959260632026016,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.1327495422531996,
+          "ci_hi": -0.10596058482701944,
+          "n": 20000
+        }
+      },
+      "tail": {
+        "local_variance": {
+          "rho": 0.009573637304489253,
+          "p_perm": 0.1634182908545727,
+          "ci_lo": -0.005460456569614475,
+          "ci_hi": 0.024006082380740926,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": 0.009573637304489253,
+          "p_perm": 0.17891054472763618,
+          "ci_lo": -0.00517113003691083,
+          "ci_hi": 0.02345929302550052,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": 0.009341906592454464,
+          "p_perm": 0.2028985507246377,
+          "ci_lo": -0.004281998552808005,
+          "ci_hi": 0.023455036333689085,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": -0.10697944966582192,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.1215311649596942,
+          "ci_hi": -0.09336467681269053,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": -0.11220203063503331,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.12555384718237572,
+          "ci_hi": -0.09867177691546569,
+          "n": 20000
+        }
+      },
+      "fine": {
+        "local_variance": {
+          "rho": -0.27310595035644797,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.287019639481693,
+          "ci_hi": -0.2594408340734161,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": -0.27310595035644797,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.2869803584762907,
+          "ci_hi": -0.25960136180842897,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": -0.20250274780798125,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.2163026582188373,
+          "ci_hi": -0.1874964737377967,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": -0.1700618079730471,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": -0.18400257275238313,
+          "ci_hi": -0.15625828207557355,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": 0.013234878159846548,
+          "p_perm": 0.06946526736631684,
+          "ci_lo": -0.0007534953578813144,
+          "ci_hi": 0.026477664216483045,
+          "n": 20000
+        }
+      },
+      "multilag": {
+        "local_variance": {
+          "rho": 0.07790226460000421,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.06340924296746528,
+          "ci_hi": 0.09249455532747143,
+          "n": 20000
+        },
+        "local_energy": {
+          "rho": 0.07790226460000421,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.06400885568857771,
+          "ci_hi": 0.09210798800102413,
+          "n": 20000
+        },
+        "first_diff": {
+          "rho": 0.054169829351478724,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.04012849164612329,
+          "ci_hi": 0.06860524994086459,
+          "n": 20000
+        },
+        "skewness": {
+          "rho": 0.13216328664315116,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.11729552562347999,
+          "ci_hi": 0.14580723779308194,
+          "n": 20000
+        },
+        "kurtosis": {
+          "rho": 0.07509363334634497,
+          "p_perm": 0.0004997501249375312,
+          "ci_lo": 0.061622192731293095,
+          "ci_hi": 0.0883199728607738,
+          "n": 20000
+        }
+      }
+    }
+  },
+  "routing_intervention": {
+    "uniform": {
+      "macro_f1": 0.001990049751243781,
+      "accuracy": 0.005,
+      "weighted_f1": 4.9751243781094526e-05,
+      "balanced_accuracy": 0.2,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          584
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          353
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          39
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "nll": 27.49286460876465,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 1.0
+    },
+    "shuffled": {
+      "macro_f1": 0.07647429095715814,
+      "accuracy": 0.101,
+      "weighted_f1": 0.13431421752059838,
+      "balanced_accuracy": 0.17203448247690512,
+      "mcc": -0.17108679742107094,
+      "kappa": -0.11318310933464093,
+      "confusion_matrix": [
+        [
+          21,
+          36,
+          509,
+          14,
+          4
+        ],
+        [
+          206,
+          68,
+          77,
+          1,
+          1
+        ],
+        [
+          5,
+          0,
+          12,
+          2,
+          0
+        ],
+        [
+          9,
+          4,
+          26,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          3,
+          0,
+          0
+        ]
+      ],
+      "nll": 13.163172721862793,
+      "mean_conf": 0.9642995595932007,
+      "flip_rate_vs_actual": 0.902
+    },
+    "fixed_0": {
+      "macro_f1": 0.001990049751243781,
+      "accuracy": 0.005,
+      "weighted_f1": 4.9751243781094526e-05,
+      "balanced_accuracy": 0.2,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          584
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          353
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          39
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "nll": 27.49286460876465,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 1.0
+    },
+    "fixed_1": {
+      "macro_f1": 0.001990049751243781,
+      "accuracy": 0.005,
+      "weighted_f1": 4.9751243781094526e-05,
+      "balanced_accuracy": 0.2,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          584
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          353
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          39
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "nll": 27.49286460876465,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 1.0
+    },
+    "fixed_2": {
+      "macro_f1": 0.001990049751243781,
+      "accuracy": 0.005,
+      "weighted_f1": 4.9751243781094526e-05,
+      "balanced_accuracy": 0.2,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          584
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          353
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          39
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "nll": 27.49286460876465,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 1.0
+    },
+    "fixed_3": {
+      "macro_f1": 0.001990049751243781,
+      "accuracy": 0.005,
+      "weighted_f1": 4.9751243781094526e-05,
+      "balanced_accuracy": 0.2,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          584
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          353
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          39
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "nll": 27.49286460876465,
+      "mean_conf": 1.0,
+      "flip_rate_vs_actual": 1.0
+    }
+  },
+  "routing_faithfulness": {
+    "level": "router",
+    "frac": 0.1,
+    "width": 14,
+    "n": 200,
+    "target_drop": 0.05149303376674652,
+    "random_drop": 0.07549089938402176,
+    "diff": -0.023997865617275238,
+    "ci95": [
+      -0.057863925188779836,
+      0.008474666349589797
+    ],
+    "p_perm": 0.15242378810594703,
+    "flip_rate": 0.46
+  },
+  "routing_stability": {
+    "specs": {
+      "amp_scale_0.95": {
+        "cosine_routing": 0.9999991059303284,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 5.501094818115234
+      },
+      "amp_scale_1.05": {
+        "cosine_routing": 0.9999991059303284,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 5.467886924743652
+      },
+      "baseline_0.1sd": {
+        "cosine_routing": 0.9998753666877747,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 6.168732166290283
+      },
+      "noise_0.02": {
+        "cosine_routing": 0.999998927116394,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 5.505565166473389
+      },
+      "jitter_2": {
+        "cosine_routing": 0.9999459981918335,
+        "top1_route_agreement": 1.0,
+        "prob_KL": 5.434510707855225
+      }
+    }
+  },
+  "counterfactual_routing": {
+    "level": "router",
+    "routing_weight_shift": 0.0002765010285656899,
+    "top1_route_change_rate": 0.0,
+    "pred_flip_rate": 0.005,
+    "mean_conf_change": 0.002550779841840267,
+    "note": "counterfactual: noise replaced in top-routing region"
+  },
+  "uncertainty": {
+    "signals": {
+      "confidence_neg": {
+        "auroc": 0.8464261664261664,
+        "ci": [
+          0.7826243386243386,
+          0.9033612313612314
+        ],
+        "auprc": 0.40277679039383213
+      },
+      "predictive_entropy": {
+        "auroc": 0.8370562770562772,
+        "ci": [
+          0.7595055315055316,
+          0.8998840788840788
+        ],
+        "auprc": 0.38989212747771906
+      },
+      "margin_neg": {
+        "auroc": 0.8505242905242906,
+        "ci": [
+          0.7909975949975949,
+          0.9062640692640692
+        ],
+        "auprc": 0.3834671332278551
+      },
+      "routing_entropy": {
+        "auroc": 0.5584992784992785,
+        "ci": [
+          0.47011928811928805,
+          0.6458201058201058
+        ],
+        "auprc": 0.08120876937118411
+      },
+      "block_disagreement": {
+        "auroc": 0.5074074074074074,
+        "ci": [
+          0.5037037037037038,
+          0.5116402116402117
+        ],
+        "auprc": 0.055780933062880324
+      },
+      "local_share": {
+        "auroc": 0.38835978835978835,
+        "ci": [
+          0.33019384319384315,
+          0.4509018759018759
+        ],
+        "auprc": 0.041984777293448024
+      }
+    },
+    "risk_coverage": {
+      "confidence": {
+        "rows": [
+          {
+            "coverage": 1.0,
+            "risk": 0.05500000000000005
+          },
+          {
+            "coverage": 0.9,
+            "risk": 0.06000000000000005
+          },
+          {
+            "coverage": 0.8,
+            "risk": 0.06625000000000003
+          },
+          {
+            "coverage": 0.7,
+            "risk": 0.07285714285714284
+          },
+          {
+            "coverage": 0.6,
+            "risk": 0.08499999999999996
+          },
+          {
+            "coverage": 0.5,
+            "risk": 0.09799999999999998
+          }
+        ],
+        "aurc": 0.15047837097941036
+      },
+      "entropy": {
+        "rows": [
+          {
+            "coverage": 1.0,
+            "risk": 0.05500000000000005
+          },
+          {
+            "coverage": 0.9,
+            "risk": 0.06000000000000005
+          },
+          {
+            "coverage": 0.8,
+            "risk": 0.06499999999999995
+          },
+          {
+            "coverage": 0.7,
+            "risk": 0.07285714285714284
+          },
+          {
+            "coverage": 0.6,
+            "risk": 0.08333333333333337
+          },
+          {
+            "coverage": 0.5,
+            "risk": 0.09599999999999997
+          }
+        ],
+        "aurc": 0.14806877570832033
+      },
+      "routing_entropy": {
+        "rows": [
+          {
+            "coverage": 1.0,
+            "risk": 0.05500000000000005
+          },
+          {
+            "coverage": 0.9,
+            "risk": 0.05222222222222217
+          },
+          {
+            "coverage": 0.8,
+            "risk": 0.05500000000000005
+          },
+          {
+            "coverage": 0.7,
+            "risk": 0.055714285714285716
+          },
+          {
+            "coverage": 0.6,
+            "risk": 0.06333333333333335
+          },
+          {
+            "coverage": 0.5,
+            "risk": 0.06999999999999995
+          }
+        ],
+        "aurc": 0.06898093623109283
+      }
+    }
+  },
+  "calibration": {
+    "ece": 0.5594421420693397,
+    "adaptive_ece": 0.5594421378672123,
+    "brier": 0.4892270565032959,
+    "nll": 0.989031970500946,
+    "reliability_curve": [
+      {
+        "bin_center": 0.05,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.15000000000000002,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.25,
+        "acc": 0.5555555555555556,
+        "conf": 0.2755078673362732,
+        "n": 54
+      },
+      {
+        "bin_center": 0.35000000000000003,
+        "acc": 0.9470588235294117,
+        "conf": 0.3743513226509094,
+        "n": 510
+      },
+      {
+        "bin_center": 0.45,
+        "acc": 0.9908256880733946,
+        "conf": 0.41229647397994995,
+        "n": 436
+      },
+      {
+        "bin_center": 0.55,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.6500000000000001,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.75,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.8500000000000001,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      },
+      {
+        "bin_center": 0.95,
+        "acc": null,
+        "conf": null,
+        "n": 0
+      }
+    ],
+    "mean_confidence": 0.3855578899383545
+  },
+  "robustness": {
+    "kinds": {
+      "gaussian_noise": [
+        {
+          "level": 0.05,
+          "error_rate": 0.8675,
+          "macro_f1": 0.08663234804497276,
+          "mean_conf": 0.9605679512023926,
+          "routing_entropy": 0.9618943929672241,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.1,
+          "error_rate": 0.8925,
+          "macro_f1": 0.07800409476281615,
+          "mean_conf": 0.957832396030426,
+          "routing_entropy": 0.9618604779243469,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.2,
+          "error_rate": 0.9,
+          "macro_f1": 0.07459235534704681,
+          "mean_conf": 0.9662720561027527,
+          "routing_entropy": 0.9618635773658752,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.4,
+          "error_rate": 0.8675,
+          "macro_f1": 0.11002519150323016,
+          "mean_conf": 0.945267915725708,
+          "routing_entropy": 0.9619159698486328,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.8,
+          "error_rate": 0.775,
+          "macro_f1": 0.13938790067822324,
+          "mean_conf": 0.9458479285240173,
+          "routing_entropy": 0.9617066979408264,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": -0.3,
+          "severity_vs_mean_conf_rho": -0.6,
+          "severity_vs_routing_entropy_rho": -0.3
+        }
+      ],
+      "amplitude_scale": [
+        {
+          "level": 0.6,
+          "error_rate": 0.9075,
+          "macro_f1": 0.05550924095688955,
+          "mean_conf": 0.9207526445388794,
+          "routing_entropy": 0.9739725589752197,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.8,
+          "error_rate": 0.915,
+          "macro_f1": 0.07057978940912811,
+          "mean_conf": 0.9388116598129272,
+          "routing_entropy": 0.9671549797058105,
+          "route_switch": 0.0
+        },
+        {
+          "level": 1.2,
+          "error_rate": 0.8775,
+          "macro_f1": 0.08892183589204011,
+          "mean_conf": 0.9689485430717468,
+          "routing_entropy": 0.9575464129447937,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": -0.5,
+          "severity_vs_mean_conf_rho": 1.0,
+          "severity_vs_routing_entropy_rho": -1.0
+        }
+      ],
+      "baseline_shift": [
+        {
+          "level": 0.2,
+          "error_rate": 0.735,
+          "macro_f1": 0.16900108675188036,
+          "mean_conf": 0.9636582136154175,
+          "routing_entropy": 0.9572072625160217,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.4,
+          "error_rate": 0.635,
+          "macro_f1": 0.14592938787656004,
+          "mean_conf": 0.9775384664535522,
+          "routing_entropy": 0.9533235430717468,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.8,
+          "error_rate": 0.6325,
+          "macro_f1": 0.10788990825688075,
+          "mean_conf": 0.9978856444358826,
+          "routing_entropy": 0.943335771560669,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": -1.0,
+          "severity_vs_mean_conf_rho": 1.0,
+          "severity_vs_routing_entropy_rho": -1.0
+        }
+      ],
+      "temporal_jitter": [
+        {
+          "level": 2.0,
+          "error_rate": 0.7525,
+          "macro_f1": 0.15704069698054662,
+          "mean_conf": 0.9768257737159729,
+          "routing_entropy": 0.9616467356681824,
+          "route_switch": 0.0
+        },
+        {
+          "level": 8.0,
+          "error_rate": 0.89,
+          "macro_f1": 0.08784977213635617,
+          "mean_conf": 0.9694882035255432,
+          "routing_entropy": 0.959787905216217,
+          "route_switch": 0.0
+        },
+        {
+          "level": 16.0,
+          "error_rate": 0.7075,
+          "macro_f1": 0.1332442172599086,
+          "mean_conf": 0.9804208278656006,
+          "routing_entropy": 0.9572106003761292,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": -0.5,
+          "severity_vs_mean_conf_rho": 0.5,
+          "severity_vs_routing_entropy_rho": -1.0
+        }
+      ],
+      "localized_mask": [
+        {
+          "level": 0.05,
+          "error_rate": 0.9975,
+          "macro_f1": 0.000997506234413965,
+          "mean_conf": 1.0,
+          "routing_entropy": 1.353057861328125,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.15,
+          "error_rate": 0.9975,
+          "macro_f1": 0.000997506234413965,
+          "mean_conf": 1.0,
+          "routing_entropy": 1.353057861328125,
+          "route_switch": 0.0
+        },
+        {
+          "level": 0.3,
+          "error_rate": 0.9975,
+          "macro_f1": 0.000997506234413965,
+          "mean_conf": 1.0,
+          "routing_entropy": 1.353057861328125,
+          "route_switch": 0.0,
+          "severity_vs_error_rate_rho": null,
+          "severity_vs_mean_conf_rho": null,
+          "severity_vs_routing_entropy_rho": null
+        }
+      ]
+    }
+  },
+  "_hyp_rows": [
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs local_variance",
+      "estimate": 0.12453845392900663,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.11114969274594351,
+          0.13764801797622944
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs local_energy",
+      "estimate": 0.12453845392900663,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.11189845472178699,
+          0.13773751351750674
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs first_diff",
+      "estimate": 0.09680032781936959,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.08371119596138188,
+          0.11028859512931749
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs skewness",
+      "estimate": 0.020085499172209424,
+      "p_value": 0.006496751624187906,
+      "extra": {
+        "ci": [
+          0.005926551163200158,
+          0.03415838720541814
+        ]
+      },
+      "q_value": 0.008120939530234883,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_standard(t) vs kurtosis",
+      "estimate": -0.11959260632026016,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.1327495422531996,
+          -0.10596058482701944
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs local_variance",
+      "estimate": 0.009573637304489253,
+      "p_value": 0.1634182908545727,
+      "extra": {
+        "ci": [
+          -0.005460456569614475,
+          0.024006082380740926
+        ]
+      },
+      "q_value": 0.18157587872730302,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs local_energy",
+      "estimate": 0.009573637304489253,
+      "p_value": 0.17891054472763618,
+      "extra": {
+        "ci": [
+          -0.00517113003691083,
+          0.02345929302550052
+        ]
+      },
+      "q_value": 0.18832688918698545,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs first_diff",
+      "estimate": 0.009341906592454464,
+      "p_value": 0.2028985507246377,
+      "extra": {
+        "ci": [
+          -0.004281998552808005,
+          0.023455036333689085
+        ]
+      },
+      "q_value": 0.2028985507246377,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs skewness",
+      "estimate": -0.10697944966582192,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.1215311649596942,
+          -0.09336467681269053
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_tail(t) vs kurtosis",
+      "estimate": -0.11220203063503331,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.12555384718237572,
+          -0.09867177691546569
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs local_variance",
+      "estimate": -0.27310595035644797,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.287019639481693,
+          -0.2594408340734161
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs local_energy",
+      "estimate": -0.27310595035644797,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.2869803584762907,
+          -0.25960136180842897
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs first_diff",
+      "estimate": -0.20250274780798125,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.2163026582188373,
+          -0.1874964737377967
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs skewness",
+      "estimate": -0.1700618079730471,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.18400257275238313,
+          -0.15625828207557355
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_fine(t) vs kurtosis",
+      "estimate": 0.013234878159846548,
+      "p_value": 0.06946526736631684,
+      "extra": {
+        "ci": [
+          -0.0007534953578813144,
+          0.026477664216483045
+        ]
+      },
+      "q_value": 0.08172384396037276,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs local_variance",
+      "estimate": 0.07790226460000421,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.06340924296746528,
+          0.09249455532747143
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs local_energy",
+      "estimate": 0.07790226460000421,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.06400885568857771,
+          0.09210798800102413
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs first_diff",
+      "estimate": 0.054169829351478724,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.04012849164612329,
+          0.06860524994086459
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs skewness",
+      "estimate": 0.13216328664315116,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.11729552562347999,
+          0.14580723779308194
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D3_routing_validity",
+      "test": "Spearman + permutation",
+      "comparison": "w_multilag(t) vs kurtosis",
+      "estimate": 0.07509363334634497,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.061622192731293095,
+          0.0883199728607738
+        ]
+      },
+      "q_value": 0.0006663334999167083,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D4_routing_intervention",
+      "test": "McNemar paired",
+      "comparison": "uniform vs actual routing accuracy",
+      "estimate": -0.94,
+      "p_value": 7.540016491735288e-204,
+      "extra": {},
+      "q_value": 1.5080032983470576e-203,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D4_routing_intervention",
+      "test": "McNemar paired",
+      "comparison": "shuffled vs actual routing accuracy",
+      "estimate": -0.844,
+      "p_value": 4.592449458339119e-180,
+      "extra": {},
+      "q_value": 4.592449458339119e-180,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D6_routing_faithfulness",
+      "test": "paired permutation",
+      "comparison": "targeted vs random region confidence drop",
+      "estimate": -0.023997865617275238,
+      "p_value": 0.15242378810594703,
+      "extra": {
+        "ci": [
+          -0.057863925188779836,
+          0.008474666349589797
+        ],
+        "target": 0.05149303376674652,
+        "random": 0.07549089938402176
+      },
+      "q_value": 0.15242378810594703,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "amp_scale_0.95: routing cosine",
+      "estimate": 0.9999991059303284,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "amp_scale_1.05: routing cosine",
+      "estimate": 0.9999991059303284,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "baseline_0.1sd: routing cosine",
+      "estimate": 0.9998753666877747,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "noise_0.02: routing cosine",
+      "estimate": 0.999998927116394,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D7_routing_stability",
+      "test": "descriptive",
+      "comparison": "jitter_2: routing cosine",
+      "estimate": 0.9999459981918335,
+      "p_value": null,
+      "extra": {},
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "gaussian_noise: severity vs error_rate",
+      "estimate": -0.3,
+      "p_value": null,
+      "extra": {
+        "n_levels": 5
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "gaussian_noise: severity vs mean_conf",
+      "estimate": -0.6,
+      "p_value": null,
+      "extra": {
+        "n_levels": 5
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "gaussian_noise: severity vs routing_entropy",
+      "estimate": -0.3,
+      "p_value": null,
+      "extra": {
+        "n_levels": 5
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "amplitude_scale: severity vs error_rate",
+      "estimate": -0.5,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "amplitude_scale: severity vs mean_conf",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "amplitude_scale: severity vs routing_entropy",
+      "estimate": -1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "baseline_shift: severity vs error_rate",
+      "estimate": -1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "baseline_shift: severity vs mean_conf",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "baseline_shift: severity vs routing_entropy",
+      "estimate": -1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "temporal_jitter: severity vs error_rate",
+      "estimate": -0.5,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "temporal_jitter: severity vs mean_conf",
+      "estimate": 0.5,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "family": "D12_robustness",
+      "test": "Spearman over severity levels",
+      "comparison": "temporal_jitter: severity vs routing_entropy",
+      "estimate": -1.0,
+      "p_value": null,
+      "extra": {
+        "n_levels": 3
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    }
+  ]
+}

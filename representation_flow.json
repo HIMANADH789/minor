@@ -1,0 +1,16 @@
+[
+    {
+        "stage": "Transport_Final",
+        "rank": 4,
+        "condition_number": 1.4144006967544556,
+        "entropy": 1.3752741813659668,
+        "wb_ratio": 1.9392852174974677
+    },
+    {
+        "stage": "Kernel_Train",
+        "rank": 4,
+        "condition_number": 1.0002174377441406,
+        "entropy": 1.3862943649291992,
+        "wb_ratio": 1.999967194694526
+    }
+]

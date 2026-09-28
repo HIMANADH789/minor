@@ -1,0 +1,23 @@
+Next Page Token = CfDJ8OasvsPNS7VMiSwiBm2YVpMDURtbfDwcPnYI5lID9LiaJqlQlfCSxe_tuEJXAXiTfsnGkuBSvXXRxVriJMV1FfysiuNrJlWpTxKpEpsIe6trid_go1-KIzbiahAmAjlU4QOdTdCQsCdA4YtZaULTObv20ID-W6K0POmrx93cQVowbPWRa2tve4rUliTrvpxbly3Yjuo
+name                                                                                size  creationDate                
+-------------------------------------------------------------------------------  -------  --------------------------  
+LICENSE                                                                             1068  2025-06-12 05:10:22.684000  
+README.md                                                                           1236  2025-06-12 05:10:22.744000  
+UCRArchive_2018/UCRArchive_2018/ACSF1/ACSF1_TEST.tsv                             1658436  2025-06-12 05:10:24.987000  
+UCRArchive_2018/UCRArchive_2018/ACSF1/ACSF1_TRAIN.tsv                            1656894  2025-06-12 05:10:25.037000  
+UCRArchive_2018/UCRArchive_2018/ACSF1/README.md                                     1365  2025-06-12 05:10:25.107000  
+UCRArchive_2018/UCRArchive_2018/ACSF1/desktop.ini                                    136  2025-06-12 05:10:25.027000  
+UCRArchive_2018/UCRArchive_2018/Adiac/Adiac_TEST.tsv                              759919  2025-06-12 05:10:25.082000  
+UCRArchive_2018/UCRArchive_2018/Adiac/Adiac_TRAIN.tsv                             758161  2025-06-12 05:10:25.143000  
+UCRArchive_2018/UCRArchive_2018/Adiac/README.md                                      916  2025-06-12 05:10:25.138000  
+UCRArchive_2018/UCRArchive_2018/Adiac/desktop.ini                                    136  2025-06-12 05:10:25.138000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteX/AllGestureWiimoteX_TEST.tsv   1584895  2025-06-12 05:10:25.166000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteX/AllGestureWiimoteX_TRAIN.tsv   679157  2025-06-12 05:10:25.179000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteX/README.md                        3017  2025-06-12 05:10:25.179000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteX/desktop.ini                       136  2025-06-12 05:10:25.166000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteY/AllGestureWiimoteY_TEST.tsv   1588431  2025-06-12 05:10:25.191000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteY/AllGestureWiimoteY_TRAIN.tsv   683118  2025-06-12 05:10:25.191000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteY/README.md                        3017  2025-06-12 05:10:25.179000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteY/desktop.ini                       136  2025-06-12 05:10:25.185000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteZ/AllGestureWiimoteZ_TEST.tsv   1534297  2025-06-12 05:10:25.213000  
+UCRArchive_2018/UCRArchive_2018/AllGestureWiimoteZ/AllGestureWiimoteZ_TRAIN.tsv   657690  2025-06-12 05:10:25.191000  

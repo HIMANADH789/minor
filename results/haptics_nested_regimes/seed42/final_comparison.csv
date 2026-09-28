@@ -1,0 +1,4 @@
+Method,Representation,H_dims,Test_MacroF1,Notes
+MiniROCKET,G,4998,0.5037,identity gate A
+Raw G+H,[G||H],4998,0.5500,identity gate B (flat K=8 bank)
+Hierarchical,[G||H_hier(L*=16)],149940,0.4586,intrinsic-depth demonstration

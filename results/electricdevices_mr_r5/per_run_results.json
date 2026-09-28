@@ -1,0 +1,127 @@
+[
+  {
+    "dataset": "ElectricDevices",
+    "model": "HERAMBA R5",
+    "seed": 42,
+    "val_macro_f1": 0.8797,
+    "test_macro_f1": 0.6669,
+    "selected_alpha": 1.623776739188721,
+    "accuracy": 0.7478,
+    "unique_pred_classes": 7,
+    "pred_class_balance": {
+      "0": 321,
+      "1": 1793,
+      "2": 811,
+      "3": 1229,
+      "4": 2561,
+      "5": 671,
+      "6": 325
+    },
+    "mr_val_macro_f1": 0.8874,
+    "mr_test_macro_f1": 0.6537,
+    "delta_heramba_minus_mr": 0.0132,
+    "regimes_deterministic": true,
+    "regime_hash_te": "c219f8a92573097c",
+    "context_train": {
+      "ssl_best_val": 0.726849,
+      "joint_best_val_mf1": 0.8471,
+      "avg_joint_losses": {
+        "commit": 195.64421,
+        "div": 91.89237,
+        "aux": 24.09617,
+        "ssl": 36.08342
+      }
+    },
+    "runtime_s": 720.4
+  },
+  {
+    "dataset": "ElectricDevices",
+    "model": "HERAMBA R5",
+    "seed": 43,
+    "val_macro_f1": 0.8814,
+    "test_macro_f1": 0.6688,
+    "selected_alpha": 1.623776739188721,
+    "accuracy": 0.7523,
+    "unique_pred_classes": 7,
+    "pred_class_balance": {
+      "0": 338,
+      "1": 1830,
+      "2": 819,
+      "3": 1231,
+      "4": 2520,
+      "5": 667,
+      "6": 306
+    },
+    "mr_val_macro_f1": 0.8874,
+    "mr_test_macro_f1": 0.6537,
+    "delta_heramba_minus_mr": 0.0151,
+    "regimes_deterministic": true,
+    "regime_hash_te": "443a171155a89a7a",
+    "context_train": {
+      "ssl_best_val": 0.707779,
+      "joint_best_val_mf1": 0.8426,
+      "avg_joint_losses": {
+        "commit": 275.03334,
+        "div": 102.77954,
+        "aux": 28.52156,
+        "ssl": 39.25984
+      }
+    },
+    "runtime_s": 1086.3
+  },
+  {
+    "dataset": "ElectricDevices",
+    "model": "HERAMBA R5",
+    "seed": 44,
+    "val_macro_f1": 0.8918,
+    "test_macro_f1": 0.6669,
+    "selected_alpha": 1.623776739188721,
+    "accuracy": 0.7497,
+    "unique_pred_classes": 7,
+    "pred_class_balance": {
+      "0": 320,
+      "1": 1789,
+      "2": 814,
+      "3": 1227,
+      "4": 2557,
+      "5": 707,
+      "6": 297
+    },
+    "mr_val_macro_f1": 0.8874,
+    "mr_test_macro_f1": 0.6537,
+    "delta_heramba_minus_mr": 0.0132,
+    "regimes_deterministic": true,
+    "regime_hash_te": "45557c62ccc5c76b",
+    "context_train": {
+      "ssl_best_val": 0.693663,
+      "joint_best_val_mf1": 0.8411,
+      "avg_joint_losses": {
+        "commit": 292.58035,
+        "div": 116.56676,
+        "aux": 31.44183,
+        "ssl": 42.27825
+      }
+    },
+    "runtime_s": 1315.3
+  },
+  {
+    "dataset": "ElectricDevices",
+    "model": "MiniRocket",
+    "seed": "ALL",
+    "val_macro_f1": 0.8874,
+    "test_macro_f1": 0.6537,
+    "selected_alpha": 4.281332398719396,
+    "accuracy": 0.74,
+    "unique_pred_classes": 7,
+    "pred_class_balance": {
+      "0": 252,
+      "1": 1770,
+      "2": 825,
+      "3": 1342,
+      "4": 2556,
+      "5": 668,
+      "6": 298
+    },
+    "runtime_s": 79.2
+  }
+]

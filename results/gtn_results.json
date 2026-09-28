@@ -1,0 +1,60 @@
+{
+    "model": "Gated-Transport-Network",
+    "accuracy": 0.882,
+    "macro_f1": 0.5721196081188251,
+    "class_recalls": [
+        0.9195205479452054,
+        0.8838526912181303,
+        0.6842105263157895,
+        0.48717948717948717,
+        0.2
+    ],
+    "confusion_matrix": [
+        [
+            537,
+            0,
+            6,
+            2,
+            39
+        ],
+        [
+            1,
+            312,
+            11,
+            23,
+            6
+        ],
+        [
+            1,
+            1,
+            13,
+            2,
+            2
+        ],
+        [
+            0,
+            16,
+            0,
+            19,
+            4
+        ],
+        [
+            0,
+            2,
+            2,
+            0,
+            1
+        ]
+    ],
+    "n_params": 231845,
+    "training_time_sec": 39.11589336395264,
+    "config": {
+        "K": 32,
+        "num_scales": 3,
+        "conv_hidden": 64,
+        "num_conv_blocks": 3,
+        "contrastive_epochs": 50,
+        "finetune_epochs": 150,
+        "augmentation": "geodesic (target=200)"
+    }
+}

@@ -1,0 +1,32 @@
+{
+ "R3-G": {
+  "val_macro_f1": 0.91193064700689,
+  "best_epoch": 309,
+  "epochs_run": 460,
+  "final_theta": -2.0,
+  "final_w": 0.11920291930437088,
+  "w_at_best_epoch": 0.11920291930437088,
+  "theta_init": -2.0,
+  "w_init": 0.11920291930437088
+ },
+ "R3-GH": {
+  "val_macro_f1": 0.9280834239827168,
+  "best_epoch": 89,
+  "epochs_run": 240,
+  "final_theta": -2.0,
+  "final_w": 0.11920291930437088,
+  "w_at_best_epoch": 0.11920291930437088,
+  "theta_init": -2.0,
+  "w_init": 0.11920291930437088
+ },
+ "R3": {
+  "val_macro_f1": 0.9296019850576892,
+  "best_epoch": 230,
+  "epochs_run": 381,
+  "final_theta": 3.7896382808685303,
+  "final_w": 0.9778958559036255,
+  "w_at_best_epoch": 0.9541967511177063,
+  "theta_init": -2.0,
+  "w_init": 0.11920291930437088
+ }
+}

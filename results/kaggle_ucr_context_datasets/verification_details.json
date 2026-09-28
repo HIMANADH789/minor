@@ -1,0 +1,296 @@
+[
+  {
+    "dataset": "GunPoint",
+    "kaggle_path": "data/kaggle/GunPoint",
+    "structure": {
+      "train": {
+        "kaggle_shape": [
+          50,
+          150
+        ],
+        "aeon_shape": [
+          50,
+          150
+        ],
+        "kaggle_label_dtype": "float64",
+        "aeon_label_dtype": "<U1",
+        "kaggle_labels": [
+          1.0,
+          2.0
+        ],
+        "aeon_labels": [
+          "1",
+          "2"
+        ],
+        "labels_match_via_mapping": true,
+        "n_match": true,
+        "T_match": true
+      },
+      "test": {
+        "kaggle_shape": [
+          150,
+          150
+        ],
+        "aeon_shape": [
+          150,
+          150
+        ],
+        "kaggle_label_dtype": "float64",
+        "aeon_label_dtype": "<U1",
+        "kaggle_labels": [
+          1.0,
+          2.0
+        ],
+        "aeon_labels": [
+          "1",
+          "2"
+        ],
+        "labels_match_via_mapping": true,
+        "n_match": true,
+        "T_match": true
+      }
+    },
+    "n_classes": 2,
+    "content_hashes": {
+      "train": {
+        "hash_identical_multiset": true,
+        "n_hash_match": 50,
+        "n_samples": 50
+      },
+      "test": {
+        "hash_identical_multiset": true,
+        "n_hash_match": 150,
+        "n_samples": 150
+      }
+    },
+    "numeric_nearest_row": {
+      "train": {
+        "n_compared": 50,
+        "n_exact_match": 50,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "all_rows_exactly_matched_once": true
+      },
+      "test": {
+        "n_compared": 150,
+        "n_exact_match": 150,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "all_rows_exactly_matched_once": true
+      }
+    },
+    "label_pairs_observed": [
+      [
+        1.0,
+        "1"
+      ],
+      [
+        2.0,
+        "2"
+      ]
+    ],
+    "verified": true,
+    "expected": {
+      "train": 50,
+      "test": 150,
+      "T": 150,
+      "n_classes": 2
+    }
+  },
+  {
+    "dataset": "ItalyPowerDemand",
+    "kaggle_path": "data/kaggle/ItalyPowerDemand",
+    "structure": {
+      "train": {
+        "kaggle_shape": [
+          67,
+          24
+        ],
+        "aeon_shape": [
+          67,
+          24
+        ],
+        "kaggle_label_dtype": "float64",
+        "aeon_label_dtype": "<U1",
+        "kaggle_labels": [
+          1.0,
+          2.0
+        ],
+        "aeon_labels": [
+          "1",
+          "2"
+        ],
+        "labels_match_via_mapping": true,
+        "n_match": true,
+        "T_match": true
+      },
+      "test": {
+        "kaggle_shape": [
+          1029,
+          24
+        ],
+        "aeon_shape": [
+          1029,
+          24
+        ],
+        "kaggle_label_dtype": "float64",
+        "aeon_label_dtype": "<U1",
+        "kaggle_labels": [
+          1.0,
+          2.0
+        ],
+        "aeon_labels": [
+          "1",
+          "2"
+        ],
+        "labels_match_via_mapping": true,
+        "n_match": true,
+        "T_match": true
+      }
+    },
+    "n_classes": 2,
+    "content_hashes": {
+      "train": {
+        "hash_identical_multiset": true,
+        "n_hash_match": 67,
+        "n_samples": 67
+      },
+      "test": {
+        "hash_identical_multiset": true,
+        "n_hash_match": 1029,
+        "n_samples": 1029
+      }
+    },
+    "numeric_nearest_row": {
+      "train": {
+        "n_compared": 67,
+        "n_exact_match": 67,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "all_rows_exactly_matched_once": true
+      },
+      "test": {
+        "n_compared": 1029,
+        "n_exact_match": 1029,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "all_rows_exactly_matched_once": true
+      }
+    },
+    "label_pairs_observed": [
+      [
+        1.0,
+        "1"
+      ],
+      [
+        2.0,
+        "2"
+      ]
+    ],
+    "verified": true,
+    "expected": {
+      "train": 67,
+      "test": 1029,
+      "T": 24,
+      "n_classes": 2
+    }
+  },
+  {
+    "dataset": "FordA",
+    "kaggle_path": "data/kaggle/FordA",
+    "structure": {
+      "train": {
+        "kaggle_shape": [
+          3601,
+          500
+        ],
+        "aeon_shape": [
+          3601,
+          500
+        ],
+        "kaggle_label_dtype": "float64",
+        "aeon_label_dtype": "<U2",
+        "kaggle_labels": [
+          -1.0,
+          1.0
+        ],
+        "aeon_labels": [
+          "-1",
+          "1"
+        ],
+        "labels_match_via_mapping": true,
+        "n_match": true,
+        "T_match": true
+      },
+      "test": {
+        "kaggle_shape": [
+          1320,
+          500
+        ],
+        "aeon_shape": [
+          1320,
+          500
+        ],
+        "kaggle_label_dtype": "float64",
+        "aeon_label_dtype": "<U2",
+        "kaggle_labels": [
+          -1.0,
+          1.0
+        ],
+        "aeon_labels": [
+          "-1",
+          "1"
+        ],
+        "labels_match_via_mapping": true,
+        "n_match": true,
+        "T_match": true
+      }
+    },
+    "n_classes": 2,
+    "content_hashes": {
+      "train": {
+        "hash_identical_multiset": true,
+        "n_hash_match": 3601,
+        "n_samples": 3601
+      },
+      "test": {
+        "hash_identical_multiset": true,
+        "n_hash_match": 1320,
+        "n_samples": 1320
+      }
+    },
+    "numeric_nearest_row": {
+      "train": {
+        "n_compared": 3601,
+        "n_exact_match": 3601,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "all_rows_exactly_matched_once": true
+      },
+      "test": {
+        "n_compared": 1320,
+        "n_exact_match": 1320,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "all_rows_exactly_matched_once": true
+      }
+    },
+    "label_pairs_observed": [
+      [
+        -1.0,
+        "-1"
+      ],
+      [
+        1.0,
+        "1"
+      ]
+    ],
+    "verified": true,
+    "expected": {
+      "train": 3601,
+      "test": 1320,
+      "T": 500,
+      "n_classes": 2
+    }
+  }
+]

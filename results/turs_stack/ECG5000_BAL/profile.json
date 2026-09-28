@@ -1,0 +1,11 @@
+{
+  "n_batches": 80,
+  "batch_size": 64,
+  "forward_ms_mean": 44.19,
+  "backward_ms_mean": 125.9,
+  "train_step_ms_mean": 170.86,
+  "samples_per_sec": 374.6,
+  "peak_vram_mb": 298.0,
+  "peak_vram_reserved_mb": 312.5,
+  "params": 164811
+}

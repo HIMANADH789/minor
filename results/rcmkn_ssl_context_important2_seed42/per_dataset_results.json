@@ -1,0 +1,421 @@
+{
+  "ECG5000_BAL": {
+    "dataset": "ECG5000_BAL",
+    "seed": 42,
+    "T": 140,
+    "split": {
+      "train": 5226,
+      "val": 923,
+      "test": 1000
+    },
+    "n_classes": 5,
+    "class_labels": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_features": 9996,
+    "K_regimes": 8,
+    "config": {
+      "encoder": {
+        "channels": [
+          32,
+          32,
+          64,
+          64
+        ],
+        "kernel_sizes": [
+          3,
+          5,
+          7,
+          9
+        ],
+        "dilations": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "d_model": 32,
+        "mask_ratio": 0.1,
+        "span_len": 16,
+        "batch_size": 8,
+        "ssl_epochs": 120,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "patience": 20
+      },
+      "vq": {
+        "K": 8,
+        "beta_vq": 0.25,
+        "lam_div": 0.01,
+        "ema_decay": 0.99,
+        "dead_threshold": 0.001,
+        "revival_patience": 100
+      },
+      "joint": {
+        "epochs": 60,
+        "lr": 0.0005,
+        "lambda_cls": 0.1,
+        "patience": 10,
+        "batch_size": 8
+      }
+    },
+    "drtn_checkpoint": {
+      "best_val_mf1": 0.8637547198969051,
+      "epoch": 21,
+      "source": "results/drtn_ecg5000_bal_3seed/seed42 (audited 3-seed)"
+    },
+    "results": {
+      "R0": {
+        "val_macro_f1": 0.9908,
+        "test_macro_f1": 0.6748,
+        "accuracy": 0.956,
+        "selected_alpha": 1.623776739188721,
+        "feature_dim": 9996,
+        "ridge_fit_s": 29.07,
+        "class_f1s": [
+          0.9983,
+          0.9499,
+          0.6,
+          0.5758,
+          0.25
+        ],
+        "mechanistic_h": {
+          "mean_H": 0.03234899808118366,
+          "median_H": 0.02446078509092331,
+          "max_H": 0.5625,
+          "fraction_nonzero": 0.8598745401559551
+        },
+        "regime_diagnostics": {
+          "train": {
+            "active_codes": 8,
+            "normalized_entropy": 0.8489533058760332,
+            "perplexity": 5.843610085529541,
+            "dominant_fraction": 0.36621285691053135,
+            "usage": [
+              0.06208558882977488,
+              0.045962177357526196,
+              0.21902632251469462,
+              0.36621285691053135,
+              0.04244360290871919,
+              0.08989615036126664,
+              0.041364449503984387,
+              0.1330088516135028
+            ],
+            "counts": [
+              53447.0,
+              39567.0,
+              188551.0,
+              315258.0,
+              36538.0,
+              77388.0,
+              35609.0,
+              114502.0
+            ]
+          }
+        }
+      },
+      "R2": {
+        "val_macro_f1": 0.9935,
+        "test_macro_f1": 0.6508,
+        "accuracy": 0.95,
+        "selected_alpha": 1.623776739188721,
+        "feature_dim": 9996,
+        "ridge_fit_s": 22.14,
+        "class_f1s": [
+          0.9966,
+          0.9425,
+          0.5128,
+          0.5797,
+          0.2222
+        ],
+        "mechanistic_h": {
+          "mean_H": 0.02786474041719933,
+          "median_H": 0.020847883075475693,
+          "max_H": 0.5625,
+          "fraction_nonzero": 0.8749757831250894
+        },
+        "regime_diagnostics": {
+          "train": {
+            "active_codes": 8,
+            "normalized_entropy": 0.9806845159860252,
+            "perplexity": 7.685044149168148,
+            "dominant_fraction": 0.1766953976256302,
+            "usage": [
+              0.12743419371326348,
+              0.1527751318448993,
+              0.1766953976256302,
+              0.05686058127918593,
+              0.1357073159398741,
+              0.09497246939107404,
+              0.1287781985456404,
+              0.12677671166043258
+            ],
+            "counts": [
+              109703.0,
+              131518.0,
+              152110.0,
+              48949.0,
+              116825.0,
+              81758.0,
+              110860.0,
+              109137.0
+            ]
+          },
+          "test": {
+            "active_codes": 8,
+            "normalized_entropy": 0.985609232139112,
+            "perplexity": 7.764148417005831,
+            "dominant_fraction": 0.16110714285714287,
+            "usage": [
+              0.11234285714285715,
+              0.15219285714285713,
+              0.1409857142857143,
+              0.06623571428571429,
+              0.16110714285714287,
+              0.10476428571428571,
+              0.14739285714285713,
+              0.11497857142857143
+            ],
+            "counts": [
+              15728.0,
+              21307.0,
+              19738.0,
+              9273.0,
+              22555.0,
+              14667.0,
+              20635.0,
+              16097.0
+            ]
+          }
+        },
+        "context_train": {
+          "ssl_best_val": 0.157801,
+          "joint_best_val_mf1": 0.939,
+          "avg_joint_losses": {
+            "commit": 134.30146,
+            "div": 118.69028,
+            "aux": 13.17293,
+            "ssl": 10.0879
+          }
+        },
+        "params": {
+          "encoder": 59072,
+          "decoder": 2177,
+          "aux_head": 165,
+          "vq_trainable": 0,
+          "total_trainable": 61414
+        }
+      },
+      "C1": {
+        "val_macro_f1": 0.9868,
+        "test_macro_f1": 0.6036,
+        "accuracy": 0.946,
+        "selected_alpha": 1.623776739188721,
+        "feature_dim": 9996,
+        "ridge_fit_s": 22.01,
+        "class_f1s": [
+          0.9974,
+          0.9422,
+          0.5641,
+          0.5143,
+          0.0
+        ],
+        "mechanistic_h": {
+          "mean_H": 0.009760695352539461,
+          "median_H": 0.006275692256167531,
+          "max_H": 0.5625,
+          "fraction_nonzero": 0.8773266990972678
+        }
+      },
+      "C2": {
+        "val_macro_f1": 0.9843,
+        "test_macro_f1": 0.6092,
+        "accuracy": 0.947,
+        "selected_alpha": 1.623776739188721,
+        "feature_dim": 9996,
+        "ridge_fit_s": 22.13,
+        "class_f1s": [
+          0.9957,
+          0.9435,
+          0.5641,
+          0.5429,
+          0.0
+        ],
+        "mechanistic_h": {
+          "mean_H": 0.009722138304187765,
+          "median_H": 0.006254174746572971,
+          "max_H": 0.5625,
+          "fraction_nonzero": 0.8772807220139641
+        }
+      }
+    },
+    "deltas": {
+      "R2-R0": -0.024,
+      "R2-C1": 0.0472,
+      "R2-C2": 0.0416,
+      "C1-C2": -0.0056
+    },
+    "mechanistic_h": {
+      "R0": {
+        "mean_H": 0.03234899808118366,
+        "median_H": 0.02446078509092331,
+        "max_H": 0.5625,
+        "fraction_nonzero": 0.8598745401559551
+      },
+      "R2": {
+        "mean_H": 0.02786474041719933,
+        "median_H": 0.020847883075475693,
+        "max_H": 0.5625,
+        "fraction_nonzero": 0.8749757831250894
+      },
+      "C1": {
+        "mean_H": 0.009760695352539461,
+        "median_H": 0.006275692256167531,
+        "max_H": 0.5625,
+        "fraction_nonzero": 0.8773266990972678
+      },
+      "C2": {
+        "mean_H": 0.009722138304187765,
+        "median_H": 0.006254174746572971,
+        "max_H": 0.5625,
+        "fraction_nonzero": 0.8772807220139641
+      }
+    },
+    "regime_array_audit": {
+      "C1": {
+        "hash_trainva": "20d0214c9f5bc4bd",
+        "hash_test": "eacfef8d2decb4c0",
+        "shares_memory_with_r2": false
+      },
+      "C2": {
+        "hash_trainva": "142931e179fc6b07",
+        "hash_test": "777f2a3497a23e02",
+        "shares_memory_with_r2": false
+      },
+      "C1_vs_C2": {
+        "differing_positions": 686387,
+        "fraction": 0.7973270915131381,
+        "identical": false
+      }
+    },
+    "audits": {
+      "audit1_config": {
+        "expected": {
+          "T": 140,
+          "n_classes": 5,
+          "train": 5226,
+          "val": 923,
+          "test": 1000
+        },
+        "actual": {
+          "T": 140,
+          "n_classes": 5,
+          "train": 5226,
+          "val": 923,
+          "test": 1000
+        },
+        "pass": true
+      },
+      "audit2_extractor_identity": {
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0
+      },
+      "r0_reference": {
+        "test_macro_f1": 0.6748,
+        "drtn_ckpt": {
+          "best_val_mf1": 0.8637547198969051,
+          "epoch": 21,
+          "source": "results/drtn_ecg5000_bal_3seed/seed42 (audited 3-seed)"
+        }
+      },
+      "r0_gate": {
+        "reference": 0.6748,
+        "pass": true
+      },
+      "audit8_causality_maxdiff": 0.0,
+      "regime_diagnostics": {
+        "train": {
+          "active_codes": 8,
+          "normalized_entropy": 0.9806845159860252,
+          "perplexity": 7.685044149168148,
+          "dominant_fraction": 0.1766953976256302,
+          "usage": [
+            0.12743419371326348,
+            0.1527751318448993,
+            0.1766953976256302,
+            0.05686058127918593,
+            0.1357073159398741,
+            0.09497246939107404,
+            0.1287781985456404,
+            0.12677671166043258
+          ],
+          "counts": [
+            109703.0,
+            131518.0,
+            152110.0,
+            48949.0,
+            116825.0,
+            81758.0,
+            110860.0,
+            109137.0
+          ]
+        },
+        "test": {
+          "active_codes": 8,
+          "normalized_entropy": 0.985609232139112,
+          "perplexity": 7.764148417005831,
+          "dominant_fraction": 0.16110714285714287,
+          "usage": [
+            0.11234285714285715,
+            0.15219285714285713,
+            0.1409857142857143,
+            0.06623571428571429,
+            0.16110714285714287,
+            0.10476428571428571,
+            0.14739285714285713,
+            0.11497857142857143
+          ],
+          "counts": [
+            15728.0,
+            21307.0,
+            19738.0,
+            9273.0,
+            22555.0,
+            14667.0,
+            20635.0,
+            16097.0
+          ]
+        }
+      },
+      "audit13_14_occupancy_failures": 0,
+      "audit15_16_regime_arrays": {
+        "C1": {
+          "hash_trainva": "20d0214c9f5bc4bd",
+          "hash_test": "eacfef8d2decb4c0",
+          "shares_memory_with_r2": false
+        },
+        "C2": {
+          "hash_trainva": "142931e179fc6b07",
+          "hash_test": "777f2a3497a23e02",
+          "shares_memory_with_r2": false
+        },
+        "C1_vs_C2": {
+          "differing_positions": 686387,
+          "fraction": 0.7973270915131381,
+          "identical": false
+        }
+      },
+      "audit6_independent_h_recompute_maxdiff": 2.712090670098366e-09,
+      "audit7_valid_region": {
+        "flipped_out_of_mask": 170328,
+        "h_changed": false,
+        "pass": true
+      }
+    },
+    "runtime_s": 1792.5
+  }
+}

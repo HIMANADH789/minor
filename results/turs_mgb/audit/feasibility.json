@@ -1,0 +1,19 @@
+{
+  "shared_bank_M4096": {
+    "status": "OK",
+    "feature_dim": 8192,
+    "s_per_256_samples_T1024": 0.22,
+    "projected_full_split_CWRU_BAL_train_s": 2.3,
+    "device": "cuda"
+  },
+  "transport_views_4x": {
+    "status": "OK",
+    "shape": [
+      256,
+      4,
+      1024
+    ],
+    "s_per_256_samples_T1024": 0.24,
+    "projected_full_split_CWRU_BAL_train_s": 2.4
+  }
+}

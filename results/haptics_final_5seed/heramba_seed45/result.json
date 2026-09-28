@@ -1,0 +1,124 @@
+{
+  "seed": 45,
+  "results": {
+    "val_macro_f1": 0.9014,
+    "test_macro_f1": 0.5323,
+    "accuracy": 0.5487,
+    "selected_alpha": 4.281332398719396,
+    "feature_dim": 9996,
+    "class_f1s": [
+      0.3544,
+      0.5738,
+      0.5821,
+      0.5401,
+      0.6111
+    ]
+  },
+  "delta_vs_M0": 0.0349,
+  "runtime_s": 20.6,
+  "vq_diagnostics": {
+    "active_codes": 7,
+    "occupancy": [
+      0.11860163645877932,
+      0.0,
+      0.08042552685409829,
+      0.2778887778887779,
+      0.05739498596641454,
+      0.24107737500594645,
+      0.10419639883925598,
+      0.12041529898672756
+    ],
+    "entropy_nats": 1.808932,
+    "normalized_entropy": 0.8699125927036935,
+    "perplexity": 6.103927295178187,
+    "dominant_fraction": 0.2778887778887779,
+    "trainva_active_codes": 7,
+    "trainva_perplexity": 6.088281775613094,
+    "revival_log_len": 1,
+    "note": "code identities are NOT semantically comparable across seeds"
+  },
+  "h_diagnostics": {
+    "mean": 0.03560313321764822,
+    "std": 0.03162758240090527,
+    "min": 0.0,
+    "max": 0.25071319937705994,
+    "zero_fraction": 0.0531244965518675
+  },
+  "context_train": {
+    "ssl_best_val": 0.03208,
+    "joint_best_val_mf1": 0.2286,
+    "avg_joint_losses": {
+      "commit": 0.34931,
+      "div": 19.39208,
+      "aux": 17.45778,
+      "ssl": 0.82226
+    }
+  },
+  "params": {
+    "encoder": 0,
+    "decoder": 0,
+    "aux_head": 0,
+    "vq_trainable": 0,
+    "total_trainable": 0
+  },
+  "audits": {
+    "audit8_regimes_deterministic": {
+      "trainva": true,
+      "test": true,
+      "pass": true
+    },
+    "audit9_K_equals_8": {
+      "K": 8,
+      "pass": true
+    },
+    "audit10_H_formula_recompute": {
+      "max_abs_diff": 7.81e-10,
+      "pass": true
+    },
+    "audit11_H_budget_4998": {
+      "H_shape": [
+        308,
+        4998
+      ],
+      "pass": true
+    },
+    "audit12_final_dim_9996": {
+      "G": 4998,
+      "H": 4998,
+      "total": 9996,
+      "pass": true
+    },
+    "audit13_14_15_no_gate_no_mod_no_hydra": {
+      "architecture": "X_R2 = [G || H] only",
+      "learned_gating": false,
+      "raw_response_modulation": false,
+      "hydra_features": false,
+      "pass": true
+    },
+    "audit16_ridge_config": {
+      "classifier": "RidgeClassifierCV",
+      "alphas": "logspace(-4,4,20)",
+      "fit": "train+val; alpha selected on internal LOO-CV",
+      "pass": true
+    },
+    "audit17_no_test_in_selection": {
+      "ssl_val": "validation masked-MSE early stopping",
+      "joint_val": "validation macro-F1 checkpoint selection",
+      "alpha": "RidgeClassifierCV LOO on train+val only",
+      "pass": true
+    },
+    "audit18_single_test_evaluation": {
+      "evaluations": 1,
+      "pass": true
+    }
+  },
+  "regime_hash_trva": "1d1408aab54376c3",
+  "regime_hash_te": "e2486b5d2b7ec882",
+  "minirocket": {
+    "random_state": 42,
+    "n_features": 9996,
+    "n_global": 4998,
+    "n_het": 4998,
+    "frozen_representation_identity": "fixed across seeds"
+  }
+}

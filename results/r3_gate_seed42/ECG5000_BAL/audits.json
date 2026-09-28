@@ -1,0 +1,96 @@
+{
+ "audit1_dataset_identity": {
+  "expected": {
+   "train": 5226,
+   "val": 923,
+   "test": 1000,
+   "T": 140,
+   "n_classes": 5
+  },
+  "actual": {
+   "train": 5226,
+   "val": 923,
+   "test": 1000,
+   "T": 140,
+   "n_classes": 5
+  },
+  "pass": true
+ },
+ "audit2_znorm_identity": {
+  "max_abs_diff": 0.0,
+  "pass": true
+ },
+ "audit3_ckpt_provenance": {
+  "expected_hash": "f2eda1b2ff0bbe99",
+  "actual_hash": "f2eda1b2ff0bbe99",
+  "pass": true
+ },
+ "audit4_regime_determinism": {
+  "byte_identical": true,
+  "hash_trva": "a32d17e0ab4abbd6",
+  "hash_te": "bd6881d989e9fc18",
+  "pass": true
+ },
+ "audit5_minirocket_identity": {
+  "max_abs_diff": 0.0,
+  "pass": true
+ },
+ "audit6_H_formula": {
+  "max_diff": 3.2313796291538743e-09,
+  "pass": true
+ },
+ "audit7_9_dimensions": {
+  "G": 4998,
+  "H": 4998,
+  "total_gh": 9996,
+  "pass": true
+ },
+ "audit17_feature_determinism": {
+  "identical": true,
+  "pass": true
+ },
+ "audit18_frozen_params": {
+  "all_frozen": true,
+  "pass": true
+ },
+ "audit10_12_gate": {
+  "theta_is_scalar": true,
+  "w_in_0_1": true,
+  "trainable_params": [
+   "theta",
+   "W",
+   "b"
+  ],
+  "init_below_half": true,
+  "pass": true
+ },
+ "audit15_loss_form": {
+  "lambda_clf": 0.0001,
+  "lambda_w": 0.001,
+  "gate_penalty_matches": true,
+  "pass": true
+ },
+ "audit13_14_variant_identity": {
+  "w_at_theta10": 1.0,
+  "w_at_theta_minus60": 8.75651089272076e-27,
+  "GH_identity": true,
+  "G_identity": true,
+  "pass": true
+ },
+ "audit20_single_test_eval": {
+  "models_evaluated_once": [
+   "R3-G",
+   "R3-GH",
+   "R3"
+  ],
+  "pass": true
+ },
+ "audit16_no_test_leakage": {
+  "train_rows": 5226,
+  "val_rows": 923,
+  "test_rows": 1000,
+  "feature_fit_rows": 5226,
+  "note": "MiniRocket fit on train rows only; regimes/encoder frozen; checkpoint selection by val only; test touched only in STEP 11 after selection",
+  "pass": true
+ }
+}

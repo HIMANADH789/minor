@@ -1,0 +1,19 @@
+{
+  "name": "ItalyPowerDemand",
+  "source_path": "data\\kaggle\\ItalyPowerDemand",
+  "n_classes": 2,
+  "L": 24,
+  "label_set_original": [
+    1,
+    2
+  ],
+  "label_map": {
+    "1": 0,
+    "2": 1
+  },
+  "val_source": "stratified_15pct_of_train_seed42",
+  "file_sha256": {
+    "ItalyPowerDemand_TRAIN.tsv": "fab46ef99232ada65773ed89b131954a91ec1da69803159cb1566f320dbaf22e",
+    "ItalyPowerDemand_TEST.tsv": "ab22aa53de4ef55f2e2bcbf0518565704aeec8d76f48ef1180903bf5814c47fc"
+  }
+}

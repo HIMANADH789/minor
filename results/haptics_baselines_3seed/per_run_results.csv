@@ -1,0 +1,13 @@
+model,seed,best_val_macro_f1,test_macro_f1,test_accuracy,test_weighted_f1,best_epoch,params,train_time_s,source,audit_pass
+InceptionTime,42,0.0714,0.0636,0.1883,0.0598,1,404197,2.46,reused_external_stack_seed42,True
+InceptionTime,43,0.2909,0.2475,0.3084,0.2519,15,404197,4.06,fresh_run_neural_baseline,True
+InceptionTime,44,0.1407,0.0945,0.2208,0.0963,10,404197,3.74,fresh_run_neural_baseline,True
+FCN,42,0.0714,0.0634,0.1883,0.0597,2,66885,0.33,reused_external_stack_seed42,True
+FCN,43,0.1341,0.1302,0.2403,0.1307,7,66885,0.39,fresh_run_neural_baseline,True
+FCN,44,0.0714,0.0637,0.1883,0.06,1,66885,0.2,fresh_run_neural_baseline,True
+ResNet1D,42,0.2333,0.1512,0.2662,0.1608,6,168037,1.45,reused_external_stack_seed42,True
+ResNet1D,43,0.0714,0.0715,0.2175,0.0777,1,168037,0.6,fresh_run_neural_baseline,True
+ResNet1D,44,0.0741,0.0693,0.1851,0.0665,1,168037,0.58,fresh_run_neural_baseline,True
+PatchTST,42,0.1923,0.1692,0.289,0.1682,12,105605,0.6,reused_external_stack_seed42,True
+PatchTST,43,0.1523,0.1339,0.237,0.1335,7,105605,0.38,fresh_run_neural_baseline,True
+PatchTST,44,0.0714,0.0756,0.211,0.0781,1,105605,0.19,fresh_run_neural_baseline,True

@@ -1,0 +1,61 @@
+comparison,dataset,estimate,family,p_value,q_value,significant,test
+A(t) vs local_variance,CWRU_BAL,0.017701142684798162,D1_pattern_activity,0.013993003498250875,0.03498250874562719,True,Spearman + permutation
+A(t) vs local_energy,CWRU_BAL,0.017701142684798162,D1_pattern_activity,0.0074962518740629685,0.03498250874562719,True,Spearman + permutation
+A(t) vs first_diff,CWRU_BAL,0.013910676220490945,D1_pattern_activity,0.046476761619190406,0.07746126936531735,False,Spearman + permutation
+A(t) vs skewness,CWRU_BAL,-0.0070379114609504636,D1_pattern_activity,0.30934532733633185,0.30934532733633185,False,Spearman + permutation
+A(t) vs kurtosis,CWRU_BAL,-0.009113484049158415,D1_pattern_activity,0.19140429785107446,0.23925537231384308,False,Spearman + permutation
+w_standard(t) vs local_variance,CWRU_BAL,-0.2594495815403689,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_standard(t) vs local_energy,CWRU_BAL,-0.2594495815403689,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_standard(t) vs first_diff,CWRU_BAL,-0.055761700697457985,D2_routing_validity,0.009495252373813094,0.013405062174794957,True,Spearman + permutation
+w_standard(t) vs skewness,CWRU_BAL,-0.015869221318164647,D2_routing_validity,0.43928035982008995,0.43928035982009,False,Spearman + permutation
+w_standard(t) vs kurtosis,CWRU_BAL,0.2746289879651584,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_standard(t) vs lag_disagreement,CWRU_BAL,-0.5004442064333958,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_tail(t) vs local_variance,CWRU_BAL,-0.2490541167493964,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_tail(t) vs local_energy,CWRU_BAL,-0.2490541167493964,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_tail(t) vs first_diff,CWRU_BAL,-0.05202678947918528,D2_routing_validity,0.013493253373313344,0.017991004497751126,True,Spearman + permutation
+w_tail(t) vs skewness,CWRU_BAL,-0.016691089090465613,D2_routing_validity,0.42128935532233885,0.43928035982009,False,Spearman + permutation
+w_tail(t) vs kurtosis,CWRU_BAL,0.262928842278149,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_tail(t) vs lag_disagreement,CWRU_BAL,-0.482727161027322,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_fine(t) vs local_variance,CWRU_BAL,-0.23711497672051915,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_fine(t) vs local_energy,CWRU_BAL,-0.23711497672051915,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_fine(t) vs first_diff,CWRU_BAL,-0.04600041608492438,D2_routing_validity,0.034482758620689655,0.043557168784029036,True,Spearman + permutation
+w_fine(t) vs skewness,CWRU_BAL,-0.01829604743974076,D2_routing_validity,0.37831084457771114,0.4127027395393212,False,Spearman + permutation
+w_fine(t) vs kurtosis,CWRU_BAL,0.2535010207295976,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_fine(t) vs lag_disagreement,CWRU_BAL,-0.4624862748023496,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_multilag(t) vs local_variance,CWRU_BAL,-0.22654603261459294,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_multilag(t) vs local_energy,CWRU_BAL,-0.22654603261459294,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_multilag(t) vs first_diff,CWRU_BAL,-0.04171883437076929,D2_routing_validity,0.04397801099450275,0.052773613193403304,False,Spearman + permutation
+w_multilag(t) vs skewness,CWRU_BAL,-0.019328052183187363,D2_routing_validity,0.36481759120439783,0.4127027395393212,False,Spearman + permutation
+w_multilag(t) vs kurtosis,CWRU_BAL,0.24593368985876274,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+w_multilag(t) vs lag_disagreement,CWRU_BAL,-0.44164623336576986,D2_routing_validity,0.0004997501249375312,0.0007496251874062968,True,Spearman + permutation
+shuffled vs actual routing accuracy,CWRU_BAL,-0.3262786596119929,D3_routing_intervention,6.92836204376785e-39,6.92836204376785e-39,True,McNemar paired
+targeted vs random region conf-drop,CWRU_BAL,0.06973899155855179,D4_routing_faithfulness,0.0004997501249375312,0.0004997501249375312,True,paired permutation
+gaussian_noise: severity vs error_rate,CWRU_BAL,0.9999999999999999,D5_degradation,,1.0,False,Spearman over severity levels
+gaussian_noise: severity vs mean_conf,CWRU_BAL,-0.8999999999999998,D5_degradation,,1.0,False,Spearman over severity levels
+gaussian_noise: severity vs final_entropy,CWRU_BAL,0.8999999999999998,D5_degradation,,1.0,False,Spearman over severity levels
+gaussian_noise: severity vs routing_entropy,CWRU_BAL,0.9999999999999999,D5_degradation,,1.0,False,Spearman over severity levels
+amplitude_scale: severity vs error_rate,CWRU_BAL,-0.5,D5_degradation,,1.0,False,Spearman over severity levels
+amplitude_scale: severity vs mean_conf,CWRU_BAL,1.0,D5_degradation,,1.0,False,Spearman over severity levels
+amplitude_scale: severity vs final_entropy,CWRU_BAL,-1.0,D5_degradation,,1.0,False,Spearman over severity levels
+amplitude_scale: severity vs routing_entropy,CWRU_BAL,-1.0,D5_degradation,,1.0,False,Spearman over severity levels
+baseline_shift: severity vs error_rate,CWRU_BAL,1.0,D5_degradation,,1.0,False,Spearman over severity levels
+baseline_shift: severity vs mean_conf,CWRU_BAL,0.5,D5_degradation,,1.0,False,Spearman over severity levels
+baseline_shift: severity vs final_entropy,CWRU_BAL,-1.0,D5_degradation,,1.0,False,Spearman over severity levels
+baseline_shift: severity vs routing_entropy,CWRU_BAL,-1.0,D5_degradation,,1.0,False,Spearman over severity levels
+temporal_jitter: severity vs error_rate,CWRU_BAL,-0.5,D5_degradation,,1.0,False,Spearman over severity levels
+temporal_jitter: severity vs mean_conf,CWRU_BAL,-1.0,D5_degradation,,1.0,False,Spearman over severity levels
+temporal_jitter: severity vs final_entropy,CWRU_BAL,-0.5,D5_degradation,,1.0,False,Spearman over severity levels
+temporal_jitter: severity vs routing_entropy,CWRU_BAL,1.0,D5_degradation,,1.0,False,Spearman over severity levels
+localized_mask: severity vs error_rate,CWRU_BAL,1.0,D5_degradation,,1.0,False,Spearman over severity levels
+localized_mask: severity vs mean_conf,CWRU_BAL,1.0,D5_degradation,,1.0,False,Spearman over severity levels
+localized_mask: severity vs final_entropy,CWRU_BAL,1.0,D5_degradation,,1.0,False,Spearman over severity levels
+localized_mask: severity vs routing_entropy,CWRU_BAL,1.0,D5_degradation,,1.0,False,Spearman over severity levels
+routing_entropy error detection,CWRU_BAL,0.5155033616418967,D6_uncertainty,,1.0,False,bootstrap AUROC
+confidence error detection,CWRU_BAL,0.7844125973106865,D6_uncertainty,,1.0,False,bootstrap AUROC
+amp_scale_0.95: routing cosine,CWRU_BAL,0.9998738765716553,D7_routing_stability,,1.0,False,"descriptive (no test), CI via bootstrap"
+amp_scale_1.05: routing cosine,CWRU_BAL,0.9998855590820312,D7_routing_stability,,1.0,False,"descriptive (no test), CI via bootstrap"
+baseline_0.1sd: routing cosine,CWRU_BAL,0.9826077222824097,D7_routing_stability,,1.0,False,"descriptive (no test), CI via bootstrap"
+noise_0.02: routing cosine,CWRU_BAL,0.9999781847000122,D7_routing_stability,,1.0,False,"descriptive (no test), CI via bootstrap"
+jitter_2: routing cosine,CWRU_BAL,0.9996998310089111,D7_routing_stability,,1.0,False,"descriptive (no test), CI via bootstrap"
+routing shift under targeted pattern modification,CWRU_BAL,0.0031267893500626087,D8_counterfactual_routing,,1.0,False,descriptive effect
+routing_entropy vs best raw baseline,CWRU_BAL,-0.012252300070771383,D9_baselines,,1.0,False,bootstrap AUROC

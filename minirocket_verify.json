@@ -1,0 +1,29 @@
+{
+ "ECG5000_UNBAL": {
+  "n_features": 9996,
+  "val": 0.6405,
+  "test": 0.5938,
+  "ref": 0.5938,
+  "match": true,
+  "alpha": 11.288378916846883,
+  "secs": 16.1
+ },
+ "CWRU_UNBAL": {
+  "n_features": 9996,
+  "val": 0.9804,
+  "test": 0.9917,
+  "ref": 0.9917,
+  "match": true,
+  "alpha": 0.23357214690901212,
+  "secs": 2.1
+ },
+ "CWRU_BAL": {
+  "n_features": 9996,
+  "val": 0.9896,
+  "test": 0.9947,
+  "ref": 0.9947,
+  "match": true,
+  "alpha": 0.615848211066026,
+  "secs": 9.9
+ }
+}

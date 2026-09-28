@@ -1,0 +1,12 @@
+{
+  "all_pass": true,
+  "checks": {
+    "canonical_splits_reused": "PASS \u2014 loaders/splits identical to external_stack_generalization",
+    "val_from_train_only": "PASS \u2014 provided val (ES) / 15% of train seed 42 (Haptics, Phoneme)",
+    "test_evaluated_once": "PASS \u2014 single test eval per variant after freezing",
+    "minirocket_fit_train_only": "PASS \u2014 biases/dilations fitted on TRAIN only (aeon fit_transform)",
+    "no_test_selection": "PASS \u2014 no test-conditioned choices; M4 is diagnostic-only and excluded from primary",
+    "no_new_kernels": "PASS \u2014 same fitted parameters verified by bit-equal global block (<1e-12) on all splits",
+    "preprocessing_fits_no_test_stats": "PASS \u2014 per-sample z-norm is sample-local; no fitted statistics"
+  }
+}

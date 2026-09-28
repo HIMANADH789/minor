@@ -1,0 +1,48 @@
+{
+  "heterogeneity": {
+    "M1_train": {
+      "mean": 0.01954422056512159,
+      "std": 0.02417227694785553,
+      "nonzero_fraction": 0.9606783253842077,
+      "max": 0.390625,
+      "exactly_zero_fraction": 0.039321674615792265
+    },
+    "M1_test": {
+      "mean": 0.019227637039221437,
+      "std": 0.023026684447855435,
+      "nonzero_fraction": 0.9626153203897593,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.03738467961024072
+    },
+    "M2_test": {
+      "mean": 0.0020735116500365225,
+      "std": 0.00991340209123421,
+      "nonzero_fraction": 0.9666922676243493,
+      "max": 0.765625,
+      "exactly_zero_fraction": 0.033307732375650684
+    },
+    "M3_test": {
+      "mean": 0.0016530420510706143,
+      "std": 0.007013487101989304,
+      "nonzero_fraction": 0.9664685494450945,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.03353145055490551
+    }
+  },
+  "features": {
+    "ppv_global_mean": 0.5002145171165466,
+    "ppv_global_std": 0.29855722188949585,
+    "ppv_global_nonzero": 0.9843466922634032,
+    "raw_vs_aeon_max_diff": 0.0
+  },
+  "audits": {
+    "heterogeneity_nonzero_fraction_M1": 0.9626153203897593,
+    "independent_recompute_max_abs_err": 5.706030665325601e-09,
+    "m2_global_occupancy_max_abs_diff": 0.0009026604729729937,
+    "m3_per_sample_hist_max_abs_diff": 0.0,
+    "m3_alignment_changed_fraction": 1.0,
+    "drtn_frozen_verified": true,
+    "m2_deterministic": true,
+    "m3_deterministic": true
+  }
+}

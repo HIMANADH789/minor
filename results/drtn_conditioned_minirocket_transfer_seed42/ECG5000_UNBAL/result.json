@@ -1,0 +1,173 @@
+{
+  "dataset": "ECG5000_UNBAL",
+  "seed": 42,
+  "T": 140,
+  "n_classes": 5,
+  "split": {
+    "train": 3400,
+    "val": 600,
+    "test": 1000
+  },
+  "val_source": "stratified_15pct_of_train_seed42",
+  "provenance": "data/ecg5000_resplit.npz",
+  "n_features": 9996,
+  "K_regimes": 8,
+  "min_occupancy": 0.01,
+  "results": {
+    "M0": {
+      "test_macro_f1": 0.5938,
+      "val_macro_f1_diag": 0.8224,
+      "accuracy": 0.954,
+      "selected_alpha": 11.288378916846883,
+      "class_f1s": [
+        0.9949,
+        0.9494,
+        0.5161,
+        0.5085,
+        0.0
+      ],
+      "ridge_fit_s": 15.08
+    },
+    "M1": {
+      "test_macro_f1": 0.5859,
+      "val_macro_f1_diag": 0.7153,
+      "accuracy": 0.954,
+      "selected_alpha": 4.281332398719396,
+      "class_f1s": [
+        0.9932,
+        0.9495,
+        0.4444,
+        0.5424,
+        0.0
+      ],
+      "ridge_fit_s": 11.58
+    },
+    "M2": {
+      "test_macro_f1": 0.5716,
+      "val_macro_f1_diag": 0.6846,
+      "accuracy": 0.952,
+      "selected_alpha": 4.281332398719396,
+      "class_f1s": [
+        0.9932,
+        0.9468,
+        0.3846,
+        0.5333,
+        0.0
+      ],
+      "ridge_fit_s": 12.15
+    },
+    "M3": {
+      "test_macro_f1": 0.5565,
+      "val_macro_f1_diag": 0.6846,
+      "accuracy": 0.948,
+      "selected_alpha": 4.281332398719396,
+      "class_f1s": [
+        0.9915,
+        0.9428,
+        0.4,
+        0.4483,
+        0.0
+      ],
+      "ridge_fit_s": 11.37
+    }
+  },
+  "deltas": {
+    "M1_M0": -0.0079,
+    "M1_M2": 0.0143,
+    "M1_M3": 0.0294
+  },
+  "category": "NEGATIVE",
+  "canonical_reproduction": {
+    "reference_mf1": 0.5938,
+    "reproduction_delta": 0.0,
+    "passed": true
+  },
+  "complementarity": {
+    "both_correct": 950,
+    "M0_only_correct": 4,
+    "M1_only_correct": 4,
+    "both_wrong": 42,
+    "n_samples": 1000
+  },
+  "regime_diagnostics": {
+    "test": {
+      "usage": [
+        0.2249,
+        0.19181428571428571,
+        0.22683571428571428,
+        0.06155,
+        0.0,
+        0.08218571428571429,
+        0.10802857142857143,
+        0.10468571428571428
+      ],
+      "counts": [
+        31486.0,
+        26854.0,
+        31757.0,
+        8617.0,
+        0.0,
+        11506.0,
+        15124.0,
+        14656.0
+      ],
+      "entropy": 1.8424350719831353,
+      "normalized_entropy": 0.8860239805033233,
+      "perplexity": 6.311889467998313,
+      "active_codes": 7,
+      "dominant_fraction": 0.22683571428571428
+    },
+    "drtn": {
+      "best_val_mf1": 0.6594942409824442,
+      "epoch": 18,
+      "source": "checkpoint"
+    },
+    "drtn_frozen_verified": true
+  },
+  "heterogeneity_diagnostics": {
+    "M1_train": {
+      "mean": 0.03528351339196601,
+      "std": 0.03533723530210938,
+      "nonzero_fraction": 0.8688559541463644,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.13114404585363557
+    },
+    "M1_test": {
+      "mean": 0.03550061702828226,
+      "std": 0.03546505908246955,
+      "nonzero_fraction": 0.8698217286914766,
+      "max": 0.2541176378726959,
+      "exactly_zero_fraction": 0.1301782713085234
+    },
+    "M2_test": {
+      "mean": 0.009927873878809052,
+      "std": 0.018095439617686268,
+      "nonzero_fraction": 0.8798307322929172,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.12016926770708283
+    },
+    "M3_test": {
+      "mean": 0.008834564091217613,
+      "std": 0.016392990897409962,
+      "nonzero_fraction": 0.8796602641056422,
+      "max": 0.5625,
+      "exactly_zero_fraction": 0.12033973589435774
+    }
+  },
+  "feature_statistics": {
+    "ppv_global_mean": 0.4982199966907501,
+    "ppv_global_std": 0.3131949305534363,
+    "ppv_global_nonzero": 0.9625022008803521,
+    "raw_vs_aeon_max_diff": 0.0
+  },
+  "audits": {
+    "heterogeneity_nonzero_fraction_M1": 0.8698217286914766,
+    "independent_recompute_max_abs_err": 5.91748988698626e-09,
+    "m2_global_occupancy_max_abs_diff": 0.0006428571428571395,
+    "m3_per_sample_hist_max_abs_diff": 0.0,
+    "m3_alignment_changed_fraction": 1.0,
+    "drtn_frozen_verified": true,
+    "m2_deterministic": true,
+    "m3_deterministic": true
+  }
+}

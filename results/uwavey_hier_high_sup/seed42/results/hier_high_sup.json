@@ -1,0 +1,42 @@
+{
+ "method": "hier_high_sup",
+ "label": "HIER-HIGH-SUP",
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "base_budget": 9996,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "g_features": 17993,
+ "h_features": 1999,
+ "h_candidate_pool": 449820,
+ "final_features": 19992,
+ "selection": "fold-internal supervised ANOVA-F top-1999 (final stage on train+val per canonical R5 protocol)",
+ "ablated": "label-free energy allocation (level_budgets/select_carriers, K2=4437/K4=3767/K8=3128/K16=3662)",
+ "cv_fixed_rho_fold_internal": {
+  "mean": 0.7867207137136901,
+  "std": 0.026684292992398283,
+  "kfold": 5
+ },
+ "selected_by_level": {
+  "2": 1810,
+  "4": 181,
+  "8": 7,
+  "16": 1
+ },
+ "macro_f1": 0.7823,
+ "accuracy": 0.7848,
+ "alpha": 11.288378916846883,
+ "deltas_vs": {
+  "canonical_mr": 0.028,
+  "mr_high": 0.0346,
+  "r5_high": 0.0051,
+  "hier_high": 0.0593
+ },
+ "gate_mr_high": {
+  "ref": 0.7477,
+  "reproduced": 0.7477,
+  "abs_diff": 0.0
+ },
+ "runtime_s": 358.5,
+ "peak_mem_mb": 0.0
+}

@@ -1,0 +1,58 @@
+{
+  "dataset": "FordA",
+  "seed": 42,
+  "T": 500,
+  "split": {
+    "train": 3060,
+    "val": 541,
+    "test": 1320
+  },
+  "n_classes": 2,
+  "n_features": 9996,
+  "K_regimes": 8,
+  "results": {
+    "M0": {
+      "val_macro_f1": 0.9834,
+      "test_macro_f1": 0.9499,
+      "accuracy": 0.95,
+      "selected_alpha": 4.281332398719396,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.9516,
+        0.9483
+      ]
+    },
+    "R2": {
+      "val_macro_f1": 0.9834,
+      "test_macro_f1": 0.956,
+      "accuracy": 0.9561,
+      "selected_alpha": 1.623776739188721,
+      "feature_dim": 9996,
+      "class_f1s": [
+        0.9574,
+        0.9547
+      ],
+      "context_train": {
+        "ssl_best_val": 0.264521,
+        "joint_best_val_mf1": 0.939,
+        "avg_joint_losses": {
+          "commit": 1.97092,
+          "div": 47.03569,
+          "aux": 4.88654,
+          "ssl": 7.05678
+        }
+      },
+      "params": {
+        "encoder": 59072,
+        "decoder": 2177,
+        "aux_head": 66,
+        "vq_trainable": 0,
+        "total_trainable": 61315
+      }
+    }
+  },
+  "deltas": {
+    "R2-M0": 0.0061
+  },
+  "runtime_s": 393.3
+}

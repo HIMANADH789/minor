@@ -1,0 +1,13 @@
+metric,value
+mean,0.5384
+sd,0.0118
+median,0.5387
+min,0.5264
+max,0.55
+cv,0.0219
+seed42_R5,0.55
+seed42_R5_minus_M0,0.0526
+seed43_R5,0.5264
+seed43_R5_minus_M0,0.029
+seed44_R5,0.5387
+seed44_R5_minus_M0,0.0413

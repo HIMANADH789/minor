@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "CWRU_UNBAL",
+    "model": "MiniRocket",
+    "seed": 42,
+    "val_macro_f1": 0.9804,
+    "test_macro_f1": 0.9917,
+    "selected_alpha": 0.23357214690901212,
+    "status": "NEW_RUN_GATE_PASS",
+    "runtime_s": 1.8
+  },
+  {
+    "dataset": "CWRU_UNBAL",
+    "model": "HERAMBA R5",
+    "seed": 42,
+    "val_macro_f1": 0.9902,
+    "test_macro_f1": 0.9833,
+    "selected_alpha": 0.08858667904100823,
+    "status": "NEW_RUN_GATE_PASS",
+    "runtime_s": 214.0
+  },
+  {
+    "dataset": "CWRU_UNBAL",
+    "model": "MiniRocket",
+    "seed": 43,
+    "val_macro_f1": 0.9804,
+    "test_macro_f1": 0.9917,
+    "selected_alpha": 0.23357214690901212,
+    "status": "REUSED_DETERMINISTIC",
+    "runtime_s": 1.8
+  },
+  {
+    "dataset": "CWRU_UNBAL",
+    "model": "HERAMBA R5",
+    "seed": 43,
+    "val_macro_f1": 0.9853,
+    "test_macro_f1": 0.9792,
+    "selected_alpha": 0.08858667904100823,
+    "status": "NEW_RUN",
+    "runtime_s": 335.5
+  },
+  {
+    "dataset": "CWRU_UNBAL",
+    "model": "MiniRocket",
+    "seed": 44,
+    "val_macro_f1": 0.9804,
+    "test_macro_f1": 0.9917,
+    "selected_alpha": 0.23357214690901212,
+    "status": "REUSED_DETERMINISTIC",
+    "runtime_s": 1.8
+  },
+  {
+    "dataset": "CWRU_UNBAL",
+    "model": "HERAMBA R5",
+    "seed": 44,
+    "val_macro_f1": 1.0,
+    "test_macro_f1": 0.975,
+    "selected_alpha": 0.23357214690901212,
+    "status": "NEW_RUN",
+    "runtime_s": 403.4
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "model": "MiniRocket",
+    "seed": 42,
+    "val_macro_f1": 0.9896,
+    "test_macro_f1": 0.9947,
+    "selected_alpha": 0.615848211066026,
+    "status": "NEW_RUN_GATE_PASS",
+    "runtime_s": 8.1
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "model": "HERAMBA R5",
+    "seed": 42,
+    "val_macro_f1": 0.9834,
+    "test_macro_f1": 0.9965,
+    "selected_alpha": 0.08858667904100823,
+    "status": "NEW_RUN_GATE_PASS",
+    "runtime_s": 834.7
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "model": "MiniRocket",
+    "seed": 43,
+    "val_macro_f1": 0.9896,
+    "test_macro_f1": 0.9947,
+    "selected_alpha": 0.615848211066026,
+    "status": "REUSED_DETERMINISTIC",
+    "runtime_s": 13.3
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "model": "HERAMBA R5",
+    "seed": 43,
+    "val_macro_f1": 0.9834,
+    "test_macro_f1": 0.9912,
+    "selected_alpha": 0.08858667904100823,
+    "status": "NEW_RUN",
+    "runtime_s": 449.2
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "model": "MiniRocket",
+    "seed": 44,
+    "val_macro_f1": 0.9896,
+    "test_macro_f1": 0.9947,
+    "selected_alpha": 0.615848211066026,
+    "status": "REUSED_DETERMINISTIC",
+    "runtime_s": 6.8
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "model": "HERAMBA R5",
+    "seed": 44,
+    "val_macro_f1": 0.9959,
+    "test_macro_f1": 0.9947,
+    "selected_alpha": 0.23357214690901212,
+    "status": "NEW_RUN",
+    "runtime_s": 300.0
+  }
+]

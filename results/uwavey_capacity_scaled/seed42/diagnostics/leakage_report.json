@@ -1,0 +1,12 @@
+{
+ "split_integrity": "train/val indices identical to r2_uwave_seed42 (asserted in-run)",
+ "labels_in_representation_construction": false,
+ "validation_in_representation_construction": false,
+ "test_in_representation_construction": false,
+ "rho_researched": false,
+ "rho_source": "stored validation-selected rho=0.1 (reused)",
+ "feature_allocation_train_only": true,
+ "L_star_used_for_budgets": false,
+ "test_labels_seen_before_evaluation": false,
+ "note": "AST/static leakage tests in tests/test_uwavey_capacity_scaled.py"
+}

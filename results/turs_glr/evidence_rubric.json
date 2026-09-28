@@ -1,0 +1,98 @@
+[
+  {
+    "dimension": "D1 global-pattern representation",
+    "verdict": "WEAK",
+    "evidence": "mean A0 (global-only) MF1 = 0.24544504438508277",
+    "estimate": 0.24544504438508277
+  },
+  {
+    "dimension": "D2 local-pattern representation",
+    "verdict": "WEAK",
+    "evidence": "mean A1 (local-only) MF1 = 0.3416836303454292",
+    "estimate": 0.3416836303454292
+  },
+  {
+    "dimension": "D3 routing validity",
+    "verdict": "MODERATE",
+    "evidence": "max |rho(w, descriptor)| = 0.48652712280454297"
+  },
+  {
+    "dimension": "D4 routing functional necessity",
+    "verdict": "MODERATE",
+    "evidence": "mean MF1(A3 - A7) = 0.0070999999999999995",
+    "estimate": 0.0070999999999999995,
+    "p_values": [
+      0.617075,
+      0.83117,
+      0.789268,
+      0.00511
+    ]
+  },
+  {
+    "dimension": "D5 transport-flavor specialization",
+    "verdict": "MODERATE",
+    "evidence": "single-flavor intervention MF1 by dataset (see 08 table)"
+  },
+  {
+    "dimension": "D6 routing faithfulness",
+    "verdict": "WEAK",
+    "evidence": "mean targeted-random conf drop = -0.009005542866361793",
+    "estimate": -0.009005542866361793,
+    "p_values": [
+      0.15242378810594703,
+      0.2783608195902049,
+      0.335832083958021,
+      1.0
+    ]
+  },
+  {
+    "dimension": "D7 routing stability",
+    "verdict": "STRONG",
+    "evidence": "routing cosine under benign noise = 0.9999994039535522",
+    "estimate": 0.9999994039535522
+  },
+  {
+    "dimension": "D8 global/local adaptive specialization",
+    "verdict": "STRONG",
+    "evidence": "selected (lam_g, lam_l) per dataset: [(1.0, 0.1), (100.0, 0.01), (10.0, 0.0001), (0.0001, 0.0001)]"
+  },
+  {
+    "dimension": "D9 block-ridge usefulness",
+    "verdict": "WEAK",
+    "evidence": "mean MF1(A3 - A2) = -0.005",
+    "estimate": -0.005,
+    "p_values": [
+      1.0,
+      0.683091,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "dimension": "D10 predictive calibration",
+    "verdict": "WEAK",
+    "evidence": "mean ECE = 0.526644697188339",
+    "estimate": 0.526644697188339
+  },
+  {
+    "dimension": "D11 selective reliability",
+    "verdict": "MODERATE",
+    "evidence": "mean error-detection AUROC (confidence) = 0.8892832321998316",
+    "estimate": 0.8892832321998316
+  },
+  {
+    "dimension": "D12 robustness",
+    "verdict": "MODERATE",
+    "evidence": "severity-response rhos in 09_robustness.csv / D12 hyp family"
+  },
+  {
+    "dimension": "D13 cross-dataset consistency",
+    "verdict": "STRONG",
+    "evidence": "unified >= best single block on 4/4 datasets"
+  },
+  {
+    "dimension": "D14 simplicity/complexity efficiency",
+    "verdict": "STRONG",
+    "evidence": "trainable params (router+ridge): 8,356; kernels fixed (2048 global + 128 local)"
+  }
+]

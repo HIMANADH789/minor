@@ -1,0 +1,49 @@
+{
+  "implementation": {
+    "source_file": "models/tursnet.py",
+    "class_name": "TURSNet",
+    "canonical_config": {
+      "in_channels": 1,
+      "regime_dim": 16,
+      "variant": "lite",
+      "multi_scale_fusion": false,
+      "use_all_flags": true
+    },
+    "factory_reference": "experiments/fair_turs.py::make_turs_lite",
+    "sha256_models_tursnet": "027d519e8ea2f912af7189043ae9571413a835e15daaf858acf59ac39231dce2"
+  },
+  "output_mapping": {
+    "z_t": "aux['regime']  z  [B,16] native sample-level; z_t temporal trace = frozen RegimeEncoder.mu_net applied per H4 timestep (inference-only)",
+    "v_t": "aux['regime_velocity']  v  [B,16] = vel_linear(z) \u2014 LEARNED PROJECTION, not temporal difference (source docstring documents this)",
+    "u_t": "aux['uncertainty']  u  [B,16] = softplus(clamp(logvar_net(H4),-5,2))+1e-6",
+    "alpha": "aux['alpha']  [B,1] sigmoid; weights the TRANSPORT term (F_fused = a*(g_T*F_T) + (1-a)*(g_R*F_R)); sample-level only, no temporal semantics -> alpha-temporal hypotheses NOT TESTABLE",
+    "F_T": "transport_proj(T_e.mean) [B,64]; F_R = regime_proj(z) [B,64]"
+  },
+  "trainer": {
+    "source_file": "experiments/fair_turs.py",
+    "function": "train_and_evaluate",
+    "protocol": {
+      "seed": 42,
+      "max_epochs": 30,
+      "patience": 8,
+      "lr": 0.0003,
+      "wd": 0.01,
+      "batch": 64,
+      "optimizer": "AdamW",
+      "scheduler": "OneCycleLR",
+      "grad_clip": 1.0,
+      "loss": "TURSLoss CE + aux",
+      "monitor": "val macro-F1"
+    },
+    "sha256_fair_turs": "4d9aad212cf4d0ff850808d3981d7235048e8a0a391b69977ce813476b0d1eb2"
+  },
+  "benchmark_protocol": {
+    "canonical_results": "results/turs_benchmark/<DS>.json",
+    "historical_turs_lite": {
+      "ECG5000_UNBAL": 0.5862,
+      "ECG5000_BAL": 0.6086,
+      "CWRU_UNBAL": 0.9211,
+      "CWRU_BAL": 0.9542
+    }
+  }
+}

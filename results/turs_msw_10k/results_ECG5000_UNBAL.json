@@ -1,0 +1,535 @@
+{
+  "dataset": "ECG5000_UNBAL",
+  "stage": "complete",
+  "seed": 42,
+  "F": 9996,
+  "T": 140,
+  "n_train": 3400,
+  "n_val": 600,
+  "n_test": 1000,
+  "n_classes": 5,
+  "plan": {
+    "M0": {
+      "n_global": 9996,
+      "n_medium": 0,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M1": {
+      "n_global": 4998,
+      "n_medium": 2499,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M2": {
+      "n_global": 4996,
+      "n_medium": 0,
+      "n_local": 1250,
+      "total": 9996
+    },
+    "M3": {
+      "n_global": 3332,
+      "n_medium": 1666,
+      "n_local": 833,
+      "total": 9996
+    },
+    "M4": {
+      "n_global": 0,
+      "n_medium": 2498,
+      "n_local": 1250,
+      "total": 9996
+    }
+  },
+  "dims": {
+    "M0": 9996,
+    "M1": 9996,
+    "M2": 9996,
+    "M3": 9996,
+    "M4": 9996
+  },
+  "val_macro_f1": {
+    "M0": 0.6405,
+    "M1": 0.6462,
+    "M2": 0.6384,
+    "M3": 0.6446,
+    "M4": 0.6464
+  },
+  "val_alpha": {
+    "M0": 11.288378916846883,
+    "M1": 11.288378916846883,
+    "M2": 11.288378916846883,
+    "M3": 11.288378916846883,
+    "M4": 11.288378916846883
+  },
+  "selected": "M0",
+  "decision": {
+    "stat_rows": [
+      {
+        "comparison": "M0 vs M1 (validation)",
+        "delta_val_mf1": 0.0057,
+        "chi2": 0.0,
+        "p_raw": 1.0,
+        "q_fdr": 1.0
+      },
+      {
+        "comparison": "M0 vs M2 (validation)",
+        "delta_val_mf1": -0.0021,
+        "chi2": 0.5,
+        "p_raw": 0.4795,
+        "q_fdr": 1.0
+      },
+      {
+        "comparison": "M0 vs M3 (validation)",
+        "delta_val_mf1": 0.0041,
+        "chi2": 0.0,
+        "p_raw": 1.0,
+        "q_fdr": 1.0
+      },
+      {
+        "comparison": "M0 vs M4 (validation)",
+        "delta_val_mf1": 0.0059,
+        "chi2": 0.125,
+        "p_raw": 0.723674,
+        "q_fdr": 1.0
+      }
+    ],
+    "eligible": [],
+    "selected": "M0",
+    "reason": "no MSW candidate beats M0 with val>M0 and BH q<0.05"
+  },
+  "equivalence_train_val": {
+    "train": 0.0,
+    "val": 0.0
+  },
+  "block_stats": {
+    "global": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.498343,
+      "std": 0.314116,
+      "near_zero_var_cols": 0,
+      "nan": 0,
+      "inf": 0
+    },
+    "medium": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.501223,
+      "std": 0.324223,
+      "near_zero_var_cols": 0,
+      "nan": 0,
+      "inf": 0
+    },
+    "local": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.499265,
+      "std": 0.310692,
+      "near_zero_var_cols": 2,
+      "nan": 0,
+      "inf": 0
+    }
+  },
+  "block_similarity": {
+    "global_medium": {
+      "linear_cka": 0.945886,
+      "mean_abs_corr": 0.357443
+    },
+    "global_local": {
+      "linear_cka": 0.879207,
+      "mean_abs_corr": 0.307801
+    },
+    "medium_local": {
+      "linear_cka": 0.903117,
+      "mean_abs_corr": 0.335103
+    }
+  },
+  "timing": {
+    "mr_fit_s": 0.35,
+    "mr_val_s": 0.03,
+    "regional_trainval_s": 0.57,
+    "assemble_s": 1.9,
+    "mr_test_s": 0.05,
+    "regional_test_s": 0.54
+  },
+  "test_macro_f1": {
+    "M0": 0.5938,
+    "M1": 0.5903,
+    "M2": 0.5962,
+    "M3": 0.5813,
+    "M4": 0.5904
+  },
+  "test_metrics": {
+    "M0": {
+      "accuracy": 0.954,
+      "macro_f1": 0.5938,
+      "weighted_f1": 0.9458,
+      "class_f1s": [
+        0.9949,
+        0.9494,
+        0.5161,
+        0.5085,
+        0.0
+      ],
+      "class_precision": [
+        0.9898,
+        0.918,
+        0.6667,
+        0.75,
+        0.0
+      ],
+      "class_recall": [
+        1.0,
+        0.983,
+        0.4211,
+        0.3846,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          584,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          347,
+          2,
+          4,
+          0
+        ],
+        [
+          3,
+          7,
+          8,
+          1,
+          0
+        ],
+        [
+          2,
+          22,
+          0,
+          15,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "variant": "M0",
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996
+    },
+    "M1": {
+      "accuracy": 0.954,
+      "macro_f1": 0.5903,
+      "weighted_f1": 0.9449,
+      "class_f1s": [
+        0.994,
+        0.9482,
+        0.4828,
+        0.5263,
+        0.0
+      ],
+      "class_precision": [
+        0.9882,
+        0.9134,
+        0.7,
+        0.8333,
+        0.0
+      ],
+      "class_recall": [
+        1.0,
+        0.9858,
+        0.3684,
+        0.3846,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          584,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          348,
+          2,
+          3,
+          0
+        ],
+        [
+          3,
+          9,
+          7,
+          0,
+          0
+        ],
+        [
+          2,
+          22,
+          0,
+          15,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          0
+        ]
+      ],
+      "variant": "M1",
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996
+    },
+    "M2": {
+      "accuracy": 0.956,
+      "macro_f1": 0.5962,
+      "weighted_f1": 0.9474,
+      "class_f1s": [
+        0.994,
+        0.9523,
+        0.4828,
+        0.5517,
+        0.0
+      ],
+      "class_precision": [
+        0.9882,
+        0.9184,
+        0.7,
+        0.8421,
+        0.0
+      ],
+      "class_recall": [
+        1.0,
+        0.9887,
+        0.3684,
+        0.4103,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          584,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          349,
+          1,
+          3,
+          0
+        ],
+        [
+          4,
+          8,
+          7,
+          0,
+          0
+        ],
+        [
+          2,
+          21,
+          0,
+          16,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "variant": "M2",
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996
+    },
+    "M3": {
+      "accuracy": 0.954,
+      "macro_f1": 0.5813,
+      "weighted_f1": 0.9443,
+      "class_f1s": [
+        0.9924,
+        0.9523,
+        0.4444,
+        0.5172,
+        0.0
+      ],
+      "class_precision": [
+        0.9848,
+        0.9184,
+        0.75,
+        0.7895,
+        0.0
+      ],
+      "class_recall": [
+        1.0,
+        0.9887,
+        0.3158,
+        0.3846,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          584,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          349,
+          1,
+          3,
+          0
+        ],
+        [
+          4,
+          8,
+          6,
+          1,
+          0
+        ],
+        [
+          3,
+          21,
+          0,
+          15,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          0
+        ]
+      ],
+      "variant": "M3",
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996
+    },
+    "M4": {
+      "accuracy": 0.956,
+      "macro_f1": 0.5904,
+      "weighted_f1": 0.9472,
+      "class_f1s": [
+        0.9924,
+        0.9549,
+        0.4286,
+        0.5763,
+        0.0
+      ],
+      "class_precision": [
+        0.9848,
+        0.9233,
+        0.6667,
+        0.85,
+        0.0
+      ],
+      "class_recall": [
+        1.0,
+        0.9887,
+        0.3158,
+        0.4359,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          584,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          349,
+          1,
+          3,
+          0
+        ],
+        [
+          4,
+          9,
+          6,
+          0,
+          0
+        ],
+        [
+          3,
+          18,
+          1,
+          17,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          0,
+          0
+        ]
+      ],
+      "variant": "M4",
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996
+    }
+  },
+  "test_stat_rows": [
+    {
+      "dataset": "ECG5000_UNBAL",
+      "comparison": "M0 vs M1 (test)",
+      "delta_test_mf1": -0.0035,
+      "chi2": 0.5,
+      "p_raw": 0.4795,
+      "effect_size_d": 0.0,
+      "q_fdr": 0.75183
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "comparison": "M0 vs M2 (test)",
+      "delta_test_mf1": 0.0024,
+      "chi2": 0.25,
+      "p_raw": 0.617075,
+      "effect_size_d": 0.0316,
+      "q_fdr": 0.75183
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "comparison": "M0 vs M3 (test)",
+      "delta_test_mf1": -0.0125,
+      "chi2": 0.1667,
+      "p_raw": 0.683091,
+      "effect_size_d": 0.0,
+      "q_fdr": 0.75183
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "comparison": "M0 vs M4 (test)",
+      "delta_test_mf1": -0.0034,
+      "chi2": 0.1,
+      "p_raw": 0.75183,
+      "effect_size_d": 0.02,
+      "q_fdr": 0.75183
+    }
+  ],
+  "selected_test": 0.5938,
+  "delta_vs_m0": 0.0,
+  "equivalence_test": 0.0
+}

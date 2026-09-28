@@ -1,0 +1,6 @@
+{
+    "Train_Accuracy": 1.0,
+    "Test_Accuracy": 0.9,
+    "Test_Macro_F1": 0.48864748241210265,
+    "Kernel_Cond": 74841840.0
+}

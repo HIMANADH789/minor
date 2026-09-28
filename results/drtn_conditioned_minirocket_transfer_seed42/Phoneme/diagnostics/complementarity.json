@@ -1,0 +1,7 @@
+{
+  "both_correct": 365,
+  "M0_only_correct": 106,
+  "M1_only_correct": 180,
+  "both_wrong": 1245,
+  "n_samples": 1896
+}

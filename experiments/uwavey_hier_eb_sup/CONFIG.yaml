@@ -1,0 +1,77 @@
+# HIER-EB-SUP configuration (all values PREDECLARED; one change vs HIER-CONTINUOUS-SUP)
+dataset: UWaveGestureLibraryY
+seed: 42
+split:
+  source: experiments/rcmkn_r2_uwave_seed42/data.load_and_split   # official UCR split
+  train: 761
+  validation: 135
+  test: 3582
+  T: 315
+  n_classes: 8
+normalization: per_sample_z_norm
+
+budgets:
+  B_high: 19992            # final classifier budget (locked)
+  root_candidates: 19992   # 84 kernels x 238 quantiles
+  delta_candidates: 449820 # 30 edges x 14,994 kernels
+  unified_candidates: 469812
+
+minirocket:
+  implementation: aeon MiniRocket
+  n_kernels: 19992
+  random_state: 42
+  expansion: 84 physical kernels x 238 quantiles
+
+hierarchy:
+  levels: [1, 2, 4, 8, 16]
+  encoder: frozen seed-42 SSLTemporalEncoder (repository checkpoint)
+  clustering: recursive 2-means (n_clusters=2, n_init=10, random_state=42)
+  fit_split: TRAIN_ONLY
+  val_test: transform_only
+  identity_reference: results/uwavey_nested_hierarchical/seed42/hierarchy_assignments.npy
+
+statistic:
+  name: ANOVA-F (sklearn f_classif)  # bit-identical to incumbent selector
+  edge_cases:
+    non_finite: F=0, p=1
+    p_clip: [1.0e-300, 1.0 - 1.0e-16]
+  z_transform:
+    method: scipy.stats.norm.isf (one-sided significance coordinate; NOT effect direction)
+
+eb_model:
+  name: parametric two-groups empirical-Bayes local-FDR model (NOT Efron locfdr)
+  null: N(0, 1) fixed
+  alternative: N(mu1_l, sigma1_l^2), mu1_l > 0
+  fitted_per_level: [0, 2, 4, 8, 16]   # five INDEPENDENT fits, never pooled
+  em:
+    init:
+      pi0: 0.90
+      mu1: mean of highest 10% z, clipped finite; degenerate -> max(mean(z), 0.5)
+      sigma1: std of highest 10% z with floor; degenerate -> max(std(z), 0.5)
+    updates: standard EM mixture responsibilities
+    tolerance: 1.0e-8 (max parameter change)
+    max_iter: 200
+    clamps:
+      pi0: [0.5, 1 - 1.0e-8]
+      sigma1_min: 1.0e-3
+      mu1_min: 1.0e-3
+    degenerate_fallback: recorded in diagnostics
+  lfdr: pi0*phi0 / (pi0*phi0 + (1-pi0)*phi1), clipped [0,1]
+  posterior_signal_q: 1 - lfdr
+
+selection:
+  rule: ONE global ranking by posterior_signal_q desc, ties by candidate_index asc
+  quota: NONE            # no per-level quotas, no rho, no N_G/N_H
+  q_multiplier: false    # raw candidate values fed to Ridge
+  final_features: 19992
+
+classifier:
+  estimator: RidgeClassifierCV
+  alphas: logspace(-4, 4, 20)
+  protocol: experiments/uwavey_capacity_scaled/runner.ridge_eval (locked)
+  cv_diagnostic: 5-fold StratifiedKFold(shuffle=True, random_state=42), fold-internal EB
+
+leakage:
+  hierarchy: train only
+  eb_fit: dev-set statistics only (final) / fold-train only (diagnostic CV)
+  test_labels: scoring only

@@ -1,0 +1,25 @@
+{
+  "tag": "ECG5000_UNBAL",
+  "variant": "A4",
+  "params_trainable": 39753,
+  "params_fixed": 3968,
+  "best_val_mf1": 0.332208,
+  "best_epoch": 2,
+  "total_epochs": 2,
+  "elapsed_s": 0.9,
+  "seed": 42,
+  "ppv_window": 7,
+  "bank_spec_hash": "ded632e2897b6ed8",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.223628,
+      "val_mf1": 0.162828
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.693224,
+      "val_mf1": 0.332208
+    }
+  ]
+}

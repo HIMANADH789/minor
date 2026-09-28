@@ -1,0 +1,465 @@
+{
+  "dataset": "CWRU_BAL",
+  "stage": "complete",
+  "seed": 42,
+  "F": 9996,
+  "T": 1024,
+  "n_train": 2727,
+  "n_val": 482,
+  "n_test": 567,
+  "n_classes": 4,
+  "plan": {
+    "M0": {
+      "n_global": 9996,
+      "n_medium": 0,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M1": {
+      "n_global": 4998,
+      "n_medium": 2499,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M2": {
+      "n_global": 4996,
+      "n_medium": 0,
+      "n_local": 1250,
+      "total": 9996
+    },
+    "M3": {
+      "n_global": 3332,
+      "n_medium": 1666,
+      "n_local": 833,
+      "total": 9996
+    },
+    "M4": {
+      "n_global": 0,
+      "n_medium": 2498,
+      "n_local": 1250,
+      "total": 9996
+    }
+  },
+  "dims": {
+    "M0": 9996,
+    "M1": 9996,
+    "M2": 9996,
+    "M3": 9996,
+    "M4": 9996
+  },
+  "val_macro_f1": {
+    "M0": 0.9896,
+    "M1": 0.9938,
+    "M2": 0.9896,
+    "M3": 0.9876,
+    "M4": 0.971
+  },
+  "val_alpha": {
+    "M0": 0.615848211066026,
+    "M1": 0.23357214690901212,
+    "M2": 0.615848211066026,
+    "M3": 0.615848211066026,
+    "M4": 0.615848211066026
+  },
+  "selected": "M0",
+  "decision": {
+    "stat_rows": [
+      {
+        "comparison": "M0 vs M1 (validation)",
+        "delta_val_mf1": 0.0042,
+        "chi2": 0.5,
+        "p_raw": 0.4795,
+        "q_fdr": 0.822767
+      },
+      {
+        "comparison": "M0 vs M2 (validation)",
+        "delta_val_mf1": 0.0,
+        "chi2": 0.25,
+        "p_raw": 0.617075,
+        "q_fdr": 0.822767
+      },
+      {
+        "comparison": "M0 vs M3 (validation)",
+        "delta_val_mf1": -0.002,
+        "chi2": 0.0,
+        "p_raw": 1.0,
+        "q_fdr": 1.0
+      },
+      {
+        "comparison": "M0 vs M4 (validation)",
+        "delta_val_mf1": -0.0186,
+        "chi2": 4.9231,
+        "p_raw": 0.0265,
+        "q_fdr": 0.106001
+      }
+    ],
+    "eligible": [],
+    "selected": "M0",
+    "reason": "no MSW candidate beats M0 with val>M0 and BH q<0.05"
+  },
+  "equivalence_train_val": {
+    "train": 0.0,
+    "val": 0.0
+  },
+  "block_stats": {
+    "global": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.499461,
+      "std": 0.290114,
+      "near_zero_var_cols": 0,
+      "nan": 0,
+      "inf": 0
+    },
+    "medium": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5006,
+      "std": 0.292149,
+      "near_zero_var_cols": 0,
+      "nan": 0,
+      "inf": 0
+    },
+    "local": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.496308,
+      "std": 0.293448,
+      "near_zero_var_cols": 0,
+      "nan": 0,
+      "inf": 0
+    }
+  },
+  "block_similarity": {
+    "global_medium": {
+      "linear_cka": 0.941567,
+      "mean_abs_corr": 0.39944
+    },
+    "global_local": {
+      "linear_cka": 0.839862,
+      "mean_abs_corr": 0.347864
+    },
+    "medium_local": {
+      "linear_cka": 0.888994,
+      "mean_abs_corr": 0.399293
+    }
+  },
+  "timing": {
+    "mr_fit_s": 0.81,
+    "mr_val_s": 0.13,
+    "regional_trainval_s": 2.38,
+    "assemble_s": 1.46,
+    "mr_test_s": 0.15,
+    "regional_test_s": 0.72
+  },
+  "test_macro_f1": {
+    "M0": 0.9947,
+    "M1": 0.993,
+    "M2": 0.9947,
+    "M3": 0.9912,
+    "M4": 0.9701
+  },
+  "test_metrics": {
+    "M0": {
+      "accuracy": 0.9947,
+      "macro_f1": 0.9947,
+      "weighted_f1": 0.9947,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9895,
+        0.9894
+      ],
+      "class_precision": [
+        1.0,
+        1.0,
+        0.986,
+        0.9929
+      ],
+      "class_recall": [
+        1.0,
+        1.0,
+        0.993,
+        0.9859
+      ],
+      "confusion_matrix": [
+        [
+          142,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          141,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          141,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          140
+        ]
+      ],
+      "variant": "M0",
+      "selected_alpha": 0.615848211066026,
+      "n_features": 9996
+    },
+    "M1": {
+      "accuracy": 0.9929,
+      "macro_f1": 0.993,
+      "weighted_f1": 0.9929,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9858,
+        0.986
+      ],
+      "class_precision": [
+        1.0,
+        1.0,
+        0.9929,
+        0.9792
+      ],
+      "class_recall": [
+        1.0,
+        1.0,
+        0.9789,
+        0.993
+      ],
+      "confusion_matrix": [
+        [
+          142,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          141,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          139,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          141
+        ]
+      ],
+      "variant": "M1",
+      "selected_alpha": 0.23357214690901212,
+      "n_features": 9996
+    },
+    "M2": {
+      "accuracy": 0.9947,
+      "macro_f1": 0.9947,
+      "weighted_f1": 0.9947,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9894,
+        0.9895
+      ],
+      "class_precision": [
+        1.0,
+        1.0,
+        0.9929,
+        0.986
+      ],
+      "class_recall": [
+        1.0,
+        1.0,
+        0.9859,
+        0.993
+      ],
+      "confusion_matrix": [
+        [
+          142,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          141,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          140,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          141
+        ]
+      ],
+      "variant": "M2",
+      "selected_alpha": 0.615848211066026,
+      "n_features": 9996
+    },
+    "M3": {
+      "accuracy": 0.9912,
+      "macro_f1": 0.9912,
+      "weighted_f1": 0.9912,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9823,
+        0.9825
+      ],
+      "class_precision": [
+        1.0,
+        1.0,
+        0.9858,
+        0.979
+      ],
+      "class_recall": [
+        1.0,
+        1.0,
+        0.9789,
+        0.9859
+      ],
+      "confusion_matrix": [
+        [
+          142,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          141,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          139,
+          3
+        ],
+        [
+          0,
+          0,
+          2,
+          140
+        ]
+      ],
+      "variant": "M3",
+      "selected_alpha": 0.615848211066026,
+      "n_features": 9996
+    },
+    "M4": {
+      "accuracy": 0.97,
+      "macro_f1": 0.9701,
+      "weighted_f1": 0.97,
+      "class_f1s": [
+        1.0,
+        1.0,
+        0.9412,
+        0.9391
+      ],
+      "class_precision": [
+        1.0,
+        1.0,
+        0.9252,
+        0.9562
+      ],
+      "class_recall": [
+        1.0,
+        1.0,
+        0.9577,
+        0.9225
+      ],
+      "confusion_matrix": [
+        [
+          142,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          141,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          136,
+          6
+        ],
+        [
+          0,
+          0,
+          11,
+          131
+        ]
+      ],
+      "variant": "M4",
+      "selected_alpha": 0.615848211066026,
+      "n_features": 9996
+    }
+  },
+  "test_stat_rows": [
+    {
+      "dataset": "CWRU_BAL",
+      "comparison": "M0 vs M1 (test)",
+      "delta_test_mf1": -0.0017,
+      "chi2": 0.0,
+      "p_raw": 1.0,
+      "effect_size_d": -0.0242,
+      "q_fdr": 1.0
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "comparison": "M0 vs M2 (test)",
+      "delta_test_mf1": 0.0,
+      "chi2": 0.1667,
+      "p_raw": 0.683091,
+      "effect_size_d": 0.0,
+      "q_fdr": 0.910789
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "comparison": "M0 vs M3 (test)",
+      "delta_test_mf1": -0.0035,
+      "chi2": 0.1667,
+      "p_raw": 0.683091,
+      "effect_size_d": -0.0343,
+      "q_fdr": 0.910789
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "comparison": "M0 vs M4 (test)",
+      "delta_test_mf1": -0.0246,
+      "chi2": 12.0714,
+      "p_raw": 0.000512,
+      "effect_size_d": -0.159,
+      "q_fdr": 0.002048
+    }
+  ],
+  "selected_test": 0.9947,
+  "delta_vs_m0": 0.0,
+  "equivalence_test": 0.0
+}

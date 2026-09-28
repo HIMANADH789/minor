@@ -1,0 +1,74 @@
+{
+  "encoder": {
+    "channels": [
+      32,
+      32,
+      64,
+      64
+    ],
+    "kernel_sizes": [
+      3,
+      5,
+      7,
+      9
+    ],
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "d_model": 32,
+    "mask_ratio": 0.1,
+    "span_len": 16,
+    "batch_size": 8,
+    "ssl_epochs": 120,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 20
+  },
+  "vq": {
+    "K": 8,
+    "beta_vq": 0.25,
+    "lam_div": 0.01,
+    "ema_decay": 0.99,
+    "dead_threshold": 0.001,
+    "revival_patience": 100
+  },
+  "joint": {
+    "epochs": 60,
+    "lr": 0.0005,
+    "lambda_cls": 0.1,
+    "patience": 10,
+    "batch_size": 8
+  },
+  "hydra": {
+    "k": 8,
+    "g": 16,
+    "note": "uses aeon 1.5.0 _HydraInternal directly (the HydraTransformer core); count_max + count_min per (dilation, diff, group, kernel)",
+    "num_dilations": 8,
+    "divisor": 2,
+    "h_groups": 8,
+    "k_kernels_per_group": 8,
+    "kernels_total": 1024,
+    "stats_per_kernel": 2,
+    "feature_dim": 2048
+  },
+  "params": {
+    "encoder": 59072,
+    "decoder": 2177,
+    "aux_head": 165,
+    "vq_trainable": 0,
+    "total_trainable": 61414
+  },
+  "context_train": {
+    "ssl_best_val": 0.022464,
+    "joint_best_val_mf1": 0.1985,
+    "avg_joint_losses": {
+      "commit": 1.27093,
+      "div": 67.72738,
+      "aux": 59.65821,
+      "ssl": 1.8414
+    }
+  }
+}

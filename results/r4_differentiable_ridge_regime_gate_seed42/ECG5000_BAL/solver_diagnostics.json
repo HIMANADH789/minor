@@ -1,0 +1,6 @@
+{
+ "max_residual": 8.529288386682765e-13,
+ "max_cond": 36674.16335716331,
+ "gate_steps": 180,
+ "final_refit_residual": 5.885569809294111e-13
+}

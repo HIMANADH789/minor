@@ -1,0 +1,99 @@
+{
+ "method": "hier_eb_sup",
+ "label": "HIER-EB-SUP",
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "base_budget": 9996,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_pool": {
+  "root": 19992,
+  "delta": 449820,
+  "unified": 469812
+ },
+ "selection": "empirical-Bayes two-groups local-FDR posterior signal probability q = 1 - lfdr; ONE global ranking over the unified 469,812-candidate pool (train+val labels, canonical R5 final-stage protocol); ties by candidate_index; no quota, no rho, no q multiplication",
+ "eb_model": "parametric two-groups: pi0*N(0,1) + (1-pi0)*N(mu1,sigma1^2), five independent per-level deterministic-EM fits",
+ "changed_vs_hier_continuous_sup": "raw ANOVA-F ranking -> per-level EB two-groups lfdr/q ranking (same F statistic, same pool, same budget)",
+ "eb_parameters": {
+  "0": {
+   "pi0": 0.5,
+   "mu1": 11.67653582190135,
+   "sigma1": 2.906804916180011,
+   "iters": 11,
+   "converged": true,
+   "loglik": -63780.49343469469
+  },
+  "2": {
+   "pi0": 0.5,
+   "mu1": 6.406366832837923,
+   "sigma1": 3.4343379096414743,
+   "iters": 10,
+   "converged": true,
+   "loglik": -96179.89481832291
+  },
+  "4": {
+   "pi0": 0.5,
+   "mu1": 4.655451811100451,
+   "sigma1": 3.153678594893625,
+   "iters": 11,
+   "converged": true,
+   "loglik": -175716.03891683478
+  },
+  "8": {
+   "pi0": 0.5,
+   "mu1": 2.6440508974670878,
+   "sigma1": 3.014226280780513,
+   "iters": 12,
+   "converged": true,
+   "loglik": -307457.37671449414
+  },
+  "16": {
+   "pi0": 0.5,
+   "mu1": 1.6728135952042527,
+   "sigma1": 3.7749797605278657,
+   "iters": 13,
+   "converged": true,
+   "loglik": -626077.3366263246
+  }
+ },
+ "effective_signal_count_sum_q": {
+  "0": 19629.435450071363,
+  "2": 27145.346271128376,
+  "4": 48244.81154441031,
+  "8": 80044.48044615725,
+  "16": 147720.93325895624
+ },
+ "selected_composition": {
+  "0": 16180,
+  "2": 3812,
+  "4": 0,
+  "8": 0,
+  "16": 0
+ },
+ "cv_unified_fold_internal_eb": {
+  "mean": 0.6730610933184463,
+  "std": 0.04556148914001872,
+  "kfold": 5
+ },
+ "macro_f1": 0.7021,
+ "accuracy": 0.71,
+ "alpha": 29.763514416313132,
+ "deltas_vs": {
+  "canonical_mr": -0.0522,
+  "mr_high": -0.0456,
+  "r5_high": -0.0751,
+  "hier_high": -0.0209,
+  "hier_high_sup": -0.0802,
+  "hier_continuous_sup": -0.0578
+ },
+ "gate_mr_high": {
+  "ref": 0.7477,
+  "reproduced": 0.7095,
+  "diff": 0.0382,
+  "tol": 0.002
+ },
+ "runtime_s": 34.7,
+ "peak_mem_mb": 0.0,
+ "smoke": true
+}

@@ -1,0 +1,32 @@
+{
+  "audit1_config": {
+    "expected": {
+      "train": 3060,
+      "val": 541,
+      "test": 1320,
+      "T": 500,
+      "n_classes": 2
+    },
+    "actual": {
+      "train": 3060,
+      "val": 541,
+      "test": 1320,
+      "T": 500,
+      "n_classes": 2
+    },
+    "pass": true
+  },
+  "provenance": {
+    "source_path": "data\\kaggle\\FordA",
+    "val_source": "stratified_15pct_of_train_seed42"
+  },
+  "audit2_extractor_identity_maxdiff": 0.0,
+  "m0_gate": {
+    "reference": 0.9499,
+    "observed": 0.9499,
+    "pass": true
+  },
+  "audit3_causality": 0.0,
+  "audit4_regimes_deterministic": true,
+  "audit5_H_recompute_maxdiff": 2.564828805937114e-09
+}

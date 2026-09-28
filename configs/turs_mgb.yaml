@@ -1,0 +1,58 @@
+# TURS-MGB master configuration (Phase 32)
+# No hidden constants: every tunable in the pipeline lives here.
+
+model:
+  name: TURS-MGB
+  kernel_count: 4096          # primary M; 2048 fallback, 8192 scaling probe
+  kernel_lengths: [7, 11, 15, 23, 31]
+  kernel_seed: 42
+  feature_statistics: [ppv, max]   # MiniROCKET-primary; "mean" optional extra
+  extraction_batch: 128
+  feature_chunk: 256
+
+transport:
+  geometries: [G1_standard, G2_tail, G3_fine, G4_multilag]
+  quantile_grid_coarse: 10
+  quantile_grid_fine: 25
+  tail_weights: [2.0, 1.5, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.5, 2.0]
+  lags: [1, 2, 4, 8]
+  window_frac: 0.05           # local quantile window = max(3, round(0.05*T))
+
+scaling:
+  method: standard            # per-geometry TRAIN-fitted standardization
+
+ridge:
+  formulation: dual           # linear-kernel dual; primal used only in validation
+  lambda_grid: [0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
+  selection_metric: val_macro_f1
+  tie_break: val_nll
+
+ablations:
+  A0: {keys: [raw]}
+  A1: {keys: [G1_standard]}
+  A2: {keys: [G2_tail]}
+  A3: {keys: [G3_fine]}
+  A4: {keys: [G4_multilag]}
+  A5: {keys: [G1_standard, G2_tail]}
+  A6: {keys: [G1_standard, G2_tail, G3_fine]}
+  A7: {keys: [G1_standard, G2_tail, G3_fine, G4_multilag]}   # PRIMARY MGB
+  A8: {keys: [G1_standard, G2_tail, G3_fine, G4_multilag], group_scaling: false}
+  A9: {keys: [G1_standard, G2_tail, G3_fine, G4_multilag], M: 2048}
+  A10: {keys: [G1_standard, G2_tail, G3_fine, G4_multilag], M: 8192}
+
+statistics:
+  bootstrap_count: 2000
+  permutation_count: 2000
+  FDR_alpha: 0.05
+  bootstrap_seed: 9200
+  permutation_seed: 9300
+
+data:
+  datasets: [ECG5000_UNBAL, ECG5000_BAL, CWRU_UNBAL, CWRU_BAL]
+  protocol_module: experiments.turs_rrmt.data   # canonical load_split (seed 42)
+
+paths:
+  results: results/turs_mgb
+  tables: results/turs_mgb/tables
+  figures: results/turs_mgb/figures
+  reports: results/turs_mgb/reports

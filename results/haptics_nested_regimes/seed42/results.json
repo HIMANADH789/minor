@@ -1,0 +1,100 @@
+{
+ "dataset": "Haptics",
+ "seed": 42,
+ "n_train": 132,
+ "n_val": 23,
+ "n_test": 308,
+ "T": 1092,
+ "n_features_G": 4998,
+ "tree_meta": {
+  "n_latents": 144144,
+  "latent_dim": 32,
+  "max_depth": 4,
+  "splitter": "sklearn KMeans(n_clusters=2, n_init=10, random_state=42) per node",
+  "child_rule": "children of level-d id p are 2p (bit 0), 2p+1 (bit 1); bit-0 child has smaller first centroid coordinate",
+  "level_ids": "binary path ids; ancestor of b at level l is b >> (l_fine - l)",
+  "singleton_fallbacks": 0,
+  "input": "pooled TRAIN SSLTemporalEncoder latents (R^32)"
+ },
+ "identity_max_abs": 1.1102230246251565e-16,
+ "identity_max_rel": 5.565056622815186e-16,
+ "zero_sum_max": 2.0339632755828063e-16,
+ "cross_ip_max": 3.090860900556436e-13,
+ "level_energies": {
+  "K": [
+   2,
+   4,
+   8,
+   16
+  ],
+  "real": [
+   8654.116094295307,
+   8919.316542909257,
+   10868.815732259502,
+   9713.091093803852
+  ]
+ },
+ "stopping": {
+  "L_star": 16,
+  "rows": [
+   {
+    "K": 2,
+    "real_energy": 8654.116094295307,
+    "null_mean": 129.34339670744066,
+    "null_std": 4.389343503797151,
+    "null_p95": 136.3926699718901,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 4,
+    "real_energy": 8919.316542909257,
+    "null_mean": 250.75188303730178,
+    "null_std": 5.900734323093855,
+    "null_p95": 260.6693840130421,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 8,
+    "real_energy": 10868.815732259502,
+    "null_mean": 470.8547339986632,
+    "null_std": 8.367083013764818,
+    "null_p95": 484.3209145770263,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 16,
+    "real_energy": 9713.091093803852,
+    "null_mean": 651.1435503845292,
+    "null_std": 9.595500224780075,
+    "null_p95": 667.5592086489067,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   }
+  ],
+  "S": 500,
+  "null_seed": 52042
+ },
+ "gates": {
+  "minirocket": 0.5037,
+  "raw_gh": 0.55
+ },
+ "demo": {
+  "H_hier_features": 149940,
+  "kept_K": [
+   2,
+   4,
+   8,
+   16
+  ],
+  "h_replication_maxdiff": 0.004124760627746582,
+  "macro_f1": 0.4586
+ },
+ "runtime_s": 593.4176261425018
+}

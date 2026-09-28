@@ -1,0 +1,9 @@
+component,configuration,provenance
+carriers,"aeon MiniRocket random_state=42, fit on TRAIN only, 9996 features (G 4998 + H 4998)",canonical rcmkn convention
+context,"RCMKNContextModel SSL+VQ K=8+joint, frozen config (encoder/vq/joint byte-identical to rcmkn_ssl_context_transfer_seed42 config.json); trained PER OUTER SEED",audited 3-seed core machinery
+H,"occupancy-weighted regime heterogeneity, min_occupancy 0.01, valid-region masks",audited formula
+classifier,"RidgeClassifierCV alphas=logspace(-4,4,20); train-only fit -> val diagnostic; train+val refit -> ONE test eval",frozen R2 protocol
+split,"EpilepticSeizures 80/20/11420 (PROVIDED canonical val.ts, never resampled), T=178, 2 classes; identical for all seeds",dataset manifest
+preprocessing,per-sample z-norm (mean/std+1e-8),canonical
+gates,seed42 vs canonical R2 0.9457 (tol 0.011): 0.9461 PASS,canonical reference: results/rcmkn_ssl_context_transfer_seed42/EpilepticSeizures (R2 0.9457)
+test policy,one test evaluation per seed; no test-driven tuning,verified

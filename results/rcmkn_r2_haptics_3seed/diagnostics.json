@@ -1,0 +1,149 @@
+{
+  "42": {
+    "vq_diagnostics": {
+      "active_codes": 8,
+      "occupancy": [
+        0.23257992007992007,
+        0.0091426430712145,
+        0.13957768422054137,
+        0.11362744398458684,
+        0.1398631130773988,
+        0.12714368964368963,
+        0.10471076542505114,
+        0.13335474049759763
+      ],
+      "entropy_nats": 1.946424,
+      "normalized_entropy": 0.9360318675140511,
+      "perplexity": 7.0035947268154,
+      "dominant_fraction": 0.23257992007992007,
+      "trainva_active_codes": 8,
+      "trainva_perplexity": 6.980839467732336,
+      "revival_log_len": 2,
+      "note": "code identities are NOT semantically comparable across seeds"
+    },
+    "h_diagnostics": {
+      "mean": 0.039542214907839955,
+      "std": 0.033686113791059784,
+      "min": 0.0,
+      "max": 0.25073280930519104,
+      "zero_fraction": 0.05320569786356101
+    },
+    "context_train": {
+      "ssl_best_val": 0.022398,
+      "joint_best_val_mf1": 0.1985,
+      "avg_joint_losses": {
+        "commit": 1.27225,
+        "div": 67.71787,
+        "aux": 59.65167,
+        "ssl": 1.83785
+      }
+    },
+    "params": {
+      "encoder": 0,
+      "decoder": 0,
+      "aux_head": 0,
+      "vq_trainable": 0,
+      "total_trainable": 0
+    },
+    "runtime_s": 22.7,
+    "regime_hash_te": "050b3935e12252de"
+  },
+  "43": {
+    "vq_diagnostics": {
+      "active_codes": 8,
+      "occupancy": [
+        0.20438490081347224,
+        0.16473110223110224,
+        0.28992436135293276,
+        0.004474691974691975,
+        0.12476511583654441,
+        0.005470719756434042,
+        0.09660577517720374,
+        0.10964333285761857
+      ],
+      "entropy_nats": 1.761083,
+      "normalized_entropy": 0.8469021144073746,
+      "perplexity": 5.8187382251425355,
+      "dominant_fraction": 0.28992436135293276,
+      "trainva_active_codes": 8,
+      "trainva_perplexity": 5.8243836324283835,
+      "revival_log_len": 2,
+      "note": "code identities are NOT semantically comparable across seeds"
+    },
+    "h_diagnostics": {
+      "mean": 0.032386359940744174,
+      "std": 0.030725810518684112,
+      "min": 0.0,
+      "max": 0.25,
+      "zero_fraction": 0.05286270352296763
+    },
+    "context_train": {
+      "ssl_best_val": 0.020917,
+      "joint_best_val_mf1": 0.1302,
+      "avg_joint_losses": {
+        "commit": 0.65214,
+        "div": 25.32912,
+        "aux": 25.37685,
+        "ssl": 0.59246
+      }
+    },
+    "params": {
+      "encoder": 0,
+      "decoder": 0,
+      "aux_head": 0,
+      "vq_trainable": 0,
+      "total_trainable": 0
+    },
+    "runtime_s": 21.3,
+    "regime_hash_te": "3af1c67724741ef5"
+  },
+  "44": {
+    "vq_diagnostics": {
+      "active_codes": 6,
+      "occupancy": [
+        0.0,
+        0.20903501260644117,
+        0.24494553065981636,
+        0.09933221540364398,
+        0.08356524427953,
+        0.2154839208410637,
+        0.14763807620950478,
+        0.0
+      ],
+      "entropy_nats": 1.721738,
+      "normalized_entropy": 0.8279811555478047,
+      "perplexity": 5.59424511092376,
+      "dominant_fraction": 0.24494553065981636,
+      "trainva_active_codes": 6,
+      "trainva_perplexity": 5.589657210183791,
+      "revival_log_len": 1,
+      "note": "code identities are NOT semantically comparable across seeds"
+    },
+    "h_diagnostics": {
+      "mean": 0.031350325700841813,
+      "std": 0.031409644736566475,
+      "min": 0.0,
+      "max": 0.2508097290992737,
+      "zero_fraction": 0.05268341102674836
+    },
+    "context_train": {
+      "ssl_best_val": 0.05248,
+      "joint_best_val_mf1": 0.1322,
+      "avg_joint_losses": {
+        "commit": 0.43691,
+        "div": 23.24514,
+        "aux": 20.65573,
+        "ssl": 1.48034
+      }
+    },
+    "params": {
+      "encoder": 0,
+      "decoder": 0,
+      "aux_head": 0,
+      "vq_trainable": 0,
+      "total_trainable": 0
+    },
+    "runtime_s": 14.4,
+    "regime_hash_te": "475c07d4940dadee"
+  }
+}

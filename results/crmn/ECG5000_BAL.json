@@ -1,0 +1,67 @@
+{
+  "CRMN-CE": {
+    "accuracy": 0.927,
+    "macro_f1": 0.5675,
+    "class_recalls": [
+      1.0,
+      0.9093,
+      0.5263,
+      0.3077,
+      0.0
+    ],
+    "time": 195.5,
+    "params": 632944
+  },
+  "CRMN-FOC1": {
+    "accuracy": 0.925,
+    "macro_f1": 0.5608,
+    "class_recalls": [
+      0.9795,
+      0.915,
+      0.7368,
+      0.4103,
+      0.0
+    ],
+    "time": 248.8,
+    "params": 632944
+  },
+  "CRMN-FOC1-nodyn": {
+    "accuracy": 0.925,
+    "macro_f1": 0.5608,
+    "class_recalls": [
+      0.9812,
+      0.915,
+      0.6842,
+      0.4103,
+      0.0
+    ],
+    "time": 243.2,
+    "params": 632944
+  },
+  "CRMN-FOC1-noproto": {
+    "accuracy": 0.734,
+    "macro_f1": 0.4103,
+    "class_recalls": [
+      0.988,
+      0.3286,
+      0.6316,
+      0.7436,
+      0.0
+    ],
+    "time": 1.6,
+    "params": 632944
+  },
+  "CRMN-FOC1-nofeat": {
+    "accuracy": 0.931,
+    "macro_f1": 0.5969,
+    "class_recalls": [
+      0.988,
+      0.9207,
+      0.5263,
+      0.4615,
+      0.2
+    ],
+    "time": 194.0,
+    "params": 632944
+  }
+}

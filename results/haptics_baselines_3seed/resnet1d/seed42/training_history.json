@@ -1,0 +1,5 @@
+{
+  "note": "not retained by the original canonical run; only best epoch recorded",
+  "best_epoch": 6,
+  "best_val_macro_f1": 0.2333
+}

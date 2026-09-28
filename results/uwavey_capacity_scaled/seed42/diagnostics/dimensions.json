@@ -1,0 +1,64 @@
+{
+ "B_base": 9996,
+ "B_high": 19992,
+ "G_part": 4998,
+ "extractors": {
+  "canonical": {
+   "physical_kernels": 84,
+   "quantiles_per_kernel": 119,
+   "n_unique_dilations": 21,
+   "total_features": 9996,
+   "n_biases": 9996
+  },
+  "expanded": {
+   "physical_kernels": 84,
+   "quantiles_per_kernel": 238,
+   "n_unique_dilations": 21,
+   "total_features": 19992,
+   "n_biases": 19992
+  },
+  "expansion_factor": 2.0
+ },
+ "final_feature_counts": {
+  "canonical_mr": 9996,
+  "canonical_r2": 9996,
+  "canonical_r5": 9996,
+  "mr_high": 19992,
+  "r5_high": {
+   "G_first_N": 17993,
+   "H_top_fclassif": 1999,
+   "total": 19992
+  },
+  "hier_high": {
+   "G_part": 4998,
+   "H_part": 14994,
+   "total": 19992
+  },
+  "all_high_methods_equal_B_high": true
+ },
+ "r5_high_rule": {
+  "rho": 0.1,
+  "source": "stored UWaveY R5 validation-selected rho (no re-search)",
+  "N_G": 17993,
+  "N_H": 1999,
+  "cv_mean": 0.791230104620823,
+  "cv_std": 0.0273238772353829
+ },
+ "hier_high_rule": {
+  "level_budgets": {
+   "2": 4437,
+   "4": 3767,
+   "8": 3128,
+   "16": 3662
+  },
+  "selected_counts": {
+   "2": 4437,
+   "4": 3767,
+   "8": 3128,
+   "16": 3662
+  },
+  "K2_note": "child-0 residual column (child-1 is recoverable via the zero-sum relation given occupancies)"
+ },
+ "peak_mem_mb": 0.0,
+ "runtime_s": 400.75533533096313
+}

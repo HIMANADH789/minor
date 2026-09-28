@@ -1,0 +1,220 @@
+{
+  "task": "Kaggle discovery -> verification -> installation of canonical UCR datasets for the DRTN-conditioned MiniROCKET context-dependence experiment",
+  "kaggle_source": {
+    "ref": "qianhuan/ucrarchive-2018",
+    "owner": "qianhuan",
+    "slug": "ucrarchive-2018",
+    "title": "UCRArchive_2018",
+    "license": "MIT",
+    "packaging": "official UCRArchive_2018 zip content: per-dataset folder with <NAME>_TRAIN.tsv / <NAME>_TEST.tsv (tab-separated, col 0 = class label) + README.md + LICENSE",
+    "download_command": "kaggle datasets download -d qianhuan/ucrarchive-2018 -p data/kaggle/_ucrarchive_2018 --unzip",
+    "full_archive_kept_at": "data/kaggle/_ucrarchive_2018/"
+  },
+  "rejections": [
+    {
+      "ref": "hariwh0/ucr-archives",
+      "reason": "custom .npy repack with X_train/X_valid splits (train+test merged, custom split) -> violates canonical UCR train/test protocol"
+    },
+    {
+      "ref": "khalidamiralam/italypowerdemand",
+      "reason": "superseded: unvetted single-dataset re-upload (arff/ts/txt variants, usability 0.25, 2 downloads); canonical archive mirror preferred"
+    }
+  ],
+  "datasets": {
+    "GunPoint": {
+      "kaggle_owner": "qianhuan",
+      "kaggle_slug": "ucrarchive-2018",
+      "kaggle_ref": "qianhuan/ucrarchive-2018",
+      "download_path": "data/kaggle/GunPoint/",
+      "file_list": [
+        "GunPoint_TRAIN.tsv",
+        "GunPoint_TEST.tsv",
+        "README.md",
+        "desktop.ini"
+      ],
+      "file_sizes_bytes": {
+        "GunPoint_TRAIN.tsv": 83332,
+        "GunPoint_TEST.tsv": 251451
+      },
+      "train_shape": [
+        50,
+        150
+      ],
+      "test_shape": [
+        150,
+        150
+      ],
+      "sequence_length": 150,
+      "n_classes": 2,
+      "class_labels": [
+        1,
+        2
+      ],
+      "canonical_aeon_shape": {
+        "train": [
+          50,
+          150
+        ],
+        "test": [
+          150,
+          150
+        ]
+      },
+      "verification_result": "VERIFIED",
+      "raw_data_comparison": {
+        "per_sample_sha256_multiset_identical": {
+          "train": true,
+          "test": true
+        },
+        "all_rows_nearest_match_exact": {
+          "train": true,
+          "test": true
+        },
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "sample_ordering": "identical (row i of TSV == row i of aeon split for both train and test)"
+      },
+      "label_encoding_mapping": {
+        "kaggle_tsv": "float (1.0/2.0 or -1.0/1.0)",
+        "aeon": "string ('1'/'2' or '-1'/'1')",
+        "mapping": "str(int(label))",
+        "label_sets_equal": true
+      },
+      "notes": [
+        "TSV column 0 = class label; columns 1..T = raw values (no header)",
+        "no normalization/resampling/augmentation applied during installation",
+        "full UCRArchive_2018 zip retained in data/kaggle/_ucrarchive_2018/ for provenance"
+      ]
+    },
+    "ItalyPowerDemand": {
+      "kaggle_owner": "qianhuan",
+      "kaggle_slug": "ucrarchive-2018",
+      "kaggle_ref": "qianhuan/ucrarchive-2018",
+      "download_path": "data/kaggle/ItalyPowerDemand/",
+      "file_list": [
+        "ItalyPowerDemand_TRAIN.tsv",
+        "ItalyPowerDemand_TEST.tsv",
+        "README.md",
+        "desktop.ini"
+      ],
+      "file_sizes_bytes": {
+        "ItalyPowerDemand_TRAIN.tsv": 17832,
+        "ItalyPowerDemand_TEST.tsv": 273602
+      },
+      "train_shape": [
+        67,
+        24
+      ],
+      "test_shape": [
+        1029,
+        24
+      ],
+      "sequence_length": 24,
+      "n_classes": 2,
+      "class_labels": [
+        1,
+        2
+      ],
+      "canonical_aeon_shape": {
+        "train": [
+          67,
+          24
+        ],
+        "test": [
+          1029,
+          24
+        ]
+      },
+      "verification_result": "VERIFIED",
+      "raw_data_comparison": {
+        "per_sample_sha256_multiset_identical": {
+          "train": true,
+          "test": true
+        },
+        "all_rows_nearest_match_exact": {
+          "train": true,
+          "test": true
+        },
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "sample_ordering": "identical (row i of TSV == row i of aeon split for both train and test)"
+      },
+      "label_encoding_mapping": {
+        "kaggle_tsv": "float (1.0/2.0 or -1.0/1.0)",
+        "aeon": "string ('1'/'2' or '-1'/'1')",
+        "mapping": "str(int(label))",
+        "label_sets_equal": true
+      },
+      "notes": [
+        "TSV column 0 = class label; columns 1..T = raw values (no header)",
+        "no normalization/resampling/augmentation applied during installation",
+        "full UCRArchive_2018 zip retained in data/kaggle/_ucrarchive_2018/ for provenance"
+      ]
+    },
+    "FordA": {
+      "kaggle_owner": "qianhuan",
+      "kaggle_slug": "ucrarchive-2018",
+      "kaggle_ref": "qianhuan/ucrarchive-2018",
+      "download_path": "data/kaggle/FordA/",
+      "file_list": [
+        "FordA_TRAIN.tsv",
+        "FordA_TEST.tsv",
+        "README.md",
+        "desktop.ini"
+      ],
+      "file_sizes_bytes": {
+        "FordA_TRAIN.tsv": 20094049,
+        "FordA_TEST.tsv": 7364408
+      },
+      "train_shape": [
+        3601,
+        500
+      ],
+      "test_shape": [
+        1320,
+        500
+      ],
+      "sequence_length": 500,
+      "n_classes": 2,
+      "class_labels": [
+        -1,
+        1
+      ],
+      "canonical_aeon_shape": {
+        "train": [
+          3601,
+          500
+        ],
+        "test": [
+          1320,
+          500
+        ]
+      },
+      "verification_result": "VERIFIED",
+      "raw_data_comparison": {
+        "per_sample_sha256_multiset_identical": {
+          "train": true,
+          "test": true
+        },
+        "all_rows_nearest_match_exact": {
+          "train": true,
+          "test": true
+        },
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "sample_ordering": "identical (row i of TSV == row i of aeon split for both train and test)"
+      },
+      "label_encoding_mapping": {
+        "kaggle_tsv": "float (1.0/2.0 or -1.0/1.0)",
+        "aeon": "string ('1'/'2' or '-1'/'1')",
+        "mapping": "str(int(label))",
+        "label_sets_equal": true
+      },
+      "notes": [
+        "TSV column 0 = class label; columns 1..T = raw values (no header)",
+        "no normalization/resampling/augmentation applied during installation",
+        "full UCRArchive_2018 zip retained in data/kaggle/_ucrarchive_2018/ for provenance"
+      ]
+    }
+  }
+}

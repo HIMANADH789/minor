@@ -1,0 +1,8 @@
+{
+ "max_residual": 7.849276784099857e-13,
+ "max_cond": 36665.107837633564,
+ "max_gram_symmetry": 4.263256414560601e-14,
+ "gate_steps": 170,
+ "final_refit_residual": 5.530298441414061e-13,
+ "final_refit_symmetry": 2.842170943040401e-14
+}

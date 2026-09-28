@@ -1,0 +1,2334 @@
+{
+  "tag": "CWRU_BAL",
+  "predictive": {
+    "accuracy": 0.9541446208112875,
+    "macro_f1": 0.9540629220161475,
+    "weighted_f1": 0.953988136285849,
+    "balanced_accuracy": 0.954225352112676,
+    "mcc": 0.9392140921799776,
+    "class_f1s": [
+      1.0,
+      0.9964664310954063,
+      0.9051094890510949,
+      0.9146757679180887
+    ],
+    "confusion_matrix": [
+      [
+        142,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        141,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        124,
+        17
+      ],
+      [
+        0,
+        0,
+        8,
+        134
+      ]
+    ],
+    "best_epoch": 21,
+    "replay_source": "frozen checkpoint, new inference process"
+  },
+  "historical": {
+    "accuracy": 0.9541,
+    "macro_f1": 0.9542,
+    "weighted_f1": 0.9541,
+    "class_f1s": [
+      1.0,
+      1.0,
+      0.9065,
+      0.9103
+    ],
+    "confusion_matrix": [
+      [
+        142,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        141,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        126,
+        16
+      ],
+      [
+        0,
+        0,
+        10,
+        132
+      ]
+    ],
+    "params": 137482,
+    "best_epoch": 14,
+    "time_s": 60.7,
+    "gate_stats": {
+      "alpha_mean": 0.0004,
+      "uncertainty_mean": 0.6354
+    }
+  },
+  "manifest": {
+    "dataset": "CWRU_BAL",
+    "source_file": "data/cwru_balanced.npz",
+    "source_sha256": "da1f15b14330d37a7a4bbc996ac8af4e5c07bc8cd43e53a1802a0bfaede43969",
+    "n_samples_total": 3776,
+    "signal_length": 1024,
+    "num_classes": 4,
+    "label_mapping": {
+      "labels_present": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "contiguous": true
+    },
+    "split": {
+      "protocol": "stratified 85/15 then val",
+      "seed": 42,
+      "val_frac_of_train": 0.15,
+      "train": 2727,
+      "val": 482,
+      "test": 567
+    },
+    "class_counts": {
+      "train": [
+        682,
+        682,
+        682,
+        681
+      ],
+      "val": [
+        120,
+        121,
+        120,
+        121
+      ],
+      "test": [
+        142,
+        141,
+        142,
+        142
+      ]
+    },
+    "normalization": "per-sample z-normalization (mean/std over time, eps=1e-8)",
+    "leakage_checks": {
+      "test_disjoint_from_trainval": true,
+      "split_deterministic_given_seed": true,
+      "normalization_fitted_per_sample": "no train-statistics leakage"
+    },
+    "raw_examples_shapes": {
+      "train": [
+        2727,
+        1024
+      ],
+      "val": [
+        482,
+        1024
+      ],
+      "test": [
+        567,
+        1024
+      ]
+    }
+  },
+  "latent": {
+    "val": {
+      "silhouette": 0.14914348721504211,
+      "davies_bouldin": 2.5964487940365997,
+      "calinski_harabasz": 99.203177108891,
+      "kmeans_ari": 0.41850514791756555,
+      "kmeans_nmi": 0.4861361039405747,
+      "within_class_dist": 8.387691497802734,
+      "between_class_dist": 12.445782661437988,
+      "between_within_ratio": 1.4838150240382975
+    },
+    "test": {
+      "silhouette": 0.16118621826171875,
+      "davies_bouldin": 2.060674082703533,
+      "calinski_harabasz": 124.61758731126596,
+      "kmeans_ari": 0.4308315874320169,
+      "kmeans_nmi": 0.49394423162863865,
+      "within_class_dist": 8.61497974395752,
+      "between_class_dist": 13.229273796081543,
+      "between_within_ratio": 1.5356128730726795,
+      "probe_test_mf1_lr": 0.9490164212508692,
+      "probe_test_mf1_svm": 0.9560464936519661,
+      "probe_test_balacc_svm": 0.9559734292278493,
+      "probe_test_acc_svm": 0.9559082892416225,
+      "probe_confusion_matrix": [
+        [
+          142,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          140,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          129,
+          13
+        ],
+        [
+          0,
+          0,
+          11,
+          131
+        ]
+      ],
+      "probe_test_mf1_raw_stats": 0.7625206846961938,
+      "probe_test_mf1_raw_linear": 0.3133585624923859
+    }
+  },
+  "velocity": {
+    "n_synthetic": 40,
+    "region_width": 154,
+    "turs": {
+      "top1_err": 125,
+      "top5_err": 98.725,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "precision_5": 0.0,
+      "recall_5": 0.0
+    },
+    "raw_first_diff": {
+      "top1_err": 93,
+      "hit_at_5": 0.0
+    },
+    "raw_local_energy": {
+      "top1_err": 92,
+      "hit_at_5": 0.025
+    },
+    "random": {
+      "top1_err": 385,
+      "hit_at_5": 0.025
+    },
+    "true_vs_pred_centers": {
+      "turs_center_err_mean": 125.55
+    }
+  },
+  "uncertainty": {
+    "val": {
+      "n_correct": 468,
+      "n_incorrect": 14,
+      "u_correct_mean": 0.35742896795272827,
+      "u_incorrect_mean": 0.3793804347515106,
+      "u_correct_median": 0.3602215647697449,
+      "u_incorrect_median": 0.3839866518974304,
+      "mean_diff": 0.02195140191778011,
+      "mean_diff_ci": [
+        0.014898091237832842,
+        0.02802803311701662
+      ],
+      "cliffs_delta": 0.44505494505494503,
+      "cliffs_label": "medium",
+      "mannwhitney_p": 0.0022686378774260095,
+      "error_detection": {
+        "turs_u_mean": {
+          "auroc": 0.7225274725274725,
+          "auroc_ci": [
+            0.6385760073260073,
+            0.7944291819291819
+          ],
+          "auprc": 0.05236114984935081
+        },
+        "turs_u_max": {
+          "auroc": 0.807997557997558,
+          "auroc_ci": [
+            0.7576236263736263,
+            0.8551625457875458
+          ],
+          "auprc": 0.07100729736639899
+        },
+        "1_minus_maxsoftmax": {
+          "auroc": 0.9435286935286936,
+          "auroc_ci": [
+            0.9183455433455434,
+            0.9656631562881564
+          ],
+          "auprc": 0.21227899347763632
+        },
+        "predictive_entropy": {
+          "auroc": 0.9455128205128205,
+          "auroc_ci": [
+            0.916971916971917,
+            0.9674908424908424
+          ],
+          "auprc": 0.28094704040655283
+        },
+        "top1_top2_margin": {
+          "auroc": 0.9436813186813187,
+          "auroc_ci": [
+            0.9183455433455434,
+            0.9659684065934065
+          ],
+          "auprc": 0.2126021996831955
+        }
+      }
+    },
+    "test": {
+      "n_correct": 541,
+      "n_incorrect": 26,
+      "u_correct_mean": 0.3560468852519989,
+      "u_incorrect_mean": 0.3811814486980438,
+      "u_correct_median": 0.356484591960907,
+      "u_incorrect_median": 0.38223013281822205,
+      "mean_diff": 0.025134583682215883,
+      "mean_diff_ci": [
+        0.020713887337876474,
+        0.029584363475653807
+      ],
+      "cliffs_delta": 0.4942414332432817,
+      "cliffs_label": "large",
+      "mannwhitney_p": 1.0248812050659643e-05,
+      "error_detection": {
+        "turs_u_mean": {
+          "auroc": 0.7471207166216408,
+          "auroc_ci": [
+            0.6933616522110052,
+            0.7954677946822124
+          ],
+          "auprc": 0.08252163608053872
+        },
+        "turs_u_max": {
+          "auroc": 0.7670979667282809,
+          "auroc_ci": [
+            0.7272145599317503,
+            0.8074097113607279
+          ],
+          "auprc": 0.0884309026638452
+        },
+        "1_minus_maxsoftmax": {
+          "auroc": 0.9268448741646523,
+          "auroc_ci": [
+            0.8757198208445898,
+            0.9635308545428692
+          ],
+          "auprc": 0.4313537405832903
+        },
+        "predictive_entropy": {
+          "auroc": 0.9266315939144035,
+          "auroc_ci": [
+            0.8804830797668136,
+            0.9616113322906299
+          ],
+          "auprc": 0.37566620511997223
+        },
+        "top1_top2_margin": {
+          "auroc": 0.9261694867055311,
+          "auroc_ci": [
+            0.8720318498507038,
+            0.9613287359590501
+          ],
+          "auprc": 0.43185221437019905
+        }
+      }
+    }
+  },
+  "calibration": {
+    "val": {
+      "ece": 0.02576551867718517,
+      "adaptive_ece": 0.010810339599229486,
+      "brier": 0.05578242987394333,
+      "nll": 0.10064636915922165,
+      "mean_confidence": 0.9814050197601318,
+      "reliability_curve": [
+        {
+          "bin_center": 0.05,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.15000000000000002,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.25,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.35000000000000003,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.45,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.55,
+          "acc": 1.0,
+          "conf": 0.5555843710899353,
+          "n": 6
+        },
+        {
+          "bin_center": 0.6500000000000001,
+          "acc": 0.8333333333333334,
+          "conf": 0.6388317942619324,
+          "n": 6
+        },
+        {
+          "bin_center": 0.75,
+          "acc": 0.6,
+          "conf": 0.7326032519340515,
+          "n": 5
+        },
+        {
+          "bin_center": 0.8500000000000001,
+          "acc": 0.6666666666666666,
+          "conf": 0.841437578201294,
+          "n": 9
+        },
+        {
+          "bin_center": 0.95,
+          "acc": 0.9824561403508771,
+          "conf": 0.9970060586929321,
+          "n": 456
+        }
+      ],
+      "nll_ci": [
+        0.05921482398727577,
+        0.15273635700358756
+      ]
+    },
+    "test": {
+      "ece": 0.03145642434057947,
+      "adaptive_ece": 0.029125661971918067,
+      "brier": 0.0748940259218216,
+      "nll": 0.17479851841926575,
+      "mean_confidence": 0.9832111597061157,
+      "reliability_curve": [
+        {
+          "bin_center": 0.05,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.15000000000000002,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.25,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.35000000000000003,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.45,
+          "acc": null,
+          "conf": null,
+          "n": 0
+        },
+        {
+          "bin_center": 0.55,
+          "acc": 0.2,
+          "conf": 0.5567679405212402,
+          "n": 5
+        },
+        {
+          "bin_center": 0.6500000000000001,
+          "acc": 0.7142857142857143,
+          "conf": 0.6559389233589172,
+          "n": 7
+        },
+        {
+          "bin_center": 0.75,
+          "acc": 0.75,
+          "conf": 0.7467111349105835,
+          "n": 8
+        },
+        {
+          "bin_center": 0.8500000000000001,
+          "acc": 0.8571428571428571,
+          "conf": 0.8354393243789673,
+          "n": 7
+        },
+        {
+          "bin_center": 0.95,
+          "acc": 0.9685185185185186,
+          "conf": 0.9968212842941284,
+          "n": 540
+        }
+      ],
+      "nll_ci": [
+        0.0994346107358106,
+        0.255262843672744
+      ]
+    }
+  },
+  "risk_coverage": {
+    "turs_u_mean": {
+      "rows": [
+        {
+          "coverage": 1.0,
+          "risk": 0.04585537918871252,
+          "aurc_prefix": 0.04585537918871252,
+          "macro_f1": 0.9540629220161475
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.050980392156862786,
+          "aurc_prefix": 0.050980392156862744,
+          "macro_f1": 0.9540629220161475
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.05726872246696035,
+          "aurc_prefix": 0.05726872246696035,
+          "macro_f1": 0.954037223333205
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.06549118387909325,
+          "aurc_prefix": 0.0654911838790932,
+          "macro_f1": 0.7038449926563928
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.07647058823529407,
+          "aurc_prefix": 0.07647058823529412,
+          "macro_f1": 0.7027339248617649
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.09154929577464788,
+          "aurc_prefix": 0.09154929577464789,
+          "macro_f1": 0.6870022753128555
+        }
+      ],
+      "aurc": 0.06550487450246445,
+      "selective_risk_at_80": 0.05726872246696035
+    },
+    "max_softmax_confidence_neg": {
+      "rows": [
+        {
+          "coverage": 1.0,
+          "risk": 0.04585537918871252,
+          "aurc_prefix": 0.04585537918871252,
+          "macro_f1": 0.9540629220161475
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.050980392156862786,
+          "aurc_prefix": 0.050980392156862744,
+          "macro_f1": 0.9473264948862559
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.05726872246696035,
+          "aurc_prefix": 0.05726872246696035,
+          "macro_f1": 0.9431471027520292
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.06549118387909325,
+          "aurc_prefix": 0.0654911838790932,
+          "macro_f1": 0.9401673003781572
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.07352941176470584,
+          "aurc_prefix": 0.07352941176470588,
+          "macro_f1": 0.9359044300647088
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0880281690140845,
+          "aurc_prefix": 0.0880281690140845,
+          "macro_f1": 0.9272768678951664
+        }
+      ],
+      "aurc": 0.139697925420226,
+      "selective_risk_at_80": 0.05726872246696035
+    },
+    "predictive_entropy": {
+      "rows": [
+        {
+          "coverage": 1.0,
+          "risk": 0.04585537918871252,
+          "aurc_prefix": 0.04585537918871252,
+          "macro_f1": 0.9540629220161475
+        },
+        {
+          "coverage": 0.9,
+          "risk": 0.050980392156862786,
+          "aurc_prefix": 0.050980392156862744,
+          "macro_f1": 0.9470268540626019
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.05726872246696035,
+          "aurc_prefix": 0.05726872246696035,
+          "macro_f1": 0.9434487873728692
+        },
+        {
+          "coverage": 0.7,
+          "risk": 0.06549118387909325,
+          "aurc_prefix": 0.0654911838790932,
+          "macro_f1": 0.9401673003781572
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.07647058823529407,
+          "aurc_prefix": 0.07647058823529412,
+          "macro_f1": 0.9332336774901492
+        },
+        {
+          "coverage": 0.5,
+          "risk": 0.0880281690140845,
+          "aurc_prefix": 0.0880281690140845,
+          "macro_f1": 0.9273414423495122
+        }
+      ],
+      "aurc": 0.13611513450016371,
+      "selective_risk_at_80": 0.05726872246696035
+    }
+  },
+  "corruption": {
+    "n": 400,
+    "kinds": {
+      "gaussian_noise": {
+        "levels": {
+          "0.05": {
+            "macro_f1": 0.9541666666666666,
+            "accuracy": 0.955,
+            "mean_confidence": 0.982896089553833,
+            "mean_entropy": 0.04290562495589256,
+            "mean_u": 0.35647979378700256,
+            "error_rate": 0.045,
+            "pred_flip_rate": null
+          },
+          "0.1": {
+            "macro_f1": 0.9541021614364108,
+            "accuracy": 0.955,
+            "mean_confidence": 0.9829214215278625,
+            "mean_entropy": 0.04242776706814766,
+            "mean_u": 0.35498133301734924,
+            "error_rate": 0.045,
+            "pred_flip_rate": null
+          },
+          "0.2": {
+            "macro_f1": 0.9512233763197998,
+            "accuracy": 0.9525,
+            "mean_confidence": 0.9752961993217468,
+            "mean_entropy": 0.0611325204372406,
+            "mean_u": 0.34888091683387756,
+            "error_rate": 0.0475,
+            "pred_flip_rate": null
+          },
+          "0.4": {
+            "macro_f1": 0.8429030276284813,
+            "accuracy": 0.8575,
+            "mean_confidence": 0.9444670081138611,
+            "mean_entropy": 0.13341574370861053,
+            "mean_u": 0.32876214385032654,
+            "error_rate": 0.1425,
+            "pred_flip_rate": null
+          },
+          "0.8": {
+            "macro_f1": 0.4750125358616288,
+            "accuracy": 0.555,
+            "mean_confidence": 0.9698611497879028,
+            "mean_entropy": 0.07712103426456451,
+            "mean_u": 0.2802681028842926,
+            "error_rate": 0.445,
+            "pred_flip_rate": null
+          }
+        },
+        "severity_vs_u_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        },
+        "severity_vs_error_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        }
+      },
+      "amplitude_scale": {
+        "levels": {
+          "0.6": {
+            "macro_f1": 0.8499912383475835,
+            "accuracy": 0.85,
+            "mean_confidence": 0.8877013921737671,
+            "mean_entropy": 0.2965829372406006,
+            "mean_u": 0.43225806951522827,
+            "error_rate": 0.15,
+            "pred_flip_rate": null
+          },
+          "0.7": {
+            "macro_f1": 0.9082732241751019,
+            "accuracy": 0.91,
+            "mean_confidence": 0.9545911550521851,
+            "mean_entropy": 0.13131365180015564,
+            "mean_u": 0.4123965799808502,
+            "error_rate": 0.09,
+            "pred_flip_rate": null
+          },
+          "0.8": {
+            "macro_f1": 0.9280523255813954,
+            "accuracy": 0.93,
+            "mean_confidence": 0.974566638469696,
+            "mean_entropy": 0.06869802623987198,
+            "mean_u": 0.3927920460700989,
+            "error_rate": 0.07,
+            "pred_flip_rate": null
+          },
+          "0.9": {
+            "macro_f1": 0.9490740740740741,
+            "accuracy": 0.95,
+            "mean_confidence": 0.9805818796157837,
+            "mean_entropy": 0.047699905931949615,
+            "mean_u": 0.37419524788856506,
+            "error_rate": 0.05,
+            "pred_flip_rate": null
+          },
+          "1.1": {
+            "macro_f1": 0.9616270634307833,
+            "accuracy": 0.9625,
+            "mean_confidence": 0.9840267300605774,
+            "mean_entropy": 0.037839051336050034,
+            "mean_u": 0.3414462208747864,
+            "error_rate": 0.0375,
+            "pred_flip_rate": null
+          }
+        },
+        "severity_vs_u_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        },
+        "severity_vs_error_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        }
+      },
+      "baseline_shift": {
+        "levels": {
+          "0.2": {
+            "macro_f1": 0.929338328969675,
+            "accuracy": 0.93,
+            "mean_confidence": 0.9706030488014221,
+            "mean_entropy": 0.0687420666217804,
+            "mean_u": 0.3435324430465698,
+            "error_rate": 0.07,
+            "pred_flip_rate": null
+          },
+          "0.4": {
+            "macro_f1": 0.5540164600716686,
+            "accuracy": 0.6125,
+            "mean_confidence": 0.9540223479270935,
+            "mean_entropy": 0.1140696331858635,
+            "mean_u": 0.319873571395874,
+            "error_rate": 0.3875,
+            "pred_flip_rate": null
+          },
+          "0.6": {
+            "macro_f1": 0.3772415296765393,
+            "accuracy": 0.49,
+            "mean_confidence": 0.9702586531639099,
+            "mean_entropy": 0.07518122345209122,
+            "mean_u": 0.29519256949424744,
+            "error_rate": 0.51,
+            "pred_flip_rate": null
+          },
+          "0.8": {
+            "macro_f1": 0.24826617711667606,
+            "accuracy": 0.335,
+            "mean_confidence": 0.9435473680496216,
+            "mean_entropy": 0.12293609976768494,
+            "mean_u": 0.2759683132171631,
+            "error_rate": 0.665,
+            "pred_flip_rate": null
+          },
+          "1.2": {
+            "macro_f1": 0.09432048681541583,
+            "accuracy": 0.2325,
+            "mean_confidence": 0.999950110912323,
+            "mean_entropy": 0.00038396811578422785,
+            "mean_u": 0.24228250980377197,
+            "error_rate": 0.7675,
+            "pred_flip_rate": null
+          }
+        },
+        "severity_vs_u_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        },
+        "severity_vs_error_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        }
+      },
+      "temporal_jitter": {
+        "levels": {
+          "2": {
+            "macro_f1": 0.9567518951561095,
+            "accuracy": 0.9575,
+            "mean_confidence": 0.9849923849105835,
+            "mean_entropy": 0.0389864444732666,
+            "mean_u": 0.35688507556915283,
+            "error_rate": 0.0425,
+            "pred_flip_rate": null
+          },
+          "4": {
+            "macro_f1": 0.9540768992887332,
+            "accuracy": 0.955,
+            "mean_confidence": 0.9848278760910034,
+            "mean_entropy": 0.03904377296566963,
+            "mean_u": 0.3567662835121155,
+            "error_rate": 0.045,
+            "pred_flip_rate": null
+          },
+          "8": {
+            "macro_f1": 0.9564205645166388,
+            "accuracy": 0.9575,
+            "mean_confidence": 0.9831194877624512,
+            "mean_entropy": 0.042769160121679306,
+            "mean_u": 0.3566165864467621,
+            "error_rate": 0.0425,
+            "pred_flip_rate": null
+          },
+          "16": {
+            "macro_f1": 0.9539772727272726,
+            "accuracy": 0.955,
+            "mean_confidence": 0.9839256405830383,
+            "mean_entropy": 0.042289018630981445,
+            "mean_u": 0.3564532399177551,
+            "error_rate": 0.045,
+            "pred_flip_rate": null
+          },
+          "32": {
+            "macro_f1": 0.9592592592592593,
+            "accuracy": 0.96,
+            "mean_confidence": 0.9849608540534973,
+            "mean_entropy": 0.03871899098157883,
+            "mean_u": 0.356342077255249,
+            "error_rate": 0.04,
+            "pred_flip_rate": null
+          }
+        },
+        "severity_vs_u_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        },
+        "severity_vs_error_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        }
+      },
+      "localized_mask": {
+        "levels": {
+          "0.05": {
+            "macro_f1": 0.9513021277779252,
+            "accuracy": 0.9525,
+            "mean_confidence": 0.9821451306343079,
+            "mean_entropy": 0.045282937586307526,
+            "mean_u": 0.3601958453655243,
+            "error_rate": 0.0475,
+            "pred_flip_rate": null
+          },
+          "0.1": {
+            "macro_f1": 0.9436880630132869,
+            "accuracy": 0.945,
+            "mean_confidence": 0.9819124341011047,
+            "mean_entropy": 0.044381655752658844,
+            "mean_u": 0.3637975752353668,
+            "error_rate": 0.055,
+            "pred_flip_rate": null
+          },
+          "0.2": {
+            "macro_f1": 0.9247023864492205,
+            "accuracy": 0.9275,
+            "mean_confidence": 0.9660667181015015,
+            "mean_entropy": 0.07865728437900543,
+            "mean_u": 0.37085381150245667,
+            "error_rate": 0.0725,
+            "pred_flip_rate": null
+          },
+          "0.3": {
+            "macro_f1": 0.9102149182510653,
+            "accuracy": 0.915,
+            "mean_confidence": 0.9711033701896667,
+            "mean_entropy": 0.07555821537971497,
+            "mean_u": 0.3787473738193512,
+            "error_rate": 0.085,
+            "pred_flip_rate": null
+          },
+          "0.4": {
+            "macro_f1": 0.8746825541093098,
+            "accuracy": 0.8825,
+            "mean_confidence": 0.952435314655304,
+            "mean_entropy": 0.1243872195482254,
+            "mean_u": 0.3896622061729431,
+            "error_rate": 0.1175,
+            "pred_flip_rate": null
+          }
+        },
+        "severity_vs_u_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        },
+        "severity_vs_error_spearman": {
+          "rho": null,
+          "p_perm": null,
+          "ci_lo": null,
+          "ci_hi": null,
+          "n": 5
+        }
+      }
+    },
+    "H3_u_vs_error": {
+      "rho": -0.2568532453426572,
+      "p_perm": 0.0004997501249375312,
+      "ci_lo": -0.27858826027834643,
+      "ci_hi": -0.23488041857176883,
+      "n": 10000,
+      "auroc": 0.29925815980239096,
+      "auroc_ci": [
+        0.28263152619272747,
+        0.31603682997266014
+      ]
+    }
+  },
+  "alpha": {
+    "val": {
+      "amplitude_std": {
+        "rho": -0.015783977196701438,
+        "p_perm": 0.7171414292853573,
+        "ci_lo": -0.10662843330130876,
+        "ci_hi": 0.07521478001729562,
+        "n": 482
+      },
+      "local_variance_mean": {
+        "rho": -0.3132703729853289,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": -0.3983719276224118,
+        "ci_hi": -0.217532861334743,
+        "n": 482
+      },
+      "ks_stat_uniform": {
+        "rho": 0.34684753447156486,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": 0.2539328859472149,
+        "ci_hi": 0.43099556658931926,
+        "n": 482
+      },
+      "hist_entropy": {
+        "rho": -0.26840237790986493,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": -0.3515751205985987,
+        "ci_hi": -0.17686630391108554,
+        "n": 482
+      },
+      "lag_disagreement": {
+        "rho": 0.31353774290812003,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": 0.2315757954517186,
+        "ci_hi": 0.39766498124081623,
+        "n": 482
+      },
+      "alpha_mean": 0.0007672518840990961,
+      "alpha_std": 0.0005093060317449272,
+      "alpha_deciles": [
+        0.00031946808740030975,
+        0.0004189696570392698,
+        0.0004494037391850725,
+        0.0004786894016433507,
+        0.000570362142752856,
+        0.000747955695260316,
+        0.0008924977038986981,
+        0.0010293420171365141,
+        0.001436464337166399
+      ]
+    },
+    "test": {
+      "amplitude_std": {
+        "rho": -0.05609175661381111,
+        "p_perm": 0.16691654172913542,
+        "ci_lo": -0.14176212471772212,
+        "ci_hi": 0.024765543480051673,
+        "n": 567
+      },
+      "local_variance_mean": {
+        "rho": -0.3655646086965452,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": -0.4384270316702989,
+        "ci_hi": -0.2855804814820034,
+        "n": 567
+      },
+      "ks_stat_uniform": {
+        "rho": 0.311547929113748,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": 0.22364114235988825,
+        "ci_hi": 0.3953535068660834,
+        "n": 567
+      },
+      "hist_entropy": {
+        "rho": -0.2774611285037802,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": -0.3600109958308757,
+        "ci_hi": -0.19487980306723743,
+        "n": 567
+      },
+      "lag_disagreement": {
+        "rho": 0.3306181810138412,
+        "p_perm": 0.0004997501249375312,
+        "ci_lo": 0.25182707592736775,
+        "ci_hi": 0.39844990102821043,
+        "n": 567
+      },
+      "alpha_mean": 0.0007604903657920659,
+      "alpha_std": 0.0005231716204434633,
+      "alpha_deciles": [
+        0.0002938025107141584,
+        0.0004150527354795486,
+        0.0004487491969484836,
+        0.0004813020874280483,
+        0.0005401446251198649,
+        0.0007033036090433594,
+        0.0008611915400251747,
+        0.0010485832113772632,
+        0.0014105770271271468
+      ]
+    }
+  },
+  "faithfulness": {
+    "n": 300,
+    "frac": 0.1,
+    "perturb": "noise",
+    "by_source": {
+      "u_t": {
+        "pdrop": {
+          "targeted_mean": 0.0025232951156795025,
+          "random_mean": 0.005958356894552708,
+          "diff": -0.0037013285735156384,
+          "ci": [
+            -0.012674898904030365,
+            0.0046055636440966415
+          ],
+          "p_perm": 0.16841579210394803,
+          "cohens_d": -0.08204462720222284,
+          "flip_diff": null
+        },
+        "logitdrop": {
+          "targeted_mean": 0.05244951695203781,
+          "random_mean": 0.20369279384613037,
+          "diff": -0.17488228718439738,
+          "ci": [
+            -0.2755777809768915,
+            -0.07862240776419646
+          ],
+          "p_perm": 0.0004997501249375312,
+          "cohens_d": -0.38789801421072556,
+          "flip_diff": null
+        },
+        "confdrop": {
+          "targeted_mean": 0.002116006799042225,
+          "random_mean": 0.004170763771981001,
+          "diff": 0.0012126503388086955,
+          "ci": [
+            -0.006579400951663651,
+            0.008863229985038438
+          ],
+          "p_perm": 0.32733633183408295,
+          "cohens_d": -0.05977555495853947,
+          "flip_diff": null
+        },
+        "entdrop": {
+          "targeted_mean": 0.005384552292525768,
+          "random_mean": 0.009150350466370583,
+          "diff": 1.4413030023113782e-05,
+          "ci": [
+            -0.011485827167514655,
+            0.011193475961812789
+          ],
+          "p_perm": 0.23138430784607697,
+          "cohens_d": -0.06983530378154273,
+          "flip_diff": null
+        },
+        "flip": {
+          "targeted_mean": 0.03666666666666667,
+          "random_mean": 0.041111111111111105,
+          "diff": -0.010000000000000002,
+          "ci": [
+            -0.04000000000000001,
+            0.02333333333333333
+          ],
+          "p_perm": 0.5217391304347826,
+          "cohens_d": -0.05442299429536473,
+          "flip_diff": -0.004444444444444438
+        }
+      },
+      "s_t": {
+        "pdrop": {
+          "targeted_mean": 0.023138124495744705,
+          "random_mean": 0.005645473953336477,
+          "diff": 0.014348745329771189,
+          "ci": [
+            -0.0030213086232639954,
+            0.032314913646162784
+          ],
+          "p_perm": 0.00849575212393803,
+          "cohens_d": 0.14768199776061777,
+          "flip_diff": null
+        },
+        "logitdrop": {
+          "targeted_mean": 0.758048415184021,
+          "random_mean": 0.18918398022651672,
+          "diff": 0.5764896569649378,
+          "ci": [
+            0.39026601732770605,
+            0.7484371333916982
+          ],
+          "p_perm": 0.0004997501249375312,
+          "cohens_d": 0.4537126544029695,
+          "flip_diff": null
+        },
+        "confdrop": {
+          "targeted_mean": 0.007970265112817287,
+          "random_mean": 0.004105192143470049,
+          "diff": 0.007670307755470276,
+          "ci": [
+            -0.001037182996670403,
+            0.017176095724105826
+          ],
+          "p_perm": 0.25987006496751625,
+          "cohens_d": 0.06657050279297519,
+          "flip_diff": null
+        },
+        "entdrop": {
+          "targeted_mean": 0.020569797605276108,
+          "random_mean": 0.010493610985577106,
+          "diff": 0.015338295547192862,
+          "ci": [
+            -0.000257178210580566,
+            0.03198213684352825
+          ],
+          "p_perm": 0.10794602698650675,
+          "cohens_d": 0.09214627632479579,
+          "flip_diff": null
+        },
+        "flip": {
+          "targeted_mean": 0.06,
+          "random_mean": 0.039999999999999994,
+          "diff": 0.006666666666666661,
+          "ci": [
+            -0.03008333333333319,
+            0.04
+          ],
+          "p_perm": 0.026986506746626688,
+          "cohens_d": 0.13292506985390848,
+          "flip_diff": 0.020000000000000004
+        }
+      }
+    }
+  },
+  "benign": {
+    "amp_scale_0.95": {
+      "pred_agreement": 0.9966666666666667,
+      "kl_mean": 0.0016012110281735659,
+      "kl_ci": [
+        0.0009183368120121064,
+        0.002464469548175799
+      ],
+      "z_cosine": 0.999915361404419,
+      "z_t_cosine": 0.99993896484375,
+      "v_corr": null,
+      "u_abs_change_mean": 0.008477427996695042,
+      "alpha_abs_change_mean": 0.00016527710249647498
+    },
+    "amp_scale_1.05": {
+      "pred_agreement": 0.9933333333333333,
+      "kl_mean": 0.002076361095532775,
+      "kl_ci": [
+        0.0008529656340755013,
+        0.0036620977706917123
+      ],
+      "z_cosine": 0.9999321699142456,
+      "z_t_cosine": 0.9999503493309021,
+      "v_corr": null,
+      "u_abs_change_mean": 0.008069414645433426,
+      "alpha_abs_change_mean": 0.00013537831546273082
+    },
+    "baseline_0.1sd": {
+      "pred_agreement": 0.99,
+      "kl_mean": 0.010552971623837948,
+      "kl_ci": [
+        0.004905226936276444,
+        0.01802479233091254
+      ],
+      "z_cosine": 0.9987651705741882,
+      "z_t_cosine": 0.9990572929382324,
+      "v_corr": null,
+      "u_abs_change_mean": 0.005283709149807692,
+      "alpha_abs_change_mean": 7.984971307450905e-05
+    },
+    "noise_0.02": {
+      "pred_agreement": 0.9966666666666667,
+      "kl_mean": 0.0002056221419479698,
+      "kl_ci": [
+        9.805134328336233e-05,
+        0.00034710022487661194
+      ],
+      "z_cosine": 0.9999992847442627,
+      "z_t_cosine": 0.9999994039535522,
+      "v_corr": null,
+      "u_abs_change_mean": 0.00018394450307823718,
+      "alpha_abs_change_mean": 3.2353505048376974e-06
+    },
+    "jitter_2": {
+      "pred_agreement": 1.0,
+      "kl_mean": 0.00035926041891798377,
+      "kl_ci": [
+        8.542087644584757e-05,
+        0.000741513039534391
+      ],
+      "z_cosine": 0.9999979734420776,
+      "z_t_cosine": 0.9999983906745911,
+      "v_corr": null,
+      "u_abs_change_mean": 0.00029884150717407465,
+      "alpha_abs_change_mean": 6.746177859895397e-06
+    }
+  },
+  "counterfactual": {
+    "n": 300,
+    "frac": 0.1,
+    "probdrop_target": 0.10134165734052658,
+    "probdrop_random": 0.07210355252027512,
+    "diff": 0.02923810450593009,
+    "ci": [
+      -0.005546145881875399,
+      0.06449306914206436
+    ],
+    "p_perm": 0.10994502748625687,
+    "cohens_d": 0.09413813774742805,
+    "flip_target": 0.14333333333333334,
+    "flip_random": 0.11,
+    "mcnemar_p": 0.15472892348537437
+  },
+  "stability": {
+    "replay_bitwise_probs": true,
+    "replay_max_abs_diff": 0.0,
+    "replay_identical_preds": true,
+    "seed_primary": 42
+  },
+  "baseline": {
+    "turs_u_mean": {
+      "auroc": 0.7471207166216408,
+      "ci": [
+        0.696422223802076,
+        0.7941152424285511
+      ],
+      "n": 567,
+      "n_errors": 26
+    },
+    "turs_u_max": {
+      "auroc": 0.7670979667282809,
+      "ci": [
+        0.7271434665150007,
+        0.8071964311104791
+      ],
+      "n": 567,
+      "n_errors": 26
+    },
+    "1_minus_max_softmax": {
+      "auroc": 0.9268448741646523,
+      "ci": [
+        0.878181430399545,
+        0.9628892364567041
+      ],
+      "n": 567,
+      "n_errors": 26
+    },
+    "predictive_entropy": {
+      "auroc": 0.9266315939144035,
+      "ci": [
+        0.8784942414332433,
+        0.9612558652068818
+      ],
+      "n": 567,
+      "n_errors": 26
+    },
+    "top1_top2_margin_neg": {
+      "auroc": 0.9261694867055311,
+      "ci": [
+        0.8746169842172614,
+        0.962821697710792
+      ],
+      "n": 567,
+      "n_errors": 26
+    }
+  },
+  "case_study_manifest": [
+    {
+      "dataset": "CWRU_BAL",
+      "category": "correct_low_u",
+      "sample_id": 195,
+      "true_label": 0,
+      "predicted_label": 0,
+      "confidence": 0.9999872446060181,
+      "u_mean": 0.32369256019592285,
+      "v_max": 9.401847839355469,
+      "alpha": 0.0004658902471419424,
+      "class_probs": [
+        0.9999872446060181,
+        1.1654537956928834e-05,
+        9.93252228909114e-07,
+        1.3945954435712338e-07
+      ],
+      "targeted_region": [
+        220,
+        322
+      ],
+      "targeted_prob_drop": 5.0067901611328125e-05,
+      "random_region": [
+        134,
+        236
+      ],
+      "random_prob_drop": -2.0265579223632812e-06
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "correct_low_u",
+      "sample_id": 354,
+      "true_label": 0,
+      "predicted_label": 0,
+      "confidence": 0.9998437166213989,
+      "u_mean": 0.32360532879829407,
+      "v_max": 9.835755348205566,
+      "alpha": 0.00045665379730053246,
+      "class_probs": [
+        0.9998445510864258,
+        0.00011588558118091896,
+        3.901782110915519e-05,
+        6.227785434020916e-07
+      ],
+      "targeted_region": [
+        40,
+        142
+      ],
+      "targeted_prob_drop": 9.059906005859375e-06,
+      "random_region": [
+        892,
+        994
+      ],
+      "random_prob_drop": 4.488229751586914e-05
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "correct_high_u",
+      "sample_id": 89,
+      "true_label": 3,
+      "predicted_label": 3,
+      "confidence": 0.9555423855781555,
+      "u_mean": 0.38252395391464233,
+      "v_max": 6.7490386962890625,
+      "alpha": 0.0009159648907370865,
+      "class_probs": [
+        3.777267556870356e-05,
+        4.022880148113472e-06,
+        0.044274378567934036,
+        0.9556838870048523
+      ],
+      "targeted_region": [
+        17,
+        119
+      ],
+      "targeted_prob_drop": -0.029109597206115723,
+      "random_region": [
+        42,
+        144
+      ],
+      "random_prob_drop": -0.04109048843383789
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "correct_high_u",
+      "sample_id": 240,
+      "true_label": 3,
+      "predicted_label": 3,
+      "confidence": 1.0,
+      "u_mean": 0.38246339559555054,
+      "v_max": 14.77583122253418,
+      "alpha": 0.0010137781500816345,
+      "class_probs": [
+        1.0715189152632476e-10,
+        8.426505326841749e-11,
+        5.666962366035477e-08,
+        1.0
+      ],
+      "targeted_region": [
+        0,
+        102
+      ],
+      "targeted_prob_drop": 3.4570693969726562e-06,
+      "random_region": [
+        500,
+        602
+      ],
+      "random_prob_drop": 0.0
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "incorrect_high_u",
+      "sample_id": 507,
+      "true_label": 2,
+      "predicted_label": 3,
+      "confidence": 0.9247945547103882,
+      "u_mean": 0.3816206455230713,
+      "v_max": 8.501399040222168,
+      "alpha": 0.0009299460798501968,
+      "class_probs": [
+        4.460001582629047e-05,
+        9.667420272307936e-06,
+        0.07559937983751297,
+        0.9243462681770325
+      ],
+      "targeted_region": [
+        366,
+        468
+      ],
+      "targeted_prob_drop": -0.3395305275917053,
+      "random_region": [
+        576,
+        678
+      ],
+      "random_prob_drop": 0.036856550723314285
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "incorrect_high_u",
+      "sample_id": 539,
+      "true_label": 2,
+      "predicted_label": 3,
+      "confidence": 0.5505563020706177,
+      "u_mean": 0.3828396201133728,
+      "v_max": 7.175749778747559,
+      "alpha": 0.000936854281462729,
+      "class_probs": [
+        3.132338679279201e-05,
+        1.8062042727251537e-05,
+        0.45235323905944824,
+        0.5475972890853882
+      ],
+      "targeted_region": [
+        582,
+        684
+      ],
+      "targeted_prob_drop": 0.3966047465801239,
+      "random_region": [
+        363,
+        465
+      ],
+      "random_prob_drop": -0.13251620531082153
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "strong_velocity",
+      "sample_id": 542,
+      "true_label": 1,
+      "predicted_label": 1,
+      "confidence": 0.9999961853027344,
+      "u_mean": 0.32828378677368164,
+      "v_max": 12.23366928100586,
+      "alpha": 0.0002570047217886895,
+      "class_probs": [
+        1.4180423022480682e-06,
+        0.9999961853027344,
+        2.2665267351840157e-06,
+        6.139356401035911e-08
+      ],
+      "targeted_region": [
+        873,
+        975
+      ],
+      "targeted_prob_drop": 1.1563301086425781e-05,
+      "random_region": [
+        640,
+        742
+      ],
+      "random_prob_drop": -2.1457672119140625e-06
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "strong_velocity",
+      "sample_id": 185,
+      "true_label": 1,
+      "predicted_label": 1,
+      "confidence": 0.9999997615814209,
+      "u_mean": 0.33354616165161133,
+      "v_max": 12.197501182556152,
+      "alpha": 0.0001888458791654557,
+      "class_probs": [
+        7.41125489867045e-08,
+        0.9999997615814209,
+        1.6002616121113533e-07,
+        1.0328040644935754e-08
+      ],
+      "targeted_region": [
+        0,
+        102
+      ],
+      "targeted_prob_drop": -1.1920928955078125e-07,
+      "random_region": [
+        35,
+        137
+      ],
+      "random_prob_drop": -1.1920928955078125e-07
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "weak_velocity",
+      "sample_id": 76,
+      "true_label": 2,
+      "predicted_label": 2,
+      "confidence": 0.9982913136482239,
+      "u_mean": 0.3842424154281616,
+      "v_max": 8.78906536102295,
+      "alpha": 0.0009005509200505912,
+      "class_probs": [
+        2.676212034202763e-06,
+        1.2999872751606745e-06,
+        0.9982808828353882,
+        0.0017152006039395928
+      ],
+      "targeted_region": [
+        779,
+        881
+      ],
+      "targeted_prob_drop": 0.021253108978271484,
+      "random_region": [
+        832,
+        934
+      ],
+      "random_prob_drop": -0.0014182329177856445
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "weak_velocity",
+      "sample_id": 129,
+      "true_label": 3,
+      "predicted_label": 3,
+      "confidence": 0.999997615814209,
+      "u_mean": 0.41158801317214966,
+      "v_max": 8.739373207092285,
+      "alpha": 0.002150778193026781,
+      "class_probs": [
+        1.2657757508804934e-07,
+        5.008804464523564e-07,
+        1.7494854773758561e-06,
+        0.999997615814209
+      ],
+      "targeted_region": [
+        789,
+        891
+      ],
+      "targeted_prob_drop": 6.0677528381347656e-05,
+      "random_region": [
+        657,
+        759
+      ],
+      "random_prob_drop": 2.384185791015625e-07
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "strong_alpha_transport",
+      "sample_id": 427,
+      "true_label": 2,
+      "predicted_label": 2,
+      "confidence": 0.9917873740196228,
+      "u_mean": 0.3842102289199829,
+      "v_max": 8.263010025024414,
+      "alpha": 0.0009355020592920482,
+      "class_probs": [
+        8.215514753828757e-06,
+        3.6454421206144616e-06,
+        0.9917230010032654,
+        0.008265189826488495
+      ],
+      "targeted_region": [
+        566,
+        668
+      ],
+      "targeted_prob_drop": 0.9765347242355347,
+      "random_region": [
+        509,
+        611
+      ],
+      "random_prob_drop": -0.0037717223167419434
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "strong_alpha_transport",
+      "sample_id": 539,
+      "true_label": 2,
+      "predicted_label": 3,
+      "confidence": 0.5505563020706177,
+      "u_mean": 0.3828396201133728,
+      "v_max": 7.175749778747559,
+      "alpha": 0.000936854281462729,
+      "class_probs": [
+        3.132338679279201e-05,
+        1.8062042727251537e-05,
+        0.45235323905944824,
+        0.5475972890853882
+      ],
+      "targeted_region": [
+        582,
+        684
+      ],
+      "targeted_prob_drop": 0.22089146077632904,
+      "random_region": [
+        552,
+        654
+      ],
+      "random_prob_drop": -0.30226337909698486
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "weak_alpha_regime",
+      "sample_id": 7,
+      "true_label": 1,
+      "predicted_label": 1,
+      "confidence": 0.9999998807907104,
+      "u_mean": 0.34855902194976807,
+      "v_max": 16.38823699951172,
+      "alpha": 0.00042833664338104427,
+      "class_probs": [
+        7.575137317417102e-08,
+        0.9999998807907104,
+        1.4029924777503311e-08,
+        1.1714729630796228e-08
+      ],
+      "targeted_region": [
+        74,
+        176
+      ],
+      "targeted_prob_drop": -1.1920928955078125e-07,
+      "random_region": [
+        908,
+        1010
+      ],
+      "random_prob_drop": -1.1920928955078125e-07
+    },
+    {
+      "dataset": "CWRU_BAL",
+      "category": "weak_alpha_regime",
+      "sample_id": 71,
+      "true_label": 0,
+      "predicted_label": 0,
+      "confidence": 0.9999967813491821,
+      "u_mean": 0.31549543142318726,
+      "v_max": 9.381446838378906,
+      "alpha": 0.00042718302574940026,
+      "class_probs": [
+        0.9999969005584717,
+        2.3691047772445017e-06,
+        6.877892246848205e-07,
+        6.588105350147089e-08
+      ],
+      "targeted_region": [
+        28,
+        130
+      ],
+      "targeted_prob_drop": -3.5762786865234375e-07,
+      "random_region": [
+        854,
+        956
+      ],
+      "random_prob_drop": 7.152557373046875e-07
+    }
+  ],
+  "_hyp_rows": [
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_first_diff",
+      "estimate": 0.0,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.0,
+        "diff_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs raw_local_energy",
+      "estimate": -0.025,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.025,
+        "diff_ci": [
+          -0.075,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "velocity_localization",
+      "test": "McNemar paired",
+      "comparison": "hit@5 TURS s_t vs random",
+      "estimate": -0.025,
+      "p_value": 1.0,
+      "extra": {
+        "turs_hit": 0.0,
+        "baseline_hit": 0.025,
+        "diff_ci": [
+          -0.075,
+          0.0
+        ]
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "val: u for incorrect > correct",
+      "estimate": 0.44505494505494503,
+      "p_value": 0.0022686378774260095,
+      "extra": {
+        "cliffs": 0.44505494505494503,
+        "n_inc": 14
+      },
+      "q_value": 0.0022686378774260095,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_validity",
+      "test": "Mann-Whitney U (greater)",
+      "comparison": "test: u for incorrect > correct",
+      "estimate": 0.4942414332432817,
+      "p_value": 1.0248812050659643e-05,
+      "extra": {
+        "cliffs": 0.4942414332432817,
+        "n_inc": 26
+      },
+      "q_value": 2.0497624101319287e-05,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs 1_minus_maxsoftmax",
+      "estimate": -0.17972415754301152,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7471207166216408,
+        "auroc_baseline": 0.9268448741646523
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs predictive_entropy",
+      "estimate": -0.17951087729276272,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7471207166216408,
+        "auroc_baseline": 0.9266315939144035
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "uncertainty_vs_baselines",
+      "test": "bootstrap diff AUROC",
+      "comparison": "test AUROC turs_u_mean vs top1_top2_margin",
+      "estimate": -0.1790487700838903,
+      "p_value": null,
+      "extra": {
+        "auroc_turs": 0.7471207166216408,
+        "auroc_baseline": 0.9261694867055311
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL gaussian_noise: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL gaussian_noise: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL amplitude_scale: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL amplitude_scale: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL baseline_shift: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL baseline_shift: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL temporal_jitter: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL temporal_jitter: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL localized_mask: severity -> mean u",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL localized_mask: severity -> error rate",
+      "estimate": null,
+      "p_value": null,
+      "extra": {
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "degradation_response",
+      "test": "Spearman + permutation",
+      "comparison": "CWRU_BAL pooled degradations: u -> error",
+      "estimate": -0.2568532453426572,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "auroc": 0.29925815980239096,
+        "ci": [
+          0.28263152619272747,
+          0.31603682997266014
+        ]
+      },
+      "q_value": null,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs amplitude_std",
+      "estimate": -0.05609175661381111,
+      "p_value": 0.16691654172913542,
+      "extra": {
+        "ci": [
+          -0.14176212471772212,
+          0.024765543480051673
+        ]
+      },
+      "q_value": 0.16691654172913542,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs local_variance_mean",
+      "estimate": -0.3655646086965452,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.4384270316702989,
+          -0.2855804814820034
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs ks_stat_uniform",
+      "estimate": 0.311547929113748,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.22364114235988825,
+          0.3953535068660834
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs hist_entropy",
+      "estimate": -0.2774611285037802,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          -0.3600109958308757,
+          -0.19487980306723743
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "alpha_validity",
+      "test": "Spearman + permutation",
+      "comparison": "test: alpha vs lag_disagreement",
+      "estimate": 0.3306181810138412,
+      "p_value": 0.0004997501249375312,
+      "extra": {
+        "ci": [
+          0.25182707592736775,
+          0.39844990102821043
+        ]
+      },
+      "q_value": 0.000624687656171914,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "CWRU_BAL u_t: targeted>random p-drop (frac=0.1)",
+      "estimate": -0.0037013285735156384,
+      "p_value": 0.16841579210394803,
+      "extra": {
+        "ci": [
+          -0.012674898904030365,
+          0.0046055636440966415
+        ],
+        "cohens_d": -0.08204462720222284
+      },
+      "q_value": 0.16841579210394803,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "faithfulness",
+      "test": "paired permutation",
+      "comparison": "CWRU_BAL s_t: targeted>random p-drop (frac=0.1)",
+      "estimate": 0.014348745329771189,
+      "p_value": 0.00849575212393803,
+      "extra": {
+        "ci": [
+          -0.0030213086232639954,
+          0.032314913646162784
+        ],
+        "cohens_d": 0.14768199776061777
+      },
+      "q_value": 0.01699150424787606,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL amp_scale_0.95: prediction agreement",
+      "estimate": 0.9966666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0016012110281735659
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL amp_scale_1.05: prediction agreement",
+      "estimate": 0.9933333333333333,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.002076361095532775
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL baseline_0.1sd: prediction agreement",
+      "estimate": 0.99,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.010552971623837948
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL noise_0.02: prediction agreement",
+      "estimate": 0.9966666666666667,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.0002056221419479698
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "benign_stability",
+      "test": "descriptive + CI",
+      "comparison": "CWRU_BAL jitter_2: prediction agreement",
+      "estimate": 1.0,
+      "p_value": null,
+      "extra": {
+        "kl_mean": 0.00035926041891798377
+      },
+      "q_value": 1.0,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "paired permutation",
+      "comparison": "CWRU_BAL: high-s_t edit > random edit (prob drop, frac=0.1)",
+      "estimate": 0.02923810450593009,
+      "p_value": 0.10994502748625687,
+      "extra": {
+        "ci": [
+          -0.005546145881875399,
+          0.06449306914206436
+        ],
+        "cohens_d": 0.09413813774742805
+      },
+      "q_value": 0.15472892348537437,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "counterfactual",
+      "test": "McNemar",
+      "comparison": "CWRU_BAL: flip rate high-s_t vs random edit",
+      "estimate": 0.03333333333333334,
+      "p_value": 0.15472892348537437,
+      "extra": {
+        "flip_target": 0.14333333333333334,
+        "flip_random": 0.11
+      },
+      "q_value": 0.15472892348537437,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs turs_u_max",
+      "estimate": -0.019954397066626044,
+      "p_value": 0.7672327672327672,
+      "extra": {
+        "ci": [
+          -0.08243269862866227,
+          0.04542601150427588
+        ]
+      },
+      "q_value": 0.7672327672327672,
+      "alpha": 0.05,
+      "significant": false
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs 1_minus_max_softmax",
+      "estimate": -0.178600857665796,
+      "p_value": 0.015984015984015984,
+      "extra": {
+        "ci": [
+          -0.24826323801042907,
+          -0.1074856297005394
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs predictive_entropy",
+      "estimate": -0.17843357331301116,
+      "p_value": 0.015984015984015984,
+      "extra": {
+        "ci": [
+          -0.24810750030475381,
+          -0.10840593030690546
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_mean vs top1_top2_margin_neg",
+      "estimate": -0.17788606011603025,
+      "p_value": 0.014985014985014986,
+      "extra": {
+        "ci": [
+          -0.24830325374940607,
+          -0.10586815414383466
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_max vs 1_minus_max_softmax",
+      "estimate": -0.15864646059916998,
+      "p_value": 0.007992007992007992,
+      "extra": {
+        "ci": [
+          -0.20794544192731343,
+          -0.10968108046759727
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_max vs predictive_entropy",
+      "estimate": -0.1584791762463851,
+      "p_value": 0.007992007992007992,
+      "extra": {
+        "ci": [
+          -0.20770903797444987,
+          -0.11009959141981607
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    },
+    {
+      "family": "baseline_uncertainty",
+      "test": "bootstrap+permutation AUROC diff",
+      "comparison": "CWRU_BAL: turs_u_max vs top1_top2_margin_neg",
+      "estimate": -0.15793166304940423,
+      "p_value": 0.007992007992007992,
+      "extra": {
+        "ci": [
+          -0.20790408366135382,
+          -0.1077871410736579
+        ]
+      },
+      "q_value": 0.018648018648018648,
+      "alpha": 0.05,
+      "significant": true
+    }
+  ]
+}

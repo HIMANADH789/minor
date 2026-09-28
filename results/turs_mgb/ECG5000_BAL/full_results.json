@@ -1,0 +1,1351 @@
+{
+  "dataset": "ECG5000_BAL",
+  "M": 4096,
+  "variants": {
+    "A0": {
+      "variant": "A0",
+      "keys": [
+        "raw"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.6568,
+      "val_nll": 1.3402,
+      "feature_dim": 8192,
+      "test": {
+        "macro_f1": 0.48385384184856484,
+        "accuracy": 0.853,
+        "weighted_f1": 0.8833380666826577,
+        "balanced_accuracy": 0.5038524160127331,
+        "mcc": 0.7449922603712625,
+        "kappa": 0.7401619480429953,
+        "confusion_matrix": [
+          [
+            545,
+            3,
+            2,
+            6,
+            28
+          ],
+          [
+            2,
+            285,
+            27,
+            25,
+            14
+          ],
+          [
+            3,
+            3,
+            7,
+            2,
+            4
+          ],
+          [
+            3,
+            15,
+            1,
+            16,
+            4
+          ],
+          [
+            0,
+            1,
+            4,
+            0,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.2757,
+      "test_ece": 0.5607,
+      "elapsed_s": 10.1
+    },
+    "A1": {
+      "variant": "A1",
+      "keys": [
+        "G1_standard"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.5211,
+      "val_nll": 1.3581,
+      "feature_dim": 8192,
+      "test": {
+        "macro_f1": 0.4765817637558185,
+        "accuracy": 0.859,
+        "weighted_f1": 0.8657237260255513,
+        "balanced_accuracy": 0.47352756733249607,
+        "mcc": 0.7374679990611188,
+        "kappa": 0.7360025164015458,
+        "confusion_matrix": [
+          [
+            553,
+            11,
+            4,
+            6,
+            10
+          ],
+          [
+            33,
+            290,
+            13,
+            5,
+            12
+          ],
+          [
+            5,
+            5,
+            7,
+            0,
+            2
+          ],
+          [
+            8,
+            14,
+            5,
+            9,
+            3
+          ],
+          [
+            1,
+            3,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.2725,
+      "test_ece": 0.5668,
+      "elapsed_s": 9.2
+    },
+    "A2": {
+      "variant": "A2",
+      "keys": [
+        "G2_tail"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.5206,
+      "val_nll": 1.3661,
+      "feature_dim": 8192,
+      "test": {
+        "macro_f1": 0.4755995542523124,
+        "accuracy": 0.856,
+        "weighted_f1": 0.8632497476627584,
+        "balanced_accuracy": 0.47076726636305566,
+        "mcc": 0.7318380244623556,
+        "kappa": 0.7300848545738433,
+        "confusion_matrix": [
+          [
+            554,
+            11,
+            4,
+            7,
+            8
+          ],
+          [
+            36,
+            285,
+            15,
+            6,
+            11
+          ],
+          [
+            5,
+            5,
+            6,
+            0,
+            3
+          ],
+          [
+            9,
+            12,
+            4,
+            11,
+            3
+          ],
+          [
+            1,
+            3,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.2849,
+      "test_ece": 0.5676,
+      "elapsed_s": 9.3
+    },
+    "A3": {
+      "variant": "A3",
+      "keys": [
+        "G3_fine"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.5179,
+      "val_nll": 1.3601,
+      "feature_dim": 8192,
+      "test": {
+        "macro_f1": 0.4820026532165874,
+        "accuracy": 0.862,
+        "weighted_f1": 0.8672975530705853,
+        "balanced_accuracy": 0.47545139053091284,
+        "mcc": 0.7420550838291448,
+        "kappa": 0.7407092166599965,
+        "confusion_matrix": [
+          [
+            552,
+            11,
+            4,
+            6,
+            11
+          ],
+          [
+            34,
+            294,
+            12,
+            3,
+            10
+          ],
+          [
+            5,
+            5,
+            7,
+            0,
+            2
+          ],
+          [
+            9,
+            14,
+            4,
+            9,
+            3
+          ],
+          [
+            1,
+            3,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.2759,
+      "test_ece": 0.5706,
+      "elapsed_s": 9.4
+    },
+    "A4": {
+      "variant": "A4",
+      "keys": [
+        "G4_multilag"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.3948,
+      "val_nll": 1.3957,
+      "feature_dim": 8192,
+      "test": {
+        "macro_f1": 0.42656854819623674,
+        "accuracy": 0.848,
+        "weighted_f1": 0.8385644123859866,
+        "balanced_accuracy": 0.4779174793866968,
+        "mcc": 0.7115531709373285,
+        "kappa": 0.7098433726890074,
+        "confusion_matrix": [
+          [
+            541,
+            32,
+            1,
+            0,
+            10
+          ],
+          [
+            33,
+            301,
+            4,
+            1,
+            14
+          ],
+          [
+            9,
+            4,
+            4,
+            0,
+            2
+          ],
+          [
+            13,
+            22,
+            2,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            2
+          ]
+        ]
+      },
+      "test_nll": 1.2894,
+      "test_ece": 0.558,
+      "elapsed_s": 9.6
+    },
+    "A5": {
+      "variant": "A5",
+      "keys": [
+        "G1_standard",
+        "G2_tail"
+      ],
+      "lam": 100.0,
+      "val_mf1": 0.5749,
+      "val_nll": 1.3032,
+      "feature_dim": 16384,
+      "test": {
+        "macro_f1": 0.49541883279112175,
+        "accuracy": 0.883,
+        "weighted_f1": 0.8953982709064028,
+        "balanced_accuracy": 0.5078565589668281,
+        "mcc": 0.7859006014400056,
+        "kappa": 0.7841527534360299,
+        "confusion_matrix": [
+          [
+            566,
+            2,
+            4,
+            2,
+            10
+          ],
+          [
+            12,
+            297,
+            25,
+            9,
+            10
+          ],
+          [
+            3,
+            3,
+            8,
+            3,
+            2
+          ],
+          [
+            7,
+            13,
+            5,
+            12,
+            2
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.2072,
+      "test_ece": 0.5717,
+      "elapsed_s": 16.0
+    },
+    "A6": {
+      "variant": "A6",
+      "keys": [
+        "G1_standard",
+        "G2_tail",
+        "G3_fine"
+      ],
+      "lam": 100.0,
+      "val_mf1": 0.57,
+      "val_nll": 1.3021,
+      "feature_dim": 24576,
+      "test": {
+        "macro_f1": 0.48170177281077436,
+        "accuracy": 0.879,
+        "weighted_f1": 0.8916487588043147,
+        "balanced_accuracy": 0.5001921593537182,
+        "mcc": 0.7791179444824854,
+        "kappa": 0.7775084997269424,
+        "confusion_matrix": [
+          [
+            566,
+            0,
+            3,
+            7,
+            8
+          ],
+          [
+            10,
+            293,
+            21,
+            23,
+            6
+          ],
+          [
+            4,
+            4,
+            7,
+            1,
+            3
+          ],
+          [
+            7,
+            13,
+            5,
+            13,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.2028,
+      "test_ece": 0.5657,
+      "elapsed_s": 22.6
+    },
+    "A7": {
+      "variant": "A7",
+      "keys": [
+        "G1_standard",
+        "G2_tail",
+        "G3_fine",
+        "G4_multilag"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.6625,
+      "val_nll": 1.2624,
+      "feature_dim": 32768,
+      "test": {
+        "macro_f1": 0.5341917866047519,
+        "accuracy": 0.9,
+        "weighted_f1": 0.9090609719345614,
+        "balanced_accuracy": 0.5311731856828883,
+        "mcc": 0.8150849199408263,
+        "kappa": 0.8142893223788795,
+        "confusion_matrix": [
+          [
+            566,
+            2,
+            2,
+            1,
+            13
+          ],
+          [
+            10,
+            311,
+            13,
+            11,
+            8
+          ],
+          [
+            5,
+            2,
+            8,
+            1,
+            3
+          ],
+          [
+            4,
+            16,
+            2,
+            15,
+            2
+          ],
+          [
+            1,
+            2,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.1753,
+      "test_ece": 0.5783,
+      "elapsed_s": 29.1
+    },
+    "A8": {
+      "variant": "A8",
+      "keys": [
+        "G1_standard",
+        "G2_tail",
+        "G3_fine",
+        "G4_multilag"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.2072,
+      "val_nll": 12.9511,
+      "feature_dim": 32768,
+      "test": {
+        "macro_f1": 0.14404173601301,
+        "accuracy": 0.214,
+        "weighted_f1": 0.2707249028281887,
+        "balanced_accuracy": 0.23284780712097503,
+        "mcc": 0.015318205931843578,
+        "kappa": 0.012401522861773873,
+        "confusion_matrix": [
+          [
+            100,
+            156,
+            65,
+            169,
+            94
+          ],
+          [
+            52,
+            97,
+            57,
+            98,
+            49
+          ],
+          [
+            3,
+            2,
+            4,
+            6,
+            4
+          ],
+          [
+            8,
+            11,
+            5,
+            12,
+            3
+          ],
+          [
+            1,
+            0,
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      "test_nll": 13.916,
+      "test_ece": 0.7327,
+      "elapsed_s": 47.8
+    },
+    "A9": {
+      "variant": "A9",
+      "keys": [
+        "G1_standard",
+        "G2_tail",
+        "G3_fine",
+        "G4_multilag"
+      ],
+      "lam": 100.0,
+      "val_mf1": 0.6634,
+      "val_nll": 1.2561,
+      "feature_dim": 16384,
+      "test": {
+        "macro_f1": 0.5359340668916472,
+        "accuracy": 0.901,
+        "weighted_f1": 0.9095077343502974,
+        "balanced_accuracy": 0.5366896556130458,
+        "mcc": 0.8168225857077023,
+        "kappa": 0.8159690530585386,
+        "confusion_matrix": [
+          [
+            568,
+            1,
+            3,
+            1,
+            11
+          ],
+          [
+            9,
+            310,
+            14,
+            10,
+            10
+          ],
+          [
+            4,
+            3,
+            9,
+            0,
+            3
+          ],
+          [
+            5,
+            17,
+            2,
+            14,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.1668,
+      "test_ece": 0.5763,
+      "elapsed_s": 21.0
+    },
+    "A10": {
+      "variant": "A10",
+      "keys": [
+        "G1_standard",
+        "G2_tail",
+        "G3_fine",
+        "G4_multilag"
+      ],
+      "lam": 1000.0,
+      "val_mf1": 0.6584,
+      "val_nll": 1.2584,
+      "feature_dim": 65536,
+      "test": {
+        "macro_f1": 0.5324285571335604,
+        "accuracy": 0.899,
+        "weighted_f1": 0.9077656842311742,
+        "balanced_accuracy": 0.5306066134449279,
+        "mcc": 0.813119449207439,
+        "kappa": 0.8123398618003854,
+        "confusion_matrix": [
+          [
+            566,
+            2,
+            2,
+            1,
+            13
+          ],
+          [
+            10,
+            310,
+            13,
+            12,
+            8
+          ],
+          [
+            5,
+            2,
+            8,
+            1,
+            3
+          ],
+          [
+            5,
+            16,
+            2,
+            15,
+            1
+          ],
+          [
+            1,
+            2,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      "test_nll": 1.1701,
+      "test_ece": 0.5755,
+      "elapsed_s": 86.2
+    }
+  },
+  "timing": {},
+  "dual_solver_validation": {
+    "max_abs_logit_diff": 2.2046531267250202e-12,
+    "atol": 0.001,
+    "passed": true,
+    "n": 400,
+    "d": 512,
+    "lam": 1.0
+  },
+  "info_addition": {
+    "A5": {
+      "mf1_delta": 0.0116,
+      "nll_delta": -0.0685,
+      "brier_delta": -0.0374,
+      "mcnemar": {
+        "label": "A5 vs A0",
+        "mf1_a": 0.4839,
+        "mf1_b": 0.4954,
+        "mf1_delta": 0.0116,
+        "mcnemar_p": 0.002237
+      },
+      "perm_p": 0.0035,
+      "acc_diff_ci95": [
+        0.012,
+        0.048
+      ],
+      "cohens_d": 0.1
+    },
+    "A6": {
+      "mf1_delta": -0.0022,
+      "nll_delta": -0.0729,
+      "brier_delta": -0.0393,
+      "mcnemar": {
+        "label": "A6 vs A0",
+        "mf1_a": 0.4839,
+        "mf1_b": 0.4817,
+        "mf1_delta": -0.0022,
+        "mcnemar_p": 0.006377
+      },
+      "perm_p": 0.004,
+      "acc_diff_ci95": [
+        0.009,
+        0.045
+      ],
+      "cohens_d": 0.09
+    },
+    "A7": {
+      "mf1_delta": 0.0503,
+      "nll_delta": -0.1004,
+      "brier_delta": -0.0547,
+      "mcnemar": {
+        "label": "A7 vs A0",
+        "mf1_a": 0.4839,
+        "mf1_b": 0.5342,
+        "mf1_delta": 0.0503,
+        "mcnemar_p": 1e-06
+      },
+      "perm_p": 0.0005,
+      "acc_diff_ci95": [
+        0.03,
+        0.064
+      ],
+      "cohens_d": 0.163
+    }
+  },
+  "incremental_gain": {
+    "minus_G1_standard": {
+      "mf1_without": 0.531,
+      "delta_j": 0.0032
+    },
+    "minus_G2_tail": {
+      "mf1_without": 0.4788,
+      "delta_j": 0.0554
+    },
+    "minus_G3_fine": {
+      "mf1_without": 0.5349,
+      "delta_j": -0.0007
+    },
+    "minus_G4_multilag": {
+      "mf1_without": 0.4817,
+      "delta_j": 0.0525
+    },
+    "full_mf1": 0.5342
+  },
+  "geometry_similarity": {
+    "keys": [
+      "G1_standard",
+      "G2_tail",
+      "G3_fine",
+      "G4_multilag"
+    ],
+    "pairs": {
+      "G1_standard|G2_tail": {
+        "sample_cosine": 0.9943,
+        "linear_cka": 0.9951,
+        "eff_rank_a": 1.8,
+        "eff_rank_b": 1.9
+      },
+      "G1_standard|G3_fine": {
+        "sample_cosine": 0.9995,
+        "linear_cka": 0.999,
+        "eff_rank_a": 1.8,
+        "eff_rank_b": 1.8
+      },
+      "G1_standard|G4_multilag": {
+        "sample_cosine": -0.0807,
+        "linear_cka": 0.0954,
+        "eff_rank_a": 1.8,
+        "eff_rank_b": 1.4
+      },
+      "G2_tail|G3_fine": {
+        "sample_cosine": 0.9947,
+        "linear_cka": 0.9964,
+        "eff_rank_a": 1.9,
+        "eff_rank_b": 1.8
+      },
+      "G2_tail|G4_multilag": {
+        "sample_cosine": -0.0675,
+        "linear_cka": 0.0899,
+        "eff_rank_a": 1.9,
+        "eff_rank_b": 1.4
+      },
+      "G3_fine|G4_multilag": {
+        "sample_cosine": -0.0883,
+        "linear_cka": 0.0987,
+        "eff_rank_a": 1.8,
+        "eff_rank_b": 1.4
+      }
+    }
+  },
+  "class_conditional": {
+    "A0": {
+      "per_class_f1": [
+        0.9587,
+        0.8636,
+        0.2333,
+        0.3636,
+        0.0
+      ]
+    },
+    "A1": {
+      "per_class_f1": [
+        0.9341,
+        0.858,
+        0.2857,
+        0.3051,
+        0.0
+      ]
+    },
+    "A2": {
+      "per_class_f1": [
+        0.9319,
+        0.852,
+        0.2449,
+        0.3492,
+        0.0
+      ]
+    },
+    "A3": {
+      "per_class_f1": [
+        0.9316,
+        0.8647,
+        0.2979,
+        0.3158,
+        0.0
+      ]
+    },
+    "A4": {
+      "per_class_f1": [
+        0.9162,
+        0.8443,
+        0.2581,
+        0.0,
+        0.1143
+      ]
+    },
+    "A5": {
+      "per_class_f1": [
+        0.9659,
+        0.8839,
+        0.2581,
+        0.3692,
+        0.0
+      ]
+    },
+    "A6": {
+      "per_class_f1": [
+        0.9667,
+        0.8786,
+        0.25,
+        0.3133,
+        0.0
+      ]
+    },
+    "A7": {
+      "per_class_f1": [
+        0.9675,
+        0.9067,
+        0.3556,
+        0.4412,
+        0.0
+      ]
+    },
+    "A8": {
+      "per_class_f1": [
+        0.2674,
+        0.3134,
+        0.053,
+        0.0736,
+        0.0128
+      ]
+    },
+    "A9": {
+      "per_class_f1": [
+        0.9701,
+        0.9038,
+        0.375,
+        0.4308,
+        0.0
+      ]
+    },
+    "A10": {
+      "per_class_f1": [
+        0.9667,
+        0.9051,
+        0.3556,
+        0.4348,
+        0.0
+      ]
+    }
+  },
+  "group_contributions": {
+    "keys": [
+      "G1_standard",
+      "G2_tail",
+      "G3_fine",
+      "G4_multilag"
+    ],
+    "per_group": {
+      "G1_standard": {
+        "logit_norm_mean": 2.078,
+        "logit_norm_median": 1.9606,
+        "logit_norm_correct": 2.1022,
+        "logit_norm_wrong": 1.8604
+      },
+      "G2_tail": {
+        "logit_norm_mean": 1.2364,
+        "logit_norm_median": 1.1547,
+        "logit_norm_correct": 1.2214,
+        "logit_norm_wrong": 1.3712
+      },
+      "G3_fine": {
+        "logit_norm_mean": 1.2496,
+        "logit_norm_median": 1.0997,
+        "logit_norm_correct": 1.2382,
+        "logit_norm_wrong": 1.3529
+      },
+      "G4_multilag": {
+        "logit_norm_mean": 0.3102,
+        "logit_norm_median": 0.2886,
+        "logit_norm_correct": 0.3111,
+        "logit_norm_wrong": 0.3022
+      }
+    }
+  },
+  "zeroing_ablation": {
+    "G1_standard": {
+      "mf1_zeroed": 0.0959,
+      "mean_prob_change": 0.1656,
+      "flip_rate": 0.917,
+      "nll_change": 1.5439
+    },
+    "G2_tail": {
+      "mf1_zeroed": 0.3506,
+      "mean_prob_change": 0.1442,
+      "flip_rate": 0.33,
+      "nll_change": -0.143
+    },
+    "G3_fine": {
+      "mf1_zeroed": 0.3918,
+      "mean_prob_change": 0.1587,
+      "flip_rate": 0.168,
+      "nll_change": -0.2483
+    },
+    "G4_multilag": {
+      "mf1_zeroed": 0.4865,
+      "mean_prob_change": 0.0482,
+      "flip_rate": 0.085,
+      "nll_change": 0.1447
+    }
+  },
+  "perturbation": {
+    "kinds": {
+      "gaussian_noise": {
+        "levels": {
+          "0.05": {
+            "error_rate": 0.0933,
+            "mean_conf": 0.3205,
+            "mean_entropy": 1.5585,
+            "mf1": 0.5367
+          },
+          "0.1": {
+            "error_rate": 0.115,
+            "mean_conf": 0.3156,
+            "mean_entropy": 1.5611,
+            "mf1": 0.5085
+          },
+          "0.2": {
+            "error_rate": 0.1633,
+            "mean_conf": 0.303,
+            "mean_entropy": 1.5666,
+            "mf1": 0.4757
+          },
+          "0.4": {
+            "error_rate": 0.3967,
+            "mean_conf": 0.3,
+            "mean_entropy": 1.5579,
+            "mf1": 0.2906
+          },
+          "0.8": {
+            "error_rate": 0.505,
+            "mean_conf": 0.3286,
+            "mean_entropy": 1.5111,
+            "mf1": 0.186
+          }
+        }
+      },
+      "amplitude_scale": {
+        "levels": {
+          "0.6": {
+            "error_rate": 0.2467,
+            "mean_conf": 0.2813,
+            "mean_entropy": 1.5755,
+            "mf1": 0.3514
+          },
+          "0.8": {
+            "error_rate": 0.1083,
+            "mean_conf": 0.303,
+            "mean_entropy": 1.5688,
+            "mf1": 0.5374
+          },
+          "1.2": {
+            "error_rate": 0.1117,
+            "mean_conf": 0.3336,
+            "mean_entropy": 1.5448,
+            "mf1": 0.5211
+          }
+        }
+      },
+      "baseline_shift": {
+        "levels": {
+          "0.2": {
+            "error_rate": 0.1283,
+            "mean_conf": 0.2945,
+            "mean_entropy": 1.5752,
+            "mf1": 0.5074
+          },
+          "0.4": {
+            "error_rate": 0.2583,
+            "mean_conf": 0.2698,
+            "mean_entropy": 1.5857,
+            "mf1": 0.4176
+          },
+          "0.8": {
+            "error_rate": 0.5783,
+            "mean_conf": 0.2624,
+            "mean_entropy": 1.5827,
+            "mf1": 0.2089
+          }
+        }
+      },
+      "temporal_jitter": {
+        "levels": {
+          "2": {
+            "error_rate": 0.1167,
+            "mean_conf": 0.3165,
+            "mean_entropy": 1.5602,
+            "mf1": 0.4925
+          },
+          "8": {
+            "error_rate": 0.4767,
+            "mean_conf": 0.2841,
+            "mean_entropy": 1.5766,
+            "mf1": 0.2148
+          },
+          "16": {
+            "error_rate": 0.7383,
+            "mean_conf": 0.2984,
+            "mean_entropy": 1.559,
+            "mf1": 0.1273
+          }
+        }
+      },
+      "localized_mask": {
+        "levels": {
+          "0.05": {
+            "error_rate": 0.1233,
+            "mean_conf": 0.318,
+            "mean_entropy": 1.5582,
+            "mf1": 0.5092
+          },
+          "0.15": {
+            "error_rate": 0.9617,
+            "mean_conf": 1.0,
+            "mean_entropy": 0.0,
+            "mf1": 0.0148
+          },
+          "0.3": {
+            "error_rate": 0.9617,
+            "mean_conf": 1.0,
+            "mean_entropy": 0.0,
+            "mf1": 0.0148
+          }
+        }
+      }
+    }
+  },
+  "stability": {
+    "specs": {
+      "amp_scale_0.95": {
+        "per_geometry": {
+          "G1_standard": 0.9999,
+          "G2_tail": 0.9999,
+          "G3_fine": 0.9999,
+          "G4_multilag": 1.0
+        },
+        "pred_agreement": 0.9917
+      },
+      "amp_scale_1.05": {
+        "per_geometry": {
+          "G1_standard": 0.9999,
+          "G2_tail": 0.9999,
+          "G3_fine": 0.9999,
+          "G4_multilag": 1.0
+        },
+        "pred_agreement": 0.985
+      },
+      "baseline_0.1sd": {
+        "per_geometry": {
+          "G1_standard": 0.999,
+          "G2_tail": 0.9992,
+          "G3_fine": 0.9991,
+          "G4_multilag": 1.0
+        },
+        "pred_agreement": 0.965
+      },
+      "noise_0.02": {
+        "per_geometry": {
+          "G1_standard": 1.0,
+          "G2_tail": 1.0,
+          "G3_fine": 1.0,
+          "G4_multilag": 1.0
+        },
+        "pred_agreement": 0.9883
+      },
+      "jitter_2": {
+        "per_geometry": {
+          "G1_standard": 0.9988,
+          "G2_tail": 0.9989,
+          "G3_fine": 0.9988,
+          "G4_multilag": 1.0
+        },
+        "pred_agreement": 0.945
+      }
+    }
+  },
+  "calibration": {
+    "A0": {
+      "ece": 0.5607,
+      "adaptive_ece": 0.5607,
+      "brier": 0.6478,
+      "nll": 1.2757
+    },
+    "A1": {
+      "ece": 0.5668,
+      "adaptive_ece": 0.5668,
+      "brier": 0.6442,
+      "nll": 1.2725
+    },
+    "A2": {
+      "ece": 0.5676,
+      "adaptive_ece": 0.5676,
+      "brier": 0.6507,
+      "nll": 1.2849
+    },
+    "A3": {
+      "ece": 0.5706,
+      "adaptive_ece": 0.5706,
+      "brier": 0.6458,
+      "nll": 1.2759
+    },
+    "A4": {
+      "ece": 0.558,
+      "adaptive_ece": 0.558,
+      "brier": 0.6503,
+      "nll": 1.2894
+    },
+    "A7": {
+      "ece": 0.5783,
+      "adaptive_ece": 0.5783,
+      "brier": 0.5931,
+      "nll": 1.1753
+    }
+  },
+  "selective_prediction": {
+    "A0": {
+      "confidence": {
+        "auroc": 0.194,
+        "auprc": 0.0873,
+        "aurc": 0.0513
+      },
+      "neg_entropy": {
+        "auroc": 0.7032,
+        "auprc": 0.0995,
+        "aurc": 0.0801
+      },
+      "margin": {
+        "auroc": 0.825,
+        "auprc": 0.0859,
+        "aurc": 0.045
+      }
+    },
+    "A1": {
+      "confidence": {
+        "auroc": 0.1518,
+        "auprc": 0.0817,
+        "aurc": 0.0417
+      },
+      "neg_entropy": {
+        "auroc": 0.8031,
+        "auprc": 0.0866,
+        "aurc": 0.0533
+      },
+      "margin": {
+        "auroc": 0.8558,
+        "auprc": 0.0806,
+        "aurc": 0.0383
+      }
+    },
+    "A2": {
+      "confidence": {
+        "auroc": 0.1663,
+        "auprc": 0.0838,
+        "aurc": 0.0447
+      },
+      "neg_entropy": {
+        "auroc": 0.7866,
+        "auprc": 0.0882,
+        "aurc": 0.0567
+      },
+      "margin": {
+        "auroc": 0.8443,
+        "auprc": 0.0828,
+        "aurc": 0.0409
+      }
+    },
+    "A3": {
+      "confidence": {
+        "auroc": 0.1643,
+        "auprc": 0.0807,
+        "aurc": 0.0423
+      },
+      "neg_entropy": {
+        "auroc": 0.7888,
+        "auprc": 0.0854,
+        "aurc": 0.054
+      },
+      "margin": {
+        "auroc": 0.8447,
+        "auprc": 0.0797,
+        "aurc": 0.0387
+      }
+    },
+    "A4": {
+      "confidence": {
+        "auroc": 0.2097,
+        "auprc": 0.0925,
+        "aurc": 0.0584
+      },
+      "neg_entropy": {
+        "auroc": 0.7461,
+        "auprc": 0.0971,
+        "aurc": 0.0693
+      },
+      "margin": {
+        "auroc": 0.817,
+        "auprc": 0.0903,
+        "aurc": 0.0518
+      }
+    },
+    "A7": {
+      "confidence": {
+        "auroc": 0.1524,
+        "auprc": 0.0566,
+        "aurc": 0.0251
+      },
+      "neg_entropy": {
+        "auroc": 0.7925,
+        "auprc": 0.0595,
+        "aurc": 0.0336
+      },
+      "margin": {
+        "auroc": 0.8709,
+        "auprc": 0.0556,
+        "aurc": 0.0216
+      }
+    }
+  },
+  "pairwise_geometry": {
+    "G1_standard|G2_tail": {
+      "test_mf1": 0.4954,
+      "delta_vs_A0": 0.0116
+    },
+    "G1_standard|G3_fine": {
+      "test_mf1": 0.4467,
+      "delta_vs_A0": -0.0372
+    },
+    "G1_standard|G4_multilag": {
+      "test_mf1": 0.5011,
+      "delta_vs_A0": 0.0172
+    },
+    "G2_tail|G3_fine": {
+      "test_mf1": 0.4932,
+      "delta_vs_A0": 0.0093
+    },
+    "G2_tail|G4_multilag": {
+      "test_mf1": 0.4691,
+      "delta_vs_A0": -0.0147
+    },
+    "G3_fine|G4_multilag": {
+      "test_mf1": 0.4948,
+      "delta_vs_A0": 0.0109
+    }
+  },
+  "faithfulness": {
+    "G1_standard": {
+      "n_selected": 180,
+      "window": 14,
+      "target_drop": -0.3207,
+      "random_drop": -0.0223,
+      "diff": -0.2984,
+      "ci95": [
+        -0.3551,
+        -0.2496
+      ],
+      "p_perm": 0.002,
+      "flip_rate_targeted": 0.9111,
+      "flip_rate_random": 0.1
+    },
+    "G2_tail": {
+      "n_selected": 180,
+      "window": 14,
+      "target_drop": -0.323,
+      "random_drop": -0.0158,
+      "diff": -0.3072,
+      "ci95": [
+        -0.3303,
+        -0.2842
+      ],
+      "p_perm": 0.002,
+      "flip_rate_targeted": 0.6333,
+      "flip_rate_random": 0.1056
+    },
+    "G3_fine": {
+      "n_selected": 180,
+      "window": 14,
+      "target_drop": -0.3728,
+      "random_drop": -0.0291,
+      "diff": -0.3438,
+      "ci95": [
+        -0.3841,
+        -0.3069
+      ],
+      "p_perm": 0.002,
+      "flip_rate_targeted": 0.4722,
+      "flip_rate_random": 0.0611
+    },
+    "G4_multilag": {
+      "n_selected": 180,
+      "window": 14,
+      "target_drop": 0.0736,
+      "random_drop": 0.0103,
+      "diff": 0.0633,
+      "ci95": [
+        0.0516,
+        0.0746
+      ],
+      "p_perm": 0.002,
+      "flip_rate_targeted": 0.1778,
+      "flip_rate_random": 0.0833
+    }
+  }
+}

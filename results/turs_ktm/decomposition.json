@@ -1,0 +1,90 @@
+{
+  "ECG5000_UNBAL": {
+    "MR": {
+      "macro_f1": 0.5938,
+      "alpha": 11.288379,
+      "n_features": 9996
+    },
+    "MR+mu": {
+      "macro_f1": 0.5984,
+      "alpha": 3792.690191,
+      "n_features": 19992
+    },
+    "MR+W": {
+      "macro_f1": 0.6115,
+      "alpha": 10000.0,
+      "n_features": 19992
+    },
+    "MR+mu+W": {
+      "macro_f1": 0.6006,
+      "alpha": 10000.0,
+      "n_features": 29988
+    }
+  },
+  "ECG5000_BAL": {
+    "MR": {
+      "macro_f1": 0.6553,
+      "alpha": 1.623777,
+      "n_features": 9996
+    },
+    "MR+mu": {
+      "macro_f1": 0.675,
+      "alpha": 545.559478,
+      "n_features": 19992
+    },
+    "MR+W": {
+      "macro_f1": 0.6359,
+      "alpha": 1438.449888,
+      "n_features": 19992
+    },
+    "MR+mu+W": {
+      "macro_f1": 0.6618,
+      "alpha": 1438.449888,
+      "n_features": 29988
+    }
+  },
+  "CWRU_UNBAL": {
+    "MR": {
+      "macro_f1": 0.9917,
+      "alpha": 0.233572,
+      "n_features": 9996
+    },
+    "MR+mu": {
+      "macro_f1": 0.8904,
+      "alpha": 206.913808,
+      "n_features": 19992
+    },
+    "MR+W": {
+      "macro_f1": 0.9708,
+      "alpha": 545.559478,
+      "n_features": 19992
+    },
+    "MR+mu+W": {
+      "macro_f1": 0.9667,
+      "alpha": 78.475997,
+      "n_features": 29988
+    }
+  },
+  "CWRU_BAL": {
+    "MR": {
+      "macro_f1": 0.9947,
+      "alpha": 0.615848,
+      "n_features": 9996
+    },
+    "MR+mu": {
+      "macro_f1": 0.9417,
+      "alpha": 545.559478,
+      "n_features": 19992
+    },
+    "MR+W": {
+      "macro_f1": 0.9894,
+      "alpha": 1438.449888,
+      "n_features": 19992
+    },
+    "MR+mu+W": {
+      "macro_f1": 0.9823,
+      "alpha": 1438.449888,
+      "n_features": 29988
+    }
+  }
+}

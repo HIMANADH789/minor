@@ -1,0 +1,6 @@
+variant,global_features,medium_features,local_features,total
+M0,9996,0,0,9996
+M1,4998,4998,0,9996
+M2,4996,0,5000,9996
+M3,3332,3332,3332,9996
+M4,0,4996,5000,9996

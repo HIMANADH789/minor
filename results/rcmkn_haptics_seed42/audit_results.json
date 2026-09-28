@@ -1,0 +1,69 @@
+{
+  "in_run_audits": {
+    "control_occupancy_failures": 0,
+    "hydra_determinism_same_batch": true,
+    "audit1_extractor_identity_maxdiff": 0.0,
+    "r0_gate": {
+      "test_macro_f1": 0.5366,
+      "reference": 0.5366,
+      "pass": true
+    },
+    "hydra_cross_batch_maxdiff": 3.814697265625e-06
+  },
+  "forensic_r1_r3": {
+    "regime_positions_differ_trainva": 142815,
+    "het_block_max_abs_diff": 0.25,
+    "alphas": {
+      "R1": 1438.44988828766,
+      "R3": 1438.44988828766,
+      "global_hydra_only": 1438.44988828766
+    },
+    "r1_equals_r3_predictions": true,
+    "r1_equals_global_hydra_only": true,
+    "r3_equals_global_hydra_only": true,
+    "test_macro_f1": {
+      "R1": 0.5123355359045721,
+      "R3": 0.5123355359045721,
+      "global_hydra_only": 0.5123355359045721
+    }
+  },
+  "mechanistic_h_stats_trainva": {
+    "R0": {
+      "mean_H": 0.01777313650064769,
+      "median_H": 0.010764412116259336,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.9442951374098026
+    },
+    "R2": {
+      "mean_H": 0.039705680873726557,
+      "median_H": 0.033823560923337936,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.9485135989879823
+    },
+    "C1": {
+      "mean_H": 0.002612194347132986,
+      "median_H": 0.000883322732988745,
+      "max_H": 0.5625,
+      "fraction_nonzero": 0.9589513224644697
+    },
+    "C2": {
+      "mean_H": 0.0024370937795121735,
+      "median_H": 0.0009004864550661296,
+      "max_H": 0.5625,
+      "fraction_nonzero": 0.9588209477339322
+    },
+    "R1": {
+      "mean_H": 0.01777313650064769,
+      "median_H": 0.010764412116259336,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.9442951374098026
+    },
+    "R3": {
+      "mean_H": 0.039705680873726557,
+      "median_H": 0.033823560923337936,
+      "max_H": 0.25,
+      "fraction_nonzero": 0.9485135989879823
+    }
+  },
+  "r0_gate": "PASS: 0.5366 == 0.5366 exact"
+}

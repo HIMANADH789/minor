@@ -1,0 +1,11 @@
+{
+ "poison_value": 1000000.0,
+ "train_index_baseline": 0.05769635185101932,
+ "train_index_recomputed_with_poisoned_heldout": 0.05769635185101932,
+ "recomputation_invariant": true,
+ "val_split_own_index": 0.027819527417994143,
+ "test_split_own_index": 0.05284066853228499,
+ "heldout_signals_enter_budget": false,
+ "labels_enter_index": false,
+ "note": "index computed from train raw signals only; val/test signals and all labels excluded from the budget"
+}

@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "method": "MiniRocket",
+      "seed": 42,
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.4974,
+      "selected_alpha": 11.288378916846883,
+      "status": "REUSED_DETERMINISTIC",
+      "source": "rcmkn_haptics_seed42 convention, gated rerun"
+    },
+    {
+      "method": "MiniRocket",
+      "seed": 43,
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.4974,
+      "selected_alpha": 11.288378916846883,
+      "status": "REUSED_DETERMINISTIC",
+      "source": "rcmkn_haptics_seed42 convention, gated rerun"
+    },
+    {
+      "method": "MiniRocket",
+      "seed": 44,
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.4974,
+      "selected_alpha": 11.288378916846883,
+      "status": "REUSED_DETERMINISTIC",
+      "source": "rcmkn_haptics_seed42 convention, gated rerun"
+    },
+    {
+      "method": "MiniRocket",
+      "seed": 45,
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.4974,
+      "selected_alpha": 11.288378916846883,
+      "status": "REUSED_DETERMINISTIC",
+      "source": "rcmkn_haptics_seed42 convention, gated rerun"
+    },
+    {
+      "method": "MiniRocket",
+      "seed": 46,
+      "val_macro_f1": 0.9014,
+      "test_macro_f1": 0.4974,
+      "selected_alpha": 11.288378916846883,
+      "status": "REUSED_DETERMINISTIC",
+      "source": "rcmkn_haptics_seed42 convention, gated rerun"
+    }
+  ],
+  "gate_pass": true
+}

@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "dataset": "CWRU_UNBAL",
+      "seed": 42,
+      "m0_mf1": 0.9917,
+      "m6_mf1": 0.9583,
+      "delta": -0.0334
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "seed": 43,
+      "m0_mf1": 0.9917,
+      "m6_mf1": 0.9583,
+      "delta": -0.0334
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "seed": 44,
+      "m0_mf1": 0.9917,
+      "m6_mf1": 0.9583,
+      "delta": -0.0334
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "seed": 45,
+      "m0_mf1": 0.9833,
+      "m6_mf1": 0.9583,
+      "delta": -0.025
+    },
+    {
+      "dataset": "CWRU_UNBAL",
+      "seed": 46,
+      "m0_mf1": 0.9917,
+      "m6_mf1": 0.9583,
+      "delta": -0.0334
+    }
+  ],
+  "mean_delta": -0.03172,
+  "std_delta": 0.00376,
+  "median_delta": -0.0334,
+  "min_delta": -0.0334,
+  "max_delta": -0.025,
+  "n_positive": 0,
+  "n_negative": 5,
+  "paired_permutation_p": 0.067966,
+  "effect_size_d": -8.4438
+}

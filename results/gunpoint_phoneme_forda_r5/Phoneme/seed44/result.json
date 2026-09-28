@@ -1,0 +1,26 @@
+{
+  "seed": 44,
+  "mr_val": 0.1035,
+  "mr_test": 0.0808,
+  "mr_alpha": 206.913808111479,
+  "her_val": 0.1445,
+  "her_test": 0.117,
+  "her_alpha": 29.763514416313132,
+  "selected": "HERAMBA",
+  "fallback_used": false,
+  "final_test": 0.117,
+  "final_alpha": 29.763514416313132,
+  "regimes_deterministic": true,
+  "regime_hash_te": "f4d59789e044fedd",
+  "context_train": {
+    "ssl_best_val": 0.630916,
+    "joint_best_val_mf1": 0.0419,
+    "avg_joint_losses": {
+      "commit": 2.08745,
+      "div": 35.95155,
+      "aux": 62.36717,
+      "ssl": 12.11669
+    }
+  },
+  "runtime_s": 37.7
+}

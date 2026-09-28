@@ -1,0 +1,50 @@
+{
+  "experiment": "context-dependence transfer screen",
+  "seed": 42,
+  "datasets": {
+    "GunPoint": {
+      "source": "data\\kaggle\\GunPoint",
+      "train": 42,
+      "val": 8,
+      "test": 150,
+      "T": 150,
+      "n_classes": 2,
+      "val_source": "stratified_15pct_of_train_seed42"
+    },
+    "ItalyPowerDemand": {
+      "source": "data\\kaggle\\ItalyPowerDemand",
+      "train": 56,
+      "val": 11,
+      "test": 1029,
+      "T": 24,
+      "n_classes": 2,
+      "val_source": "stratified_15pct_of_train_seed42"
+    },
+    "FordA": {
+      "source": "data\\kaggle\\FordA",
+      "train": 3060,
+      "val": 541,
+      "test": 1320,
+      "T": 500,
+      "n_classes": 2,
+      "val_source": "stratified_15pct_of_train_seed42"
+    }
+  },
+  "variants": {
+    "M0": "aeon MiniRocket(random_state=42), 9996 features",
+    "M1": "4998 global + 4998 DRTN hard-regime heterogeneity (valid region)",
+    "M2": "same as M1 with per-sample occupancy-matched random regimes (RNG seed+900001)",
+    "M3": "same as M1 with per-sample shuffled DRTN regimes (RNG seed+900002)",
+    "A_SOFT": "4998 global + 4998 soft conditional-rate heterogeneity (frozen codebook, softmax(-d2/tau), tau=0.5)"
+  },
+  "heterogeneity_formula": "H_m = sum_k q_k (PPV_{m,k} - PPV_m)^2",
+  "classifier": {
+    "ridge_alphas": "np.logspace(-4, 4, 20)",
+    "fit": "train+validation",
+    "test_evals": "exactly once per variant (15 total)"
+  },
+  "drtn": {
+    "config": "R5 K=8 (unchanged audited config)",
+    "checkpoint_selection": "val Macro-F1, train-only fitting"
+  }
+}

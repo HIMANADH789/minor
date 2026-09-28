@@ -1,0 +1,9 @@
+{
+ "model": "InceptionTime",
+ "selected_config": {
+  "lr": 0.001,
+  "wd": 0.0001
+ },
+ "selection_rule": "max val macro-F1 over GRID (seed 42, validation only)",
+ "selection_val_macro_f1": 0.601
+}

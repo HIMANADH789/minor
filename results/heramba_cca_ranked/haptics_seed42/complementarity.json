@@ -1,0 +1,10 @@
+{
+ "observed_increment": 0.027073,
+ "null_mean": -0.037107,
+ "null_std": 0.022271,
+ "null_p95": -0.000669,
+ "empirical_p_one_sided": 0.004,
+ "p_formula": "(1 + count(null >= observed)) / (S + 1)",
+ "n_permutations": 1000,
+ "permutation_seed": 42042
+}

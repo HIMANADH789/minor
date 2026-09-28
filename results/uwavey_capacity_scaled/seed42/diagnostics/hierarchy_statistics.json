@@ -1,0 +1,97 @@
+{
+ "level_energies": {
+  "K": [
+   2,
+   4,
+   8,
+   16
+  ],
+  "real": [
+   195960.30283951107,
+   166351.75537091438,
+   138143.0762732854,
+   161723.24898316473
+  ]
+ },
+ "null": {
+  "S": 500,
+  "seed": 52042,
+  "mean": [
+   6994.022712450025,
+   12383.99026405012,
+   15686.950601399125,
+   20852.228603711043
+  ],
+  "p95": [
+   7181.6477714537905,
+   12629.532891091578,
+   15962.689081531376,
+   21147.797197282645
+  ]
+ },
+ "stopping": {
+  "L_star": 16,
+  "rows": [
+   {
+    "K": 2,
+    "real_energy": 195960.30283951107,
+    "null_mean": 6994.022712450025,
+    "null_std": 110.14592454209487,
+    "null_p95": 7181.6477714537905,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 4,
+    "real_energy": 166351.75537091438,
+    "null_mean": 12383.99026405012,
+    "null_std": 148.30255263260935,
+    "null_p95": 12629.532891091578,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 8,
+    "real_energy": 138143.0762732854,
+    "null_mean": 15686.950601399125,
+    "null_std": 169.57842012085777,
+    "null_p95": 15962.689081531376,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   },
+   {
+    "K": 16,
+    "real_energy": 161723.24898316473,
+    "null_mean": 20852.228603711043,
+    "null_std": 189.7666764666117,
+    "null_p95": 21147.797197282645,
+    "p_raw_plus_one": 0.001996007984031936,
+    "q_bh": 0.001996007984031936,
+    "keep": true
+   }
+  ]
+ },
+ "occupied_regimes_level16_train": 16,
+ "identity_max_rel": 5.685457207324412e-16,
+ "zero_sum_max": 2.255140518769849e-16,
+ "cross_ip_max": 2.325917236589703e-13,
+ "energy_fractions": [
+  0.29593279957818747,
+  0.25121894571666553,
+  0.20861912699419277,
+  0.24422912771095412
+ ],
+ "tree_meta": {
+  "n_latents": 239715,
+  "latent_dim": 32,
+  "max_depth": 4,
+  "splitter": "sklearn KMeans(n_clusters=2, n_init=10, random_state=42) per node",
+  "child_rule": "children of level-d id p are 2p (bit 0), 2p+1 (bit 1); bit-0 child has smaller first centroid coordinate",
+  "level_ids": "binary path ids; ancestor of b at level l is b >> (l_fine - l)",
+  "singleton_fallbacks": 0,
+  "input": "pooled TRAIN SSLTemporalEncoder latents (R^32)"
+ }
+}

@@ -1,0 +1,5 @@
+Method,Representation,H_dims,Test_MacroF1,Notes
+MiniROCKET,full MiniROCKET,9996,0.7543,identity gate (stored 0.7539)
+Flat_HERAMBA,[G||H_flat],4998,0.7568,identity gate (stored 0.7551)
+Hierarchical_full,[G||H_hier_full],149940,0.7201,optional diagnostic
+Hierarchical_budget,[G||H_hier_budget],4998,0.7299,PRIMARY capacity-controlled

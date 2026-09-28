@@ -1,0 +1,32 @@
+{
+  "audit1_config": {
+    "expected": {
+      "train": 56,
+      "val": 11,
+      "test": 1029,
+      "T": 24,
+      "n_classes": 2
+    },
+    "actual": {
+      "train": 56,
+      "val": 11,
+      "test": 1029,
+      "T": 24,
+      "n_classes": 2
+    },
+    "pass": true
+  },
+  "provenance": {
+    "source_path": "data\\kaggle\\ItalyPowerDemand",
+    "val_source": "stratified_15pct_of_train_seed42"
+  },
+  "audit2_extractor_identity_maxdiff": 0.0,
+  "m0_gate": {
+    "reference": 0.965,
+    "observed": 0.965,
+    "pass": true
+  },
+  "audit3_causality": 0.0,
+  "audit4_regimes_deterministic": true,
+  "audit5_H_recompute_maxdiff": 4.967053740534411e-09
+}

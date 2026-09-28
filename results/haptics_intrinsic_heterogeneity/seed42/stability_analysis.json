@@ -1,0 +1,19 @@
+{
+ "W_values": [
+  7,
+  8,
+  9
+ ],
+ "primary_W": 8,
+ "dataset_median": {
+  "7": 0.05363089699964765,
+  "8": 0.05769635185101932,
+  "9": 0.039530256437600275
+ },
+ "spearman_vs_primary": {
+  "7": 0.12,
+  "8": 1.0,
+  "9": 0.2233
+ },
+ "note": "W=7/9 are diagnostics only; W=8 is primary"
+}

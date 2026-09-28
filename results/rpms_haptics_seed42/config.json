@@ -1,0 +1,40 @@
+{
+  "seed": 42,
+  "N_BRANCH": 3332,
+  "N_TOTAL": 9996,
+  "hydra": {
+    "k": 8,
+    "g": 64,
+    "units_total": 4096,
+    "note": "g=64 for 3332-unit budget; same _HydraInternal core"
+  },
+  "allocation": {
+    "G": "first 3332 canonical kernel features",
+    "H": "first 3332 het features",
+    "HydraH": "first 3332 Hydra units (dilation, diff, group, kernel)"
+  },
+  "alphas": [
+    0.0001,
+    0.00026366508987303583,
+    0.0006951927961775605,
+    0.0018329807108324356,
+    0.004832930238571752,
+    0.012742749857031334,
+    0.03359818286283781,
+    0.08858667904100823,
+    0.23357214690901212,
+    0.615848211066026,
+    1.623776739188721,
+    4.281332398719396,
+    11.288378916846883,
+    29.763514416313132,
+    78.47599703514607,
+    206.913808111479,
+    545.5594781168514,
+    1438.44988828766,
+    3792.690190732246,
+    10000.0
+  ],
+  "frozen_context": "C:\\temp\\ECG_Benchmark\\results\\rcmkn_haptics_seed42\\context_model_seed42.pt",
+  "min_occupancy": 0.01
+}

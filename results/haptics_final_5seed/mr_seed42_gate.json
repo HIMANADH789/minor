@@ -1,0 +1,9 @@
+{
+  "reference": 0.4974,
+  "observed": 0.4974,
+  "tolerance": 0.011,
+  "pass": true,
+  "val_macro_f1": 0.9014,
+  "alpha": 11.288378916846883,
+  "convention": "MiniROCKET random_state=42 fit on train only; deterministic Ridge; ONE run reused for all five seeds (canonical repo convention)"
+}

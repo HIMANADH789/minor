@@ -1,0 +1,152 @@
+{
+  "ECG5000_UNBAL": [
+    {
+      "seed": 43,
+      "selected": "M0",
+      "m0_mf1": 0.6006,
+      "sel_mf1": 0.6006,
+      "delta": 0.0
+    },
+    {
+      "seed": 44,
+      "selected": "M0",
+      "m0_mf1": 0.5898,
+      "sel_mf1": 0.5898,
+      "delta": 0.0
+    },
+    {
+      "seed": 45,
+      "selected": "M0",
+      "m0_mf1": 0.5909,
+      "sel_mf1": 0.5909,
+      "delta": 0.0
+    },
+    {
+      "seed": 46,
+      "selected": "M0",
+      "m0_mf1": 0.6057,
+      "sel_mf1": 0.6057,
+      "delta": 0.0
+    }
+  ],
+  "ECG5000_BAL": [
+    {
+      "seed": 43,
+      "selected": "M0",
+      "m0_mf1": 0.6451,
+      "sel_mf1": 0.6451,
+      "delta": 0.0
+    },
+    {
+      "seed": 44,
+      "selected": "M0",
+      "m0_mf1": 0.6491,
+      "sel_mf1": 0.6491,
+      "delta": 0.0
+    },
+    {
+      "seed": 45,
+      "selected": "M0",
+      "m0_mf1": 0.6532,
+      "sel_mf1": 0.6532,
+      "delta": 0.0
+    },
+    {
+      "seed": 46,
+      "selected": "M0",
+      "m0_mf1": 0.6473,
+      "sel_mf1": 0.6473,
+      "delta": 0.0
+    }
+  ],
+  "CWRU_UNBAL": [
+    {
+      "seed": 43,
+      "selected": "M0",
+      "m0_mf1": 0.9917,
+      "sel_mf1": 0.9917,
+      "delta": 0.0
+    },
+    {
+      "seed": 44,
+      "selected": "M0",
+      "m0_mf1": 0.9917,
+      "sel_mf1": 0.9917,
+      "delta": 0.0
+    },
+    {
+      "seed": 45,
+      "selected": "M0",
+      "m0_mf1": 0.9833,
+      "sel_mf1": 0.9833,
+      "delta": 0.0
+    },
+    {
+      "seed": 46,
+      "selected": "M0",
+      "m0_mf1": 0.9917,
+      "sel_mf1": 0.9917,
+      "delta": 0.0
+    }
+  ],
+  "CWRU_BAL": [
+    {
+      "seed": 43,
+      "selected": "M0",
+      "m0_mf1": 0.9947,
+      "sel_mf1": 0.9947,
+      "delta": 0.0
+    },
+    {
+      "seed": 44,
+      "selected": "M0",
+      "m0_mf1": 0.9965,
+      "sel_mf1": 0.9965,
+      "delta": 0.0
+    },
+    {
+      "seed": 45,
+      "selected": "M0",
+      "m0_mf1": 0.9965,
+      "sel_mf1": 0.9965,
+      "delta": 0.0
+    },
+    {
+      "seed": 46,
+      "selected": "M0",
+      "m0_mf1": 0.9947,
+      "sel_mf1": 0.9947,
+      "delta": 0.0
+    }
+  ],
+  "EpilepticSeizures": [
+    {
+      "seed": 43,
+      "selected": "M0",
+      "m0_mf1": 0.917,
+      "sel_mf1": 0.917,
+      "delta": 0.0
+    },
+    {
+      "seed": 44,
+      "selected": "M0",
+      "m0_mf1": 0.9226,
+      "sel_mf1": 0.9226,
+      "delta": 0.0
+    },
+    {
+      "seed": 45,
+      "selected": "M0",
+      "m0_mf1": 0.9225,
+      "sel_mf1": 0.9225,
+      "delta": 0.0
+    },
+    {
+      "seed": 46,
+      "selected": "M0",
+      "m0_mf1": 0.9235,
+      "sel_mf1": 0.9235,
+      "delta": 0.0
+    }
+  ]
+}

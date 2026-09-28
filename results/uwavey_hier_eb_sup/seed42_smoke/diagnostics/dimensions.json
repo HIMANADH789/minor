@@ -1,0 +1,43 @@
+{
+ "split": {
+  "train": 200,
+  "validation": 60,
+  "test": 200,
+  "T": 315,
+  "n_classes": 8
+ },
+ "extractors": {
+  "expanded": {
+   "physical_kernels": 84,
+   "quantiles_per_kernel": 238,
+   "n_unique_dilations": 21,
+   "total_features": 19992,
+   "n_biases": 19992
+  }
+ },
+ "pools": {
+  "root_candidates": 19992,
+  "delta_candidates": 449820,
+  "edges": 30,
+  "kernels_per_edge": 14994,
+  "unified_candidates": 469812
+ },
+ "final": {
+  "selected": 19992,
+  "Z_dev": [
+   260,
+   19992
+  ],
+  "Z_test": [
+   200,
+   19992
+  ],
+  "composition": {
+   "0": 16180,
+   "2": 3812,
+   "4": 0,
+   "8": 0,
+   "16": 0
+  }
+ }
+}

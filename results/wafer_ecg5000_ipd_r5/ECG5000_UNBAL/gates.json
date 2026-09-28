@@ -1,0 +1,12 @@
+{
+  "mr_gate": {
+    "reference": 0.5938,
+    "observed": 0.5938,
+    "pass": true
+  },
+  "r2_gate": {
+    "reference": 0.5894,
+    "observed": 0.5846,
+    "pass": true
+  }
+}

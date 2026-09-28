@@ -1,0 +1,13 @@
+baseline,seed,old_test_macro_f1,best_epoch,n_pred_classes,max_class_fraction,single_class_collapse,near_collapse,verdict,pred_dist
+InceptionTime,42,0.0636,1,2,0.9968,False,True,INVALID_FOR_BENCHMARK (documented collapse),"{""1"": 307, ""2"": 1}"
+InceptionTime,43,0.2475,15,5,0.6331,False,False,INVALID_FOR_BENCHMARK (documented collapse),"{""0"": 2, ""1"": 15, ""2"": 43, ""3"": 195, ""4"": 53}"
+InceptionTime,44,0.0945,10,3,0.9578,False,True,INVALID_FOR_BENCHMARK (documented collapse),"{""1"": 3, ""2"": 10, ""3"": 295}"
+FCN,42,0.0634,2,1,1.0,True,True,INVALID_FOR_BENCHMARK (documented collapse),"{""1"": 308}"
+FCN,43,0.1302,7,3,0.8831,False,False,INVALID_FOR_BENCHMARK (documented collapse),"{""0"": 1, ""2"": 35, ""3"": 272}"
+FCN,44,0.0637,1,2,0.9935,False,True,INVALID_FOR_BENCHMARK (documented collapse),"{""1"": 306, ""3"": 2}"
+ResNet1D,42,0.1512,6,3,0.8312,False,False,INVALID_FOR_BENCHMARK (documented collapse),"{""1"": 5, ""3"": 47, ""4"": 256}"
+ResNet1D,43,0.0715,1,1,1.0,True,True,INVALID_FOR_BENCHMARK (documented collapse),"{""4"": 308}"
+ResNet1D,44,0.0693,1,2,0.9416,False,False,INVALID_FOR_BENCHMARK (documented collapse),"{""0"": 18, ""2"": 290}"
+PatchTST,42,0.1692,12,3,0.6429,False,False,INVALID_FOR_BENCHMARK (documented collapse),"{""1"": 1, ""2"": 109, ""3"": 198}"
+PatchTST,43,0.1339,7,3,0.7825,False,False,INVALID_FOR_BENCHMARK (documented collapse),"{""1"": 1, ""2"": 241, ""3"": 66}"
+PatchTST,44,0.0756,1,2,0.9968,False,True,INVALID_FOR_BENCHMARK (documented collapse),"{""0"": 1, ""3"": 307}"

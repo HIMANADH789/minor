@@ -1,0 +1,10 @@
+dataset,comparison,delta_mf1,chi2,p_raw,effect_size_d,q_fdr,verdict
+EpilepticSeizures,M0 vs M1,0.0052,21.2459,4e-06,0.0444,1.2e-05,SIGNIFICANT
+EpilepticSeizures,M0 vs M2,0.0051,6.6928,0.00968,0.025,0.01452,SIGNIFICANT
+EpilepticSeizures,M0 vs M3,0.0039,4.2044,0.04032,0.02,0.04032,SIGNIFICANT
+Haptics,M0 vs M1,-0.0091,0.5714,0.449692,-0.0646,0.453255,not significant
+Haptics,M0 vs M2,-0.0341,2.2273,0.135593,-0.0975,0.406779,not significant
+Haptics,M0 vs M3,-0.0149,0.5625,0.453255,-0.057,0.453255,not significant
+Phoneme,M0 vs M1,0.0073,9.7232,0.00182,0.074,0.00182,SIGNIFICANT
+Phoneme,M0 vs M2,0.0068,10.5274,0.001176,0.0763,0.001764,SIGNIFICANT
+Phoneme,M0 vs M3,0.013,20.0057,8e-06,0.105,2.3e-05,SIGNIFICANT

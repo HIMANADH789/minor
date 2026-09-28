@@ -1,0 +1,42 @@
+{
+  "ECG5000_UNBAL": {
+    "decision": "DROP_KTM_W",
+    "final_model": "MiniROCKET",
+    "p_value": 0.00995,
+    "delta_real": -0.0151,
+    "n_ktm_features": 84,
+    "S": 200,
+    "alpha": 0.05,
+    "seed": 42
+  },
+  "ECG5000_BAL": {
+    "decision": "KEEP_KTM_W",
+    "final_model": "MiniROCKET + KTM-W",
+    "p_value": 0.004975,
+    "delta_real": 0.0019,
+    "n_ktm_features": 84,
+    "S": 200,
+    "alpha": 0.05,
+    "seed": 42
+  },
+  "CWRU_UNBAL": {
+    "decision": "DROP_KTM_W",
+    "final_model": "MiniROCKET",
+    "p_value": 0.353234,
+    "delta_real": 0.0049,
+    "n_ktm_features": 84,
+    "S": 200,
+    "alpha": 0.05,
+    "seed": 42
+  },
+  "CWRU_BAL": {
+    "decision": "DROP_KTM_W",
+    "final_model": "MiniROCKET",
+    "p_value": 0.935323,
+    "delta_real": 0.0,
+    "n_ktm_features": 84,
+    "S": 200,
+    "alpha": 0.05,
+    "seed": 42
+  }
+}

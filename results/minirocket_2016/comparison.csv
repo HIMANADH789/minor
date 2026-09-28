@@ -1,0 +1,5 @@
+dataset,minirocket_2016,gld_a3_turs_local,delta,relative_pct
+ECG5000_UNBAL,0.6944,0.6599,-0.0345,-4.97
+ECG5000_BAL,0.6502,0.6551,0.0049,0.76
+CWRU_UNBAL,0.9458,0.9458,-0.0,-0.0
+CWRU_BAL,0.9824,0.9824,-0.0,-0.0

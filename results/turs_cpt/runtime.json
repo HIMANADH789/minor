@@ -1,0 +1,74 @@
+{
+  "ECG5000_UNBAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.3,
+      "mr_transform_s": 0.1,
+      "period_est_s": 0.4,
+      "kernel_rank_s": 0.0,
+      "cpt_extract_s": 2.1,
+      "total_s": 2.9
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.2,
+      "mr_transform_s": 0.3,
+      "period_est_s": 0.4,
+      "kernel_rank_s": 0.1,
+      "cpt_extract_s": 9.6,
+      "total_s": 10.5
+    }
+  },
+  "ECG5000_BAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.1,
+      "mr_transform_s": 0.1,
+      "period_est_s": 0.5,
+      "kernel_rank_s": 0.0,
+      "cpt_extract_s": 2.9,
+      "total_s": 3.7
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.3,
+      "mr_transform_s": 0.3,
+      "period_est_s": 0.5,
+      "kernel_rank_s": 0.2,
+      "cpt_extract_s": 13.8,
+      "total_s": 15.1
+    }
+  },
+  "CWRU_UNBAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.1,
+      "mr_transform_s": 0.1,
+      "period_est_s": 0.7,
+      "kernel_rank_s": 0.0,
+      "cpt_extract_s": 4.4,
+      "total_s": 5.5
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.3,
+      "mr_transform_s": 0.4,
+      "period_est_s": 0.7,
+      "kernel_rank_s": 0.0,
+      "cpt_extract_s": 21.1,
+      "total_s": 22.6
+    }
+  },
+  "CWRU_BAL": {
+    "MR-2K": {
+      "mr_fit_s": 0.2,
+      "mr_transform_s": 0.3,
+      "period_est_s": 1.7,
+      "kernel_rank_s": 0.0,
+      "cpt_extract_s": 10.0,
+      "total_s": 12.3
+    },
+    "MR-10K": {
+      "mr_fit_s": 0.7,
+      "mr_transform_s": 0.8,
+      "period_est_s": 1.7,
+      "kernel_rank_s": 0.1,
+      "cpt_extract_s": 50.5,
+      "total_s": 53.8
+    }
+  }
+}

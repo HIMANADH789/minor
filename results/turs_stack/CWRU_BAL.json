@@ -1,0 +1,9 @@
+{
+  "dataset": "CWRU_BAL",
+  "num_classes": 4,
+  "accuracy": 0.9576,
+  "macro_f1": 0.9564,
+  "best_val_macro_f1": 0.9614,
+  "elapsed_s": 13.5,
+  "params": 143600
+}

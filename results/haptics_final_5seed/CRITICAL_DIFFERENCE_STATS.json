@@ -1,0 +1,152 @@
+{
+  "method": "Dem\u0161ar (2006) CD diagram, seeds-as-repeats on one dataset; descriptive rank-stability summary, not a multi-dataset significance claim",
+  "metric": "test Macro-F1",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "models": [
+    "HERAMBA",
+    "MiniRocket",
+    "InceptionTime",
+    "ResNet1D",
+    "FCN",
+    "PatchTST"
+  ],
+  "mean_test_macro_f1": {
+    "HERAMBA": 0.5315,
+    "MiniRocket": 0.4974,
+    "InceptionTime": 0.4404,
+    "ResNet1D": 0.3986,
+    "FCN": 0.3888,
+    "PatchTST": 0.3331
+  },
+  "per_seed_scores": {
+    "HERAMBA": {
+      "42": 0.547,
+      "43": 0.5213,
+      "44": 0.5387,
+      "45": 0.5323,
+      "46": 0.5182
+    },
+    "MiniRocket": {
+      "42": 0.4974,
+      "43": 0.4974,
+      "44": 0.4974,
+      "45": 0.4974,
+      "46": 0.4974
+    },
+    "InceptionTime": {
+      "42": 0.423,
+      "43": 0.5154,
+      "44": 0.3657,
+      "45": 0.4595,
+      "46": 0.4384
+    },
+    "ResNet1D": {
+      "42": 0.4027,
+      "43": 0.453,
+      "44": 0.3697,
+      "45": 0.4304,
+      "46": 0.3373
+    },
+    "FCN": {
+      "42": 0.3638,
+      "43": 0.3886,
+      "44": 0.3959,
+      "45": 0.3808,
+      "46": 0.4147
+    },
+    "PatchTST": {
+      "42": 0.394,
+      "43": 0.2266,
+      "44": 0.3579,
+      "45": 0.3828,
+      "46": 0.3044
+    }
+  },
+  "seed_wise_ranks": {
+    "HERAMBA": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "MiniRocket": [
+      2.0,
+      3.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "InceptionTime": [
+      3.0,
+      2.0,
+      5.0,
+      3.0,
+      3.0
+    ],
+    "ResNet1D": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      5.0
+    ],
+    "FCN": [
+      6.0,
+      5.0,
+      3.0,
+      6.0,
+      4.0
+    ],
+    "PatchTST": [
+      5.0,
+      6.0,
+      6.0,
+      5.0,
+      6.0
+    ]
+  },
+  "mean_ranks": {
+    "HERAMBA": 1.0,
+    "MiniRocket": 2.2,
+    "InceptionTime": 3.2,
+    "ResNet1D": 4.2,
+    "FCN": 4.8,
+    "PatchTST": 5.6
+  },
+  "friedman_chi2": 2622.1429,
+  "friedman_p_exact_permutation": 1.0,
+  "note_on_iman_davenport": "chi2 > n*(k-1): the Iman-Davenport F correction is invalid at n=5; exact permutation p reported instead",
+  "cd_nemenyi_005": 3.3722,
+  "q_nemenyi_k6": 2.85,
+  "cliques_insignificant": [
+    [
+      "HERAMBA",
+      "MiniRocket",
+      "InceptionTime",
+      "ResNet1D"
+    ],
+    [
+      "MiniRocket",
+      "InceptionTime",
+      "ResNet1D",
+      "FCN"
+    ],
+    [
+      "InceptionTime",
+      "ResNet1D",
+      "FCN",
+      "PatchTST"
+    ]
+  ],
+  "files": {
+    "png": "results\\haptics_final_5seed\\CRITICAL_DIFFERENCE_HAPTICS.png",
+    "pdf": "results\\haptics_final_5seed\\CRITICAL_DIFFERENCE_HAPTICS.pdf"
+  }
+}

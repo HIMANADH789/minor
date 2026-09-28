@@ -1,0 +1,7 @@
+{
+  "val_macro_f1": 0.9804,
+  "test_macro_f1": 0.9917,
+  "selected_alpha": 0.23357214690901212,
+  "seed": 44,
+  "runtime_s": 1.8
+}

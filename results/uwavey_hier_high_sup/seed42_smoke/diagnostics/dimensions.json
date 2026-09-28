@@ -1,0 +1,38 @@
+{
+ "B_base": 9996,
+ "B_high": 19992,
+ "G_part": 4998,
+ "N_G": 17993,
+ "N_H": 1999,
+ "rho": 0.1,
+ "H_kernels": 14994,
+ "edges": 30,
+ "H_candidate_pool": 449820,
+ "final_dims": {
+  "Z_dev": [
+   260,
+   19992
+  ],
+  "Z_te": [
+   200,
+   19992
+  ]
+ },
+ "all_methods_final_features": 19992,
+ "extractor_expanded": {
+  "physical_kernels": 84,
+  "quantiles_per_kernel": 238,
+  "n_unique_dilations": 21,
+  "total_features": 19992,
+  "n_biases": 19992
+ },
+ "selected_by_level": {
+  "2": 1689,
+  "4": 276,
+  "8": 33,
+  "16": 1
+ },
+ "runtime_s": 33.4,
+ "peak_mem_mb": 0.0,
+ "smoke": true
+}

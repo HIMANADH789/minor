@@ -1,0 +1,4 @@
+dataset,mr_seed42,mr_seed43,mr_seed44,her_raw_seed42,her_raw_seed43,her_raw_seed44,final_seed42,final_seed43,final_seed44,mr_mean,mr_std,her_raw_mean,her_raw_std,her_final_mean,her_final_std,delta_mean
+Wafer,0.9962,0.9962,0.9962,0.9983,0.9958,0.9979,0.9983,0.9958,0.9979,0.9962,0.0,0.9973,0.0013,0.9973,0.0013,0.0011
+ECG5000_UNBAL,0.5938,0.5938,0.5938,0.5846,0.5828,0.5921,0.5846,0.5828,0.5938,0.5938,0.0,0.5865,0.0049,0.5871,0.0059,-0.0067
+ItalyPowerDemand,0.965,0.965,0.965,0.9592,0.9572,0.9611,0.9592,0.9572,0.9611,0.965,0.0,0.9592,0.002,0.9592,0.002,-0.0058

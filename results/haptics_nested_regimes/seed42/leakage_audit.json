@@ -1,0 +1,6 @@
+{
+ "poison_checks": "see tests/test_nested_regimes.py",
+ "labels_used_in_intrinsic_stage": false,
+ "val_used_in_intrinsic_stage": false,
+ "test_used_in_intrinsic_stage": false
+}

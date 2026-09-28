@@ -1,0 +1,5 @@
+dataset,mr_baseline_test_mf1,final_model,final_test_mf1,final_test_acc,final_test_wf1,delta_test,ref_value
+ECG5000_UNBAL,0.5938,MR + KTM-W,0.6115,0.957,0.9488,0.0177,0.5938
+ECG5000_BAL,0.6553,MR,0.6553,0.952,0.9498,0.0,0.6553
+CWRU_UNBAL,0.9917,MR,0.9917,0.9917,0.9917,0.0,0.9917
+CWRU_BAL,0.9947,MR,0.9947,0.9947,0.9947,0.0,0.9947

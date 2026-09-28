@@ -1,0 +1,60 @@
+{
+  "dataset": "ECG5000_BAL",
+  "variant": "R5",
+  "n_cls": 5,
+  "test": {
+    "macro_f1": 0.4923950873085297,
+    "accuracy": 0.863,
+    "weighted_f1": 0.8836530183521755,
+    "balanced_accuracy": 0.5470792110785595,
+    "mcc": 0.7590884681174247,
+    "kappa": 0.7560111201939088,
+    "confusion_matrix": [
+      [
+        533,
+        14,
+        19,
+        6,
+        12
+      ],
+      [
+        1,
+        307,
+        7,
+        33,
+        5
+      ],
+      [
+        3,
+        5,
+        7,
+        1,
+        3
+      ],
+      [
+        2,
+        15,
+        2,
+        15,
+        5
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        1
+      ]
+    ]
+  },
+  "val_mf1": 0.6570560520617014,
+  "selected_lambda": 0.1,
+  "kernel_dim": 10,
+  "kernel_validation": {
+    "symmetry_error": 7.63e-06,
+    "min_eigenvalue": -0.003298,
+    "n_negative_eigenvalues": 2524,
+    "condition_number": -8996252.0
+  },
+  "elapsed_s": 2.9
+}

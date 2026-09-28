@@ -1,0 +1,494 @@
+{
+  "objective": "Strict 3-seed replication (42/43/44) of the seed-42 discretization effect under identical architecture and protocol; primary quantity = DTC - CTC (test Macro-F1).",
+  "dataset_audit": {
+    "train": 132,
+    "val": 23,
+    "test": 308,
+    "T": 1092,
+    "classes": 5,
+    "verified": true,
+    "source": {
+      "test": "C:\\temp\\ECG_Benchmark\\data\\external\\extracted\\Haptics\\Haptics_TEST.ts",
+      "train": "C:\\temp\\ECG_Benchmark\\data\\external\\extracted\\Haptics\\Haptics_TRAIN.ts"
+    }
+  },
+  "model_definitions": {
+    "ctc": {
+      "K": null,
+      "vq": false,
+      "diversity": false,
+      "loss": "CE"
+    },
+    "dtc": {
+      "K": 8,
+      "vq": true,
+      "diversity": false,
+      "loss": "CE + 0.25*L_commit"
+    },
+    "r5_k16": {
+      "K": 16,
+      "vq": true,
+      "diversity": true,
+      "loss": "CE + 0.25*L_commit + 0.01*L_div"
+    }
+  },
+  "seed_configuration": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "per_run_seed_reset": true,
+    "reset_scope": [
+      "python_random",
+      "numpy",
+      "torch_cpu",
+      "torch_cuda"
+    ]
+  },
+  "training_config": {
+    "dataset": "Haptics",
+    "split": "external_stack_generalization canonical: 132/23/308",
+    "normalization": "per-sample z-norm (canonical)",
+    "D": 64,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "transformer_layers": 2,
+    "transformer_heads": 4,
+    "ff_dim": 128,
+    "dropout": 0.1,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "OneCycleLR(max_lr=1e-3)",
+    "batch_size": 16,
+    "max_epochs": 100,
+    "patience": 15,
+    "beta": 0.25,
+    "lambda_div": 0.01,
+    "ema_decay": 0.99,
+    "dead_threshold": 0.001,
+    "revival_patience": 100,
+    "checkpoint_criterion": "best validation Macro-F1",
+    "test_evaluations": "exactly one per run, after checkpoint freeze"
+  },
+  "parameter_audit": {
+    "seed42/ctc": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 0,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed42/dtc": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 1040,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed42/r5_k16": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 2080,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed43/ctc": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 0,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed43/dtc": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 1040,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed43/r5_k16": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 2080,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed44/ctc": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 0,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed44/dtc": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 1040,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    },
+    "seed44/r5_k16": {
+      "encoder": 3632,
+      "vq": 0,
+      "codebook_buffers": 2080,
+      "trajectory": 591232,
+      "pool": 4224,
+      "classifier": 325,
+      "other": 0,
+      "trainable": 599413,
+      "non_trainable": 0,
+      "total": 599413
+    }
+  },
+  "unit_tests": {
+    "passed": 32,
+    "total": 32
+  },
+  "master_table": [
+    {
+      "seed": 42,
+      "model": "ctc",
+      "K": null,
+      "params": 599413,
+      "val_f1": 0.6264,
+      "test_f1": 0.3821,
+      "best_epoch": 54,
+      "time_s": 41.3,
+      "inference_s": 1.364,
+      "peak_mem_mb": 1311.7,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 42,
+      "model": "dtc",
+      "K": 8,
+      "params": 599413,
+      "val_f1": 0.5212,
+      "test_f1": 0.3577,
+      "best_epoch": 47,
+      "time_s": 45.7,
+      "inference_s": 1.321,
+      "peak_mem_mb": 1319.7,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 42,
+      "model": "r5_k16",
+      "K": 16,
+      "params": 599413,
+      "val_f1": 0.6345,
+      "test_f1": 0.3726,
+      "best_epoch": 83,
+      "time_s": 71.6,
+      "inference_s": 1.291,
+      "peak_mem_mb": 1320.9,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 43,
+      "model": "ctc",
+      "K": null,
+      "params": 599413,
+      "val_f1": 0.4879,
+      "test_f1": 0.3563,
+      "best_epoch": 70,
+      "time_s": 49.8,
+      "inference_s": 1.3,
+      "peak_mem_mb": 1314.3,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 43,
+      "model": "dtc",
+      "K": 8,
+      "params": 599413,
+      "val_f1": 0.4832,
+      "test_f1": 0.322,
+      "best_epoch": 31,
+      "time_s": 33.0,
+      "inference_s": 1.488,
+      "peak_mem_mb": 1320.9,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 43,
+      "model": "r5_k16",
+      "K": 16,
+      "params": 599413,
+      "val_f1": 0.5908,
+      "test_f1": 0.3266,
+      "best_epoch": 66,
+      "time_s": 56.4,
+      "inference_s": 1.318,
+      "peak_mem_mb": 1319.9,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 44,
+      "model": "ctc",
+      "K": null,
+      "params": 599413,
+      "val_f1": 0.4489,
+      "test_f1": 0.3213,
+      "best_epoch": 45,
+      "time_s": 35.3,
+      "inference_s": 1.283,
+      "peak_mem_mb": 1312.3,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 44,
+      "model": "dtc",
+      "K": 8,
+      "params": 599413,
+      "val_f1": 0.5267,
+      "test_f1": 0.3483,
+      "best_epoch": 42,
+      "time_s": 40.4,
+      "inference_s": 1.27,
+      "peak_mem_mb": 1320.6,
+      "test_evaluations": 1
+    },
+    {
+      "seed": 44,
+      "model": "r5_k16",
+      "K": 16,
+      "params": 599413,
+      "val_f1": 0.5297,
+      "test_f1": 0.3386,
+      "best_epoch": 23,
+      "time_s": 26.5,
+      "inference_s": 1.293,
+      "peak_mem_mb": 1319.6,
+      "test_evaluations": 1
+    }
+  ],
+  "aggregate_table": {
+    "ctc": {
+      "mean": 0.3532,
+      "sd": 0.0305,
+      "median": 0.3563,
+      "min": 0.3213,
+      "max": 0.3821,
+      "values": {
+        "42": 0.3821,
+        "43": 0.3563,
+        "44": 0.3213
+      }
+    },
+    "dtc": {
+      "mean": 0.3427,
+      "sd": 0.0185,
+      "median": 0.3483,
+      "min": 0.322,
+      "max": 0.3577,
+      "values": {
+        "42": 0.3577,
+        "43": 0.322,
+        "44": 0.3483
+      }
+    },
+    "r5_k16": {
+      "mean": 0.3459,
+      "sd": 0.0239,
+      "median": 0.3386,
+      "min": 0.3266,
+      "max": 0.3726,
+      "values": {
+        "42": 0.3726,
+        "43": 0.3266,
+        "44": 0.3386
+      }
+    }
+  },
+  "paired_differences": {
+    "dtc_minus_ctc": {
+      "per_seed": {
+        "42": -0.0244,
+        "43": -0.0343,
+        "44": 0.027
+      },
+      "mean": -0.0106,
+      "sd": 0.0329,
+      "median": -0.0244,
+      "min": -0.0343,
+      "max": 0.027,
+      "positive_seeds": 1
+    },
+    "r5k16_minus_dtc": {
+      "per_seed": {
+        "42": 0.0149,
+        "43": 0.0046,
+        "44": -0.0097
+      },
+      "mean": 0.0033,
+      "sd": 0.0124,
+      "median": 0.0046,
+      "min": -0.0097,
+      "max": 0.0149,
+      "positive_seeds": 2
+    },
+    "dtc_gt_ctc_seeds": 1,
+    "r5k16_gt_dtc_seeds": 2,
+    "note": "three-seed replication; exploratory, underpowered; no significance claims"
+  },
+  "codebook_diagnostics": {
+    "dtc": {
+      "per_seed": [
+        {
+          "seed": 42,
+          "active_codes": 8,
+          "normalized_entropy": 0.6611612761693797,
+          "perplexity": 3.954468571496211,
+          "dominant_fraction": 0.431351381872747,
+          "revivals": 6
+        },
+        {
+          "seed": 43,
+          "active_codes": 7,
+          "normalized_entropy": 0.7266041650709653,
+          "perplexity": 4.530946622964765,
+          "dominant_fraction": 0.40989665560332594,
+          "revivals": 5
+        },
+        {
+          "seed": 44,
+          "active_codes": 8,
+          "normalized_entropy": 0.8094373004748693,
+          "perplexity": 5.3826323989436915,
+          "dominant_fraction": 0.32856242764131366,
+          "revivals": 2
+        }
+      ],
+      "active_codes": {
+        "mean": 7.6667,
+        "sd": 0.5774
+      },
+      "normalized_entropy": {
+        "mean": 0.7324,
+        "sd": 0.0743
+      },
+      "perplexity": {
+        "mean": 4.6227,
+        "sd": 0.7185
+      },
+      "dominant_fraction": {
+        "mean": 0.3899,
+        "sd": 0.0542
+      },
+      "revivals": {
+        "mean": 4.3333,
+        "sd": 2.0817
+      }
+    },
+    "r5_k16": {
+      "per_seed": [
+        {
+          "seed": 42,
+          "active_codes": 13,
+          "normalized_entropy": 0.5934398371729361,
+          "perplexity": 5.1828992469107815,
+          "dominant_fraction": 0.38095646908704306,
+          "revivals": 15
+        },
+        {
+          "seed": 43,
+          "active_codes": 11,
+          "normalized_entropy": 0.5929299994444528,
+          "perplexity": 5.175578030026613,
+          "dominant_fraction": 0.4762477119094416,
+          "revivals": 13
+        },
+        {
+          "seed": 44,
+          "active_codes": 11,
+          "normalized_entropy": 0.5321077163924898,
+          "perplexity": 4.372416597876316,
+          "dominant_fraction": 0.3765575928568648,
+          "revivals": 7
+        }
+      ],
+      "active_codes": {
+        "mean": 11.6667,
+        "sd": 1.1547
+      },
+      "normalized_entropy": {
+        "mean": 0.5728,
+        "sd": 0.0353
+      },
+      "perplexity": {
+        "mean": 4.9103,
+        "sd": 0.4658
+      },
+      "dominant_fraction": {
+        "mean": 0.4113,
+        "sd": 0.0563
+      },
+      "revivals": {
+        "mean": 11.6667,
+        "sd": 4.1633
+      }
+    }
+  },
+  "minirocket_reference": {
+    "test_macro_f1": 0.4974,
+    "role": "external non-neural reference only"
+  },
+  "test_touch_audit": {
+    "runs": 9,
+    "total_test_evaluations": 9,
+    "one_per_run": true
+  },
+  "environment": {
+    "python": "3.11.9",
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  }
+}

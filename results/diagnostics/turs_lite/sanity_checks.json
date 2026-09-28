@@ -1,0 +1,7 @@
+{
+  "datasets_completed": true,
+  "checkpoints_saved": true,
+  "report_generated": true,
+  "rubric_generated": true,
+  "leakage_audit_pass": true
+}

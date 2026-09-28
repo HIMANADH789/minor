@@ -1,0 +1,67 @@
+{
+  "dataset": "CWRU_UNBAL",
+  "model": "MiniROCKET_2016",
+  "n_kernels": 2016,
+  "feature_dim": 2016,
+  "seed": 42,
+  "seq_len": 1024,
+  "n_cls": 4,
+  "n_train": 1119,
+  "n_val": 241,
+  "n_test": 240,
+  "lam": 1000.0,
+  "val_mf1": 0.9711,
+  "val_nll": 0.8425,
+  "test": {
+    "macro_f1": 0.94579945799458,
+    "accuracy": 0.9458333333333333,
+    "weighted_f1": 0.94579945799458,
+    "balanced_accuracy": 0.9458333333333333,
+    "mcc": 0.9279711252379944,
+    "kappa": 0.9277777777777778,
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        60,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        55,
+        5
+      ],
+      [
+        0,
+        0,
+        8,
+        52
+      ]
+    ]
+  },
+  "test_nll": 0.8432,
+  "test_ece": 0.5074,
+  "test_mf1": 0.9458,
+  "test_acc": 0.9458,
+  "test_wf1": 0.9458,
+  "elapsed_s": 0.25,
+  "extraction_s": 0.19,
+  "ridge_s": 0.05,
+  "lambda_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "all_datasets": {
+    "ECG5000_UNBAL": {
+      "REGIME_DECISION": "PASS (train/val only)",
+      "KTM_W_SELECTION": "PASS (no test data)",
+      "NULL_GENERATION": "PASS (validation only)",
+      "RIDGE_SELECTION": "PASS (no test labels in decision)",
+      "STACK_TRAINING": "PASS (old checkpoint, train only)",
+      "FINAL_TEST": "PASS (evaluated only after decisions frozen)",
+      "ORACLE_LABEL": "PASS (post-hoc only, not for deployment)"
+    },
+    "ECG5000_BAL": {
+      "REGIME_DECISION": "PASS (train/val only)",
+      "KTM_W_SELECTION": "PASS (no test data)",
+      "NULL_GENERATION": "PASS (validation only)",
+      "RIDGE_SELECTION": "PASS (no test labels in decision)",
+      "STACK_TRAINING": "PASS (old checkpoint, train only)",
+      "FINAL_TEST": "PASS (evaluated only after decisions frozen)",
+      "ORACLE_LABEL": "PASS (post-hoc only, not for deployment)"
+    },
+    "CWRU_UNBAL": {
+      "REGIME_DECISION": "PASS (train/val only)",
+      "KTM_W_SELECTION": "PASS (no test data)",
+      "NULL_GENERATION": "PASS (validation only)",
+      "RIDGE_SELECTION": "PASS (no test labels in decision)",
+      "STACK_TRAINING": "PASS (old checkpoint, train only)",
+      "FINAL_TEST": "PASS (evaluated only after decisions frozen)",
+      "ORACLE_LABEL": "PASS (post-hoc only, not for deployment)"
+    },
+    "CWRU_BAL": {
+      "REGIME_DECISION": "PASS (train/val only)",
+      "KTM_W_SELECTION": "PASS (no test data)",
+      "NULL_GENERATION": "PASS (validation only)",
+      "RIDGE_SELECTION": "PASS (no test labels in decision)",
+      "STACK_TRAINING": "PASS (old checkpoint, train only)",
+      "FINAL_TEST": "PASS (evaluated only after decisions frozen)",
+      "ORACLE_LABEL": "PASS (post-hoc only, not for deployment)"
+    }
+  },
+  "overall": "PASS"
+}

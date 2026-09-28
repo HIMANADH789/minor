@@ -1,0 +1,4 @@
+dataset,MiniROCKET,InceptionTime,ResNet-1D,FCN,PatchTST,TURS-Stack,delta_stack_minus_mr,winner,stack_rank,minirocket_rank
+EpilepticSeizures,0.9194,0.906,0.7935,0.3018,0.1331,0.8706,-0.0488,MiniROCKET,3,1
+Haptics,0.4974,0.0636,0.1512,0.0634,0.1692,0.3553,-0.1421,MiniROCKET,2,1
+Phoneme,0.0808,0.0445,0.0258,0.0015,0.0126,0.0785,-0.0023,MiniROCKET,2,1

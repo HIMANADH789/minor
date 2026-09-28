@@ -1,0 +1,11 @@
+{
+  "tag": "CWRU_UNBAL",
+  "variant": "A0",
+  "best_val_mf1": 0.899126,
+  "test_macro_f1": 0.885548,
+  "elapsed_s": 3.5,
+  "seed": 42,
+  "params_trainable": 3076,
+  "params_fixed": 0,
+  "note": "Ridge on fixed-bank global PPV/strength features"
+}

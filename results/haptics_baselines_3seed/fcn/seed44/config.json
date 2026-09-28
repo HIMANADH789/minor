@@ -1,0 +1,19 @@
+{
+  "model": "FCN",
+  "seed": 44,
+  "canonical_config": {
+    "LR": 0.0003,
+    "WD": 0.01,
+    "BS": 64,
+    "MAX_EP": 15,
+    "PAT": 6,
+    "SEED": 42
+  },
+  "optimizer": "AdamW",
+  "scheduler": "OneCycleLR",
+  "checkpoint_selection": "validation Macro-F1 only",
+  "test_evaluations": 1,
+  "source": "fresh_run_neural_baseline",
+  "checkpoint_path": null,
+  "note": "canonical runner keeps no checkpoint artifact"
+}

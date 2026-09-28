@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "S": 200,
+  "alpha": 0.05,
+  "checks": [
+    {
+      "check": "gate_uses_train_val_only",
+      "status": "PASS",
+      "detail": "run_detector signature contains no test arrays; MiniROCKET fitted on train; scores computed on val"
+    },
+    {
+      "check": "test_excluded_until_freeze",
+      "status": "PASS",
+      "detail": "test split touched only by (a) canonical baseline reproduction against already-published reference values and (b) the single final evaluation after decisions were frozen; no gate statistic uses test"
+    },
+    {
+      "check": "standardization_fit_on_train_only",
+      "status": "PASS",
+      "detail": "BlockScaler fitted on train rows only (unit tests 12/13)"
+    },
+    {
+      "check": "decision_frozen_before_final_test",
+      "status": "PASS",
+      "detail": "freeze_decisions() executed and selected_models.json written before stage_final() ran"
+    },
+    {
+      "check": "S_fixed_at_200",
+      "status": "PASS",
+      "detail": "S=200 declared before results; assert in run_detector; unit test 18"
+    },
+    {
+      "check": "threshold_fixed_at_0.05",
+      "status": "PASS",
+      "detail": "keep_drop_rule uses 0.05 exactly"
+    },
+    {
+      "check": "no_posthoc_override",
+      "status": "PASS",
+      "detail": "counterfactual models labelled POST-HOC / REFERENCE ONLY; never used to alter the decision"
+    },
+    {
+      "check": "no_per_example_routing",
+      "status": "PASS",
+      "detail": "one constant decision per dataset (unit tests 16/17)"
+    }
+  ],
+  "overall": "PASS"
+}

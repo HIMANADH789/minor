@@ -1,0 +1,8 @@
+{
+  "dataset": "CWRU_UNBAL",
+  "accuracy": 0.9625,
+  "macro_f1": 0.9624,
+  "best_val_mf1": 0.9917,
+  "elapsed_s": 42.15,
+  "params": 143600
+}

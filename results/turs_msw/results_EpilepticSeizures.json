@@ -1,0 +1,328 @@
+{
+  "dataset": "EpilepticSeizures",
+  "seed": 42,
+  "n_train": 80,
+  "n_val": 20,
+  "n_test": 11420,
+  "n_classes": 2,
+  "variants": {
+    "M0": {
+      "accuracy": 0.949,
+      "macro_f1": 0.9194,
+      "weighted_f1": 0.9489,
+      "balanced_accuracy": 0.9179,
+      "class_f1s": [
+        0.8706,
+        0.9683
+      ],
+      "class_precision": [
+        0.8749,
+        0.9671
+      ],
+      "class_recall": [
+        0.8664,
+        0.9694
+      ],
+      "confusion_matrix": [
+        [
+          1958,
+          302
+        ],
+        [
+          280,
+          8880
+        ]
+      ],
+      "model": "M0",
+      "val_macro_f1": 0.9499,
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996,
+      "time_ridge_s": 0.03,
+      "time_total_s": 0.75
+    },
+    "M1": {
+      "accuracy": 0.9523,
+      "macro_f1": 0.9246,
+      "weighted_f1": 0.9522,
+      "balanced_accuracy": 0.9236,
+      "class_f1s": [
+        0.879,
+        0.9703
+      ],
+      "class_precision": [
+        0.882,
+        0.9695
+      ],
+      "class_recall": [
+        0.8761,
+        0.9711
+      ],
+      "confusion_matrix": [
+        [
+          1980,
+          280
+        ],
+        [
+          265,
+          8895
+        ]
+      ],
+      "model": "M1",
+      "val_macro_f1": 0.9499,
+      "selected_alpha": 29.763514416313132,
+      "n_features": 29988,
+      "time_ridge_s": 0.07,
+      "time_total_s": 6.23
+    },
+    "M2": {
+      "accuracy": 0.9519,
+      "macro_f1": 0.9245,
+      "weighted_f1": 0.952,
+      "balanced_accuracy": 0.9257,
+      "class_f1s": [
+        0.879,
+        0.97
+      ],
+      "class_precision": [
+        0.8757,
+        0.9709
+      ],
+      "class_recall": [
+        0.8823,
+        0.9691
+      ],
+      "confusion_matrix": [
+        [
+          1994,
+          266
+        ],
+        [
+          283,
+          8877
+        ]
+      ],
+      "model": "M2",
+      "val_macro_f1": 0.9499,
+      "selected_alpha": 78.47599703514607,
+      "n_features": 49980,
+      "time_ridge_s": 0.11,
+      "time_total_s": 6.27
+    },
+    "M3": {
+      "accuracy": 0.9512,
+      "macro_f1": 0.9233,
+      "weighted_f1": 0.9513,
+      "balanced_accuracy": 0.9241,
+      "class_f1s": [
+        0.8771,
+        0.9696
+      ],
+      "class_precision": [
+        0.8749,
+        0.9702
+      ],
+      "class_recall": [
+        0.8792,
+        0.969
+      ],
+      "confusion_matrix": [
+        [
+          1987,
+          273
+        ],
+        [
+          284,
+          8876
+        ]
+      ],
+      "model": "M3",
+      "val_macro_f1": 0.9499,
+      "selected_alpha": 78.47599703514607,
+      "n_features": 69972,
+      "time_ridge_s": 0.16,
+      "time_total_s": 6.32
+    },
+    "M4": {
+      "accuracy": 0.9519,
+      "macro_f1": 0.9245,
+      "weighted_f1": 0.952,
+      "balanced_accuracy": 0.9255,
+      "class_f1s": [
+        0.8789,
+        0.97
+      ],
+      "class_precision": [
+        0.876,
+        0.9708
+      ],
+      "class_recall": [
+        0.8819,
+        0.9692
+      ],
+      "confusion_matrix": [
+        [
+          1993,
+          267
+        ],
+        [
+          282,
+          8878
+        ]
+      ],
+      "model": "M4",
+      "val_macro_f1": 0.9499,
+      "selected_alpha": 78.47599703514607,
+      "n_features": 59976,
+      "time_ridge_s": 0.14,
+      "time_total_s": 6.3
+    }
+  },
+  "stat_rows": [
+    {
+      "dataset": "EpilepticSeizures",
+      "comparison": "M0 vs M1",
+      "delta_mf1": 0.0052,
+      "chi2": 21.2459,
+      "p_raw": 4e-06,
+      "effect_size_d": 0.0444,
+      "q_fdr": 1.2e-05,
+      "verdict": "SIGNIFICANT"
+    },
+    {
+      "dataset": "EpilepticSeizures",
+      "comparison": "M0 vs M2",
+      "delta_mf1": 0.0051,
+      "chi2": 6.6928,
+      "p_raw": 0.00968,
+      "effect_size_d": 0.025,
+      "q_fdr": 0.01452,
+      "verdict": "SIGNIFICANT"
+    },
+    {
+      "dataset": "EpilepticSeizures",
+      "comparison": "M0 vs M3",
+      "delta_mf1": 0.0039,
+      "chi2": 4.2044,
+      "p_raw": 0.04032,
+      "effect_size_d": 0.02,
+      "q_fdr": 0.04032,
+      "verdict": "SIGNIFICANT"
+    }
+  ],
+  "diagnostics": {
+    "complementarity": {
+      "cka_global_medium": 0.991661,
+      "cka_global_local": 0.918335,
+      "cka_medium_local": 0.9159,
+      "mean_abs_corr_global_medium": 0.216501,
+      "mean_abs_corr_global_local": 0.192432
+    },
+    "locality_synthetic": {
+      "global_mean_abs_diff": 0.025331,
+      "medium_mean_abs_diff": 0.03142,
+      "local_mean_abs_diff": 0.045596
+    },
+    "shift_stability": {
+      "circular_shift_T2": {
+        "global_mean_abs_change": 0.042604,
+        "medium_mean_abs_change": 0.05963,
+        "local_mean_abs_change": 0.096084
+      },
+      "small_perturbations": {
+        "noise": {
+          "global_mean_abs_change": 0.002152,
+          "regional_mean_abs_change": 0.002356
+        },
+        "shift1": {
+          "global_mean_abs_change": 0.004038,
+          "regional_mean_abs_change": 0.006384
+        }
+      }
+    }
+  },
+  "info": {
+    "F": 9996,
+    "T": 178,
+    "t_mr_fit_s": 0.2,
+    "t_mr_transform_s": 0.52,
+    "t_regional_trainval_s": 0.06,
+    "t_regional_test_s": 5.91,
+    "equivalence_max_abs_diff": {
+      "train": 0.0,
+      "val": 0.0,
+      "test": 0.0
+    },
+    "regions": {
+      "global": [
+        [
+          0,
+          178
+        ]
+      ],
+      "medium": [
+        [
+          0,
+          134
+        ],
+        [
+          44,
+          178
+        ]
+      ],
+      "local": [
+        [
+          0,
+          89
+        ],
+        [
+          44,
+          133
+        ],
+        [
+          88,
+          177
+        ],
+        [
+          132,
+          178
+        ]
+      ]
+    },
+    "variant_dims": {
+      "M0": 9996,
+      "M1": 29988,
+      "M2": 49980,
+      "M3": 69972,
+      "M4": 59976
+    },
+    "block_stats_train_raw": {
+      "global": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.500116,
+        "std": 0.290273,
+        "near_zero_var_cols": 8,
+        "nan": 0,
+        "inf": 0
+      },
+      "medium": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.499944,
+        "std": 0.288139,
+        "near_zero_var_cols": 16,
+        "nan": 0,
+        "inf": 0
+      },
+      "local": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.489059,
+        "std": 0.303172,
+        "near_zero_var_cols": 950,
+        "nan": 0,
+        "inf": 0
+      }
+    }
+  }
+}

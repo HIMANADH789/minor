@@ -1,0 +1,15 @@
+{
+  "model": "FCN",
+  "seed": 42,
+  "canonical_config": {
+    "LR": 0.0003,
+    "WD": 0.01,
+    "BS": 64,
+    "MAX_EP": 15,
+    "PAT": 6,
+    "SEED": 42
+  },
+  "source": "reused_external_stack_seed42",
+  "config_path": "C:\\temp\\ECG_Benchmark\\results\\external_stack_generalization\\configs",
+  "checkpoint_path": null
+}

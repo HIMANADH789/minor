@@ -1,0 +1,108 @@
+{
+  "CWRU_BAL": {
+    "accuracy": 0.9947,
+    "macro_f1": 0.9947,
+    "weighted_f1": 0.9947,
+    "balanced_accuracy": 0.9947,
+    "kappa": 0.9929,
+    "mcc": 0.9929,
+    "log_loss": 0.0,
+    "class_f1s": [
+      1.0,
+      1.0,
+      0.9894,
+      0.9895
+    ],
+    "class_recalls": [
+      1.0,
+      1.0,
+      0.9859,
+      0.993
+    ],
+    "class_precisions": [
+      1.0,
+      1.0,
+      0.9894,
+      0.9895
+    ],
+    "confusion_matrix": [
+      [
+        142,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        141,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        140,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        141
+      ]
+    ],
+    "support": {
+      "0": 142,
+      "1": 141,
+      "2": 142,
+      "3": 142
+    },
+    "params": 55865,
+    "best_epoch": 26,
+    "total_epochs": 30,
+    "time_s": 1939.1,
+    "calibration": {
+      "sigma_init": 3.1546,
+      "sigma_final": 3.0784,
+      "rho_init": [
+        0.9,
+        0.95,
+        0.98
+      ],
+      "rho_final": [
+        0.9112,
+        0.9419,
+        0.9743
+      ],
+      "gamma_init": 0.5,
+      "gamma_final": 0.3783
+    },
+    "alpha_stats": {
+      "mean": 0.0028,
+      "std": 0.0035,
+      "variance": 1.3e-05
+    },
+    "uncertainty_stats": {
+      "mean": 0.6271,
+      "std": 0.1243
+    },
+    "beta_stats": {
+      "mean_per_scale": [
+        0.8032,
+        0.0453,
+        0.1515
+      ],
+      "std_per_scale": [
+        0.2158,
+        0.0269,
+        0.2061
+      ],
+      "entropy": 0.4605,
+      "variance": 0.142173
+    },
+    "agreement_stats": {
+      "mean": 0.6922,
+      "std": 0.1252
+    }
+  }
+}

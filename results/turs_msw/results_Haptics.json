@@ -1,0 +1,508 @@
+{
+  "dataset": "Haptics",
+  "seed": 42,
+  "n_train": 132,
+  "n_val": 23,
+  "n_test": 308,
+  "n_classes": 5,
+  "variants": {
+    "M0": {
+      "accuracy": 0.5195,
+      "macro_f1": 0.4974,
+      "weighted_f1": 0.4989,
+      "balanced_accuracy": 0.5182,
+      "class_f1s": [
+        0.2597,
+        0.5625,
+        0.5672,
+        0.518,
+        0.5797
+      ],
+      "class_precision": [
+        0.5882,
+        0.5143,
+        0.5067,
+        0.48,
+        0.5634
+      ],
+      "class_recall": [
+        0.1667,
+        0.6207,
+        0.6441,
+        0.5625,
+        0.597
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          5,
+          20,
+          9,
+          16
+        ],
+        [
+          0,
+          36,
+          3,
+          17,
+          2
+        ],
+        [
+          3,
+          9,
+          38,
+          5,
+          4
+        ],
+        [
+          1,
+          12,
+          6,
+          36,
+          9
+        ],
+        [
+          3,
+          8,
+          8,
+          8,
+          40
+        ]
+      ],
+      "model": "M0",
+      "val_macro_f1": 0.5879,
+      "selected_alpha": 11.288378916846883,
+      "n_features": 9996,
+      "time_ridge_s": 0.05,
+      "time_total_s": 0.24
+    },
+    "M1": {
+      "accuracy": 0.5097,
+      "macro_f1": 0.4883,
+      "weighted_f1": 0.4901,
+      "balanced_accuracy": 0.5082,
+      "class_f1s": [
+        0.2597,
+        0.5512,
+        0.5401,
+        0.5109,
+        0.5797
+      ],
+      "class_precision": [
+        0.5882,
+        0.5072,
+        0.4744,
+        0.4795,
+        0.5634
+      ],
+      "class_recall": [
+        0.1667,
+        0.6034,
+        0.6271,
+        0.5469,
+        0.597
+      ],
+      "confusion_matrix": [
+        [
+          10,
+          3,
+          21,
+          9,
+          17
+        ],
+        [
+          1,
+          35,
+          5,
+          16,
+          1
+        ],
+        [
+          4,
+          10,
+          37,
+          4,
+          4
+        ],
+        [
+          1,
+          12,
+          7,
+          35,
+          9
+        ],
+        [
+          1,
+          9,
+          8,
+          9,
+          40
+        ]
+      ],
+      "model": "M1",
+      "val_macro_f1": 0.5879,
+      "selected_alpha": 29.763514416313132,
+      "n_features": 29988,
+      "time_ridge_s": 0.1,
+      "time_total_s": 0.68
+    },
+    "M2": {
+      "accuracy": 0.4935,
+      "macro_f1": 0.4633,
+      "weighted_f1": 0.4651,
+      "balanced_accuracy": 0.4922,
+      "class_f1s": [
+        0.1622,
+        0.5373,
+        0.5564,
+        0.5152,
+        0.5455
+      ],
+      "class_precision": [
+        0.4286,
+        0.4737,
+        0.5,
+        0.5,
+        0.5132
+      ],
+      "class_recall": [
+        0.1,
+        0.6207,
+        0.6271,
+        0.5312,
+        0.5821
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          6,
+          18,
+          10,
+          20
+        ],
+        [
+          1,
+          36,
+          4,
+          15,
+          2
+        ],
+        [
+          3,
+          10,
+          37,
+          3,
+          6
+        ],
+        [
+          3,
+          12,
+          6,
+          34,
+          9
+        ],
+        [
+          1,
+          12,
+          9,
+          6,
+          39
+        ]
+      ],
+      "model": "M2",
+      "val_macro_f1": 0.5219,
+      "selected_alpha": 206.913808111479,
+      "n_features": 49980,
+      "time_ridge_s": 0.16,
+      "time_total_s": 0.74
+    },
+    "M3": {
+      "accuracy": 0.5065,
+      "macro_f1": 0.4825,
+      "weighted_f1": 0.4839,
+      "balanced_accuracy": 0.5055,
+      "class_f1s": [
+        0.2368,
+        0.5496,
+        0.5588,
+        0.5038,
+        0.5634
+      ],
+      "class_precision": [
+        0.5625,
+        0.4932,
+        0.4935,
+        0.4925,
+        0.5333
+      ],
+      "class_recall": [
+        0.15,
+        0.6207,
+        0.6441,
+        0.5156,
+        0.597
+      ],
+      "confusion_matrix": [
+        [
+          9,
+          5,
+          19,
+          8,
+          19
+        ],
+        [
+          1,
+          36,
+          4,
+          15,
+          2
+        ],
+        [
+          3,
+          9,
+          38,
+          4,
+          5
+        ],
+        [
+          3,
+          12,
+          7,
+          33,
+          9
+        ],
+        [
+          0,
+          11,
+          9,
+          7,
+          40
+        ]
+      ],
+      "model": "M3",
+      "val_macro_f1": 0.5219,
+      "selected_alpha": 206.913808111479,
+      "n_features": 69972,
+      "time_ridge_s": 0.22,
+      "time_total_s": 0.8
+    },
+    "M4": {
+      "accuracy": 0.5032,
+      "macro_f1": 0.4774,
+      "weighted_f1": 0.4788,
+      "balanced_accuracy": 0.5021,
+      "class_f1s": [
+        0.2105,
+        0.5455,
+        0.5714,
+        0.5,
+        0.5594
+      ],
+      "class_precision": [
+        0.5,
+        0.4865,
+        0.5135,
+        0.4853,
+        0.5263
+      ],
+      "class_recall": [
+        0.1333,
+        0.6207,
+        0.6441,
+        0.5156,
+        0.597
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          5,
+          18,
+          9,
+          20
+        ],
+        [
+          2,
+          36,
+          3,
+          15,
+          2
+        ],
+        [
+          3,
+          9,
+          38,
+          4,
+          5
+        ],
+        [
+          3,
+          13,
+          6,
+          33,
+          9
+        ],
+        [
+          0,
+          11,
+          9,
+          7,
+          40
+        ]
+      ],
+      "model": "M4",
+      "val_macro_f1": 0.5219,
+      "selected_alpha": 206.913808111479,
+      "n_features": 59976,
+      "time_ridge_s": 0.19,
+      "time_total_s": 0.77
+    }
+  },
+  "stat_rows": [
+    {
+      "dataset": "Haptics",
+      "comparison": "M0 vs M1",
+      "delta_mf1": -0.0091,
+      "chi2": 0.5714,
+      "p_raw": 0.449692,
+      "effect_size_d": -0.0646,
+      "q_fdr": 0.453255,
+      "verdict": "not significant"
+    },
+    {
+      "dataset": "Haptics",
+      "comparison": "M0 vs M2",
+      "delta_mf1": -0.0341,
+      "chi2": 2.2273,
+      "p_raw": 0.135593,
+      "effect_size_d": -0.0975,
+      "q_fdr": 0.406779,
+      "verdict": "not significant"
+    },
+    {
+      "dataset": "Haptics",
+      "comparison": "M0 vs M3",
+      "delta_mf1": -0.0149,
+      "chi2": 0.5625,
+      "p_raw": 0.453255,
+      "effect_size_d": -0.057,
+      "q_fdr": 0.453255,
+      "verdict": "not significant"
+    }
+  ],
+  "diagnostics": {
+    "complementarity": {
+      "cka_global_medium": 0.972822,
+      "cka_global_local": 0.868514,
+      "cka_medium_local": 0.91678,
+      "mean_abs_corr_global_medium": 0.267529,
+      "mean_abs_corr_global_local": 0.243723
+    },
+    "locality_synthetic": {
+      "global_mean_abs_diff": 0.004035,
+      "medium_mean_abs_diff": 0.004714,
+      "local_mean_abs_diff": 0.007184
+    },
+    "shift_stability": {
+      "circular_shift_T2": {
+        "global_mean_abs_change": 0.052684,
+        "medium_mean_abs_change": 0.091315,
+        "local_mean_abs_change": 0.161871
+      },
+      "small_perturbations": {
+        "noise": {
+          "global_mean_abs_change": 0.00662,
+          "regional_mean_abs_change": 0.007429
+        },
+        "shift1": {
+          "global_mean_abs_change": 0.00272,
+          "regional_mean_abs_change": 0.003583
+        }
+      }
+    }
+  },
+  "info": {
+    "F": 9996,
+    "T": 1092,
+    "t_mr_fit_s": 0.11,
+    "t_mr_transform_s": 0.09,
+    "t_regional_trainval_s": 0.12,
+    "t_regional_test_s": 0.35,
+    "equivalence_max_abs_diff": {
+      "train": 0.0,
+      "val": 0.0,
+      "test": 0.0
+    },
+    "regions": {
+      "global": [
+        [
+          0,
+          1092
+        ]
+      ],
+      "medium": [
+        [
+          0,
+          819
+        ],
+        [
+          273,
+          1092
+        ]
+      ],
+      "local": [
+        [
+          0,
+          546
+        ],
+        [
+          273,
+          819
+        ],
+        [
+          546,
+          1092
+        ],
+        [
+          819,
+          1092
+        ]
+      ]
+    },
+    "variant_dims": {
+      "M0": 9996,
+      "M1": 29988,
+      "M2": 49980,
+      "M3": 69972,
+      "M4": 59976
+    },
+    "block_stats_train_raw": {
+      "global": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.500331,
+        "std": 0.296983,
+        "near_zero_var_cols": 16,
+        "nan": 0,
+        "inf": 0
+      },
+      "medium": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.500378,
+        "std": 0.296844,
+        "near_zero_var_cols": 55,
+        "nan": 0,
+        "inf": 0
+      },
+      "local": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.492585,
+        "std": 0.310505,
+        "near_zero_var_cols": 785,
+        "nan": 0,
+        "inf": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "title": "R2.2 adaptive discrete context-to-kernel conditioning (seed 42)",
+  "seed": 42,
+  "datasets": [
+    "Haptics",
+    "CWRU_BAL"
+  ],
+  "variants": [
+    "B0",
+    "B1",
+    "B2",
+    "B3A",
+    "B3B"
+  ],
+  "per_dataset_test_macro_f1": {
+    "Haptics": {
+      "B0": 0.55,
+      "B1": 0.55,
+      "B2": 0.55,
+      "B3A": 0.5008,
+      "B3B": 0.5011
+    },
+    "CWRU_BAL": {
+      "B0": 0.9982,
+      "B1": 0.9982,
+      "B2": 0.993,
+      "B3A": 0.9842,
+      "B3B": 0.9859
+    }
+  },
+  "deltas": {
+    "Haptics": {
+      "B2-B0": 0.0,
+      "B2-B1": 0.0,
+      "B2-B3A": 0.0492,
+      "B2-B3B": 0.0489,
+      "B3A-B3B": -0.0003,
+      "B2-M0_ref": 0.0526
+    },
+    "CWRU_BAL": {
+      "B2-B0": -0.0052,
+      "B2-B1": -0.0052,
+      "B2-B3A": 0.0088,
+      "B2-B3B": 0.0071,
+      "B3A-B3B": -0.0017,
+      "B2-M0_ref": -0.0017
+    }
+  },
+  "verdicts": {
+    "Haptics": "NO MECHANISTIC BENEFIT (B2 == B0)",
+    "CWRU_BAL": "NEGATIVE"
+  },
+  "modulation_diagnostics": {
+    "Haptics": {
+      "beta": 0.25876,
+      "mean_abs_s": 0.011169831425270227,
+      "median_abs_s": 0.008930431280745445,
+      "max_abs_s": 0.05620269745663066,
+      "s_norms_L2": [
+        1.087904,
+        0.449156,
+        1.08536,
+        1.156606,
+        1.179538,
+        1.218808,
+        0.995609,
+        1.136369
+      ],
+      "mean_abs_delta": 0.0028903056466005952,
+      "max_abs_delta": 0.014543010853230953,
+      "pairwise_cos_mean": -0.0275184657341617,
+      "pairwise_cos_max": 0.025975405178434243,
+      "fraction_near_zero_code_vec": 0.0,
+      "fraction_near_identical_code_vec": 0.0,
+      "scale_factor_min": 0.985456989146769,
+      "scale_factor_max": 1.014224687591195
+    },
+    "CWRU_BAL": {
+      "beta": 0.405967,
+      "mean_abs_s": 0.16112579250880465,
+      "median_abs_s": 0.1287458712242003,
+      "max_abs_s": 0.7268395407142245,
+      "s_norms_L2": [
+        20.62382,
+        12.373586,
+        16.466246,
+        14.073558,
+        18.407659,
+        12.691192,
+        8.983205,
+        9.717338
+      ],
+      "mean_abs_delta": 0.06541168153963973,
+      "max_abs_delta": 0.2950725555419922,
+      "pairwise_cos_mean": -0.08130738638436509,
+      "pairwise_cos_max": 0.4944985841964058,
+      "fraction_near_zero_code_vec": 0.0,
+      "fraction_near_identical_code_vec": 0.0,
+      "scale_factor_min": 0.7049274444580078,
+      "scale_factor_max": 1.2827241718769073
+    }
+  },
+  "mechanistic_h": {
+    "Haptics": {
+      "B0": {
+        "mean_H": 0.039705680873726557,
+        "median_H": 0.033823560923337936,
+        "max_H": 0.25,
+        "frac_nonzero": 0.9485135989879823
+      },
+      "B1": {
+        "mean_H": 0.039705680873726557,
+        "median_H": 0.033823560923337936,
+        "max_H": 0.25,
+        "frac_nonzero": 0.9485135989879823
+      },
+      "B2": {
+        "mean_H": 0.0396764226359202,
+        "median_H": 0.03377479687333107,
+        "max_H": 0.25,
+        "frac_nonzero": 0.9485884676451226
+      },
+      "B3A": {
+        "mean_H": 0.0026153079548625435,
+        "median_H": 0.0008841195376589894,
+        "max_H": 0.5625,
+        "frac_nonzero": 0.9590700796447611
+      },
+      "B3B": {
+        "mean_H": 0.002439297268536884,
+        "median_H": 0.0009014034003484994,
+        "max_H": 0.5625,
+        "frac_nonzero": 0.9589551949812183
+      }
+    },
+    "CWRU_BAL": {
+      "B0": {
+        "mean_H": 0.01161555535005038,
+        "median_H": 0.006887973286211491,
+        "max_H": 0.5625,
+        "frac_nonzero": 0.9755046300227789
+      },
+      "B1": {
+        "mean_H": 0.01161555535005038,
+        "median_H": 0.006887973286211491,
+        "max_H": 0.5625,
+        "frac_nonzero": 0.9755046300227789
+      },
+      "B2": {
+        "mean_H": 0.01205511127210933,
+        "median_H": 0.007402861258015037,
+        "max_H": 0.5625,
+        "frac_nonzero": 0.976761162551652
+      },
+      "B3A": {
+        "mean_H": 0.0017045174650241876,
+        "median_H": 0.0009400078852195293,
+        "max_H": 0.5625,
+        "frac_nonzero": 0.978304503477926
+      },
+      "B3B": {
+        "mean_H": 0.0016980522216666059,
+        "median_H": 0.000938589102588594,
+        "max_H": 0.5625,
+        "frac_nonzero": 0.9784076298016869
+      }
+    }
+  },
+  "vq_diagnostics": {
+    "Haptics": {
+      "codes_trva": {
+        "active_codes": 8,
+        "normalized_entropy": 0.9349701302482213,
+        "perplexity": 6.988149103122168,
+        "dominant_fraction": 0.23615739099610067,
+        "usage": [
+          0.23615739099610067,
+          0.009246130213872149,
+          0.14298712040647524,
+          0.11297412265154201,
+          0.13724447595415337,
+          0.12369136240103983,
+          0.10449604159281578,
+          0.13320335578400094
+        ],
+        "counts": [
+          39972.0,
+          1565.0,
+          24202.0,
+          19122.0,
+          23230.0,
+          20936.0,
+          17687.0,
+          22546.0
+        ]
+      },
+      "codes_te": {
+        "active_codes": 8,
+        "normalized_entropy": 0.9364440704488284,
+        "perplexity": 7.009600444924249,
+        "dominant_fraction": 0.23140847247990104,
+        "usage": [
+          0.23140847247990104,
+          0.009246705675277104,
+          0.13966985395556825,
+          0.11261357689929119,
+          0.14018124732410447,
+          0.12819323533609248,
+          0.1050080871509443,
+          0.13367882117882118
+        ],
+        "counts": [
+          77831.0,
+          3110.0,
+          46976.0,
+          37876.0,
+          47148.0,
+          43116.0,
+          35318.0,
+          44961.0
+        ]
+      }
+    },
+    "CWRU_BAL": {
+      "codes_trva": {
+        "active_codes": 8,
+        "normalized_entropy": 0.9767931501378726,
+        "perplexity": 7.623108712521978,
+        "dominant_fraction": 0.1842976418861016,
+        "usage": [
+          0.07589098774929885,
+          0.1648363854588657,
+          0.09027923175054534,
+          0.16463249113820505,
+          0.1842976418861016,
+          0.08738788855562481,
+          0.10553357013477718,
+          0.12714180332658148
+        ],
+        "counts": [
+          249379.0,
+          541655.0,
+          296659.0,
+          540985.0,
+          605605.0,
+          287158.0,
+          346785.0,
+          417790.0
+        ]
+      },
+      "codes_te": {
+        "active_codes": 8,
+        "normalized_entropy": 0.9773540016716831,
+        "perplexity": 7.632004410206935,
+        "dominant_fraction": 0.18296337632275134,
+        "usage": [
+          0.07526076113315697,
+          0.16421062059082892,
+          0.08967668375220458,
+          0.16418650793650794,
+          0.18296337632275134,
+          0.08875006889329806,
+          0.10803158068783068,
+          0.12692040068342153
+        ],
+        "counts": [
+          43697.0,
+          95342.0,
+          52067.0,
+          95328.0,
+          106230.0,
+          51529.0,
+          62724.0,
+          73691.0
+        ]
+      }
+    }
+  },
+  "references": {
+    "Haptics": {
+      "M0": 0.4974,
+      "R0": 0.5366,
+      "R2": 0.55
+    },
+    "CWRU_BAL": {
+      "M0": 0.9947,
+      "R0": 0.993,
+      "R2": 0.9982
+    }
+  },
+  "config": {
+    "beta_max": 0.5,
+    "hist_bins": 25,
+    "soft_w": 0.03,
+    "train": {
+      "hist_bins": 25,
+      "soft_w": 0.03,
+      "lambda_cls": 0.1,
+      "lr": 0.001,
+      "epochs": 150,
+      "patience": 25,
+      "batch_size": 64
+    },
+    "note": "no hyperparameter search; frozen R2 context"
+  },
+  "audits_all": {
+    "Haptics": {
+      "audit1_config": {
+        "expected": {
+          "train": 132,
+          "val": 23,
+          "test": 308,
+          "T": 1092,
+          "n_classes": 5
+        },
+        "actual": {
+          "train": 132,
+          "val": 23,
+          "test": 308,
+          "T": 1092,
+          "n_classes": 5
+        },
+        "pass": true
+      },
+      "audit2_margin_kernel_identity": {
+        "trainva": {
+          "split": "trainva",
+          "n_rows": 155,
+          "identity_n_diff": 0,
+          "u_finite": true,
+          "u_abs1_frac": 0.00012733751829104327
+        },
+        "test": {
+          "split": "test",
+          "n_rows": 308,
+          "identity_n_diff": 0,
+          "u_finite": true,
+          "u_abs1_frac": 0.00012714878369399056
+        },
+        "note": "chunk-0 exact bool equality vs audited extractor"
+      },
+      "modulation_training": {
+        "best_val_mf1": 0.6688,
+        "epochs_run": 47
+      },
+      "audit10_bounds": {
+        "delta_abs_max": 0.014543010853230953,
+        "scale_min": 0.9854570031166077,
+        "scale_max": 1.014224648475647,
+        "pass": true
+      },
+      "audit13_14_occupancy": {
+        "failures": 0,
+        "pass": true
+      },
+      "audit15_distinction": {
+        "hash_c1_trva": "ea7a8d996a717e33",
+        "hash_c2_trva": "bceb58b214df3ab0",
+        "hash_b2_trva": "52942179ef8c6426",
+        "c1_vs_c2_diff_frac_trva": 0.838567883729174,
+        "c1_vs_c2_diff_frac_te": 0.8372996051567481,
+        "b2_vs_c1_diff_frac_trva": 0.8400744416873449,
+        "shares_memory_c1_c2": false,
+        "pass": true
+      },
+      "audit12_b1_equals_b0": {
+        "trainva_max_abs_diff": 0.0,
+        "test_max_abs_diff": 0.0,
+        "pass": true
+      },
+      "audit16_conditioning_active": {
+        "fraction_H_entries_changed_vs_B0": 0.356617,
+        "pass": true
+      },
+      "audit6_H_formula": {
+        "max_diff": 6.0521941833147075e-09,
+        "pass": true
+      },
+      "audit7_valid_region": {
+        "pass": true
+      }
+    },
+    "CWRU_BAL": {
+      "audit1_config": {
+        "expected": {
+          "train": 2727,
+          "val": 482,
+          "test": 567,
+          "T": 1024,
+          "n_classes": 4
+        },
+        "actual": {
+          "train": 2727,
+          "val": 482,
+          "test": 567,
+          "T": 1024,
+          "n_classes": 4
+        },
+        "pass": true
+      },
+      "audit2_margin_kernel_identity": {
+        "trainva": {
+          "split": "trainva",
+          "n_rows": 3209,
+          "identity_n_diff": 0,
+          "u_finite": true,
+          "u_abs1_frac": 0.0001317098939640203
+        },
+        "test": {
+          "split": "test",
+          "n_rows": 567,
+          "identity_n_diff": 0,
+          "u_finite": true,
+          "u_abs1_frac": 0.00013175382267786634
+        },
+        "note": "chunk-0 exact bool equality vs audited extractor"
+      },
+      "modulation_training": {
+        "best_val_mf1": 0.9876,
+        "epochs_run": 58
+      },
+      "audit10_bounds": {
+        "delta_abs_max": 0.2950725555419922,
+        "scale_min": 0.7049274444580078,
+        "scale_max": 1.282724142074585,
+        "pass": true
+      },
+      "audit13_14_occupancy": {
+        "failures": 0,
+        "pass": true
+      },
+      "audit15_distinction": {
+        "hash_c1_trva": "945ad015560c68ed",
+        "hash_c2_trva": "cb52119061c32ec3",
+        "hash_b2_trva": "9abd1a7d8fd1fd66",
+        "c1_vs_c2_diff_frac_trva": 0.6874068781162356,
+        "c1_vs_c2_diff_frac_te": 0.6871210868606702,
+        "b2_vs_c1_diff_frac_trva": 0.6870672571283889,
+        "shares_memory_c1_c2": false,
+        "pass": true
+      },
+      "audit12_b1_equals_b0": {
+        "trainva_max_abs_diff": 0.0,
+        "test_max_abs_diff": 0.0,
+        "pass": true
+      },
+      "audit16_conditioning_active": {
+        "fraction_H_entries_changed_vs_B0": 0.871629,
+        "pass": true
+      },
+      "audit6_H_formula": {
+        "max_diff": 0.006944441236555576,
+        "pass": true
+      },
+      "audit7_valid_region": {
+        "pass": true
+      }
+    }
+  }
+}

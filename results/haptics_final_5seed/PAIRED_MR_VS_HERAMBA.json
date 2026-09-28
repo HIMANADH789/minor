@@ -1,0 +1,20 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "heramaba_minus_mr": [
+    0.0496,
+    0.0239,
+    0.0413,
+    0.0349,
+    0.0208
+  ],
+  "mean_diff": 0.0341,
+  "median_diff": 0.0349,
+  "std_diff": 0.012,
+  "note": "descriptive only; n=5 seeds, no significance claim"
+}

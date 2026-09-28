@@ -1,0 +1,7 @@
+{
+  "seed": 43,
+  "best_val_mf1": 0.5117,
+  "best_epoch": 27,
+  "test_mf1": 0.3717,
+  "train_time_s": 18.9
+}

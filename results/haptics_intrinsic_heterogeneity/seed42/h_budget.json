@@ -1,0 +1,40 @@
+{
+ "rule": "B_H = clip(HI_dataset / log(2), 0, 1)",
+ "HI_reference": 0.6931471805599453,
+ "HI_reference_source": "theoretical maximum Jensen-Shannon divergence, natural-log convention",
+ "HI_dataset": 0.05769635185101932,
+ "B_H": 0.08323824069285034,
+ "band": "low",
+ "bands": [
+  {
+   "low_high": [
+    0.0,
+    0.2
+   ],
+   "label": "low"
+  },
+  {
+   "low_high": [
+    0.2,
+    0.5
+   ],
+   "label": "moderate"
+  },
+  {
+   "low_high": [
+    0.5,
+    0.75
+   ],
+   "label": "high"
+  },
+  {
+   "low_high": [
+    0.75,
+    1.0
+   ],
+   "label": "very high"
+  }
+ ],
+ "H_budget_fraction": 0.08323824069285034,
+ "interpretation_note": "B_H is an intrinsic heterogeneity score / normalized H-capacity signal, NOT the optimal fraction of H features"
+}

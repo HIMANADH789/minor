@@ -1,0 +1,5 @@
+dataset,mr_fit_s,top_k_selection_s,ktm_extract_s,null_build_s,total_s
+ECG5000_UNBAL,0.5,4.3,3.4,110.3,145.8
+ECG5000_BAL,0.2,12.0,4.7,280.7,362.7
+CWRU_UNBAL,0.3,0.5,3.6,24.1,31.9
+CWRU_BAL,0.7,2.6,8.4,85.2,111.3

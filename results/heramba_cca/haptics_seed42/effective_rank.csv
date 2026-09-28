@@ -1,0 +1,4 @@
+representation,dim,numerical_rank,effective_rank
+G_reduced,131,131,68.16
+H_reduced,131,131,105.31
+H_unique_reduced,131,131,1.0

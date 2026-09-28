@@ -1,0 +1,816 @@
+{
+  "title": "DRTN-CONDITIONED MINIROCKET -- HAPTICS 3-SEED CONFIRMATION",
+  "verdict": "SUPPORTED",
+  "conclusion": "M1 beats M0 and M3 on average across 3 seeds. Learned DRTN temporal regimes provide useful context.",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "aggregate": {
+    "M0": {
+      "mean": 0.4948,
+      "std": 0.0022,
+      "se": 0.0013,
+      "min": 0.492,
+      "max": 0.4974,
+      "values": [
+        0.4974,
+        0.492,
+        0.495
+      ]
+    },
+    "M1": {
+      "mean": 0.534,
+      "std": 0.0039,
+      "se": 0.0023,
+      "min": 0.5285,
+      "max": 0.537,
+      "values": [
+        0.5366,
+        0.5285,
+        0.537
+      ]
+    },
+    "M2": {
+      "mean": 0.4807,
+      "std": 0.0107,
+      "se": 0.0062,
+      "min": 0.4666,
+      "max": 0.4925,
+      "values": [
+        0.483,
+        0.4666,
+        0.4925
+      ]
+    },
+    "M3": {
+      "mean": 0.4999,
+      "std": 0.0128,
+      "se": 0.0074,
+      "min": 0.4827,
+      "max": 0.5132,
+      "values": [
+        0.5132,
+        0.4827,
+        0.5038
+      ]
+    }
+  },
+  "deltas": {
+    "M1_M0": {
+      "mean": 0.0392,
+      "std": 0.0022,
+      "se": 0.0013,
+      "n_positive": 3,
+      "values": [
+        0.0392,
+        0.0365,
+        0.042
+      ]
+    },
+    "M1_M3": {
+      "mean": 0.0341,
+      "std": 0.0092,
+      "se": 0.0053,
+      "n_positive": 3,
+      "values": [
+        0.0234,
+        0.0458,
+        0.0332
+      ]
+    },
+    "M1_M2": {
+      "mean": 0.0533,
+      "std": 0.0071,
+      "se": 0.0041,
+      "n_positive": 3,
+      "values": [
+        0.0536,
+        0.0619,
+        0.0445
+      ]
+    }
+  },
+  "seed_results": [
+    {
+      "seed": 42,
+      "results": {
+        "M0": {
+          "val_macro_f1": 0.9014,
+          "test_macro_f1": 0.4974,
+          "accuracy": 0.5195,
+          "selected_alpha": 11.288378916846883,
+          "class_f1s": [
+            0.2597,
+            0.5625,
+            0.5672,
+            0.518,
+            0.5797
+          ]
+        },
+        "M1": {
+          "val_macro_f1": 0.9014,
+          "test_macro_f1": 0.5366,
+          "accuracy": 0.5487,
+          "selected_alpha": 1.623776739188721,
+          "class_f1s": [
+            0.381,
+            0.5667,
+            0.6061,
+            0.5106,
+            0.6187
+          ]
+        },
+        "M2": {
+          "val_macro_f1": 0.8251,
+          "test_macro_f1": 0.483,
+          "accuracy": 0.4935,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.3488,
+            0.4957,
+            0.5231,
+            0.5132,
+            0.5344
+          ]
+        },
+        "M3": {
+          "val_macro_f1": 0.8251,
+          "test_macro_f1": 0.5132,
+          "accuracy": 0.5227,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.4045,
+            0.5,
+            0.5366,
+            0.5333,
+            0.5915
+          ]
+        }
+      },
+      "deltas": {
+        "M1_M0": 0.0392,
+        "M1_M2": 0.0536,
+        "M1_M3": 0.0234
+      },
+      "regime_diagnostics": {
+        "usage": [
+          0.11518540982826697,
+          0.0,
+          0.06097473954616812,
+          0.4808970791113648,
+          0.008042552685409828,
+          0.00040733076447362163,
+          0.0017720374863232006,
+          0.33272085057799344
+        ],
+        "counts": [
+          38741.0,
+          0.0,
+          20508.0,
+          161743.0,
+          2705.0,
+          137.0,
+          596.0,
+          111906.0
+        ],
+        "entropy": 1.1909091777903953,
+        "normalized_entropy": 0.5727062549824521,
+        "perplexity": 3.290071107581569,
+        "active_codes": 7,
+        "dominant_fraction": 0.4808970791113648
+      },
+      "complementarity_M0_M1": {
+        "M0_only_correct": 17,
+        "M1_only_correct": 26,
+        "both_correct": 143,
+        "both_wrong": 122,
+        "n_samples": 308
+      },
+      "complementarity_M0_M3": {
+        "M0_only_correct": 34,
+        "M3_only_correct": 35,
+        "both_correct": 126,
+        "both_wrong": 113,
+        "n_samples": 308
+      },
+      "drtn_info": {
+        "rung": "R5",
+        "config": {
+          "dataset": "Haptics",
+          "seed": 42,
+          "d_model": 64,
+          "n_codes": 8,
+          "tau": 0.5,
+          "ema_decay": 0.99,
+          "beta_commit": 0.25,
+          "lam_div": 0.01,
+          "dead_threshold": 0.001,
+          "revival_patience": 100,
+          "batch_size": 16,
+          "lr": 0.001,
+          "weight_decay": 0.0001,
+          "max_epochs": 60,
+          "patience": 10,
+          "trajectory": {
+            "layers": 2,
+            "heads": 4,
+            "ffn": 128,
+            "dropout": 0.1
+          }
+        },
+        "params": {
+          "total": 599413,
+          "trainable": 599413,
+          "non_trainable": 0,
+          "delta_vs_R0": 595456
+        },
+        "best_epoch": 42,
+        "best_val_mf1": 0.4891,
+        "train_mf1_final": 0.441,
+        "test": {
+          "macro_f1": 0.3467,
+          "accuracy": 0.3831,
+          "weighted_f1": 0.3491,
+          "class_f1s": [
+            0.0625,
+            0.4132,
+            0.4037,
+            0.411,
+            0.4432
+          ],
+          "confusion_matrix": [
+            [
+              2,
+              5,
+              12,
+              14,
+              27
+            ],
+            [
+              0,
+              25,
+              8,
+              16,
+              9
+            ],
+            [
+              2,
+              13,
+              22,
+              7,
+              15
+            ],
+            [
+              0,
+              10,
+              5,
+              30,
+              19
+            ],
+            [
+              0,
+              10,
+              3,
+              15,
+              39
+            ]
+          ]
+        },
+        "train_time_s": 33.1,
+        "peak_mem_mb": 1319.0,
+        "final_diag_val": {
+          "entropy": 1.173857455909074,
+          "normalized_entropy": 0.564506110116852,
+          "perplexity": 3.234445335494427,
+          "perplexity_over_K": 0.40430566693680337,
+          "active_codes": 7,
+          "active_fraction": 0.875,
+          "dominant_fraction": 0.48791126939532,
+          "min_nonzero_usage": 0.0004537873031349477,
+          "commitment_loss": 0.0639040432870388,
+          "usage": [
+            0.1133895852430712,
+            0.0,
+            0.05365728031710365,
+            0.48791126939532,
+            0.007939233682776171,
+            0.0004537873031349477,
+            0.001860119054407776,
+            0.33478872500418627
+          ]
+        },
+        "final_diag_test": {
+          "entropy": 1.1898036170213746,
+          "normalized_entropy": 0.5721745926361629,
+          "perplexity": 3.2864357439657175,
+          "perplexity_over_K": 0.4108044679957147,
+          "active_codes": 7,
+          "active_fraction": 0.875,
+          "dominant_fraction": 0.4814932451442122,
+          "min_nonzero_usage": 0.00042639652863447,
+          "commitment_loss": 0.06547429747879505,
+          "usage": [
+            0.1147206954846257,
+            0.0,
+            0.060740041370224845,
+            0.4814932451442122,
+            0.0080070973387087,
+            0.00042639652863447,
+            0.0017742674218607843,
+            0.3328382567117333
+          ]
+        },
+        "codebook_final_usage_val": [
+          0.1133895852430712,
+          0.0,
+          0.05365728031710365,
+          0.48791126939532,
+          0.007939233682776171,
+          0.0004537873031349477,
+          0.001860119054407776,
+          0.33478872500418627
+        ],
+        "codebook_final_usage_test": [
+          0.1147206954846257,
+          0.0,
+          0.060740041370224845,
+          0.4814932451442122,
+          0.0080070973387087,
+          0.00042639652863447,
+          0.0017742674218607843,
+          0.3328382567117333
+        ],
+        "revival_log": [
+          {
+            "step": 99,
+            "code": 0,
+            "prev_usage": 0.0,
+            "source": "current_batch_latent"
+          },
+          {
+            "step": 99,
+            "code": 2,
+            "prev_usage": 0.0,
+            "source": "current_batch_latent"
+          },
+          {
+            "step": 99,
+            "code": 3,
+            "prev_usage": 0.0,
+            "source": "current_batch_latent"
+          },
+          {
+            "step": 99,
+            "code": 4,
+            "prev_usage": 0.0,
+            "source": "current_batch_latent"
+          },
+          {
+            "step": 99,
+            "code": 7,
+            "prev_usage": 0.0,
+            "source": "current_batch_latent"
+          },
+          {
+            "step": 398,
+            "code": 1,
+            "prev_usage": 0.00036630171234719455,
+            "source": "current_batch_latent"
+          }
+        ],
+        "total_revivals": 6
+      },
+      "feature_check": {
+        "heterogeneity_nonzero_rate": 0.942206103220509,
+        "heterogeneity_mean": 0.01780411242391363,
+        "heterogeneity_std": 0.02110829806084453,
+        "raw_extractor_vs_aeon_max_diff": 0.0,
+        "m2_m3_feature_diff": {
+          "max_abs_diff": 0.5555555587634444,
+          "mean_abs_diff": 0.0012615970969080987,
+          "n_exactly_equal": 75054,
+          "n_elements": 1539384
+        },
+        "independent_recompute": {
+          "sample0_kernel0": {
+            "implemented": 0.002401551464572549,
+            "independent": 0.002401551512248116,
+            "abs_diff": 4.7675567053234724e-11
+          },
+          "sample5_kernel1234": {
+            "implemented": 0.0026623159646987915,
+            "independent": 0.00266231464288159,
+            "abs_diff": 1.3218172017007146e-09
+          }
+        },
+        "m2_rng_offset": 900001,
+        "m3_rng_offset": 900002
+      }
+    },
+    {
+      "seed": 43,
+      "results": {
+        "M0": {
+          "val_macro_f1": 0.9014,
+          "test_macro_f1": 0.492,
+          "accuracy": 0.5162,
+          "selected_alpha": 11.288378916846883,
+          "class_f1s": [
+            0.2368,
+            0.5778,
+            0.5692,
+            0.5333,
+            0.5429
+          ]
+        },
+        "M1": {
+          "val_macro_f1": 0.9014,
+          "test_macro_f1": 0.5285,
+          "accuracy": 0.5422,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.3659,
+            0.5902,
+            0.5736,
+            0.4964,
+            0.6164
+          ]
+        },
+        "M2": {
+          "val_macro_f1": 0.6667,
+          "test_macro_f1": 0.4666,
+          "accuracy": 0.4773,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.3614,
+            0.4174,
+            0.5522,
+            0.4762,
+            0.5255
+          ]
+        },
+        "M3": {
+          "val_macro_f1": 0.8251,
+          "test_macro_f1": 0.4827,
+          "accuracy": 0.4935,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.3678,
+            0.4754,
+            0.521,
+            0.4776,
+            0.5714
+          ]
+        }
+      },
+      "deltas": {
+        "M1_M0": 0.0365,
+        "M1_M2": 0.0619,
+        "M1_M3": 0.0458
+      },
+      "regime_diagnostics": {
+        "usage": [
+          0.21294479330193616,
+          0.06522941344369916,
+          0.17998667998668,
+          0.042273202987488705,
+          0.04929594215308501,
+          4.459825888397317e-05,
+          5.3517910660767806e-05,
+          0.45017185195756626
+        ],
+        "counts": [
+          71621.0,
+          21939.0,
+          60536.0,
+          14218.0,
+          16580.0,
+          15.0,
+          18.0,
+          151409.0
+        ],
+        "entropy": 1.4584659002957925,
+        "normalized_entropy": 0.7013738405541324,
+        "perplexity": 4.299358821472215,
+        "active_codes": 8,
+        "dominant_fraction": 0.45017185195756626
+      },
+      "complementarity_M0_M1": {
+        "M0_only_correct": 18,
+        "M1_only_correct": 26,
+        "both_correct": 141,
+        "both_wrong": 123,
+        "n_samples": 308
+      },
+      "complementarity_M0_M3": {
+        "M0_only_correct": 40,
+        "M3_only_correct": 33,
+        "both_correct": 119,
+        "both_wrong": 116,
+        "n_samples": 308
+      },
+      "drtn_info": {
+        "seed": 43,
+        "best_val_mf1": 0.5117,
+        "best_epoch": 27,
+        "test_mf1": 0.3717,
+        "train_time_s": 18.9
+      },
+      "feature_check": {
+        "heterogeneity_nonzero_rate": 0.9490952225045862,
+        "heterogeneity_mean": 0.023523109602440424,
+        "heterogeneity_std": 0.028462310617729997,
+        "raw_extractor_vs_aeon_max_diff": 0.0,
+        "m2_m3_feature_diff": {
+          "max_abs_diff": 0.5625,
+          "mean_abs_diff": 0.0014975464705416182,
+          "n_exactly_equal": 73589,
+          "n_elements": 1539384
+        },
+        "independent_recompute": {
+          "sample0_kernel0": {
+            "implemented": 0.002640620106831193,
+            "independent": 0.002640620301738731,
+            "abs_diff": 1.9490753802586802e-10
+          },
+          "sample5_kernel1234": {
+            "implemented": 0.0029101858381181955,
+            "independent": 0.002910186433846784,
+            "abs_diff": 5.957285884213015e-10
+          }
+        },
+        "m2_rng_offset": 900001,
+        "m3_rng_offset": 900002
+      }
+    },
+    {
+      "seed": 44,
+      "results": {
+        "M0": {
+          "val_macro_f1": 0.9418,
+          "test_macro_f1": 0.495,
+          "accuracy": 0.5195,
+          "selected_alpha": 11.288378916846883,
+          "class_f1s": [
+            0.2338,
+            0.5496,
+            0.5846,
+            0.5373,
+            0.5694
+          ]
+        },
+        "M1": {
+          "val_macro_f1": 0.8618,
+          "test_macro_f1": 0.537,
+          "accuracy": 0.5552,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.3291,
+            0.619,
+            0.5954,
+            0.5217,
+            0.6197
+          ]
+        },
+        "M2": {
+          "val_macro_f1": 0.7871,
+          "test_macro_f1": 0.4925,
+          "accuracy": 0.5065,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.3765,
+            0.4381,
+            0.5271,
+            0.5098,
+            0.6111
+          ]
+        },
+        "M3": {
+          "val_macro_f1": 0.6597,
+          "test_macro_f1": 0.5038,
+          "accuracy": 0.513,
+          "selected_alpha": 4.281332398719396,
+          "class_f1s": [
+            0.4,
+            0.487,
+            0.5191,
+            0.5101,
+            0.6029
+          ]
+        }
+      },
+      "deltas": {
+        "M1_M0": 0.042,
+        "M1_M2": 0.0445,
+        "M1_M3": 0.0332
+      },
+      "regime_diagnostics": {
+        "usage": [
+          0.003844369915798487,
+          0.08629168450597022,
+          0.007079230293516008,
+          0.1154529993815708,
+          0.3887838352124066,
+          0.2792267256552971,
+          0.11914276199990485,
+          0.00017839303553589267
+        ],
+        "counts": [
+          1293.0,
+          29023.0,
+          2381.0,
+          38831.0,
+          130762.0,
+          93914.0,
+          40072.0,
+          60.0
+        ],
+        "entropy": 1.4956152415522213,
+        "normalized_entropy": 0.7192388973551129,
+        "perplexity": 4.462080966142456,
+        "active_codes": 8,
+        "dominant_fraction": 0.3887838352124066
+      },
+      "complementarity_M0_M1": {
+        "M0_only_correct": 14,
+        "M1_only_correct": 25,
+        "both_correct": 146,
+        "both_wrong": 123,
+        "n_samples": 308
+      },
+      "complementarity_M0_M3": {
+        "M0_only_correct": 39,
+        "M3_only_correct": 37,
+        "both_correct": 121,
+        "both_wrong": 111,
+        "n_samples": 308
+      },
+      "drtn_info": {
+        "seed": 44,
+        "best_val_mf1": 0.7185,
+        "best_epoch": 41,
+        "test_mf1": 0.4277,
+        "train_time_s": 24.9
+      },
+      "feature_check": {
+        "heterogeneity_nonzero_rate": 0.947794702296503,
+        "heterogeneity_mean": 0.023066720522459904,
+        "heterogeneity_std": 0.025324004188394377,
+        "raw_extractor_vs_aeon_max_diff": 0.0,
+        "m2_m3_feature_diff": {
+          "max_abs_diff": 0.5625,
+          "mean_abs_diff": 0.0015304682742575935,
+          "n_exactly_equal": 73859,
+          "n_elements": 1539384
+        },
+        "independent_recompute": {
+          "sample0_kernel0": {
+            "implemented": 0.00404689647257328,
+            "independent": 0.004046896753574989,
+            "abs_diff": 2.8100170888084586e-10
+          },
+          "sample5_kernel1234": {
+            "implemented": 0.002375286538153887,
+            "independent": 0.002375286697541234,
+            "abs_diff": 1.5938734707066082e-10
+          }
+        },
+        "m2_rng_offset": 900001,
+        "m3_rng_offset": 900002
+      }
+    }
+  ],
+  "complementarity": {
+    "M0_M1": [
+      {
+        "M0_only_correct": 17,
+        "M1_only_correct": 26,
+        "both_correct": 143,
+        "both_wrong": 122,
+        "n_samples": 308
+      },
+      {
+        "M0_only_correct": 18,
+        "M1_only_correct": 26,
+        "both_correct": 141,
+        "both_wrong": 123,
+        "n_samples": 308
+      },
+      {
+        "M0_only_correct": 14,
+        "M1_only_correct": 25,
+        "both_correct": 146,
+        "both_wrong": 123,
+        "n_samples": 308
+      }
+    ],
+    "M0_M3": [
+      {
+        "M0_only_correct": 34,
+        "M3_only_correct": 35,
+        "both_correct": 126,
+        "both_wrong": 113,
+        "n_samples": 308
+      },
+      {
+        "M0_only_correct": 40,
+        "M3_only_correct": 33,
+        "both_correct": 119,
+        "both_wrong": 116,
+        "n_samples": 308
+      },
+      {
+        "M0_only_correct": 39,
+        "M3_only_correct": 37,
+        "both_correct": 121,
+        "both_wrong": 111,
+        "n_samples": 308
+      }
+    ]
+  },
+  "regime_diagnostics": [
+    {
+      "usage": [
+        0.11518540982826697,
+        0.0,
+        0.06097473954616812,
+        0.4808970791113648,
+        0.008042552685409828,
+        0.00040733076447362163,
+        0.0017720374863232006,
+        0.33272085057799344
+      ],
+      "counts": [
+        38741.0,
+        0.0,
+        20508.0,
+        161743.0,
+        2705.0,
+        137.0,
+        596.0,
+        111906.0
+      ],
+      "entropy": 1.1909091777903953,
+      "normalized_entropy": 0.5727062549824521,
+      "perplexity": 3.290071107581569,
+      "active_codes": 7,
+      "dominant_fraction": 0.4808970791113648
+    },
+    {
+      "usage": [
+        0.21294479330193616,
+        0.06522941344369916,
+        0.17998667998668,
+        0.042273202987488705,
+        0.04929594215308501,
+        4.459825888397317e-05,
+        5.3517910660767806e-05,
+        0.45017185195756626
+      ],
+      "counts": [
+        71621.0,
+        21939.0,
+        60536.0,
+        14218.0,
+        16580.0,
+        15.0,
+        18.0,
+        151409.0
+      ],
+      "entropy": 1.4584659002957925,
+      "normalized_entropy": 0.7013738405541324,
+      "perplexity": 4.299358821472215,
+      "active_codes": 8,
+      "dominant_fraction": 0.45017185195756626
+    },
+    {
+      "usage": [
+        0.003844369915798487,
+        0.08629168450597022,
+        0.007079230293516008,
+        0.1154529993815708,
+        0.3887838352124066,
+        0.2792267256552971,
+        0.11914276199990485,
+        0.00017839303553589267
+      ],
+      "counts": [
+        1293.0,
+        29023.0,
+        2381.0,
+        38831.0,
+        130762.0,
+        93914.0,
+        40072.0,
+        60.0
+      ],
+      "entropy": 1.4956152415522213,
+      "normalized_entropy": 0.7192388973551129,
+      "perplexity": 4.462080966142456,
+      "active_codes": 8,
+      "dominant_fraction": 0.3887838352124066
+    }
+  ]
+}

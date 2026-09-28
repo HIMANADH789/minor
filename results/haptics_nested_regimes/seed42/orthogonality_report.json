@@ -1,0 +1,13 @@
+{
+ "cross_ip_max": 3.090860900556436e-13,
+ "pairs": [
+  "|K2-K4|",
+  "|K2-K8|",
+  "|K2-K16|",
+  "|K4-K8|",
+  "|K4-K16|",
+  "|K8-K16|"
+ ],
+ "method": "exact joint count-weighted inner products; no Gram-Schmidt, no CCA",
+ "tolerance": "float64 machine precision"
+}

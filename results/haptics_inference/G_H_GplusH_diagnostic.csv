@@ -1,0 +1,4 @@
+representation,test_macro_f1,test_accuracy,dim,source
+G_only,0.5037,0.5162,4998,"canonical Ridge on frozen banks, identity-verified"
+H_only,0.4686,0.4935,4998,"canonical Ridge on frozen banks, identity-verified"
+G+H (R5 50/50),0.55,0.5649,9996,"canonical Ridge on frozen banks, identity-verified"

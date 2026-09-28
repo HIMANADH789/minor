@@ -1,0 +1,15 @@
+{
+  "all_pass": true,
+  "checks": {
+    "kernel_allocation_fixed_before_test": "PASS \u2014 strided modular rule, msw10k.py, applied before any test access",
+    "window_definitions_fixed_before_test": "PASS \u2014 identical to validated MSW study",
+    "validation_selection_no_test": "PASS \u2014 selection on val MF1 + McNemar/BH on val preds only",
+    "standardization_no_test": "PASS \u2014 raw PPV protocol; no fitted scaling",
+    "ridge_alpha_no_test": "PASS \u2014 RidgeClassifierCV internal CV on train(+val) only",
+    "minirocket_fit_no_test_labels": "PASS \u2014 fit_transform on train only",
+    "statistical_selection_val_only": "PASS \u2014 test McNemar reported but NOT used for selection",
+    "single_final_test_eval": "PASS \u2014 one test evaluation per variant after frozen decision",
+    "no_dataset_specific_architecture": "PASS \u2014 same plan (allocation_plan(9996)) for all datasets",
+    "no_test_driven_hand_picking": "PASS \u2014 selection rule frozen in code before the run"
+  }
+}

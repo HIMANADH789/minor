@@ -1,0 +1,2 @@
+dataset,flavor_freq,mean_w,n,route_switch_rate,routing_entropy,std_w,top1_flavor
+CWRU_BAL,"[0.5315, 0.4685, 0.0, 0.0]",0.25,567,0.01,1.0058,0.2204,728

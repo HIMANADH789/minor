@@ -1,0 +1,20 @@
+{
+ "model": "s_j^2 ~ s0^2 * F(d_e, d0) (Smyth/limma)",
+ "fit_scope": "SINGLE prior over the FULL unified pool (all levels borrow strength)",
+ "n_dev": 260,
+ "n_classes": 8,
+ "d_between": 7,
+ "d_error": 252,
+ "n_nonpositive_s2": 20091,
+ "nonpositive_handling": "excluded from the LOG-MOMENT fit only; kept in moderation/ranking with st2 = (d0 s0^2)/(d0+d_e)",
+ "n": 449721,
+ "d_e": 252,
+ "mean_log_s2": -5.322142586117458,
+ "var_log_s2": 19.149239598316232,
+ "trigamma_d_e_over_2": 0.007968085332241118,
+ "d0_inf_limit": 0.007968085332241118,
+ "degenerate": false,
+ "d0": 0.47238520268572115,
+ "s0_sq": 0.00023568660324281,
+ "moderated_df": 252.47238520268573
+}

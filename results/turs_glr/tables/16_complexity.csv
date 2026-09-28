@@ -1,0 +1,5 @@
+d_global,d_local,dataset,fixed_kernel_params,local_dims,n_global_kernels,n_local_kernels,n_train,ridge_matrix,trainable_params
+6144,839,ECG5000_UNBAL,67456,"{'routed': 60, 'ppv': 384, 'strength': 384, 'routing': 11, 'total': 839}",2048,128,3294,"[6983, 6983]",8356
+6144,839,ECG5000_BAL,67456,"{'routed': 60, 'ppv': 384, 'strength': 384, 'routing': 11, 'total': 839}",2048,128,5063,"[6983, 6983]",8356
+6144,839,CWRU_UNBAL,67456,"{'routed': 60, 'ppv': 384, 'strength': 384, 'routing': 11, 'total': 839}",2048,128,1119,"[6983, 6983]",8356
+6144,839,CWRU_BAL,67456,"{'routed': 60, 'ppv': 384, 'strength': 384, 'routing': 11, 'total': 839}",2048,128,2642,"[6983, 6983]",8356

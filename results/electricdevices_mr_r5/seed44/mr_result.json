@@ -1,0 +1,17 @@
+{
+  "val_macro_f1": 0.8874,
+  "test_macro_f1": 0.6537,
+  "selected_alpha": 4.281332398719396,
+  "accuracy": 0.74,
+  "unique_pred_classes": 7,
+  "pred_class_balance": {
+    "0": 252,
+    "1": 1770,
+    "2": 825,
+    "3": 1342,
+    "4": 2556,
+    "5": 668,
+    "6": 298
+  },
+  "runtime_s": 79.2
+}

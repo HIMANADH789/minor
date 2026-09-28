@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "dataset": "ECG5000_UNBAL",
+      "seed": 42,
+      "m0_mf1": 0.5938,
+      "m6_mf1": 0.5736,
+      "delta": -0.0202
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "seed": 43,
+      "m0_mf1": 0.6006,
+      "m6_mf1": 0.5736,
+      "delta": -0.027
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "seed": 44,
+      "m0_mf1": 0.5898,
+      "m6_mf1": 0.5736,
+      "delta": -0.0162
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "seed": 45,
+      "m0_mf1": 0.5909,
+      "m6_mf1": 0.5736,
+      "delta": -0.0173
+    },
+    {
+      "dataset": "ECG5000_UNBAL",
+      "seed": 46,
+      "m0_mf1": 0.6057,
+      "m6_mf1": 0.5736,
+      "delta": -0.0321
+    }
+  ],
+  "mean_delta": -0.02256,
+  "std_delta": 0.00679,
+  "median_delta": -0.0202,
+  "min_delta": -0.0321,
+  "max_delta": -0.0162,
+  "n_positive": 0,
+  "n_negative": 5,
+  "paired_permutation_p": 0.056472,
+  "effect_size_d": -3.3226
+}

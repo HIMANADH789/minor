@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "val_macro_f1": 0.8797,
+  "test_macro_f1": 0.6669,
+  "selected_alpha": 1.623776739188721,
+  "accuracy": 0.7478,
+  "unique_pred_classes": 7,
+  "pred_class_balance": {
+    "0": 321,
+    "1": 1793,
+    "2": 811,
+    "3": 1229,
+    "4": 2561,
+    "5": 671,
+    "6": 325
+  },
+  "mr_val_macro_f1": 0.8874,
+  "mr_test_macro_f1": 0.6537,
+  "delta_heramba_minus_mr": 0.0132,
+  "regimes_deterministic": true,
+  "regime_hash_te": "c219f8a92573097c",
+  "context_train": {
+    "ssl_best_val": 0.726849,
+    "joint_best_val_mf1": 0.8471,
+    "avg_joint_losses": {
+      "commit": 195.64421,
+      "div": 91.89237,
+      "aux": 24.09617,
+      "ssl": 36.08342
+    }
+  },
+  "runtime_s": 720.4
+}

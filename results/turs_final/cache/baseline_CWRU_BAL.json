@@ -1,0 +1,59 @@
+{
+  "macro_f1": 0.9947,
+  "accuracy": 0.9947,
+  "weighted_f1": 0.9947,
+  "balanced_accuracy": 0.9947,
+  "class_f1s": [
+    1.0,
+    1.0,
+    0.9895,
+    0.9894
+  ],
+  "class_precision": [
+    1.0,
+    1.0,
+    0.986,
+    0.9929
+  ],
+  "class_recall": [
+    1.0,
+    1.0,
+    0.993,
+    0.9859
+  ],
+  "confusion_matrix": [
+    [
+      142,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      141,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      141,
+      1
+    ],
+    [
+      0,
+      0,
+      2,
+      140
+    ]
+  ],
+  "alpha": 0.615848,
+  "n_features": 9996,
+  "ref": 0.9947,
+  "abs_diff": 0.0,
+  "pass": true,
+  "mr_fit_s": 0.1,
+  "base_transform_s": 0.8,
+  "baseline_eval_s": 4.3,
+  "ridge_fit_s": 4.1
+}

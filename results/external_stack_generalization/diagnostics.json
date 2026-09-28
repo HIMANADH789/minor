@@ -1,0 +1,404 @@
+{
+  "EpilepticSeizures": {
+    "complementarity": {
+      "selected": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.9025,
+          "MiniROCKET|branch_rv": 0.8987,
+          "MiniROCKET|branch_cs": 0.8747,
+          "MiniROCKET|branch_cmr": 0.9091,
+          "MiniROCKET|Stack": 0.9011,
+          "branch_lite|branch_rv": 0.993,
+          "branch_lite|branch_cs": 0.9608,
+          "branch_lite|branch_cmr": 0.9603,
+          "branch_lite|Stack": 0.9961,
+          "branch_rv|branch_cs": 0.9674,
+          "branch_rv|branch_cmr": 0.9542,
+          "branch_rv|Stack": 0.9906,
+          "branch_cs|branch_cmr": 0.9307,
+          "branch_cs|Stack": 0.9626,
+          "branch_cmr|Stack": 0.9634
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.1905,
+          "MiniROCKET|branch_rv": 0.1864,
+          "MiniROCKET|branch_cs": 0.1627,
+          "MiniROCKET|branch_cmr": 0.1916,
+          "MiniROCKET|Stack": 0.1876,
+          "branch_lite|branch_rv": 0.9286,
+          "branch_lite|branch_cs": 0.6919,
+          "branch_lite|branch_cmr": 0.6311,
+          "branch_lite|Stack": 0.9585,
+          "branch_rv|branch_cs": 0.7418,
+          "branch_rv|branch_cmr": 0.5939,
+          "branch_rv|Stack": 0.9062,
+          "branch_cs|branch_cmr": 0.4968,
+          "branch_cs|Stack": 0.7057,
+          "branch_cmr|Stack": 0.6568
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 321,
+        "mr_right_stack_wrong": 809,
+        "both_wrong": 261,
+        "mr_error_rate": 0.051,
+        "stack_error_rate": 0.0937
+      },
+      "softvote": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.9025,
+          "MiniROCKET|branch_rv": 0.8987,
+          "MiniROCKET|branch_cs": 0.8747,
+          "MiniROCKET|branch_cmr": 0.9091,
+          "MiniROCKET|Stack": 0.9011,
+          "branch_lite|branch_rv": 0.993,
+          "branch_lite|branch_cs": 0.9608,
+          "branch_lite|branch_cmr": 0.9603,
+          "branch_lite|Stack": 0.9961,
+          "branch_rv|branch_cs": 0.9674,
+          "branch_rv|branch_cmr": 0.9542,
+          "branch_rv|Stack": 0.9906,
+          "branch_cs|branch_cmr": 0.9307,
+          "branch_cs|Stack": 0.9626,
+          "branch_cmr|Stack": 0.9634
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.1905,
+          "MiniROCKET|branch_rv": 0.1864,
+          "MiniROCKET|branch_cs": 0.1627,
+          "MiniROCKET|branch_cmr": 0.1916,
+          "MiniROCKET|Stack": 0.1876,
+          "branch_lite|branch_rv": 0.9286,
+          "branch_lite|branch_cs": 0.6919,
+          "branch_lite|branch_cmr": 0.6311,
+          "branch_lite|Stack": 0.9585,
+          "branch_rv|branch_cs": 0.7418,
+          "branch_rv|branch_cmr": 0.5939,
+          "branch_rv|Stack": 0.9062,
+          "branch_cs|branch_cmr": 0.4968,
+          "branch_cs|Stack": 0.7057,
+          "branch_cmr|Stack": 0.6568
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 321,
+        "mr_right_stack_wrong": 809,
+        "both_wrong": 261,
+        "mr_error_rate": 0.051,
+        "stack_error_rate": 0.0937
+      }
+    },
+    "stats": {
+      "primary": {
+        "chi2": 209.8841,
+        "p_raw": 0.0,
+        "delta_mf1": -0.0488,
+        "comparison": "PRIMARY: TURS-Stack(selected) vs MiniROCKET",
+        "q_fdr": null
+      },
+      "primary_softvote": {
+        "chi2": 209.8841,
+        "p_raw": 0.0,
+        "delta_mf1": -0.0488,
+        "comparison": "PRIMARY(soft-vote): TURS-Stack vs MiniROCKET",
+        "q_fdr": null
+      },
+      "secondary": [
+        {
+          "chi2": 149.73,
+          "p_raw": 0.0,
+          "delta_mf1": -0.0354,
+          "comparison": "SECONDARY: TURS-Stack vs InceptionTime",
+          "q_fdr": null
+        },
+        {
+          "chi2": 54.5956,
+          "p_raw": 0.0,
+          "delta_mf1": 0.0771,
+          "comparison": "SECONDARY: TURS-Stack vs ResNet-1D",
+          "q_fdr": null
+        },
+        {
+          "chi2": 6672.267,
+          "p_raw": 0.0,
+          "delta_mf1": 0.5688,
+          "comparison": "SECONDARY: TURS-Stack vs FCN",
+          "q_fdr": null
+        },
+        {
+          "chi2": 8368.3684,
+          "p_raw": 0.0,
+          "delta_mf1": 0.7375,
+          "comparison": "SECONDARY: TURS-Stack vs PatchTST",
+          "q_fdr": null
+        }
+      ]
+    }
+  },
+  "Haptics": {
+    "complementarity": {
+      "selected": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.3701,
+          "MiniROCKET|branch_rv": 0.4221,
+          "MiniROCKET|branch_cs": 0.4286,
+          "MiniROCKET|branch_cmr": 0.4805,
+          "MiniROCKET|Stack": 0.4026,
+          "branch_lite|branch_rv": 0.8571,
+          "branch_lite|branch_cs": 0.6461,
+          "branch_lite|branch_cmr": 0.5714,
+          "branch_lite|Stack": 0.3571,
+          "branch_rv|branch_cs": 0.7662,
+          "branch_rv|branch_cmr": 0.6688,
+          "branch_rv|Stack": 0.4513,
+          "branch_cs|branch_cmr": 0.7922,
+          "branch_cs|Stack": 0.5,
+          "branch_cmr|Stack": 0.5877
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.49,
+          "MiniROCKET|branch_rv": 0.5188,
+          "MiniROCKET|branch_cs": 0.5191,
+          "MiniROCKET|branch_cmr": 0.5611,
+          "MiniROCKET|Stack": 0.4892,
+          "branch_lite|branch_rv": 0.9043,
+          "branch_lite|branch_cs": 0.7705,
+          "branch_lite|branch_cmr": 0.7004,
+          "branch_lite|Stack": 0.5752,
+          "branch_rv|branch_cs": 0.8435,
+          "branch_rv|branch_cmr": 0.7384,
+          "branch_rv|Stack": 0.6181,
+          "branch_cs|branch_cmr": 0.8125,
+          "branch_cs|Stack": 0.6531,
+          "branch_cmr|Stack": 0.6867
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 35,
+        "mr_right_stack_wrong": 83,
+        "both_wrong": 113,
+        "mr_error_rate": 0.4805,
+        "stack_error_rate": 0.6364
+      },
+      "softvote": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.3701,
+          "MiniROCKET|branch_rv": 0.4221,
+          "MiniROCKET|branch_cs": 0.4286,
+          "MiniROCKET|branch_cmr": 0.4805,
+          "MiniROCKET|Stack": 0.4416,
+          "branch_lite|branch_rv": 0.8571,
+          "branch_lite|branch_cs": 0.6461,
+          "branch_lite|branch_cmr": 0.5714,
+          "branch_lite|Stack": 0.7825,
+          "branch_rv|branch_cs": 0.7662,
+          "branch_rv|branch_cmr": 0.6688,
+          "branch_rv|Stack": 0.8864,
+          "branch_cs|branch_cmr": 0.7922,
+          "branch_cs|Stack": 0.8312,
+          "branch_cmr|Stack": 0.776
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.49,
+          "MiniROCKET|branch_rv": 0.5188,
+          "MiniROCKET|branch_cs": 0.5191,
+          "MiniROCKET|branch_cmr": 0.5611,
+          "MiniROCKET|Stack": 0.5415,
+          "branch_lite|branch_rv": 0.9043,
+          "branch_lite|branch_cs": 0.7705,
+          "branch_lite|branch_cmr": 0.7004,
+          "branch_lite|Stack": 0.8448,
+          "branch_rv|branch_cs": 0.8435,
+          "branch_rv|branch_cmr": 0.7384,
+          "branch_rv|Stack": 0.9005,
+          "branch_cs|branch_cmr": 0.8125,
+          "branch_cs|Stack": 0.8818,
+          "branch_cmr|Stack": 0.8108
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 24,
+        "mr_right_stack_wrong": 81,
+        "both_wrong": 124,
+        "mr_error_rate": 0.4805,
+        "stack_error_rate": 0.6656
+      }
+    },
+    "stats": {
+      "primary": {
+        "chi2": 18.7203,
+        "p_raw": 1.5e-05,
+        "delta_mf1": -0.1421,
+        "comparison": "PRIMARY: TURS-Stack(selected) vs MiniROCKET",
+        "q_fdr": null
+      },
+      "primary_softvote": {
+        "chi2": 29.8667,
+        "p_raw": 0.0,
+        "delta_mf1": -0.2341,
+        "comparison": "PRIMARY(soft-vote): TURS-Stack vs MiniROCKET",
+        "q_fdr": null
+      },
+      "secondary": [
+        {
+          "chi2": 19.5069,
+          "p_raw": 1e-05,
+          "delta_mf1": 0.2917,
+          "comparison": "SECONDARY: TURS-Stack vs InceptionTime",
+          "q_fdr": null
+        },
+        {
+          "chi2": 8.41,
+          "p_raw": 0.003732,
+          "delta_mf1": 0.2041,
+          "comparison": "SECONDARY: TURS-Stack vs ResNet-1D",
+          "q_fdr": null
+        },
+        {
+          "chi2": 19.5069,
+          "p_raw": 1e-05,
+          "delta_mf1": 0.2919,
+          "comparison": "SECONDARY: TURS-Stack vs FCN",
+          "q_fdr": null
+        },
+        {
+          "chi2": 3.935,
+          "p_raw": 0.047292,
+          "delta_mf1": 0.1861,
+          "comparison": "SECONDARY: TURS-Stack vs PatchTST",
+          "q_fdr": null
+        }
+      ]
+    }
+  },
+  "Phoneme": {
+    "complementarity": {
+      "selected": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.3782,
+          "MiniROCKET|branch_rv": 0.4019,
+          "MiniROCKET|branch_cs": 0.3924,
+          "MiniROCKET|branch_cmr": 0.423,
+          "MiniROCKET|Stack": 0.1999,
+          "branch_lite|branch_rv": 0.683,
+          "branch_lite|branch_cs": 0.682,
+          "branch_lite|branch_cmr": 0.5902,
+          "branch_lite|Stack": 0.2068,
+          "branch_rv|branch_cs": 0.7421,
+          "branch_rv|branch_cmr": 0.7046,
+          "branch_rv|Stack": 0.2595,
+          "branch_cs|branch_cmr": 0.6313,
+          "branch_cs|Stack": 0.2511,
+          "branch_cmr|Stack": 0.2463
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.8004,
+          "MiniROCKET|branch_rv": 0.8006,
+          "MiniROCKET|branch_cs": 0.8079,
+          "MiniROCKET|branch_cmr": 0.8103,
+          "MiniROCKET|Stack": 0.7038,
+          "branch_lite|branch_rv": 0.9019,
+          "branch_lite|branch_cs": 0.9019,
+          "branch_lite|branch_cmr": 0.8777,
+          "branch_lite|Stack": 0.7364,
+          "branch_rv|branch_cs": 0.9088,
+          "branch_rv|branch_cmr": 0.8989,
+          "branch_rv|Stack": 0.7517,
+          "branch_cs|branch_cmr": 0.893,
+          "branch_cs|Stack": 0.7656,
+          "branch_cmr|Stack": 0.7339
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 194,
+        "mr_right_stack_wrong": 324,
+        "both_wrong": 1231,
+        "mr_error_rate": 0.7516,
+        "stack_error_rate": 0.8201
+      },
+      "softvote": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.3782,
+          "MiniROCKET|branch_rv": 0.4019,
+          "MiniROCKET|branch_cs": 0.3924,
+          "MiniROCKET|branch_cmr": 0.423,
+          "MiniROCKET|Stack": 0.4256,
+          "branch_lite|branch_rv": 0.683,
+          "branch_lite|branch_cs": 0.682,
+          "branch_lite|branch_cmr": 0.5902,
+          "branch_lite|Stack": 0.712,
+          "branch_rv|branch_cs": 0.7421,
+          "branch_rv|branch_cmr": 0.7046,
+          "branch_rv|Stack": 0.8539,
+          "branch_cs|branch_cmr": 0.6313,
+          "branch_cs|Stack": 0.8022,
+          "branch_cmr|Stack": 0.7642
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.8004,
+          "MiniROCKET|branch_rv": 0.8006,
+          "MiniROCKET|branch_cs": 0.8079,
+          "MiniROCKET|branch_cmr": 0.8103,
+          "MiniROCKET|Stack": 0.8112,
+          "branch_lite|branch_rv": 0.9019,
+          "branch_lite|branch_cs": 0.9019,
+          "branch_lite|branch_cmr": 0.8777,
+          "branch_lite|Stack": 0.9116,
+          "branch_rv|branch_cs": 0.9088,
+          "branch_rv|branch_cmr": 0.8989,
+          "branch_rv|Stack": 0.9443,
+          "branch_cs|branch_cmr": 0.893,
+          "branch_cs|Stack": 0.9343,
+          "branch_cmr|Stack": 0.9282
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 110,
+        "mr_right_stack_wrong": 196,
+        "both_wrong": 1315,
+        "mr_error_rate": 0.7516,
+        "stack_error_rate": 0.7969
+      }
+    },
+    "stats": {
+      "primary": {
+        "chi2": 32.1255,
+        "p_raw": 0.0,
+        "delta_mf1": -0.0023,
+        "comparison": "PRIMARY: TURS-Stack(selected) vs MiniROCKET",
+        "q_fdr": null
+      },
+      "primary_softvote": {
+        "chi2": 23.6111,
+        "p_raw": 1e-06,
+        "delta_mf1": -0.0234,
+        "comparison": "PRIMARY(soft-vote): TURS-Stack vs MiniROCKET",
+        "q_fdr": null
+      },
+      "secondary": [
+        {
+          "chi2": 4.05,
+          "p_raw": 0.044171,
+          "delta_mf1": 0.034,
+          "comparison": "SECONDARY: TURS-Stack vs InceptionTime",
+          "q_fdr": null
+        },
+        {
+          "chi2": 73.1416,
+          "p_raw": 0.0,
+          "delta_mf1": 0.0527,
+          "comparison": "SECONDARY: TURS-Stack vs ResNet-1D",
+          "q_fdr": null
+        },
+        {
+          "chi2": 281.1077,
+          "p_raw": 0.0,
+          "delta_mf1": 0.077,
+          "comparison": "SECONDARY: TURS-Stack vs FCN",
+          "q_fdr": null
+        },
+        {
+          "chi2": 63.314,
+          "p_raw": 0.0,
+          "delta_mf1": 0.0659,
+          "comparison": "SECONDARY: TURS-Stack vs PatchTST",
+          "q_fdr": null
+        }
+      ]
+    }
+  }
+}

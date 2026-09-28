@@ -1,0 +1,138 @@
+{
+  "seed": 44,
+  "n_subset_trva": 40,
+  "n_subset_test": 40,
+  "checkpoint_table": {
+    "C0": {
+      "name": "DRTN regimes",
+      "hash_test": "f283fcf186b043cb",
+      "occupancy_test": [
+        174,
+        3519,
+        304,
+        5313,
+        17075,
+        12224,
+        5066,
+        5
+      ]
+    },
+    "C1": {
+      "name": "M2 current regimes",
+      "hash_test": "6327ec9723dc8e62",
+      "occupancy_test": [
+        159,
+        3640,
+        280,
+        5334,
+        17046,
+        12123,
+        5096,
+        2
+      ]
+    },
+    "C1s": {
+      "name": "M2 spec regimes",
+      "hash_test": "c49d3172b3ef0b84",
+      "occupancy_test": [
+        174,
+        3519,
+        304,
+        5313,
+        17075,
+        12224,
+        5066,
+        5
+      ]
+    },
+    "C2": {
+      "name": "M3 regimes",
+      "hash_test": "66966ed3771d70e7",
+      "occupancy_test": [
+        174,
+        3519,
+        304,
+        5313,
+        17075,
+        12224,
+        5066,
+        5
+      ]
+    }
+  },
+  "array_checks": {
+    "C1_vs_C2_arrays_differ": true,
+    "C1s_vs_C2_arrays_differ": true,
+    "C1_vs_C1s_arrays_differ": true,
+    "C1_vs_C0_arrays_differ": true,
+    "C2_vs_C0_arrays_differ": true,
+    "no_shared_memory_C1_C2": true
+  },
+  "feature_checks": {
+    "H2_vs_H3_test": {
+      "max_abs_diff": 0.004990713775189034,
+      "mean_abs_diff": 9.173530805572313e-05,
+      "n_exactly_equal": 167587,
+      "n_elements": 199920,
+      "hash_a": "a0077eca60c32afb",
+      "allclose": false
+    },
+    "H2s_vs_H3_test": {
+      "max_abs_diff": 0.005560996457411486,
+      "mean_abs_diff": 9.47854561554097e-05,
+      "n_exactly_equal": 167653,
+      "n_elements": 199920,
+      "hash_a": "8b41dc2e2af26c91",
+      "allclose": false
+    },
+    "H2_vs_H2s_test": {
+      "max_abs_diff": 0.00538757940257309,
+      "mean_abs_diff": 9.570712661975057e-05,
+      "n_exactly_equal": 167587,
+      "n_elements": 199920,
+      "hash_a": "a0077eca60c32afb",
+      "allclose": false
+    },
+    "H1_vs_H3_test": {
+      "max_abs_diff": 0.1829446799310323,
+      "mean_abs_diff": 0.004068033958202737,
+      "n_exactly_equal": 167661,
+      "n_elements": 199920,
+      "hash_a": "baf1aaa61ff8021a",
+      "allclose": false
+    },
+    "H2_vs_H3_trva": {
+      "max_abs_diff": 0.004752331137622727,
+      "mean_abs_diff": 9.104063974978529e-05,
+      "n_exactly_equal": 167583,
+      "n_elements": 199920,
+      "hash_a": "c74bc3a0bedb8c4d",
+      "allclose": false
+    },
+    "H2s_vs_H3_trva": {
+      "max_abs_diff": 0.004716920848661975,
+      "mean_abs_diff": 9.526338823433806e-05,
+      "n_exactly_equal": 167673,
+      "n_elements": 199920,
+      "hash_a": "512d46033e992e20",
+      "allclose": false
+    }
+  },
+  "classifier_checks": {
+    "selected_alpha": {
+      "M1": 29.763514416313132,
+      "M2": 29.763514416313132,
+      "M2spec": 29.763514416313132,
+      "M3": 29.763514416313132
+    },
+    "test_mf1_subset": {
+      "M1": 0.1945,
+      "M2": 0.1968,
+      "M2spec": 0.1968,
+      "M3": 0.1968
+    },
+    "M2_vs_M3_pred_identical": true,
+    "M2spec_vs_M3_pred_identical": true,
+    "M1_vs_M3_pred_identical": false
+  }
+}

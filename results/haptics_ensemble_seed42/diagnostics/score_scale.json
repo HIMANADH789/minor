@@ -1,0 +1,19 @@
+{
+  "mr_scores_train_range": [
+    -1.3913800716400146,
+    0.9826938509941101
+  ],
+  "mr_scores_val_range": [
+    -1.3861249685287476,
+    0.5784183740615845
+  ],
+  "drtn_logits_train_range": [
+    -2.8817241191864014,
+    4.159808158874512
+  ],
+  "drtn_logits_val_range": [
+    -2.2345998287200928,
+    2.828111171722412
+  ],
+  "transformations": "fusion: softmax(S/T), softmax(L/T) with T=1 (no fitting needed, documented); stacking: StandardScaler fitted on TRAIN meta-rows only"
+}

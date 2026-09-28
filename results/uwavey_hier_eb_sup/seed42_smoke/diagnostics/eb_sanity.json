@@ -1,0 +1,70 @@
+{
+ "pi0_in_[0.5,1)": true,
+ "mu1_positive": true,
+ "sigma1_positive": true,
+ "q_in_unit_range": true,
+ "q_finite": true,
+ "lfdr_in_unit_range": true,
+ "loglik_finite": true,
+ "em_converged_or_fallback_recorded": {
+  "0": {
+   "converged": true,
+   "iters": 11,
+   "init_degenerate": false,
+   "final_delta": 1.3028214063126597e-09
+  },
+  "2": {
+   "converged": true,
+   "iters": 10,
+   "init_degenerate": false,
+   "final_delta": 5.603063790715623e-09
+  },
+  "4": {
+   "converged": true,
+   "iters": 11,
+   "init_degenerate": false,
+   "final_delta": 5.300427652343842e-09
+  },
+  "8": {
+   "converged": true,
+   "iters": 12,
+   "init_degenerate": false,
+   "final_delta": 2.9881928043096195e-09
+  },
+  "16": {
+   "converged": true,
+   "iters": 13,
+   "init_degenerate": false,
+   "final_delta": 1.3204450866055595e-09
+  }
+ },
+ "refit_deterministic_in_process": true,
+ "parameters_level_specific": {
+  "0": {
+   "pi0": 0.5,
+   "mu1": 11.67653582190135,
+   "sigma1": 2.906804916180011
+  },
+  "2": {
+   "pi0": 0.5,
+   "mu1": 6.406366832837923,
+   "sigma1": 3.4343379096414743
+  },
+  "4": {
+   "pi0": 0.5,
+   "mu1": 4.655451811100451,
+   "sigma1": 3.153678594893625
+  },
+  "8": {
+   "pi0": 0.5,
+   "mu1": 2.6440508974670878,
+   "sigma1": 3.014226280780513
+  },
+  "16": {
+   "pi0": 0.5,
+   "mu1": 1.6728135952042527,
+   "sigma1": 3.7749797605278657
+  }
+ },
+ "no_validation_or_test_input_to_eb_fit": "EB fitted on dev-set (train+val) statistics only for the final selection; fold-internal CV fits use fold-train only"
+}

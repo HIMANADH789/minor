@@ -1,0 +1,36 @@
+{
+  "seed": 44,
+  "mr_val": 0.6405,
+  "mr_test": 0.5938,
+  "mr_alpha": 11.288378916846883,
+  "mr_acc": 0.954,
+  "her_val": 0.6359,
+  "her_test": 0.5921,
+  "her_alpha": 4.281332398719396,
+  "her_acc": 0.954,
+  "selected": "MiniRocket",
+  "fallback_used": true,
+  "final_test": 0.5938,
+  "final_alpha": 11.288378916846883,
+  "final_acc": 0.954,
+  "final_unique_pred_classes": 4,
+  "final_pred_class_balance": {
+    "0": 590,
+    "1": 378,
+    "2": 12,
+    "3": 20
+  },
+  "regimes_deterministic": true,
+  "regime_hash_te": "644e87348e638865",
+  "context_train": {
+    "ssl_best_val": 0.14369,
+    "joint_best_val_mf1": 0.5959,
+    "avg_joint_losses": {
+      "commit": 9.76978,
+      "div": 48.42662,
+      "aux": 5.82327,
+      "ssl": 4.04024
+    }
+  },
+  "runtime_s": 273.1
+}

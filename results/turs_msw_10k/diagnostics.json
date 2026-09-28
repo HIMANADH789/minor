@@ -1,0 +1,156 @@
+{
+  "dataset_diagnostics": {
+    "ECG5000_UNBAL": {
+      "locality_synthetic": {
+        "global_mean_abs_diff": 0.031984,
+        "medium_mean_abs_diff": 0.039907,
+        "local_mean_abs_diff": 0.058076
+      },
+      "shift_stability": {
+        "circular_shift_T2": {
+          "global_mean_abs_change": 0.076641,
+          "medium_mean_abs_change": 0.122133,
+          "local_mean_abs_change": 0.182219
+        },
+        "small_perturbations": {
+          "noise": {
+            "global_mean_abs_change": 0.004269,
+            "regional_mean_abs_change": 0.004904
+          },
+          "shift1": {
+            "global_mean_abs_change": 0.006382,
+            "regional_mean_abs_change": 0.009712
+          }
+        }
+      }
+    },
+    "ECG5000_BAL": {
+      "locality_synthetic": {
+        "global_mean_abs_diff": 0.031689,
+        "medium_mean_abs_diff": 0.039557,
+        "local_mean_abs_diff": 0.05765
+      },
+      "shift_stability": {
+        "circular_shift_T2": {
+          "global_mean_abs_change": 0.084099,
+          "medium_mean_abs_change": 0.130637,
+          "local_mean_abs_change": 0.185982
+        },
+        "small_perturbations": {
+          "noise": {
+            "global_mean_abs_change": 0.004519,
+            "regional_mean_abs_change": 0.005248
+          },
+          "shift1": {
+            "global_mean_abs_change": 0.006399,
+            "regional_mean_abs_change": 0.009574
+          }
+        }
+      }
+    },
+    "CWRU_UNBAL": {
+      "locality_synthetic": {
+        "global_mean_abs_diff": 0.004297,
+        "medium_mean_abs_diff": 0.005539,
+        "local_mean_abs_diff": 0.008313
+      },
+      "shift_stability": {
+        "circular_shift_T2": {
+          "global_mean_abs_change": 0.013301,
+          "medium_mean_abs_change": 0.024871,
+          "local_mean_abs_change": 0.043794
+        },
+        "small_perturbations": {
+          "noise": {
+            "global_mean_abs_change": 0.001251,
+            "regional_mean_abs_change": 0.001579
+          },
+          "shift1": {
+            "global_mean_abs_change": 0.001325,
+            "regional_mean_abs_change": 0.001746
+          }
+        }
+      }
+    },
+    "CWRU_BAL": {
+      "locality_synthetic": {
+        "global_mean_abs_diff": 0.004306,
+        "medium_mean_abs_diff": 0.005548,
+        "local_mean_abs_diff": 0.008313
+      },
+      "shift_stability": {
+        "circular_shift_T2": {
+          "global_mean_abs_change": 0.014209,
+          "medium_mean_abs_change": 0.028983,
+          "local_mean_abs_change": 0.055555
+        },
+        "small_perturbations": {
+          "noise": {
+            "global_mean_abs_change": 0.001251,
+            "regional_mean_abs_change": 0.001576
+          },
+          "shift1": {
+            "global_mean_abs_change": 0.001362,
+            "regional_mean_abs_change": 0.00174
+          }
+        }
+      }
+    },
+    "EpilepticSeizures": {
+      "locality_synthetic": {
+        "global_mean_abs_diff": 0.025331,
+        "medium_mean_abs_diff": 0.03142,
+        "local_mean_abs_diff": 0.045596
+      },
+      "shift_stability": {
+        "circular_shift_T2": {
+          "global_mean_abs_change": 0.042604,
+          "medium_mean_abs_change": 0.05963,
+          "local_mean_abs_change": 0.096084
+        },
+        "small_perturbations": {
+          "noise": {
+            "global_mean_abs_change": 0.002152,
+            "regional_mean_abs_change": 0.002356
+          },
+          "shift1": {
+            "global_mean_abs_change": 0.004038,
+            "regional_mean_abs_change": 0.006384
+          }
+        }
+      }
+    }
+  },
+  "allocation_plan": {
+    "M0": {
+      "n_global": 9996,
+      "n_medium": 0,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M1": {
+      "n_global": 4998,
+      "n_medium": 2499,
+      "n_local": 0,
+      "total": 9996
+    },
+    "M2": {
+      "n_global": 4996,
+      "n_medium": 0,
+      "n_local": 1250,
+      "total": 9996
+    },
+    "M3": {
+      "n_global": 3332,
+      "n_medium": 1666,
+      "n_local": 833,
+      "total": 9996
+    },
+    "M4": {
+      "n_global": 0,
+      "n_medium": 2498,
+      "n_local": 1250,
+      "total": 9996
+    }
+  }
+}

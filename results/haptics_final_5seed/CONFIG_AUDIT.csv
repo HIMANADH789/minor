@@ -1,0 +1,4 @@
+method,config,protocol
+MiniRocket,"aeon MiniROCKET random_state=42 fit train-only; RidgeClassifierCV alphas=logspace(-4,4,20) fit train+val; deterministic -> one run reused across seeds 42-46",per-sample z-norm before transform; val MF1 reported; single test evaluation
+HERAMBA,"R2 family [G||H]: G=4998 MiniROCKET global (rs=42 fixed), H=4998 occupancy-weighted regime heterogeneity, learned context (SSL+VQ K=8) retrained per outer seed",per-seed context; RidgeCV on train+val; single test evaluation; audits 1-17 embedded
+Baselines,"architectures verbatim (InceptionTime/FCN/ResNet1D/PatchTST); BS=16, max 100 epochs, patience 25, OneCycleLR, grad clip 1.0, CE; LR/WD grid {3e-4,1e-3}x{1e-2,1e-4} selected on VALIDATION only at seed 42, frozen for 43-46",per-sample z-norm; checkpoint = best val MF1; single test evaluation; no test-based tuning

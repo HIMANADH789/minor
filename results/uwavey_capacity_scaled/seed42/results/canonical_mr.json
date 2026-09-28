@@ -1,0 +1,18 @@
+{
+ "method": "canonical_mr",
+ "label": "MiniROCKET (canonical 9,996)",
+ "base_budget": 9996,
+ "high_budget": 9996,
+ "kernel_capacity": "84x119",
+ "final_features": 9996,
+ "candidate_features": 9996,
+ "macro_f1": 0.7543,
+ "accuracy": 0.7577,
+ "selected_alpha": 29.763514416313132,
+ "num_classes": 8,
+ "seed": 42,
+ "gates": {
+  "ref": 0.7539,
+  "abs_diff": 0.00039999999999995595
+ }
+}

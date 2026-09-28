@@ -1,0 +1,312 @@
+{
+  "runs": [
+    {
+      "model": "InceptionTime",
+      "seed": 42,
+      "best_val_macro_f1": 0.0714,
+      "test_macro_f1": 0.0636,
+      "test_accuracy": 0.1883,
+      "test_weighted_f1": 0.0598,
+      "best_epoch": 1,
+      "params": 404197,
+      "train_time_s": 2.46,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "InceptionTime",
+      "seed": 43,
+      "best_val_macro_f1": 0.2909,
+      "test_macro_f1": 0.2475,
+      "test_accuracy": 0.3084,
+      "test_weighted_f1": 0.2519,
+      "best_epoch": 15,
+      "params": 404197,
+      "train_time_s": 4.06,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "InceptionTime",
+      "seed": 44,
+      "best_val_macro_f1": 0.1407,
+      "test_macro_f1": 0.0945,
+      "test_accuracy": 0.2208,
+      "test_weighted_f1": 0.0963,
+      "best_epoch": 10,
+      "params": 404197,
+      "train_time_s": 3.74,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "FCN",
+      "seed": 42,
+      "best_val_macro_f1": 0.0714,
+      "test_macro_f1": 0.0634,
+      "test_accuracy": 0.1883,
+      "test_weighted_f1": 0.0597,
+      "best_epoch": 2,
+      "params": 66885,
+      "train_time_s": 0.33,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "FCN",
+      "seed": 43,
+      "best_val_macro_f1": 0.1341,
+      "test_macro_f1": 0.1302,
+      "test_accuracy": 0.2403,
+      "test_weighted_f1": 0.1307,
+      "best_epoch": 7,
+      "params": 66885,
+      "train_time_s": 0.39,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "FCN",
+      "seed": 44,
+      "best_val_macro_f1": 0.0714,
+      "test_macro_f1": 0.0637,
+      "test_accuracy": 0.1883,
+      "test_weighted_f1": 0.06,
+      "best_epoch": 1,
+      "params": 66885,
+      "train_time_s": 0.2,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "ResNet1D",
+      "seed": 42,
+      "best_val_macro_f1": 0.2333,
+      "test_macro_f1": 0.1512,
+      "test_accuracy": 0.2662,
+      "test_weighted_f1": 0.1608,
+      "best_epoch": 6,
+      "params": 168037,
+      "train_time_s": 1.45,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "ResNet1D",
+      "seed": 43,
+      "best_val_macro_f1": 0.0714,
+      "test_macro_f1": 0.0715,
+      "test_accuracy": 0.2175,
+      "test_weighted_f1": 0.0777,
+      "best_epoch": 1,
+      "params": 168037,
+      "train_time_s": 0.6,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "ResNet1D",
+      "seed": 44,
+      "best_val_macro_f1": 0.0741,
+      "test_macro_f1": 0.0693,
+      "test_accuracy": 0.1851,
+      "test_weighted_f1": 0.0665,
+      "best_epoch": 1,
+      "params": 168037,
+      "train_time_s": 0.58,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "PatchTST",
+      "seed": 42,
+      "best_val_macro_f1": 0.1923,
+      "test_macro_f1": 0.1692,
+      "test_accuracy": 0.289,
+      "test_weighted_f1": 0.1682,
+      "best_epoch": 12,
+      "params": 105605,
+      "train_time_s": 0.6,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "PatchTST",
+      "seed": 43,
+      "best_val_macro_f1": 0.1523,
+      "test_macro_f1": 0.1339,
+      "test_accuracy": 0.237,
+      "test_weighted_f1": 0.1335,
+      "best_epoch": 7,
+      "params": 105605,
+      "train_time_s": 0.38,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "PatchTST",
+      "seed": 44,
+      "best_val_macro_f1": 0.0714,
+      "test_macro_f1": 0.0756,
+      "test_accuracy": 0.211,
+      "test_weighted_f1": 0.0781,
+      "best_epoch": 1,
+      "params": 105605,
+      "train_time_s": 0.19,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    }
+  ],
+  "summary": [
+    {
+      "model": "InceptionTime",
+      "seed_count": 3,
+      "test_macro_f1_mean": 0.1352,
+      "test_macro_f1_std": 0.0985,
+      "test_macro_f1_min": 0.0636,
+      "test_macro_f1_max": 0.2475,
+      "test_macro_f1_median": 0.0945,
+      "val_macro_f1_mean": 0.1677,
+      "val_macro_f1_std": 0.1122,
+      "params": 404197,
+      "mean_train_time_s": 3.42,
+      "determinism": "fixed per-seed torch/numpy/cuda seeds"
+    },
+    {
+      "model": "FCN",
+      "seed_count": 3,
+      "test_macro_f1_mean": 0.0858,
+      "test_macro_f1_std": 0.0385,
+      "test_macro_f1_min": 0.0634,
+      "test_macro_f1_max": 0.1302,
+      "test_macro_f1_median": 0.0637,
+      "val_macro_f1_mean": 0.0923,
+      "val_macro_f1_std": 0.0362,
+      "params": 66885,
+      "mean_train_time_s": 0.31,
+      "determinism": "fixed per-seed torch/numpy/cuda seeds"
+    },
+    {
+      "model": "ResNet1D",
+      "seed_count": 3,
+      "test_macro_f1_mean": 0.0973,
+      "test_macro_f1_std": 0.0467,
+      "test_macro_f1_min": 0.0693,
+      "test_macro_f1_max": 0.1512,
+      "test_macro_f1_median": 0.0715,
+      "val_macro_f1_mean": 0.1263,
+      "val_macro_f1_std": 0.0927,
+      "params": 168037,
+      "mean_train_time_s": 0.88,
+      "determinism": "fixed per-seed torch/numpy/cuda seeds"
+    },
+    {
+      "model": "PatchTST",
+      "seed_count": 3,
+      "test_macro_f1_mean": 0.1262,
+      "test_macro_f1_std": 0.0473,
+      "test_macro_f1_min": 0.0756,
+      "test_macro_f1_max": 0.1692,
+      "test_macro_f1_median": 0.1339,
+      "val_macro_f1_mean": 0.1387,
+      "val_macro_f1_std": 0.0616,
+      "params": 105605,
+      "mean_train_time_s": 0.39,
+      "determinism": "fixed per-seed torch/numpy/cuda seeds"
+    }
+  ],
+  "final_comparison": [
+    {
+      "Model": "MiniROCKET (M0)",
+      "Seed 42": 0.4974,
+      "Seed 43": null,
+      "Seed 44": null,
+      "Mean +/- SD": null,
+      "Note": "deterministic (MiniROCKET+Ridge; seed-independent)"
+    },
+    {
+      "Model": "InceptionTime",
+      "Seed 42": 0.0636,
+      "Seed 43": 0.2475,
+      "Seed 44": 0.0945,
+      "Mean +/- SD": {
+        "mean": 0.1352,
+        "std": 0.0985,
+        "median": 0.0945,
+        "min": 0.0636,
+        "max": 0.2475
+      },
+      "Note": ""
+    },
+    {
+      "Model": "FCN",
+      "Seed 42": 0.0634,
+      "Seed 43": 0.1302,
+      "Seed 44": 0.0637,
+      "Mean +/- SD": {
+        "mean": 0.0858,
+        "std": 0.0385,
+        "median": 0.0637,
+        "min": 0.0634,
+        "max": 0.1302
+      },
+      "Note": ""
+    },
+    {
+      "Model": "ResNet1D",
+      "Seed 42": 0.1512,
+      "Seed 43": 0.0715,
+      "Seed 44": 0.0693,
+      "Mean +/- SD": {
+        "mean": 0.0973,
+        "std": 0.0467,
+        "median": 0.0715,
+        "min": 0.0693,
+        "max": 0.1512
+      },
+      "Note": ""
+    },
+    {
+      "Model": "PatchTST",
+      "Seed 42": 0.1692,
+      "Seed 43": 0.1339,
+      "Seed 44": 0.0756,
+      "Mean +/- SD": {
+        "mean": 0.1262,
+        "std": 0.0473,
+        "median": 0.1339,
+        "min": 0.0756,
+        "max": 0.1692
+      },
+      "Note": ""
+    },
+    {
+      "Model": "R5 (rho=0.5, R2 / 50-50)",
+      "Seed 42": 0.55,
+      "Seed 43": 0.5213,
+      "Seed 44": 0.5387,
+      "Mean +/- SD": {
+        "mean": 0.5367,
+        "std": 0.0145,
+        "median": 0.5387,
+        "min": 0.5213,
+        "max": 0.55
+      },
+      "Note": "R2 = fixed 50/50 allocation inside the R5 family; seed42 canonical stored, 43/44 from rcmkn_r2_haptics_3seed"
+    },
+    {
+      "Model": "R5 (rho=rho*)",
+      "Seed 42": 0.5429,
+      "Seed 43": 0.5264,
+      "Seed 44": 0.5342,
+      "Mean +/- SD": {
+        "mean": 0.5345,
+        "std": 0.0083,
+        "median": 0.5342,
+        "min": 0.5264,
+        "max": 0.5429
+      },
+      "Note": "per-seed CV-selected rho = {42: 0.4, 43: 0.4, 44: 0.3}; source C:/temp/results/final_validation/multiseed_haptics.json"
+    }
+  ]
+}

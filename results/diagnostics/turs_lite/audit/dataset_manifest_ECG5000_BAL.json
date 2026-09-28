@@ -1,0 +1,69 @@
+{
+  "dataset": "ECG5000_BAL",
+  "source_file": "data/ecg5000_fair_balanced.npz",
+  "source_sha256": "6d318fc9e12c72237758ea6f1eadbdfb9dd5fe1ec5881fa60f0aee002a6d9958",
+  "n_samples_total": 6149,
+  "signal_length": 140,
+  "num_classes": 5,
+  "label_mapping": {
+    "labels_present": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "contiguous": true
+  },
+  "split": {
+    "protocol": "official_train/test + val carved from train ",
+    "seed": 42,
+    "val_frac_of_train": 0.15,
+    "train": 5226,
+    "val": 923,
+    "test": 1000
+  },
+  "class_counts": {
+    "train": [
+      1984,
+      1202,
+      680,
+      680,
+      680
+    ],
+    "val": [
+      351,
+      212,
+      120,
+      120,
+      120
+    ],
+    "test": [
+      584,
+      353,
+      19,
+      39,
+      5
+    ]
+  },
+  "normalization": "per-sample z-normalization (mean/std over time, eps=1e-8)",
+  "leakage_checks": {
+    "test_disjoint_from_trainval": true,
+    "split_deterministic_given_seed": true,
+    "normalization_fitted_per_sample": "no train-statistics leakage"
+  },
+  "raw_examples_shapes": {
+    "train": [
+      5226,
+      140
+    ],
+    "val": [
+      923,
+      140
+    ],
+    "test": [
+      1000,
+      140
+    ]
+  }
+}

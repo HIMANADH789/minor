@@ -1,0 +1,119 @@
+{
+ "audit1_dataset_identity": {
+  "expected": {
+   "train": 5226,
+   "val": 923,
+   "test": 1000,
+   "T": 140,
+   "n_classes": 5
+  },
+  "actual": {
+   "train": 5226,
+   "val": 923,
+   "test": 1000,
+   "T": 140,
+   "n_classes": 5
+  },
+  "pass": true
+ },
+ "audit2_znorm_identity": {
+  "max_abs_diff": 0.0,
+  "pass": true
+ },
+ "audit3_ckpt_provenance": {
+  "expected_hash": "f2eda1b2ff0bbe99",
+  "actual_hash": "f2eda1b2ff0bbe99",
+  "pass": true
+ },
+ "audit4_regime_determinism": {
+  "byte_identical": true,
+  "pass": true
+ },
+ "audit5_minirocket_identity": {
+  "max_abs_diff": 0.0,
+  "pass": true
+ },
+ "audit6_7_contribution_recompute": {
+  "max_diff": 1.7018350687014738e-09,
+  "tolerance": 5e-09,
+  "rationale": "float32 storage rounding (values O(1e-2))",
+  "pass": true
+ },
+ "audit8_decomposition_sum": {
+  "max_abs_diff": 4.470348358154297e-08,
+  "tolerance": 3e-07,
+  "rationale": "float32 storage of Hk: <=8 ulps of max|Hk|",
+  "pass": true
+ },
+ "audit9_12_17_gates": {
+  "n_theta": 8,
+  "all_scalar": true,
+  "theta_init": -2.0,
+  "v_init": 0.11920292202211755,
+  "v_sigmoid_in_open_interval": true,
+  "init_below_half": true,
+  "pass": true
+ },
+ "audit1_2_v1_identity_H_X": {
+  "H_diff": 1.30385160446167e-08,
+  "X_diff": 1.30385160446167e-08,
+  "tolerance": 3e-07,
+  "rationale": "float32 storage of Hk (<=8 ulps of max|Hk|)",
+  "pass": true
+ },
+ "audit3_v1_ridge_identity": {
+  "our_v1_val_macro_f1": 0.948441,
+  "sklearn_R2_val_macro_f1": 0.948441,
+  "prediction_agreement": 1.0,
+  "alpha_frozen": 1.623776739188721,
+  "pass": true
+ },
+ "audit15_v0_identity": {
+  "max_abs_Hgated": 1.902236851296132e-27,
+  "pass": true
+ },
+ "audit4_5_6_softmax_removed": {
+  "scanned": "ridge_gate.py (tokenized: comments/strings stripped)",
+  "banned_tokens_found": [],
+  "pass": true
+ },
+ "audit8_frozen_context": {
+  "frozen": true,
+  "pass": true
+ },
+ "audit14_15_dims": {
+  "G": 4998,
+  "H": 4998,
+  "total": 9996,
+  "pass": true
+ },
+ "audit12_penalty_form": {
+  "value": 0.0105625,
+  "expected": 0.0105625,
+  "pass": true
+ },
+ "audit11_grad_through_solve": {
+  "all_steps_grad_finite_nonzero": true,
+  "pass": true
+ },
+ "audit16_determinism_note": {
+  "seed": 42,
+  "optimizer": "Adam(lr=1e-2) on theta only",
+  "note": "no stochastic op in the graph; identical inputs give identical trajectories"
+ },
+ "audit9_10_13_alpha_fit": {
+  "alpha_frozen_r2": 1.623776739188721,
+  "alpha_source": "results/rcmkn_ssl_context_important2_seed42/ECG5000_BAL/result.json:/results/R2/selected_alpha",
+  "alpha_not_reoptimized": true,
+  "train_only_during_gate_opt": true,
+  "final_refit": "train+val (R2 convention)",
+  "n_gates": 8,
+  "pass": true
+ },
+ "audit17_18_protocol": {
+  "test_metrics_during_gate_opt": false,
+  "single_test_eval_per_system": true,
+  "selection": "best val Macro-F1 (tie: lower val MSE)",
+  "pass": true
+ }
+}

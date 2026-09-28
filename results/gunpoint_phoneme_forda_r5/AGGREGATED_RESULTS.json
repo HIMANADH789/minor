@@ -1,0 +1,125 @@
+{
+  "GunPoint": {
+    "mr": {
+      "mean": 0.9933,
+      "std": 0.0,
+      "values": [
+        0.9933,
+        0.9933,
+        0.9933
+      ]
+    },
+    "heramaba_raw": {
+      "mean": 1.0,
+      "std": 0.0,
+      "values": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "heramaba_final": {
+      "mean": 1.0,
+      "std": 0.0,
+      "values": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "deltas": {
+      "per_seed": [
+        0.0067,
+        0.0067,
+        0.0067
+      ],
+      "mean": 0.0067,
+      "median": 0.0067,
+      "std": 0.0
+    },
+    "heramaba_wins": 3,
+    "n_fallback": 0
+  },
+  "Phoneme": {
+    "mr": {
+      "mean": 0.0808,
+      "std": 0.0,
+      "values": [
+        0.0808,
+        0.0808,
+        0.0808
+      ]
+    },
+    "heramaba_raw": {
+      "mean": 0.1179,
+      "std": 0.0056,
+      "values": [
+        0.1238,
+        0.1128,
+        0.117
+      ]
+    },
+    "heramaba_final": {
+      "mean": 0.1179,
+      "std": 0.0056,
+      "values": [
+        0.1238,
+        0.1128,
+        0.117
+      ]
+    },
+    "deltas": {
+      "per_seed": [
+        0.043,
+        0.032,
+        0.0362
+      ],
+      "mean": 0.0371,
+      "median": 0.0362,
+      "std": 0.0056
+    },
+    "heramaba_wins": 3,
+    "n_fallback": 0
+  },
+  "FordA": {
+    "mr": {
+      "mean": 0.9499,
+      "std": 0.0,
+      "values": [
+        0.9499,
+        0.9499,
+        0.9499
+      ]
+    },
+    "heramaba_raw": {
+      "mean": 0.9525,
+      "std": 0.0031,
+      "values": [
+        0.9553,
+        0.9492,
+        0.953
+      ]
+    },
+    "heramaba_final": {
+      "mean": 0.9525,
+      "std": 0.0031,
+      "values": [
+        0.9553,
+        0.9492,
+        0.953
+      ]
+    },
+    "deltas": {
+      "per_seed": [
+        0.0054,
+        -0.0007,
+        0.0031
+      ],
+      "mean": 0.0026,
+      "median": 0.0031,
+      "std": 0.0031
+    },
+    "heramaba_wins": 2,
+    "n_fallback": 0
+  }
+}

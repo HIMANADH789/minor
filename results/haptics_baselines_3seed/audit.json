@@ -1,0 +1,101 @@
+{
+  "dataset_audit": {
+    "dataset": true,
+    "train_132": true,
+    "val_23": true,
+    "test_308": true,
+    "T_1092": true,
+    "classes_5": true,
+    "znorm_applied": true,
+    "frozen_split_val_source": true
+  },
+  "per_run": [
+    {
+      "model": "InceptionTime",
+      "seed": 42,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "InceptionTime",
+      "seed": 43,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "InceptionTime",
+      "seed": 44,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "FCN",
+      "seed": 42,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "FCN",
+      "seed": 43,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "FCN",
+      "seed": 44,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "ResNet1D",
+      "seed": 42,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "ResNet1D",
+      "seed": 43,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "ResNet1D",
+      "seed": 44,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "PatchTST",
+      "seed": 42,
+      "source": "reused_external_stack_seed42",
+      "audit_pass": true
+    },
+    {
+      "model": "PatchTST",
+      "seed": 43,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    },
+    {
+      "model": "PatchTST",
+      "seed": 44,
+      "source": "fresh_run_neural_baseline",
+      "audit_pass": true
+    }
+  ],
+  "r2_r5_not_overwritten": true,
+  "test_evals_per_run": 1,
+  "environment": {
+    "python_version": "3.11.9",
+    "pytorch_version": "2.5.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "determinism": "torch.manual_seed + np.random.seed + cuda.manual_seed_all per run (canonical set_seed); split seed fixed at 42 for all runs"
+  },
+  "all_pass": true
+}

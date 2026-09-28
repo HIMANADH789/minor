@@ -1,0 +1,7 @@
+dataset,variant,time_ridge_s,time_total_s,n_features
+EpilepticSeizures,M0,0.03,0.75,9996
+EpilepticSeizures,M3,0.16,6.32,69972
+Haptics,M0,0.05,0.24,9996
+Haptics,M3,0.22,0.8,69972
+Phoneme,M0,0.08,0.62,9996
+Phoneme,M3,0.34,2.5,69972

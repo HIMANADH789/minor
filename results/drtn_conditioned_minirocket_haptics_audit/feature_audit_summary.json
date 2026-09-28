@@ -1,0 +1,416 @@
+{
+  "42": {
+    "seed": 42,
+    "n_subset_trva": 40,
+    "n_subset_test": 40,
+    "checkpoint_table": {
+      "C0": {
+        "name": "DRTN regimes",
+        "hash_test": "49833a2a762d7e8c",
+        "occupancy_test": [
+          4692,
+          0,
+          2616,
+          21025,
+          364,
+          12,
+          79,
+          14892
+        ]
+      },
+      "C1": {
+        "name": "M2 current regimes",
+        "hash_test": "f2c338e2580ae197",
+        "occupancy_test": [
+          4760,
+          0,
+          2528,
+          21114,
+          381,
+          9,
+          79,
+          14809
+        ]
+      },
+      "C1s": {
+        "name": "M2 spec regimes",
+        "hash_test": "f12b3f40151012e9",
+        "occupancy_test": [
+          4692,
+          0,
+          2616,
+          21025,
+          364,
+          12,
+          79,
+          14892
+        ]
+      },
+      "C2": {
+        "name": "M3 regimes",
+        "hash_test": "3906836dac5b573b",
+        "occupancy_test": [
+          4692,
+          0,
+          2616,
+          21025,
+          364,
+          12,
+          79,
+          14892
+        ]
+      }
+    },
+    "array_checks": {
+      "C1_vs_C2_arrays_differ": true,
+      "C1s_vs_C2_arrays_differ": true,
+      "C1_vs_C1s_arrays_differ": true,
+      "C1_vs_C0_arrays_differ": true,
+      "C2_vs_C0_arrays_differ": true,
+      "no_shared_memory_C1_C2": true
+    },
+    "feature_checks": {
+      "H2_vs_H3_test": {
+        "max_abs_diff": 0.006243718870411368,
+        "mean_abs_diff": 8.145146582280641e-05,
+        "n_exactly_equal": 166363,
+        "n_elements": 199920,
+        "hash_a": "c5216b6d24765b8e",
+        "allclose": false
+      },
+      "H2s_vs_H3_test": {
+        "max_abs_diff": 0.004690948178691719,
+        "mean_abs_diff": 8.151374668421239e-05,
+        "n_exactly_equal": 166539,
+        "n_elements": 199920,
+        "hash_a": "eaf8a1131767f678",
+        "allclose": false
+      },
+      "H2_vs_H2s_test": {
+        "max_abs_diff": 0.005739017014271477,
+        "mean_abs_diff": 8.245132346973517e-05,
+        "n_exactly_equal": 166363,
+        "n_elements": 199920,
+        "hash_a": "c5216b6d24765b8e",
+        "allclose": false
+      },
+      "H1_vs_H3_test": {
+        "max_abs_diff": 0.18221906904891227,
+        "mean_abs_diff": 0.003386746152980726,
+        "n_exactly_equal": 166512,
+        "n_elements": 199920,
+        "hash_a": "3aa730f2e9e99e25",
+        "allclose": false
+      },
+      "H2_vs_H3_trva": {
+        "max_abs_diff": 0.004513643092479989,
+        "mean_abs_diff": 8.471169706333275e-05,
+        "n_exactly_equal": 166373,
+        "n_elements": 199920,
+        "hash_a": "830d4c8ff2fbaa3c",
+        "allclose": false
+      },
+      "H2s_vs_H3_trva": {
+        "max_abs_diff": 0.004053481076136746,
+        "mean_abs_diff": 7.839895288037061e-05,
+        "n_exactly_equal": 166540,
+        "n_elements": 199920,
+        "hash_a": "f6f1e7bbf9303e44",
+        "allclose": false
+      }
+    },
+    "classifier_checks": {
+      "selected_alpha": {
+        "M1": 29.763514416313132,
+        "M2": 29.763514416313132,
+        "M2spec": 29.763514416313132,
+        "M3": 29.763514416313132
+      },
+      "test_mf1_subset": {
+        "M1": 0.1945,
+        "M2": 0.1945,
+        "M2spec": 0.1945,
+        "M3": 0.1945
+      },
+      "M2_vs_M3_pred_identical": true,
+      "M2spec_vs_M3_pred_identical": true,
+      "M1_vs_M3_pred_identical": true
+    }
+  },
+  "43": {
+    "seed": 43,
+    "n_subset_trva": 40,
+    "n_subset_test": 40,
+    "checkpoint_table": {
+      "C0": {
+        "name": "DRTN regimes",
+        "hash_test": "aa9b41b59826cd34",
+        "occupancy_test": [
+          9253,
+          2772,
+          8024,
+          1804,
+          2077,
+          1,
+          4,
+          19745
+        ]
+      },
+      "C1": {
+        "name": "M2 current regimes",
+        "hash_test": "207070b6cb6ddb31",
+        "occupancy_test": [
+          8991,
+          2727,
+          8163,
+          1837,
+          2076,
+          1,
+          5,
+          19880
+        ]
+      },
+      "C1s": {
+        "name": "M2 spec regimes",
+        "hash_test": "c5e7a9323c10f729",
+        "occupancy_test": [
+          9253,
+          2772,
+          8024,
+          1804,
+          2077,
+          1,
+          4,
+          19745
+        ]
+      },
+      "C2": {
+        "name": "M3 regimes",
+        "hash_test": "69a7bc878534fe34",
+        "occupancy_test": [
+          9253,
+          2772,
+          8024,
+          1804,
+          2077,
+          1,
+          4,
+          19745
+        ]
+      }
+    },
+    "array_checks": {
+      "C1_vs_C2_arrays_differ": true,
+      "C1s_vs_C2_arrays_differ": true,
+      "C1_vs_C1s_arrays_differ": true,
+      "C1_vs_C0_arrays_differ": true,
+      "C2_vs_C0_arrays_differ": true,
+      "no_shared_memory_C1_C2": true
+    },
+    "feature_checks": {
+      "H2_vs_H3_test": {
+        "max_abs_diff": 0.006002019886990402,
+        "mean_abs_diff": 0.00010586644847888443,
+        "n_exactly_equal": 166725,
+        "n_elements": 199920,
+        "hash_a": "87e215f3e3eed7f3",
+        "allclose": false
+      },
+      "H2s_vs_H3_test": {
+        "max_abs_diff": 0.005112819513773577,
+        "mean_abs_diff": 0.00010287636260933939,
+        "n_exactly_equal": 166828,
+        "n_elements": 199920,
+        "hash_a": "e4aa90eaa8ae5f4d",
+        "allclose": false
+      },
+      "H2_vs_H2s_test": {
+        "max_abs_diff": 0.0058013526831426345,
+        "mean_abs_diff": 0.00010284256236066523,
+        "n_exactly_equal": 166725,
+        "n_elements": 199920,
+        "hash_a": "87e215f3e3eed7f3",
+        "allclose": false
+      },
+      "H1_vs_H3_test": {
+        "max_abs_diff": 0.18148755327588567,
+        "mean_abs_diff": 0.004242926606053676,
+        "n_exactly_equal": 166778,
+        "n_elements": 199920,
+        "hash_a": "3fde0e7e1c134018",
+        "allclose": false
+      },
+      "H2_vs_H3_trva": {
+        "max_abs_diff": 0.00575153478857654,
+        "mean_abs_diff": 0.00010221205609778723,
+        "n_exactly_equal": 166727,
+        "n_elements": 199920,
+        "hash_a": "cb94e78d8e525e39",
+        "allclose": false
+      },
+      "H2s_vs_H3_trva": {
+        "max_abs_diff": 0.005376592321935415,
+        "mean_abs_diff": 0.00010669250720688724,
+        "n_exactly_equal": 166848,
+        "n_elements": 199920,
+        "hash_a": "4fa0bef1a523a748",
+        "allclose": false
+      }
+    },
+    "classifier_checks": {
+      "selected_alpha": {
+        "M1": 29.763514416313132,
+        "M2": 29.763514416313132,
+        "M2spec": 29.763514416313132,
+        "M3": 29.763514416313132
+      },
+      "test_mf1_subset": {
+        "M1": 0.1945,
+        "M2": 0.1968,
+        "M2spec": 0.1968,
+        "M3": 0.1968
+      },
+      "M2_vs_M3_pred_identical": true,
+      "M2spec_vs_M3_pred_identical": true,
+      "M1_vs_M3_pred_identical": false
+    }
+  },
+  "44": {
+    "seed": 44,
+    "n_subset_trva": 40,
+    "n_subset_test": 40,
+    "checkpoint_table": {
+      "C0": {
+        "name": "DRTN regimes",
+        "hash_test": "f283fcf186b043cb",
+        "occupancy_test": [
+          174,
+          3519,
+          304,
+          5313,
+          17075,
+          12224,
+          5066,
+          5
+        ]
+      },
+      "C1": {
+        "name": "M2 current regimes",
+        "hash_test": "6327ec9723dc8e62",
+        "occupancy_test": [
+          159,
+          3640,
+          280,
+          5334,
+          17046,
+          12123,
+          5096,
+          2
+        ]
+      },
+      "C1s": {
+        "name": "M2 spec regimes",
+        "hash_test": "c49d3172b3ef0b84",
+        "occupancy_test": [
+          174,
+          3519,
+          304,
+          5313,
+          17075,
+          12224,
+          5066,
+          5
+        ]
+      },
+      "C2": {
+        "name": "M3 regimes",
+        "hash_test": "66966ed3771d70e7",
+        "occupancy_test": [
+          174,
+          3519,
+          304,
+          5313,
+          17075,
+          12224,
+          5066,
+          5
+        ]
+      }
+    },
+    "array_checks": {
+      "C1_vs_C2_arrays_differ": true,
+      "C1s_vs_C2_arrays_differ": true,
+      "C1_vs_C1s_arrays_differ": true,
+      "C1_vs_C0_arrays_differ": true,
+      "C2_vs_C0_arrays_differ": true,
+      "no_shared_memory_C1_C2": true
+    },
+    "feature_checks": {
+      "H2_vs_H3_test": {
+        "max_abs_diff": 0.004990713775189034,
+        "mean_abs_diff": 9.173530805572313e-05,
+        "n_exactly_equal": 167587,
+        "n_elements": 199920,
+        "hash_a": "a0077eca60c32afb",
+        "allclose": false
+      },
+      "H2s_vs_H3_test": {
+        "max_abs_diff": 0.005560996457411486,
+        "mean_abs_diff": 9.47854561554097e-05,
+        "n_exactly_equal": 167653,
+        "n_elements": 199920,
+        "hash_a": "8b41dc2e2af26c91",
+        "allclose": false
+      },
+      "H2_vs_H2s_test": {
+        "max_abs_diff": 0.00538757940257309,
+        "mean_abs_diff": 9.570712661975057e-05,
+        "n_exactly_equal": 167587,
+        "n_elements": 199920,
+        "hash_a": "a0077eca60c32afb",
+        "allclose": false
+      },
+      "H1_vs_H3_test": {
+        "max_abs_diff": 0.1829446799310323,
+        "mean_abs_diff": 0.004068033958202737,
+        "n_exactly_equal": 167661,
+        "n_elements": 199920,
+        "hash_a": "baf1aaa61ff8021a",
+        "allclose": false
+      },
+      "H2_vs_H3_trva": {
+        "max_abs_diff": 0.004752331137622727,
+        "mean_abs_diff": 9.104063974978529e-05,
+        "n_exactly_equal": 167583,
+        "n_elements": 199920,
+        "hash_a": "c74bc3a0bedb8c4d",
+        "allclose": false
+      },
+      "H2s_vs_H3_trva": {
+        "max_abs_diff": 0.004716920848661975,
+        "mean_abs_diff": 9.526338823433806e-05,
+        "n_exactly_equal": 167673,
+        "n_elements": 199920,
+        "hash_a": "512d46033e992e20",
+        "allclose": false
+      }
+    },
+    "classifier_checks": {
+      "selected_alpha": {
+        "M1": 29.763514416313132,
+        "M2": 29.763514416313132,
+        "M2spec": 29.763514416313132,
+        "M3": 29.763514416313132
+      },
+      "test_mf1_subset": {
+        "M1": 0.1945,
+        "M2": 0.1968,
+        "M2spec": 0.1968,
+        "M3": 0.1968
+      },
+      "M2_vs_M3_pred_identical": true,
+      "M2spec_vs_M3_pred_identical": true,
+      "M1_vs_M3_pred_identical": false
+    }
+  }
+}

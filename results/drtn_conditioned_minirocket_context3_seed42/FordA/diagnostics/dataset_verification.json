@@ -1,0 +1,19 @@
+{
+  "name": "FordA",
+  "source_path": "data\\kaggle\\FordA",
+  "n_classes": 2,
+  "L": 500,
+  "label_set_original": [
+    -1,
+    1
+  ],
+  "label_map": {
+    "-1": 0,
+    "1": 1
+  },
+  "val_source": "stratified_15pct_of_train_seed42",
+  "file_sha256": {
+    "FordA_TRAIN.tsv": "f80f6df3336194b2d52bb29fc41c980e7f0a809c80a5c5b79121d74622e0a7de",
+    "FordA_TEST.tsv": "02a17aab8794822957f7d50e3f6904f10b7dfa5c858bbb2b8047c4b0c64bbefe"
+  }
+}

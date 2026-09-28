@@ -1,0 +1,6 @@
+component,configuration,provenance
+MR control,"aeon MiniRocket random_state=42 fit train-only; RidgeClassifierCV logspace(-4,4,20); train-only -> val diag; train+val refit -> ONE test eval",canonical
+HERAMBA R5,frozen R2 recipe: per-seed RCMKNContextModel SSL+VQ K=8+joint context; occupancy-weighted H (min_occ 0.01); [G 4998 || H 4998],audited rcmkn core; UNCHANGED
+fallback,validation-stage only: HERAMBA if her_val >= mr_val else identical MR model; test evaluated once for the final model; raw-HERAMBA test recorded for audit only,task protocol section 9
+split seeds,GunPoint/FordA: canonical UCR train/test files (never re-split) + stratified 15% of train as val (seed 42); Phoneme: provided canonical val; identical across experiment seeds,loaders asserted
+gates,"GunPoint MR 0.9933 (exact, tol 0.0011); Phoneme MR 0.0808 (exact, tol 0.011); FordA MR 0.9499 (exact, tol 0.011); GunPoint HERAMBA 1.0000 (exact canonical R2); Phoneme raw-HERAMBA 0.1238/0.1128/0.1170 vs canonical 0.1182 (within tol); FordA raw-HERAMBA 0.9553/0.9492/0.9530 vs canonical 0.9560 (within tol)",all PASS

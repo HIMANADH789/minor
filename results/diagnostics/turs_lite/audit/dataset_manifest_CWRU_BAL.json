@@ -1,0 +1,65 @@
+{
+  "dataset": "CWRU_BAL",
+  "source_file": "data/cwru_balanced.npz",
+  "source_sha256": "da1f15b14330d37a7a4bbc996ac8af4e5c07bc8cd43e53a1802a0bfaede43969",
+  "n_samples_total": 3776,
+  "signal_length": 1024,
+  "num_classes": 4,
+  "label_mapping": {
+    "labels_present": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "contiguous": true
+  },
+  "split": {
+    "protocol": "stratified 85/15 then val",
+    "seed": 42,
+    "val_frac_of_train": 0.15,
+    "train": 2727,
+    "val": 482,
+    "test": 567
+  },
+  "class_counts": {
+    "train": [
+      682,
+      682,
+      682,
+      681
+    ],
+    "val": [
+      120,
+      121,
+      120,
+      121
+    ],
+    "test": [
+      142,
+      141,
+      142,
+      142
+    ]
+  },
+  "normalization": "per-sample z-normalization (mean/std over time, eps=1e-8)",
+  "leakage_checks": {
+    "test_disjoint_from_trainval": true,
+    "split_deterministic_given_seed": true,
+    "normalization_fitted_per_sample": "no train-statistics leakage"
+  },
+  "raw_examples_shapes": {
+    "train": [
+      2727,
+      1024
+    ],
+    "val": [
+      482,
+      1024
+    ],
+    "test": [
+      567,
+      1024
+    ]
+  }
+}

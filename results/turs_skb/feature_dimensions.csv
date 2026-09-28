@@ -1,0 +1,5 @@
+dataset,m0_dim,m6_dim,added_features,delta_mf1_all5,delta_mf1_per_1k_features,family_dims
+ECG5000_UNBAL,9996,11787,1791,-0.0202,-0.01128,"{""morphological"": 675, ""derivative"": 126, ""wavelet"": 342, ""gabor"": 540, ""energy"": 108}"
+ECG5000_BAL,9996,11787,1791,-0.0479,-0.02674,"{""morphological"": 675, ""derivative"": 126, ""wavelet"": 342, ""gabor"": 540, ""energy"": 108}"
+CWRU_UNBAL,9996,13632,3636,-0.0334,-0.00919,"{""morphological"": 1080, ""derivative"": 144, ""wavelet"": 576, ""gabor"": 1728, ""energy"": 108}"
+CWRU_BAL,9996,13632,3636,-0.0105,-0.00289,"{""morphological"": 1080, ""derivative"": 144, ""wavelet"": 576, ""gabor"": 1728, ""energy"": 108}"

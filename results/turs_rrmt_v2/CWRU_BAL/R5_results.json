@@ -1,0 +1,49 @@
+{
+  "dataset": "CWRU_BAL",
+  "variant": "R5",
+  "n_cls": 4,
+  "test": {
+    "macro_f1": 0.7806002825180907,
+    "accuracy": 0.781305114638448,
+    "weighted_f1": 0.7806723711514608,
+    "balanced_accuracy": 0.7812780940964938,
+    "mcc": 0.7135137924159065,
+    "kappa": 0.7084180055240828,
+    "confusion_matrix": [
+      [
+        142,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        108,
+        32,
+        0
+      ],
+      [
+        11,
+        24,
+        104,
+        3
+      ],
+      [
+        4,
+        19,
+        30,
+        89
+      ]
+    ]
+  },
+  "val_mf1": 0.7324322647876141,
+  "selected_lambda": 0.01,
+  "kernel_dim": 10,
+  "kernel_validation": {
+    "symmetry_error": 2.86e-06,
+    "min_eigenvalue": -0.003556,
+    "n_negative_eigenvalues": 1315,
+    "condition_number": -4523293.0
+  },
+  "elapsed_s": 0.8
+}

@@ -1,0 +1,6 @@
+dataset,mr_fit_s,regional_trainval_s,regional_test_s,val_transform_s
+ECG5000_UNBAL,0.35,0.57,0.54,0.03
+ECG5000_BAL,0.25,0.82,0.55,0.04
+CWRU_UNBAL,0.38,1.03,0.3,0.06
+CWRU_BAL,0.81,2.38,0.72,0.13
+EpilepticSeizures,0.04,0.02,10.04,0.0

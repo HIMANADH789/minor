@@ -1,0 +1,19 @@
+{
+  "name": "GunPoint",
+  "source_path": "data\\kaggle\\GunPoint",
+  "n_classes": 2,
+  "L": 150,
+  "label_set_original": [
+    1,
+    2
+  ],
+  "label_map": {
+    "1": 0,
+    "2": 1
+  },
+  "val_source": "stratified_15pct_of_train_seed42",
+  "file_sha256": {
+    "GunPoint_TRAIN.tsv": "4d14e4f44a6230087cb4b4ed7844c8b0feb76f07a76108cc367d689e0de8f609",
+    "GunPoint_TEST.tsv": "5537eb2f3050e1514f3221b5f4c9799b350fb229ea15eed9e78bbae855505ccf"
+  }
+}

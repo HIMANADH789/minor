@@ -1,0 +1,5 @@
+dataset,minirocket_10k,minirocket_10k_plus_turs_local,note
+ECG5000_UNBAL,0.5938,N/A (GLD-A3 uses M=2016),GLD-A3 uses M=2016; no M=10K+TURS Local result exists
+ECG5000_BAL,0.6553,N/A (GLD-A3 uses M=2016),GLD-A3 uses M=2016; no M=10K+TURS Local result exists
+CWRU_UNBAL,0.9917,N/A (GLD-A3 uses M=2016),GLD-A3 uses M=2016; no M=10K+TURS Local result exists
+CWRU_BAL,0.9947,N/A (GLD-A3 uses M=2016),GLD-A3 uses M=2016; no M=10K+TURS Local result exists

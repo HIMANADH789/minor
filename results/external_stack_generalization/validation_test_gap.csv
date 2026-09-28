@@ -1,0 +1,22 @@
+dataset,model,val_macro_f1,test_macro_f1,gap_test_minus_val
+EpilepticSeizures,MiniROCKET,0.9499,0.9194,-0.0305
+EpilepticSeizures,InceptionTime,0.9499,0.906,-0.0439
+EpilepticSeizures,ResNet-1D,0.7333,0.7935,0.0602
+EpilepticSeizures,FCN,0.6011,0.3018,-0.2993
+EpilepticSeizures,PatchTST,0.3333,0.1331,-0.2002
+EpilepticSeizures,TURS-Stack,1.0,0.8706,-0.1294
+EpilepticSeizures,TURS-Stack (soft-vote),1.0,0.8706,-0.1294
+Haptics,MiniROCKET,0.5879,0.4974,-0.0905
+Haptics,InceptionTime,0.0714,0.0636,-0.0078
+Haptics,ResNet-1D,0.2333,0.1512,-0.0821
+Haptics,FCN,0.0714,0.0634,-0.008
+Haptics,PatchTST,0.1923,0.1692,-0.0231
+Haptics,TURS-Stack,0.7711,0.3553,-0.4158
+Haptics,TURS-Stack (soft-vote),0.2778,0.2633,-0.0145
+Phoneme,MiniROCKET,0.1035,0.0808,-0.0227
+Phoneme,InceptionTime,0.1367,0.0445,-0.0922
+Phoneme,ResNet-1D,0.0601,0.0258,-0.0343
+Phoneme,FCN,0.0,0.0015,
+Phoneme,PatchTST,0.0464,0.0126,-0.0338
+Phoneme,TURS-Stack,1.0,0.0785,-0.9215
+Phoneme,TURS-Stack (soft-vote),0.1483,0.0574,-0.0909

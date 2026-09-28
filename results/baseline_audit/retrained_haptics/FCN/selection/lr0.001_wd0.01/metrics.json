@@ -1,0 +1,80 @@
+{
+ "accuracy": 0.4123,
+ "macro_f1": 0.3882,
+ "weighted_f1": 0.3881,
+ "balanced_accuracy": 0.4127,
+ "class_f1s": [
+  0.2254,
+  0.4068,
+  0.5455,
+  0.304,
+  0.4595
+ ],
+ "class_precision": [
+  0.7273,
+  0.4,
+  0.4421,
+  0.3115,
+  0.4198
+ ],
+ "class_recall": [
+  0.1333,
+  0.4138,
+  0.7119,
+  0.2969,
+  0.5075
+ ],
+ "confusion_matrix": [
+  [
+   8,
+   4,
+   21,
+   11,
+   16
+  ],
+  [
+   1,
+   24,
+   6,
+   16,
+   11
+  ],
+  [
+   1,
+   6,
+   42,
+   3,
+   7
+  ],
+  [
+   1,
+   21,
+   10,
+   19,
+   13
+  ],
+  [
+   0,
+   5,
+   16,
+   12,
+   34
+  ]
+ ],
+ "model": "FCN",
+ "seed": 42,
+ "config": {
+  "lr": 0.001,
+  "wd": 0.01
+ },
+ "batch_size": 16,
+ "max_epochs": 100,
+ "patience": 25,
+ "stopped_epoch": 100,
+ "best_epoch": 84,
+ "val_macro_f1": 0.3602,
+ "train_macro_f1_at_best": 0.5336,
+ "params_trainable": 66885,
+ "time_train_s": 4.76,
+ "device": "cuda"
+}

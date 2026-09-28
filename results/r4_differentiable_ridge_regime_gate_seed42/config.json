@@ -1,0 +1,71 @@
+{
+ "experiment": "R4 differentiable-Ridge regime-level heterogeneity gate",
+ "seed": 42,
+ "datasets": {
+  "Haptics": {
+   "expected_split": {
+    "train": 132,
+    "val": 23,
+    "test": 308,
+    "T": 1092,
+    "n_classes": 5
+   },
+   "M0_reference": 0.4974,
+   "R2_reference": 0.55,
+   "alpha_r2_frozen": 4.281332398719396,
+   "alpha_source": "results/rcmkn_haptics_seed42/report.json:/results/R2/selected_alpha",
+   "ckpt_sha16": "2dbb0cf4f3db3df8"
+  },
+  "ECG5000_BAL": {
+   "expected_split": {
+    "train": 5226,
+    "val": 923,
+    "test": 1000,
+    "T": 140,
+    "n_classes": 5
+   },
+   "M0_reference": 0.6553,
+   "R2_reference": 0.6409,
+   "alpha_r2_frozen": 1.623776739188721,
+   "alpha_source": "results/rcmkn_ssl_context_important2_seed42/ECG5000_BAL/result.json:/results/R2/selected_alpha",
+   "ckpt_sha16": "f2eda1b2ff0bbe99"
+  }
+ },
+ "representation": {
+  "G": 4998,
+  "H_contributions": "H_{m,k} = q_k (PPV_{m,k} - PPV_m)^2 (audited R2 semantics)",
+  "H_m_R2": "sum_k H_{m,k}",
+  "total_dim": 9996,
+  "frozen": "MiniROCKET + SSL encoder + hard VQ (K=8) from audited R2 checkpoints"
+ },
+ "gates": {
+  "n": 8,
+  "parameterization": "v_k = sigmoid(theta_k)",
+  "theta_init": -2.0,
+  "v_init": 0.1192029,
+  "penalty": "lambda_v * sum_k theta_k^2",
+  "lambda_v": 0.001
+ },
+ "stage5": {
+  "classifier": "closed-form dual Ridge (torch.linalg.cholesky on Xc_tr(v) Xc_tr(v)^T + alpha I), float64",
+  "outer_objective": "validation one-hot MSE + lambda_v sum theta^2",
+  "optimizer": "Adam lr=1e-2 on theta only",
+  "max_steps": 500,
+  "patience": 50,
+  "ridge_fit_during_gate_opt": "TRAIN rows only",
+  "final_refit": "train+val at frozen best-v (R2 convention)",
+  "target_encoding": "one-hot {0,1}, centered intercept (sklearn RidgeClassifier semantics)"
+ },
+ "controls": {
+  "A_G": "sklearn RidgeClassifierCV(alphas=logspace(-4,4,20), trainva fit)",
+  "B_v1": "same, on [G||H] -- R2-equivalent"
+ },
+ "figures": [
+  "fig1_validation",
+  "fig2_trajectories_Haptics",
+  "fig3_trajectories_ECG5000_BAL",
+  "fig4_5_final_gates",
+  "fig6_test",
+  "fig7_8_gate_vs_regime_props"
+ ]
+}

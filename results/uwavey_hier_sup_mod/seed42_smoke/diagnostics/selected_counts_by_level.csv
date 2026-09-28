@@ -1,0 +1,6 @@
+level,source_type,pool_columns,selected,share_of_final,share_of_pool
+1,root_increment,19992,14865,0.743547,0.743547
+2,hierarchy_delta,29988,3655,0.182823,0.121882
+4,hierarchy_delta,59976,1290,0.064526,0.021509
+8,hierarchy_delta,119952,160,0.008003,0.001334
+16,hierarchy_delta,239904,22,0.001100,0.000092

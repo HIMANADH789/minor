@@ -1,0 +1,35 @@
+{
+  "dataset": "CWRU_BAL",
+  "source": "data/cwru_balanced.npz",
+  "sha256": "da1f15b14330d37a7a4bbc996ac8af4e5c07bc8cd43e53a1802a0bfaede43969",
+  "signal_length": 1024,
+  "num_classes": 4,
+  "split": {
+    "train": 2642,
+    "val": 567,
+    "test": 567
+  },
+  "class_counts": {
+    "y_train": [
+      661,
+      661,
+      660,
+      660
+    ],
+    "y_val": [
+      141,
+      142,
+      142,
+      142
+    ],
+    "y_test": [
+      142,
+      141,
+      142,
+      142
+    ]
+  },
+  "preprocessing": "per-sample z-norm (eps 1e-8)",
+  "seed": 42,
+  "deterministic": true
+}

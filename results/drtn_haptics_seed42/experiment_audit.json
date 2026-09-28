@@ -1,0 +1,69 @@
+{
+  "dataset": "Haptics",
+  "source": {
+    "test": "C:\\temp\\ECG_Benchmark\\data\\external\\extracted\\Haptics\\Haptics_TEST.ts",
+    "train": "C:\\temp\\ECG_Benchmark\\data\\external\\extracted\\Haptics\\Haptics_TRAIN.ts"
+  },
+  "train": 132,
+  "val": 23,
+  "test": 308,
+  "sequence_length": 1092,
+  "channels": 1,
+  "univariate": true,
+  "n_classes": 5,
+  "class_names": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "train_class_distribution": {
+    "0": 15,
+    "1": 29,
+    "2": 29,
+    "3": 31,
+    "4": 28
+  },
+  "val_class_distribution": {
+    "0": 3,
+    "1": 5,
+    "2": 5,
+    "3": 5,
+    "4": 5
+  },
+  "test_class_distribution": {
+    "0": 60,
+    "1": 58,
+    "2": 59,
+    "3": 64,
+    "4": 67
+  },
+  "normalization": "per-sample z-norm (project canonical)",
+  "val_source": "per_class_stratified_15pct_of_train_seed42_singletons_kept_in_train",
+  "environment": {
+    "python": "3.11.9",
+    "torch": "2.5.1+cu121",
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "numpy": "2.3.5",
+    "seed": 42
+  },
+  "config": {
+    "d_model": 64,
+    "n_codes": 8,
+    "tau": 0.5,
+    "ema_decay": 0.99,
+    "beta_commit": 0.25,
+    "lam_div": 0.01,
+    "dead_threshold": 0.001,
+    "revival_patience": 100,
+    "batch_size": 16,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 60,
+    "patience": 10,
+    "selection": "best validation Macro-F1 checkpoint; test evaluated once after freezing"
+  }
+}

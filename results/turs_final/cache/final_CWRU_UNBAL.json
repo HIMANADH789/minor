@@ -1,0 +1,68 @@
+{
+  "dataset": "CWRU_UNBAL",
+  "gate_decision": "DROP_KTM_W",
+  "final_model": "MiniROCKET",
+  "n_ktm_features": 0,
+  "final": {
+    "accuracy": 0.9917,
+    "macro_f1": 0.9917,
+    "weighted_f1": 0.9917,
+    "balanced_accuracy": 0.9917,
+    "class_f1s": [
+      1.0,
+      1.0,
+      0.9836,
+      0.9831
+    ],
+    "class_precision": [
+      1.0,
+      1.0,
+      0.9677,
+      1.0
+    ],
+    "class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      0.9667
+    ],
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        60,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        60,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        58
+      ]
+    ],
+    "alpha": 0.233572,
+    "n_features": 9996,
+    "ridge_fit_s": 0.75
+  },
+  "final_test_mf1": 0.9917,
+  "delta_test": 0.0,
+  "counterfactual_model": "MiniROCKET + KTM-W (post-hoc reference)",
+  "counterfactual_test_mf1": 0.9917,
+  "counterfactual_status": "POST-HOC / REFERENCE ONLY (newly evaluated; never used to alter the decision)",
+  "ktm_final_extract_s": 0.0,
+  "final_fit_s": 0.8,
+  "final_inference_s": 0.8,
+  "ktm_inference_s": null
+}

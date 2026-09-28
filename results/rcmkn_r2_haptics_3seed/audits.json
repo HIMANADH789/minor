@@ -1,0 +1,251 @@
+{
+  "global": {
+    "audit1_dataset_identity": {
+      "expected": {
+        "train": 132,
+        "val": 23,
+        "test": 308,
+        "T": 1092,
+        "n_classes": 5
+      },
+      "pass": true
+    },
+    "audit2_split_identical_across_seeds": {
+      "note": "single load, shared arrays; no resampling",
+      "train": 132,
+      "val": 23,
+      "test": 308,
+      "pass": true
+    },
+    "audit3_znorm": {
+      "pass": true,
+      "max_abs_mean": 2.7946500225084492e-08,
+      "max_abs_std_err": 0.0,
+      "identical_to_r2_znorm": true
+    },
+    "audit4_extractor_identity": {
+      "max_abs_diff": 0.0,
+      "pass": true
+    },
+    "audit5_minirocket_seed_fixed_42": {
+      "random_state": 42,
+      "note": "identical for every outer seed",
+      "pass": true
+    },
+    "audit6_G_budget_4998": {
+      "shape": [
+        155,
+        4998
+      ],
+      "pass": true
+    },
+    "audit7_ssl_architecture": {
+      "encoder": {
+        "channels": [
+          32,
+          32,
+          64,
+          64
+        ],
+        "kernel_sizes": [
+          3,
+          5,
+          7,
+          9
+        ],
+        "dilations": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "d_model": 32,
+        "mask_ratio": 0.1,
+        "span_len": 16,
+        "batch_size": 8,
+        "ssl_epochs": 120,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "patience": 20
+      },
+      "vq": {
+        "K": 8,
+        "beta_vq": 0.25,
+        "lam_div": 0.01,
+        "ema_decay": 0.99,
+        "dead_threshold": 0.001,
+        "revival_patience": 100
+      },
+      "joint": {
+        "epochs": 60,
+        "lr": 0.0005,
+        "lambda_cls": 0.1,
+        "patience": 10,
+        "batch_size": 8
+      },
+      "source": "rcmkn_haptics_seed42.config (audited R2)",
+      "pass": true
+    },
+    "seed42_reproduction_gate": {
+      "reference": 0.55,
+      "observed": 0.547,
+      "tolerance": 0.011,
+      "pass": true
+    }
+  },
+  "per_seed": {
+    "42": {
+      "audit8_regimes_deterministic": {
+        "trainva": true,
+        "test": true,
+        "pass": true
+      },
+      "audit9_K_equals_8": {
+        "K": 8,
+        "pass": true
+      },
+      "audit10_H_formula_recompute": {
+        "max_abs_diff": 2.301e-09,
+        "pass": true
+      },
+      "audit11_H_budget_4998": {
+        "H_shape": [
+          308,
+          4998
+        ],
+        "pass": true
+      },
+      "audit12_final_dim_9996": {
+        "G": 4998,
+        "H": 4998,
+        "total": 9996,
+        "pass": true
+      },
+      "audit13_14_15_no_gate_no_mod_no_hydra": {
+        "architecture": "X_R2 = [G || H] only",
+        "learned_gating": false,
+        "raw_response_modulation": false,
+        "hydra_features": false,
+        "pass": true
+      },
+      "audit16_ridge_config": {
+        "classifier": "RidgeClassifierCV",
+        "alphas": "logspace(-4,4,20)",
+        "fit": "train+val; alpha selected on internal LOO-CV",
+        "pass": true
+      },
+      "audit17_no_test_in_selection": {
+        "ssl_val": "validation masked-MSE early stopping",
+        "joint_val": "validation macro-F1 checkpoint selection",
+        "alpha": "RidgeClassifierCV LOO on train+val only",
+        "pass": true
+      },
+      "audit18_single_test_evaluation": {
+        "evaluations": 1,
+        "pass": true
+      }
+    },
+    "43": {
+      "audit8_regimes_deterministic": {
+        "trainva": true,
+        "test": true,
+        "pass": true
+      },
+      "audit9_K_equals_8": {
+        "K": 8,
+        "pass": true
+      },
+      "audit10_H_formula_recompute": {
+        "max_abs_diff": 1.466e-09,
+        "pass": true
+      },
+      "audit11_H_budget_4998": {
+        "H_shape": [
+          308,
+          4998
+        ],
+        "pass": true
+      },
+      "audit12_final_dim_9996": {
+        "G": 4998,
+        "H": 4998,
+        "total": 9996,
+        "pass": true
+      },
+      "audit13_14_15_no_gate_no_mod_no_hydra": {
+        "architecture": "X_R2 = [G || H] only",
+        "learned_gating": false,
+        "raw_response_modulation": false,
+        "hydra_features": false,
+        "pass": true
+      },
+      "audit16_ridge_config": {
+        "classifier": "RidgeClassifierCV",
+        "alphas": "logspace(-4,4,20)",
+        "fit": "train+val; alpha selected on internal LOO-CV",
+        "pass": true
+      },
+      "audit17_no_test_in_selection": {
+        "ssl_val": "validation masked-MSE early stopping",
+        "joint_val": "validation macro-F1 checkpoint selection",
+        "alpha": "RidgeClassifierCV LOO on train+val only",
+        "pass": true
+      },
+      "audit18_single_test_evaluation": {
+        "evaluations": 1,
+        "pass": true
+      }
+    },
+    "44": {
+      "audit8_regimes_deterministic": {
+        "trainva": true,
+        "test": true,
+        "pass": true
+      },
+      "audit9_K_equals_8": {
+        "K": 8,
+        "pass": true
+      },
+      "audit10_H_formula_recompute": {
+        "max_abs_diff": 1.186e-09,
+        "pass": true
+      },
+      "audit11_H_budget_4998": {
+        "H_shape": [
+          308,
+          4998
+        ],
+        "pass": true
+      },
+      "audit12_final_dim_9996": {
+        "G": 4998,
+        "H": 4998,
+        "total": 9996,
+        "pass": true
+      },
+      "audit13_14_15_no_gate_no_mod_no_hydra": {
+        "architecture": "X_R2 = [G || H] only",
+        "learned_gating": false,
+        "raw_response_modulation": false,
+        "hydra_features": false,
+        "pass": true
+      },
+      "audit16_ridge_config": {
+        "classifier": "RidgeClassifierCV",
+        "alphas": "logspace(-4,4,20)",
+        "fit": "train+val; alpha selected on internal LOO-CV",
+        "pass": true
+      },
+      "audit17_no_test_in_selection": {
+        "ssl_val": "validation masked-MSE early stopping",
+        "joint_val": "validation macro-F1 checkpoint selection",
+        "alpha": "RidgeClassifierCV LOO on train+val only",
+        "pass": true
+      },
+      "audit18_single_test_evaluation": {
+        "evaluations": 1,
+        "pass": true
+      }
+    }
+  }
+}

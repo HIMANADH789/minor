@@ -1,0 +1,470 @@
+{
+ "Haptics": {
+  "dataset": "Haptics",
+  "seed": 42,
+  "split": {
+   "train": 132,
+   "val": 23,
+   "test": 308
+  },
+  "validation": {
+   "G": {
+    "val_macro_f1": 0.7894,
+    "alpha": 4.281332398719396
+   },
+   "GH": {
+    "val_macro_f1": 0.9228,
+    "alpha": 4.281332398719396
+   },
+   "R3": {
+    "val_macro_f1": 0.8618,
+    "best_step_mf1": 288,
+    "best_step_mse": 338,
+    "val_mse_at_best_mf1": 0.12242919360761416,
+    "val_mf1_at_best_mse": 0.7109090909090909,
+    "theta_init": -2.0,
+    "w_init": 0.11920292202211755,
+    "theta_best": 0.49722084717016196,
+    "w_best": 0.6218059980396152,
+    "theta_final": 0.6795713365561538,
+    "w_final": 0.6636430174508846,
+    "gate_steps": 339
+   }
+  },
+  "test": {
+   "G": {
+    "test_macro_f1": 0.5037
+   },
+   "GH": {
+    "test_macro_f1": 0.55
+   },
+   "R3": {
+    "test_macro_f1": 0.5355,
+    "w_used": 0.6218059980396152
+   }
+  },
+  "gate": {
+   "w_init": 0.11920292202211755,
+   "w_best": 0.6218059980396152,
+   "w_final": 0.6636430174508846,
+   "theta_init": -2.0,
+   "theta_best": 0.49722084717016196,
+   "theta_final": 0.6795713365561538,
+   "gate_steps": 339
+  },
+  "solver_diagnostics": {
+   "max_residual": 8.382183835919932e-15,
+   "max_cond": 77.43390351250514,
+   "max_gram_symmetry": 0.0,
+   "gate_steps": 339,
+   "final_refit_residual": 4.107825191113079e-15,
+   "final_refit_symmetry": 7.105427357601002e-15
+  },
+  "diagnostics": {
+   "H_block": {
+    "mean": 0.03970467091405281,
+    "std": 0.03356750285154538,
+    "min": 0.0,
+    "max": 0.25,
+    "frac_zero_entries": 0.05148640101201771
+   },
+   "vq": {
+    "codes_trva": {
+     "active_codes": 8,
+     "normalized_entropy": 0.9349626577982334,
+     "perplexity": 6.988040518450766,
+     "dominant_fraction": 0.23615739099610067,
+     "usage": [
+      0.23615739099610067,
+      0.00924022214344795,
+      0.14301075268817204,
+      0.1129977549332388,
+      0.13721493560203238,
+      0.12369136240103983,
+      0.1044842254519674,
+      0.13320335578400094
+     ],
+     "counts": [
+      39972.0,
+      1564.0,
+      24206.0,
+      19126.0,
+      23225.0,
+      20936.0,
+      17685.0,
+      22546.0
+     ]
+    },
+    "codes_te": {
+     "active_codes": 8,
+     "normalized_entropy": 0.9364430484766038,
+     "perplexity": 7.009585548617381,
+     "dominant_fraction": 0.23141144569716,
+     "usage": [
+      0.23141144569716,
+      0.009246705675277104,
+      0.1396847200418629,
+      0.11262249655106799,
+      0.14016935445506873,
+      0.12818134246705676,
+      0.10500214071642643,
+      0.1336817943960801
+     ],
+     "counts": [
+      77832.0,
+      3110.0,
+      46981.0,
+      37879.0,
+      47144.0,
+      43112.0,
+      35316.0,
+      44962.0
+     ]
+    }
+   },
+   "refs": {
+    "M0": 0.4974,
+    "R2": 0.55,
+    "alpha_r2": 4.281332398719396
+   }
+  },
+  "refs": {
+   "M0": 0.4974,
+   "R2": 0.55,
+   "alpha_r2": 4.281332398719396
+  },
+  "deltas": {
+   "R3-M0": 0.0381,
+   "R3-R2": -0.0145,
+   "R3-GH_test": -0.0145,
+   "val_R3_vs_GH": -0.0609,
+   "val_R3_vs_G": 0.0724
+  },
+  "audits": {
+   "audit1_dataset_identity": {
+    "expected": {
+     "train": 132,
+     "val": 23,
+     "test": 308,
+     "T": 1092,
+     "n_classes": 5
+    },
+    "actual": {
+     "train": 132,
+     "val": 23,
+     "test": 308,
+     "T": 1092,
+     "n_classes": 5
+    },
+    "pass": true
+   },
+   "audit2_znorm_identity": {
+    "max_abs_diff": 0.0,
+    "pass": true
+   },
+   "audit3_ckpt_provenance": {
+    "expected_hash": "2dbb0cf4f3db3df8",
+    "actual_hash": "2dbb0cf4f3db3df8",
+    "pass": true
+   },
+   "audit4_regime_determinism": {
+    "byte_identical": true,
+    "pass": true
+   },
+   "audit5_G_identity": {
+    "max_abs_diff": 0.0,
+    "pass": true
+   },
+   "audit6_H_identity": {
+    "max_abs_diff": 0.0,
+    "pass": true
+   },
+   "audit13_15_gate": {
+    "theta_shape": [],
+    "is_scalar": true,
+    "theta_init": -2.0,
+    "w_init": 0.11920292202211755,
+    "w_sigmoid_in_open_interval": true,
+    "init_below_half": true,
+    "pass": true
+   },
+   "audit7_8_w1_identity": {
+    "X_diff": 0.0,
+    "pass": true
+   },
+   "audit9_10_w0_identity": {
+    "wH_max": 0.0,
+    "X_is_G_only": true,
+    "pass": true
+   },
+   "audit11_12_w1_ridge_identity": {
+    "our_w1_val_macro_f1": 0.672121,
+    "sklearn_R2_val_macro_f1": 0.672121,
+    "prediction_agreement": 1.0,
+    "alpha_frozen": 4.281332398719396,
+    "pass": true
+   },
+   "gram_decomposition_exact": {
+    "max_abs_diff": 7.105427357601002e-15,
+    "pass": true
+   },
+   "audit16_18_only_theta": {
+    "optimizer_params": 1,
+    "frozen_context": true,
+    "pass": true
+   },
+   "audit19_21_protocol": {
+    "alpha_frozen_r2": 4.281332398719396,
+    "alpha_source": "results/rcmkn_haptics_seed42/report.json:/results/R2/selected_alpha",
+    "ridge_fit_train_only_during_gate_opt": true,
+    "grad_through_solve": "verified per-step in trajectory",
+    "pass": true
+   },
+   "audit20_grad_through_solve": {
+    "all_steps_grad_finite_nonzero": true,
+    "pass": true
+   },
+   "audit22_23_protocol": {
+    "test_metrics_during_gate_opt": false,
+    "single_test_eval_per_system": true,
+    "selection": "best val Macro-F1 (tie: lower val MSE)",
+    "pass": true
+   }
+  },
+  "runtime_s": 16.2
+ },
+ "ECG5000_BAL": {
+  "dataset": "ECG5000_BAL",
+  "seed": 42,
+  "split": {
+   "train": 5226,
+   "val": 923,
+   "test": 1000
+  },
+  "validation": {
+   "G": {
+    "val_macro_f1": 0.9759,
+    "alpha": 1.623776739188721
+   },
+   "GH": {
+    "val_macro_f1": 0.9934,
+    "alpha": 1.623776739188721
+   },
+   "R3": {
+    "val_macro_f1": 0.983,
+    "best_step_mf1": 119,
+    "best_step_mse": 169,
+    "val_mse_at_best_mf1": 0.024623675161121183,
+    "val_mf1_at_best_mse": 0.9362557635997826,
+    "theta_init": -2.0,
+    "w_init": 0.11920292202211755,
+    "theta_best": -0.8834393026046848,
+    "w_best": 0.2924655782146209,
+    "theta_final": -0.5052007586318628,
+    "w_final": 0.3763192518642105,
+    "gate_steps": 170
+   }
+  },
+  "test": {
+   "G": {
+    "test_macro_f1": 0.6278
+   },
+   "GH": {
+    "test_macro_f1": 0.6508
+   },
+   "R3": {
+    "test_macro_f1": 0.6143,
+    "w_used": 0.2924655782146209
+   }
+  },
+  "gate": {
+   "w_init": 0.11920292202211755,
+   "w_best": 0.2924655782146209,
+   "w_final": 0.3763192518642105,
+   "theta_init": -2.0,
+   "theta_best": -0.8834393026046848,
+   "theta_final": -0.5052007586318628,
+   "gate_steps": 170
+  },
+  "solver_diagnostics": {
+   "max_residual": 7.849276784099857e-13,
+   "max_cond": 36665.107837633564,
+   "max_gram_symmetry": 4.263256414560601e-14,
+   "gate_steps": 170,
+   "final_refit_residual": 5.530298441414061e-13,
+   "final_refit_symmetry": 2.842170943040401e-14
+  },
+  "diagnostics": {
+   "H_block": {
+    "mean": 0.027865133578733155,
+    "std": 0.02819238651654333,
+    "min": 0.0,
+    "max": 0.5625,
+    "frac_zero_entries": 0.12502327325465884
+   },
+   "vq": {
+    "codes_trva": {
+     "active_codes": 8,
+     "normalized_entropy": 0.9806860607467359,
+     "perplexity": 7.685068835410894,
+     "dominant_fraction": 0.1766582254954348,
+     "usage": [
+      0.12742838556792044,
+      0.15278907139372255,
+      0.1766582254954348,
+      0.05685709639198011,
+      0.13572125548869735,
+      0.09496201472945659,
+      0.12876425899681715,
+      0.126819691935971
+     ],
+     "counts": [
+      109698.0,
+      131530.0,
+      152078.0,
+      48946.0,
+      116837.0,
+      81749.0,
+      110848.0,
+      109174.0
+     ]
+    },
+    "codes_te": {
+     "active_codes": 8,
+     "normalized_entropy": 0.9856076433309099,
+     "perplexity": 7.764122765592414,
+     "dominant_fraction": 0.1611142857142857,
+     "usage": [
+      0.11236428571428571,
+      0.15225,
+      0.14092142857142856,
+      0.06623571428571429,
+      0.1611142857142857,
+      0.10474285714285714,
+      0.14737857142857144,
+      0.11499285714285715
+     ],
+     "counts": [
+      15731.0,
+      21315.0,
+      19729.0,
+      9273.0,
+      22556.0,
+      14664.0,
+      20633.0,
+      16099.0
+     ]
+    }
+   },
+   "refs": {
+    "M0": 0.6553,
+    "R2": 0.6508,
+    "alpha_r2": 1.623776739188721
+   }
+  },
+  "refs": {
+   "M0": 0.6553,
+   "R2": 0.6508,
+   "alpha_r2": 1.623776739188721
+  },
+  "deltas": {
+   "R3-M0": -0.041,
+   "R3-R2": -0.0365,
+   "R3-GH_test": -0.0365,
+   "val_R3_vs_GH": -0.0104,
+   "val_R3_vs_G": 0.0071
+  },
+  "audits": {
+   "audit1_dataset_identity": {
+    "expected": {
+     "train": 5226,
+     "val": 923,
+     "test": 1000,
+     "T": 140,
+     "n_classes": 5
+    },
+    "actual": {
+     "train": 5226,
+     "val": 923,
+     "test": 1000,
+     "T": 140,
+     "n_classes": 5
+    },
+    "pass": true
+   },
+   "audit2_znorm_identity": {
+    "max_abs_diff": 0.0,
+    "pass": true
+   },
+   "audit3_ckpt_provenance": {
+    "expected_hash": "f2eda1b2ff0bbe99",
+    "actual_hash": "f2eda1b2ff0bbe99",
+    "pass": true
+   },
+   "audit4_regime_determinism": {
+    "byte_identical": true,
+    "pass": true
+   },
+   "audit5_G_identity": {
+    "max_abs_diff": 0.0,
+    "pass": true
+   },
+   "audit6_H_identity": {
+    "max_abs_diff": 0.0,
+    "pass": true
+   },
+   "audit13_15_gate": {
+    "theta_shape": [],
+    "is_scalar": true,
+    "theta_init": -2.0,
+    "w_init": 0.11920292202211755,
+    "w_sigmoid_in_open_interval": true,
+    "init_below_half": true,
+    "pass": true
+   },
+   "audit7_8_w1_identity": {
+    "X_diff": 0.0,
+    "pass": true
+   },
+   "audit9_10_w0_identity": {
+    "wH_max": 0.0,
+    "X_is_G_only": true,
+    "pass": true
+   },
+   "audit11_12_w1_ridge_identity": {
+    "our_w1_val_macro_f1": 0.948441,
+    "sklearn_R2_val_macro_f1": 0.948441,
+    "prediction_agreement": 1.0,
+    "alpha_frozen": 1.623776739188721,
+    "pass": true
+   },
+   "gram_decomposition_exact": {
+    "max_abs_diff": 1.1368683772161603e-13,
+    "pass": true
+   },
+   "audit16_18_only_theta": {
+    "optimizer_params": 1,
+    "frozen_context": true,
+    "pass": true
+   },
+   "audit19_21_protocol": {
+    "alpha_frozen_r2": 1.623776739188721,
+    "alpha_source": "results/rcmkn_ssl_context_important2_seed42/ECG5000_BAL/result.json:/results/R2/selected_alpha",
+    "ridge_fit_train_only_during_gate_opt": true,
+    "grad_through_solve": "verified per-step in trajectory",
+    "pass": true
+   },
+   "audit20_grad_through_solve": {
+    "all_steps_grad_finite_nonzero": true,
+    "pass": true
+   },
+   "audit22_23_protocol": {
+    "test_metrics_during_gate_opt": false,
+    "single_test_eval_per_system": true,
+    "selection": "best val Macro-F1 (tie: lower val MSE)",
+    "pass": true
+   }
+  },
+  "runtime_s": 1045.8
+ }
+}

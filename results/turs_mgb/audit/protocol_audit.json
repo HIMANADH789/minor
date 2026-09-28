@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "datasets": [
+    "ECG5000_UNBAL",
+    "ECG5000_BAL",
+    "CWRU_UNBAL",
+    "CWRU_BAL"
+  ],
+  "splits": {
+    "ECG5000_UNBAL": {
+      "L": 140,
+      "n_cls": 5,
+      "train": 3294,
+      "val": 706,
+      "test": 1000,
+      "source": "dd4f36ec74717a6e"
+    },
+    "ECG5000_BAL": {
+      "L": 140,
+      "n_cls": 5,
+      "train": 5063,
+      "val": 1086,
+      "test": 1000,
+      "source": "6d318fc9e12c7223"
+    },
+    "CWRU_UNBAL": {
+      "L": 1024,
+      "n_cls": 4,
+      "train": 1119,
+      "val": 241,
+      "test": 240,
+      "source": "f04cb5f0f027f64e"
+    },
+    "CWRU_BAL": {
+      "L": 1024,
+      "n_cls": 4,
+      "train": 2642,
+      "val": 567,
+      "test": 567,
+      "source": "da1f15b14330d37a"
+    }
+  },
+  "normalization": "per-sample z-norm (eps 1e-8), applied inside load_split"
+}

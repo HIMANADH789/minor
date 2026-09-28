@@ -1,0 +1,5 @@
+between_class_dist,between_within_ratio,calinski_harabasz,dataset,davies_bouldin,kmeans_ari,kmeans_nmi,probe_test_acc_svm,probe_test_balacc_svm,probe_test_mf1_lr,probe_test_mf1_raw_linear,probe_test_mf1_raw_stats,probe_test_mf1_svm,silhouette,within_class_dist
+4.3129,1.3822,66.3826,ECG5000_UNBAL,3.2671,0.3788,0.4219,0.947,0.5685,0.5983,0.4775,0.3708,0.5891,0.1096,3.1202
+12.8248,1.1466,39.0987,ECG5000_BAL,5.7264,0.0525,0.0848,0.931,0.6046,0.5659,0.6241,0.4724,0.5864,-0.0716,11.1847
+11.6048,1.4351,37.5812,CWRU_UNBAL,2.4567,0.4034,0.4783,0.9458,0.9458,0.9457,0.3149,0.7077,0.9458,0.1469,8.0864
+13.2293,1.5356,124.6176,CWRU_BAL,2.0607,0.4308,0.4939,0.9559,0.956,0.949,0.3134,0.7625,0.956,0.1612,8.615

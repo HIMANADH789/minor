@@ -1,0 +1,25 @@
+{
+  "experiment": "TURS-KTM-AV",
+  "version": "1.0",
+  "seed": 42,
+  "K_TOP": 1024,
+  "N_NULL_SHIFTS": 20,
+  "ALPHA_SIGNIFICANCE": 0.05,
+  "n_kernels": 10000,
+  "datasets": [
+    "ECG5000_UNBAL",
+    "ECG5000_BAL",
+    "CWRU_UNBAL",
+    "CWRU_BAL"
+  ],
+  "ref_values": {
+    "ECG5000_UNBAL": 0.5938,
+    "ECG5000_BAL": 0.6553,
+    "CWRU_UNBAL": 0.9917,
+    "CWRU_BAL": 0.9947
+  },
+  "ktm_formula": "W = mean_i |x_i - i/(k+1)|, x_i = tau_i / T",
+  "selection_criterion": "absolute MiniROCKET coefficient magnitude",
+  "null_method": "circular shift per validation sample",
+  "decision_rule": "p < 0.05 AND delta_real > 0"
+}

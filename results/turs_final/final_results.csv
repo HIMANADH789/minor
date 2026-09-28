@@ -1,0 +1,5 @@
+dataset,gate_decision,base_mr_test_mf1,selected_final_mf1,delta,final_model,final_accuracy,final_weighted_f1,counterfactual_model,counterfactual_test_mf1,counterfactual_status
+ECG5000_UNBAL,DROP_KTM_W,0.5938,0.5938,0.0,MiniROCKET,0.954,0.9458,MiniROCKET + KTM-W (post-hoc reference),0.5814,POST-HOC / REFERENCE ONLY (newly evaluated; never used to alter the decision)
+ECG5000_BAL,KEEP_KTM_W,0.6553,0.6606,0.0053,MiniROCKET + KTM-W,0.954,0.9505,MiniROCKET (post-hoc reference),0.6553,REFERENCE ONLY (existing frozen evaluation)
+CWRU_UNBAL,DROP_KTM_W,0.9917,0.9917,0.0,MiniROCKET,0.9917,0.9917,MiniROCKET + KTM-W (post-hoc reference),0.9917,POST-HOC / REFERENCE ONLY (newly evaluated; never used to alter the decision)
+CWRU_BAL,DROP_KTM_W,0.9947,0.9947,0.0,MiniROCKET,0.9947,0.9947,MiniROCKET + KTM-W (post-hoc reference),0.9947,POST-HOC / REFERENCE ONLY (newly evaluated; never used to alter the decision)

@@ -1,0 +1,47 @@
+{
+  "dataset": "CWRU_UNBAL",
+  "variant": "R6",
+  "n_cls": 4,
+  "test": {
+    "macro_f1": 0.9249627976190476,
+    "accuracy": 0.925,
+    "weighted_f1": 0.9249627976190475,
+    "balanced_accuracy": 0.925,
+    "mcc": 0.9013363036312723,
+    "kappa": 0.9,
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        59,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        55,
+        4
+      ],
+      [
+        0,
+        0,
+        12,
+        48
+      ]
+    ]
+  },
+  "val_mf1": 0.9336245377301096,
+  "selected_lambda": 0.001,
+  "M": 256,
+  "params": {
+    "trainable": 772,
+    "fixed": 0
+  },
+  "elapsed_s": 3.3
+}

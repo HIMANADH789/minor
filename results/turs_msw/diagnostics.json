@@ -1,0 +1,244 @@
+{
+  "EpilepticSeizures": {
+    "complementarity": {
+      "cka_global_medium": 0.991661,
+      "cka_global_local": 0.918335,
+      "cka_medium_local": 0.9159,
+      "mean_abs_corr_global_medium": 0.216501,
+      "mean_abs_corr_global_local": 0.192432
+    },
+    "locality_synthetic": {
+      "global_mean_abs_diff": 0.025331,
+      "medium_mean_abs_diff": 0.03142,
+      "local_mean_abs_diff": 0.045596
+    },
+    "shift_stability": {
+      "circular_shift_T2": {
+        "global_mean_abs_change": 0.042604,
+        "medium_mean_abs_change": 0.05963,
+        "local_mean_abs_change": 0.096084
+      },
+      "small_perturbations": {
+        "noise": {
+          "global_mean_abs_change": 0.002152,
+          "regional_mean_abs_change": 0.002356
+        },
+        "shift1": {
+          "global_mean_abs_change": 0.004038,
+          "regional_mean_abs_change": 0.006384
+        }
+      }
+    }
+  },
+  "Haptics": {
+    "complementarity": {
+      "cka_global_medium": 0.972822,
+      "cka_global_local": 0.868514,
+      "cka_medium_local": 0.91678,
+      "mean_abs_corr_global_medium": 0.267529,
+      "mean_abs_corr_global_local": 0.243723
+    },
+    "locality_synthetic": {
+      "global_mean_abs_diff": 0.004035,
+      "medium_mean_abs_diff": 0.004714,
+      "local_mean_abs_diff": 0.007184
+    },
+    "shift_stability": {
+      "circular_shift_T2": {
+        "global_mean_abs_change": 0.052684,
+        "medium_mean_abs_change": 0.091315,
+        "local_mean_abs_change": 0.161871
+      },
+      "small_perturbations": {
+        "noise": {
+          "global_mean_abs_change": 0.00662,
+          "regional_mean_abs_change": 0.007429
+        },
+        "shift1": {
+          "global_mean_abs_change": 0.00272,
+          "regional_mean_abs_change": 0.003583
+        }
+      }
+    }
+  },
+  "Phoneme": {
+    "complementarity": {
+      "cka_global_medium": 0.957867,
+      "cka_global_local": 0.582273,
+      "cka_medium_local": 0.728287,
+      "mean_abs_corr_global_medium": 0.275873,
+      "mean_abs_corr_global_local": 0.211625
+    },
+    "locality_synthetic": {
+      "global_mean_abs_diff": 0.004303,
+      "medium_mean_abs_diff": 0.005465,
+      "local_mean_abs_diff": 0.008179
+    },
+    "shift_stability": {
+      "circular_shift_T2": {
+        "global_mean_abs_change": 0.015028,
+        "medium_mean_abs_change": 0.034461,
+        "local_mean_abs_change": 0.07025
+      },
+      "small_perturbations": {
+        "noise": {
+          "global_mean_abs_change": 0.001341,
+          "regional_mean_abs_change": 0.001711
+        },
+        "shift1": {
+          "global_mean_abs_change": 0.001032,
+          "regional_mean_abs_change": 0.00148
+        }
+      }
+    }
+  },
+  "info": {
+    "EpilepticSeizures": {
+      "F": 9996,
+      "T": 178,
+      "t_mr_fit_s": 0.2,
+      "t_mr_transform_s": 0.52,
+      "t_regional_trainval_s": 0.06,
+      "t_regional_test_s": 5.91,
+      "equivalence_max_abs_diff": {
+        "train": 0.0,
+        "val": 0.0,
+        "test": 0.0
+      },
+      "variant_dims": {
+        "M0": 9996,
+        "M1": 29988,
+        "M2": 49980,
+        "M3": 69972,
+        "M4": 59976
+      },
+      "block_stats_train_raw": {
+        "global": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.500116,
+          "std": 0.290273,
+          "near_zero_var_cols": 8,
+          "nan": 0,
+          "inf": 0
+        },
+        "medium": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.499944,
+          "std": 0.288139,
+          "near_zero_var_cols": 16,
+          "nan": 0,
+          "inf": 0
+        },
+        "local": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.489059,
+          "std": 0.303172,
+          "near_zero_var_cols": 950,
+          "nan": 0,
+          "inf": 0
+        }
+      }
+    },
+    "Haptics": {
+      "F": 9996,
+      "T": 1092,
+      "t_mr_fit_s": 0.11,
+      "t_mr_transform_s": 0.09,
+      "t_regional_trainval_s": 0.12,
+      "t_regional_test_s": 0.35,
+      "equivalence_max_abs_diff": {
+        "train": 0.0,
+        "val": 0.0,
+        "test": 0.0
+      },
+      "variant_dims": {
+        "M0": 9996,
+        "M1": 29988,
+        "M2": 49980,
+        "M3": 69972,
+        "M4": 59976
+      },
+      "block_stats_train_raw": {
+        "global": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.500331,
+          "std": 0.296983,
+          "near_zero_var_cols": 16,
+          "nan": 0,
+          "inf": 0
+        },
+        "medium": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.500378,
+          "std": 0.296844,
+          "near_zero_var_cols": 55,
+          "nan": 0,
+          "inf": 0
+        },
+        "local": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.492585,
+          "std": 0.310505,
+          "near_zero_var_cols": 785,
+          "nan": 0,
+          "inf": 0
+        }
+      }
+    },
+    "Phoneme": {
+      "F": 9996,
+      "T": 1024,
+      "t_mr_fit_s": 0.12,
+      "t_mr_transform_s": 0.43,
+      "t_regional_trainval_s": 0.14,
+      "t_regional_test_s": 1.89,
+      "equivalence_max_abs_diff": {
+        "train": 0.0,
+        "val": 0.0,
+        "test": 0.0
+      },
+      "variant_dims": {
+        "M0": 9996,
+        "M1": 29988,
+        "M2": 49980,
+        "M3": 69972,
+        "M4": 59976
+      },
+      "block_stats_train_raw": {
+        "global": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.499987,
+          "std": 0.297727,
+          "near_zero_var_cols": 1,
+          "nan": 0,
+          "inf": 0
+        },
+        "medium": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.499945,
+          "std": 0.300463,
+          "near_zero_var_cols": 2,
+          "nan": 0,
+          "inf": 0
+        },
+        "local": {
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.491971,
+          "std": 0.311811,
+          "near_zero_var_cols": 635,
+          "nan": 0,
+          "inf": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "ECG5000_BAL": {
+    "accuracy": 0.936,
+    "macro_f1": 0.5829,
+    "weighted_f1": 0.9366,
+    "balanced_accuracy": 0.6007,
+    "kappa": 0.8803,
+    "mcc": 0.8804,
+    "log_loss": 0.0,
+    "class_f1s": [
+      0.9974,
+      0.9229,
+      0.5238,
+      0.4706,
+      0.0
+    ],
+    "class_recalls": [
+      0.9966,
+      0.915,
+      0.5789,
+      0.5128,
+      0.0
+    ],
+    "class_precisions": [
+      0.9974,
+      0.9229,
+      0.5238,
+      0.4706,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        582,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        323,
+        6,
+        24,
+        0
+      ],
+      [
+        1,
+        5,
+        11,
+        2,
+        0
+      ],
+      [
+        0,
+        17,
+        2,
+        20,
+        0
+      ],
+      [
+        0,
+        2,
+        3,
+        0,
+        0
+      ]
+    ],
+    "support": {
+      "0": 584,
+      "1": 353,
+      "2": 19,
+      "3": 39,
+      "4": 5
+    },
+    "params": 55914,
+    "best_epoch": 27,
+    "total_epochs": 30,
+    "time_s": 759.5,
+    "calibration": {
+      "sigma_init": 7.4089,
+      "sigma_final": 6.6997,
+      "rho_init": [
+        0.9,
+        0.95,
+        0.98
+      ],
+      "rho_final": [
+        0.8639,
+        0.9308,
+        0.972
+      ],
+      "gamma_init": 0.5,
+      "gamma_final": 0.3365
+    },
+    "alpha_stats": {
+      "mean": 0.0006,
+      "std": 0.0004,
+      "variance": 0.0
+    },
+    "uncertainty_stats": {
+      "mean": 0.5962,
+      "std": 0.1143
+    },
+    "beta_stats": {
+      "mean_per_scale": [
+        0.2546,
+        0.0184,
+        0.727
+      ],
+      "std_per_scale": [
+        0.2837,
+        0.0148,
+        0.2912
+      ],
+      "entropy": 0.4161,
+      "variance": 0.141926
+    },
+    "agreement_stats": {
+      "mean": 0.631,
+      "std": 0.1139
+    }
+  }
+}

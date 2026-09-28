@@ -1,0 +1,1096 @@
+{
+  "ECG5000_UNBAL": {
+    "D1": {
+      "dataset": "ECG5000_UNBAL",
+      "n_test": 1000,
+      "variants": {
+        "R0": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.4171017772938896,
+          "error_rate": 0.07199999999999995,
+          "pred_class_counts": [
+            619,
+            376,
+            0,
+            5,
+            0
+          ],
+          "recorded_mf1": 0.4171017772938896,
+          "replay_delta": 0.0
+        },
+        "R1": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.48724076692078067,
+          "error_rate": 0.05800000000000005,
+          "pred_class_counts": [
+            601,
+            383,
+            2,
+            14,
+            0
+          ],
+          "recorded_mf1": 0.48724076692078067,
+          "replay_delta": 0.0
+        },
+        "R2": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5469043463818182,
+          "error_rate": 0.06399999999999995,
+          "pred_class_counts": [
+            580,
+            365,
+            18,
+            36,
+            1
+          ],
+          "recorded_mf1": 0.5469043463818182,
+          "replay_delta": 0.0
+        },
+        "R3": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.4358592350660805,
+          "error_rate": 0.277,
+          "pred_class_counts": [
+            417,
+            302,
+            116,
+            68,
+            97
+          ],
+          "recorded_mf1": 0.4358592350660805,
+          "replay_delta": 0.0
+        },
+        "R4": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.6471297613647913,
+          "error_rate": 0.052000000000000046,
+          "pred_class_counts": [
+            579,
+            368,
+            16,
+            33,
+            4
+          ],
+          "recorded_mf1": 0.6471297613647913,
+          "replay_delta": 0.0
+        },
+        "R5": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.47489561022046256,
+          "error_rate": 0.09999999999999998,
+          "pred_class_counts": [
+            552,
+            391,
+            12,
+            45,
+            0
+          ],
+          "recorded_mf1": 0.47489561022046256,
+          "replay_delta": 0.0
+        },
+        "R6": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5461901380923545,
+          "error_rate": 0.05500000000000005,
+          "pred_class_counts": [
+            601,
+            374,
+            8,
+            17,
+            0
+          ],
+          "recorded_mf1": 0.5461901380923545,
+          "replay_delta": 0.0
+        },
+        "R7": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.47878390927934944,
+          "error_rate": 0.061000000000000054,
+          "pred_class_counts": [
+            603,
+            381,
+            2,
+            14,
+            0
+          ],
+          "recorded_mf1": 0.47878390927934944,
+          "replay_delta": 0.0
+        }
+      }
+    },
+    "D2": {
+      "minority_classes": [
+        2,
+        4
+      ],
+      "variants": {
+        "R0": {
+          "per_class_f1": [
+            0.9709,
+            0.9328,
+            0.0,
+            0.1818,
+            0.0
+          ],
+          "minority_mf1": 0.0,
+          "error_rate": 0.072
+        },
+        "R1": {
+          "per_class_f1": [
+            0.9857,
+            0.9402,
+            0.0952,
+            0.4151,
+            0.0
+          ],
+          "minority_mf1": 0.0476,
+          "error_rate": 0.058
+        },
+        "R2": {
+          "per_class_f1": [
+            0.988,
+            0.9415,
+            0.3784,
+            0.4267,
+            0.0
+          ],
+          "minority_mf1": 0.1892,
+          "error_rate": 0.064
+        },
+        "R3": {
+          "per_class_f1": [
+            0.8332,
+            0.8458,
+            0.163,
+            0.3178,
+            0.0196
+          ],
+          "minority_mf1": 0.0913,
+          "error_rate": 0.277
+        },
+        "R4": {
+          "per_class_f1": [
+            0.9905,
+            0.9515,
+            0.5714,
+            0.5,
+            0.2222
+          ],
+          "minority_mf1": 0.3968,
+          "error_rate": 0.052
+        },
+        "R5": {
+          "per_class_f1": [
+            0.9613,
+            0.9032,
+            0.129,
+            0.381,
+            0.0
+          ],
+          "minority_mf1": 0.0645,
+          "error_rate": 0.1
+        },
+        "R6": {
+          "per_class_f1": [
+            0.9857,
+            0.9464,
+            0.3704,
+            0.4286,
+            0.0
+          ],
+          "minority_mf1": 0.1852,
+          "error_rate": 0.055
+        },
+        "R7": {
+          "per_class_f1": [
+            0.984,
+            0.9373,
+            0.0952,
+            0.3774,
+            0.0
+          ],
+          "minority_mf1": 0.0476,
+          "error_rate": 0.061
+        }
+      }
+    },
+    "D3": {
+      "n": 1000,
+      "signals": {
+        "routing_entropy": {
+          "auroc": 0.6582,
+          "ci95": [
+            0.5828,
+            0.7235
+          ]
+        },
+        "confidence_neg": {
+          "auroc": 0.8449,
+          "ci95": [
+            0.8082,
+            0.8793
+          ]
+        }
+      },
+      "best_signal": {
+        "name": "confidence_neg",
+        "auroc": 0.8449
+      }
+    },
+    "D4": {
+      "per_flavor": {
+        "flavor_0": {
+          "mass": 0.2175,
+          "best_class_rho": -0.4877,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_1": {
+          "mass": 0.4451,
+          "best_class_rho": 0.4925,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_2": {
+          "mass": 0.246,
+          "best_class_rho": -0.5612,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_3": {
+          "mass": 0.0915,
+          "best_class_rho": -0.4456,
+          "p_perm": 0.004975124378109453
+        }
+      }
+    },
+    "D5": {
+      "curve": {
+        "0.0001": 0.5829,
+        "0.001": 0.5825,
+        "0.01": 0.579,
+        "0.1": 0.5794,
+        "1.0": 0.5791,
+        "10.0": 0.5835,
+        "100.0": 0.4863
+      },
+      "best_lambda": 10.0,
+      "best_val_mf1": 0.5835,
+      "sensitivity": 0.0972
+    },
+    "D6": {
+      "agreement": 0.975,
+      "n_disagree": 25,
+      "mcnemar_p": 0.01391
+    }
+  },
+  "ECG5000_BAL": {
+    "D1": {
+      "dataset": "ECG5000_BAL",
+      "n_test": 1000,
+      "variants": {
+        "R0": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5501339456563337,
+          "error_rate": 0.09999999999999998,
+          "pred_class_counts": [
+            586,
+            317,
+            21,
+            51,
+            25
+          ],
+          "recorded_mf1": 0.5501339456563337,
+          "replay_delta": 0.0
+        },
+        "R1": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5854645861850951,
+          "error_rate": 0.07999999999999996,
+          "pred_class_counts": [
+            580,
+            338,
+            23,
+            33,
+            26
+          ],
+          "recorded_mf1": 0.5854645861850951,
+          "replay_delta": 0.0
+        },
+        "R2": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5426960207933659,
+          "error_rate": 0.11199999999999999,
+          "pred_class_counts": [
+            560,
+            325,
+            33,
+            39,
+            43
+          ],
+          "recorded_mf1": 0.5426960207933659,
+          "replay_delta": 0.0
+        },
+        "R3": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5154930495114626,
+          "error_rate": 0.16400000000000003,
+          "pred_class_counts": [
+            518,
+            309,
+            51,
+            45,
+            77
+          ],
+          "recorded_mf1": 0.5154930495114626,
+          "replay_delta": 0.0
+        },
+        "R4": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5775027606346244,
+          "error_rate": 0.09799999999999998,
+          "pred_class_counts": [
+            563,
+            330,
+            30,
+            42,
+            35
+          ],
+          "recorded_mf1": 0.5775027606346244,
+          "replay_delta": 0.0
+        },
+        "R5": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.4923950873085297,
+          "error_rate": 0.137,
+          "pred_class_counts": [
+            539,
+            342,
+            38,
+            55,
+            26
+          ],
+          "recorded_mf1": 0.4923950873085297,
+          "replay_delta": 0.0
+        },
+        "R6": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5542030377893955,
+          "error_rate": 0.08099999999999996,
+          "pred_class_counts": [
+            577,
+            340,
+            30,
+            40,
+            13
+          ],
+          "recorded_mf1": 0.5542030377893955,
+          "replay_delta": 0.0
+        },
+        "R7": {
+          "n": 1000,
+          "test_mf1_recomputed": 0.5468875851794511,
+          "error_rate": 0.09299999999999997,
+          "pred_class_counts": [
+            578,
+            333,
+            34,
+            33,
+            22
+          ],
+          "recorded_mf1": 0.5468875851794511,
+          "replay_delta": 0.0
+        }
+      }
+    },
+    "D2": {
+      "minority_classes": [
+        2
+      ],
+      "variants": {
+        "R0": {
+          "per_class_f1": [
+            0.9863,
+            0.8866,
+            0.3,
+            0.3778,
+            0.2
+          ],
+          "minority_mf1": 0.3,
+          "error_rate": 0.1
+        },
+        "R1": {
+          "per_class_f1": [
+            0.988,
+            0.9204,
+            0.381,
+            0.4444,
+            0.1935
+          ],
+          "minority_mf1": 0.381,
+          "error_rate": 0.08
+        },
+        "R2": {
+          "per_class_f1": [
+            0.9738,
+            0.8968,
+            0.3077,
+            0.4103,
+            0.125
+          ],
+          "minority_mf1": 0.3077,
+          "error_rate": 0.112
+        },
+        "R3": {
+          "per_class_f1": [
+            0.9347,
+            0.8792,
+            0.2857,
+            0.4048,
+            0.0732
+          ],
+          "minority_mf1": 0.2857,
+          "error_rate": 0.164
+        },
+        "R4": {
+          "per_class_f1": [
+            0.9765,
+            0.9107,
+            0.5306,
+            0.4198,
+            0.05
+          ],
+          "minority_mf1": 0.5306,
+          "error_rate": 0.098
+        },
+        "R5": {
+          "per_class_f1": [
+            0.9492,
+            0.8835,
+            0.2456,
+            0.3191,
+            0.0645
+          ],
+          "minority_mf1": 0.2456,
+          "error_rate": 0.137
+        },
+        "R6": {
+          "per_class_f1": [
+            0.9836,
+            0.9235,
+            0.4082,
+            0.4557,
+            0.0
+          ],
+          "minority_mf1": 0.4082,
+          "error_rate": 0.081
+        },
+        "R7": {
+          "per_class_f1": [
+            0.9811,
+            0.9038,
+            0.3774,
+            0.4722,
+            0.0
+          ],
+          "minority_mf1": 0.3774,
+          "error_rate": 0.093
+        }
+      }
+    },
+    "D3": {
+      "n": 1000,
+      "signals": {
+        "routing_entropy": {
+          "auroc": 0.6131,
+          "ci95": [
+            0.5539,
+            0.6709
+          ]
+        },
+        "confidence_neg": {
+          "auroc": 0.887,
+          "ci95": [
+            0.8604,
+            0.9128
+          ]
+        }
+      },
+      "best_signal": {
+        "name": "confidence_neg",
+        "auroc": 0.887
+      }
+    },
+    "D4": {
+      "per_flavor": {
+        "flavor_0": {
+          "mass": 0.1365,
+          "best_class_rho": -0.3942,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_1": {
+          "mass": 0.3211,
+          "best_class_rho": 0.5193,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_2": {
+          "mass": 0.4726,
+          "best_class_rho": 0.209,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_3": {
+          "mass": 0.0698,
+          "best_class_rho": -0.369,
+          "p_perm": 0.004975124378109453
+        }
+      }
+    },
+    "D5": {
+      "curve": {
+        "0.0001": 0.8115,
+        "0.001": 0.8125,
+        "0.01": 0.8137,
+        "0.1": 0.8167,
+        "1.0": 0.8229,
+        "10.0": 0.8071,
+        "100.0": 0.7871
+      },
+      "best_lambda": 1.0,
+      "best_val_mf1": 0.8229,
+      "sensitivity": 0.0358
+    },
+    "D6": {
+      "agreement": 0.948,
+      "n_disagree": 52,
+      "mcnemar_p": 0.05527
+    }
+  },
+  "CWRU_UNBAL": {
+    "D1": {
+      "dataset": "CWRU_UNBAL",
+      "n_test": 240,
+      "variants": {
+        "R0": {
+          "n": 240,
+          "test_mf1_recomputed": 0.6945108812755872,
+          "error_rate": 0.30833333333333335,
+          "pred_class_counts": [
+            59,
+            45,
+            96,
+            40
+          ],
+          "recorded_mf1": 0.6945108812755872,
+          "replay_delta": 0.0
+        },
+        "R1": {
+          "n": 240,
+          "test_mf1_recomputed": 0.9120742351747136,
+          "error_rate": 0.08750000000000002,
+          "pred_class_counts": [
+            60,
+            61,
+            65,
+            54
+          ],
+          "recorded_mf1": 0.9120742351747136,
+          "replay_delta": 0.0
+        },
+        "R2": {
+          "n": 240,
+          "test_mf1_recomputed": 0.9202117762528244,
+          "error_rate": 0.07916666666666672,
+          "pred_class_counts": [
+            60,
+            62,
+            67,
+            51
+          ],
+          "recorded_mf1": 0.9202117762528244,
+          "replay_delta": 0.0
+        },
+        "R3": {
+          "n": 240,
+          "test_mf1_recomputed": 0.9202117762528244,
+          "error_rate": 0.07916666666666672,
+          "pred_class_counts": [
+            60,
+            62,
+            67,
+            51
+          ],
+          "recorded_mf1": 0.9202117762528244,
+          "replay_delta": 0.0
+        },
+        "R4": {
+          "n": 240,
+          "test_mf1_recomputed": 0.9248543123543124,
+          "error_rate": 0.07499999999999996,
+          "pred_class_counts": [
+            60,
+            60,
+            70,
+            50
+          ],
+          "recorded_mf1": 0.9248543123543124,
+          "replay_delta": 0.0
+        },
+        "R5": {
+          "n": 240,
+          "test_mf1_recomputed": 0.753981780167264,
+          "error_rate": 0.24583333333333335,
+          "pred_class_counts": [
+            64,
+            65,
+            75,
+            36
+          ],
+          "recorded_mf1": 0.753981780167264,
+          "replay_delta": 0.0
+        },
+        "R6": {
+          "n": 240,
+          "test_mf1_recomputed": 0.9249627976190476,
+          "error_rate": 0.07499999999999996,
+          "pred_class_counts": [
+            60,
+            60,
+            68,
+            52
+          ],
+          "recorded_mf1": 0.9249627976190476,
+          "replay_delta": 0.0
+        },
+        "R7": {
+          "n": 240,
+          "test_mf1_recomputed": 0.9327157986362977,
+          "error_rate": 0.06666666666666665,
+          "pred_class_counts": [
+            60,
+            62,
+            65,
+            53
+          ],
+          "recorded_mf1": 0.9327157986362977,
+          "replay_delta": 0.0
+        }
+      }
+    },
+    "D2": {
+      "minority_classes": [
+        2
+      ],
+      "variants": {
+        "R0": {
+          "per_class_f1": [
+            0.9916,
+            0.6095,
+            0.5769,
+            0.6
+          ],
+          "minority_mf1": 0.5769,
+          "error_rate": 0.3083
+        },
+        "R1": {
+          "per_class_f1": [
+            1.0,
+            0.9917,
+            0.832,
+            0.8246
+          ],
+          "minority_mf1": 0.832,
+          "error_rate": 0.0875
+        },
+        "R2": {
+          "per_class_f1": [
+            1.0,
+            0.9836,
+            0.8504,
+            0.8468
+          ],
+          "minority_mf1": 0.8504,
+          "error_rate": 0.0792
+        },
+        "R3": {
+          "per_class_f1": [
+            1.0,
+            0.9836,
+            0.8504,
+            0.8468
+          ],
+          "minority_mf1": 0.8504,
+          "error_rate": 0.0792
+        },
+        "R4": {
+          "per_class_f1": [
+            1.0,
+            0.9833,
+            0.8615,
+            0.8545
+          ],
+          "minority_mf1": 0.8615,
+          "error_rate": 0.075
+        },
+        "R5": {
+          "per_class_f1": [
+            0.9677,
+            0.688,
+            0.6519,
+            0.7083
+          ],
+          "minority_mf1": 0.6519,
+          "error_rate": 0.2458
+        },
+        "R6": {
+          "per_class_f1": [
+            1.0,
+            0.9833,
+            0.8594,
+            0.8571
+          ],
+          "minority_mf1": 0.8594,
+          "error_rate": 0.075
+        },
+        "R7": {
+          "per_class_f1": [
+            1.0,
+            0.9836,
+            0.88,
+            0.8673
+          ],
+          "minority_mf1": 0.88,
+          "error_rate": 0.0667
+        }
+      }
+    },
+    "D3": {
+      "n": 240,
+      "signals": {
+        "routing_entropy": {
+          "auroc": 0.3855,
+          "ci95": [
+            0.32,
+            0.4601
+          ]
+        },
+        "confidence_neg": {
+          "auroc": 0.8209,
+          "ci95": [
+            0.767,
+            0.8665
+          ]
+        }
+      },
+      "best_signal": {
+        "name": "confidence_neg",
+        "auroc": 0.8209
+      }
+    },
+    "D4": {
+      "per_flavor": {
+        "flavor_0": {
+          "mass": 0.3155,
+          "best_class_rho": 0.7476,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_1": {
+          "mass": 0.5317,
+          "best_class_rho": -0.7488,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_2": {
+          "mass": 0.0704,
+          "best_class_rho": -0.3874,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_3": {
+          "mass": 0.0823,
+          "best_class_rho": 0.7482,
+          "p_perm": 0.004975124378109453
+        }
+      }
+    },
+    "D5": {
+      "curve": {
+        "0.0001": 0.917,
+        "0.001": 0.9211,
+        "0.01": 0.9129,
+        "0.1": 0.9209,
+        "1.0": 0.9038,
+        "10.0": 0.891,
+        "100.0": 0.86
+      },
+      "best_lambda": 0.001,
+      "best_val_mf1": 0.9211,
+      "sensitivity": 0.0611
+    },
+    "D6": {
+      "agreement": 0.9625,
+      "n_disagree": 9,
+      "mcnemar_p": 1.0
+    }
+  },
+  "CWRU_BAL": {
+    "D1": {
+      "dataset": "CWRU_BAL",
+      "n_test": 567,
+      "variants": {
+        "R0": {
+          "n": 567,
+          "test_mf1_recomputed": 0.8315685885953032,
+          "error_rate": 0.1693121693121693,
+          "pred_class_counts": [
+            130,
+            150,
+            202,
+            85
+          ],
+          "recorded_mf1": 0.8315685885953032,
+          "replay_delta": 0.0
+        },
+        "R1": {
+          "n": 567,
+          "test_mf1_recomputed": 0.9361977284844238,
+          "error_rate": 0.06349206349206349,
+          "pred_class_counts": [
+            142,
+            146,
+            144,
+            135
+          ],
+          "recorded_mf1": 0.9344114805349926,
+          "replay_delta": 0.001786
+        },
+        "R2": {
+          "n": 567,
+          "test_mf1_recomputed": 0.9344114805349926,
+          "error_rate": 0.06525573192239864,
+          "pred_class_counts": [
+            142,
+            146,
+            143,
+            136
+          ],
+          "recorded_mf1": 0.9344114805349926,
+          "replay_delta": 0.0
+        },
+        "R3": {
+          "n": 567,
+          "test_mf1_recomputed": 0.9344114805349926,
+          "error_rate": 0.06525573192239864,
+          "pred_class_counts": [
+            142,
+            146,
+            143,
+            136
+          ],
+          "recorded_mf1": 0.9344114805349926,
+          "replay_delta": 0.0
+        },
+        "R4": {
+          "n": 567,
+          "test_mf1_recomputed": 0.9273492050360915,
+          "error_rate": 0.07231040564373903,
+          "pred_class_counts": [
+            142,
+            145,
+            148,
+            132
+          ],
+          "recorded_mf1": 0.9273492050360915,
+          "replay_delta": 0.0
+        },
+        "R5": {
+          "n": 567,
+          "test_mf1_recomputed": 0.7806002825180907,
+          "error_rate": 0.21869488536155202,
+          "pred_class_counts": [
+            158,
+            151,
+            166,
+            92
+          ],
+          "recorded_mf1": 0.7806002825180907,
+          "replay_delta": 0.0
+        },
+        "R6": {
+          "n": 567,
+          "test_mf1_recomputed": 0.9505020454191326,
+          "error_rate": 0.04938271604938271,
+          "pred_class_counts": [
+            142,
+            144,
+            150,
+            131
+          ],
+          "recorded_mf1": 0.9505020454191326,
+          "replay_delta": 0.0
+        },
+        "R7": {
+          "n": 567,
+          "test_mf1_recomputed": 0.9399327672866516,
+          "error_rate": 0.059964726631393295,
+          "pred_class_counts": [
+            142,
+            143,
+            150,
+            132
+          ],
+          "recorded_mf1": 0.9399327672866516,
+          "replay_delta": 0.0
+        }
+      }
+    },
+    "D2": {
+      "minority_classes": [
+        2,
+        3
+      ],
+      "variants": {
+        "R0": {
+          "per_class_f1": [
+            0.9485,
+            0.8935,
+            0.7442,
+            0.7401
+          ],
+          "minority_mf1": 0.7421,
+          "error_rate": 0.1693
+        },
+        "R1": {
+          "per_class_f1": [
+            1.0,
+            0.9826,
+            0.8741,
+            0.8881
+          ],
+          "minority_mf1": 0.8811,
+          "error_rate": 0.0635
+        },
+        "R2": {
+          "per_class_f1": [
+            1.0,
+            0.9826,
+            0.8702,
+            0.8849
+          ],
+          "minority_mf1": 0.8775,
+          "error_rate": 0.0653
+        },
+        "R3": {
+          "per_class_f1": [
+            1.0,
+            0.9826,
+            0.8702,
+            0.8849
+          ],
+          "minority_mf1": 0.8775,
+          "error_rate": 0.0653
+        },
+        "R4": {
+          "per_class_f1": [
+            1.0,
+            0.986,
+            0.8621,
+            0.8613
+          ],
+          "minority_mf1": 0.8617,
+          "error_rate": 0.0723
+        },
+        "R5": {
+          "per_class_f1": [
+            0.9467,
+            0.7397,
+            0.6753,
+            0.7607
+          ],
+          "minority_mf1": 0.718,
+          "error_rate": 0.2187
+        },
+        "R6": {
+          "per_class_f1": [
+            1.0,
+            0.9895,
+            0.9041,
+            0.9084
+          ],
+          "minority_mf1": 0.9063,
+          "error_rate": 0.0494
+        },
+        "R7": {
+          "per_class_f1": [
+            1.0,
+            0.993,
+            0.8836,
+            0.8832
+          ],
+          "minority_mf1": 0.8834,
+          "error_rate": 0.06
+        }
+      }
+    },
+    "D3": {
+      "n": 567,
+      "signals": {
+        "routing_entropy": {
+          "auroc": 0.516,
+          "ci95": [
+            0.4688,
+            0.5648
+          ]
+        },
+        "confidence_neg": {
+          "auroc": 0.8035,
+          "ci95": [
+            0.766,
+            0.8426
+          ]
+        }
+      },
+      "best_signal": {
+        "name": "confidence_neg",
+        "auroc": 0.8035
+      }
+    },
+    "D4": {
+      "per_flavor": {
+        "flavor_0": {
+          "mass": 0.4571,
+          "best_class_rho": 0.7126,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_1": {
+          "mass": 0.4133,
+          "best_class_rho": -0.7181,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_2": {
+          "mass": 0.0561,
+          "best_class_rho": -0.6857,
+          "p_perm": 0.004975124378109453
+        },
+        "flavor_3": {
+          "mass": 0.0735,
+          "best_class_rho": 0.6006,
+          "p_perm": 0.004975124378109453
+        }
+      }
+    },
+    "D5": {
+      "curve": {
+        "0.0001": 0.9276,
+        "0.001": 0.9258,
+        "0.01": 0.9364,
+        "0.1": 0.9274,
+        "1.0": 0.9055,
+        "10.0": 0.8823,
+        "100.0": 0.8618
+      },
+      "best_lambda": 0.01,
+      "best_val_mf1": 0.9364,
+      "sensitivity": 0.0746
+    },
+    "D6": {
+      "agreement": 0.9806,
+      "n_disagree": 11,
+      "mcnemar_p": 0.34278
+    }
+  }
+}

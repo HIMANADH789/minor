@@ -1,0 +1,2 @@
+mean_abs_r,median_abs_r,p95_abs_r,frac_abs_r_gt_0.5,frac_abs_r_gt_0.9,linear_CKA_G_vs_H,effective_rank_G,effective_rank_H
+0.1653,0.1394,0.4037,0.01248,4.5e-05,0.3741,5.8,67.0

@@ -1,0 +1,61 @@
+comparison,dataset,estimate,extra,family
+A(t) vs local_variance,CWRU_BAL,0.017701142684798162,"{'ci': [0.00442314337034618, 0.031658610593107296]}",D1_pattern_activity
+A(t) vs local_energy,CWRU_BAL,0.017701142684798162,"{'ci': [0.004521930047579273, 0.03130590518449727]}",D1_pattern_activity
+A(t) vs first_diff,CWRU_BAL,0.013910676220490945,"{'ci': [-0.00013191350141551734, 0.027299154738229064]}",D1_pattern_activity
+A(t) vs skewness,CWRU_BAL,-0.0070379114609504636,"{'ci': [-0.021065757291734172, 0.0071273775113914195]}",D1_pattern_activity
+A(t) vs kurtosis,CWRU_BAL,-0.009113484049158415,"{'ci': [-0.022855117736945665, 0.005391129568625481]}",D1_pattern_activity
+w_standard(t) vs local_variance,CWRU_BAL,-0.2594495815403689,"{'ci': [-0.29627576734470884, -0.22226100643363736]}",D2_routing_validity
+w_standard(t) vs local_energy,CWRU_BAL,-0.2594495815403689,"{'ci': [-0.2990288561731347, -0.22121087657180238]}",D2_routing_validity
+w_standard(t) vs first_diff,CWRU_BAL,-0.055761700697457985,"{'ci': [-0.09533883312448065, -0.010589931655973864]}",D2_routing_validity
+w_standard(t) vs skewness,CWRU_BAL,-0.015869221318164647,"{'ci': [-0.05970165283323511, 0.028866129319793266]}",D2_routing_validity
+w_standard(t) vs kurtosis,CWRU_BAL,0.2746289879651584,"{'ci': [0.23233347149554814, 0.314593941587352]}",D2_routing_validity
+w_standard(t) vs lag_disagreement,CWRU_BAL,-0.5004442064333958,"{'ci': [-0.5325689236213427, -0.46716400579287165]}",D2_routing_validity
+w_tail(t) vs local_variance,CWRU_BAL,-0.2490541167493964,"{'ci': [-0.28802693507350946, -0.21073671380553274]}",D2_routing_validity
+w_tail(t) vs local_energy,CWRU_BAL,-0.2490541167493964,"{'ci': [-0.2862272297590217, -0.21120467497944412]}",D2_routing_validity
+w_tail(t) vs first_diff,CWRU_BAL,-0.05202678947918528,"{'ci': [-0.09260276032818453, -0.011988552612033477]}",D2_routing_validity
+w_tail(t) vs skewness,CWRU_BAL,-0.016691089090465613,"{'ci': [-0.060251156988702724, 0.025851490024401673]}",D2_routing_validity
+w_tail(t) vs kurtosis,CWRU_BAL,0.262928842278149,"{'ci': [0.2218530057672259, 0.30192494343838316]}",D2_routing_validity
+w_tail(t) vs lag_disagreement,CWRU_BAL,-0.482727161027322,"{'ci': [-0.51659182385658, -0.44744202707057756]}",D2_routing_validity
+w_fine(t) vs local_variance,CWRU_BAL,-0.23711497672051915,"{'ci': [-0.2752647629205513, -0.19779443219873544]}",D2_routing_validity
+w_fine(t) vs local_energy,CWRU_BAL,-0.23711497672051915,"{'ci': [-0.27666552376061976, -0.1982759963973897]}",D2_routing_validity
+w_fine(t) vs first_diff,CWRU_BAL,-0.04600041608492438,"{'ci': [-0.08602694945898536, -0.002254257253880327]}",D2_routing_validity
+w_fine(t) vs skewness,CWRU_BAL,-0.01829604743974076,"{'ci': [-0.0617394016643058, 0.02241475559935994]}",D2_routing_validity
+w_fine(t) vs kurtosis,CWRU_BAL,0.2535010207295976,"{'ci': [0.2162060256401193, 0.2946057938322753]}",D2_routing_validity
+w_fine(t) vs lag_disagreement,CWRU_BAL,-0.4624862748023496,"{'ci': [-0.4951085869056879, -0.4264956090398877]}",D2_routing_validity
+w_multilag(t) vs local_variance,CWRU_BAL,-0.22654603261459294,"{'ci': [-0.26401497668107515, -0.18560252396321614]}",D2_routing_validity
+w_multilag(t) vs local_energy,CWRU_BAL,-0.22654603261459294,"{'ci': [-0.26797853466405497, -0.18539684125567757]}",D2_routing_validity
+w_multilag(t) vs first_diff,CWRU_BAL,-0.04171883437076929,"{'ci': [-0.08339376791977521, -1.9394996169273635e-05]}",D2_routing_validity
+w_multilag(t) vs skewness,CWRU_BAL,-0.019328052183187363,"{'ci': [-0.05892906546739606, 0.02229455507410222]}",D2_routing_validity
+w_multilag(t) vs kurtosis,CWRU_BAL,0.24593368985876274,"{'ci': [0.20462309483626184, 0.2875941075638875]}",D2_routing_validity
+w_multilag(t) vs lag_disagreement,CWRU_BAL,-0.44164623336576986,"{'ci': [-0.47453378364251647, -0.40590753994908274]}",D2_routing_validity
+shuffled vs actual routing accuracy,CWRU_BAL,-0.3262786596119929,{},D3_routing_intervention
+targeted vs random region conf-drop,CWRU_BAL,0.06973899155855179,"{'ci': [0.04256308694183827, 0.09651162945479154], 'target': 0.1204470843076706, 'random': 0.050708092749118805}",D4_routing_faithfulness
+gaussian_noise: severity vs error_rate,CWRU_BAL,0.9999999999999999,{'n_levels': 5},D5_degradation
+gaussian_noise: severity vs mean_conf,CWRU_BAL,-0.8999999999999998,{'n_levels': 5},D5_degradation
+gaussian_noise: severity vs final_entropy,CWRU_BAL,0.8999999999999998,{'n_levels': 5},D5_degradation
+gaussian_noise: severity vs routing_entropy,CWRU_BAL,0.9999999999999999,{'n_levels': 5},D5_degradation
+amplitude_scale: severity vs error_rate,CWRU_BAL,-0.5,{'n_levels': 3},D5_degradation
+amplitude_scale: severity vs mean_conf,CWRU_BAL,1.0,{'n_levels': 3},D5_degradation
+amplitude_scale: severity vs final_entropy,CWRU_BAL,-1.0,{'n_levels': 3},D5_degradation
+amplitude_scale: severity vs routing_entropy,CWRU_BAL,-1.0,{'n_levels': 3},D5_degradation
+baseline_shift: severity vs error_rate,CWRU_BAL,1.0,{'n_levels': 3},D5_degradation
+baseline_shift: severity vs mean_conf,CWRU_BAL,0.5,{'n_levels': 3},D5_degradation
+baseline_shift: severity vs final_entropy,CWRU_BAL,-1.0,{'n_levels': 3},D5_degradation
+baseline_shift: severity vs routing_entropy,CWRU_BAL,-1.0,{'n_levels': 3},D5_degradation
+temporal_jitter: severity vs error_rate,CWRU_BAL,-0.5,{'n_levels': 3},D5_degradation
+temporal_jitter: severity vs mean_conf,CWRU_BAL,-1.0,{'n_levels': 3},D5_degradation
+temporal_jitter: severity vs final_entropy,CWRU_BAL,-0.5,{'n_levels': 3},D5_degradation
+temporal_jitter: severity vs routing_entropy,CWRU_BAL,1.0,{'n_levels': 3},D5_degradation
+localized_mask: severity vs error_rate,CWRU_BAL,1.0,{'n_levels': 3},D5_degradation
+localized_mask: severity vs mean_conf,CWRU_BAL,1.0,{'n_levels': 3},D5_degradation
+localized_mask: severity vs final_entropy,CWRU_BAL,1.0,{'n_levels': 3},D5_degradation
+localized_mask: severity vs routing_entropy,CWRU_BAL,1.0,{'n_levels': 3},D5_degradation
+routing_entropy error detection,CWRU_BAL,0.5155033616418967,"{'ci': [0.4650532997169144, 0.5666456564048125]}",D6_uncertainty
+confidence error detection,CWRU_BAL,0.7844125973106865,"{'ci': [0.7392062544232129, 0.8260494072894549]}",D6_uncertainty
+amp_scale_0.95: routing cosine,CWRU_BAL,0.9998738765716553,{},D7_routing_stability
+amp_scale_1.05: routing cosine,CWRU_BAL,0.9998855590820312,{},D7_routing_stability
+baseline_0.1sd: routing cosine,CWRU_BAL,0.9826077222824097,{},D7_routing_stability
+noise_0.02: routing cosine,CWRU_BAL,0.9999781847000122,{},D7_routing_stability
+jitter_2: routing cosine,CWRU_BAL,0.9996998310089111,{},D7_routing_stability
+routing shift under targeted pattern modification,CWRU_BAL,0.0031267893500626087,{},D8_counterfactual_routing
+routing_entropy vs best raw baseline,CWRU_BAL,-0.012252300070771383,"{'routing': 0.51598991507431, 'simple': 0.5282422151450814}",D9_baselines

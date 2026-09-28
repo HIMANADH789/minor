@@ -1,0 +1,1110 @@
+[
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R0 minority-class MF1",
+    "estimate": 0.0,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R1 minority-class MF1",
+    "estimate": 0.0476,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R2 minority-class MF1",
+    "estimate": 0.1892,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R3 minority-class MF1",
+    "estimate": 0.0913,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R4 minority-class MF1",
+    "estimate": 0.3968,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R5 minority-class MF1",
+    "estimate": 0.0645,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R6 minority-class MF1",
+    "estimate": 0.1852,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_UNBAL R7 minority-class MF1",
+    "estimate": 0.0476,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "ECG5000_UNBAL routing_entropy vs R0 errors",
+    "estimate": 0.6582405411877394,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "ECG5000_UNBAL confidence_neg vs R0 errors",
+    "estimate": 0.8448724856321839,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_UNBAL flavor 0 mass vs class",
+    "estimate": -0.48766560252005386,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_UNBAL flavor 1 mass vs class",
+    "estimate": 0.4925464586028217,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_UNBAL flavor 2 mass vs class",
+    "estimate": -0.5612011313560407,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_UNBAL flavor 3 mass vs class",
+    "estimate": -0.44558670344259366,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D6_soft_vs_hard",
+    "test": "McNemar",
+    "comparison": "ECG5000_UNBAL R4 vs R2",
+    "estimate": 0.975,
+    "p_value": 0.013906296895346027,
+    "extra": {},
+    "q_value": 0.05562518758138411,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R0 minority-class MF1",
+    "estimate": 0.3,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R1 minority-class MF1",
+    "estimate": 0.381,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R2 minority-class MF1",
+    "estimate": 0.3077,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R3 minority-class MF1",
+    "estimate": 0.2857,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R4 minority-class MF1",
+    "estimate": 0.5306,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R5 minority-class MF1",
+    "estimate": 0.2456,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R6 minority-class MF1",
+    "estimate": 0.4082,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "ECG5000_BAL R7 minority-class MF1",
+    "estimate": 0.3774,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "ECG5000_BAL routing_entropy vs R0 errors",
+    "estimate": 0.6131111111111112,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "ECG5000_BAL confidence_neg vs R0 errors",
+    "estimate": 0.8869555555555555,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_BAL flavor 0 mass vs class",
+    "estimate": -0.3942270789838511,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_BAL flavor 1 mass vs class",
+    "estimate": 0.519261000954335,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_BAL flavor 2 mass vs class",
+    "estimate": 0.20895767527742273,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "ECG5000_BAL flavor 3 mass vs class",
+    "estimate": -0.3689839903272766,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D6_soft_vs_hard",
+    "test": "McNemar",
+    "comparison": "ECG5000_BAL R4 vs R2",
+    "estimate": 0.948,
+    "p_value": 0.055270280676272425,
+    "extra": {},
+    "q_value": 0.11054056135254485,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R0 minority-class MF1",
+    "estimate": 0.5769,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R1 minority-class MF1",
+    "estimate": 0.832,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R2 minority-class MF1",
+    "estimate": 0.8504,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R3 minority-class MF1",
+    "estimate": 0.8504,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R4 minority-class MF1",
+    "estimate": 0.8615,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R5 minority-class MF1",
+    "estimate": 0.6519,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R6 minority-class MF1",
+    "estimate": 0.8594,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_UNBAL R7 minority-class MF1",
+    "estimate": 0.88,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "CWRU_UNBAL routing_entropy vs R0 errors",
+    "estimate": 0.3855421686746988,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "CWRU_UNBAL confidence_neg vs R0 errors",
+    "estimate": 0.8209052425919896,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_UNBAL flavor 0 mass vs class",
+    "estimate": 0.7476453788943047,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_UNBAL flavor 1 mass vs class",
+    "estimate": -0.748756499650603,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_UNBAL flavor 2 mass vs class",
+    "estimate": -0.3873644736645394,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_UNBAL flavor 3 mass vs class",
+    "estimate": 0.7482009392724539,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D6_soft_vs_hard",
+    "test": "McNemar",
+    "comparison": "CWRU_UNBAL R4 vs R2",
+    "estimate": 0.9625,
+    "p_value": 1.0,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R0 minority-class MF1",
+    "estimate": 0.7421,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R1 minority-class MF1",
+    "estimate": 0.8811,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R2 minority-class MF1",
+    "estimate": 0.8775,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R3 minority-class MF1",
+    "estimate": 0.8775,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R4 minority-class MF1",
+    "estimate": 0.8617,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R5 minority-class MF1",
+    "estimate": 0.718,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R6 minority-class MF1",
+    "estimate": 0.9063,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D2_error_analysis",
+    "test": "per-class F1 (descriptive)",
+    "comparison": "CWRU_BAL R7 minority-class MF1",
+    "estimate": 0.8834,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "CWRU_BAL routing_entropy vs R0 errors",
+    "estimate": 0.51598991507431,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D3_uncertainty",
+    "test": "AUROC + bootstrap CI (error detection)",
+    "comparison": "CWRU_BAL confidence_neg vs R0 errors",
+    "estimate": 0.8035429936305731,
+    "p_value": null,
+    "extra": {},
+    "q_value": 1.0,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_BAL flavor 0 mass vs class",
+    "estimate": 0.7125899650110245,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_BAL flavor 1 mass vs class",
+    "estimate": -0.7181110264088691,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_BAL flavor 2 mass vs class",
+    "estimate": -0.6857307473998875,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D4_flavor_usage",
+    "test": "Spearman + permutation",
+    "comparison": "CWRU_BAL flavor 3 mass vs class",
+    "estimate": 0.6005770797142089,
+    "p_value": 0.004975124378109453,
+    "extra": {},
+    "q_value": 0.004975124378109453,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "D6_soft_vs_hard",
+    "test": "McNemar",
+    "comparison": "CWRU_BAL R4 vs R2",
+    "estimate": 0.9805996472663139,
+    "p_value": 0.34278171114790873,
+    "extra": {},
+    "q_value": 0.457042281530545,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_UNBAL: R1 vs R0",
+    "estimate": 0.07013898962689108,
+    "p_value": 0.005577994003398252,
+    "extra": {
+      "dataset": "ECG5000_UNBAL",
+      "variant": "R1",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.07013898962689108
+    },
+    "q_value": 0.008199938719397799,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_UNBAL: R2 vs R0",
+    "estimate": 0.1298025690879286,
+    "p_value": 0.3020282281097738,
+    "extra": {
+      "dataset": "ECG5000_UNBAL",
+      "variant": "R2",
+      "verdict": "n.s. (improves)",
+      "mf1_delta": 0.1298025690879286
+    },
+    "q_value": 0.32526116873360256,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_UNBAL: R3 vs R0",
+    "estimate": 0.0187574577721909,
+    "p_value": 2.7487203508635612e-36,
+    "extra": {
+      "dataset": "ECG5000_UNBAL",
+      "variant": "R3",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.0187574577721909
+    },
+    "q_value": 7.696416982417972e-35,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_UNBAL: R4 vs R0",
+    "estimate": 0.2300279840709017,
+    "p_value": 0.007209570764742524,
+    "extra": {
+      "dataset": "ECG5000_UNBAL",
+      "variant": "R4",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.2300279840709017
+    },
+    "q_value": 0.009612761019656699,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_UNBAL: R5 vs R0",
+    "estimate": 0.057793832926572974,
+    "p_value": 0.00088904903065855,
+    "extra": {
+      "dataset": "ECG5000_UNBAL",
+      "variant": "R5",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.057793832926572974
+    },
+    "q_value": 0.0015558358036524625,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_UNBAL: R6 vs R0",
+    "estimate": 0.12908836079846492,
+    "p_value": 0.0029671058986476154,
+    "extra": {
+      "dataset": "ECG5000_UNBAL",
+      "variant": "R6",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.12908836079846492
+    },
+    "q_value": 0.004886997950713719,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_UNBAL: R7 vs R0",
+    "estimate": 0.061682131985459854,
+    "p_value": 0.04550026389635857,
+    "extra": {
+      "dataset": "ECG5000_UNBAL",
+      "variant": "R7",
+      "verdict": "n.s. (improves)",
+      "mf1_delta": 0.061682131985459854
+    },
+    "q_value": 0.055391625612958253,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_BAL: R1 vs R0",
+    "estimate": 0.03533064052876145,
+    "p_value": 0.005088185461451067,
+    "extra": {
+      "dataset": "ECG5000_BAL",
+      "variant": "R1",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.03533064052876145
+    },
+    "q_value": 0.007914955162257216,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_BAL: R2 vs R0",
+    "estimate": -0.007437924862967793,
+    "p_value": 0.11979493042591895,
+    "extra": {
+      "dataset": "ECG5000_BAL",
+      "variant": "R2",
+      "verdict": "n.s. (degrades)",
+      "mf1_delta": -0.007437924862967793
+    },
+    "q_value": 0.13417032207702922,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_BAL: R3 vs R0",
+    "estimate": -0.03464089614487109,
+    "p_value": 1.9661604415428878e-10,
+    "extra": {
+      "dataset": "ECG5000_BAL",
+      "variant": "R3",
+      "verdict": "SIGNIFICANT DEGRADATION",
+      "mf1_delta": -0.03464089614487109
+    },
+    "q_value": 5.00477203301826e-10,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_BAL: R4 vs R0",
+    "estimate": 0.02736881497829069,
+    "p_value": 0.897278961260083,
+    "extra": {
+      "dataset": "ECG5000_BAL",
+      "variant": "R4",
+      "verdict": "n.s. (improves)",
+      "mf1_delta": 0.02736881497829069
+    },
+    "q_value": 0.897278961260083,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_BAL: R5 vs R0",
+    "estimate": -0.057738858347803956,
+    "p_value": 7.76585360303334e-05,
+    "extra": {
+      "dataset": "ECG5000_BAL",
+      "variant": "R5",
+      "verdict": "SIGNIFICANT DEGRADATION",
+      "mf1_delta": -0.057738858347803956
+    },
+    "q_value": 0.00014496260058995567,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_BAL: R6 vs R0",
+    "estimate": 0.004069092133061836,
+    "p_value": 0.019108863644740508,
+    "extra": {
+      "dataset": "ECG5000_BAL",
+      "variant": "R6",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.004069092133061836
+    },
+    "q_value": 0.024320371911487917,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "ECG5000_BAL: R7 vs R0",
+    "estimate": -0.003246360476882537,
+    "p_value": 0.4496917979688908,
+    "extra": {
+      "dataset": "ECG5000_BAL",
+      "variant": "R7",
+      "verdict": "n.s. (degrades)",
+      "mf1_delta": -0.003246360476882537
+    },
+    "q_value": 0.46634704974551644,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_UNBAL: R1 vs R0",
+    "estimate": 0.2175633538991264,
+    "p_value": 1.1199327149542469e-10,
+    "extra": {
+      "dataset": "CWRU_UNBAL",
+      "variant": "R1",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.2175633538991264
+    },
+    "q_value": 3.402423427293563e-10,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_UNBAL: R2 vs R0",
+    "estimate": 0.2257008949772371,
+    "p_value": 1.0220644786435981e-11,
+    "extra": {
+      "dataset": "CWRU_UNBAL",
+      "variant": "R2",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.2257008949772371
+    },
+    "q_value": 3.5772256752525934e-11,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_UNBAL: R3 vs R0",
+    "estimate": 0.2257008949772371,
+    "p_value": 1.0220644786435981e-11,
+    "extra": {
+      "dataset": "CWRU_UNBAL",
+      "variant": "R3",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.2257008949772371
+    },
+    "q_value": 3.5772256752525934e-11,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_UNBAL: R4 vs R0",
+    "estimate": 0.23034343107872512,
+    "p_value": 2.848418095541843e-12,
+    "extra": {
+      "dataset": "CWRU_UNBAL",
+      "variant": "R4",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.23034343107872512
+    },
+    "q_value": 1.99389266687929e-11,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_UNBAL: R5 vs R0",
+    "estimate": 0.05947089889167678,
+    "p_value": 0.08247788747320971,
+    "extra": {
+      "dataset": "CWRU_UNBAL",
+      "variant": "R5",
+      "verdict": "n.s. (improves)",
+      "mf1_delta": 0.05947089889167678
+    },
+    "q_value": 0.09622420205207799,
+    "alpha": 0.05,
+    "significant": false
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_UNBAL: R6 vs R0",
+    "estimate": 0.2304519163434604,
+    "p_value": 6.198985903514419e-12,
+    "extra": {
+      "dataset": "CWRU_UNBAL",
+      "variant": "R6",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.2304519163434604
+    },
+    "q_value": 3.471432105968074e-11,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_UNBAL: R7 vs R0",
+    "estimate": 0.23820491736071048,
+    "p_value": 2.2795921179116345e-12,
+    "extra": {
+      "dataset": "CWRU_UNBAL",
+      "variant": "R7",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.23820491736071048
+    },
+    "q_value": 1.99389266687929e-11,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_BAL: R1 vs R0",
+    "estimate": 0.10284289193968932,
+    "p_value": 1.2151512240334154e-10,
+    "extra": {
+      "dataset": "CWRU_BAL",
+      "variant": "R1",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.10284289193968932
+    },
+    "q_value": 3.402423427293563e-10,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_BAL: R2 vs R0",
+    "estimate": 0.10284289193968932,
+    "p_value": 3.1546132243997343e-10,
+    "extra": {
+      "dataset": "CWRU_BAL",
+      "variant": "R2",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.10284289193968932
+    },
+    "q_value": 6.794551560245582e-10,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_BAL: R3 vs R0",
+    "estimate": 0.10284289193968932,
+    "p_value": 3.1546132243997343e-10,
+    "extra": {
+      "dataset": "CWRU_BAL",
+      "variant": "R3",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.10284289193968932
+    },
+    "q_value": 6.794551560245582e-10,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_BAL: R4 vs R0",
+    "estimate": 0.09578061644078828,
+    "p_value": 4.709561410054412e-09,
+    "extra": {
+      "dataset": "CWRU_BAL",
+      "variant": "R4",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.09578061644078828
+    },
+    "q_value": 9.419122820108824e-09,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_BAL: R5 vs R0",
+    "estimate": -0.05096830607721259,
+    "p_value": 0.005857099085284141,
+    "extra": {
+      "dataset": "CWRU_BAL",
+      "variant": "R5",
+      "verdict": "SIGNIFICANT DEGRADATION",
+      "mf1_delta": -0.05096830607721259
+    },
+    "q_value": 0.008199938719397799,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_BAL: R6 vs R0",
+    "estimate": 0.11893345682382939,
+    "p_value": 1.3730454524896267e-13,
+    "extra": {
+      "dataset": "CWRU_BAL",
+      "variant": "R6",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.11893345682382939
+    },
+    "q_value": 1.9222636334854776e-12,
+    "alpha": 0.05,
+    "significant": true
+  },
+  {
+    "family": "V2_vs_R0",
+    "test": "McNemar (paired, continuity-corrected)",
+    "comparison": "CWRU_BAL: R7 vs R0",
+    "estimate": 0.1083641786913484,
+    "p_value": 9.103586465745697e-12,
+    "extra": {
+      "dataset": "CWRU_BAL",
+      "variant": "R7",
+      "verdict": "SIGNIFICANT IMPROVEMENT",
+      "mf1_delta": 0.1083641786913484
+    },
+    "q_value": 3.5772256752525934e-11,
+    "alpha": 0.05,
+    "significant": true
+  }
+]

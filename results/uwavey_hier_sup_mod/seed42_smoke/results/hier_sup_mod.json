@@ -1,0 +1,80 @@
+{
+ "method": "hier_sup_mod",
+ "label": "HIER-SUP-MOD",
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "base_budget": 9996,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_pool": {
+  "root_D1": 19992,
+  "delta": 449820,
+  "unified": 469812
+ },
+ "changed_vs_hier_sup_clean": "ranking statistic only: raw ANOVA-F -> EB variance-moderated F (Smyth scaled-F prior, single pool-wide fit)",
+ "anova_design": {
+  "d_between": 7,
+  "d_error": 252,
+  "occupancy_as_df": false
+ },
+ "eb_prior": {
+  "d0": 0.47238520268572115,
+  "s0_sq": 0.00023568660324281,
+  "moderated_df": 252.47238520268573,
+  "degenerate": false,
+  "n_nonpositive_s2": 20091
+ },
+ "selected_composition": {
+  "1": 14865,
+  "2": 3655,
+  "4": 1290,
+  "8": 160,
+  "16": 22
+ },
+ "raw_vs_moderated_overlap": {
+  "n_candidates": 469812,
+  "budget": 19992,
+  "intersection": 19990,
+  "raw_only": 2,
+  "moderated_only": 2,
+  "jaccard": 0.9997999399819946,
+  "entering": 2,
+  "leaving": 2
+ },
+ "occupancy_class_association": {
+  "regimes_tested": 30,
+  "significant_raw": 14,
+  "significant_bh": 0
+ },
+ "cv_moderated_fold_internal": {
+  "mean": 0.6857595141786319,
+  "std": 0.04509553233458678,
+  "kfold": 5
+ },
+ "equivalence_gate": {
+  "verdict": "SKIPPED_SMOKE",
+  "reason": "smoke subset differs from the stored full run"
+ },
+ "macro_f1": 0.7383,
+ "accuracy": 0.745,
+ "alpha": 78.47599703514607,
+ "deltas_vs": {
+  "canonical_mr": -0.016,
+  "mr_high": -0.0094,
+  "r5_high": -0.0389,
+  "hier_high": 0.0153,
+  "hier_high_sup": -0.044,
+  "hier_continuous_sup": -0.0216,
+  "hier_sup_clean": -0.0216
+ },
+ "gate_mr_high": {
+  "ref": 0.7477,
+  "reproduced": 0.7095,
+  "diff": 0.0382,
+  "tol": 0.002
+ },
+ "runtime_s": 39.5,
+ "peak_mem_mb": 0.0,
+ "smoke": true
+}

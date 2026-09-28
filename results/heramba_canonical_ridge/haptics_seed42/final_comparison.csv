@@ -1,0 +1,6 @@
+Method,Representation,Test Macro-F1,Validation Macro-F1,Dimensions,alpha_base,Notes
+MiniROCKET,G,0.5037,-,4998,4.281332398719396,canonical RidgeClassifierCV
+Raw G+H,[G||H],0.55,-,9996,4.281332398719396,canonical R2
+Hard CCA unique,[G||H_unique],0.5138,-,5086,1.623776739188721,tau=0.5 discard (ranked experiment)
+Uniform reduced gen-ridge,[G_low||H_CCA||H_perp] (29+29+59),0.468,0.7433,117,630.9573,all dirs alpha_base; GCV alpha_base (train-only)
+Proposed Canonical Ridge,[G_low||H_CCA||H_perp] (29+29+59),0.4825,0.7433,117,501.1872,alpha_k=alpha_base*(1+1.0*rho_k^2); GCV alpha_base (train-only)

@@ -1,0 +1,61 @@
+{
+    "Test_Accuracy": 0.945,
+    "Test_Macro_F1": 0.595771695466251,
+    "Per_Class_Recall": [
+        0.989778534923339,
+        0.9418282548476454,
+        0.5882352941176471,
+        0.45901639344262296,
+        0.0
+    ],
+    "Confusion_Matrix": [
+        [
+            581,
+            3,
+            0,
+            0,
+            0
+        ],
+        [
+            2,
+            340,
+            4,
+            5,
+            2
+        ],
+        [
+            2,
+            5,
+            10,
+            2,
+            0
+        ],
+        [
+            4,
+            19,
+            0,
+            14,
+            2
+        ],
+        [
+            1,
+            2,
+            1,
+            1,
+            0
+        ]
+    ],
+    "Training_Time_Seconds": 146.18349361419678,
+    "Upgrades_Applied": [
+        "per_scale_balanced_kta",
+        "residual_pca",
+        "confusion_graded_target_kernel"
+    ],
+    "Validation_Checks": {
+        "kernel_psd": true,
+        "kernel_symmetric": true,
+        "diagonal_near_1": true,
+        "all_classes_nonzero_recall": false,
+        "balanced_kernel_rank_ok": true
+    }
+}

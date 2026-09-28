@@ -1,0 +1,60 @@
+{
+  "USTRNet-CE": {
+    "model": "USTRNet-CE",
+    "dataset": "BEARING_BAL",
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "class_f1s": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "class_recalls": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "confusion_matrix": [
+      [
+        200,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        198,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        198,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        198
+      ]
+    ],
+    "support": {
+      "0": 200,
+      "1": 198,
+      "2": 198,
+      "3": 198
+    },
+    "params": 100077,
+    "best_epoch": 25,
+    "total_epochs": 30,
+    "time_s": 118.8313958644867,
+    "avg_uncertainty": 0.2041933387517929,
+    "use_focal": false,
+    "gamma": 0
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "experiment": "corrected DRTN-conditioned MiniROCKET re-test of previously-NEGATIVE datasets",
+  "seed": 42,
+  "datasets": {
+    "ECG5000_UNBAL": {
+      "train": 3400,
+      "val": 600,
+      "test": 1000,
+      "T": 140,
+      "n_classes": 5,
+      "loader": "experiments/run_turs_skb.load_split",
+      "znorm": "per-sample, before MiniRocket/DRTN",
+      "val_source": "stratified_15pct_of_train_seed42"
+    },
+    "CWRU_UNBAL": {
+      "train": 1156,
+      "val": 204,
+      "test": 240,
+      "T": 1024,
+      "n_classes": 4,
+      "loader": "experiments/run_turs_skb.load_split",
+      "znorm": "per-sample, before MiniRocket/DRTN",
+      "val_source": "stratified_85_15_then_15pct_seed42"
+    }
+  },
+  "variants": {
+    "M0": "aeon MiniRocket(random_state=42), 9996 features, RidgeClassifierCV(logspace(-4,4,20))",
+    "M1": "4998 canonical global PPV + 4998 DRTN-regime heterogeneity (valid region [padding, T-padding))",
+    "M2": "4998 global + 4998 heterogeneity under PER-SAMPLE occupancy-preserving random regimes (RNG seed+900001)",
+    "M3": "4998 global + 4998 heterogeneity under per-sample-shuffled DRTN regimes (RNG seed+900002)"
+  },
+  "heterogeneity_formula": "H_m = sum_k q_k * (PPV_{m,k} - PPV_m)^2, valid temporal region only",
+  "feature_budget": {
+    "M0": 9996,
+    "M1": "4998+4998",
+    "M2": "4998+4998",
+    "M3": "4998+4998"
+  },
+  "drtn": {
+    "config": "R5 K=8, identical to audited Haptics/ECG5000_BAL implementation",
+    "checkpoint_source": "results/drtn_conditioned_minirocket_transfer_seed42/<dataset>/ (frozen, train-only selection)"
+  },
+  "classifier": {
+    "ridge_alphas": "np.logspace(-4, 4, 20)",
+    "fit": "train+validation",
+    "test_evals": "exactly once per variant"
+  },
+  "canonical_M0_references": {
+    "ECG5000_UNBAL": 0.5938,
+    "CWRU_UNBAL": 0.9917
+  },
+  "old_preaudit_results": {
+    "ECG5000_UNBAL": {
+      "M0": 0.5938,
+      "M1": 0.5859,
+      "M2": 0.5716,
+      "M3": 0.5565
+    },
+    "CWRU_UNBAL": {
+      "M0": 0.9917,
+      "M1": 0.9792,
+      "M2": 0.9625,
+      "M3": 0.9583
+    }
+  },
+  "corrected_issues_vs_old_screen": [
+    "M2 now preserves occupancy PER SAMPLE (old: iid draws from global histogram)",
+    "Heterogeneity now restricted to aeon valid region [padding, T-padding) (old: averaged over all T)",
+    "Independent RNG streams for M2/M3"
+  ]
+}

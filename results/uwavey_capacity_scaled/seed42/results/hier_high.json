@@ -1,0 +1,18 @@
+{
+ "method": "hier_high",
+ "label": "HIER-HIGH",
+ "base_budget": 19992,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_features": 449820,
+ "macro_f1": 0.723,
+ "accuracy": 0.7289,
+ "selected_alpha": 206.913808111479,
+ "num_classes": 8,
+ "seed": 42,
+ "gates": {
+  "ref": null,
+  "abs_diff": null
+ }
+}

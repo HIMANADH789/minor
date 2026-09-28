@@ -1,0 +1,6 @@
+seed,comparison,discordant_A_only,discordant_B_only,p_two_sided,holm_p
+42,MiniROCKET-vs-R5_5050,25,11,0.02882,0.02882
+42,R5_5050-vs-InceptionTime,19,135,0.0,0.0
+42,R5_5050-vs-FCN,19,135,0.0,0.0
+42,R5_5050-vs-ResNet1D,23,115,0.0,0.0
+42,R5_5050-vs-PatchTST,27,112,0.0,0.0

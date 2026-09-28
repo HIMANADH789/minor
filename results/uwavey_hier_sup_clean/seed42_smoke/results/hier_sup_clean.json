@@ -1,0 +1,58 @@
+{
+ "method": "hier_sup_clean",
+ "label": "HIER-SUP-CLEAN",
+ "dataset": "UWaveGestureLibraryY",
+ "seed": 42,
+ "base_budget": 9996,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_pool": {
+  "root_increment_D1": 19992,
+  "delta_D2_D4_D8_D16": 449820,
+  "unified": 469812
+ },
+ "formulation": {
+  "ppv_level_0": 0.0,
+  "root_increment": "Delta^(1)_m = PPV_m^(1) - PPV_m^(0) = PPV_m^(1)",
+  "deeper": "Delta_{m,c}^(K) = PPV_{m,c}^(K) - PPV_{m,parent(c)}^(K/2), K in {2,4,8,16}",
+  "parent_rule": "occupancy-weighted child mean; sum_c (n_c/n_p) Delta_{m,c} = 0"
+ },
+ "selection": "ONE supervised ANOVA-F ranking over the unified 469,812-candidate telescoping pool (train+val labels, canonical R5 final-stage protocol); no rho, no G/H split, no per-level quota",
+ "selected_composition": {
+  "1": 14884,
+  "2": 3658,
+  "4": 1256,
+  "8": 164,
+  "16": 30
+ },
+ "cv_unified_fold_internal": {
+  "mean": 0.6850109694227341,
+  "std": 0.044624950250226586,
+  "kfold": 5
+ },
+ "equivalence": {
+  "verdict": "SKIPPED_SMOKE",
+  "reason": "smoke subset differs from the stored full run"
+ },
+ "macro_f1": 0.7377,
+ "accuracy": 0.745,
+ "alpha": 78.47599703514607,
+ "deltas_vs": {
+  "canonical_mr": -0.0166,
+  "mr_high": -0.01,
+  "r5_high": -0.0395,
+  "hier_high": 0.0147,
+  "hier_high_sup": -0.0446,
+  "hier_continuous_sup": -0.0222
+ },
+ "gate_mr_high": {
+  "ref": 0.7477,
+  "reproduced": 0.7095,
+  "diff": 0.0382,
+  "tol": 0.002
+ },
+ "runtime_s": 34.9,
+ "peak_mem_mb": 0.0,
+ "smoke": true
+}

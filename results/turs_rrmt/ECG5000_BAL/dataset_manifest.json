@@ -1,0 +1,38 @@
+{
+  "dataset": "ECG5000_BAL",
+  "source": "data/ecg5000_fair_balanced.npz",
+  "sha256": "6d318fc9e12c72237758ea6f1eadbdfb9dd5fe1ec5881fa60f0aee002a6d9958",
+  "signal_length": 140,
+  "num_classes": 5,
+  "split": {
+    "train": 5063,
+    "val": 1086,
+    "test": 1000
+  },
+  "class_counts": {
+    "y_train": [
+      1922,
+      1164,
+      659,
+      659,
+      659
+    ],
+    "y_val": [
+      413,
+      250,
+      141,
+      141,
+      141
+    ],
+    "y_test": [
+      584,
+      353,
+      19,
+      39,
+      5
+    ]
+  },
+  "preprocessing": "per-sample z-norm (eps 1e-8)",
+  "seed": 42,
+  "deterministic": true
+}

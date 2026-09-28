@@ -1,0 +1,39 @@
+{
+  "predictions": {
+    "FCN_seed42": "AVAILABLE",
+    "FCN_seed43": "AVAILABLE",
+    "FCN_seed44": "AVAILABLE",
+    "InceptionTime_seed42": "AVAILABLE",
+    "InceptionTime_seed43": "AVAILABLE",
+    "InceptionTime_seed44": "AVAILABLE",
+    "MiniROCKET_seed42": "AVAILABLE",
+    "MiniROCKET_seed43": "AVAILABLE",
+    "MiniROCKET_seed44": "AVAILABLE",
+    "PatchTST_seed42": "AVAILABLE",
+    "PatchTST_seed43": "AVAILABLE",
+    "PatchTST_seed44": "AVAILABLE",
+    "R5_5050_seed42": "AVAILABLE",
+    "R5_5050_seed43": "AVAILABLE",
+    "R5_5050_seed44": "AVAILABLE",
+    "ResNet1D_seed42": "AVAILABLE",
+    "ResNet1D_seed43": "AVAILABLE",
+    "ResNet1D_seed44": "AVAILABLE"
+  },
+  "banks": {
+    "G_trva": "AVAILABLE(rebuilt_frozen_ckpt_identity_verified)",
+    "H_trva": "AVAILABLE(rebuilt_frozen_ckpt_identity_verified)",
+    "G_te": "AVAILABLE(rebuilt_frozen_ckpt_identity_verified)",
+    "H_te": "AVAILABLE(rebuilt_frozen_ckpt_identity_verified)"
+  },
+  "regimes": {
+    "reg_trva": "AVAILABLE",
+    "reg_te": "AVAILABLE"
+  },
+  "scalar": {
+    "R5_adaptive_scores_seeds_42_43_44": "AVAILABLE(multiseed_haptics)",
+    "R5_adaptive_predictions_43_44": "MISSING(no checkpoints; not re-derived per no-training rule)",
+    "neural_logits_probabilities": "MISSING(not stored)",
+    "M0_R5_ridge_decision_values": "DERIVABLE(frozen banks + canonical Ridge refit, deterministic)",
+    "G_only_H_only_diagnostics": "DERIVABLE(section 19)"
+  }
+}

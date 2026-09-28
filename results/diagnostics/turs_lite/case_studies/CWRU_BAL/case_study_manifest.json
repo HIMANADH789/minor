@@ -1,0 +1,380 @@
+[
+  {
+    "dataset": "CWRU_BAL",
+    "category": "correct_low_u",
+    "sample_id": 195,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9999872446060181,
+    "u_mean": 0.32369256019592285,
+    "v_max": 9.401847839355469,
+    "alpha": 0.0004658902471419424,
+    "class_probs": [
+      0.9999872446060181,
+      1.1654537956928834e-05,
+      9.93252228909114e-07,
+      1.3945954435712338e-07
+    ],
+    "targeted_region": [
+      220,
+      322
+    ],
+    "targeted_prob_drop": 5.0067901611328125e-05,
+    "random_region": [
+      134,
+      236
+    ],
+    "random_prob_drop": -2.0265579223632812e-06
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "correct_low_u",
+    "sample_id": 354,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9998437166213989,
+    "u_mean": 0.32360532879829407,
+    "v_max": 9.835755348205566,
+    "alpha": 0.00045665379730053246,
+    "class_probs": [
+      0.9998445510864258,
+      0.00011588558118091896,
+      3.901782110915519e-05,
+      6.227785434020916e-07
+    ],
+    "targeted_region": [
+      40,
+      142
+    ],
+    "targeted_prob_drop": 9.059906005859375e-06,
+    "random_region": [
+      892,
+      994
+    ],
+    "random_prob_drop": 4.488229751586914e-05
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "correct_high_u",
+    "sample_id": 89,
+    "true_label": 3,
+    "predicted_label": 3,
+    "confidence": 0.9555423855781555,
+    "u_mean": 0.38252395391464233,
+    "v_max": 6.7490386962890625,
+    "alpha": 0.0009159648907370865,
+    "class_probs": [
+      3.777267556870356e-05,
+      4.022880148113472e-06,
+      0.044274378567934036,
+      0.9556838870048523
+    ],
+    "targeted_region": [
+      17,
+      119
+    ],
+    "targeted_prob_drop": -0.029109597206115723,
+    "random_region": [
+      42,
+      144
+    ],
+    "random_prob_drop": -0.04109048843383789
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "correct_high_u",
+    "sample_id": 240,
+    "true_label": 3,
+    "predicted_label": 3,
+    "confidence": 1.0,
+    "u_mean": 0.38246339559555054,
+    "v_max": 14.77583122253418,
+    "alpha": 0.0010137781500816345,
+    "class_probs": [
+      1.0715189152632476e-10,
+      8.426505326841749e-11,
+      5.666962366035477e-08,
+      1.0
+    ],
+    "targeted_region": [
+      0,
+      102
+    ],
+    "targeted_prob_drop": 3.4570693969726562e-06,
+    "random_region": [
+      500,
+      602
+    ],
+    "random_prob_drop": 0.0
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "incorrect_high_u",
+    "sample_id": 507,
+    "true_label": 2,
+    "predicted_label": 3,
+    "confidence": 0.9247945547103882,
+    "u_mean": 0.3816206455230713,
+    "v_max": 8.501399040222168,
+    "alpha": 0.0009299460798501968,
+    "class_probs": [
+      4.460001582629047e-05,
+      9.667420272307936e-06,
+      0.07559937983751297,
+      0.9243462681770325
+    ],
+    "targeted_region": [
+      366,
+      468
+    ],
+    "targeted_prob_drop": -0.3395305275917053,
+    "random_region": [
+      576,
+      678
+    ],
+    "random_prob_drop": 0.036856550723314285
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "incorrect_high_u",
+    "sample_id": 539,
+    "true_label": 2,
+    "predicted_label": 3,
+    "confidence": 0.5505563020706177,
+    "u_mean": 0.3828396201133728,
+    "v_max": 7.175749778747559,
+    "alpha": 0.000936854281462729,
+    "class_probs": [
+      3.132338679279201e-05,
+      1.8062042727251537e-05,
+      0.45235323905944824,
+      0.5475972890853882
+    ],
+    "targeted_region": [
+      582,
+      684
+    ],
+    "targeted_prob_drop": 0.3966047465801239,
+    "random_region": [
+      363,
+      465
+    ],
+    "random_prob_drop": -0.13251620531082153
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "strong_velocity",
+    "sample_id": 542,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9999961853027344,
+    "u_mean": 0.32828378677368164,
+    "v_max": 12.23366928100586,
+    "alpha": 0.0002570047217886895,
+    "class_probs": [
+      1.4180423022480682e-06,
+      0.9999961853027344,
+      2.2665267351840157e-06,
+      6.139356401035911e-08
+    ],
+    "targeted_region": [
+      873,
+      975
+    ],
+    "targeted_prob_drop": 1.1563301086425781e-05,
+    "random_region": [
+      640,
+      742
+    ],
+    "random_prob_drop": -2.1457672119140625e-06
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "strong_velocity",
+    "sample_id": 185,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9999997615814209,
+    "u_mean": 0.33354616165161133,
+    "v_max": 12.197501182556152,
+    "alpha": 0.0001888458791654557,
+    "class_probs": [
+      7.41125489867045e-08,
+      0.9999997615814209,
+      1.6002616121113533e-07,
+      1.0328040644935754e-08
+    ],
+    "targeted_region": [
+      0,
+      102
+    ],
+    "targeted_prob_drop": -1.1920928955078125e-07,
+    "random_region": [
+      35,
+      137
+    ],
+    "random_prob_drop": -1.1920928955078125e-07
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "weak_velocity",
+    "sample_id": 76,
+    "true_label": 2,
+    "predicted_label": 2,
+    "confidence": 0.9982913136482239,
+    "u_mean": 0.3842424154281616,
+    "v_max": 8.78906536102295,
+    "alpha": 0.0009005509200505912,
+    "class_probs": [
+      2.676212034202763e-06,
+      1.2999872751606745e-06,
+      0.9982808828353882,
+      0.0017152006039395928
+    ],
+    "targeted_region": [
+      779,
+      881
+    ],
+    "targeted_prob_drop": 0.021253108978271484,
+    "random_region": [
+      832,
+      934
+    ],
+    "random_prob_drop": -0.0014182329177856445
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "weak_velocity",
+    "sample_id": 129,
+    "true_label": 3,
+    "predicted_label": 3,
+    "confidence": 0.999997615814209,
+    "u_mean": 0.41158801317214966,
+    "v_max": 8.739373207092285,
+    "alpha": 0.002150778193026781,
+    "class_probs": [
+      1.2657757508804934e-07,
+      5.008804464523564e-07,
+      1.7494854773758561e-06,
+      0.999997615814209
+    ],
+    "targeted_region": [
+      789,
+      891
+    ],
+    "targeted_prob_drop": 6.0677528381347656e-05,
+    "random_region": [
+      657,
+      759
+    ],
+    "random_prob_drop": 2.384185791015625e-07
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "strong_alpha_transport",
+    "sample_id": 427,
+    "true_label": 2,
+    "predicted_label": 2,
+    "confidence": 0.9917873740196228,
+    "u_mean": 0.3842102289199829,
+    "v_max": 8.263010025024414,
+    "alpha": 0.0009355020592920482,
+    "class_probs": [
+      8.215514753828757e-06,
+      3.6454421206144616e-06,
+      0.9917230010032654,
+      0.008265189826488495
+    ],
+    "targeted_region": [
+      566,
+      668
+    ],
+    "targeted_prob_drop": 0.9765347242355347,
+    "random_region": [
+      509,
+      611
+    ],
+    "random_prob_drop": -0.0037717223167419434
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "strong_alpha_transport",
+    "sample_id": 539,
+    "true_label": 2,
+    "predicted_label": 3,
+    "confidence": 0.5505563020706177,
+    "u_mean": 0.3828396201133728,
+    "v_max": 7.175749778747559,
+    "alpha": 0.000936854281462729,
+    "class_probs": [
+      3.132338679279201e-05,
+      1.8062042727251537e-05,
+      0.45235323905944824,
+      0.5475972890853882
+    ],
+    "targeted_region": [
+      582,
+      684
+    ],
+    "targeted_prob_drop": 0.22089146077632904,
+    "random_region": [
+      552,
+      654
+    ],
+    "random_prob_drop": -0.30226337909698486
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "weak_alpha_regime",
+    "sample_id": 7,
+    "true_label": 1,
+    "predicted_label": 1,
+    "confidence": 0.9999998807907104,
+    "u_mean": 0.34855902194976807,
+    "v_max": 16.38823699951172,
+    "alpha": 0.00042833664338104427,
+    "class_probs": [
+      7.575137317417102e-08,
+      0.9999998807907104,
+      1.4029924777503311e-08,
+      1.1714729630796228e-08
+    ],
+    "targeted_region": [
+      74,
+      176
+    ],
+    "targeted_prob_drop": -1.1920928955078125e-07,
+    "random_region": [
+      908,
+      1010
+    ],
+    "random_prob_drop": -1.1920928955078125e-07
+  },
+  {
+    "dataset": "CWRU_BAL",
+    "category": "weak_alpha_regime",
+    "sample_id": 71,
+    "true_label": 0,
+    "predicted_label": 0,
+    "confidence": 0.9999967813491821,
+    "u_mean": 0.31549543142318726,
+    "v_max": 9.381446838378906,
+    "alpha": 0.00042718302574940026,
+    "class_probs": [
+      0.9999969005584717,
+      2.3691047772445017e-06,
+      6.877892246848205e-07,
+      6.588105350147089e-08
+    ],
+    "targeted_region": [
+      28,
+      130
+    ],
+    "targeted_prob_drop": -3.5762786865234375e-07,
+    "random_region": [
+      854,
+      956
+    ],
+    "random_prob_drop": 7.152557373046875e-07
+  }
+]

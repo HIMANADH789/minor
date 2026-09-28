@@ -1,0 +1,5 @@
+dataset,mr_fit_s,mr_transform_s,skb_bank_fit_s,skb_extract_trva_s,skb_extract_te_s,m0_ridge_fit_s,m6_ridge_fit_s,m0_inference_s,m6_inference_s
+ECG5000_UNBAL,0.63,0.58,2.84,4.62,1.11,12.57,12.43,0.0122,0.0147
+ECG5000_BAL,0.06,0.69,4.51,7.64,1.16,38.94,42.16,0.0177,0.0135
+CWRU_UNBAL,0.24,0.68,25.03,41.28,7.05,1.2,1.33,0.003,0.0055
+CWRU_BAL,0.21,1.46,59.86,142.36,31.32,6.92,12.35,0.0071,0.0145

@@ -1,0 +1,4 @@
+dataset,n_classes,sequence_length,n_train,n_val,n_test,class_entropy_bits,imbalance_ratio_max_min,minority_class_proportion,mr_minority_class_recall,mr_macro_f1,stack_delta_vs_mr
+EpilepticSeizures,2,178,80,20,11420,1.0,1.0,0.5,,0.9194,-0.0488
+Haptics,5,1092,132,23,308,2.2826,2.07,0.1136,0.1667,0.4974,-0.1421
+Phoneme,39,1024,185,29,1896,4.8113,20.0,0.0054,0.0523,0.0808,-0.0023

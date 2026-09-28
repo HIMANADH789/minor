@@ -1,0 +1,480 @@
+{
+  "dataset": "EpilepticSeizures",
+  "seed": 42,
+  "val_source": "provided_canonical_val_ts",
+  "n_classes": 2,
+  "L": 178,
+  "class_names": [
+    "0",
+    "1"
+  ],
+  "models": {
+    "MiniROCKET": {
+      "accuracy": 0.949,
+      "macro_f1": 0.9194,
+      "weighted_f1": 0.9489,
+      "balanced_accuracy": 0.9179,
+      "class_f1s": [
+        0.8706,
+        0.9683
+      ],
+      "class_precision": [
+        0.8749,
+        0.9671
+      ],
+      "class_recall": [
+        0.8664,
+        0.9694
+      ],
+      "confusion_matrix": [
+        [
+          1958,
+          302
+        ],
+        [
+          280,
+          8880
+        ]
+      ],
+      "model": "MiniROCKET",
+      "n_kernels": 10000,
+      "n_features": 9996,
+      "selected_alpha": 11.288378916846883,
+      "val_macro_f1": 0.9499,
+      "params_trainable": 0,
+      "time_transform_fit_s": 0.23,
+      "time_transform_all_s": 0.92,
+      "time_total_s": 1.04,
+      "device": "cpu"
+    },
+    "InceptionTime": {
+      "accuracy": 0.936,
+      "macro_f1": 0.906,
+      "weighted_f1": 0.9381,
+      "balanced_accuracy": 0.9366,
+      "class_f1s": [
+        0.8529,
+        0.9591
+      ],
+      "class_precision": [
+        0.7822,
+        0.9838
+      ],
+      "class_recall": [
+        0.9376,
+        0.9356
+      ],
+      "confusion_matrix": [
+        [
+          2119,
+          141
+        ],
+        [
+          590,
+          8570
+        ]
+      ],
+      "model": "InceptionTime",
+      "val_macro_f1": 0.9499,
+      "best_epoch": 6,
+      "params_trainable": 403810,
+      "time_train_s": 8.49,
+      "time_total_s": 10.41,
+      "device": "cuda"
+    },
+    "ResNet-1D": {
+      "accuracy": 0.8789,
+      "macro_f1": 0.7935,
+      "weighted_f1": 0.8737,
+      "balanced_accuracy": 0.7722,
+      "class_f1s": [
+        0.6606,
+        0.9263
+      ],
+      "class_precision": [
+        0.7416,
+        0.9048
+      ],
+      "class_recall": [
+        0.5956,
+        0.9488
+      ],
+      "confusion_matrix": [
+        [
+          1346,
+          914
+        ],
+        [
+          469,
+          8691
+        ]
+      ],
+      "model": "ResNet-1D",
+      "val_macro_f1": 0.7333,
+      "best_epoch": 3,
+      "params_trainable": 167842,
+      "time_train_s": 2.63,
+      "time_total_s": 2.95,
+      "device": "cuda"
+    },
+    "FCN": {
+      "accuracy": 0.3072,
+      "macro_f1": 0.3018,
+      "weighted_f1": 0.2648,
+      "balanced_accuracy": 0.5673,
+      "class_f1s": [
+        0.3631,
+        0.2405
+      ],
+      "class_precision": [
+        0.2219,
+        0.996
+      ],
+      "class_recall": [
+        0.9978,
+        0.1368
+      ],
+      "confusion_matrix": [
+        [
+          2255,
+          5
+        ],
+        [
+          7907,
+          1253
+        ]
+      ],
+      "model": "FCN",
+      "val_macro_f1": 0.6011,
+      "best_epoch": 6,
+      "params_trainable": 66690,
+      "time_train_s": 0.15,
+      "time_total_s": 0.31,
+      "device": "cuda"
+    },
+    "PatchTST": {
+      "accuracy": 0.1503,
+      "macro_f1": 0.1331,
+      "weighted_f1": 0.0595,
+      "balanced_accuracy": 0.3705,
+      "class_f1s": [
+        0.255,
+        0.0112
+      ],
+      "class_precision": [
+        0.1543,
+        0.0841
+      ],
+      "class_recall": [
+        0.735,
+        0.006
+      ],
+      "confusion_matrix": [
+        [
+          1661,
+          599
+        ],
+        [
+          9105,
+          55
+        ]
+      ],
+      "model": "PatchTST",
+      "val_macro_f1": 0.3333,
+      "best_epoch": 1,
+      "params_trainable": 105410,
+      "time_train_s": 0.18,
+      "time_total_s": 0.31,
+      "device": "cuda"
+    },
+    "TURS-Stack": {
+      "model": "TURS-Stack",
+      "n_classes": 2,
+      "T": 178,
+      "n_train": 80,
+      "n_val": 20,
+      "n_test": 11420,
+      "seed": 42,
+      "params": {
+        "shared_trunk": 80784,
+        "branches": {
+          "lite": 11364,
+          "rv": 25185,
+          "cs": 15291,
+          "cmr": 31599
+        },
+        "total": 164223
+      },
+      "gates": {
+        "transport_encoder_calls_per_forward": 1,
+        "backbone_calls_per_forward": 1,
+        "output_shapes_ok": true,
+        "branch_independence_ok": true,
+        "beta_simplex_ok": true,
+        "rv_response_active": true,
+        "cmr_bounded_response_ok": true,
+        "probs_sum_to_one_ok": true,
+        "vote_shapes_ok": true,
+        "combiners_forward_ok": true,
+        "no_cross_window_state_ok": true,
+        "serialization_ok": true
+      },
+      "calibration": {
+        "sigma0_train_only": 2.991
+      },
+      "training": {
+        "best_val_softvote_mf1": 1.0,
+        "best_epoch": 12,
+        "train_time_s": 9.4
+      },
+      "branch_val_mf1": {
+        "lite": 1.0,
+        "rv": 1.0,
+        "cs": 1.0,
+        "cmr": 1.0
+      },
+      "branch_test_mf1": {
+        "lite": 0.872,
+        "rv": 0.8673,
+        "cs": 0.8384,
+        "cmr": 0.8797
+      },
+      "combination_val_mf1": {
+        "soft_vote": 1.0,
+        "hard_vote": 1.0,
+        "static_weights": 1.0,
+        "stacking": 1.0,
+        "diagnostic_stacking": 1.0
+      },
+      "combination_test_mf1": {
+        "soft_vote": 0.8706,
+        "hard_vote": 0.8695,
+        "static_weights": 0.8719,
+        "stacking": 0.8714,
+        "diagnostic_stacking": 0.8719
+      },
+      "best_combiner_by_val": "soft_vote",
+      "preselected_test_mf1": 0.8706,
+      "static_weights_learned": [
+        0.9596,
+        0.0387,
+        0.0007,
+        0.001
+      ],
+      "val_softvote_mf1": 1.0,
+      "test_softvote_mf1": 0.8706,
+      "gap_softvote": -0.1294,
+      "val_selected_mf1": 1.0,
+      "gap_selected": -0.1294,
+      "test_metrics_softvote": {
+        "accuracy": 0.9063,
+        "macro_f1": 0.8706,
+        "weighted_f1": 0.9117,
+        "balanced_accuracy": 0.9274,
+        "class_f1s": [
+          0.8026,
+          0.9386
+        ],
+        "class_precision": [
+          0.6883,
+          0.9897
+        ],
+        "class_recall": [
+          0.9624,
+          0.8925
+        ],
+        "confusion_matrix": [
+          [
+            2175,
+            85
+          ],
+          [
+            985,
+            8175
+          ]
+        ]
+      },
+      "test_metrics_selected": {
+        "accuracy": 0.9063,
+        "macro_f1": 0.8706,
+        "weighted_f1": 0.9117,
+        "balanced_accuracy": 0.9274,
+        "class_f1s": [
+          0.8026,
+          0.9386
+        ],
+        "class_precision": [
+          0.6883,
+          0.9897
+        ],
+        "class_recall": [
+          0.9624,
+          0.8925
+        ],
+        "confusion_matrix": [
+          [
+            2175,
+            85
+          ],
+          [
+            985,
+            8175
+          ]
+        ]
+      },
+      "time_train_s": 9.42,
+      "time_combiner_fit_s": 0.55,
+      "time_inference_s": 2.37,
+      "device": "cuda"
+    }
+  },
+  "raw": {
+    "mr_class_recall": [
+      0.8664,
+      0.9694
+    ],
+    "stats": {
+      "primary": {
+        "chi2": 209.8841,
+        "p_raw": 0.0,
+        "delta_mf1": -0.0488,
+        "comparison": "PRIMARY: TURS-Stack(selected) vs MiniROCKET",
+        "q_fdr": null
+      },
+      "primary_softvote": {
+        "chi2": 209.8841,
+        "p_raw": 0.0,
+        "delta_mf1": -0.0488,
+        "comparison": "PRIMARY(soft-vote): TURS-Stack vs MiniROCKET",
+        "q_fdr": null
+      },
+      "secondary": [
+        {
+          "chi2": 149.73,
+          "p_raw": 0.0,
+          "delta_mf1": -0.0354,
+          "comparison": "SECONDARY: TURS-Stack vs InceptionTime",
+          "q_fdr": null
+        },
+        {
+          "chi2": 54.5956,
+          "p_raw": 0.0,
+          "delta_mf1": 0.0771,
+          "comparison": "SECONDARY: TURS-Stack vs ResNet-1D",
+          "q_fdr": null
+        },
+        {
+          "chi2": 6672.267,
+          "p_raw": 0.0,
+          "delta_mf1": 0.5688,
+          "comparison": "SECONDARY: TURS-Stack vs FCN",
+          "q_fdr": null
+        },
+        {
+          "chi2": 8368.3684,
+          "p_raw": 0.0,
+          "delta_mf1": 0.7375,
+          "comparison": "SECONDARY: TURS-Stack vs PatchTST",
+          "q_fdr": null
+        }
+      ]
+    },
+    "complementarity": {
+      "selected": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.9025,
+          "MiniROCKET|branch_rv": 0.8987,
+          "MiniROCKET|branch_cs": 0.8747,
+          "MiniROCKET|branch_cmr": 0.9091,
+          "MiniROCKET|Stack": 0.9011,
+          "branch_lite|branch_rv": 0.993,
+          "branch_lite|branch_cs": 0.9608,
+          "branch_lite|branch_cmr": 0.9603,
+          "branch_lite|Stack": 0.9961,
+          "branch_rv|branch_cs": 0.9674,
+          "branch_rv|branch_cmr": 0.9542,
+          "branch_rv|Stack": 0.9906,
+          "branch_cs|branch_cmr": 0.9307,
+          "branch_cs|Stack": 0.9626,
+          "branch_cmr|Stack": 0.9634
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.1905,
+          "MiniROCKET|branch_rv": 0.1864,
+          "MiniROCKET|branch_cs": 0.1627,
+          "MiniROCKET|branch_cmr": 0.1916,
+          "MiniROCKET|Stack": 0.1876,
+          "branch_lite|branch_rv": 0.9286,
+          "branch_lite|branch_cs": 0.6919,
+          "branch_lite|branch_cmr": 0.6311,
+          "branch_lite|Stack": 0.9585,
+          "branch_rv|branch_cs": 0.7418,
+          "branch_rv|branch_cmr": 0.5939,
+          "branch_rv|Stack": 0.9062,
+          "branch_cs|branch_cmr": 0.4968,
+          "branch_cs|Stack": 0.7057,
+          "branch_cmr|Stack": 0.6568
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 321,
+        "mr_right_stack_wrong": 809,
+        "both_wrong": 261,
+        "mr_error_rate": 0.051,
+        "stack_error_rate": 0.0937
+      },
+      "softvote": {
+        "agreement": {
+          "MiniROCKET|branch_lite": 0.9025,
+          "MiniROCKET|branch_rv": 0.8987,
+          "MiniROCKET|branch_cs": 0.8747,
+          "MiniROCKET|branch_cmr": 0.9091,
+          "MiniROCKET|Stack": 0.9011,
+          "branch_lite|branch_rv": 0.993,
+          "branch_lite|branch_cs": 0.9608,
+          "branch_lite|branch_cmr": 0.9603,
+          "branch_lite|Stack": 0.9961,
+          "branch_rv|branch_cs": 0.9674,
+          "branch_rv|branch_cmr": 0.9542,
+          "branch_rv|Stack": 0.9906,
+          "branch_cs|branch_cmr": 0.9307,
+          "branch_cs|Stack": 0.9626,
+          "branch_cmr|Stack": 0.9634
+        },
+        "error_overlap": {
+          "MiniROCKET|branch_lite": 0.1905,
+          "MiniROCKET|branch_rv": 0.1864,
+          "MiniROCKET|branch_cs": 0.1627,
+          "MiniROCKET|branch_cmr": 0.1916,
+          "MiniROCKET|Stack": 0.1876,
+          "branch_lite|branch_rv": 0.9286,
+          "branch_lite|branch_cs": 0.6919,
+          "branch_lite|branch_cmr": 0.6311,
+          "branch_lite|Stack": 0.9585,
+          "branch_rv|branch_cs": 0.7418,
+          "branch_rv|branch_cmr": 0.5939,
+          "branch_rv|Stack": 0.9062,
+          "branch_cs|branch_cmr": 0.4968,
+          "branch_cs|Stack": 0.7057,
+          "branch_cmr|Stack": 0.6568
+        },
+        "mr_corrected_by": {},
+        "mr_wrong_stack_right": 321,
+        "mr_right_stack_wrong": 809,
+        "both_wrong": 261,
+        "mr_error_rate": 0.051,
+        "stack_error_rate": 0.0937
+      }
+    },
+    "dataset_characteristics": {
+      "n_classes": 2,
+      "sequence_length": 178,
+      "n_train": 80,
+      "n_val": 20,
+      "n_test": 11420,
+      "class_entropy_bits": 1.0,
+      "imbalance_ratio_max_min": 1.0,
+      "minority_class_proportion": 0.5,
+      "mr_minority_class_recall": null
+    }
+  }
+}

@@ -1,0 +1,17 @@
+Quantity,Value
+G dimension,4998
+H dimension,4998
+G reduced dim (train numerical rank),131
+H reduced dim (train numerical rank),131
+CCA valid dimensions,131
+shared dimensions (tau=0.5),131
+effective rank H,105.31
+effective rank H_unique,1.0
+fraction H variance shared,1.0
+fraction H variance unique,0.0
+CV macro-F1 G only,0.457462
+CV macro-F1 G+H_unique,0.457462
+incremental predictive effect,0.0
+permutation null mean,0.0
+empirical p (one-sided),1.0
+Cohen's d (fold deltas),0.0

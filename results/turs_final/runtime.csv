@@ -1,0 +1,5 @@
+dataset,mr_fit_s,base_transform_s,ktm_w_extract_s,null_generation_s,ridge_cv_detector_s,baseline_eval_s,final_fit_s,final_inference_s,base_inference_s,ktm_inference_s,total_setup_s,total_s
+ECG5000_UNBAL,0.2,0.3,2.9,1195.3,1095.6,7.6,7.0,7.0,7.6,,1216.2,2315.9
+ECG5000_BAL,0.0,0.5,4.9,3064.7,2929.0,29.7,21.6,21.6,29.7,21.6,3138.3,6072.0
+CWRU_UNBAL,0.3,0.4,3.3,214.6,110.2,0.9,0.8,0.8,0.9,,220.7,331.3
+CWRU_BAL,0.1,0.8,7.6,788.8,551.8,4.3,4.1,4.2,4.3,,807.4,1361.7

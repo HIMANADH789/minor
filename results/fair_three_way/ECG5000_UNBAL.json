@@ -1,0 +1,47 @@
+{
+  "InceptionTime (1ch)": {
+    "accuracy": 0.946,
+    "macro_f1": 0.5285,
+    "weighted_f1": 0.9333,
+    "class_f1s": [
+      0.9907,
+      0.9442,
+      0.3077,
+      0.4,
+      0.0
+    ],
+    "params": 135301,
+    "best_epoch": 9,
+    "time_s": 226.6
+  },
+  "eTAI-Focal (3ch)": {
+    "accuracy": 0.953,
+    "macro_f1": 0.5898,
+    "weighted_f1": 0.9452,
+    "class_f1s": [
+      0.9957,
+      0.9492,
+      0.5294,
+      0.4746,
+      0.0
+    ],
+    "params": 170437,
+    "best_epoch": 8,
+    "time_s": 406.8
+  },
+  "HCRMN-Lite (4ch)": {
+    "accuracy": 0.946,
+    "macro_f1": 0.5372,
+    "weighted_f1": 0.9331,
+    "class_f1s": [
+      0.9932,
+      0.9378,
+      0.3704,
+      0.3846,
+      0.0
+    ],
+    "params": 162346,
+    "best_epoch": 10,
+    "time_s": 17.6
+  }
+}

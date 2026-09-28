@@ -1,0 +1,9 @@
+{
+ "minirocket_fit": "train signals only (seed 42)",
+ "hierarchy": "TRAIN latents only (frozen seed-42 SSL encoder, recursive 2-means); val/test transform-only; reg16_tr byte-identical to the stored artifact",
+ "telescoping_pool_and_root_matrix": "frozen transform, label-free; D1 = PPV^(1) - 0 asserted bit-equal",
+ "unified_selection": "train+val labels (canonical R5 final-stage protocol - identical to HIER-CONTINUOUS-SUP / R5-HIGH)",
+ "cv_diagnostic": "5-fold StratifiedKFold(shuffle=True, random_state=42); fold-internal selection on fold-train labels ONLY",
+ "test_labels": "touched only inside ridge_eval for scoring",
+ "no_composition_rules": "fully emergent from the ranking; reported as diagnostics only"
+}

@@ -1,0 +1,8 @@
+{
+  "L_ssl": "masked-span MSE, coef 1.0, mask_ratio 0.10, span_len 16, masked positions only, no labels",
+  "beta_vq": 0.25,
+  "lambda_div": 0.01,
+  "lambda_cls": 0.1,
+  "commitment": "HardVQ standard (EMA codebook, decay 0.99, dead-code revival)",
+  "note": "all weights predeclared before training; not tuned on any test result"
+}

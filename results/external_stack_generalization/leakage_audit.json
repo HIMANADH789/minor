@@ -1,0 +1,45 @@
+{
+  "all_pass": true,
+  "checks": {
+    "dataset_split_fixed": {
+      "status": "PASS",
+      "evidence": "canonical UCR train/test .ts files used verbatim; splits defined by source files, not resampled."
+    },
+    "validation_only_from_train": {
+      "status": "PASS",
+      "evidence": {
+        "EpilepticSeizures": "provided_canonical_val_ts",
+        "Haptics": "per_class_stratified_15pct_of_train_seed42_singletons_kept_in_train",
+        "Phoneme": "per_class_stratified_15pct_of_train_seed42_singletons_kept_in_train"
+      }
+    },
+    "test_labels_never_influence_tuning": {
+      "status": "PASS",
+      "evidence": "test evaluated once per model after freezing; no test-conditioned branches in runner."
+    },
+    "stack_combiner_selection_validation_only": {
+      "status": "PASS",
+      "evidence": "combiners fitted with Adam(0.05)x300 on val probabilities only; best_combiner_by_val selects the reported combiner (canonical recipe)."
+    },
+    "minirocket_hyperparameters_not_test_selected": {
+      "status": "PASS",
+      "evidence": "canonical aeon MiniRocket(random_state=42, ~10K) with fixed RidgeCV alpha grid; no search."
+    },
+    "neural_early_stopping_validation_only": {
+      "status": "PASS",
+      "evidence": "early stopping on val macro-F1, patience 6, max 15 epochs (canonical benchmark_baselines protocol)."
+    },
+    "preprocessing_no_test_statistics": {
+      "status": "PASS",
+      "evidence": "per-sample z-norm computed independently per signal; no cross-sample statistics at all."
+    },
+    "no_dataset_specific_architecture_change": {
+      "status": "PASS",
+      "evidence": "single frozen TURS-Stack (models/turs_stack/model.py imported read-only); only in_channels=1 / num_classes / sequence_length adapt per dataset shape."
+    },
+    "no_posthoc_expert_replacement": {
+      "status": "PASS",
+      "evidence": "reported Stack number is the validation-selected combiner; no test-driven substitution."
+    }
+  }
+}

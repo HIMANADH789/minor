@@ -1,0 +1,18 @@
+{
+ "method": "mr_high",
+ "label": "MR-HIGH",
+ "base_budget": 19992,
+ "high_budget": 19992,
+ "kernel_capacity": "84x238",
+ "final_features": 19992,
+ "candidate_features": 19992,
+ "macro_f1": 0.7477,
+ "accuracy": 0.7521,
+ "selected_alpha": 78.47599703514607,
+ "num_classes": 8,
+ "seed": 42,
+ "gates": {
+  "ref": null,
+  "abs_diff": null
+ }
+}

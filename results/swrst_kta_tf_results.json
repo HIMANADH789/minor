@@ -1,0 +1,56 @@
+{
+    "Test_Accuracy": 0.916,
+    "Test_Macro_F1": 0.5753699162068261,
+    "Per_Class_Recall": [
+        0.9819742489270387,
+        0.9127324749642346,
+        0.5,
+        0.35714285714285715,
+        0.125
+    ],
+    "Confusion_Matrix": [
+        [
+            572,
+            1,
+            1,
+            2,
+            8
+        ],
+        [
+            2,
+            319,
+            6,
+            24,
+            2
+        ],
+        [
+            3,
+            4,
+            9,
+            3,
+            0
+        ],
+        [
+            3,
+            20,
+            1,
+            15,
+            0
+        ],
+        [
+            1,
+            2,
+            0,
+            1,
+            1
+        ]
+    ],
+    "Validation_Checks": {
+        "PSD": true,
+        "Symmetric": true,
+        "Diagonal_Ones": true,
+        "W_star_Orthogonal": true,
+        "Nonzero_Recall": true
+    },
+    "Training_Time_Seconds": 4.138732671737671
+}

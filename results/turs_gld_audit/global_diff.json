@@ -1,0 +1,15 @@
+{
+  "old_global": "GlobalPatternBank (M=2048, deterministic, 0 trainable, output_dim=6144)",
+  "new_global": "aeon MiniRocket (n_kernels=2016, semi-learned, fits biases/dilations, output_dim=2016)",
+  "old_cwru_unbal_a0": 0.7035,
+  "new_cwru_unbal_a0": 0.9458,
+  "old_cwru_bal_a0": 0.7276,
+  "new_cwru_bal_a0": 0.9824,
+  "root_cause": "GLD used deterministic GlobalPatternBank instead of aeon MiniRocket",
+  "checkpoint_1": "PASS - now uses aeon MiniRocket",
+  "checkpoint_2": "PASS - A0 recovers expected 0.65-0.98 range",
+  "checkpoint_3": "PASS - feature_dim=2016 matches aeon MiniRocket config",
+  "checkpoint_4": "PASS - DualRidge matches sklearn RidgeClassifier",
+  "checkpoint_5": "PASS - standardization is train-fit only",
+  "checkpoint_6": "PASS - A3 >= A1 on all datasets"
+}

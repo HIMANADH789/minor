@@ -1,0 +1,92 @@
+{
+  "experiment": "TURS-SKB",
+  "completed": "2026-09-14 09:15:14",
+  "seed": 42,
+  "mean_m0_mf1": 0.8089,
+  "mean_m6_mf1": 0.7809,
+  "mean_delta_all5": -0.028,
+  "mean_family_deltas": {
+    "morphological": -0.0083,
+    "derivative": -0.0038,
+    "wavelet": -0.0141,
+    "gabor": -0.0237,
+    "energy": -0.0027
+  },
+  "best_family": "energy",
+  "n_fdr_significant_m6": 0,
+  "mech_verdicts": {
+    "morphological": {
+      "target_mean": -0.0073,
+      "other_mean": -0.0092,
+      "verdict": "REJECTED"
+    },
+    "derivative": {
+      "target_mean": -0.0038,
+      "other_mean": NaN,
+      "verdict": "REJECTED (single-domain family)"
+    },
+    "wavelet": {
+      "target_mean": -0.021,
+      "other_mean": -0.0072,
+      "verdict": "REJECTED"
+    },
+    "gabor": {
+      "target_mean": -0.0248,
+      "other_mean": -0.0227,
+      "verdict": "REJECTED"
+    },
+    "energy": {
+      "target_mean": -0.0029,
+      "other_mean": -0.0024,
+      "verdict": "REJECTED"
+    }
+  },
+  "multiseed": {
+    "ECG5000_UNBAL": {
+      "mean_delta": -0.02256,
+      "std_delta": 0.00679,
+      "median_delta": -0.0202,
+      "min_delta": -0.0321,
+      "max_delta": -0.0162,
+      "n_positive": 0,
+      "n_negative": 5,
+      "paired_permutation_p": 0.056472,
+      "effect_size_d": -3.3226
+    },
+    "ECG5000_BAL": {
+      "mean_delta": -0.05892,
+      "std_delta": 0.01402,
+      "median_delta": -0.0601,
+      "min_delta": -0.0729,
+      "max_delta": -0.0417,
+      "n_positive": 0,
+      "n_negative": 5,
+      "paired_permutation_p": 0.065967,
+      "effect_size_d": -4.2035
+    },
+    "CWRU_UNBAL": {
+      "mean_delta": -0.03172,
+      "std_delta": 0.00376,
+      "median_delta": -0.0334,
+      "min_delta": -0.0334,
+      "max_delta": -0.025,
+      "n_positive": 0,
+      "n_negative": 5,
+      "paired_permutation_p": 0.067966,
+      "effect_size_d": -8.4438
+    },
+    "CWRU_BAL": {
+      "mean_delta": -0.01054,
+      "std_delta": 5e-05,
+      "median_delta": -0.0105,
+      "min_delta": -0.0106,
+      "max_delta": -0.0105,
+      "n_positive": 0,
+      "n_negative": 5,
+      "paired_permutation_p": 0.064968,
+      "effect_size_d": -192.4332
+    }
+  },
+  "sanity_all_ok": true,
+  "classification": "NEGATIVE"
+}

@@ -1,0 +1,9 @@
+{
+ "minirocket_fit": "train signals only (seed 42)",
+ "hierarchy": "TRAIN latents only (frozen seed-42 SSL encoder, recursive 2-means); val/test transform-only; reg16_tr byte-identical to the stored artifact",
+ "anova_and_prior": "train+val labels for the FINAL stage (canonical R5 protocol); fold-internal prior fit on fold-train labels ONLY",
+ "no_test_statistics": "test variances/residuals NEVER used for d0, s0^2, or selection (spec 25/26)",
+ "test_labels": "touched only inside ridge_eval for scoring",
+ "occupancy_usage": "diagnostics ONLY - never df, weight, quota, or filter",
+ "fallback_usage": "diagnostics ONLY - no candidate filtered"
+}

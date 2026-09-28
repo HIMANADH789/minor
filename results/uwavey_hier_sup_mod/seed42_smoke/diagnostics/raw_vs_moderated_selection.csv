@@ -1,0 +1,9 @@
+metric,value
+n_candidates,469812
+budget,19992
+intersection,19990
+raw_only,2
+moderated_only,2
+jaccard,0.9997999399819946
+entering,2
+leaving,2

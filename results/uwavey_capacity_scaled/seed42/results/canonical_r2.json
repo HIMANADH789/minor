@@ -1,0 +1,18 @@
+{
+ "method": "canonical_r2",
+ "label": "R2 flat [G||H] (canonical)",
+ "base_budget": 9996,
+ "high_budget": 9996,
+ "kernel_capacity": "84x119",
+ "final_features": 9996,
+ "candidate_features": 4998,
+ "macro_f1": 0.7568,
+ "accuracy": 0.7599,
+ "selected_alpha": 4.281332398719396,
+ "num_classes": 8,
+ "seed": 42,
+ "gates": {
+  "ref": 0.7551,
+  "abs_diff": 0.0017000000000000348
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "dataset": "ECG5000_BAL",
+  "num_classes": 5,
+  "accuracy": 0.952,
+  "macro_f1": 0.6364,
+  "best_val_macro_f1": 0.9068,
+  "elapsed_s": 13.38,
+  "params": 143732
+}

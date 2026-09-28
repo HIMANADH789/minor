@@ -1,0 +1,2831 @@
+{
+  "dataset": "ECG5000_BAL",
+  "seed": 42,
+  "m0": {
+    "accuracy": 0.952,
+    "macro_f1": 0.6553,
+    "weighted_f1": 0.9498,
+    "balanced_accuracy": 0.6398,
+    "class_f1s": [
+      0.9983,
+      0.9456,
+      0.6111,
+      0.5217,
+      0.2
+    ],
+    "class_precision": [
+      0.9983,
+      0.9313,
+      0.6471,
+      0.6,
+      0.2
+    ],
+    "class_recall": [
+      0.9983,
+      0.9603,
+      0.5789,
+      0.4615,
+      0.2
+    ],
+    "confusion_matrix": [
+      [
+        583,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        339,
+        3,
+        11,
+        0
+      ],
+      [
+        1,
+        4,
+        11,
+        1,
+        2
+      ],
+      [
+        0,
+        19,
+        1,
+        18,
+        1
+      ],
+      [
+        0,
+        2,
+        2,
+        0,
+        1
+      ]
+    ],
+    "alpha": 1.623777,
+    "n_features": 9996,
+    "ridge_fit_s": 38.94,
+    "inference_s": 0.0177,
+    "n_train_rows": 6149,
+    "feature_dim": 9996,
+    "block_dims": [
+      9996
+    ],
+    "reference_mf1": 0.6553,
+    "reproduction_delta": 0.0
+  },
+  "per_family": {
+    "morphological": {
+      "accuracy": 0.947,
+      "macro_f1": 0.6382,
+      "weighted_f1": 0.9461,
+      "balanced_accuracy": 0.637,
+      "class_f1s": [
+        0.9983,
+        0.9395,
+        0.5641,
+        0.507,
+        0.1818
+      ],
+      "class_precision": [
+        0.9983,
+        0.933,
+        0.55,
+        0.5625,
+        0.1667
+      ],
+      "class_recall": [
+        0.9983,
+        0.9462,
+        0.5789,
+        0.4615,
+        0.2
+      ],
+      "confusion_matrix": [
+        [
+          583,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          334,
+          6,
+          13,
+          0
+        ],
+        [
+          1,
+          4,
+          11,
+          1,
+          2
+        ],
+        [
+          0,
+          18,
+          1,
+          18,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          0,
+          1
+        ]
+      ],
+      "alpha": 1.623777,
+      "n_features": 10671,
+      "ridge_fit_s": 36.88,
+      "inference_s": 0.022,
+      "n_train_rows": 6149,
+      "feature_dim": 10671,
+      "block_dims": [
+        9996,
+        675
+      ],
+      "val_screening_mf1": 0.9514,
+      "delta_mf1": -0.0171,
+      "wall_s": 37.49
+    },
+    "derivative": {
+      "accuracy": 0.95,
+      "macro_f1": 0.6516,
+      "weighted_f1": 0.9465,
+      "balanced_accuracy": 0.6296,
+      "class_f1s": [
+        0.9957,
+        0.9443,
+        0.6111,
+        0.4848,
+        0.2222
+      ],
+      "class_precision": [
+        0.9932,
+        0.9288,
+        0.6471,
+        0.5926,
+        0.25
+      ],
+      "class_recall": [
+        0.9983,
+        0.9603,
+        0.5789,
+        0.4103,
+        0.2
+      ],
+      "confusion_matrix": [
+        [
+          583,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          339,
+          3,
+          10,
+          0
+        ],
+        [
+          1,
+          4,
+          11,
+          1,
+          2
+        ],
+        [
+          2,
+          20,
+          1,
+          16,
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          0,
+          1
+        ]
+      ],
+      "alpha": 1.623777,
+      "n_features": 10122,
+      "ridge_fit_s": 36.47,
+      "inference_s": 0.0114,
+      "n_train_rows": 6149,
+      "feature_dim": 10122,
+      "block_dims": [
+        9996,
+        126
+      ],
+      "val_screening_mf1": 0.9542,
+      "delta_mf1": -0.0037,
+      "wall_s": 37.0
+    },
+    "wavelet": {
+      "accuracy": 0.945,
+      "macro_f1": 0.6013,
+      "weighted_f1": 0.9434,
+      "balanced_accuracy": 0.5964,
+      "class_f1s": [
+        0.9966,
+        0.938,
+        0.5789,
+        0.4932,
+        0.0
+      ],
+      "class_precision": [
+        0.9949,
+        0.9328,
+        0.5789,
+        0.5294,
+        0.0
+      ],
+      "class_recall": [
+        0.9983,
+        0.9433,
+        0.5789,
+        0.4615,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          583,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          333,
+          4,
+          15,
+          0
+        ],
+        [
+          1,
+          4,
+          11,
+          1,
+          2
+        ],
+        [
+          1,
+          18,
+          1,
+          18,
+          1
+        ],
+        [
+          0,
+          2,
+          3,
+          0,
+          0
+        ]
+      ],
+      "alpha": 1.623777,
+      "n_features": 10338,
+      "ridge_fit_s": 37.45,
+      "inference_s": 0.0136,
+      "n_train_rows": 6149,
+      "feature_dim": 10338,
+      "block_dims": [
+        9996,
+        342
+      ],
+      "val_screening_mf1": 0.9557,
+      "delta_mf1": -0.054,
+      "wall_s": 38.06
+    },
+    "gabor": {
+      "accuracy": 0.95,
+      "macro_f1": 0.6118,
+      "weighted_f1": 0.9474,
+      "balanced_accuracy": 0.5993,
+      "class_f1s": [
+        0.9957,
+        0.9468,
+        0.5946,
+        0.5217,
+        0.0
+      ],
+      "class_precision": [
+        0.9932,
+        0.9363,
+        0.6111,
+        0.6,
+        0.0
+      ],
+      "class_recall": [
+        0.9983,
+        0.9575,
+        0.5789,
+        0.4615,
+        0.0
+      ],
+      "confusion_matrix": [
+        [
+          583,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          338,
+          3,
+          11,
+          0
+        ],
+        [
+          1,
+          4,
+          11,
+          1,
+          2
+        ],
+        [
+          2,
+          17,
+          1,
+          18,
+          1
+        ],
+        [
+          0,
+          2,
+          3,
+          0,
+          0
+        ]
+      ],
+      "alpha": 1.623777,
+      "n_features": 10536,
+      "ridge_fit_s": 33.94,
+      "inference_s": 0.0101,
+      "n_train_rows": 6149,
+      "feature_dim": 10536,
+      "block_dims": [
+        9996,
+        540
+      ],
+      "val_screening_mf1": 0.9506,
+      "delta_mf1": -0.0435,
+      "wall_s": 34.52
+    },
+    "energy": {
+      "accuracy": 0.951,
+      "macro_f1": 0.6484,
+      "weighted_f1": 0.9493,
+      "balanced_accuracy": 0.6393,
+      "class_f1s": [
+        0.9983,
+        0.9455,
+        0.5946,
+        0.5217,
+        0.1818
+      ],
+      "class_precision": [
+        0.9983,
+        0.9337,
+        0.6111,
+        0.6,
+        0.1667
+      ],
+      "class_recall": [
+        0.9983,
+        0.9575,
+        0.5789,
+        0.4615,
+        0.2
+      ],
+      "confusion_matrix": [
+        [
+          583,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          338,
+          4,
+          11,
+          0
+        ],
+        [
+          1,
+          4,
+          11,
+          1,
+          2
+        ],
+        [
+          0,
+          18,
+          1,
+          18,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          0,
+          1
+        ]
+      ],
+      "alpha": 1.623777,
+      "n_features": 10104,
+      "ridge_fit_s": 34.55,
+      "inference_s": 0.0124,
+      "n_train_rows": 6149,
+      "feature_dim": 10104,
+      "block_dims": [
+        9996,
+        108
+      ],
+      "val_screening_mf1": 0.9501,
+      "delta_mf1": -0.0069,
+      "wall_s": 35.11
+    }
+  },
+  "pairwise": {},
+  "m6": {
+    "accuracy": 0.948,
+    "macro_f1": 0.6074,
+    "weighted_f1": 0.9476,
+    "balanced_accuracy": 0.6029,
+    "class_f1s": [
+      0.9966,
+      0.9478,
+      0.5789,
+      0.5135,
+      0.0
+    ],
+    "class_precision": [
+      0.9966,
+      0.9438,
+      0.5789,
+      0.5429,
+      0.0
+    ],
+    "class_recall": [
+      0.9966,
+      0.9518,
+      0.5789,
+      0.4872,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        582,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        336,
+        3,
+        13,
+        1
+      ],
+      [
+        1,
+        3,
+        11,
+        2,
+        2
+      ],
+      [
+        1,
+        16,
+        2,
+        19,
+        1
+      ],
+      [
+        0,
+        1,
+        3,
+        1,
+        0
+      ]
+    ],
+    "alpha": 4.281332,
+    "n_features": 11787,
+    "ridge_fit_s": 42.16,
+    "inference_s": 0.0135,
+    "n_train_rows": 6149,
+    "feature_dim": 11787,
+    "block_dims": [
+      9996,
+      675,
+      126,
+      342,
+      540,
+      108
+    ],
+    "val_screening_mf1": 0.9427,
+    "delta_mf1": -0.0479,
+    "wall_s": 43.06
+  },
+  "val_screening": {
+    "M0": 0.9546,
+    "morphological": 0.9514,
+    "derivative": 0.9542,
+    "wavelet": 0.9557,
+    "gabor": 0.9506,
+    "energy": 0.9501
+  },
+  "promising": [
+    "wavelet"
+  ],
+  "pairs_run": [],
+  "stat_rows": [
+    {
+      "dataset": "ECG5000_BAL",
+      "comparison": "M0 vs M1_Morph",
+      "delta_mf1": -0.0171,
+      "chi2": 1.7778,
+      "p_raw": 0.182422,
+      "q_fdr": 0.547267,
+      "effect_size_d": "",
+      "verdict": "not significant"
+    },
+    {
+      "dataset": "ECG5000_BAL",
+      "comparison": "M0 vs M2_Deriv",
+      "delta_mf1": -0.0037,
+      "chi2": 0.25,
+      "p_raw": 0.617075,
+      "q_fdr": 0.902196,
+      "effect_size_d": "",
+      "verdict": "not significant"
+    },
+    {
+      "dataset": "ECG5000_BAL",
+      "comparison": "M0 vs M3_Wavelet",
+      "delta_mf1": -0.054,
+      "chi2": 5.1429,
+      "p_raw": 0.023342,
+      "q_fdr": 0.140053,
+      "effect_size_d": "",
+      "verdict": "not significant"
+    },
+    {
+      "dataset": "ECG5000_BAL",
+      "comparison": "M0 vs M4_Gabor",
+      "delta_mf1": -0.0435,
+      "chi2": 0.1,
+      "p_raw": 0.75183,
+      "q_fdr": 0.902196,
+      "effect_size_d": "",
+      "verdict": "not significant"
+    },
+    {
+      "dataset": "ECG5000_BAL",
+      "comparison": "M0 vs M5_Energy",
+      "delta_mf1": -0.0069,
+      "chi2": 0.0,
+      "p_raw": 1.0,
+      "q_fdr": 1.0,
+      "effect_size_d": "",
+      "verdict": "not significant"
+    },
+    {
+      "dataset": "ECG5000_BAL",
+      "comparison": "M0 vs M6_ALL5",
+      "delta_mf1": -0.0479,
+      "chi2": 0.5,
+      "p_raw": 0.4795,
+      "q_fdr": 0.902196,
+      "effect_size_d": "",
+      "verdict": "not significant"
+    }
+  ],
+  "sanity_blocks": [
+    {
+      "block": "MiniROCKET",
+      "n_features": 9996,
+      "mean": 0.499305,
+      "std": 0.31219,
+      "min": 0.0,
+      "max": 1.0,
+      "finite": true,
+      "status": "OK"
+    },
+    {
+      "block": "morphological",
+      "n_features": 675,
+      "mean": 0.465385,
+      "std": 0.355915,
+      "min": 0.0,
+      "max": 1.0,
+      "finite": true,
+      "status": "OK"
+    },
+    {
+      "block": "derivative",
+      "n_features": 126,
+      "mean": 0.465385,
+      "std": 0.294221,
+      "min": 0.0,
+      "max": 1.0,
+      "finite": true,
+      "status": "OK"
+    },
+    {
+      "block": "wavelet",
+      "n_features": 342,
+      "mean": 0.465385,
+      "std": 0.305087,
+      "min": 0.0,
+      "max": 1.0,
+      "finite": true,
+      "status": "OK"
+    },
+    {
+      "block": "gabor",
+      "n_features": 540,
+      "mean": 0.465385,
+      "std": 0.324993,
+      "min": 0.0,
+      "max": 1.0,
+      "finite": true,
+      "status": "OK"
+    },
+    {
+      "block": "energy",
+      "n_features": 108,
+      "mean": 0.465386,
+      "std": 0.308267,
+      "min": 0.0,
+      "max": 1.0,
+      "finite": true,
+      "status": "OK"
+    }
+  ],
+  "diagnostics": {
+    "cka_vs_mr": {
+      "morphological": 0.596245,
+      "derivative": 0.882648,
+      "wavelet": 0.565142,
+      "gabor": 0.483054,
+      "energy": 0.268816
+    },
+    "mean_abs_corr_vs_mr": {
+      "morphological": 0.271788,
+      "derivative": 0.34035,
+      "wavelet": 0.304116,
+      "gabor": 0.229824,
+      "energy": 0.235341
+    },
+    "family_self_cka": {
+      "morphological|derivative": 0.593146,
+      "morphological|wavelet": 0.594446,
+      "morphological|gabor": 0.718788,
+      "morphological|energy": 0.237533,
+      "derivative|wavelet": 0.473617,
+      "derivative|gabor": 0.433894,
+      "derivative|energy": 0.23183,
+      "wavelet|gabor": 0.68237,
+      "wavelet|energy": 0.212187,
+      "gabor|energy": 0.227654
+    },
+    "duplicates_collapsed": {
+      "morphological": 65,
+      "derivative": 18,
+      "wavelet": 154,
+      "gabor": 132,
+      "energy": 0
+    }
+  },
+  "family_dims": {
+    "morphological": 675,
+    "derivative": 126,
+    "wavelet": 342,
+    "gabor": 540,
+    "energy": 108
+  },
+  "duplicates_collapsed": {
+    "morphological": 65,
+    "derivative": 18,
+    "wavelet": 154,
+    "gabor": 132,
+    "energy": 0
+  },
+  "timings": {
+    "mr_fit_s": 0.06,
+    "mr_transform_s": 0.69
+  },
+  "skb_fit_s": 4.51,
+  "skb_extract_trva_s": 7.64,
+  "skb_extract_te_s": 1.16,
+  "signal_length": 140,
+  "kernel_metadata": [
+    {
+      "family": "morphological",
+      "kernel_index": 0,
+      "support": 9,
+      "effective_dilation": 1,
+      "kind": "gauss",
+      "sigma": 1.0,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 1,
+      "support": 9,
+      "effective_dilation": 2,
+      "kind": "gauss",
+      "sigma": 1.0,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 2,
+      "support": 9,
+      "effective_dilation": 4,
+      "kind": "gauss",
+      "sigma": 1.0,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 3,
+      "support": 9,
+      "effective_dilation": 8,
+      "kind": "gauss",
+      "sigma": 1.0,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 4,
+      "support": 17,
+      "effective_dilation": 1,
+      "kind": "gauss",
+      "sigma": 2.0,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 5,
+      "support": 17,
+      "effective_dilation": 2,
+      "kind": "gauss",
+      "sigma": 2.0,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 6,
+      "support": 17,
+      "effective_dilation": 4,
+      "kind": "gauss",
+      "sigma": 2.0,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 7,
+      "support": 17,
+      "effective_dilation": 8,
+      "kind": "gauss",
+      "sigma": 2.0,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 8,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "gauss",
+      "sigma": 4.0,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 9,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "gauss",
+      "sigma": 4.0,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 10,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "gauss",
+      "sigma": 4.0,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 11,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "gauss",
+      "sigma": 8.0,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 12,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "gauss",
+      "sigma": 8.0,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 13,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gauss",
+      "sigma": 16.0,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 14,
+      "support": 17,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 1,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 15,
+      "support": 17,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 1,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 16,
+      "support": 17,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 1,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 17,
+      "support": 17,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 2,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 18,
+      "support": 17,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 2,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 19,
+      "support": 17,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 2,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 20,
+      "support": 17,
+      "effective_dilation": 4,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 4,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 21,
+      "support": 17,
+      "effective_dilation": 4,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 4,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 22,
+      "support": 17,
+      "effective_dilation": 4,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 4,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 23,
+      "support": 17,
+      "effective_dilation": 8,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 8,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 24,
+      "support": 17,
+      "effective_dilation": 8,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 8,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 25,
+      "support": 17,
+      "effective_dilation": 8,
+      "kind": "dog",
+      "sigma": 1.0,
+      "dilation": 8,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 26,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 1,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 27,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 1,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 28,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 1,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 29,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 2,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 30,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 2,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 31,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 2,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 32,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 4,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 33,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 4,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 34,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "dog",
+      "sigma": 2.0,
+      "dilation": 4,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 35,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 4.0,
+      "dilation": 1,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 36,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 4.0,
+      "dilation": 1,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 37,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 4.0,
+      "dilation": 1,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 38,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 4.0,
+      "dilation": 2,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 39,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 4.0,
+      "dilation": 2,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 40,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "dog",
+      "sigma": 4.0,
+      "dilation": 2,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 41,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 8.0,
+      "dilation": 1,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 42,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 8.0,
+      "dilation": 1,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 43,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 8.0,
+      "dilation": 1,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 44,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 16.0,
+      "dilation": 1,
+      "alpha": 0.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 45,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 16.0,
+      "dilation": 1,
+      "alpha": 1.0
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 46,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "dog",
+      "sigma": 16.0,
+      "dilation": 1,
+      "alpha": 1.5
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 47,
+      "support": 9,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 1.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 48,
+      "support": 9,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 1.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 49,
+      "support": 9,
+      "effective_dilation": 4,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 1.0,
+      "dilation": 4
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 50,
+      "support": 9,
+      "effective_dilation": 8,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 1.0,
+      "dilation": 8
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 51,
+      "support": 17,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 2.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 52,
+      "support": 17,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 2.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 53,
+      "support": 17,
+      "effective_dilation": 4,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 2.0,
+      "dilation": 4
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 54,
+      "support": 17,
+      "effective_dilation": 8,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 2.0,
+      "dilation": 8
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 55,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 4.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 56,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 4.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 57,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 4.0,
+      "dilation": 4
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 58,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 8.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 59,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 8.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 60,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 1,
+      "sigma": 16.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 61,
+      "support": 9,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 1.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 62,
+      "support": 9,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 1.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 63,
+      "support": 9,
+      "effective_dilation": 4,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 1.0,
+      "dilation": 4
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 64,
+      "support": 9,
+      "effective_dilation": 8,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 1.0,
+      "dilation": 8
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 65,
+      "support": 17,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 2.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 66,
+      "support": 17,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 2.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 67,
+      "support": 17,
+      "effective_dilation": 4,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 2.0,
+      "dilation": 4
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 68,
+      "support": 17,
+      "effective_dilation": 8,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 2.0,
+      "dilation": 8
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 69,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 4.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 70,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 4.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 71,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 4.0,
+      "dilation": 4
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 72,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 8.0,
+      "dilation": 1
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 73,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 8.0,
+      "dilation": 2
+    },
+    {
+      "family": "morphological",
+      "kernel_index": 74,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gaussderiv",
+      "order": 2,
+      "sigma": 16.0,
+      "dilation": 1
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 0,
+      "support": 3,
+      "effective_dilation": 1,
+      "kind": "deriv",
+      "order": 1,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 1,
+      "support": 3,
+      "effective_dilation": 2,
+      "kind": "deriv",
+      "order": 1,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 2,
+      "support": 3,
+      "effective_dilation": 4,
+      "kind": "deriv",
+      "order": 1,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 3,
+      "support": 3,
+      "effective_dilation": 8,
+      "kind": "deriv",
+      "order": 1,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 4,
+      "support": 3,
+      "effective_dilation": 16,
+      "kind": "deriv",
+      "order": 1,
+      "dilation": 16,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 5,
+      "support": 3,
+      "effective_dilation": 32,
+      "kind": "deriv",
+      "order": 1,
+      "dilation": 32,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 6,
+      "support": 3,
+      "effective_dilation": 64,
+      "kind": "deriv",
+      "order": 1,
+      "dilation": 64,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 7,
+      "support": 3,
+      "effective_dilation": 1,
+      "kind": "deriv",
+      "order": 2,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 8,
+      "support": 3,
+      "effective_dilation": 2,
+      "kind": "deriv",
+      "order": 2,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 9,
+      "support": 3,
+      "effective_dilation": 4,
+      "kind": "deriv",
+      "order": 2,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 10,
+      "support": 3,
+      "effective_dilation": 8,
+      "kind": "deriv",
+      "order": 2,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 11,
+      "support": 3,
+      "effective_dilation": 16,
+      "kind": "deriv",
+      "order": 2,
+      "dilation": 16,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 12,
+      "support": 3,
+      "effective_dilation": 32,
+      "kind": "deriv",
+      "order": 2,
+      "dilation": 32,
+      "polarity": 1.0
+    },
+    {
+      "family": "derivative",
+      "kernel_index": 13,
+      "support": 3,
+      "effective_dilation": 64,
+      "kind": "deriv",
+      "order": 2,
+      "dilation": 64,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 0,
+      "support": 3,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 1,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 1,
+      "support": 3,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 1,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 2,
+      "support": 3,
+      "effective_dilation": 4,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 1,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 3,
+      "support": 3,
+      "effective_dilation": 8,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 1,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 4,
+      "support": 3,
+      "effective_dilation": 16,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 1,
+      "dilation": 16,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 5,
+      "support": 3,
+      "effective_dilation": 32,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 1,
+      "dilation": 32,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 6,
+      "support": 3,
+      "effective_dilation": 64,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 1,
+      "dilation": 64,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 7,
+      "support": 5,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 2,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 8,
+      "support": 5,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 2,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 9,
+      "support": 5,
+      "effective_dilation": 4,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 2,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 10,
+      "support": 5,
+      "effective_dilation": 8,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 2,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 11,
+      "support": 5,
+      "effective_dilation": 16,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 2,
+      "dilation": 16,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 12,
+      "support": 5,
+      "effective_dilation": 32,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 2,
+      "dilation": 32,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 13,
+      "support": 9,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 4,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 14,
+      "support": 9,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 4,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 15,
+      "support": 9,
+      "effective_dilation": 4,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 4,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 16,
+      "support": 9,
+      "effective_dilation": 8,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 4,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 17,
+      "support": 9,
+      "effective_dilation": 16,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 4,
+      "dilation": 16,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 18,
+      "support": 17,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 8,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 19,
+      "support": 17,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 8,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 20,
+      "support": 17,
+      "effective_dilation": 4,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 8,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 21,
+      "support": 17,
+      "effective_dilation": 8,
+      "kind": "wavelet",
+      "type": "haar",
+      "scale": 8,
+      "dilation": 8,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 22,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "mexicanhat",
+      "scale": 1,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 23,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "mexicanhat",
+      "scale": 1,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 24,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "wavelet",
+      "type": "mexicanhat",
+      "scale": 1,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 25,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "mexicanhat",
+      "scale": 2,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 26,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "mexicanhat",
+      "scale": 2,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 27,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "mexicanhat",
+      "scale": 4,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 28,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "mexicanhat",
+      "scale": 8,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 29,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 1,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 30,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 1,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 31,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 1,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 32,
+      "support": 33,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 2,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 33,
+      "support": 33,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 2,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 34,
+      "support": 33,
+      "effective_dilation": 4,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 2,
+      "dilation": 4,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 35,
+      "support": 65,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 4,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 36,
+      "support": 65,
+      "effective_dilation": 2,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 4,
+      "dilation": 2,
+      "polarity": 1.0
+    },
+    {
+      "family": "wavelet",
+      "kernel_index": 37,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "wavelet",
+      "type": "morlet",
+      "scale": 8,
+      "dilation": 1,
+      "polarity": 1.0
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 0,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 1,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 0.0,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 2,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 3,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 1.5707963267948966,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 4,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 5,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 3.141592653589793,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 6,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 7,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 2.0,
+      "phase": 4.71238898038469,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 8,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 4.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 9,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 4.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 10,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 4.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 11,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 4.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 12,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 8.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 13,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 8.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 14,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 8.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 15,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 8.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 16,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 16.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 17,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 16.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 18,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 16.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 19,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.125,
+      "sigma": 16.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 20,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 21,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 0.0,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 22,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 23,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 1.5707963267948966,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 24,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 25,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 3.141592653589793,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 26,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 27,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 2.0,
+      "phase": 4.71238898038469,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 28,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 4.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 29,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 4.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 30,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 4.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 31,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 4.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 32,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 8.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 33,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 8.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 34,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 8.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 35,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 8.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 36,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 16.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 37,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 16.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 38,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 16.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 39,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.0625,
+      "sigma": 16.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 40,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 41,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 0.0,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 42,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 43,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 1.5707963267948966,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 44,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 45,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 3.141592653589793,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 46,
+      "support": 49,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 47,
+      "support": 49,
+      "effective_dilation": 2,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 2.0,
+      "phase": 4.71238898038469,
+      "dilation": 2
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 48,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 4.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 49,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 4.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 50,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 4.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 51,
+      "support": 97,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 4.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 52,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 8.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 53,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 8.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 54,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 8.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 55,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 8.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 56,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 16.0,
+      "phase": 0.0,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 57,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 16.0,
+      "phase": 1.5707963267948966,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 58,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 16.0,
+      "phase": 3.141592653589793,
+      "dilation": 1
+    },
+    {
+      "family": "gabor",
+      "kernel_index": 59,
+      "support": 128,
+      "effective_dilation": 1,
+      "kind": "gabor",
+      "freq": 0.03125,
+      "sigma": 16.0,
+      "phase": 4.71238898038469,
+      "dilation": 1
+    },
+    {
+      "family": "energy",
+      "kernel_index": 0,
+      "support": 4,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 4,
+      "w_long": 16,
+      "lambda": 0.0
+    },
+    {
+      "family": "energy",
+      "kernel_index": 1,
+      "support": 4,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 4,
+      "w_long": 16,
+      "lambda": 0.5
+    },
+    {
+      "family": "energy",
+      "kernel_index": 2,
+      "support": 4,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 4,
+      "w_long": 16,
+      "lambda": 1.0
+    },
+    {
+      "family": "energy",
+      "kernel_index": 3,
+      "support": 8,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 8,
+      "w_long": 32,
+      "lambda": 0.0
+    },
+    {
+      "family": "energy",
+      "kernel_index": 4,
+      "support": 8,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 8,
+      "w_long": 32,
+      "lambda": 0.5
+    },
+    {
+      "family": "energy",
+      "kernel_index": 5,
+      "support": 8,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 8,
+      "w_long": 32,
+      "lambda": 1.0
+    },
+    {
+      "family": "energy",
+      "kernel_index": 6,
+      "support": 16,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 16,
+      "w_long": 64,
+      "lambda": 0.0
+    },
+    {
+      "family": "energy",
+      "kernel_index": 7,
+      "support": 16,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 16,
+      "w_long": 64,
+      "lambda": 0.5
+    },
+    {
+      "family": "energy",
+      "kernel_index": 8,
+      "support": 16,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 16,
+      "w_long": 64,
+      "lambda": 1.0
+    },
+    {
+      "family": "energy",
+      "kernel_index": 9,
+      "support": 32,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 32,
+      "w_long": 128,
+      "lambda": 0.0
+    },
+    {
+      "family": "energy",
+      "kernel_index": 10,
+      "support": 32,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 32,
+      "w_long": 128,
+      "lambda": 0.5
+    },
+    {
+      "family": "energy",
+      "kernel_index": 11,
+      "support": 32,
+      "effective_dilation": 1,
+      "kind": "energy",
+      "w_short": 32,
+      "w_long": 128,
+      "lambda": 1.0
+    }
+  ]
+}

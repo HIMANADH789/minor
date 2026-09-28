@@ -1,0 +1,26 @@
+{
+  "ECG5000_UNBAL": {
+    "MR": 0.5938,
+    "MR+conc": 0.5851,
+    "MR+phase": 0.5515,
+    "MR+conc+phase": 0.572
+  },
+  "ECG5000_BAL": {
+    "MR": 0.6553,
+    "MR+conc": 0.6494,
+    "MR+phase": 0.591,
+    "MR+conc+phase": 0.6347
+  },
+  "CWRU_UNBAL": {
+    "MR": 0.9917,
+    "MR+conc": 0.9625,
+    "MR+phase": 0.8293,
+    "MR+conc+phase": 0.9166
+  },
+  "CWRU_BAL": {
+    "MR": 0.9947,
+    "MR+conc": 0.9647,
+    "MR+phase": 0.8728,
+    "MR+conc+phase": 0.9311
+  }
+}

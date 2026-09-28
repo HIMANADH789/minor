@@ -1,0 +1,6 @@
+split,mean,sd,median,iqr,zero_fraction,min,max,q95,n_nonzero_features_trainva
+train+val,0.03971,0.03357,0.03382,0.04713,0.05149,0.0,0.25,0.10268,4974
+test,0.03963,0.03374,0.03367,0.0475,0.05316,0.0,0.25073,0.10285,
+train+val_seed42_stored,0.03954,0.03369,nan,,0.05321,0.0,0.25073,,
+train+val_seed43_stored,0.03239,0.03073,nan,,0.05286,0.0,0.25,,
+train+val_seed44_stored,0.03135,0.03141,nan,,0.05268,0.0,0.25081,,

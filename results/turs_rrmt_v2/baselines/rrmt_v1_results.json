@@ -1,0 +1,30 @@
+{
+  "ECG5000_UNBAL": {
+    "test_mf1": 0.4171017772938896,
+    "test_acc": 0.928,
+    "test_bal_acc": 0.41314738141933616,
+    "params_trainable": 83145,
+    "params_fixed": 3968
+  },
+  "ECG5000_BAL": {
+    "test_mf1": 0.5501339456563337,
+    "test_acc": 0.9,
+    "test_bal_acc": 0.6362120763165776,
+    "params_trainable": 83145,
+    "params_fixed": 3968
+  },
+  "CWRU_UNBAL": {
+    "test_mf1": 0.6945108812755872,
+    "test_acc": 0.6916666666666667,
+    "test_bal_acc": 0.6916666666666667,
+    "params_trainable": 83048,
+    "params_fixed": 3968
+  },
+  "CWRU_BAL": {
+    "test_mf1": 0.8315685885953032,
+    "test_acc": 0.8306878306878307,
+    "test_bal_acc": 0.8308485665767656,
+    "params_trainable": 83048,
+    "params_fixed": 3968
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-13 08:00:22",
+  "python": "3.11.9",
+  "torch": "2.5.1+cu121",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "reused_modules": {
+    "kernel_recipe": "models/turs_rrmt/model.py::build_pattern_bank",
+    "transport_flavors": "models/turs_rrmt/model.py::TransportFlavors",
+    "data_protocol": "experiments/turs_rrmt/data.py::load_split",
+    "metrics": "experiments/turs_rrmt/train_eval.py::full_metrics",
+    "statistics": "src/diagnostics/statistics.py",
+    "calibration": "src/diagnostics/calibration.py",
+    "perturbation": "src/diagnostics/perturb.py::apply_spec",
+    "ridge_reference": "models/turs_glr/block_ridge.py (BlockRidge, for primal/dual cross-validation)"
+  },
+  "explicitly_not_reused": [
+    "RRMT router",
+    "GLR gate",
+    "block lambda gating",
+    "old MLP head",
+    "learned transport selection"
+  ]
+}

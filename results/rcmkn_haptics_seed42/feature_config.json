@@ -1,0 +1,8 @@
+{
+  "budget_2block": "9996 = 4998 global MiniROCKET PPV + 4998 regime heterogeneity (R0/R2/C1/C2)",
+  "budget_3block": "12044 = 9996 + 2048 Hydra count_max/count_min (R1/R3)",
+  "hydra": "aeon _HydraInternal k=8 g=16 -> 8 dilations x divisor 2 x 8 groups x 8 kernels x 2 stats",
+  "hydra_scaling": "canonical _SparseScaler formula (numpy impl), fit on train+val, Hydra block only",
+  "alphas": "np.logspace(-4, 4, 20)",
+  "ridge_fit": "train+validation"
+}

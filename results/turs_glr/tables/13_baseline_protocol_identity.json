@@ -1,0 +1,14 @@
+{
+  "MiniROCKET_aeon|ECG5000_UNBAL": true,
+  "TURS-Stack|ECG5000_UNBAL": "summary (protocol per run_turs_stack_benchmark.py)",
+  "TURS-Lite|ECG5000_UNBAL": "summary (historical benchmark)",
+  "MiniROCKET_aeon|ECG5000_BAL": true,
+  "TURS-Stack|ECG5000_BAL": "summary (protocol per run_turs_stack_benchmark.py)",
+  "TURS-Lite|ECG5000_BAL": "summary (historical benchmark)",
+  "MiniROCKET_aeon|CWRU_UNBAL": true,
+  "TURS-Stack|CWRU_UNBAL": "summary (protocol per run_turs_stack_benchmark.py)",
+  "TURS-Lite|CWRU_UNBAL": "summary (historical benchmark)",
+  "MiniROCKET_aeon|CWRU_BAL": true,
+  "TURS-Stack|CWRU_BAL": "summary (protocol per run_turs_stack_benchmark.py)",
+  "TURS-Lite|CWRU_BAL": "summary (historical benchmark)"
+}
